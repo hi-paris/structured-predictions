@@ -1,290 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-<link href="assets/images/ipp-telecom-paris-logo.png" rel="icon" />
-<title>Documentation | Structured Predictions </title>
-<meta name="description" content="Documentation for the Structured Predictions Package">
-<meta name="author" content="harnishdesign.net">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+  <link href="assets/images/ipp-telecom-paris-logo.png" rel="icon" />
+  <title>Documentation | Structured Predictions </title>
+  <meta name="description" content="Documentation for the Structured Predictions Package">
+  <meta name="author" content="harnishdesign.net">
 
-<!-- Stylesheet
+  <!-- Stylesheet
 ============================== -->
-<!-- Bootstrap -->
-<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
-<!-- Font Awesome Icon -->
-<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
-<!-- Magnific Popup -->
-<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
-<!-- Highlight Syntax -->
-<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
-<!-- Custom Stylesheet -->
-<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+  <!-- Highlight Syntax -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
 
-<!-- Preloader -->
-<div class="preloader">
-  <div class="lds-ellipsis">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
-</div>
-<!-- Preloader End --> 
+  <!-- Preloader End -->
 
-<!-- Document Wrapper   
+  <!-- Document Wrapper   
 =============================== -->
-<div id="main-wrapper"> 
-  
-  <!-- Header
+  <div id="main-wrapper">
+
+    <!-- Header
   ============================ -->
-  <header id="header" class="sticky-top"> 
-    <!-- Navbar -->
-    <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark ">
-      <div class="container-fluid">
-        <!-- Sidebar Toggler -->
-		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
-		
-		<!-- Logo --> 
-        <a class="logo ml-md-3" href="https://www.telecom-paris.fr/" title="Telecom logo"> <img src="assets/images/ipp-telecom-paris-logo.png" style="background-color: #ffffff" width="38px" height="58px" alt="iDocs Template"/> </a> 
-        <a class="logo ml-md-3" href="https://www.hi-paris.fr/" title="Hiparis logo"> <img src="assets/images/hiparis.jpg" width="88px" height="58px" alt="iDocs Template"/> </a> 
-    <span class="text-2 ml-2">v1.0</span> 
-        <!-- Logo End -->
-        
-		<!-- Navbar Toggler -->
-		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
-        
-		<div id="header-nav" class="collapse navbar-collapse justify-content-end"> <!-- .justify-content-left-->
-          <ul class="navbar-nav">
-            <li class="dropdown"> <a class="dropdown-toggle" href="#">Dropdown</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Dropdown Action</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="index.html">Action</a></li>
-                    <li><a class="dropdown-item" href="feature-header-dark.html">Another Action</a></li>
-                    <li><a class="dropdown-item" href="feature-header-primary.html">Something Else Here</a></li>
-                    <li><a class="dropdown-item" href="index-2.html">Another Link</a></li>
-                  </ul>
-                </li>
-                <li><a class="dropdown-item" href="#">Another Action</a>
-                <li><a class="dropdown-item" href="#">Something Else Here</a></li>
-              </ul>
-            </li>
-            <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/portfolio?ref=HarnishDesign">Other Template</a></li>
-            <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/#contact?ref=HarnishDesign">Support</a></li>
-            <li><a class="bluebtn" href="https://github.com/hi-paris/structured-predictions">Github</a></li>
+    <header id="header" class="sticky-top">
+      <!-- Navbar -->
+      <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark ">
+        <div class="container-fluid">
+          <!-- Sidebar Toggler -->
+          <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span
+              class="w-75"></span><span class="w-50"></span></button>
+
+          <!-- Logo -->
+          <a class="logo ml-md-3" href="https://www.telecom-paris.fr/" title="Telecom logo"> <img
+              src="assets/images/ipp-telecom-paris-logo.png" style="background-color: #ffffff" width="38px"
+              height="58px" alt="iDocs Template" /> </a>
+          <a class="logo ml-md-3" href="https://www.hi-paris.fr/" title="Hiparis logo"> <img
+              src="assets/images/hiparis.jpg" width="88px" height="58px" alt="iDocs Template" /> </a>
+          <span class="text-2 ml-2">v1.0</span>
+          <!-- Logo End -->
+
+          <!-- Navbar Toggler -->
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+            data-target="#header-nav"><span></span><span></span><span></span></button>
+
+          <div id="header-nav" class="collapse navbar-collapse justify-content-end">
+            <!-- .justify-content-left-->
+            <ul class="navbar-nav">
+              <li class="dropdown"> <a class="dropdown-toggle" href="#">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Dropdown Action</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="index.html">Action</a></li>
+                      <li><a class="dropdown-item" href="feature-header-dark.html">Another Action</a></li>
+                      <li><a class="dropdown-item" href="feature-header-primary.html">Something Else Here</a></li>
+                      <li><a class="dropdown-item" href="index-2.html">Another Link</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Another Action</a>
+                  <li><a class="dropdown-item" href="#">Something Else Here</a></li>
+                </ul>
+              </li>
+              <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/portfolio?ref=HarnishDesign">Other
+                  Template</a></li>
+              <li><a target="_blank"
+                  href="https://themeforest.net/user/harnishdesign/#contact?ref=HarnishDesign">Support</a></li>
+              <li><a class="bluebtn" href="https://github.com/hi-paris/structured-predictions">Github</a></li>
+            </ul>
+          </div>
+          <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+            <li class="social-icons-twitter"><a data-toggle="tooltip" href="http://www.twitter.com/harnishdesign/"
+                target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-icons-facebook"><a data-toggle="tooltip" href="http://www.facebook.com/harnishdesign/"
+                target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="social-icons-dribbble"><a data-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/"
+                target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
           </ul>
         </div>
-        <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
-          <li class="social-icons-twitter"><a data-toggle="tooltip" href="http://www.twitter.com/harnishdesign/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
-          <li class="social-icons-facebook"><a data-toggle="tooltip" href="http://www.facebook.com/harnishdesign/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-          <li class="social-icons-dribbble"><a data-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+      </nav>
+      <!-- Navbar End -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Content
+  ============================ -->
+    <div id="content" role="main">
+
+      <!-- Sidebar Navigation
+	============================ -->
+      <div class="idocs-navigation bg-dark docs-navigation-dark">
+        <ul class="nav flex-column ">
+          <li class="nav-item"><a class="nav-link" href="#idocs_datasets">Datasets</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#idocs_bibtex">Bibtex</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_corel">Corel5K</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_iris">Iris</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_models">Models</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#idocs_iokr">IOKR</a>
+                <ul class="nav flex-column">
+                  <li class="nav-item"><a class="nav-link" href="#idocs_iokr_fit">fit()</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#idocs_iokr_alpha">alpha()</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#idocs_iokr_predict">predict()</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#idocs_iokr_usecase">Usecase</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_DIOKR">Deep IOKR</a>
+                <ul class="nav flex-column">
+                  <li class="nav-item"><a class="nav-link" href="#idocs_DIOKR_functions">Functions</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_OK3">OK3</a>
+                <ul class="nav flex-column">
+                  <li class="nav-item"><a class="nav-link" href="#idocs_OK3_functions">Functions</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_metrics">Metrics</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="#idocs_viz">Visualisation</a></li>
         </ul>
       </div>
-    </nav>
-    <!-- Navbar End --> 
-  </header>
-  <!-- Header End --> 
-  
-  <!-- Content
-  ============================ -->
-  <div id="content" role="main">
-    
-	<!-- Sidebar Navigation
-	============================ -->
-	<div class="idocs-navigation bg-dark docs-navigation-dark">
-      <ul class="nav flex-column ">
-        <li class="nav-item"><a class="nav-link" href="#idocs_datasets">Datasets</a>
-          <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#idocs_bibtex">Bibtex</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_corel">Corel5K</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_iris">Iris</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#idocs_models">Models</a>
-          <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#idocs_iokr">IOKR</a>
-              <ul class="nav flex-column">
-                <li class="nav-item"><a class="nav-link" href="#idocs_iokr_functions">Functions</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_DIOKR">Deep IOKR</a>
-              <ul class="nav flex-column">
-                <li class="nav-item"><a class="nav-link" href="#idocs_DIOKR_functions">Functions</a></li>
-              </ul>
-            </li>            
-            <li class="nav-item"><a class="nav-link" href="#idocs_OK3">OK3</a>
-              <ul class="nav flex-column">
-                <li class="nav-item"><a class="nav-link" href="#idocs_OK3_functions">Functions</a></li>
-              </ul>
-            </li>          
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#idocs_metrics">Metrics</a></li>
 
-        <li class="nav-item"><a class="nav-link" href="#idocs_viz">Visualisation</a></li>
-      </ul>
-    </div>
-    
-    <!-- Docs Content
+      <!-- Docs Content
 	============================ -->
-    <div class="idocs-content">
-      <div class="container" style="background-color:#ffffff"> 
-        
-        <!-- Getting Started
+      <div class="idocs-content">
+        <div class="container" style="background-color:#ffffff">
+
+          <!-- Getting Started
 		============================ -->
-        <section id="idocs_datasets">
-        <h1>Datasets</h1>
-        <p class="lead">Class lead for testing purpose</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad 
-          voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa, 
-          rerum eum accusantium nulla.</p>
-        </section>
-        <section id="idocs_bibtex">
-          <h2>Bibtex dataset</h2>
-          <p class="lead">Class lead for testing purpose</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad 
-            voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa, 
-            rerum eum accusantium nulla.</p>
-        </section>
-        <section id="idocs_corel">
-          <h2>Corel5K dataset</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad 
-            voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa, 
-            rerum eum accusantium nulla.</p>
-        </section>
-        <section id="idocs_iris">
-          <h2>Iris dataset</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad 
-            voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa, 
-            rerum eum accusantium nulla.</p>
-        </section>
+          <section id="idocs_datasets">
+            <h1>Datasets</h1>
+            <p class="lead">Class lead for testing purpose</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad
+              voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa,
+              rerum eum accusantium nulla.</p>
+          </section>
 
-        <hr class="divider">
+          <hr class="divider">
 
-        <section id="idocs_models">
-          <h1>Models</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad 
-            voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa, 
-            rerum eum accusantium nulla.</p>
-        </section>
-        <section id="idocs_iokr">
-          <h2>IOKR</h2>
-          <p class="lead">Class lead for testing purpose</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad 
-            voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa, 
-            rerum eum accusantium nulla.</p>
-          <pre><code class="python">def fib(n):
-              a, b = 0, 1
-                while a < n:
-                  print(a, end=' ')
-                  a, b = b, a+b
-                  print()
-              fib(1000)</code></pre>
-        </section>
-        <section id="idocs_iokr_functions">
-          <h3>Functions</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad 
-            voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa, 
-            rerum eum accusantium nulla.</p>
-        </section>
-        <section id="idocs_DIOKR">
-          <h2>Deep IOKR</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad 
-            voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa, 
-            rerum eum accusantium nulla.</p>
-        </section>
-        <section id="idocs_DIOKR_functions">
-          <h3>Functions</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad 
-            voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa, 
-            rerum eum accusantium nulla.</p>
-        </section>
-        <section id="idocs_OK3">
-          <h2>OK3</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad 
-            voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa, 
-            rerum eum accusantium nulla.</p>
-        </section>
-        <section id="idocs_OK3_functions">
-          <h3>Functions</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad 
-            voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa, 
-            rerum eum accusantium nulla.</p>
-        </section>
+          <section id="idocs_bibtex">
+            <h2>Bibtex dataset</h2>
+            <p class="lead">Class lead for testing purpose</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad
+              voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa,
+              rerum eum accusantium nulla.</p>
+          </section>
 
-        <hr class="divider">
+          <hr class="divider">
 
-        <section id="idocs_metrics">
-          <h1>Metrics</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad 
-            voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa, 
-            rerum eum accusantium nulla.</p>
-        </section>
+          <section id="idocs_corel">
+            <h2>Corel5K dataset</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad
+              voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa,
+              rerum eum accusantium nulla.</p>
+          </section>
 
-        <hr class="divider">
+          <hr class="divider">
 
-        <section id="idocs_viz">
-          <h1>Visualisation</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad 
-            voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa, 
-            rerum eum accusantium nulla.</p>
-        </section>
+          <section id="idocs_iris">
+            <h2>Iris dataset</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad
+              voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa,
+              rerum eum accusantium nulla.</p>
+          </section>
 
-        <hr class="divider">
+          <hr class="divider">
+
+          <section id="idocs_models">
+            <h1>Models</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad
+              voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa,
+              rerum eum accusantium nulla.</p>
+          </section>
+
+          <hr class="divider">
+
+          <section id="idocs_iokr">
+            <h2>IOKR</h2>
+            <p class="lead">Class lead for testing purpose</p>
+          </section>
+
+          <hr class="divider">
+
+          <section id="idocs_iokr_fit">
+            <h3>iokr.fit()</h3>
+          </section>
+          <p class="alert alert-info">iokr.model.model.fit( X, Y, L, input_kernel='linear', input_kernel_param=None)
+          </p>
+          <dl>
+            <dt class="field-odd">Parameters:</dt>
+            <dd class="field-even">
+              <ul class="simple">
+                <li>
+                  <p><strong>X</strong> (<em>type</em>) – #insert</p>
+                </li>
+                <li>
+                  <p><strong>Y</strong> (<em>type</em>) – #insert <code
+                      class="docutils literal notranslate"><span class="pre">True</span></code></p>
+                </li>
+                <li>
+                  <p><strong>L</strong> (<em>type</em>) – #insert</p>
+                </li>
+                <li>
+                  <p><strong>input_kernel</strong> (<em>str</em>) – #insert</p>
+                </li>
+                <li>
+                  <p><strong>input_kernel_param</strong> (<em>str</em>) – #insert</p>
+                </li>
+              </ul>
+            </dd>
+            <dt class="field-odd">Returns:</dt>
+            <dd class="field-even">
+              <ul class="simple">
+                <p><strong>Fitted model</strong> (<em>type</em>) – #insert</p>
+              </ul>
+            </dd>
+          </dl>
+          <p class="lead">Example</p>
+          <pre><code class="python">
+          from IOKR.model.model import IOKR
+          from sklearn.model_selection import train_test_split
+
+          X = #insert
+          Y = #insert 
+
+          X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.33, random_state=42)
+          
+          clf.fit(X=X_train, Y=Y_train, L=1e-5)
+          </code></pre>
+
+          <hr class="divider">
+
+          <section id="idocs_iokr_alpha">
+            <h3>iokr.alpha()</h3>
+          </section>
+          <p class="alert alert-info">iokr.model.model.alpha(X_test)
+          </p>
+          <dl>
+            <dt class="field-odd">Parameters:</dt>
+            <dd class="field-even">
+              <ul class="simple">
+                <li>
+                  <p><strong>X_test</strong> (<em>type</em>) – #insert</p>
+                </li>
+              </ul>
+            </dd>
+            <dt class="field-odd">Returns:</dt>
+            <dd class="field-even">
+              <ul class="simple">
+                <p><strong>A</strong> (<em>type</em>) – #insert</p>
+              </ul>
+            </dd>
+          </dl>
+          <p class="lead">Example</p>
+          <pre><code class="python">
+        from IOKR.model.model import alpha
         
+        #insert
+
+        A = alpha(X_test=X_test)
+      </code></pre>
+
+          <hr class="divider">
+
+          <section id="idocs_iokr_predict">
+            <h3>iokr.predict()</h3>
+          </section>
+          <p class="alert alert-info">iokr.model.model.predict(X_test, Y_candidates, output_kernel='linear',
+            output_kernel_param=None)
+          </p>
+          <dl>
+            <dt class="field-odd">Parameters:</dt>
+            <dd class="field-even">
+              <ul class="simple">
+                <li>
+                  <p><strong>X_test</strong> (<em>type</em>) – #insert</p>
+                </li>
+                <li>
+                  <p><strong>Y_candidates</strong> (<em>type</em>) – #insert</p>
+                </li>
+                <li>
+                  <p><strong>output_kernel</strong> (<em>type</em>) – #insert</p>
+                </li>
+                <li>
+                  <p><strong>output_kernel_param</strong> (<em>type</em>) – #insert</p>
+                </li>
+              </ul>
+            </dd>
+            <dt class="field-odd">Returns:</dt>
+            <dd class="field-even">
+              <ul class="simple">
+                <p><strong>Y_pred</strong> (<em>type</em>) – #insert</p>
+              </ul>
+            </dd>
+          </dl>
+          <p class="lead">Example</p>
+          <pre><code class="python">
+          from IOKR.model.model import predict
+  
+          #insert
+
+          y_pred = fittedModel.predict(X_test = X_test, 
+                                      Y_candidates = Y_candidates,
+                                      output_kernel = output_kernel,
+                                      output_kernel_param = output_kernel_param)
+
+</code></pre>
+
+          <hr class="divider">
+
+          <section id="idocs_iokr_usecase">
+            <h3>IOKR: Usecase</h3>
+          </section>
+          <pre><code class="python">
+          from IOKR.model.model import IOKR
+          from sklearn.model_selection import train_test_split
+          from IOKR.data.load_data import load_bibtex
+          from sklearn.metrics import f1_score
+            
+          path = "IOKR/data/bibtex"
+          X, Y, _, _ = load_bibtex(path)
+            
+          X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.33, random_state=42)
+            
+          clf = IOKR()
+          clf.verbose = 1
+          L = 1e-5
+          sx = 1000
+          sy = 10
+           
+          clf.fit(X=X_train, Y=Y_train, L=L, sx=sx, sy=sy)
+          Y_pred_train = clf.predict(X_test=X_train)
+          Y_pred_test = clf.predict(X_test=X_test)
+          f1_train = f1_score(Y_pred_train, Y_train, average='samples')
+          f1_test = f1_score(Y_pred_test, Y_test, average='samples')
+          print("Train f1 score:", f1_train,"/", "Test f1 score:", f1_test)
+        </code></pre>
+
+        <hr class="divider">
+
+          <section id="idocs_DIOKR">
+            <h2>Deep IOKR</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad
+              voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa,
+              rerum eum accusantium nulla.</p>
+          </section>
+          <section id="idocs_DIOKR_functions">
+            <h3>Functions</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad
+              voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa,
+              rerum eum accusantium nulla.</p>
+          </section>
+
+          <hr class="divider">
+
+          <section id="idocs_OK3">
+            <h2>OK3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad
+              voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa,
+              rerum eum accusantium nulla.</p>
+          </section>
+          <section id="idocs_OK3_functions">
+            <h3>Functions</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad
+              voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa,
+              rerum eum accusantium nulla.</p>
+          </section>
+
+          <hr class="divider">
+
+          <section id="idocs_metrics">
+            <h1>Metrics</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad
+              voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa,
+              rerum eum accusantium nulla.</p>
+          </section>
+
+          <hr class="divider">
+
+          <section id="idocs_viz">
+            <h1>Visualisation</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Facere soluta dolores ab eligendi nisi odio quisquam, maiores ad
+              voluptate maxime sequi est. Voluptates voluptatibus distinctio culpa,
+              rerum eum accusantium nulla.</p>
+          </section>
+
+          <hr class="divider">
+
+        </div>
       </div>
+
     </div>
-	
-  </div>
-  <!-- Content end --> 
-  
-  <!-- Footer
+    <!-- Content end -->
+
+    <!-- Footer
   ============================ -->
-  <footer id="footer" class="section bg-dark footer-text-light">
-    <div class="container">
-    </div>
-  </footer>
-  <!-- Footer end -->
-  
-</div>
-<!-- Document Wrapper end --> 
+    <footer id="footer" class="section bg-dark footer-text-light">
+      <div class="container">
+      </div>
+    </footer>
+    <!-- Footer end -->
 
-<!-- Back To Top --> 
-<a id="back-to-top" data-toggle="tooltip" style='left:50%'  title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+  </div>
+  <!-- Document Wrapper end -->
 
-<!-- JavaScript
+  <!-- Back To Top -->
+  <a id="back-to-top" data-toggle="tooltip" style='left:50%' title="Back to Top" href="javascript:void(0)"><i
+      class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript
 ============================ -->
-<script src="assets/vendor/jquery/jquery.min.js"></script> 
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
-<!-- Highlight JS -->
-<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
-<!-- Easing --> 
-<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
-<!-- Magnific Popup --> 
-<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
-<!-- Custom Script -->
-<script src="assets/js/theme.js"></script>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Highlight JS -->
+  <script src="assets/vendor/highlight.js/highlight.min.js"></script>
+  <!-- Easing -->
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <!-- Magnific Popup -->
+  <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Custom Script -->
+  <script src="assets/js/theme.js"></script>
 </body>
+
 </html>
