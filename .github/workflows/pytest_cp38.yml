@@ -50,6 +50,7 @@ jobs:
     - name: Build and compile
       run: |
         pip install -i https://test.pypi.org/simple/ structured-predictions
+        python tests/tests_DIOKR/Demo_DeepIOKR_bibtex.py
     - name: Test with pytest
       run: |
         pip install pytest
