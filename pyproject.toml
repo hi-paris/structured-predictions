@@ -8,9 +8,9 @@ build-backend = "setuptools.build_meta"
 #skip = ["cp39-musllinux*"]
 
 # Skip for Windows
-skip = ["pp*", "cp310-*"]
-# Skip for Ubuntu and MacOS
-#skip = ["cp36-musllinux*", "cp37-musllinux*", "cp38-musllinux*", "cp39-musllinux*", "cp310-musllinux*", "pp*"]
+#skip = ["pp*", "cp310-*"]
+#Skip for Ubuntu and MacOS
+skip = ["cp36-musllinux*", "cp37-musllinux*", "cp38-musllinux*", "cp39-musllinux*", "cp310-musllinux*", "pp*"]
 
 
 # Build `universal2` and `arm64` wheels on an Intel runner.
