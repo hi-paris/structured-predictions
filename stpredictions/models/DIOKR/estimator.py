@@ -1,8 +1,8 @@
 import torch
 import torch.optim as optim
-from DIOKR.DIOKR.cost import *
-from DIOKR.DIOKR.kernel import *
-from DIOKR.DIOKR.IOKR import *
+from stpredictions.models.DIOKR.cost import *
+from stpredictions.models.DIOKR.kernel import *
+from stpredictions.models.DIOKR.IOKR import *
 from scipy.linalg import block_diag
 
 dtype = torch.float
