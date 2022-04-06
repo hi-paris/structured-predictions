@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [tool.cibuildwheel]
 # Only build on CPython 3.9
-build = "cp39-*"
-skip = ["cp39-musllinux*"]
+#build = "cp39-*"
+#skip = ["cp39-musllinux*"]
 
 # Skip for Windows
-#skip = ["cp36-musllinux*", "cp37-musllinux*", "cp38-musllinux*", "cp39-musllinux*", "cp310-musllinux*", "pp*", "cp310-*"]
+skip = ["pp*", "cp310-*"]
 # Skip for Ubuntu and MacOS
 #skip = ["cp36-musllinux*", "cp37-musllinux*", "cp38-musllinux*", "cp39-musllinux*", "cp310-musllinux*", "pp*"]
 

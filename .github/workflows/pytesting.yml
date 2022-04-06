@@ -1,8 +1,8 @@
 name: pytesting
 
-on:
+on: 
   push:
-#    branches: [ main ]
+# #    branches: [ main ]
   schedule:
     - cron: '0 0 1 * *'
 # pull_request:
@@ -40,11 +40,13 @@ jobs:
     #   run: |
     #     pip install pytest
     #     pytest -v --cov=structured-predictions --cov-report=html
-    - name: Build and compile
-      run: |
-        make dist
-        python setup.py develop
-    - name: Test with pytest
-      run: |
-        pip install pytest
-        pytest tests/tests_OK3/test_tree_clf_and_reg.py  tests/tests_OK3/test_forest_clf_and_reg.py
+
+
+    # - name: Build and compile
+    #   run: |
+    #     make dist
+    #     python setup.py develop
+    # - name: Test with pytest
+    #   run: |
+    #     pip install pytest
+    #     pytest tests/tests_OK3/test_tree_clf_and_reg.py  tests/tests_OK3/test_forest_clf_and_reg.py
