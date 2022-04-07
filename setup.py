@@ -65,9 +65,9 @@ setup(
     description='Python Optimal Transport Library',
     # long_description=README,
     long_description_content_type='text/markdown',
-    author=u'Remi Flamary, Nicolas Courty',
-    author_email='remi.flamary@gmail.com, ncourty@gmail.com',
-    url='https://github.com/PythonOT/POT',
+    author=u"Florence d'Alché-Buc (Researcher), Luc Motte (Researcher), Tamim El Ahmad (Researcher) , Awais Sani (Engineer), Danaël  Schlewer-Becker(Engineer), Gaëtan Brison (Engineer)"
+    author_email='structured-predictions@gmail.com',
+    url='https://github.com/hi-paris/structured-predictions',
     packages=find_packages(exclude=["benchmarks"]),
     include_package_data=True,
     ext_modules=cythonize(Extension(
