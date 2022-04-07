@@ -61,11 +61,11 @@ if sys.platform.startswith('darwin'):
 
 setup(
     name='structured-predictions',
-    version='0.0.2',
+    version='0.0.3',
     description='Python Optimal Transport Library',
     # long_description=README,
     long_description_content_type='text/markdown',
-    author=u"Florence d'Alché-Buc (Researcher), Luc Motte (Researcher), Tamim El Ahmad (Researcher) , Awais Sani (Engineer), Danaël  Schlewer-Becker(Engineer), Gaëtan Brison (Engineer)"
+    author=u"Florence d'Alché-Buc (Researcher), Luc Motte (Researcher), Tamim El Ahmad (Researcher) , Awais Sani (Engineer), Danaël  Schlewer-Becker(Engineer), Gaëtan Brison (Engineer)",
     author_email='structured-predictions@gmail.com',
     url='https://github.com/hi-paris/structured-predictions',
     packages=find_packages(exclude=["benchmarks"]),
