@@ -61,8 +61,8 @@ if sys.platform.startswith('darwin'):
 
 setup(
     name='structured-predictions',
-    version='0.0.3',
-    description='Python Optimal Transport Library',
+    version='0.0.4',
+    description='Structured-Predictions',
     # long_description=README,
     long_description_content_type='text/markdown',
     author=u"Florence d'Alché-Buc (Researcher), Luc Motte (Researcher), Tamim El Ahmad (Researcher) , Awais Sani (Engineer), Danaël  Schlewer-Becker(Engineer), Gaëtan Brison (Engineer)",
