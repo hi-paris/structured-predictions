@@ -56,4 +56,4 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
-        pytest tests/tests_OK3/test_tree_clf_and_reg.py tests/tests_OK3/test_complementary.py tests/tests_IOKR
+        pytest tests/tests_OK3/test_tree_clf_and_reg.py tests/tests_OK3/test_complementary.py tests/tests_IOKR tests/tests_DIOKR
