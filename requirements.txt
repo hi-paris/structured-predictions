@@ -58,5 +58,5 @@ urllib3==1.26.9
 webencodings==0.5.1
 wheel
 zipp>=3.6.0
-arff
+liac-arff
 
