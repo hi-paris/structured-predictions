@@ -29,7 +29,7 @@ class TestLoadBibtex():
         -------
         None
         """
-        load = load_bibtex("stpredictions/datasets/bibtex")
+        load = load_bibtex()
         actual_x = type(load[0])
         actual_y = type(load[1])
         actual_x_txt = type(load[2])
@@ -49,7 +49,7 @@ class TestLoadBibtex():
         -------
         None
         """
-        load = load_bibtex("stpredictions/datasets/bibtex")
+        load = load_bibtex()
         actual_x_shape = load[0].shape
         actual_y_shape = load[1].shape
         actual_x_txt_len = len(load[2])
@@ -92,7 +92,7 @@ class TestLoadCorel5k():
         -------
         None
         """
-        load = load_corel5k("stpredictions/datasets/corel5k")
+        load = load_corel5k()
         print(load)
         assert load[0] is not None, "Expected variable: 'X'"
         assert load[1] is not None, "Expected variable: 'Y'"
@@ -106,7 +106,7 @@ class TestLoadCorel5k():
         -------
         None
         """
-        load = load_corel5k("stpredictions/datasets/corel5k")
+        load = load_corel5k()
         actual_x = type(load[0])
         actual_y = type(load[1])
         actual_x_txt = type(load[2])
@@ -126,7 +126,7 @@ class TestLoadCorel5k():
         -------
         None
         """
-        load = load_corel5k("stpredictions/datasets/corel5k")
+        load = load_corel5k()
         actual_x_shape = load[0].shape
         actual_y_shape = load[1].shape
         actual_x_txt_len = len(load[2])
