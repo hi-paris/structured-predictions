@@ -94,7 +94,7 @@ def load_corel5k():
 
     """
     this_dir, this_filename = os.path.split(__file__)
-    DATA_PATH = os.path.join(this_dir, "corel5k", "corel5k.arff")
+    DATA_PATH = os.path.join(this_dir, "corel5k", "Corel5k.arff")
 
     feature_idx = 499
 
