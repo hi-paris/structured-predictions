@@ -19,6 +19,8 @@ In this Package you can use 3 differents types of models for structured predicti
 
 ## Example 
 
+
+```python
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
 
@@ -41,7 +43,7 @@ Y_pred_test = clf.predict(X_test=X_test)
 f1_train = f1_score(Y_pred_train, Y_train, average='samples')
 f1_test = f1_score(Y_pred_test, Y_test, average='samples')
 print("Train f1 score:", f1_train,"/", "Test f1 score:", f1_test)
-
+```
 
 
 ## IOKR
