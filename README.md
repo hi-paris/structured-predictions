@@ -44,7 +44,7 @@ pip install -i https://test.pypi.org/simple/ structured-predictions
 ## IOKR
 
 ### Example Bibtex
-```console
+```python
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
 
@@ -65,7 +65,7 @@ print( "Test f1 score:", f1_test)
 ```
 
 ### Example Corel5k
-```console
+```python
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
 
@@ -90,7 +90,7 @@ print( "Test f1 score:", f1_test)
 
 ### Usecase of OK3 Trees
 
-```console
+```python
 from sklearn import datasets
 
 from stpredictions.models.OK3._classes import OK3Regressor, ExtraOK3Regressor
@@ -223,7 +223,7 @@ print( "top_11_score:", top_11_score)
 
 ### Usecase of OK3 forests
 
-```console
+```python
 
 ```
 
