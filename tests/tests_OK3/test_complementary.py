@@ -9,24 +9,23 @@ from sklearn.model_selection import train_test_split
 from sklearn.utils.validation import check_is_fitted, check_X_y
 from sklearn.exceptions import NotFittedError
 from sklearn.metrics import mean_squared_error as MSE
-#from sklearn.metrics import f1_score, recall_score, precision_score, accuracy_score
-#from sklearn.utils.estimator_checks import check_estimator
+# from sklearn.metrics import f1_score, recall_score, precision_score, accuracy_score
+# from sklearn.utils.estimator_checks import check_estimator
 from stpredictions.models.OK3._classes import OK3Regressor
 from stpredictions.models.OK3._classes import ExtraOK3Regressor
 
-
-#Estimators to check
+# Estimators to check
 OKTREES = {
     "OK3Regressor": OK3Regressor,
     "ExtraOK3Regressor": ExtraOK3Regressor
 }
 
-#Datasets used
+# Datasets used
 diabetes = load_diabetes(return_X_y=True)
 iris = load_iris(return_X_y=True)
 digits = load_digits(return_X_y=True)
 
-#Datasets assemble
+# Datasets assemble
 DATASETS = {
     "diabetes": {'X': diabetes[0], 'Y': diabetes[1]},
     "iris": {'X': iris[0], 'Y': iris[1]},
@@ -35,7 +34,8 @@ DATASETS = {
     # "corel5K": {'X': corel5k[0], 'Y': corel5k[1]},
 }
 
-#Validation of the datasets
+
+# Validation of the datasets
 @pytest.mark.parametrize("nameSet, dataXY", DATASETS.items())
 def test_X_y(nameSet, dataXY):
     """Input validation for standard estimators.
@@ -57,6 +57,7 @@ def test_X_y(nameSet, dataXY):
     None
     """
     check_X_y(dataXY["X"], dataXY["Y"])
+
 
 def fitted_predicted_OK3(X, y, Tree):
     """Function running OK3 and returning Y_train, Y_test, and Y_preds, for readability purposes
@@ -150,6 +151,7 @@ class TestPredict():
     """
     Test class for the .predict() function
     """
+
     @pytest.mark.parametrize("nameTree, Tree", OKTREES.items())
     @pytest.mark.parametrize("nameSet, dataXY", DATASETS.items())
     def test_model_return_object(self, nameTree, Tree, nameSet, dataXY):
@@ -179,7 +181,6 @@ class TestPredict():
         assert len(returned_OK3) == 3, f'Failed with {nameTree}/{nameSet}:' \
                                        f'"returned_IOKR" should have a length of 3, ' \
                                        f'but instead it is {len(returned_OK3)}'
-
 
     @pytest.mark.parametrize("nameTree, Tree", OKTREES.items())
     @pytest.mark.parametrize("nameSet, dataXY", DATASETS.items())
@@ -264,10 +265,11 @@ class TestPredict():
         """
         fp_0K3 = fitted_predicted_OK3(dataXY['X'], dataXY['Y'], Tree)
         test_mse = MSE(fp_0K3['Y_test'], fp_0K3['Y_pred_test'])
-        test_rmse = test_mse**0.5
+        test_rmse = test_mse ** 0.5
         threshold = 100000
         assert test_mse < threshold, f'Failed with {nameTree}/{nameSet}: mse = {test_mse}, but threshold set to {threshold} '
         assert test_rmse < threshold, f'Failed with {nameTree}/{nameSet}: rmse = {test_rmse}, but threshold set to {threshold} '
+
 
 @pytest.mark.parametrize("nameTree, Tree", OKTREES.items())
 @pytest.mark.parametrize("nameSet, dataXY", DATASETS.items())
@@ -319,6 +321,7 @@ def test_bad_X_y_inputation(nameTree, Tree, nameSet, dataXY):
         assert isinstance(msg, AssertionError)
         assert msg.args[0] == "y must be a Numpy array"
 
+
 @pytest.mark.parametrize("nameTree, Tree", OKTREES.items())
 @pytest.mark.parametrize("nameSet, dataXY", DATASETS.items())
 def test_bad_argument_inputation(nameTree, Tree, nameSet, dataXY):
@@ -342,7 +345,7 @@ def test_bad_argument_inputation(nameTree, Tree, nameSet, dataXY):
     X_train, _, Y_train, _ = train_test_split(dataXY['X'], dataXY['Y'], test_size=0.33, random_state=42)
     reg = Tree()
     with pytest.raises(ValueError):
-        msg = reg.fit(X_train, Y_train, check_input= 'True')
+        msg = reg.fit(X_train, Y_train, check_input='True')
         assert isinstance(msg, AssertionError)
         assert msg.args[0] == " must be a Boolean"
     with pytest.raises(ValueError):
@@ -354,8 +357,7 @@ def test_bad_argument_inputation(nameTree, Tree, nameSet, dataXY):
         assert isinstance(msg, AssertionError)
         assert msg.args[0] == " must be a str"
 
-
-#def test_sklearn_check_estimator():
+# def test_sklearn_check_estimator():
 #    """test with check_estimator from sklearn"""
 #    for name, Tree in OKTREES.items():
 #        check_estimator(Tree())

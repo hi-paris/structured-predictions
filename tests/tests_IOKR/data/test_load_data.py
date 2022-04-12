@@ -64,6 +64,7 @@ class TestLoadBibtex():
         assert actual_x_txt_len, f"'X_txt' should be {expected_x_txt_len}, but is {actual_x_txt_len} "
         assert expected_y_txt_len, f"'Y_txt' should be {expected_y_txt_len}, but is {actual_y_txt_len} "
 
+
 #    def test_check_X_y(self):
 #        """Input validation for standard estimators.
 #
@@ -82,7 +83,6 @@ class TestLoadBibtex():
 
 
 class TestLoadCorel5k():
-
     """Test class for the function: load_corel5k"""
 
     def test_returned_variables_not_empty(self):

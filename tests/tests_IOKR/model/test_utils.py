@@ -1,8 +1,7 @@
 """Test module for model/utils.py"""
 
-
-from os.path import isdir, dirname
-from stpredictions.models.IOKR.utils import create_path_that_doesnt_exist, project_root
+from os.path import isdir  # , dirname
+from stpredictions.models.IOKR.utils import create_path_that_doesnt_exist  # , project_root
 
 
 class TestCreatePathThatDoesntExist():
@@ -16,8 +15,8 @@ class TestCreatePathThatDoesntExist():
         create_path_that_doesnt_exist(d1, "Check", "txt")
         assert isdir(d1) is True, f'{d1} has not been created'
 
-#BROKEN
-#class TestProjectRoot():
+# BROKEN
+# class TestProjectRoot():
 #    """Test class for function project_root"""
 #
 #    def test_project_root(self, ):
