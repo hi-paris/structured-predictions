@@ -5,18 +5,13 @@ Created on December 12, 2021
 """
 
 import arff
-import os
 import numpy as np
-import pandas as pd
-from numpy.random import RandomState
-from sklearn.model_selection import train_test_split
-from line_profiler import LineProfiler
-import random
+import os
 
-## bibtex
-### files (sparse): Train and test sets along with their union and the XML header [bibtex.rar]
-### source: I. Katakis, G. Tsoumakas, I. Vlahavas, "Multilabel Text Classification for Automated Tag Suggestion",
-### Proceedings of the ECML/PKDD 2008 Discovery Challenge, Antwerp, Belgium, 2008.
+# bibtex
+# files (sparse): Train and test sets along with their union and the XML header [bibtex.rar]
+# source: I. Katakis, G. Tsoumakas, I. Vlahavas, "Multilabel Text Classification for Automated Tag Suggestion",
+# Proceedings of the ECML/PKDD 2008 Discovery Challenge, Antwerp, Belgium, 2008.
 
 
 # split dataset using
@@ -26,7 +21,7 @@ import random
 
 # @profile
 
-def load_bibtex(dir_path: str):
+def load_bibtex():
     """
     Load the bibtex dataset.
     __author__ = "Michael Gygli, ETH Zurich"
@@ -53,9 +48,12 @@ def load_bibtex(dir_path: str):
 
     """
 
+    this_dir, this_filename = os.path.split(__file__)
+    DATA_PATH = os.path.join(this_dir, "bibtex", "bibtex.arff")
+
     feature_idx = 1836
 
-    dataset = arff.load(open(dir_path+"/bibtex.arff"), "r")
+    dataset = arff.load(open(DATA_PATH), "r")
     data = np.array(dataset['data'], np.int64)
 
     X = data[:, 0:feature_idx]
@@ -67,7 +65,9 @@ def load_bibtex(dir_path: str):
     return X, Y, X_txt, Y_txt
 
 
-def load_corel5k(dir_path: str):
+
+
+def load_corel5k():
     """
     Load the bibtex dataset.
     __author__ = "Michael Gygli, ETH Zurich"
@@ -93,10 +93,12 @@ def load_corel5k(dir_path: str):
             Target variables - N * 374 list variables in one vector - e.g. 'TAG_system', 'TAG_social_nets'
 
     """
+    this_dir, this_filename = os.path.split(__file__)
+    DATA_PATH = os.path.join(this_dir, "corel5k", "Corel5k.arff")
 
     feature_idx = 499
 
-    dataset = arff.load(open(dir_path+"/Corel5k.arff"), "r")
+    dataset = arff.load(open(DATA_PATH), "r")
     data = np.array(dataset['data'], np.int64)
 
     X = data[:, 0:feature_idx]
@@ -106,8 +108,6 @@ def load_corel5k(dir_path: str):
     Y_txt = [t[0] for t in dataset['attributes'][feature_idx:]]
 
     return X, Y, X_txt, Y_txt
-
-
 
 # ####### Use Case
 # path = "../data/bibtex"
@@ -127,3 +127,4 @@ def load_corel5k(dir_path: str):
 # print(f'Output dim. = {label_dim}')
 # print(len(Y_test))
 # print(len(Y_train))
+
