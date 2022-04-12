@@ -1,12 +1,12 @@
-import pytest
-import numpy as np
-import torch
 from os.path import join
-from stpredictions.models.DIOKR.utils import project_root
+
+import pytest
+import torch
 from skmultilearn.dataset import load_from_arff
-import copy
+
 from stpredictions.models.DIOKR import kernel, cost
 from stpredictions.models.DIOKR.kernel import linear_kernel, rbf_kernel, gaussian_tani_kernel
+from stpredictions.models.DIOKR.utils import project_root
 
 path_tr = join(project_root(), 'datasets/bibtex/bibtex-train.arff')
 x_train, y_train = load_from_arff(path_tr, label_count=159)
@@ -65,8 +65,8 @@ class TestLinearKernel():
         None
         """
         K = linear_kernel(X_kernel)
-        #print("XK:",X_kernel)
-        #print("K:", K)
+        # print("XK:",X_kernel)
+        # print("K:", K)
         assert type(K) == torch.Tensor, f"'K' should be a torch.Tensor, but is {type(K)}"
         assert K is not None, f"'K should not be None"
         assert K != "", f"'K' should not be empty"
@@ -88,6 +88,7 @@ class TestLinearKernel():
             msg = linear_kernel(X_kernel)
             assert isinstance(msg, AttributeError)
 
+
 class TestRbfKernel():
     "Class test for rbf Kernel function"
 
@@ -99,8 +100,8 @@ class TestRbfKernel():
         None
         """
         K = rbf_kernel(X_kernel)
-        #print("XK:",X_kernel)
-        #print("K:", K)
+        # print("XK:",X_kernel)
+        # print("K:", K)
         assert type(K) == torch.Tensor, f"'K' should be a torch.Tensor, but is {type(K)}"
         assert K is not None, f"'K should not be None"
         assert K != "", f"'K' should not be empty"
@@ -122,6 +123,7 @@ class TestRbfKernel():
             msg = rbf_kernel(X_kernel)
             assert isinstance(msg, AttributeError)
 
+
 class TestGaussianTaniKernel():
     "Class test for rbf Kernel function"
 
@@ -133,8 +135,8 @@ class TestGaussianTaniKernel():
         None
         """
         K = gaussian_tani_kernel(X_kernel)
-        #print("XK:",X_kernel)
-        #print("K:", K)
+        # print("XK:",X_kernel)
+        # print("K:", K)
         assert type(K) == torch.Tensor, f"'K' should be a torch.Tensor, but is {type(K)}"
         assert K is not None, f"'K should not be None"
         assert K != "", f"'K' should not be empty"
@@ -155,6 +157,7 @@ class TestGaussianTaniKernel():
             X_kernel = None
             msg = gaussian_tani_kernel(X_kernel)
             assert isinstance(msg, AttributeError)
+
 
 class TestGaussianComputeGram():
     "Class test for Gaussian.compute_gram function"
@@ -191,6 +194,7 @@ class TestGaussianComputeGram():
             msg = kernel_output.compute_gram(X)
             assert isinstance(msg, TypeError)
 
+
 class TestGaussianTaniComputeGram():
     "Class test for Gaussian.compute_gram function"
 
@@ -225,6 +229,7 @@ class TestGaussianTaniComputeGram():
             kernel_output = kernel.GaussianTani(gamma_output)
             msg = kernel_output.compute_gram(X)
             assert isinstance(msg, AttributeError)
+
 
 class TestLearnableGaussian():
     '''Test class for LearnableGaussian'''
@@ -270,9 +275,10 @@ class TestLearnableGaussian():
         """
         origin_kernel = kernel.LearnableGaussian(gamma_input, model_kernel_input, optim_params)
         cloned_kernel = origin_kernel.clone_kernel()
-        #assert cloned_kernel.optim_params == kernel_output.optim_params
-        #assert cloned_kernel.model == kernel_output.model
-        assert type(cloned_kernel) == kernel.LearnableGaussian, f"type of 'cloned_kernel' should be the same as 'origin_kernel"
+        # assert cloned_kernel.optim_params == kernel_output.optim_params
+        # assert cloned_kernel.model == kernel_output.model
+        assert type(
+            cloned_kernel) == kernel.LearnableGaussian, f"type of 'cloned_kernel' should be the same as 'origin_kernel"
 
 
 class TestLearnableLinear():
@@ -300,6 +306,7 @@ class TestLearnableLinear():
         """
         origin_kernel = kernel.LearnableLinear(model_kernel_input, optim_params)
         cloned_kernel = origin_kernel.clone_kernel()
-        #assert cloned_kernel.optim_params == kernel_output.optim_params
-        #assert cloned_kernel.model == kernel_output.model
-        assert type(cloned_kernel) == kernel.LearnableLinear, f"type of 'cloned_kernel' should be the same as 'origin_kernel"
+        # assert cloned_kernel.optim_params == kernel_output.optim_params
+        # assert cloned_kernel.model == kernel_output.model
+        assert type(
+            cloned_kernel) == kernel.LearnableLinear, f"type of 'cloned_kernel' should be the same as 'origin_kernel"

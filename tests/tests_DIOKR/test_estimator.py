@@ -1,15 +1,14 @@
+from os.path import join
+
 import pytest
 import torch
-import numpy as np
-import torch.optim as optim
-from stpredictions.models.DIOKR import cost
-from stpredictions.models.DIOKR import kernel
-from stpredictions.models.DIOKR import IOKR
-from stpredictions.models.DIOKR import estimator
-from scipy.linalg import block_diag
-from os.path import join
-from stpredictions.models.DIOKR.utils import project_root
 from skmultilearn.dataset import load_from_arff
+
+from stpredictions.models.DIOKR import IOKR
+from stpredictions.models.DIOKR import cost
+from stpredictions.models.DIOKR import estimator
+from stpredictions.models.DIOKR import kernel
+from stpredictions.models.DIOKR.utils import project_root
 
 dtype = torch.float
 
@@ -41,7 +40,7 @@ SOLVERS = {
     "adam": "adam",
     # "iris": {'X': iris[0], 'Y': iris[1]},
 }
-#@pytest.mark.parametrize("key, solver", SOLVERS.items())
+# @pytest.mark.parametrize("key, solver", SOLVERS.items())
 
 gamma_input = 0.1
 gamma_output = 1.0
@@ -170,7 +169,7 @@ class TestTrainKernelInput():
             assert msg.args[0] == f"'solver' should be 'sgd' or 'adam',but not {solver}"
 
     @pytest.mark.parametrize("key, solver", SOLVERS.items())
-    def test_t0_bad_inputation(self, key, solver ):
+    def test_t0_bad_inputation(self, key, solver):
         """Test train_kernel_input when t0 is a bad inputation
 
         Parameters
@@ -206,7 +205,7 @@ class TestTrainKernelInput():
             assert msg.args[0] == f"'t0' should be an int, not a {type(t0)}"
 
     @pytest.mark.parametrize("key, solver", SOLVERS.items())
-    def test_XY_batch_bad_inputation(self, key, solver ):
+    def test_XY_batch_bad_inputation(self, key, solver):
         """Test train_kernel_input when X/Y batch has bad inputation
 
         Parameters
@@ -314,7 +313,7 @@ class TestFitKernelInput():
             # Insert None in solver
             solver = None
             msg = diokr_estimator.fit_kernel_input(x_train, y_train, x_test, y_test,
-                                             n_epochs=5, solver=solver, batch_size_train=batch_size_train)
+                                                   n_epochs=5, solver=solver, batch_size_train=batch_size_train)
             assert isinstance(msg, ValueError)
             assert msg.args[0] == f"'solver' should be 'sgd' or 'adam',but not {solver}"
         # Test that it handles the case of: solver is not a string
@@ -345,7 +344,7 @@ class TestFitKernelInput():
             # Insert None in batchsize
             Xt, yt = x_train, y_train
             msg = diokr_estimator.fit_kernel_input(x_train, y_train, x_test, y_test,
-                                             n_epochs=5, solver=solver, batch_size_train=None)
+                                                   n_epochs=5, solver=solver, batch_size_train=None)
             assert isinstance(msg, TypeError)
             assert msg.args[0] == f"'batch_size_train' should be an int, not a {type(batch_size_train)}"
         # Test that it handles the case of: batchsize is a string
@@ -424,6 +423,7 @@ class TestFitKernelInput():
                                                    n_epochs=5, solver=solver, batch_size_train=batch_size_train)
             assert isinstance(msg, AttributeError)
             assert msg.args[0] == "'str' object has no attribute 'clone'"
+
 
 class TestPredict():
     """Test class for predict function"""

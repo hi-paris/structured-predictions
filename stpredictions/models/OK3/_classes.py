@@ -44,7 +44,6 @@ from stpredictions.models.OK3 import _tree, _splitter, _criterion, kernel
 
 __all__ = ["OK3Regressor", "ExtraOK3Regressor"]
 
-
 # =============================================================================
 # Types and constants
 # =============================================================================
@@ -62,7 +61,7 @@ CRITERIA = {"mse": _criterion.KernelizedMSE}
 # to the "mean-dirac" kernel and the linear kernel but by specifying that we want 
 # (for a classification or a regression task) to perform an exact search of the output 
 # instead of an approximate minimisation of the criterion among  alist of candidates.
-KERNELS = {"gini_clf": kernel.Gini_Kernel, 
+KERNELS = {"gini_clf": kernel.Gini_Kernel,
            "mse_reg": kernel.MSE_Kernel,
            "mean_dirac": kernel.Mean_Dirac_Kernel,
            "linear": kernel.Linear_Kernel,
@@ -75,6 +74,7 @@ DENSE_SPLITTERS = {"best": _splitter.BestSplitter,
 
 SPARSE_SPLITTERS = {"best": _splitter.BestSparseSplitter,
                     "random": _splitter.RandomSparseSplitter}
+
 
 # =============================================================================
 # Base decision tree
@@ -102,7 +102,7 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
                  random_state,
                  min_impurity_decrease,
                  min_impurity_split,
-                 ccp_alpha=0.0, 
+                 ccp_alpha=0.0,
                  kernel):
         self.criterion = criterion
         self.splitter = splitter
@@ -143,7 +143,7 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
         """
         check_is_fitted(self)
         return self.tree_.n_leaves
-    
+
     def fit(self, X, y, sample_weight=None, check_input=True,
             X_idx_sorted="deprecated", kernel=None, in_ensemble=False, Gram_y=None):
         """
@@ -184,9 +184,9 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
 
         if kernel is None:
             kernel = self.kernel
-        else: # on peut mettre à jour l'attribut kernel de l'estimateur à travers le fit.
+        else:  # on peut mettre à jour l'attribut kernel de l'estimateur à travers le fit.
             self.kernel = kernel
-        
+
         random_state = check_random_state(self.random_state)
 
         if self.ccp_alpha < 0.0:
@@ -212,7 +212,7 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
         n_samples, self.n_features_ = X.shape
 
         y = np.atleast_1d(y)
- 
+
         if not isinstance(kernel, Kernel):
             params = ()
             if isinstance(kernel, tuple):
@@ -220,15 +220,15 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
             try:
                 kernel = KERNELS[kernel](*params)
             except KeyError:
-                print("Error : 'kernel' attribute (or its first element if it is a tuple) has to be either a Kernel class or a string which is a valid key for the dict 'KERNELS'.")
+                print(
+                    "Error : 'kernel' attribute (or its first element if it is a tuple) has to be either a Kernel class or a string which is a valid key for the dict 'KERNELS'.")
                 raise
-
 
         if y.ndim == 1:
             # reshape is necessary to preserve the data contiguity against vs
             # [:, np.newaxis] that does not.
             y = np.reshape(y, (-1, 1))
-        
+
         if y.shape[1] == y.shape[0]:
             warnings.warn("The target parameter is a square matrix."
                           "Are you sure this is the matrix of outputs and "
@@ -238,11 +238,10 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
                           "instead and provide a 'kernel' argument which "
                           "describes how to compute the Gram matrix you want."
                           "Or you can also provided the gram as K_y in addition to y.")
-                    
+
         if "clf" in kernel.get_name():
             check_classification_targets(y)
-        
-        
+
         if Gram_y is not None:
             # une matrice de Gram est donnée, on l'utilise
             if not in_ensemble:
@@ -255,21 +254,20 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
                 raise ValueError("Gram_y must be a 2d numpy array of shape "
                                  "n_samples*n_samples (Gram matrix of the "
                                  "outputs of the learning set), got a 1d array")
-    
+
             if Gram_y.shape[1] != Gram_y.shape[0]:
                 raise ValueError("Gram_y must be a 2d numpy array of shape "
                                  "n_samples*n_samples (Gram matrix of the "
                                  "outputs of the learning set)")
-            
+
             K_y = Gram_y
-            
+
         else:
             start_computation = time.time()
             # compute the Gram matrix of the outputs
             K_y = kernel.get_Gram_matrix(y)
             print("Time to compute the training Gram matrix : " + str(time.time() - start_computation) + " s.")
-                
-                
+
         if getattr(y, "dtype", None) != DOUBLE or not y.flags.contiguous:
             y = np.ascontiguousarray(y, dtype=DOUBLE)
 
@@ -363,7 +361,7 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
         else:
             min_weight_leaf = (self.min_weight_fraction_leaf *
                                np.sum(sample_weight))
-        
+
         min_impurity_split = self.min_impurity_split
         if min_impurity_split is not None:
             warnings.warn("The min_impurity_split parameter is deprecated. "
@@ -422,16 +420,16 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
                                            max_leaf_nodes,
                                            self.min_impurity_decrease,
                                            min_impurity_split)
-        
+
         builder.build(self.tree_, X, K_y, sample_weight)
         # store the output training examples
         self.tree_.y = y
 
         self._prune_tree()
-        
+
         # reset leaves_preds because the tree changed
         self.leaves_preds = None
-        
+
         return self
 
     def _validate_X_predict(self, X, check_input):
@@ -463,7 +461,7 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
         """
         check_is_fitted(self)
         return self.tree_.value
-    
+
     def predict_weights(self, X, check_input=True):
         """Predict the output for X as weighted combinations of training outputs
         It is kind of the representation in the Hilbert space.
@@ -476,9 +474,9 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
         """
         check_is_fitted(self)
         X = self._validate_X_predict(X, check_input)
-        
+
         return self.tree_.predict(X)
-        
+
     def predict(self, X, candidates=None, check_input=True, return_top_k=1):
         """Predict structured objects for X.
 
@@ -520,33 +518,35 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
             kernel = kernel.get_name()
         elif isinstance(kernel, tuple):
             kernel = kernel[0]
-        
+
         check_is_fitted(self)
         X = self._validate_X_predict(X, check_input)
-        
+
         criterion = self.criterion
         if not isinstance(criterion, Criterion):
             criterion = CRITERIA[self.criterion](X.shape[0])
-        
+
         if "reg" in kernel and return_top_k > 1:
-            warnings.warn("On ne peut pas retourner plusieurs candidats d'outputs dans le cas d'une régression, veuillez plutôt choisir kernel=linear. "
-                          "return_top_k va etre mis à 1.")
+            warnings.warn(
+                "On ne peut pas retourner plusieurs candidats d'outputs dans le cas d'une régression, veuillez plutôt choisir kernel=linear. "
+                "return_top_k va etre mis à 1.")
             return_top_k = 1
-        
+
         if candidates is None:
 
             if self.leaves_preds is None:
-                if not("clf" in kernel or "reg" in kernel):
+                if not ("clf" in kernel or "reg" in kernel):
                     warnings.warn("Vous n'avez pas renseigné de candidats ni excécuté de précédentes prédictions, "
                                   "le décodage se fait donc parmi l'ensemble de sorties d'entrapinement.\n"
                                   "Si ce n'est pas ce que vous souhaitez, veuillez renseigner un ensemble de candidats de sorties afin de décoder.")
-            
-            elif self.leaves_preds.shape[0] != self.tree_.node_count*return_top_k: 
+
+            elif self.leaves_preds.shape[0] != self.tree_.node_count * return_top_k:
                 # cas ou leaves_preds n'est pas None mais return_top_k a changé depuis le précédent décodage
-                if not("clf" in kernel or "reg" in kernel):
-                    warnings.warn("Vous n'avez pas renseigné de candidats et les précédents décodages demandaient un nombre différent de propositions de candidats ('return_top_k'), "
-                                  "le décodage se fait donc parmi l'ensemble de sorties d'entrapinement.\n"
-                                  "Si ce n'est pas ce que vous souhaitez, veuillez renseigner un ensemble de candidats de sorties afin de décoder.")
+                if not ("clf" in kernel or "reg" in kernel):
+                    warnings.warn(
+                        "Vous n'avez pas renseigné de candidats et les précédents décodages demandaient un nombre différent de propositions de candidats ('return_top_k'), "
+                        "le décodage se fait donc parmi l'ensemble de sorties d'entrapinement.\n"
+                        "Si ce n'est pas ce que vous souhaitez, veuillez renseigner un ensemble de candidats de sorties afin de décoder.")
 
             else:
                 # le nombre de prédictions par feuille est le meme:
@@ -555,9 +555,9 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
                 # dans self.leaves_preds. En effet chaque noeud a return_top_k 
                 # indices d'affilé dans le tableau leaves_preds, 
                 # de node_id*return_top_k à node_id*return_top_k+return_top_k
-                X_leaves_indices = np.zeros(X_leaves.shape[0]*return_top_k, dtype=X_leaves.dtype)
+                X_leaves_indices = np.zeros(X_leaves.shape[0] * return_top_k, dtype=X_leaves.dtype)
                 for k in range(return_top_k):
-                    X_leaves_indices[k::return_top_k] = X_leaves*return_top_k+k
+                    X_leaves_indices[k::return_top_k] = X_leaves * return_top_k + k
                 return self.leaves_preds[X_leaves_indices]
 
         # on calcule la totalité des sorties avec cet ensemble de candidats (et on met à jour self.leaves_preds)
@@ -601,7 +601,7 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
             decoded outputs of the node i among candidates.
         """
         kernel = self.kernel
-        
+
         if not isinstance(kernel, Kernel):
             params = ()
             if isinstance(kernel, tuple):
@@ -609,52 +609,54 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
             try:
                 kernel = KERNELS[kernel](*params)
             except KeyError:
-                print("Error : 'kernel' attribute (or its first element if it is a tuple) has to be either a Kernel class or a string which is a valid key for the dict 'KERNELS'.")
+                print(
+                    "Error : 'kernel' attribute (or its first element if it is a tuple) has to be either a Kernel class or a string which is a valid key for the dict 'KERNELS'.")
                 raise
-
 
         check_is_fitted(self)
 
         criterion = self.criterion
         if not isinstance(criterion, Criterion):
             criterion = CRITERIA[self.criterion](0)
-        
+
         if candidates is not None:
             # candidates doit etre un ensemble : pas de répétition
             candidates = np.unique(candidates, axis=0)
-            
+
             K_cand_train = kernel.get_Gram_matrix(candidates, self.tree_.y)
             sq_norms_cand = kernel.get_sq_norms(candidates)
-        else: # recherche dans le learning set
+        else:  # recherche dans le learning set
             candidates, indices = np.unique(self.tree_.y, return_index=True, axis=0)
             K_cand_train = self.tree_.K_y[indices]
             sq_norms_cand = self.tree_.K_y[indices, indices]
-        
+
         if return_top_k > 1 and return_top_k >= len(candidates):
-            warnings.warn("Le nombre de prédictions demandées pour chaque entrée dépasse le nombre de sorties candidates, return_top_k va être réduit à sa valeur maximale.")
-            return_top_k = len(candidates)-1
-        
+            warnings.warn(
+                "Le nombre de prédictions demandées pour chaque entrée dépasse le nombre de sorties candidates, return_top_k va être réduit à sa valeur maximale.")
+            return_top_k = len(candidates) - 1
+
         if "reg" in kernel.get_name() and return_top_k > 1:
-            warnings.warn("On ne peut pas retourner plusieurs candidats d'outputs dans le cas d'une régression, veuillez plutôt choisir kernel=linear. "
-                          "return_top_k va etre mis à 1.")
+            warnings.warn(
+                "On ne peut pas retourner plusieurs candidats d'outputs dans le cas d'une régression, veuillez plutôt choisir kernel=linear. "
+                "return_top_k va etre mis à 1.")
             return_top_k = 1
-        
-        leaves_preds = self.tree_.decode_tree(K_cand_train = K_cand_train, sq_norms_cand=sq_norms_cand, criterion=criterion, kernel=kernel.get_name(), return_top_k=return_top_k)
-                
-        if not("reg" in kernel.get_name() or "clf" in kernel.get_name()):
+
+        leaves_preds = self.tree_.decode_tree(K_cand_train=K_cand_train, sq_norms_cand=sq_norms_cand,
+                                              criterion=criterion, kernel=kernel.get_name(), return_top_k=return_top_k)
+
+        if not ("reg" in kernel.get_name() or "clf" in kernel.get_name()):
             # les outputs récupérées sont alors des indices corrspondants au set de candidats
             # on traduit les indices renvoyés en représentations vectorielles
             leaves_preds = candidates[leaves_preds]
-            
-        
+
         if leaves_preds.shape[1] == 1:
             leaves_preds = leaves_preds.reshape(-1)
-        
+
         # On stocke les sorties décodées de l'arbre pour pouvoir les sortir rapidement pour les prochains décodages.
         self.leaves_preds = leaves_preds
-        
+
         return leaves_preds
-    
+
     def apply(self, X, check_input=True):
         """Return the index of the leaf that each sample is predicted as.
 
@@ -680,7 +682,6 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
         check_is_fitted(self)
         X = self._validate_X_predict(X, check_input)
         return self.tree_.apply(X)
-
 
     def score(self, X, y, candidates=None, metric="accuracy", sample_weight=None):
         """
@@ -743,10 +744,12 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
                 return_top_k = int(metric[4:])
                 top_k_score = True
             except ValueError:
-                raise(ValueError("Pour calculer le score 'top k', veuillez renseigner un nombre juste après le 'top_'. Nous avons reçu '"+metric[4:]+"'."))
-        
+                raise (ValueError(
+                    "Pour calculer le score 'top k', veuillez renseigner un nombre juste après le 'top_'. Nous avons reçu '" + metric[
+                                                                                                                               4:] + "'."))
+
         y_pred = self.predict(X, candidates=candidates, return_top_k=return_top_k)
-        
+
         if "reg" in kernel:
             return r2_score(y, y_pred, sample_weight=sample_weight)
         else:
@@ -755,9 +758,9 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
             elif metric == "hamming":
                 return 1 - hamming_loss(y, y_pred, sample_weight=sample_weight)
             elif top_k_score:
-                contains_true = [False]*len(y)
+                contains_true = [False] * len(y)
                 for ex in range(len(y)):
-                    for candidate in range(ex*return_top_k, (ex+1)*return_top_k):
+                    for candidate in range(ex * return_top_k, (ex + 1) * return_top_k):
                         if np.atleast_1d(y[ex] == y_pred[candidate]).all():
                             contains_true[ex] = True
                 if sample_weight is not None:
@@ -767,7 +770,6 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
                 return score
             else:
                 raise ValueError("La metric renseignée n'est pas prise en charge.")
-
 
     def r2_score_in_Hilbert(self, X, y, sample_weight=None):
         """
@@ -791,9 +793,9 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
         score : float
             R2 score of the predictions in the Hilbert space wrt. the embedded values of y.
         """
-        
+
         kernel = self.kernel
-        
+
         if not isinstance(kernel, Kernel):
             params = ()
             if isinstance(kernel, tuple):
@@ -801,47 +803,48 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
             try:
                 kernel = KERNELS[kernel](*params)
             except KeyError:
-                print("Error : 'kernel' attribute (or its first element if it is a tuple) has to be either a Kernel class or a string which is a valid key for the dict 'KERNELS'.")
+                print(
+                    "Error : 'kernel' attribute (or its first element if it is a tuple) has to be either a Kernel class or a string which is a valid key for the dict 'KERNELS'.")
                 raise
-        
-        weights = self.predict_weights(X)
-        
-        K_train = self.tree_.K_y
-        
-        K_test_train = kernel.get_Gram_matrix(y, self.tree_.y)
-        
-        K_test_test = kernel.get_Gram_matrix(y)
 
+        weights = self.predict_weights(X)
+
+        K_train = self.tree_.K_y
+
+        K_test_train = kernel.get_Gram_matrix(y, self.tree_.y)
+
+        K_test_test = kernel.get_Gram_matrix(y)
 
         if sample_weight is not None:
             if len(sample_weight != len(y)):
                 raise ValueError("sample_weights has to have the same length as y. "
-                                 "y is len "+str(len(y))+", and sample_weight is len "+str(len(sample_weight)))
-            sample_weight[sample_weight<0] = 0
+                                 "y is len " + str(len(y)) + ", and sample_weight is len " + str(len(sample_weight)))
+            sample_weight[sample_weight < 0] = 0
             if np.sum(sample_weight) == 0:
-                warnings.warn("all weights in sample_weight were set to 0 or bellow. It is unvalid so sample_weight will be ignored.")
+                warnings.warn(
+                    "all weights in sample_weight were set to 0 or bellow. It is unvalid so sample_weight will be ignored.")
                 sample_weight = None
 
-        res_sq_sums = np.diag(K_test_test) - 2 * np.diag(K_test_train @ (weights.T)) + np.diag(weights @ K_train @ (weights.T))
-        
+        res_sq_sums = np.diag(K_test_test) - 2 * np.diag(K_test_train @ (weights.T)) + np.diag(
+            weights @ K_train @ (weights.T))
+
         if sample_weight is not None:
-            tot_sq_sums = np.diag(K_test_test) - np.sum(K_test_test @ np.diag(sample_weight), axis=1) / np.sum(sample_weight)
+            tot_sq_sums = np.diag(K_test_test) - np.sum(K_test_test @ np.diag(sample_weight), axis=1) / np.sum(
+                sample_weight)
         else:
-            tot_sq_sums = np.diag(K_test_test) - np.sum(K_test_test, axis=1)/K_test_test.shape[1]
-        
-        
+            tot_sq_sums = np.diag(K_test_test) - np.sum(K_test_test, axis=1) / K_test_test.shape[1]
+
         if sample_weight is not None:
-            res_sq_sum = np.sum(sample_weight*res_sq_sums) / np.sum(sample_weight)
-            tot_sq_sum = np.sum(sample_weight*tot_sq_sums) / np.sum(sample_weight)
+            res_sq_sum = np.sum(sample_weight * res_sq_sums) / np.sum(sample_weight)
+            tot_sq_sum = np.sum(sample_weight * tot_sq_sums) / np.sum(sample_weight)
         else:
             res_sq_sum = np.mean(res_sq_sums)
             tot_sq_sum = np.mean(tot_sq_sums)
-        
-        r2 = 1 - ( res_sq_sum / tot_sq_sum )
-        
+
+        r2 = 1 - (res_sq_sum / tot_sq_sum)
+
         return r2
 
-    
     def decision_path(self, X, check_input=True):
         """Return the decision path in the tree.
 
@@ -915,7 +918,7 @@ class BaseKernelizedOutputTree(StructuredOutputMixin, BaseEstimator, metaclass=A
             impurities : ndarray
                 Sum of the impurities of the subtree leaves for the
                 corresponding alpha value in ``ccp_alphas``.
-        """        
+        """
         est = clone(self).set_params(ccp_alpha=0.0)
         est.fit(X, y, sample_weight=sample_weight)
         return Bunch(**ccp_pruning_path(est.tree_))
@@ -1129,6 +1132,7 @@ class OK3Regressor(BaseKernelizedOutputTree):
     array([-0.39..., -0.46...,  0.02...,  0.06..., -0.50...,
            0.16...,  0.11..., -0.73..., -0.30..., -0.00...])
     """
+
     @_deprecate_positional_args
     def __init__(self, *,
                  criterion="mse",
@@ -1142,7 +1146,7 @@ class OK3Regressor(BaseKernelizedOutputTree):
                  max_leaf_nodes=None,
                  min_impurity_decrease=0.,
                  min_impurity_split=None,
-                 ccp_alpha=0.0, 
+                 ccp_alpha=0.0,
                  kernel="linear"):
         super().__init__(
             criterion=criterion,
@@ -1156,7 +1160,7 @@ class OK3Regressor(BaseKernelizedOutputTree):
             random_state=random_state,
             min_impurity_decrease=min_impurity_decrease,
             min_impurity_split=min_impurity_split,
-            ccp_alpha=ccp_alpha, 
+            ccp_alpha=ccp_alpha,
             kernel=kernel)
 
     def fit(self, X, y, sample_weight=None, check_input=True,
@@ -1207,8 +1211,8 @@ class OK3Regressor(BaseKernelizedOutputTree):
             sample_weight=sample_weight,
             check_input=check_input,
             X_idx_sorted=X_idx_sorted,
-            kernel=kernel, 
-            in_ensemble=in_ensemble, 
+            kernel=kernel,
+            in_ensemble=in_ensemble,
             Gram_y=Gram_y)
         return self
 
@@ -1390,6 +1394,7 @@ class ExtraOK3Regressor(OK3Regressor):
     >>> reg.score(X_test, y_test)
     0.33...
     """
+
     @_deprecate_positional_args
     def __init__(self, *,
                  criterion="mse",
@@ -1403,7 +1408,7 @@ class ExtraOK3Regressor(OK3Regressor):
                  min_impurity_decrease=0.,
                  min_impurity_split=None,
                  max_leaf_nodes=None,
-                 ccp_alpha=0.0, 
+                 ccp_alpha=0.0,
                  kernel="linear"):
         super().__init__(
             criterion=criterion,
@@ -1417,5 +1422,5 @@ class ExtraOK3Regressor(OK3Regressor):
             min_impurity_decrease=min_impurity_decrease,
             min_impurity_split=min_impurity_split,
             random_state=random_state,
-            ccp_alpha=ccp_alpha, 
+            ccp_alpha=ccp_alpha,
             kernel=kernel)

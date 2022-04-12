@@ -1,11 +1,11 @@
 """Test module for model/utils.py"""
-#import pytest
-#from os import listdir
-#from os.path import isdir, isfile, dirname, join
-#from stpredictions.models.DIOKR.utils import project_root
+# import pytest
+# from os import listdir
+# from os.path import isdir, isfile, dirname, join
+# from stpredictions.models.DIOKR.utils import project_root
 
-#BROKEN
-#class TestProjectRoot():
+# BROKEN
+# class TestProjectRoot():
 #    """Test class for function project_root"""
 #
 #    def test_project_root(self):

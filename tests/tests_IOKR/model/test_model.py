@@ -30,8 +30,8 @@ ESTIMATORS = {
 iris = load_iris(return_X_y=True)
 
 # Datasets used
-bibtex = load_bibtex(join(project_root(), "datasets/bibtex"))
-corel5k = load_corel5k(join(project_root(), "datasets/corel5k"))
+bibtex = load_bibtex()
+corel5k = load_corel5k()
 
 DATASETS = {
     "bibtex": {"X": bibtex[0], "Y": bibtex[1]},
@@ -57,9 +57,9 @@ DATASETS = {
 
 
 def fitted_predicted_IOKR(
-    X,
-    y,
-    L=1e-5,
+        X,
+        y,
+        L=1e-5,
 ):
     """Function running IOKR and returning Y_train, Y_test, and Y_preds, for readability purposes
 
@@ -149,7 +149,7 @@ class TestFit:
         )
         fit_time = time.time() - t0
         assert (
-            fit_time < 100
+                fit_time < 100
         ), f'Failed with {nameTree}/{nameSet}: "fit_time" is over 100 seconds'
 
     @pytest.mark.parametrize("nameSet, dataXY", DATASETS.items())
@@ -242,10 +242,10 @@ class TestFit:
 
     @pytest.mark.parametrize("nameTree, Tree", ESTIMATORS.items())
     def test_raise_error_on_1d_input(
-        self,
-        nameTree,
-        Tree,
-        L=1e-5,
+            self,
+            nameTree,
+            Tree,
+            L=1e-5,
     ):
         """Test that an error is raised when X or Y are 1D arrays
 
@@ -333,11 +333,11 @@ class TestPredict:
         )
         # Check returned arrays' type
         assert (
-            returned_IOKR["Y_train"].size != 0
+                returned_IOKR["Y_train"].size != 0
         ), "Failed with {name}:'Y_train' is empty"
         assert returned_IOKR["Y_test"].size != 0, "Failed with {name}:'Y_test' is empty"
         assert (
-            returned_IOKR["Y_pred_test"].size != 0
+                returned_IOKR["Y_pred_test"].size != 0
         ), "Failed with {name}:'Y_pred_test' is empty"
         assert isinstance(
             returned_IOKR["Y_train"], np.ndarray
@@ -389,7 +389,7 @@ class TestPredict:
         )
 
     def test_bad_X_y_inputation(
-        self,
+            self,
     ):
         """Tests for raised exceptions (To complete)
 
@@ -440,12 +440,12 @@ class TestPredict:
     @pytest.mark.parametrize("nameSet, dataXY", DATASETS.items())
     @pytest.mark.parametrize("nameTree, Tree", ESTIMATORS.items())
     def test_time(
-        self,
-        nameTree,
-        Tree,
-        nameSet,
-        dataXY,
-        L=1e-5,
+            self,
+            nameTree,
+            Tree,
+            nameSet,
+            dataXY,
+            L=1e-5,
     ):
         """Test the time for predicting
 
@@ -479,7 +479,7 @@ class TestPredict:
         # Y_pred_test = clf.predict(X_test=X_test, Y_candidates=Y_train)
         test_pred_time = time.time() - test_t0
         assert (
-            test_pred_time < 100
+                test_pred_time < 100
         ), f'Failed with {nameTree}/{nameSet}:"test_pred_time" is over 100 seconds'
 
     @pytest.mark.parametrize("nameSet, dataXY", DATASETS.items())
@@ -578,11 +578,11 @@ class TestPredict:
         threshold = 0
         # Check f1 score range
         assert (
-            1.0 >= f1_test >= 0.0
+                1.0 >= f1_test >= 0.0
         ), f"Failed with {nameTree}/{nameSet}: f1 score is of {f1_test}, should be between 0 and 1"
         # assert f1 score is enough
         assert (
-            f1_test > threshold
+                f1_test > threshold
         ), f"Failed with {nameTree}/{nameSet}: f1_test = {f1_test}, but threshold set to {threshold}"
 
     @pytest.mark.parametrize("nameSet, dataXY", DATASETS.items())
@@ -613,7 +613,7 @@ class TestPredict:
         accuracy = accuracy_score(fp_IOKR["Y_test"], fp_IOKR["Y_pred_test"])
         threshold = 0
         assert (
-            accuracy > threshold
+                accuracy > threshold
         ), f"Failed with {nameTree}/{nameSet}: accuracy = {accuracy}, but threshold set to {threshold}"
 
     @pytest.mark.parametrize("nameSet, dataXY", DATASETS.items())
@@ -644,7 +644,7 @@ class TestPredict:
         test_mse = MSE(fp_IOKR["Y_test"], fp_IOKR["Y_pred_test"])
         threshold = 0
         assert (
-            test_mse > threshold
+                test_mse > threshold
         ), f"Failed with {nameTree}/{nameSet}: mse = {test_mse}, but threshold set to {threshold} "
 
 
@@ -680,7 +680,6 @@ class TestAlpha:
         assert isinstance(
             A, np.ndarray
         ), f"Failed with {nameSet}: A should be 'np.ndarray', but is {type(A)}"
-
 
 # To confirm
 # def test_sklearn_check_estimator():

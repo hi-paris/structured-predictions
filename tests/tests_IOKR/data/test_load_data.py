@@ -15,7 +15,7 @@ class TestLoadBibtex():
         -------
         None
         """
-        load = load_bibtex("stpredictions/datasets/bibtex")
+        load = load_bibtex()
         print(load)
         assert load[0] is not None, "Expected variable: 'X'"
         assert load[1] is not None, "Expected variable: 'Y'"
@@ -29,7 +29,7 @@ class TestLoadBibtex():
         -------
         None
         """
-        load = load_bibtex("stpredictions/datasets/bibtex")
+        load = load_bibtex()
         actual_x = type(load[0])
         actual_y = type(load[1])
         actual_x_txt = type(load[2])
@@ -49,7 +49,7 @@ class TestLoadBibtex():
         -------
         None
         """
-        load = load_bibtex("stpredictions/datasets/bibtex")
+        load = load_bibtex()
         actual_x_shape = load[0].shape
         actual_y_shape = load[1].shape
         actual_x_txt_len = len(load[2])
@@ -63,6 +63,7 @@ class TestLoadBibtex():
         assert actual_y_shape, f"'Y' should be {expected_y_shape}, but is {actual_y_shape} "
         assert actual_x_txt_len, f"'X_txt' should be {expected_x_txt_len}, but is {actual_x_txt_len} "
         assert expected_y_txt_len, f"'Y_txt' should be {expected_y_txt_len}, but is {actual_y_txt_len} "
+
 
 #    def test_check_X_y(self):
 #        """Input validation for standard estimators.
@@ -82,7 +83,6 @@ class TestLoadBibtex():
 
 
 class TestLoadCorel5k():
-
     """Test class for the function: load_corel5k"""
 
     def test_returned_variables_not_empty(self):
@@ -92,7 +92,7 @@ class TestLoadCorel5k():
         -------
         None
         """
-        load = load_corel5k("stpredictions/datasets/corel5k")
+        load = load_corel5k()
         print(load)
         assert load[0] is not None, "Expected variable: 'X'"
         assert load[1] is not None, "Expected variable: 'Y'"
@@ -106,7 +106,7 @@ class TestLoadCorel5k():
         -------
         None
         """
-        load = load_corel5k("stpredictions/datasets/corel5k")
+        load = load_corel5k()
         actual_x = type(load[0])
         actual_y = type(load[1])
         actual_x_txt = type(load[2])
@@ -126,7 +126,7 @@ class TestLoadCorel5k():
         -------
         None
         """
-        load = load_corel5k("stpredictions/datasets/corel5k")
+        load = load_corel5k()
         actual_x_shape = load[0].shape
         actual_y_shape = load[1].shape
         actual_x_txt_len = len(load[2])
