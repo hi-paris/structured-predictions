@@ -15,7 +15,7 @@ class TestLoadBibtex():
         -------
         None
         """
-        load = load_bibtex("stpredictions/datasets/bibtex")
+        load = load_bibtex()
         print(load)
         assert load[0] is not None, "Expected variable: 'X'"
         assert load[1] is not None, "Expected variable: 'Y'"

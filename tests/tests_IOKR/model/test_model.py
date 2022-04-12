@@ -30,8 +30,8 @@ ESTIMATORS = {
 iris = load_iris(return_X_y=True)
 
 # Datasets used
-bibtex = load_bibtex(join(project_root(), "datasets/bibtex"))
-corel5k = load_corel5k(join(project_root(), "datasets/corel5k"))
+bibtex = load_bibtex()
+corel5k = load_corel5k()
 
 DATASETS = {
     "bibtex": {"X": bibtex[0], "Y": bibtex[1]},
