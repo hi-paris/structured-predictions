@@ -18,19 +18,6 @@ In this Package you can use 3 differents types of models for structured predicti
 * Decision Tree Output Kernel - OK3
 * Deep Neural Network Output Kernel Predictions -DIOKR
 
-
-
-
-## IOKR
-
-This open source Python library provide several methods for Output Kernelization.
-
-
-Website and documentation: [https://IOKR.github.io/](https://IOKR.github.io/)
-
-Source Code (MIT): [https://github.com/IOKR/IOKR](https://github.com/IOKR/IOKR)
-
-
 ## Installation
 
 The library has been tested on Linux, MacOSX and Windows. It requires a C++ compiler for building/installing the EMD solver and relies on the following Python modules:
@@ -39,253 +26,75 @@ The library has been tested on Linux, MacOSX and Windows. It requires a C++ comp
 - Numpy (>=1.16)
 - Scipy (>=1.0)
 - Scikit-learn (>=1.0) 
+- Torch
+- Scikit-multilearn
+- liac-arff
+
 
 #### Pip installation
 
 
-You can install the toolbox through PyPI with:
+You can install the toolbox through PyPI Test with:
 
 ```console
-pip install IOKR
+pip install -i https://test.pypi.org/simple/ structured-predictions
 ```
 
-#### Anaconda installation with conda-forge
 
-If you use the Anaconda python distribution, POT is available in [conda-forge](https://conda-forge.org). To install it and the required dependencies:
+## IOKR
 
-```console
-conda install -c conda-forge IOKR
-```
-
-#### Post installation check
-After a correct installation, you should be able to import the module without errors:
-
+### Example Bibtex
 ```python
-import IOKR
-```
-
-## Examples
-
-### Short examples
-
-* Import the toolbox
-
-```python
-import IOKR
-```
-
-* Run IOKR
-
-```python
-from IOKR.model.model import IOKR
 from sklearn.model_selection import train_test_split
-from IOKR.data.load_data import load_bibtex
 from sklearn.metrics import f1_score
 
-path = "IOKR/data/bibtex"
-X, Y, _, _ = load_bibtex(path)
+from stpredictions.models.IOKR.model import IOKR
+from stpredictions.datasets import load_bibtex
+
+X, Y, _, _ = load_bibtex()
 
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.33, random_state=42)
 
 clf = IOKR()
 clf.verbose = 1
 L = 1e-5
-sx = 1000
-sy = 10
-
-clf.fit(X=X_train, Y=Y_train, L=L, sx=sx, sy=sy)
-Y_pred_train = clf.predict(X_test=X_train)
-Y_pred_test = clf.predict(X_test=X_test)
-f1_train = f1_score(Y_pred_train, Y_train, average='samples')
+clf.fit(X=X_train, Y=Y_train, L=L)
+Y_pred_test = clf.predict(X_test=X_test, Y_candidates=Y_test)
 f1_test = f1_score(Y_pred_test, Y_test, average='samples')
-print("Train f1 score:", f1_train,"/", "Test f1 score:", f1_test)
+print( "Test f1 score:", f1_test)
 ```
 
-### Examples and Notebooks
+### Example Corel5k
+```python
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import f1_score
 
-The examples folder contain several examples and use case for the library. The full documentation with examples and output is available on [https://IOKR.github.io/](https://IOKR.github.io/).
+from stpredictions.models.IOKR.model import IOKR
+from stpredictions.datasets import load_corel5k
 
+X, Y, _, _ = load_corel5k()
 
-## Acknowledgements
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.33, random_state=42)
 
-This toolbox has been created and is maintained by
-
-* [Hi! PARIS](https://www.hi-paris.fr/)
-
-
-The contributors to this library are 
-
-* [Florence d'Alché-Buc](https://perso.telecom-paristech.fr/fdalche/) (Researcher)
-* [Luc Motte](https://www.telecom-paris.fr/fr/recherche/laboratoires/laboratoire-traitement-et-communication-de-linformation-ltci/les-equipes-de-recherche/signal-statistique-et-apprentissage-s2a/personnes) (Researcher)
-* [Tamim El Ahmad](https://www.telecom-paris.fr/fr/recherche/laboratoires/laboratoire-traitement-et-communication-de-linformation-ltci/les-equipes-de-recherche/signal-statistique-et-apprentissage-s2a/personnes) (Researcher)
-* [Gaëtan Brison](https://engineeringteam.hi-paris.fr/about-us/) (Engineer)
-* [Danaël Schlewer-Becker](https://engineeringteam.hi-paris.fr/about-us/) (Engineer)
-* [Awais Sani](https://engineeringteam.hi-paris.fr/about-us/) (Engineer)
-
-
-## Contributions and code of conduct
-
-Every contribution is welcome and should respect the [contribution guidelines](.github/CONTRIBUTING.md). Each member of the project is expected to follow the [code of conduct](.github/CODE_OF_CONDUCT.md).
-
-## Support
-
-You can ask questions and join the development discussion:
-
-* On the IOKR [slack channel](https://IOKR-toolbox.slack.com)
-* On the IOKR [gitter channel](https://gitter.im/IOKR/community)
-* On the IOKR [mailing list](https://mail.python.org/mm3/mailman3/lists/IOKR.python.org/)
-
-You can also post bug reports and feature requests in Github issues. Make sure to read our [guidelines](.github/CONTRIBUTING.md) first.
-
-## References
-
-[1] Brouard, C., d'Alché-Buc, F., Szafranski, M. (2013, November). [Semi-supervised Penalized Output Kernel Regression for
-Link Prediction](https://hal.archives-ouvertes.fr/hal-00654123/document). 28th International Conference on Machine Learning (ICML 2011),
-pp.593–600.
-
-[2] Brouard, C., Szafranski, M., d'Alché-Buc, F. (2016). [Input Output Kernel Regression: Supervised and Semi-Supervised Structured Output Prediction with Operator-Valued Kernels](https://hal.archives-ouvertes.fr/hal-01601982/document).  Journal of Machine
-Learning Research, Microtome Publishing.
-
-[3] Brouard, C., Shen, H., Dührkop, K., d'Alché-Buc, F., Böcker, S., & Rousu, J. (2016) [Fast metabolite identification with input output kernel regression](https://hal.inrae.fr/hal-02637720/document).  Bioinformatics, Oxford University
-Press (OUP)
-
-
-
-![alt text](images/readme_iokr_equations.png)
+clf = IOKR()
+clf.verbose = 1
+L = 1e-5
+clf.fit(X=X_train, Y=Y_train, L=L)
+Y_pred_test = clf.predict(X_test=X_test, Y_candidates=Y_test)
+f1_test = f1_score(Y_pred_test, Y_test, average='samples')
+print( "Test f1 score:", f1_test)
+```
 
 
 ## OK3
 
-classes and methods to implement the OK3 method : decision trees with a kernelized output for structured prediction.
-
-To easily test OK3, it is built in order to take as argument output vectors matrixes rather than Gram matrixes only.
-It will build internally the Gram output matrix and return it to the 'true" fit and predict methods.
-
-To test the OK3 trees with multilabel classification or regression on vector data (with Gini impurity and variance).
-Numerous tests are drafted in tests/test_tree_clf_and_reg.py and tests/tests_complementary.py
-
-## Protocol :
-
-1 - Clone 'pythonOK3' project
-
-2 - In cloned repertory, execute in terminal : `python setup.py build_ext --inplace`
-    It will compile the Cython files, et possibly create warnings (to ignore)
-
-3 - Eventually restart the Python kernel to take account of the compiled files changes.
-
-4 - To execute the tests, input in terminal : `pytest tests/test_tree_clf_and_reg.py`
-    It will execute the file's tests (Total lenght sub 11 min)
-    These tests are used on regression and classification tasks only, and tests on structured problems are still to develop.
-
-5 - Another way to quickly test those classification and regression functions and to compare the results with the classic classification and regression trees is to execute the files "test_classification.py" and "test_regression.py" that will print lines demonstrating the uniformity of classic and OK3 trees.
-
-6 - To test the structured prediction (different than simple classification and regression), cf. file "exemple_utilisation.py" (or check below) that describes how to use the OK3 trees (on a multilabel classification close to a structured prediction problem).
-
-
-
-This open source Python library provide several methods for Output Kernelization.
-
-
-Website and documentation: [https://OK3.github.io/](https://OK3.github.io/)
-
-Source Code (MIT): [https://github.com/OK3/OK3](https://github.com/OK3/OK3)
-
-
-## Installation
-
-The library has been tested on Linux, MacOSX and Windows. It requires a C++ compiler for building/installing the EMD solver and relies on the following Python modules:
-
-- Pandas (>=1.2)
-- Numpy (>=1.16)
-- Scipy (>=1.0)
-- Scikit-learn (>=1.0) 
-
-#### Pip installation
-
-
-You can install the toolbox through PyPI with:
-
-```console
-pip install OK3
-```
-
-#### Anaconda installation with conda-forge
-
-If you use the Anaconda python distribution, POT is available in [conda-forge](https://conda-forge.org). To install it and the required dependencies:
-
-```console
-conda install -c conda-forge OK3
-```
-
-#### Post installation check
-After a correct installation, you should be able to import the module without errors:
+### Usecase of OK3 Trees
 
 ```python
-import OK3
-```
-
-
-
-
-### Examples and Notebooks
-
-The examples folder contain several examples and use case for the library. The full documentation with examples and output is available on [https://OK3.github.io/](https://OK3.github.io/).
-
-
-## Acknowledgements
-
-This toolbox has been created and is maintained by
-
-* [Hi! PARIS](https://www.hi-paris.fr/)
-
-
-The contributors to this library are 
-
-* [Florence d'Alché-Buc](https://perso.telecom-paristech.fr/fdalche/) (Researcher)
-
-
-
-## Contributions and code of conduct
-
-Every contribution is welcome and should respect the [contribution guidelines](.github/CONTRIBUTING.md). Each member of the project is expected to follow the [code of conduct](.github/CODE_OF_CONDUCT.md).
-
-## Support
-
-You can ask questions and join the development discussion:
-
-* On the IOKR [slack channel](https://OK3-toolbox.slack.com)
-* On the IOKR [gitter channel](https://gitter.im/OK3/community)
-* On the IOKR [mailing list](https://mail.python.org/mm3/mailman3/lists/OK3.python.org/)
-
-You can also post bug reports and feature requests in Github issues. Make sure to read our [guidelines](.github/CONTRIBUTING.md) first.
-
-## References
-
-[1] Brouard, C., d'Alché-Buc, F., Szafranski, M. (2013, November). [Semi-supervised Penalized Output Kernel Regression for
-Link Prediction](https://hal.archives-ouvertes.fr/hal-00654123/document). 28th International Conference on Machine Learning (ICML 2011),
-pp.593–600.
-
-[2] Brouard, C., Szafranski, M., d'Alché-Buc, F. (2016). [Input Output Kernel Regression: Supervised and Semi-Supervised Structured Output Prediction with Operator-Valued Kernels](https://hal.archives-ouvertes.fr/hal-01601982/document).  Journal of Machine
-Learning Research, Microtome Publishing.
-
-[3] Brouard, C., Shen, H., Dührkop, K., d'Alché-Buc, F., Böcker, S., & Rousu, J. (2016) [Fast metabolite identification with input output kernel regression](https://hal.inrae.fr/hal-02637720/document).  Bioinformatics, Oxford University
-Press (OUP)
-
-
-
-
-
-## Usecase of OK3 Trees
-
-```python
-############################################################
-# # # # #           How to use OK3 Trees           # # # # #
-############################################################
-
-from _classes import OK3Regressor, ExtraOK3Regressor
-from kernel import *
 from sklearn import datasets
 
+from stpredictions.models.OK3._classes import OK3Regressor, ExtraOK3Regressor
+from stpredictions.models.OK3.kernel import *
 
 #%% Generate a dataset with outputs being long vectors of 0 and 1
 
@@ -405,153 +214,83 @@ hamming_score = ok3.score(X_test, y_test, metric="hamming") # We can specify a '
 # To get it we need to fulfill the candidates' ensemble in the function on each call:
 top_3_score = ok3.score(X_test, y_test, candidates=y_candidates, metric="top_3") 
 # We can fulfill any int rather than the "3" above :
-top_11_score = ok3.score(X_test, y_test, candidates=y_candidates, metric="top_11") 
+top_11_score = ok3.score(X_test, y_test, candidates=y_candidates, metric="top_11")
 
-
-#%% Miscellaneous things to know
-
-##### About 'candidates' #####
-
-# When the candidates ensembles are required, they are not provided, 
-# So the research is done with the training dataset's outputs' ensemble,  
-# memorized by the tree (faster).
-
-# The candidates can be informed in the functions 'decode_tree', 'predict', 
-# 'decode' (which is equal to 'predict), and in 'score'.
-# Once that an ensemble of candidates is fulfilled in one of this functions, the ensemble of 
-# possible predictions on leafs is memorized by the estimator (but not the ensemble of candidates 
-# itself because too big) , that's why
-# it is not mandatory and even unwishable compute-wise to inform several times 
-# the same ensemble of candidates. The first time is enough. 
-# On the other hand when we compute a top k accuracy score then it is mandatory 
-# to inform an ensemble of candidates because the decoding is different 
-# if we need to return several predictions for each leaf.
+print( "top_3_score:", top_3_score)
+print( "top_11_score:", top_11_score)
 
 ```
 
-## Usecase of OK3 forests
+### Usecase of OK3 forests
 
 ```python
-###########################################################
-# # # # #   How to use OK3's forests   # # # # #
-############################################################
 
-from _forest import RandomOKForestRegressor, ExtraOKTreesRegressor
-from kernel import *
-from sklearn import datasets
-
-
-#%% Generate a dataset with outputs being big vectors of 0 and 1
-
-n_samples=1000
-n_features=100
-n_classes=1000
-n_labels=2
-
-# Fit on a half, 
-# Testing on a quarter, 
-# Last quarter used as possible outputs' ensemble
-
-# It is a big dataset for the algorithm, so it is kind of slow,
-# Using parameters regulating the tree's growth will help:
-# --> max_depth, max_features s 
-
-X, y = datasets.make_multilabel_classification(n_samples=n_samples, 
-                                               n_features=n_features, 
-                                               n_classes=n_classes, 
-                                               n_labels=n_labels)
-
-# First half is the training set
-X_train = X[:n_samples//2]
-y_train = y[:n_samples//2]
-
-# Third quarter is the test set
-X_test = X[n_samples//2 : 3*n_samples//4]
-y_test = y[n_samples//2 : 3*n_samples//4]
-
-# The last quarter of outputs is used to have candidates for the tree's decoding
-# Predictions will be in this ensemble
-y_candidates = y[3*n_samples//4:]
-
-
-#%% Fit a forest to the data
-
-# A kernel must be chosen to be used on output datas in vectorial format above
-
-# For now the list of usable kernels is :
-kernel_names = ["linear", "mean_dirac", "gaussian", "laplacian"]
-
-# Gaussian and exponential kernels have a parameter gamma to the the width of the kernel
-
-# Let's choose a kernel
-# We can indifferently input the name (and its potential parameters) :
-kernel1 = ("gaussian", .1) # ou bien kernel1 = "linear"
-
-# Then we can create our estimator, that will work calculating gaussian kernels between outputs :
-okforest = RandomOKForestRegressor(n_estimators=20, max_depth=6, max_features='sqrt', kernel=kernel1) 
-
-# It is also while creating the estimator that we can fulfill 
-# the maximum depth, the impurity's minimal reduction on each split, 
-# The minimal number of samples in each leaf, etc as in classical trees
-
-# We can now fit the estimator to our training data :
-okforest.fit(X_train, y_train)
-# We could also input a "sample_weight" parameter : a weight vector, positive or null on the training examples: 
-# A weight "0" in an example means that the example will not be taken into account
-
-#%% (OPTIONAL) Before decoding the tree
-
-# We can get the R2 score of our predictions in the Hilbert space in which are set the outputs
-r2_score = okforest.r2_score_in_Hilbert(X_test, y_test) # We can specify a vector sample_weight
-
-
-#%% Outputs' prediction
-
-# For decoding, we can propose an ensemble of candidates' outputs, 
-# or we can "None" it. In this case the candidates' outputs are the training example's outputs
-candidates_sets = [None, y_candidates]
-# We can try with candidates=y_candidates or with nothing (ou None)
-
-# Or we can decode for a serie of inputs, by fulfilling the candidates
-y_pred_1 = okforest.predict(X_test[::2], candidates=y_candidates)
-y_pred_2 = okforest.predict(X_test[1::2])  # Remember the predictions from each leaf
-
-
-#%% Performance's evaluation
-
-# We can calculate the R2 score in the Hilbert's Space as said before (no need for decoding):
-r2_score = okforest.r2_score_in_Hilbert(X_test, y_test) # on peut y spécifier un vecteur sample_weight
-
-# We can compute scores on the real decoded datas :
-hamming_score = okforest.score(X_test, y_test, metric="hamming") # on peut y spécifier un vecteur sample_weight
-# Note : It is not necessary to fulfill again a candidates' ensemble since OK3 already got one
-
-# One of the KPI available for this score function is the 'top k accuracy'.
-# To get it we need to fulfill the candidates' ensemble in the function on each call:
-top_3_score = okforest.score(X_test, y_test, candidates=y_candidates, metric="top_3") 
-# We can fulfill any int rather than the "3" above :
-top_11_score = okforest.score(X_test, y_test, candidates=y_candidates, metric="top_11") 
-
-
-#%% Miscellaneous things to know
-
-##### About 'candidates' #####
-
-# When the candidates ensembles are required, they are not provided, 
-# So the research is done with the training dataset's outputs' ensemble,  
-# memorized by the tree (faster).
-
-# The candidates can be informed in the functions 'decode_tree', 'predict', 
-# 'decode' (which is equal to 'predict), and in 'score'.
-# Once that an ensemble of candidates is fulfilled in one of this functions, the ensemble of 
-# possible predictions on leafs is memorized by the estimator (but not the ensemble of candidates 
-# itself because too big) , that's why
-# it is not mandatory and even unwishable compute-wise to inform several times 
-# the same ensemble of candidates. The first time is enough. 
-# On the other hand when we compute a top k accuracy score then it is mandatory 
-# to inform an ensemble of candidates because the decoding is different 
-# if we need to return several predictions for each leaf.
 ```
 
 
 ## DIOKR
+
+
+#### Anaconda installation with conda-forge
+
+If you use the Anaconda python distribution, stpredictions is available in [conda-forge](https://conda-forge.org). To install it and the required dependencies:
+
+```console
+conda install -c conda-forge structured-predictions
+```
+
+#### Post installation check
+After a correct installation, you should be able to import the module without errors:
+
+```python
+import structured-predictions
+```
+
+### Examples and Notebooks
+
+The examples folder contain several examples and use case for the library. The full documentation with examples and output is available on [https://IOKR.github.io/](https://IOKR.github.io/).
+
+
+## Acknowledgements
+
+This toolbox has been created and is maintained by
+
+* [Hi! PARIS](https://www.hi-paris.fr/)
+
+
+The contributors to this library are 
+
+* [Florence d'Alché-Buc](https://perso.telecom-paristech.fr/fdalche/) (Researcher)
+* [Luc Motte](https://www.telecom-paris.fr/fr/recherche/laboratoires/laboratoire-traitement-et-communication-de-linformation-ltci/les-equipes-de-recherche/signal-statistique-et-apprentissage-s2a/personnes) (Researcher)
+* [Tamim El Ahmad](https://www.telecom-paris.fr/fr/recherche/laboratoires/laboratoire-traitement-et-communication-de-linformation-ltci/les-equipes-de-recherche/signal-statistique-et-apprentissage-s2a/personnes) (Researcher)
+* [Gaëtan Brison](https://engineeringteam.hi-paris.fr/about-us/) (Engineer)
+* [Danaël Schlewer-Becker](https://engineeringteam.hi-paris.fr/about-us/) (Engineer)
+* [Awais Sani](https://engineeringteam.hi-paris.fr/about-us/) (Engineer)
+
+
+## Contributions and code of conduct
+
+Every contribution is welcome and should respect the [contribution guidelines](.github/CONTRIBUTING.md). Each member of the project is expected to follow the [code of conduct](.github/CODE_OF_CONDUCT.md).
+
+## Support
+
+You can ask questions and join the development discussion:
+
+* On the structured-predictions [slack channel](https://structured-predictions-toolbox.slack.com)
+* On the IOKR [gitter channel](https://gitter.im/structured-predictions/community)
+* On the IOKR [mailing list](https://mail.python.org/mm3/mailman3/lists/structured-predictions.python.org/)
+
+You can also post bug reports and feature requests in Github issues. Make sure to read our [guidelines](.github/CONTRIBUTING.md) first.
+
+## References
+
+[1] Brouard, C., d'Alché-Buc, F., Szafranski, M. (2013, November). [Semi-supervised Penalized Output Kernel Regression for
+Link Prediction](https://hal.archives-ouvertes.fr/hal-00654123/document). 28th International Conference on Machine Learning (ICML 2011),
+pp.593–600.
+
+[2] Brouard, C., Szafranski, M., d'Alché-Buc, F. (2016). [Input Output Kernel Regression: Supervised and Semi-Supervised Structured Output Prediction with Operator-Valued Kernels](https://hal.archives-ouvertes.fr/hal-01601982/document).  Journal of Machine
+Learning Research, Microtome Publishing.
+
+[3] Brouard, C., Shen, H., Dührkop, K., d'Alché-Buc, F., Böcker, S., & Rousu, J. (2016) [Fast metabolite identification with input output kernel regression](https://hal.inrae.fr/hal-02637720/document).  Bioinformatics, Oxford University
+Press (OUP)
+
