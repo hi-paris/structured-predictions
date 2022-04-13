@@ -37,6 +37,7 @@ The library has been tested on Linux, MacOSX and Windows. It requires a C++ comp
 You can install the toolbox through PyPI Test with:
 
 ```console
+pip install scikit-multilearn
 pip install -i https://test.pypi.org/simple/ structured-predictions
 ```
 
