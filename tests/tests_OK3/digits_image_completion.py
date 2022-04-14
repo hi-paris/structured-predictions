@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+'''
 """
 Created on Sun Sep 13 15:45:26 2020
 
@@ -116,11 +117,11 @@ plt.imshow(np.vstack((X_test[test_ex].reshape(8, 16),
                       y_pred[test_ex].reshape(8, 16))),
            cmap='gray')
 plt.title("Up : True image\nDown : Image with the predicted lower half")
-# plt.imsave('/home/samuel/Bureau/prediction_ex_'+str(test_ex)+'.png', np.vstack((X_test[test_ex].reshape(8,16), 
-#                                                                                 y_test[test_ex].reshape(8,16), 
-#                                                                                 -np.ones((1,16)), 
-#                                                                                 X_test[test_ex].reshape(8,16), 
-#                                                                                 y_pred[test_ex].reshape(8,16))), 
+# plt.imsave('/home/samuel/Bureau/prediction_ex_'+str(test_ex)+'.png', np.vstack((X_test[test_ex].reshape(8,16),
+#                                                                                 y_test[test_ex].reshape(8,16),
+#                                                                                 -np.ones((1,16)),
+#                                                                                 X_test[test_ex].reshape(8,16),
+#                                                                                 y_pred[test_ex].reshape(8,16))),
 #            cmap='gray')
 
 # %%
@@ -130,3 +131,5 @@ pixels_importances = ok3.feature_importances_
 plt.imshow(pixels_importances.reshape(8, 16), cmap='gray')
 plt.title("Image of pixels (features) importances")
 plt.show()
+
+'''

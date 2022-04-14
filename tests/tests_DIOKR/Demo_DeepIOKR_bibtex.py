@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 from stpredictions.models.DIOKR import cost, kernel, estimator, IOKR
 from sklearn.metrics.pairwise import rbf_kernel
-from skmultilearn.dataset import load_from_arff
+from stpredictions.datasets.load_data import load_from_arff
 from scipy.linalg import block_diag
 import numpy as np
 from os.path import join
