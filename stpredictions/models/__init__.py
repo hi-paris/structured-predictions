@@ -4,7 +4,7 @@
 
 __author__ = """structured-predictions team"""
 __email__ = "awais.sani@telecom-paris.fr"
-__version__ = '0.0.7'
+__version__ = '0.0.8'
 
 
 import stpredictions.models.OK3
