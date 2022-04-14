@@ -7,6 +7,7 @@ Created on December 12, 2021
 import arff
 import numpy as np
 import os
+from scipy import sparse
 
 # bibtex
 # files (sparse): Train and test sets along with their union and the XML header [bibtex.rar]
