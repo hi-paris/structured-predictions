@@ -54,7 +54,7 @@ jobs:
         # make dist
         # python setup.py develop
         pip install -i https://test.pypi.org/simple/ structured-predictions==0.0.6
-        python tests/tests_DIOKR/Demo_DeepIOKR_bibtex.py
+        #python tests/tests_DIOKR/Demo_DeepIOKR_bibtex.py
     - name: Test with pytest
       run: |
         pip install pytest
