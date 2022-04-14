@@ -5,7 +5,6 @@ import copy
 dtype = torch.float
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-
 def linear_kernel(X, Y=None):
     """Compute linear Gram matrix between X and Y (or X)
     Parameters
@@ -25,7 +24,6 @@ def linear_kernel(X, Y=None):
     K = X @ Y.T
 
     return K
-
 
 def rbf_kernel(X, Y=None, gamma=None):
     """Compute rbf Gram matrix between X and Y (or X)
@@ -56,7 +54,6 @@ def rbf_kernel(X, Y=None, gamma=None):
 
     return K
 
-
 def gaussian_tani_kernel(X, Y=None, gamma=None):
     """Compute Gaussian Tanimoto Gram matrix between X and Y (or X)
     Parameters
@@ -77,9 +74,9 @@ def gaussian_tani_kernel(X, Y=None, gamma=None):
 
     if gamma is None:
         gamma = 1.0 / X.shape[1]
-
+    
     X_np, Y_np = X.data.numpy(), Y.data.numpy()
-
+    
     scalar_products = X_np.dot(Y_np.T)
     X_norms = np.linalg.norm(X_np, axis=1) ** 2
     Y_norms = np.linalg.norm(Y_np, axis=1) ** 2
@@ -101,7 +98,6 @@ class Kernel(object):
     def __init__(self):
         pass
 
-
 class Gaussian(Kernel):
 
     def __init__(self, gamma):
@@ -110,8 +106,7 @@ class Gaussian(Kernel):
 
     def compute_gram(self, X, Y=None):
         return rbf_kernel(X, Y, self.gamma)
-
-
+    
 class GaussianTani(Kernel):
 
     def __init__(self, gamma):
@@ -138,7 +133,7 @@ class LearnableGaussian(Kernel):
             return rbf_kernel(self.model.forward(X), Y=None, gamma=self.gamma)
         else:
             return rbf_kernel(self.model.forward(X), self.model.forward(Y), self.gamma)
-
+        
     def append_train_loss(self, train_loss):
         self.train_losses.append(train_loss)
 
@@ -147,7 +142,7 @@ class LearnableGaussian(Kernel):
 
     def append_time(self, time):
         self.times.append(time)
-
+        
     def clone_kernel(self):
         clone_gamma = self.gamma
         clone_model = copy.deepcopy(self.model)
@@ -156,8 +151,7 @@ class LearnableGaussian(Kernel):
 
     def clear_memory(self):
         self.train_losses, self.test_mse, self.test_f1, self.times = [], [], [], [0]
-
-
+        
 class LearnableLinear(Kernel):
 
     def __init__(self, model, optim_params):
@@ -167,16 +161,16 @@ class LearnableLinear(Kernel):
         self.train_losses = []
         self.test_losses = []
         self.times = [0]
-
+        
     def model_forward(self, X):
         return self.model.forward(X)
-
+        
     def compute_gram(self, X, Y=None):
         if Y is None:
             return linear_kernel(self.model.forward(X), Y=None)
         else:
             return linear_kernel(self.model.forward(X), self.model.forward(Y))
-
+            
     def clone_kernel(self):
         clone_model = copy.deepcopy(self.model)
         clone_optim_params = self.optim_params
@@ -193,3 +187,4 @@ class LearnableLinear(Kernel):
 
     def clear_memory(self):
         self.train_losses, self.test_mse, self.test_f1, self.times = [], [], [], [0]
+

@@ -1,23 +1,24 @@
 # Implementation
 import time
-# from sklearn.model_selection import KFold
+from sklearn.model_selection import KFold
 from sklearn.metrics.pairwise import linear_kernel, polynomial_kernel, rbf_kernel
-# from sklearn.metrics import f1_score
+from sklearn.metrics import f1_score
 import numpy as np
-# from stpredictions.datasets.load_data import load_bibtex
-# from sklearn.model_selection import train_test_split
-# import arff
+import pandas as pd
+from stpredictions.datasets.load_data import load_bibtex
+from sklearn.model_selection import train_test_split
+import arff
 from numpy.linalg import inv
-# import os
-
-# from line_profiler import LineProfiler
+import os
+#from line_profiler import LineProfiler
 
 
 # insert at position 1 in the path, as 0 is the path of this file.
 
-# dir_path = os.path.dirname("/Users/gaetanbrison/Documents/GitHub/IOKR/IOKR/data/bibtex")
-# dir_path = os.path.dirname(os.path.realpath(__file__))
-# dataset = arff.load(open('/Users/gaetanbrison/Documents/GitHub/IOKR/IOKR/data/bibtex/bibtex.arff'), "r")
+#dir_path = os.path.dirname("/Users/gaetanbrison/Documents/GitHub/IOKR/IOKR/data/bibtex")
+#dir_path = os.path.dirname(os.path.realpath(__file__))
+#dataset = arff.load(open('/Users/gaetanbrison/Documents/GitHub/IOKR/IOKR/data/bibtex/bibtex.arff'), "r")
+
 
 
 """
@@ -26,11 +27,12 @@ Created on December 12, 2021
 
 
 class IOKR:
+
     """
     Class used to apply Input and Output Kernel Regression
     """
 
-    #    @profile
+#    @profile
     def __init__(self):
         """
         Initialization of the below parameters.
@@ -53,7 +55,7 @@ class IOKR:
         self.input_kernel = None
         self.output_kernel = None
 
-    #    @profile
+#    @profile
     def fit(self, X, Y, L, input_kernel='linear', input_kernel_param=None):
         """
         Model Fitting
@@ -90,15 +92,16 @@ class IOKR:
         self.M = np.linalg.inv(Kx + n * L * np.eye(n))
         if self.verbose > 0:
             print(f'Fitting time: {time.time() - t0} in s')
-
+            
     def alpha(self, X_test):
 
         Kx = self.input_kernel(self.X_train, X_test)
         A = self.M.dot(Kx)
-
+        
         return A
 
-    #    @profile
+
+#    @profile
     def predict(self, X_test, Y_candidates, output_kernel='linear', output_kernel_param=None):
 
         """
@@ -136,7 +139,7 @@ class IOKR:
         Y_pred = Y_candidates[idx_pred]
         if self.verbose > 0:
             print(f'Decoding time: {time.time() - t0} in s')
-
+        
         return Y_pred
 
 
@@ -164,10 +167,10 @@ class IOKR:
 #### Example v2 Debugging
 
 
-# from IOKR.model.model import IOKR
-# from sklearn.model_selection import train_test_split
-# from IOKR.data.load_data import load_bibtex
-# from sklearn.metrics import f1_score
+#from IOKR.model.model import IOKR
+#from sklearn.model_selection import train_test_split
+#from IOKR.data.load_data import load_bibtex
+#from sklearn.metrics import f1_score
 '''
 path = "IOKR/data/bibtex"
 X, Y, _, _ = load_bibtex(path)

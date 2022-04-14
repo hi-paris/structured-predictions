@@ -1,9 +1,9 @@
+import torch
 import torch.optim as optim
-from scipy.linalg import block_diag
-
-# from stpredictions.models.DIOKR.cost import *
-# from stpredictions.models.DIOKR.kernel import *
+from stpredictions.models.DIOKR.cost import *
+from stpredictions.models.DIOKR.kernel import *
 from stpredictions.models.DIOKR.IOKR import *
+from scipy.linalg import block_diag
 
 dtype = torch.float
 
@@ -75,8 +75,7 @@ class DIOKREstimator(object):
 
         return mse_train.item()
 
-    def fit_kernel_input(self, x_train, y_train, x_test, y_test, n_epochs=50, solver='sgd', batch_size_train=64,
-                         batch_size_test=None, verbose=True):
+    def fit_kernel_input(self, x_train, y_train, x_test, y_test, n_epochs=50, solver='sgd', batch_size_train=64, batch_size_test=None, verbose=True):
         """
         Fits the input kernel when using a learnable neural network kernel input using the method train_kernel_input
         at each epoch.
@@ -89,97 +88,99 @@ class DIOKREstimator(object):
             raise TypeError(f"'batch_size_train' should be an int, not a {type(batch_size_train)}")
 
         self.verbose = verbose
-
+                
         if batch_size_train is None:
             batch_size_train = x_train.shape[0]
-
+                
         if not hasattr(self.kernel_input, 'train_losses'):
             self.kernel_input.train_losses = []
             self.kernel_input.times = [0]
-
+            
         if not hasattr(self.kernel_input, 'test_mse'):
             self.kernel_input.test_mse = []
-
+            
         if not hasattr(self.kernel_input, 'test_f1'):
             self.kernel_input.test_f1 = []
-
+            
         if batch_size_test is None:
             batch_size_test = x_test.shape[0]
 
         self.x_train = x_train
         self.y_train = y_train
-
+            
         dataset_test = torch.utils.data.TensorDataset(x_test, y_test)
-
+            
         loader_test = torch.utils.data.DataLoader(dataset_test, batch_size=batch_size_test)
 
         t0 = time()
-
+                    
         dataset_train = torch.utils.data.TensorDataset(x_train, y_train)
-
+        
         loader_train = torch.utils.data.DataLoader(dataset_train, batch_size=batch_size_train)
         self.loader_train = loader_train
-
+        
         for epoch in range(n_epochs):
-
+        
             batch_losses_train = []
-
+        
             len_trained = 0
-
+        
             for batch_idx_train, (data_train, target_train) in enumerate(loader_train):
-
+            
                 batch_losses_train.append(self.train_kernel_input(data_train, target_train, solver, t0))
-
+            
                 len_trained += data_train.shape[0]
-
+            
                 if verbose:
-
+            
                     if batch_idx_train % 10 == 0:
+                
                         print('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
-                            epoch, len_trained, x_train.size()[0],
-                            100. * len_trained / x_train.size()[0], batch_losses_train[-1]))
-
+                        epoch, len_trained, x_train.size()[0],
+                        100. * len_trained / x_train.size()[0], batch_losses_train[-1]))
+            
                 batch_idx_train += 1
-
+        
             self.kernel_input.train_losses.append(np.mean(np.asarray(batch_losses_train)))
-
-            # self.iokr.fit(X_s=x_train, Y_s=y_train, L=self.lbda, input_kernel=self.kernel_input,
+            
+            #self.iokr.fit(X_s=x_train, Y_s=y_train, L=self.lbda, input_kernel=self.kernel_input,
             #              output_kernel=self.kernel_output, input_gamma=self.kernel_input.gamma)
-
+            
             batch_losses_test = []
-
+            
             K_y = self.kernel_output.compute_gram(y_train, y_train)
-
+            
             Omega_block_diag = np.empty((0, 0))
-
+                
             for batch_idx_train, (data_train, target_train) in enumerate(loader_train):
+                    
                 n_ba = data_train.shape[0]
-
-                Omega = torch.inverse(
-                    self.kernel_input.compute_gram(data_train) + n_ba * self.lbda * torch.eye(n_ba)).data.numpy()
-
+                    
+                Omega = torch.inverse(self.kernel_input.compute_gram(data_train) + n_ba * self.lbda * torch.eye(n_ba)).data.numpy()
+                    
                 Omega_block_diag = block_diag(Omega_block_diag, Omega)
-
+                
             Omega_block_diag = torch.from_numpy(Omega_block_diag).float()
-
+            
             print(Omega_block_diag.shape)
-
+                    
             n_b = len(loader_train)
-
+            
             for batch_idx_test, (data_test, target_test) in enumerate(loader_test):
+        
                 K_x_tr_te = self.kernel_input.compute_gram(x_train, data_test)
                 K_y_tr_te = self.kernel_output.compute_gram(y_train, target_test)
                 K_y_te_te = self.kernel_output.compute_gram(target_test)
-
+        
                 mse_test, _ = self.cost(Omega_block_diag, K_x_tr_te, K_y_tr_te, K_y_te_te, K_y, n_b)
-
+            
                 batch_losses_test.append(mse_test.item())
-
+        
             self.kernel_input.test_mse.append(np.mean(batch_losses_test))
-
+        
             if verbose:
                 print('\nTest MSE of the whole model: {:.4f}\n'.format(mse_test))
-
+            
             """
             if epoch % 25 == 0:
                 
@@ -201,23 +202,24 @@ class DIOKREstimator(object):
             Y_candidates = self.y_train
 
         t0 = time()
-
+        
         K_y = self.kernel_output.compute_gram(self.y_train)
-
+                
         Omega_block_diag = np.empty((0, 0))
-
+                            
         for batch_idx_train, (data_train, target_train) in enumerate(self.loader_train):
+                                
             n_ba = data_train.shape[0]
-
-            Omega = torch.inverse(self.kernel_input.compute_gram(data_train)
-                                  + n_ba * self.lbda * torch.eye(n_ba)).data.numpy()
-
+                                
+            Omega = torch.inverse(self.kernel_input.compute_gram(data_train) 
+                                + n_ba * self.lbda * torch.eye(n_ba)).data.numpy()
+                                
             Omega_block_diag = block_diag(Omega_block_diag, Omega)
-
+                            
         Omega_block_diag = torch.from_numpy(Omega_block_diag).float()
-
+                                
         n_b = len(self.loader_train)
-
+                        
         K_x_tr_te = self.kernel_input.compute_gram(self.x_train, x_test)
 
         A = K_x_tr_te.T @ Omega_block_diag
@@ -236,3 +238,4 @@ class DIOKREstimator(object):
             print(f'Decoding time: {time() - t0} in s')
 
         return Y_pred
+

@@ -1,7 +1,9 @@
-from time import time
-
+from sklearn.model_selection import train_test_split, KFold
+from sklearn.metrics.pairwise import rbf_kernel
 import numpy as np
+import scipy as sp
 import torch
+from time import time
 
 
 class IOKR(object):
@@ -31,7 +33,7 @@ class IOKR(object):
         self.UY_tr = None
         self.K_x = None
         self.K_y = None
-
+        
         # vv-norm
         self.vv_norm = None
 
@@ -66,7 +68,7 @@ class IOKR(object):
                 self.K_x = self.input_kernel.compute_gram(self.X_tr)
             else:
                 self.K_x = K_X_s
-
+        
         if K_Y_s is None:
             self.K_y = self.output_kernel.compute_gram(self.Y_tr)
         else:
@@ -91,10 +93,9 @@ class IOKR(object):
                 self.Omega = Omega
         else:
             m = self.input_kernel.model_forward(self.X_tr).shape[1]
-            M = self.input_kernel.model_forward(self.X_tr).T @ self.input_kernel.model_forward(
-                self.X_tr) + m * self.L * torch.eye(m)
+            M = self.input_kernel.model_forward(self.X_tr).T @ self.input_kernel.model_forward(self.X_tr) + m * self.L * torch.eye(m)
             self.Omega = torch.inverse(M) @ self.input_kernel.model_forward(self.X_tr).T
-
+            
         # vv-norm computation
         if self.n_anchors_krr == -1:
             if not self.linear:
@@ -108,15 +109,16 @@ class IOKR(object):
         # Training time
         t0 = time()
 
+        
         if verbose > 0:
             print(f'Training time: {time() - t0}', flush=True)
-
+    
     def sloss(self, K_x, K_y):
-
+        
         """
             Compute the square loss (train MSE)
         """
-
+        
         n_te = K_x.shape[1]
         if self.n_anchors_krr == -1:
             A = K_x.T @ self.Omega
