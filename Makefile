@@ -114,7 +114,7 @@ dist_wheels: clean   wheels
 	python setup.py sdist
 
 dist: clean ## builds source and wheel package
-	python setup.py sdist
+	# python setup.py sdist
 	python setup.py bdist_wheel
 
 
