@@ -89,7 +89,7 @@ setup(
     setup_requires=["oldest-supported-numpy", "cython>=0.23"],
     install_requires=["numpy>=1.20.0", "scipy>=1.0", "scikit-learn", "torch",
              "liac-arff", ],
-    python_requires=">=3.6",
+    python_requires=">=3.7",
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
@@ -111,7 +111,6 @@ setup(
         'Topic :: Scientific/Engineering :: Mathematics',
         'Topic :: Scientific/Engineering :: Information Analysis',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
