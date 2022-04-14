@@ -50,7 +50,6 @@ OKTREES = {
 
 SPARSE_TREES = ["OK3Regressor", "ExtraOK3Regressor"]
 
-
 X_small = np.array([
     [0, 0, 4, 0, 0, 0, 1, -14, 0, -4, 0, 0, 0, 0, ],
     [0, 0, 5, 3, 0, -4, 0, 0, 1, -5, 0.2, 0, 4, 1, ],
@@ -114,10 +113,9 @@ X_multilabel, y_multilabel = datasets.make_multilabel_classification(
 # NB: despite their names X_sparse_* are numpy arrays (and not sparse matrices)
 X_sparse_pos = random_state.uniform(size=(20, 5))
 X_sparse_pos[X_sparse_pos <= 0.8] = 0.
-y_random = random_state.randint(0, 4, size=(20, ))
+y_random = random_state.randint(0, 4, size=(20,))
 X_sparse_mix = _sparse_random_matrix(20, 10, density=0.25,
                                      random_state=0).toarray()
-
 
 DATASETS = {
     "iris": {"X": iris.data, "y": iris.target},
@@ -161,12 +159,12 @@ def assert_tree_equal(d, s, message):
 
     assert_almost_equal(d.impurity, s.impurity,
                         err_msg=message + ": inequal impurity")
-    
+
     assert_array_almost_equal(d.value[external], s.value[external],
                               err_msg=message + ": inequal value")
-    assert_array_equal(d.y, s.y, 
+    assert_array_equal(d.y, s.y,
                        message + ": inequal training output matrix y")
-    assert_array_equal(d.K_y, s.K_y, 
+    assert_array_equal(d.K_y, s.K_y,
                        message + ": inequal trining output Gtram matrix K_y")
 
 
@@ -176,12 +174,12 @@ def test_classification_toy():
         clf = Tree(random_state=0, kernel="gini_clf")
         clf.fit(X, y)
         assert_array_equal(clf.predict(T), true_result,
-                            "Failed with {0}".format(name))
+                           "Failed with {0}".format(name))
 
         clf = Tree(max_features=1, random_state=1, kernel="gini_clf")
         clf.fit(X, y)
         assert_array_equal(clf.predict(T), true_result,
-                            "Failed with {0}".format(name))
+                           "Failed with {0}".format(name))
 
 
 def test_weighted_classification_toy():
@@ -191,11 +189,11 @@ def test_weighted_classification_toy():
 
         clf.fit(X, y, sample_weight=np.ones(len(X)))
         assert_array_equal(clf.predict(T), true_result,
-                            "Failed with {0}".format(name))
+                           "Failed with {0}".format(name))
 
         clf.fit(X, y, sample_weight=np.full(len(X), 0.5))
         assert_array_equal(clf.predict(T), true_result,
-                            "Failed with {0}".format(name))
+                           "Failed with {0}".format(name))
 
 
 def test_regression_toy():
@@ -327,7 +325,7 @@ def test_pure_set():
         clf = TreeClassifier(random_state=0, kernel="gini_clf")
         clf.fit(X, y)
         assert_array_equal(clf.predict(X), y,
-                            err_msg="Failed with {0}".format(name))
+                           err_msg="Failed with {0}".format(name))
 
     for name, TreeRegressor in OKTREES.items():
         reg = TreeRegressor(random_state=0, kernel="mse_reg")
@@ -387,7 +385,7 @@ def test_importances():
     clf2.fit(iris.data, iris.target)
 
     assert_array_equal(clf.feature_importances_,
-                        clf2.feature_importances_)
+                       clf2.feature_importances_)
 
 
 def test_importances_raises():
@@ -412,9 +410,9 @@ def test_importances_gini_equal_mse():
     # to numerical instability. Since those instabilities mainly occurs at
     # high tree depth, we restrict this maximal depth.
     clf = OK3Regressor(max_depth=5,
-                                  random_state=0, kernel="gini_clf").fit(X, y)
+                       random_state=0, kernel="gini_clf").fit(X, y)
     reg = OK3Regressor(max_depth=5,
-                                random_state=0, kernel="mse_reg").fit(X, y)
+                       random_state=0, kernel="mse_reg").fit(X, y)
 
     assert_almost_equal(clf.feature_importances_, reg.feature_importances_)
     assert_array_equal(clf.tree_.feature, reg.tree_.feature)
@@ -441,54 +439,54 @@ def test_max_features():
             est.fit(iris.data, iris.target)
             assert (est.max_features_ ==
                     int(np.sqrt(iris.data.shape[1])))
-    
+
             est = TreeEstimator(max_features="log2", kernel=kernel)
             est.fit(iris.data, iris.target)
             assert (est.max_features_ ==
                     int(np.log2(iris.data.shape[1])))
-    
+
             est = TreeEstimator(max_features=1, kernel=kernel)
             est.fit(iris.data, iris.target)
             assert est.max_features_ == 1
-    
+
             est = TreeEstimator(max_features=3, kernel=kernel)
             est.fit(iris.data, iris.target)
             assert est.max_features_ == 3
-    
+
             est = TreeEstimator(max_features=0.01, kernel=kernel)
             est.fit(iris.data, iris.target)
             assert est.max_features_ == 1
-    
+
             est = TreeEstimator(max_features=0.5, kernel=kernel)
             est.fit(iris.data, iris.target)
             assert (est.max_features_ ==
                     int(0.5 * iris.data.shape[1]))
-    
+
             est = TreeEstimator(max_features=1.0, kernel=kernel)
             est.fit(iris.data, iris.target)
             assert est.max_features_ == iris.data.shape[1]
-    
+
             est = TreeEstimator(max_features=None, kernel=kernel)
             est.fit(iris.data, iris.target)
             assert est.max_features_ == iris.data.shape[1]
-    
+
             # use values of max_features that are invalid
             est = TreeEstimator(max_features=10, kernel=kernel)
             with pytest.raises(ValueError):
                 est.fit(X, y)
-    
+
             est = TreeEstimator(max_features=-1, kernel=kernel)
             with pytest.raises(ValueError):
                 est.fit(X, y)
-    
+
             est = TreeEstimator(max_features=0.0, kernel=kernel)
             with pytest.raises(ValueError):
                 est.fit(X, y)
-    
+
             est = TreeEstimator(max_features=1.5, kernel=kernel)
             with pytest.raises(ValueError):
                 est.fit(X, y)
-    
+
             est = TreeEstimator(max_features="foobar", kernel=kernel)
             with pytest.raises(ValueError):
                 est.fit(X, y)
@@ -539,47 +537,47 @@ def test_error():
                     TreeEstimator(min_impurity_split=-1.0, kernel=kernel).fit(X, y)
             with pytest.raises(ValueError):
                 TreeEstimator(min_impurity_decrease=-1.0, kernel=kernel).fit(X, y)
-    
+
             # Wrong dimensions
             est = TreeEstimator(kernel=kernel)
             y2 = y[:-1]
             with pytest.raises(ValueError):
                 est.fit(X, y2)
-    
+
             # Test with arrays that are non-contiguous.
             Xf = np.asfortranarray(X)
             est = TreeEstimator(kernel=kernel)
             est.fit(Xf, y)
             assert_almost_equal(est.predict(T), true_result)
-    
+
             # predict before fitting
             est = TreeEstimator(kernel=kernel)
             with pytest.raises(NotFittedError):
                 est.predict(T)
-    
+
             # predict on vector with different dims
             est.fit(X, y)
             t = np.asarray(T)
             with pytest.raises(ValueError):
                 est.predict(t[:, 1:])
-    
+
             # wrong sample shape
             Xt = np.array(X).T
-    
+
             est = TreeEstimator(kernel=kernel)
             est.fit(np.dot(X, Xt), y)
             with pytest.raises(ValueError):
                 est.predict(X)
             with pytest.raises(ValueError):
                 est.apply(X)
-    
+
             clf = TreeEstimator(kernel=kernel)
             clf.fit(X, y)
             with pytest.raises(ValueError):
                 clf.predict(Xt)
             with pytest.raises(ValueError):
                 clf.apply(Xt)
-    
+
             # apply before fitting
             est = TreeEstimator(kernel=kernel)
             with pytest.raises(NotFittedError):
@@ -596,27 +594,27 @@ def test_min_samples_split():
     for max_leaf_nodes, name in product((None, 1000), OKTREES.keys()):
         for kernel in ["gini_clf", "mse_reg"]:
             TreeEstimator = OKTREES[name]
-    
+
             # test for integer parameter
             est = TreeEstimator(min_samples_split=10,
                                 max_leaf_nodes=max_leaf_nodes,
-                                random_state=0, 
+                                random_state=0,
                                 kernel=kernel)
             est.fit(X, y)
             # count samples on nodes, -1 means it is a leaf
             node_samples = est.tree_.n_node_samples[est.tree_.children_left != -1]
-    
+
             assert np.min(node_samples) > 9, "Failed with {0}".format(name)
-    
+
             # test for float parameter
             est = TreeEstimator(min_samples_split=0.2,
                                 max_leaf_nodes=max_leaf_nodes,
-                                random_state=0, 
+                                random_state=0,
                                 kernel=kernel)
             est.fit(X, y)
             # count samples on nodes, -1 means it is a leaf
             node_samples = est.tree_.n_node_samples[est.tree_.children_left != -1]
-    
+
             assert np.min(node_samples) > 9, "Failed with {0}".format(name)
 
 
@@ -630,11 +628,11 @@ def test_min_samples_leaf():
     for max_leaf_nodes, name in product((None, 1000), OKTREES.keys()):
         for kernel in ["gini_clf", "mse_reg"]:
             TreeEstimator = OKTREES[name]
-    
+
             # test integer parameter
             est = TreeEstimator(min_samples_leaf=5,
                                 max_leaf_nodes=max_leaf_nodes,
-                                random_state=0, 
+                                random_state=0,
                                 kernel=kernel)
             est.fit(X, y)
             out = est.tree_.apply(X)
@@ -642,11 +640,11 @@ def test_min_samples_leaf():
             # drop inner nodes
             leaf_count = node_counts[node_counts != 0]
             assert np.min(leaf_count) > 4, "Failed with {0}".format(name)
-    
+
             # test float parameter
             est = TreeEstimator(min_samples_leaf=0.1,
                                 max_leaf_nodes=max_leaf_nodes,
-                                random_state=0, 
+                                random_state=0,
                                 kernel=kernel)
             est.fit(X, y)
             out = est.tree_.apply(X)
@@ -671,54 +669,54 @@ def check_min_weight_fraction_leaf(name, datasets, sparse=False):
 
         weights = rng.rand(X.shape[0])
         total_weight = np.sum(weights)
-        
+
         # test both DepthFirstTreeBuilder and BestFirstTreeBuilder
         # by setting max_leaf_nodes
         for max_leaf_nodes, frac in product((None, 1000), np.linspace(0, 0.5, 6)):
             est = TreeEstimator(min_weight_fraction_leaf=frac,
                                 max_leaf_nodes=max_leaf_nodes,
-                                random_state=0, 
+                                random_state=0,
                                 kernel=kernel)
             est.fit(X, y, sample_weight=weights)
-    
+
             if sparse:
                 out = est.tree_.apply(X.tocsr())
-    
+
             else:
                 out = est.tree_.apply(X)
-    
+
             node_weights = np.bincount(out, weights=weights)
             # drop inner nodes
             leaf_weights = node_weights[node_weights != 0]
             assert (
-                np.min(leaf_weights) >=
-                total_weight * est.min_weight_fraction_leaf), (
-                    "Failed with {0} min_weight_fraction_leaf={1}, kernel={2}".format(
-                        name, est.min_weight_fraction_leaf, kernel))
-    
+                    np.min(leaf_weights) >=
+                    total_weight * est.min_weight_fraction_leaf), (
+                "Failed with {0} min_weight_fraction_leaf={1}, kernel={2}".format(
+                    name, est.min_weight_fraction_leaf, kernel))
+
         # test case with no weights passed in
         total_weight = X.shape[0]
-    
+
         for max_leaf_nodes, frac in product((None, 1000), np.linspace(0, 0.5, 6)):
             est = TreeEstimator(min_weight_fraction_leaf=frac,
                                 max_leaf_nodes=max_leaf_nodes,
-                                random_state=0, 
+                                random_state=0,
                                 kernel=kernel)
             est.fit(X, y)
-    
+
             if sparse:
                 out = est.tree_.apply(X.tocsr())
             else:
                 out = est.tree_.apply(X)
-    
+
             node_weights = np.bincount(out)
             # drop inner nodes
             leaf_weights = node_weights[node_weights != 0]
             assert (
-                np.min(leaf_weights) >=
-                total_weight * est.min_weight_fraction_leaf), (
-                    "Failed with {0} min_weight_fraction_leaf={1}, kernel={2}".format(
-                        name, est.min_weight_fraction_leaf, kernel))
+                    np.min(leaf_weights) >=
+                    total_weight * est.min_weight_fraction_leaf), (
+                "Failed with {0} min_weight_fraction_leaf={1}, kernel={2}".format(
+                    name, est.min_weight_fraction_leaf, kernel))
 
 
 @pytest.mark.parametrize("name", OKTREES)
@@ -732,7 +730,7 @@ def test_min_weight_fraction_leaf_on_sparse_input(name):
 
 
 def check_min_weight_fraction_leaf_with_min_samples_leaf(name, datasets,
-                                                          sparse=False):
+                                                         sparse=False):
     """Test the interaction between min_weight_fraction_leaf and min_samples_leaf
     when sample_weights is not provided in fit."""
     if sparse:
@@ -743,58 +741,58 @@ def check_min_weight_fraction_leaf_with_min_samples_leaf(name, datasets,
 
     total_weight = X.shape[0]
     TreeEstimator = OKTREES[name]
-    
-    for kernel in["gini_clf", "mse_reg"]:
+
+    for kernel in ["gini_clf", "mse_reg"]:
         for max_leaf_nodes, frac in product((None, 1000), np.linspace(0, 0.5, 3)):
             # test integer min_samples_leaf
             est = TreeEstimator(min_weight_fraction_leaf=frac,
                                 max_leaf_nodes=max_leaf_nodes,
                                 min_samples_leaf=5,
-                                random_state=0, 
+                                random_state=0,
                                 kernel=kernel)
             est.fit(X, y)
-    
+
             if sparse:
                 out = est.tree_.apply(X.tocsr())
             else:
                 out = est.tree_.apply(X)
-    
+
             node_weights = np.bincount(out)
             # drop inner nodes
             leaf_weights = node_weights[node_weights != 0]
             assert (
-                np.min(leaf_weights) >=
-                max((total_weight *
-                      est.min_weight_fraction_leaf), 5)), (
-                          "Failed with {0} min_weight_fraction_leaf={1}, "
-                          "min_samples_leaf={2}".format(
-                              name, est.min_weight_fraction_leaf,
-                              est.min_samples_leaf))
+                    np.min(leaf_weights) >=
+                    max((total_weight *
+                         est.min_weight_fraction_leaf), 5)), (
+                "Failed with {0} min_weight_fraction_leaf={1}, "
+                "min_samples_leaf={2}".format(
+                    name, est.min_weight_fraction_leaf,
+                    est.min_samples_leaf))
         for max_leaf_nodes, frac in product((None, 1000), np.linspace(0, 0.5, 3)):
             # test float min_samples_leaf
             est = TreeEstimator(min_weight_fraction_leaf=frac,
                                 max_leaf_nodes=max_leaf_nodes,
                                 min_samples_leaf=.1,
-                                random_state=0, 
+                                random_state=0,
                                 kernel=kernel)
             est.fit(X, y)
-    
+
             if sparse:
                 out = est.tree_.apply(X.tocsr())
             else:
                 out = est.tree_.apply(X)
-    
+
             node_weights = np.bincount(out)
             # drop inner nodes
             leaf_weights = node_weights[node_weights != 0]
             assert (
-                np.min(leaf_weights) >=
-                max((total_weight * est.min_weight_fraction_leaf),
-                    (total_weight * est.min_samples_leaf))), (
-                        "Failed with {0} min_weight_fraction_leaf={1}, "
-                        "min_samples_leaf={2}".format(name,
-                                                      est.min_weight_fraction_leaf,
-                                                      est.min_samples_leaf))
+                    np.min(leaf_weights) >=
+                    max((total_weight * est.min_weight_fraction_leaf),
+                        (total_weight * est.min_samples_leaf))), (
+                "Failed with {0} min_weight_fraction_leaf={1}, "
+                "min_samples_leaf={2}".format(name,
+                                              est.min_weight_fraction_leaf,
+                                              est.min_samples_leaf))
 
 
 @pytest.mark.parametrize("name", OKTREES)
@@ -805,7 +803,7 @@ def test_min_weight_fraction_leaf_with_min_samples_leaf_on_dense_input(name):
 @pytest.mark.parametrize("name", SPARSE_TREES)
 def test_min_weight_fraction_leaf_with_min_samples_leaf_on_sparse_input(name):
     check_min_weight_fraction_leaf_with_min_samples_leaf(
-            name, "multilabel", True)
+        name, "multilabel", True)
 
 
 def test_min_impurity_split():
@@ -840,15 +838,15 @@ def test_min_impurity_split():
                         "Failed with {0} min_impurity_split={1}".format(
                             est.tree_.impurity[node],
                             est.min_impurity_split))
-    
+
             # verify leaf nodes have impurity [0,min_impurity_split] when using
             # min_impurity_split
             est = TreeEstimator(max_leaf_nodes=max_leaf_nodes,
                                 min_impurity_split=min_impurity_split,
                                 random_state=0, kernel=kernel)
             assert_warns_message(FutureWarning,
-                                  "Use the min_impurity_decrease",
-                                  est.fit, X, y)
+                                 "Use the min_impurity_decrease",
+                                 est.fit, X, y)
             for node in range(est.tree_.node_count):
                 if (est.tree_.children_left[node] == TREE_LEAF or
                         est.tree_.children_right[node] == TREE_LEAF):
@@ -877,16 +875,16 @@ def test_min_impurity_decrease():
             est1 = TreeEstimator(max_leaf_nodes=max_leaf_nodes, random_state=0, kernel=kernel)
             # Check with explicit value of 0.05
             est2 = TreeEstimator(max_leaf_nodes=max_leaf_nodes,
-                                  min_impurity_decrease=0.05, random_state=0, kernel=kernel)
+                                 min_impurity_decrease=0.05, random_state=0, kernel=kernel)
             # Check with a much lower value of 0.0001
             est3 = TreeEstimator(max_leaf_nodes=max_leaf_nodes,
-                                  min_impurity_decrease=0.0001, random_state=0, kernel=kernel)
+                                 min_impurity_decrease=0.0001, random_state=0, kernel=kernel)
             # Check with a much lower value of 0.1
             est4 = TreeEstimator(max_leaf_nodes=max_leaf_nodes,
-                                  min_impurity_decrease=0.1, random_state=0, kernel=kernel)
-    
+                                 min_impurity_decrease=0.1, random_state=0, kernel=kernel)
+
             for est, expected_decrease in ((est1, 1e-7), (est2, 0.05),
-                                            (est3, 0.0001), (est4, 0.1)):
+                                           (est3, 0.0001), (est4, 0.1)):
                 assert est.min_impurity_decrease <= expected_decrease, (
                     "Failed, min_impurity_decrease = {0} > {1}".format(
                         est.min_impurity_decrease,
@@ -898,30 +896,30 @@ def test_min_impurity_decrease():
                     if est.tree_.children_left[node] != TREE_LEAF:
                         imp_parent = est.tree_.impurity[node]
                         wtd_n_node = est.tree_.weighted_n_node_samples[node]
-    
+
                         left = est.tree_.children_left[node]
                         wtd_n_left = est.tree_.weighted_n_node_samples[left]
                         imp_left = est.tree_.impurity[left]
                         wtd_imp_left = wtd_n_left * imp_left
-    
+
                         right = est.tree_.children_right[node]
                         wtd_n_right = est.tree_.weighted_n_node_samples[right]
                         imp_right = est.tree_.impurity[right]
                         wtd_imp_right = wtd_n_right * imp_right
-    
+
                         wtd_avg_left_right_imp = wtd_imp_right + wtd_imp_left
                         wtd_avg_left_right_imp /= wtd_n_node
-    
+
                         fractional_node_weight = (
-                            est.tree_.weighted_n_node_samples[node] / X.shape[0])
-    
+                                est.tree_.weighted_n_node_samples[node] / X.shape[0])
+
                         actual_decrease = fractional_node_weight * (
-                            imp_parent - wtd_avg_left_right_imp)
-    
+                                imp_parent - wtd_avg_left_right_imp)
+
                         assert actual_decrease >= expected_decrease, (
                             "Failed with {0} expected min_impurity_decrease={1}"
-                            .format(actual_decrease,
-                                    expected_decrease))
+                                .format(actual_decrease,
+                                        expected_decrease))
 
     for name, TreeEstimator in OKTREES.items():
         for kernel in ["gini_clf", "mse_reg"]:
@@ -929,14 +927,14 @@ def test_min_impurity_decrease():
                 X, y = iris.data, iris.target
             else:
                 X, y = diabetes.data, diabetes.target
-    
+
             est = TreeEstimator(random_state=0, kernel=kernel)
             est.fit(X, y)
             score = est.score(X, y)
             fitted_attribute = dict()
             for attribute in ["max_depth", "node_count", "capacity"]:
                 fitted_attribute[attribute] = getattr(est.tree_, attribute)
-    
+
             serialized_object = pickle.dumps(est)
             est2 = pickle.loads(serialized_object)
             assert type(est2) == est.__class__
@@ -945,41 +943,41 @@ def test_min_impurity_decrease():
             assert score == score2, (
                 "Failed to generate same score  after pickling "
                 "with {0} and kernel = {1}".format(name, kernel))
-    
+
             for attribute in fitted_attribute:
                 assert (getattr(est2.tree_, attribute) ==
                         fitted_attribute[attribute]), (
-                            "Failed to generate same attribute {0} after "
-                            "pickling with {1} and kernel = {2}".format(attribute, name, kernel))
+                    "Failed to generate same attribute {0} after "
+                    "pickling with {1} and kernel = {2}".format(attribute, name, kernel))
 
 
 def test_multioutput():
     # Check estimators on multi-output problems.
     X = [[-2, -1],
-          [-1, -1],
-          [-1, -2],
-          [1, 1],
-          [1, 2],
-          [2, 1],
-          [-2, 1],
-          [-1, 1],
-          [-1, 2],
-          [2, -1],
-          [1, -1],
-          [1, -2]]
+         [-1, -1],
+         [-1, -2],
+         [1, 1],
+         [1, 2],
+         [2, 1],
+         [-2, 1],
+         [-1, 1],
+         [-1, 2],
+         [2, -1],
+         [1, -1],
+         [1, -2]]
 
     y = [[-1, 0],
-          [-1, 0],
-          [-1, 0],
-          [1, 1],
-          [1, 1],
-          [1, 1],
-          [-1, 2],
-          [-1, 2],
-          [-1, 2],
-          [1, 3],
-          [1, 3],
-          [1, 3]]
+         [-1, 0],
+         [-1, 0],
+         [1, 1],
+         [1, 1],
+         [1, 1],
+         [-1, 2],
+         [-1, 2],
+         [-1, 2],
+         [1, 3],
+         [1, 3],
+         [1, 3]]
 
     T = [[-1, -1], [1, 1], [-1, 1], [1, -1]]
     y_true = [[-1, 0], [1, 1], [-1, 2], [1, 3]]
@@ -1027,37 +1025,37 @@ def test_unbalanced_iris():
 #                                                 [np.float64, np.float32]):
 #         for kernel in ["gini_clf", "mse_reg"]:
 #             est = TreeEstimator(random_state=0, kernel=kernel)
-    
+
 #             # Nothing
 #             X = np.asarray(iris.data, dtype=dtype)
 #             y = iris.target
 #             assert_array_equal(est.fit(X, y).predict(X), y)
-    
+
 #             # C-order
 #             X = np.asarray(iris.data, order="C", dtype=dtype)
 #             y = iris.target
 #             assert_array_equal(est.fit(X, y).predict(X), y)
-    
+
 #             # F-order
 #             X = np.asarray(iris.data, order="F", dtype=dtype)
 #             y = iris.target
 #             assert_array_equal(est.fit(X, y).predict(X), y)
-    
+
 #             # Contiguous
 #             X = np.ascontiguousarray(iris.data, dtype=dtype)
 #             y = iris.target
 #             assert_array_equal(est.fit(X, y).predict(X), y)
-    
+
 #             # csr matrix
 #             X = csr_matrix(iris.data, dtype=dtype)
 #             y = iris.target
 #             assert_array_equal(est.fit(X, y).predict(X), y)
-    
+
 #             # csc_matrix
 #             X = csc_matrix(iris.data, dtype=dtype)
 #             y = iris.target
 #             assert_array_equal(est.fit(X, y).predict(X), y)
-    
+
 #             # Strided
 #             X = np.asarray(iris.data[::3], dtype=dtype)
 #             y = iris.target[::3]
@@ -1220,7 +1218,7 @@ def test_max_leaf_nodes():
         for kernel in ["gini_clf", "mse_reg"]:
             est = TreeEstimator(max_depth=None, max_leaf_nodes=k + 1, kernel=kernel).fit(X, y)
             assert est.get_n_leaves() == k + 1
-    
+
             # max_leaf_nodes in (0, 1) should raise ValueError
             est = TreeEstimator(max_depth=None, max_leaf_nodes=0, kernel=kernel)
             with pytest.raises(ValueError):
@@ -1246,11 +1244,11 @@ def test_max_leaf_nodes_max_depth():
 def test_arrays_persist():
     # Ensure property arrays' memory stays alive when tree disappears
     # non-regression for #2726
-    for attr in [#'y', 'leaf_to_train_exs', 'candidates',
-                  'children_left', 'children_right',
-                  'threshold', 'impurity', 'feature', 'n_node_samples']:
+    for attr in [  # 'y', 'leaf_to_train_exs', 'candidates',
+        'children_left', 'children_right',
+        'threshold', 'impurity', 'feature', 'n_node_samples']:
         value = getattr(OK3Regressor(kernel="gini_clf").fit([[0], [1]],
-                                                      [0, 1]).tree_, attr)
+                                                            [0, 1]).tree_, attr)
         # if pointing to freed memory, contents may be arbitrary
         assert -3 <= value.flat[0] < 3, \
             'Array points to arbitrary memory'
@@ -1259,7 +1257,7 @@ def test_arrays_persist():
 def test_only_constant_features():
     random_state = check_random_state(0)
     X = np.zeros((10, 20))
-    y = random_state.randint(0, 2, (10, ))
+    y = random_state.randint(0, 2, (10,))
     for name, TreeEstimator in OKTREES.items():
         for kernel in ["gini_clf", "mse_reg"]:
             est = TreeEstimator(random_state=0, kernel=kernel)
@@ -1283,7 +1281,7 @@ def test_behaviour_constant_feature_after_splits():
 
 def test_with_only_one_non_constant_features():
     X = np.hstack([np.array([[1.], [1.], [0.], [0.]]),
-                    np.zeros((4, 1000))])
+                   np.zeros((4, 1000))])
 
     y = np.array([0., 1., 0., 1.0])
     # for name, TreeEstimator in OKTREES.items():
@@ -1296,7 +1294,7 @@ def test_with_only_one_non_constant_features():
         est = TreeEstimator(random_state=0, max_features=1, kernel="mse_reg")
         est.fit(X, y)
         assert est.tree_.max_depth == 1
-        assert_array_equal(est.predict(X), np.full((4, ), 0.5))
+        assert_array_equal(est.predict(X), np.full((4,), 0.5))
 
 
 def test_big_input():
@@ -1357,21 +1355,21 @@ def check_sparse_input(tree, dataset, max_depth=None, only_reg=False):
                 # Check the default (depth first search)
                 d = TreeEstimator(random_state=0, max_depth=max_depth, kernel=kernel).fit(X, y)
                 s = TreeEstimator(random_state=0, max_depth=max_depth, kernel=kernel).fit(X_sparse, y)
-        
+
                 assert_tree_equal(d.tree_, s.tree_,
                                   "{0} with dense and sparse format gave different "
                                   "trees".format(tree))
-        
+
                 y_pred = d.predict(X)
                 # if tree in CLF_TREES:
                 #     y_proba = d.predict_proba(X)
                 #     y_log_proba = d.predict_log_proba(X)
-        
+
                 for sparse_matrix in (csr_matrix, csc_matrix, coo_matrix):
                     X_sparse_test = sparse_matrix(X_sparse, dtype=np.float32)
-        
+
                     assert_array_almost_equal(s.predict(X_sparse_test), y_pred)
-        
+
                     # if tree in CLF_TREES:
                     #     assert_array_almost_equal(s.predict_proba(X_sparse_test),
                     #                               y_proba)
@@ -1413,7 +1411,7 @@ def check_sparse_parameters(tree, dataset):
                           "{0} with dense and sparse format gave different "
                           "trees".format(tree))
         assert_array_almost_equal(s.predict(X), d.predict(X))
-    
+
         # Check min_samples_split
         d = TreeEstimator(random_state=0, max_features=1,
                           min_samples_split=10, kernel=kernel).fit(X, y)
@@ -1423,7 +1421,7 @@ def check_sparse_parameters(tree, dataset):
                           "{0} with dense and sparse format gave different "
                           "trees".format(tree))
         assert_array_almost_equal(s.predict(X), d.predict(X))
-    
+
         # Check min_samples_leaf
         d = TreeEstimator(random_state=0,
                           min_samples_leaf=X_sparse.shape[0] // 2, kernel=kernel).fit(X, y)
@@ -1433,7 +1431,7 @@ def check_sparse_parameters(tree, dataset):
                           "{0} with dense and sparse format gave different "
                           "trees".format(tree))
         assert_array_almost_equal(s.predict(X), d.predict(X))
-    
+
         # Check best-first search
         d = TreeEstimator(random_state=0, max_leaf_nodes=3, kernel=kernel).fit(X, y)
         s = TreeEstimator(random_state=0, max_leaf_nodes=3, kernel=kernel).fit(X_sparse, y)
@@ -1456,7 +1454,7 @@ def check_sparse_criterion(tree, dataset):
                               criterion=criterion, kernel=kernel).fit(X, y)
             s = TreeEstimator(random_state=0, max_depth=3,
                               criterion=criterion, kernel=kernel).fit(X_sparse, y)
-    
+
             assert_tree_equal(d.tree_, s.tree_,
                               "{0} with dense and sparse format gave different "
                               "trees".format(tree))
@@ -1465,9 +1463,9 @@ def check_sparse_criterion(tree, dataset):
 
 @pytest.mark.parametrize("tree_type", SPARSE_TREES)
 @pytest.mark.parametrize("dataset",
-                          ["sparse-pos", "sparse-neg", "sparse-mix", "zeros"])
+                         ["sparse-pos", "sparse-neg", "sparse-mix", "zeros"])
 @pytest.mark.parametrize("check",
-                          [check_sparse_parameters, check_sparse_criterion])
+                         [check_sparse_parameters, check_sparse_criterion])
 def test_sparse(tree_type, dataset, check):
     check(tree_type, dataset)
 
@@ -1491,7 +1489,7 @@ def check_explicit_sparse_zeros(tree, max_depth=3,
         n_nonzero_i = random_state.binomial(n_samples, 0.5)
         indices_i = random_state.permutation(samples)[:n_nonzero_i]
         indices.append(indices_i)
-        data_i = random_state.binomial(3, 0.5, size=(n_nonzero_i, )) - 1
+        data_i = random_state.binomial(3, 0.5, size=(n_nonzero_i,)) - 1
         data.append(data_i)
         offset += n_nonzero_i
         indptr.append(offset)
@@ -1502,9 +1500,9 @@ def check_explicit_sparse_zeros(tree, max_depth=3,
                           shape=(n_samples, n_features))
     X = X_sparse.toarray()
     X_sparse_test = csr_matrix((data, indices, indptr),
-                                shape=(n_samples, n_features))
+                               shape=(n_samples, n_features))
     X_test = X_sparse_test.toarray()
-    y = random_state.randint(0, 3, size=(n_samples, ))
+    y = random_state.randint(0, 3, size=(n_samples,))
 
     # Ensure that X_sparse_test owns its data, indices and indptr array
     X_sparse_test = X_sparse_test.copy()
@@ -1517,26 +1515,26 @@ def check_explicit_sparse_zeros(tree, max_depth=3,
         # Perform the comparison
         d = TreeEstimator(random_state=0, max_depth=max_depth, kernel=kernel).fit(X, y)
         s = TreeEstimator(random_state=0, max_depth=max_depth, kernel=kernel).fit(X_sparse, y)
-    
+
         assert_tree_equal(d.tree_, s.tree_,
                           "{0} with dense and sparse format gave different "
                           "trees".format(tree))
-    
+
         Xs = (X_test, X_sparse_test)
         for X1, X2 in product(Xs, Xs):
             assert_array_almost_equal(s.tree_.apply(X1), d.tree_.apply(X2))
             assert_array_almost_equal(s.apply(X1), d.apply(X2))
             assert_array_almost_equal(s.apply(X1), s.tree_.apply(X1))
-    
+
             assert_array_almost_equal(s.tree_.decision_path(X1).toarray(),
                                       d.tree_.decision_path(X2).toarray())
             assert_array_almost_equal(s.decision_path(X1).toarray(),
                                       d.decision_path(X2).toarray())
             assert_array_almost_equal(s.decision_path(X1).toarray(),
                                       s.tree_.decision_path(X1).toarray())
-    
+
             assert_array_almost_equal(s.predict(X1), d.predict(X2))
-    
+
             # if tree in CLF_TREES:
             #     assert_array_almost_equal(s.predict_proba(X1),
             #                               d.predict_proba(X2))
@@ -1558,7 +1556,7 @@ def check_raise_error_on_1d_input(name):
     for kernel in ["gini_clf", "mse_reg"]:
         with pytest.raises(ValueError):
             TreeEstimator(random_state=0, kernel=kernel).fit(X, y)
-    
+
         est = TreeEstimator(random_state=0, kernel=kernel)
         est.fit(X_2d, y)
         with pytest.raises(ValueError):
@@ -1576,7 +1574,7 @@ def _check_min_weight_leaf_split_level(TreeEstimator, X, y, sample_weight):
         est = TreeEstimator(random_state=0, kernel=kernel)
         est.fit(X, y, sample_weight=sample_weight)
         assert est.tree_.max_depth == 1
-    
+
         est = TreeEstimator(random_state=0, min_weight_fraction_leaf=0.4, kernel=kernel)
         est.fit(X, y, sample_weight=sample_weight)
         assert est.tree_.max_depth == 0
@@ -1591,7 +1589,7 @@ def check_min_weight_leaf_split_level(name):
     _check_min_weight_leaf_split_level(TreeEstimator, X, y, sample_weight)
 
     _check_min_weight_leaf_split_level(TreeEstimator, csc_matrix(X), y,
-                                        sample_weight)
+                                       sample_weight)
 
 
 @pytest.mark.parametrize("name", OKTREES)
@@ -1606,7 +1604,7 @@ def check_public_apply(name):
         est = OKTREES[name](kernel=kernel)
         est.fit(X_small, y_small)
         assert_array_equal(est.apply(X_small),
-                            est.tree_.apply(X_small32))
+                           est.tree_.apply(X_small32))
 
 
 def check_public_apply_sparse(name):
@@ -1616,7 +1614,7 @@ def check_public_apply_sparse(name):
         est = OKTREES[name](kernel=kernel)
         est.fit(X_small, y_small)
         assert_array_equal(est.apply(X_small),
-                            est.tree_.apply(X_small32))
+                           est.tree_.apply(X_small32))
 
 
 @pytest.mark.parametrize("name", OKTREES)
@@ -1646,21 +1644,21 @@ def check_decision_path(name):
         TreeEstimator = OKTREES[name]
         est = TreeEstimator(random_state=0, max_depth=2, kernel=kernel)
         est.fit(X, y)
-    
+
         node_indicator_csr = est.decision_path(X)
         node_indicator = node_indicator_csr.toarray()
         assert node_indicator.shape == (n_samples, est.tree_.node_count)
-    
+
         # Assert that leaves index are correct
         leaves = est.apply(X)
         leave_indicator = [node_indicator[i, j] for i, j in enumerate(leaves)]
         assert_array_almost_equal(leave_indicator, np.ones(shape=n_samples))
-    
+
         # Ensure only one leave node per sample
         all_leaves = est.tree_.children_left == TREE_LEAF
         assert_array_almost_equal(np.dot(node_indicator, all_leaves),
                                   np.ones(shape=n_samples))
-    
+
         # Ensure max depth is consistent with sum of indicator
         max_depth = node_indicator.sum(axis=1).max()
         assert est.tree_.max_depth <= max_depth
@@ -1789,6 +1787,7 @@ def test_criterion_copy():
 
     def _pickle_copy(obj):
         return pickle.loads(pickle.dumps(obj))
+
     for copy_func in [copy.copy, copy.deepcopy, _pickle_copy]:
 
         for _, typename in CRITERIA.items():
@@ -1944,9 +1943,9 @@ def check_apply_path_readonly(name):
         est = OKTREES[name](kernel=kernel)
         est.fit(X_readonly, y_readonly)
         assert_array_equal(est.predict(X_readonly),
-                            est.predict(X_small))
+                           est.predict(X_small))
         assert_array_equal(est.decision_path(X_readonly).todense(),
-                            est.decision_path(X_small).todense())
+                           est.decision_path(X_small).todense())
 
 
 @pytest.mark.parametrize("name", OKTREES)
@@ -1961,7 +1960,7 @@ def test_X_idx_sorted_deprecated(TreeEstimator):
 
     for kernel in ["gini_clf", "mse_reg"]:
         tree = TreeEstimator(kernel=kernel)
-    
+
         with pytest.warns(FutureWarning,
                           match="The parameter 'X_idx_sorted' is deprecated"):
             tree.fit(X, y, X_idx_sorted=X_idx_sorted)

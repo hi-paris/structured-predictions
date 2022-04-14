@@ -47,7 +47,7 @@ class MyDataset(Dataset):
 
 def project_root() -> Path:
     """Returns project root folder."""
-    return Path(__file__).parent.parent
+    return Path(__file__).parent.parent.parent
 
 
 def create_path_that_doesnt_exist(path_save: str, file_name: str, extension: str):

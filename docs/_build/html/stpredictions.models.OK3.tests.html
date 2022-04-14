@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>stpredictions.models.OK3.tests package &mdash; structured-predictions  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="stpredictions.viz package" href="stpredictions.viz.html" />
+    <link rel="prev" title="stpredictions.models.OK3 package" href="stpredictions.models.OK3.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html">
+            <img src="_static/LogoTelecom.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">stpredictions</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="stpredictions.html">stpredictions package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="stpredictions.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="stpredictions.datasets.html">stpredictions.datasets package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stpredictions.helpers.html">stpredictions.helpers package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stpredictions.metrics.html">stpredictions.metrics package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="stpredictions.models.html">stpredictions.models package</a><ul class="current">
+<li class="toctree-l5 current"><a class="reference internal" href="stpredictions.models.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l6"><a class="reference internal" href="stpredictions.models.DIOKR.html">stpredictions.models.DIOKR package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="stpredictions.models.IOKR.html">stpredictions.models.IOKR package</a></li>
+<li class="toctree-l6 current"><a class="reference internal" href="stpredictions.models.OK3.html">stpredictions.models.OK3 package</a><ul class="current">
+<li class="toctree-l7 current"><a class="reference internal" href="stpredictions.models.OK3.html#subpackages">Subpackages</a></li>
+<li class="toctree-l7"><a class="reference internal" href="stpredictions.models.OK3.html#submodules">Submodules</a></li>
+<li class="toctree-l7"><a class="reference internal" href="stpredictions.models.OK3.html#module-stpredictions.models.OK3.base">stpredictions.models.OK3.base module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="stpredictions.models.OK3.html#module-stpredictions.models.OK3.kernel">stpredictions.models.OK3.kernel module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="stpredictions.models.OK3.html#module-stpredictions.models.OK3.structured_object">stpredictions.models.OK3.structured_object module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="stpredictions.models.OK3.html#module-stpredictions.models.OK3">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="stpredictions.models.html#module-stpredictions.models">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="stpredictions.viz.html">stpredictions.viz package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="stpredictions.html#module-stpredictions">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">structured-predictions</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">stpredictions</a> &raquo;</li>
+          <li><a href="stpredictions.html">stpredictions package</a> &raquo;</li>
+          <li><a href="stpredictions.models.html">stpredictions.models package</a> &raquo;</li>
+          <li><a href="stpredictions.models.OK3.html">stpredictions.models.OK3 package</a> &raquo;</li>
+      <li>stpredictions.models.OK3.tests package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/stpredictions.models.OK3.tests.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="stpredictions-models-ok3-tests-package">
+<h1>stpredictions.models.OK3.tests package<a class="headerlink" href="#stpredictions-models-ok3-tests-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="stpredictions-models-ok3-tests-digits-image-completion-module">
+<h2>stpredictions.models.OK3.tests.digits_image_completion module<a class="headerlink" href="#stpredictions-models-ok3-tests-digits-image-completion-module" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-stpredictions.models.OK3.tests.exemple_utilisation">
+<span id="stpredictions-models-ok3-tests-exemple-utilisation-module"></span><h2>stpredictions.models.OK3.tests.exemple_utilisation module<a class="headerlink" href="#module-stpredictions.models.OK3.tests.exemple_utilisation" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-stpredictions.models.OK3.tests.exemple_utilisation_forest">
+<span id="stpredictions-models-ok3-tests-exemple-utilisation-forest-module"></span><h2>stpredictions.models.OK3.tests.exemple_utilisation_forest module<a class="headerlink" href="#module-stpredictions.models.OK3.tests.exemple_utilisation_forest" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-stpredictions.models.OK3.tests.test_classification">
+<span id="stpredictions-models-ok3-tests-test-classification-module"></span><h2>stpredictions.models.OK3.tests.test_classification module<a class="headerlink" href="#module-stpredictions.models.OK3.tests.test_classification" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_classification.test_classification_multilabel">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_classification.</span></span><span class="sig-name descname"><span class="pre">test_classification_multilabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_classification.test_classification_multilabel" title="Permalink to this definition"></a></dt>
+<dd><p>Return the test accuracy for a multiclass classification task</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_classification.test_classification_multilabel_ref">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_classification.</span></span><span class="sig-name descname"><span class="pre">test_classification_multilabel_ref</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_classification.test_classification_multilabel_ref" title="Permalink to this definition"></a></dt>
+<dd><p>Return the test accuracy for a multiclass classification task</p>
+</dd></dl>
+
+</section>
+<section id="module-stpredictions.models.OK3.tests.test_classification_forest">
+<span id="stpredictions-models-ok3-tests-test-classification-forest-module"></span><h2>stpredictions.models.OK3.tests.test_classification_forest module<a class="headerlink" href="#module-stpredictions.models.OK3.tests.test_classification_forest" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_classification_forest.test_classification_multilabel">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_classification_forest.</span></span><span class="sig-name descname"><span class="pre">test_classification_multilabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_classification_forest.test_classification_multilabel" title="Permalink to this definition"></a></dt>
+<dd><p>Return the test accuracy for a multiclass classification task</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_classification_forest.test_classification_multilabel_ref">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_classification_forest.</span></span><span class="sig-name descname"><span class="pre">test_classification_multilabel_ref</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_classification_forest.test_classification_multilabel_ref" title="Permalink to this definition"></a></dt>
+<dd><p>Return the test accuracy for a multiclass classification task</p>
+</dd></dl>
+
+</section>
+<section id="module-stpredictions.models.OK3.tests.test_export">
+<span id="stpredictions-models-ok3-tests-test-export-module"></span><h2>stpredictions.models.OK3.tests.test_export module<a class="headerlink" href="#module-stpredictions.models.OK3.tests.test_export" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-stpredictions.models.OK3.tests.test_forest_clf_and_reg">
+<span id="stpredictions-models-ok3-tests-test-forest-clf-and-reg-module"></span><h2>stpredictions.models.OK3.tests.test_forest_clf_and_reg module<a class="headerlink" href="#module-stpredictions.models.OK3.tests.test_forest_clf_and_reg" title="Permalink to this headline"></a></h2>
+<p>Testing for the forest module (sklearn.ensemble.forest).</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.MyBackend">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">MyBackend</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.MyBackend" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">joblib._parallel_backends.LokyBackend</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.MyBackend.start_call">
+<span class="sig-name descname"><span class="pre">start_call</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.MyBackend.start_call" title="Permalink to this definition"></a></dt>
+<dd><p>Call-back method called at the beginning of a Parallel call</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_1d_input">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_1d_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_2d</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_1d_input" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_classification_toy">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_classification_toy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_classification_toy" title="Permalink to this definition"></a></dt>
+<dd><p>Check classification on a toy dataset.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_decision_path">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_decision_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_decision_path" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_gridsearch">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_gridsearch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_gridsearch" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_importances">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_importances</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criterion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_importances" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_iris_criterion">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_iris_criterion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criterion</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_iris_criterion" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_max_leaf_nodes_max_depth">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_max_leaf_nodes_max_depth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_max_leaf_nodes_max_depth" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_memory_layout">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_memory_layout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_memory_layout" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_min_impurity_decrease">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_min_impurity_decrease</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_min_impurity_decrease" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_min_impurity_split">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_min_impurity_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_min_impurity_split" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_min_samples_leaf">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_min_samples_leaf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_min_samples_leaf" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_min_samples_split">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_min_samples_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_min_samples_split" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_min_weight_fraction_leaf">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_min_weight_fraction_leaf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_min_weight_fraction_leaf" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_multioutput">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_multioutput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_multioutput" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_oob_score">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_oob_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_estimators</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_oob_score" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_oob_score_raise_error">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_oob_score_raise_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_oob_score_raise_error" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_parallel">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_parallel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_parallel" title="Permalink to this definition"></a></dt>
+<dd><p>Check parallel computations in classification</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_pickle">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_pickle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_pickle" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_regression_criterion">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_regression_criterion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criterion</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_regression_criterion" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_sparse_input">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_sparse_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_sparse</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_sparse_input" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_warm_start">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_warm_start</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">42</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_warm_start" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_warm_start_clear">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_warm_start_clear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_warm_start_clear" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_warm_start_equal_n_estimators">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_warm_start_equal_n_estimators</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_warm_start_equal_n_estimators" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_warm_start_oob">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_warm_start_oob</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_warm_start_oob" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_warm_start_smaller_n_estimators">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_warm_start_smaller_n_estimators</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.check_warm_start_smaller_n_estimators" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_1d_input">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_1d_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_1d_input" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_backend_respected">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_backend_respected</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_backend_respected" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_classification_toy">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_classification_toy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_classification_toy" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_decision_path">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_decision_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_decision_path" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_distribution">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_distribution</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_distribution" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_dtype_convert">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_dtype_convert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_classes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_dtype_convert" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_forest_degenerate_feature_importances">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_forest_degenerate_feature_importances</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_forest_degenerate_feature_importances" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_forest_feature_importances_sum">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_forest_feature_importances_sum</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_forest_feature_importances_sum" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_forest_y_sparse">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_forest_y_sparse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_forest_y_sparse" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_gridsearch">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_gridsearch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_gridsearch" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_importances">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_importances</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dtype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criterion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_importances" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_iris">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_iris</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criterion</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_iris" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_little_tree_with_small_max_samples">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_little_tree_with_small_max_samples</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_little_tree_with_small_max_samples" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_max_leaf_nodes_max_depth">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_max_leaf_nodes_max_depth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_max_leaf_nodes_max_depth" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_max_samples_exceptions">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_max_samples_exceptions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_samples</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_msg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_max_samples_exceptions" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_memory_layout">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_memory_layout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_memory_layout" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_min_impurity_decrease">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_min_impurity_decrease</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_min_impurity_decrease" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_min_impurity_split">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_min_impurity_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_min_impurity_split" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_min_samples_leaf">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_min_samples_leaf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_min_samples_leaf" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_min_samples_split">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_min_samples_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_min_samples_split" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_min_weight_fraction_leaf">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_min_weight_fraction_leaf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_min_weight_fraction_leaf" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_multioutput">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_multioutput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_multioutput" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_multioutput_string">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_multioutput_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_multioutput_string" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_oob_score_classifiers">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_oob_score_classifiers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_oob_score_classifiers" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_oob_score_raise_error">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_oob_score_raise_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_oob_score_raise_error" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_oob_score_regressors">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_oob_score_regressors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_oob_score_regressors" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_parallel">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_parallel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_parallel" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_parallel_train">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_parallel_train</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_parallel_train" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_pickle">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_pickle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_pickle" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_random_hasher">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_random_hasher</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_random_hasher" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_random_hasher_sparse_data">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_random_hasher_sparse_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_random_hasher_sparse_data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_random_trees_dense_equal">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_random_trees_dense_equal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_random_trees_dense_equal" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_random_trees_dense_type">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_random_trees_dense_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_random_trees_dense_type" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_regression">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_regression</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criterion</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_regression" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_sparse_input">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_sparse_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sparse_matrix</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_sparse_input" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_unfitted_feature_importances">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_unfitted_feature_importances</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_unfitted_feature_importances" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_warm_start">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_warm_start</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_warm_start" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_warm_start_clear">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_warm_start_clear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_warm_start_clear" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_warm_start_equal_n_estimators">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_warm_start_equal_n_estimators</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_warm_start_equal_n_estimators" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_warm_start_oob">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_warm_start_oob</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_warm_start_oob" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_warm_start_smaller_n_estimators">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_forest_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_warm_start_smaller_n_estimators</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_forest_clf_and_reg.test_warm_start_smaller_n_estimators" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-stpredictions.models.OK3.tests.test_regression">
+<span id="stpredictions-models-ok3-tests-test-regression-module"></span><h2>stpredictions.models.OK3.tests.test_regression module<a class="headerlink" href="#module-stpredictions.models.OK3.tests.test_regression" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_regression.test_regression">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_regression.</span></span><span class="sig-name descname"><span class="pre">test_regression</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_regression.test_regression" title="Permalink to this definition"></a></dt>
+<dd><p>Return the test accuracy for a multiclass classification task</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_regression.test_regression_ref">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_regression.</span></span><span class="sig-name descname"><span class="pre">test_regression_ref</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_regression.test_regression_ref" title="Permalink to this definition"></a></dt>
+<dd><p>Return the mse for a classical regression task</p>
+</dd></dl>
+
+</section>
+<section id="module-stpredictions.models.OK3.tests.test_regression_forest">
+<span id="stpredictions-models-ok3-tests-test-regression-forest-module"></span><h2>stpredictions.models.OK3.tests.test_regression_forest module<a class="headerlink" href="#module-stpredictions.models.OK3.tests.test_regression_forest" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_regression_forest.test_regression">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_regression_forest.</span></span><span class="sig-name descname"><span class="pre">test_regression</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_regression_forest.test_regression" title="Permalink to this definition"></a></dt>
+<dd><p>Return the test accuracy for a multiclass classification task</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_regression_forest.test_regression_ref">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_regression_forest.</span></span><span class="sig-name descname"><span class="pre">test_regression_ref</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_regression_forest.test_regression_ref" title="Permalink to this definition"></a></dt>
+<dd><p>Return the mse for a classical regression task</p>
+</dd></dl>
+
+</section>
+<section id="module-stpredictions.models.OK3.tests.test_tree_clf_and_reg">
+<span id="stpredictions-models-ok3-tests-test-tree-clf-and-reg-module"></span><h2>stpredictions.models.OK3.tests.test_tree_clf_and_reg module<a class="headerlink" href="#module-stpredictions.models.OK3.tests.test_tree_clf_and_reg" title="Permalink to this headline"></a></h2>
+<p>Testing for the tree module (sklearn.tree).</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.assert_is_subtree">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">assert_is_subtree</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtree</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.assert_is_subtree" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.assert_pruning_creates_subtree">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">assert_pruning_creates_subtree</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator_cls</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pruning_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.assert_pruning_creates_subtree" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.assert_tree_equal">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">assert_tree_equal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.assert_tree_equal" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_apply_path_readonly">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_apply_path_readonly</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_apply_path_readonly" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_decision_path">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_decision_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_decision_path" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_explicit_sparse_zeros">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_explicit_sparse_zeros</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_depth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_explicit_sparse_zeros" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_min_weight_fraction_leaf">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_min_weight_fraction_leaf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datasets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sparse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_min_weight_fraction_leaf" title="Permalink to this definition"></a></dt>
+<dd><p>Test if leaves contain at least min_weight_fraction_leaf of the
+training set</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_min_weight_fraction_leaf_with_min_samples_leaf">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_min_weight_fraction_leaf_with_min_samples_leaf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datasets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sparse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_min_weight_fraction_leaf_with_min_samples_leaf" title="Permalink to this definition"></a></dt>
+<dd><p>Test the interaction between min_weight_fraction_leaf and min_samples_leaf
+when sample_weights is not provided in fit.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_min_weight_leaf_split_level">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_min_weight_leaf_split_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_min_weight_leaf_split_level" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_no_sparse_y_support">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_no_sparse_y_support</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_no_sparse_y_support" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_public_apply">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_public_apply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_public_apply" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_public_apply_sparse">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_public_apply_sparse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_public_apply_sparse" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_raise_error_on_1d_input">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_raise_error_on_1d_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_raise_error_on_1d_input" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_sparse_criterion">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_sparse_criterion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_sparse_criterion" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_sparse_input">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_sparse_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_depth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">only_reg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_sparse_input" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_sparse_parameters">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">check_sparse_parameters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.check_sparse_parameters" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_1d_input">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_1d_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_1d_input" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_X_idx_sorted_deprecated">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_X_idx_sorted_deprecated</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">TreeEstimator</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_X_idx_sorted_deprecated" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_apply_path_readonly_all_trees">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_apply_path_readonly_all_trees</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_apply_path_readonly_all_trees" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_arrayrepr">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_arrayrepr</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_arrayrepr" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_arrays_persist">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_arrays_persist</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_arrays_persist" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_behaviour_constant_feature_after_splits">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_behaviour_constant_feature_after_splits</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_behaviour_constant_feature_after_splits" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_big_input">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_big_input</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_big_input" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_classification_toy">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_classification_toy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_classification_toy" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_criterion_copy">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_criterion_copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_criterion_copy" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_decision_path">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_decision_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_decision_path" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_decision_path_hardcoded">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_decision_path_hardcoded</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_decision_path_hardcoded" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_diabetes_overfit">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_diabetes_overfit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Tree</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criterion</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_diabetes_overfit" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_diabetes_underfit">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_diabetes_underfit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Tree</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criterion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_depth</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_diabetes_underfit" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_empty_leaf_infinite_threshold">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_empty_leaf_infinite_threshold</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_empty_leaf_infinite_threshold" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_error">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_error</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_error" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_explicit_sparse_zeros">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_explicit_sparse_zeros</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_explicit_sparse_zeros" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_huge_allocations">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_huge_allocations</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_huge_allocations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_importances">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_importances</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_importances" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_importances_gini_equal_mse">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_importances_gini_equal_mse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_importances_gini_equal_mse" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_importances_raises">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_importances_raises</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_importances_raises" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_iris">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_iris</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_iris" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_max_features">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_max_features</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_max_features" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_max_leaf_nodes">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_max_leaf_nodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_max_leaf_nodes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_max_leaf_nodes_max_depth">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_max_leaf_nodes_max_depth</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_max_leaf_nodes_max_depth" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_memory_layout">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_memory_layout</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_memory_layout" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_min_impurity_decrease">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_min_impurity_decrease</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_min_impurity_decrease" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_min_impurity_split">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_min_impurity_split</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_min_impurity_split" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_min_samples_leaf">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_min_samples_leaf</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_min_samples_leaf" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_min_samples_split">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_min_samples_split</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_min_samples_split" title="Permalink to this definition"></a></dt>
+<dd><p>Test min_samples_split parameter</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_min_weight_fraction_leaf_on_dense_input">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_min_weight_fraction_leaf_on_dense_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_min_weight_fraction_leaf_on_dense_input" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_min_weight_fraction_leaf_on_sparse_input">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_min_weight_fraction_leaf_on_sparse_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_min_weight_fraction_leaf_on_sparse_input" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_min_weight_fraction_leaf_with_min_samples_leaf_on_dense_input">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_min_weight_fraction_leaf_with_min_samples_leaf_on_dense_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_min_weight_fraction_leaf_with_min_samples_leaf_on_dense_input" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_min_weight_fraction_leaf_with_min_samples_leaf_on_sparse_input">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_min_weight_fraction_leaf_with_min_samples_leaf_on_sparse_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_min_weight_fraction_leaf_with_min_samples_leaf_on_sparse_input" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_min_weight_leaf_split_level">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_min_weight_leaf_split_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_min_weight_leaf_split_level" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_multioutput">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_multioutput</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_multioutput" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_no_sparse_y_support">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_no_sparse_y_support</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_no_sparse_y_support" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_numerical_stability">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_numerical_stability</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_numerical_stability" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_only_constant_features">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_only_constant_features</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_only_constant_features" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_prune_single_node_tree">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_prune_single_node_tree</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_prune_single_node_tree" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_prune_tree_classifier_are_subtrees">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_prune_tree_classifier_are_subtrees</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">criterion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tree_cls</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_prune_tree_classifier_are_subtrees" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_prune_tree_raises_negative_ccp_alpha">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_prune_tree_raises_negative_ccp_alpha</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_prune_tree_raises_negative_ccp_alpha" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_prune_tree_regression_are_subtrees">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_prune_tree_regression_are_subtrees</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">criterion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tree_cls</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_prune_tree_regression_are_subtrees" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_public_apply_all_trees">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_public_apply_all_trees</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_public_apply_all_trees" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_public_apply_sparse_trees">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_public_apply_sparse_trees</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_public_apply_sparse_trees" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_pure_set">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_pure_set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_pure_set" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_realloc">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_realloc</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_realloc" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_regression_toy">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_regression_toy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_regression_toy" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_sample_weight">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_sample_weight</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_sample_weight" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_sample_weight_invalid">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_sample_weight_invalid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_sample_weight_invalid" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_sparse">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_sparse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_sparse" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_sparse_input">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_sparse_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_sparse_input" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_sparse_input_reg_trees">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_sparse_input_reg_trees</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_sparse_input_reg_trees" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_unbalanced_iris">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_unbalanced_iris</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_unbalanced_iris" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_weighted_classification_toy">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_weighted_classification_toy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_weighted_classification_toy" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_with_only_one_non_constant_features">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_with_only_one_non_constant_features</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_with_only_one_non_constant_features" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_xor">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.OK3.tests.test_tree_clf_and_reg.</span></span><span class="sig-name descname"><span class="pre">test_xor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.OK3.tests.test_tree_clf_and_reg.test_xor" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-stpredictions.models.OK3.tests">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-stpredictions.models.OK3.tests" title="Permalink to this headline"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="stpredictions.models.OK3.html" class="btn btn-neutral float-left" title="stpredictions.models.OK3 package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="stpredictions.viz.html" class="btn btn-neutral float-right" title="stpredictions.viz package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, To Fullfill.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

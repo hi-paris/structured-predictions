@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>stpredictions.models.DIOKR package &mdash; structured-predictions  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="stpredictions.models.IOKR package" href="stpredictions.models.IOKR.html" />
+    <link rel="prev" title="stpredictions.models package" href="stpredictions.models.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html">
+            <img src="_static/LogoTelecom.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">stpredictions</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="stpredictions.html">stpredictions package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="stpredictions.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="stpredictions.datasets.html">stpredictions.datasets package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stpredictions.helpers.html">stpredictions.helpers package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stpredictions.metrics.html">stpredictions.metrics package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="stpredictions.models.html">stpredictions.models package</a><ul class="current">
+<li class="toctree-l5 current"><a class="reference internal" href="stpredictions.models.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l6 current"><a class="current reference internal" href="#">stpredictions.models.DIOKR package</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#module-stpredictions.models.DIOKR.IOKR">stpredictions.models.DIOKR.IOKR module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#module-stpredictions.models.DIOKR.cost">stpredictions.models.DIOKR.cost module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#module-stpredictions.models.DIOKR.estimator">stpredictions.models.DIOKR.estimator module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#module-stpredictions.models.DIOKR.kernel">stpredictions.models.DIOKR.kernel module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#module-stpredictions.models.DIOKR.net">stpredictions.models.DIOKR.net module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#module-stpredictions.models.DIOKR.utils">stpredictions.models.DIOKR.utils module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#module-stpredictions.models.DIOKR">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="stpredictions.models.IOKR.html">stpredictions.models.IOKR package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="stpredictions.models.OK3.html">stpredictions.models.OK3 package</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="stpredictions.models.html#module-stpredictions.models">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="stpredictions.viz.html">stpredictions.viz package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="stpredictions.html#module-stpredictions">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">structured-predictions</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">stpredictions</a> &raquo;</li>
+          <li><a href="stpredictions.html">stpredictions package</a> &raquo;</li>
+          <li><a href="stpredictions.models.html">stpredictions.models package</a> &raquo;</li>
+      <li>stpredictions.models.DIOKR package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/stpredictions.models.DIOKR.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="stpredictions-models-diokr-package">
+<h1>stpredictions.models.DIOKR package<a class="headerlink" href="#stpredictions-models-diokr-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-stpredictions.models.DIOKR.IOKR">
+<span id="stpredictions-models-diokr-iokr-module"></span><h2>stpredictions.models.DIOKR.IOKR module<a class="headerlink" href="#module-stpredictions.models.DIOKR.IOKR" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.IOKR.IOKR">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.IOKR.</span></span><span class="sig-name descname"><span class="pre">IOKR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_to_candidates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.IOKR.IOKR" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Main class implementing IOKR + OEL</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.IOKR.IOKR.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Y_s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">L</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_gamma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_kernel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_kernel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Omega</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">oel_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_X_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_Y_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.IOKR.IOKR.fit" title="Permalink to this definition"></a></dt>
+<dd><p>Fit OEE (Output Embedding Estimator = KRR) and OEL with supervised/unsupervised data</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.IOKR.IOKR.get_vv_norm">
+<span class="sig-name descname"><span class="pre">get_vv_norm</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.IOKR.IOKR.get_vv_norm" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the vv norm of the estimator fitted</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.IOKR.IOKR.sloss">
+<span class="sig-name descname"><span class="pre">sloss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">K_x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.IOKR.IOKR.sloss" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the square loss (train MSE)</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-stpredictions.models.DIOKR.cost">
+<span id="stpredictions-models-diokr-cost-module"></span><h2>stpredictions.models.DIOKR.cost module<a class="headerlink" href="#module-stpredictions.models.DIOKR.cost" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.cost.sloss">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.cost.</span></span><span class="sig-name descname"><span class="pre">sloss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Omega</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_x_tr_ba</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_y_tr_ba</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_y_ba_ba</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.cost.sloss" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.cost.sloss_batch">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.cost.</span></span><span class="sig-name descname"><span class="pre">sloss_batch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Omega_block_diag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_x_tr_te</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_y_tr_te</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_y_te_te</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.cost.sloss_batch" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-stpredictions.models.DIOKR.estimator">
+<span id="stpredictions-models-diokr-estimator-module"></span><h2>stpredictions.models.DIOKR.estimator module<a class="headerlink" href="#module-stpredictions.models.DIOKR.estimator" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.estimator.DIOKREstimator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.estimator.</span></span><span class="sig-name descname"><span class="pre">DIOKREstimator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kernel_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_output</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lbda</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iokr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Omega</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.estimator.DIOKREstimator" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>DIOKR Class with fitting procedure using pytorch</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.estimator.DIOKREstimator.fit_kernel_input">
+<span class="sig-name descname"><span class="pre">fit_kernel_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_epochs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solver</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'sgd'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size_train</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size_test</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.estimator.DIOKREstimator.fit_kernel_input" title="Permalink to this definition"></a></dt>
+<dd><p>Fits the input kernel when using a learnable neural network kernel input using the method train_kernel_input
+at each epoch.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.estimator.DIOKREstimator.objective">
+<span class="sig-name descname"><span class="pre">objective</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_batch</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.estimator.DIOKREstimator.objective" title="Permalink to this definition"></a></dt>
+<dd><p>Computes the objectif function to be minimized, sum of the cost +regularization</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.estimator.DIOKREstimator.predict">
+<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Y_candidates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.estimator.DIOKREstimator.predict" title="Permalink to this definition"></a></dt>
+<dd><p>Model Prediction</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.estimator.DIOKREstimator.train_kernel_input">
+<span class="sig-name descname"><span class="pre">train_kernel_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solver</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.estimator.DIOKREstimator.train_kernel_input" title="Permalink to this definition"></a></dt>
+<dd><p>One step of the gradient descent using Stochastic Gradient Descent during the fitting of the input kernel
+when using a learnable neural network kernel input</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-stpredictions.models.DIOKR.kernel">
+<span id="stpredictions-models-diokr-kernel-module"></span><h2>stpredictions.models.DIOKR.kernel module<a class="headerlink" href="#module-stpredictions.models.DIOKR.kernel" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.Gaussian">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.kernel.</span></span><span class="sig-name descname"><span class="pre">Gaussian</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gamma</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.Gaussian" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#stpredictions.models.DIOKR.kernel.Kernel" title="stpredictions.models.DIOKR.kernel.Kernel"><code class="xref py py-class docutils literal notranslate"><span class="pre">stpredictions.models.DIOKR.kernel.Kernel</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.Gaussian.compute_gram">
+<span class="sig-name descname"><span class="pre">compute_gram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.Gaussian.compute_gram" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.GaussianTani">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.kernel.</span></span><span class="sig-name descname"><span class="pre">GaussianTani</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gamma</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.GaussianTani" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#stpredictions.models.DIOKR.kernel.Kernel" title="stpredictions.models.DIOKR.kernel.Kernel"><code class="xref py py-class docutils literal notranslate"><span class="pre">stpredictions.models.DIOKR.kernel.Kernel</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.GaussianTani.compute_gram">
+<span class="sig-name descname"><span class="pre">compute_gram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.GaussianTani.compute_gram" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.Kernel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.kernel.</span></span><span class="sig-name descname"><span class="pre">Kernel</span></span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.Kernel" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.LearnableGaussian">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.kernel.</span></span><span class="sig-name descname"><span class="pre">LearnableGaussian</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gamma</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optim_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.LearnableGaussian" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#stpredictions.models.DIOKR.kernel.Kernel" title="stpredictions.models.DIOKR.kernel.Kernel"><code class="xref py py-class docutils literal notranslate"><span class="pre">stpredictions.models.DIOKR.kernel.Kernel</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.LearnableGaussian.append_test_loss">
+<span class="sig-name descname"><span class="pre">append_test_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_loss</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.LearnableGaussian.append_test_loss" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.LearnableGaussian.append_time">
+<span class="sig-name descname"><span class="pre">append_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.LearnableGaussian.append_time" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.LearnableGaussian.append_train_loss">
+<span class="sig-name descname"><span class="pre">append_train_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_loss</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.LearnableGaussian.append_train_loss" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.LearnableGaussian.clear_memory">
+<span class="sig-name descname"><span class="pre">clear_memory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.LearnableGaussian.clear_memory" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.LearnableGaussian.clone_kernel">
+<span class="sig-name descname"><span class="pre">clone_kernel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.LearnableGaussian.clone_kernel" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.LearnableGaussian.compute_gram">
+<span class="sig-name descname"><span class="pre">compute_gram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.LearnableGaussian.compute_gram" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.LearnableLinear">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.kernel.</span></span><span class="sig-name descname"><span class="pre">LearnableLinear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optim_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.LearnableLinear" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#stpredictions.models.DIOKR.kernel.Kernel" title="stpredictions.models.DIOKR.kernel.Kernel"><code class="xref py py-class docutils literal notranslate"><span class="pre">stpredictions.models.DIOKR.kernel.Kernel</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.LearnableLinear.append_test_loss">
+<span class="sig-name descname"><span class="pre">append_test_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_loss</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.LearnableLinear.append_test_loss" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.LearnableLinear.append_time">
+<span class="sig-name descname"><span class="pre">append_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.LearnableLinear.append_time" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.LearnableLinear.append_train_loss">
+<span class="sig-name descname"><span class="pre">append_train_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_loss</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.LearnableLinear.append_train_loss" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.LearnableLinear.clear_memory">
+<span class="sig-name descname"><span class="pre">clear_memory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.LearnableLinear.clear_memory" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.LearnableLinear.clone_kernel">
+<span class="sig-name descname"><span class="pre">clone_kernel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.LearnableLinear.clone_kernel" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.LearnableLinear.compute_gram">
+<span class="sig-name descname"><span class="pre">compute_gram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.LearnableLinear.compute_gram" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.LearnableLinear.model_forward">
+<span class="sig-name descname"><span class="pre">model_forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.LearnableLinear.model_forward" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.gaussian_tani_kernel">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.kernel.</span></span><span class="sig-name descname"><span class="pre">gaussian_tani_kernel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.gaussian_tani_kernel" title="Permalink to this definition"></a></dt>
+<dd><p>Compute Gaussian Tanimoto Gram matrix between X and Y (or X)
+Parameters
+———-
+X: torch.Tensor of shape (n_samples_1, n_features)</p>
+<blockquote>
+<div><p>First input on which Gram matrix is computed</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Y: torch.Tensor of shape (n_samples_2, n_features), default None</dt><dd><p>Second input on which Gram matrix is computed. X is reused if None</p>
+</dd>
+<dt>gamma: float</dt><dd><p>Gamma parameter of the kernel (see sklearn implementation)</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>K: torch.Tensor of shape (n_samples_1, n_samples_2)</dt><dd><p>Gram matrix on X/Y</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.get_anchors_gaussian_rff">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.kernel.</span></span><span class="sig-name descname"><span class="pre">get_anchors_gaussian_rff</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_rff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.get_anchors_gaussian_rff" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.linear_kernel">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.kernel.</span></span><span class="sig-name descname"><span class="pre">linear_kernel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.linear_kernel" title="Permalink to this definition"></a></dt>
+<dd><p>Compute linear Gram matrix between X and Y (or X)
+Parameters
+———-
+X: torch.Tensor of shape (n_samples_1, n_features)</p>
+<blockquote>
+<div><p>First input on which Gram matrix is computed</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Y: torch.Tensor of shape (n_samples_2, n_features), default None</dt><dd><p>Second input on which Gram matrix is computed. X is reused if None</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>K: torch.Tensor of shape (n_samples_1, n_samples_2)</dt><dd><p>Gram matrix on X/Y</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.kernel.rbf_kernel">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.kernel.</span></span><span class="sig-name descname"><span class="pre">rbf_kernel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.kernel.rbf_kernel" title="Permalink to this definition"></a></dt>
+<dd><p>Compute rbf Gram matrix between X and Y (or X)
+Parameters
+———-
+X: torch.Tensor of shape (n_samples_1, n_features)</p>
+<blockquote>
+<div><p>First input on which Gram matrix is computed</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Y: torch.Tensor of shape (n_samples_2, n_features), default None</dt><dd><p>Second input on which Gram matrix is computed. X is reused if None</p>
+</dd>
+<dt>gamma: float</dt><dd><p>Gamma parameter of the kernel (see sklearn implementation)</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>K: torch.Tensor of shape (n_samples_1, n_samples_2)</dt><dd><p>Gram matrix on X/Y</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-stpredictions.models.DIOKR.net">
+<span id="stpredictions-models-diokr-net-module"></span><h2>stpredictions.models.DIOKR.net module<a class="headerlink" href="#module-stpredictions.models.DIOKR.net" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.net.Net1">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.net.</span></span><span class="sig-name descname"><span class="pre">Net1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim_inputs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_outputs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.net.Net1" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.net.Net1.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.net.Net1.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.net.Net1.get_layers">
+<span class="sig-name descname"><span class="pre">get_layers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.net.Net1.get_layers" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.net.Net1.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#stpredictions.models.DIOKR.net.Net1.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.net.Net2">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.net.</span></span><span class="sig-name descname"><span class="pre">Net2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim_inputs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_outputs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.net.Net2" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.net.Net2.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.net.Net2.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.net.Net2.get_layers">
+<span class="sig-name descname"><span class="pre">get_layers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.net.Net2.get_layers" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.net.Net2.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#stpredictions.models.DIOKR.net.Net2.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.net.Net3">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.net.</span></span><span class="sig-name descname"><span class="pre">Net3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim_inputs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_outputs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.net.Net3" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.net.Net3.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.net.Net3.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.net.Net3.get_layers">
+<span class="sig-name descname"><span class="pre">get_layers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.net.Net3.get_layers" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.net.Net3.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#stpredictions.models.DIOKR.net.Net3.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-stpredictions.models.DIOKR.utils">
+<span id="stpredictions-models-diokr-utils-module"></span><h2>stpredictions.models.DIOKR.utils module<a class="headerlink" href="#module-stpredictions.models.DIOKR.utils" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.utils.project_root">
+<span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.utils.</span></span><span class="sig-name descname"><span class="pre">project_root</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pathlib.Path</span></span></span><a class="headerlink" href="#stpredictions.models.DIOKR.utils.project_root" title="Permalink to this definition"></a></dt>
+<dd><p>Returns project root folder.</p>
+</dd></dl>
+
+</section>
+<section id="module-stpredictions.models.DIOKR">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-stpredictions.models.DIOKR" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.DIOKREstimator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.</span></span><span class="sig-name descname"><span class="pre">DIOKREstimator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kernel_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_output</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lbda</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iokr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Omega</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.DIOKREstimator" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>DIOKR Class with fitting procedure using pytorch</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.DIOKREstimator.fit_kernel_input">
+<span class="sig-name descname"><span class="pre">fit_kernel_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_epochs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solver</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'sgd'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size_train</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size_test</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.DIOKREstimator.fit_kernel_input" title="Permalink to this definition"></a></dt>
+<dd><p>Fits the input kernel when using a learnable neural network kernel input using the method train_kernel_input
+at each epoch.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.DIOKREstimator.objective">
+<span class="sig-name descname"><span class="pre">objective</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_batch</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.DIOKREstimator.objective" title="Permalink to this definition"></a></dt>
+<dd><p>Computes the objectif function to be minimized, sum of the cost +regularization</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.DIOKREstimator.predict">
+<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Y_candidates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.DIOKREstimator.predict" title="Permalink to this definition"></a></dt>
+<dd><p>Model Prediction</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.DIOKREstimator.train_kernel_input">
+<span class="sig-name descname"><span class="pre">train_kernel_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solver</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.DIOKREstimator.train_kernel_input" title="Permalink to this definition"></a></dt>
+<dd><p>One step of the gradient descent using Stochastic Gradient Descent during the fitting of the input kernel
+when using a learnable neural network kernel input</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.IOKR">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.</span></span><span class="sig-name descname"><span class="pre">IOKR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_to_candidates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.IOKR" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Main class implementing IOKR + OEL</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.IOKR.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Y_s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">L</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_gamma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_kernel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_kernel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Omega</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">oel_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_X_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_Y_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.IOKR.fit" title="Permalink to this definition"></a></dt>
+<dd><p>Fit OEE (Output Embedding Estimator = KRR) and OEL with supervised/unsupervised data</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.IOKR.get_vv_norm">
+<span class="sig-name descname"><span class="pre">get_vv_norm</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.IOKR.get_vv_norm" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the vv norm of the estimator fitted</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.IOKR.sloss">
+<span class="sig-name descname"><span class="pre">sloss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">K_x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.IOKR.sloss" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the square loss (train MSE)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.Net1">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.</span></span><span class="sig-name descname"><span class="pre">Net1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim_inputs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_outputs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.Net1" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.Net1.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.Net1.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.Net1.get_layers">
+<span class="sig-name descname"><span class="pre">get_layers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.Net1.get_layers" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.Net1.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#stpredictions.models.DIOKR.Net1.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.Net2">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.</span></span><span class="sig-name descname"><span class="pre">Net2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim_inputs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_outputs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.Net2" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.Net2.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.Net2.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.Net2.get_layers">
+<span class="sig-name descname"><span class="pre">get_layers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.Net2.get_layers" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.Net2.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#stpredictions.models.DIOKR.Net2.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.Net3">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">stpredictions.models.DIOKR.</span></span><span class="sig-name descname"><span class="pre">Net3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim_inputs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_outputs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.Net3" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.Net3.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.Net3.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.Net3.get_layers">
+<span class="sig-name descname"><span class="pre">get_layers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stpredictions.models.DIOKR.Net3.get_layers" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="stpredictions.models.DIOKR.Net3.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#stpredictions.models.DIOKR.Net3.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="stpredictions.models.html" class="btn btn-neutral float-left" title="stpredictions.models package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="stpredictions.models.IOKR.html" class="btn btn-neutral float-right" title="stpredictions.models.IOKR package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, To Fullfill.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
