@@ -61,7 +61,7 @@ if sys.platform.startswith('darwin'):
 
 setup(
     name='structured-predictions',
-    version='0.0.8',
+    version='0.0.9',
     description='Structured-Predictions',
     # long_description=README,
     long_description_content_type='text/markdown',
@@ -87,7 +87,7 @@ setup(
     scripts=[],
     data_files=[],
     setup_requires=["oldest-supported-numpy", "cython>=0.23"],
-    install_requires=["numpy>=1.20.0", "scipy>=1.0", "scikit-learn", "torch",
+    install_requires=["numpy>=1.20.0", "scipy>=1.0", "scikit-learn", "torch>=1.11.0",
              "liac-arff", ],
     python_requires=">=3.7",
     classifiers=[
