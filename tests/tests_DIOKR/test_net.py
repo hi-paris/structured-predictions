@@ -5,7 +5,7 @@
 from os.path import join
 
 import torch
-from skmultilearn.dataset import load_from_arff
+from stpredictions.datasets.load_data import load_from_arff
 
 from stpredictions.models.DIOKR import net
 from stpredictions.models.DIOKR.utils import project_root
