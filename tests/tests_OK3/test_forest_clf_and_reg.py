@@ -2,27 +2,25 @@
 Testing for the forest module (sklearn.ensemble.forest).
 """
 
-import itertools
-import math
 import pickle
+import math
 from collections import defaultdict
-# from itertools import combinations
+import itertools
+from itertools import combinations
 from itertools import product
 from typing import Dict, Any
 
-import joblib
 import numpy as np
-import pytest
-from scipy.sparse import coo_matrix
-from scipy.sparse import csc_matrix
 from scipy.sparse import csr_matrix
-from sklearn import datasets
-from sklearn.datasets import make_classification
-from sklearn.decomposition import TruncatedSVD
-from sklearn.exceptions import NotFittedError
-from sklearn.model_selection import GridSearchCV
-from sklearn.svm import LinearSVC
-from sklearn.tree._classes import SPARSE_SPLITTERS
+from scipy.sparse import csc_matrix
+from scipy.sparse import coo_matrix
+from scipy.special import comb
+
+import pytest
+
+import joblib
+
+from sklearn.utils._testing import assert_almost_equal
 from sklearn.utils._testing import assert_array_almost_equal
 from sklearn.utils._testing import assert_array_equal
 from sklearn.utils._testing import assert_raises
@@ -30,36 +28,46 @@ from sklearn.utils._testing import assert_warns
 from sklearn.utils._testing import assert_warns_message
 from sklearn.utils._testing import ignore_warnings
 from sklearn.utils._testing import skip_if_no_parallel
-from sklearn.utils.validation import check_random_state
+# from sklearn.utils.fixes import parse_version
+
+from sklearn.exceptions import NotFittedError
+
+from sklearn import datasets
+from sklearn.decomposition import TruncatedSVD
+from sklearn.datasets import make_classification
 
 from stpredictions.models.OK3._forest import ExtraOKTreesRegressor
 from stpredictions.models.OK3._forest import RandomOKForestRegressor
 from stpredictions.models.OK3._forest import RandomOKTreesEmbedding
 
-# from scipy.special import comb
-# from sklearn.utils.fixes import parse_version
+from sklearn.model_selection import GridSearchCV
+from sklearn.svm import LinearSVC
+from sklearn.utils.validation import check_random_state
+
+from sklearn.tree._classes import SPARSE_SPLITTERS
+
 
 # toy sample
 X = [[-2, -1], [-1, -1], [-1, -2], [1, 1], [1, 2], [2, 1]]
 y = [-1, -1, -1, 1, 1, 1]
 K_y_clf = np.array([
-    [1, 1, 1, 0, 0, 0],
-    [0, 1, 1, 0, 0, 0],
-    [0, 0, 1, 0, 0, 0],
-    [0, 0, 0, 1, 1, 1],
-    [0, 0, 0, 0, 1, 1],
-    [0, 0, 0, 0, 0, 1]
-])
+    [1,1,1,0,0,0],
+    [0,1,1,0,0,0],
+    [0,0,1,0,0,0],
+    [0,0,0,1,1,1],
+    [0,0,0,0,1,1],
+    [0,0,0,0,0,1]
+    ])
 K_y_reg = np.array([
-    [1, 1, 1, -1, -1, -1],
-    [0, 1, 1, -1, -1, -1],
-    [0, 0, 1, -1, -1, -1],
-    [0, 0, 0, 1, 1, 1],
-    [0, 0, 0, 0, 1, 1],
-    [0, 0, 0, 0, 0, 1]
-])
-K_y = {"gini_clf": K_y_clf,
-       "mse_reg": K_y_reg}
+    [1,1,1,-1,-1,-1],
+    [0,1,1,-1,-1,-1],
+    [0,0,1,-1,-1,-1],
+    [0,0,0,1,1,1],
+    [0,0,0,0,1,1],
+    [0,0,0,0,0,1]
+    ])
+K_y = {"gini_clf" : K_y_clf,
+       "mse_reg" : K_y_reg}
 
 T = [[-1, -1], [2, 2], [3, 2]]
 true_result = [-1, 1, 1]
@@ -132,18 +140,18 @@ def check_iris_criterion(name, criterion):
     ForestClassifier = OK_FORESTS[name]
 
     clf = ForestClassifier(n_estimators=10, criterion=criterion,
-                           random_state=1, kernel="gini_clf")
+                            random_state=1, kernel="gini_clf")
     clf.fit(iris.data, iris.target)
     score = clf.score(iris.data, iris.target)
     assert score > 0.9, ("Failed with criterion %s and score = %f"
-                         % (criterion, score))
+                          % (criterion, score))
 
     clf = ForestClassifier(n_estimators=10, criterion=criterion,
-                           max_features=2, random_state=1, kernel="gini_clf")
+                            max_features=2, random_state=1, kernel="gini_clf")
     clf.fit(iris.data, iris.target)
     score = clf.score(iris.data, iris.target)
     assert score > 0.5, ("Failed with criterion %s and score = %f"
-                         % (criterion, score))
+                          % (criterion, score))
 
 
 @pytest.mark.parametrize('name', OK_FORESTS)
@@ -237,13 +245,12 @@ def check_importances(name, criterion, kernel, dtype, tolerance):
 
 @pytest.mark.parametrize('dtype', (np.float64, np.float32))
 @pytest.mark.parametrize(
-    'name, criterion, kernel',
-    itertools.chain(product(OK_FORESTS,
-                            ["mse"], ["gini_clf", "mse_reg"])))
+        'name, criterion, kernel',
+        itertools.chain(product(OK_FORESTS,
+                                ["mse"], ["gini_clf", "mse_reg"])))
 def test_importances(dtype, name, criterion, kernel):
     tolerance = 0.01
     check_importances(name, criterion, kernel, dtype, tolerance)
-
 
 # Ne marche que si le critère d'entropie peut être utilisé
 # def test_importances_asymptotic():
@@ -342,8 +349,8 @@ def test_importances(dtype, name, criterion, kernel):
 @pytest.mark.parametrize('name', FOREST_ESTIMATORS)
 def test_unfitted_feature_importances(name):
     err_msg = ("This {} instance is not fitted yet. Call 'fit' with "
-               "appropriate arguments before using this estimator."
-               .format(name))
+                "appropriate arguments before using this estimator."
+                .format(name))
     with pytest.raises(NotFittedError, match=err_msg):
         getattr(FOREST_ESTIMATORS[name](), 'feature_importances_')
 
@@ -365,15 +372,15 @@ def check_oob_score(name, X, y, kernel, n_estimators=20):
     # Check warning if not enough estimators
     with np.errstate(divide="ignore", invalid="ignore"):
         est = FOREST_ESTIMATORS[name](oob_score=True, random_state=0,
-                                      criterion="mse",
-                                      n_estimators=1, bootstrap=True, kernel=kernel)
+                                                        criterion="mse",
+              n_estimators=1, bootstrap=True, kernel=kernel)
         assert_warns(UserWarning, est.fit, X, y)
 
 
 @pytest.mark.parametrize('name', OK_FORESTS)
 def test_oob_score_classifiers(name):
     kernel = "gini_clf"
-
+    
     check_oob_score(name, iris.data, iris.target, kernel)
 
     # csc matrix
@@ -386,7 +393,7 @@ def test_oob_score_classifiers(name):
 @pytest.mark.parametrize('name', OK_FORESTS)
 def test_oob_score_regressors(name):
     kernel = "mse_reg"
-
+    
     check_oob_score(name, X_reg, y_reg, kernel, 50)
 
     # csc matrix
@@ -406,7 +413,7 @@ def check_oob_score_raise_error(name, kernel):
     else:
         # Unfitted /  no bootstrap / no oob_score
         for oob_score, bootstrap in [(True, False), (False, True),
-                                     (False, False)]:
+                                      (False, False)]:
             est = ForestEstimator(oob_score=oob_score, bootstrap=bootstrap,
                                   random_state=0, kernel=kernel)
             assert not hasattr(est, "oob_score_")
@@ -418,8 +425,8 @@ def check_oob_score_raise_error(name, kernel):
 
 
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(FOREST_ESTIMATORS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(FOREST_ESTIMATORS,
+                                ["gini_clf", "mse_reg"])))
 def test_oob_score_raise_error(name, kernel):
     check_oob_score_raise_error(name, kernel)
 
@@ -450,10 +457,9 @@ def check_parallel(name, kernel, X, y):
     y2 = forest.predict(X)
     assert_array_almost_equal(y1, y2, 3)
 
-
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(OK_FORESTS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(OK_FORESTS,
+                                ["gini_clf", "mse_reg"])))
 def test_parallel(name, kernel):
     if "clf" in kernel:
         X = iris.data
@@ -481,8 +487,8 @@ def check_pickle(name, kernel, X, y):
 
 
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(OK_FORESTS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(OK_FORESTS,
+                                ["gini_clf", "mse_reg"])))
 def test_pickle(name, kernel):
     if "clf" in kernel:
         X = iris.data
@@ -498,9 +504,9 @@ def check_multioutput(name, kernel):
     # Check estimators on multi-output problems.
 
     X_train = [[-2, -1], [-1, -1], [-1, -2], [1, 1], [1, 2], [2, 1], [-2, 1],
-               [-1, 1], [-1, 2], [2, -1], [1, -1], [1, -2]]
+                [-1, 1], [-1, 2], [2, -1], [1, -1], [1, -2]]
     y_train = [[-1, 0], [-1, 0], [-1, 0], [1, 1], [1, 1], [1, 1], [-1, 2],
-               [-1, 2], [-1, 2], [1, 3], [1, 3], [1, 3]]
+                [-1, 2], [-1, 2], [1, 3], [1, 3], [1, 3]]
     X_test = [[-1, -1], [1, 1], [-1, 1], [1, -1]]
     y_test = [[-1, 0], [1, 1], [-1, 2], [1, 3]]
 
@@ -522,8 +528,8 @@ def check_multioutput(name, kernel):
 
 
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(OK_FORESTS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(OK_FORESTS,
+                                ["gini_clf", "mse_reg"])))
 def test_multioutput(name, kernel):
     check_multioutput(name, kernel)
 
@@ -534,11 +540,11 @@ def test_multioutput_string(name):
     # Check estimators on multi-output problems with string outputs.
 
     X_train = [[-2, -1], [-1, -1], [-1, -2], [1, 1], [1, 2], [2, 1], [-2, 1],
-               [-1, 1], [-1, 2], [2, -1], [1, -1], [1, -2]]
+                [-1, 1], [-1, 2], [2, -1], [1, -1], [1, -2]]
     y_train = [["red", "blue"], ["red", "blue"], ["red", "blue"],
-               ["green", "green"], ["green", "green"], ["green", "green"],
-               ["red", "purple"], ["red", "purple"], ["red", "purple"],
-               ["green", "yellow"], ["green", "yellow"], ["green", "yellow"]]
+                ["green", "green"], ["green", "green"], ["green", "green"],
+                ["red", "purple"], ["red", "purple"], ["red", "purple"],
+                ["green", "yellow"], ["green", "yellow"], ["green", "yellow"]]
     X_test = [[-1, -1], [1, 1], [-1, 1], [1, -1]]
     y_test = [["red", "blue"], ["green", "green"],
               ["red", "purple"], ["green", "yellow"]]
@@ -578,9 +584,9 @@ def test_random_trees_dense_equal():
 
     # Create the RTEs
     hasher_dense = RandomOKTreesEmbedding(n_estimators=10, sparse_output=False,
-                                          random_state=0, kernel="mse_reg")
+                                        random_state=0, kernel="mse_reg")
     hasher_sparse = RandomOKTreesEmbedding(n_estimators=10, sparse_output=True,
-                                           random_state=0, kernel="mse_reg")
+                                          random_state=0, kernel="mse_reg")
     X, y = datasets.make_circles(factor=0.5)
     X_transformed_dense = hasher_dense.fit_transform(X)
     X_transformed_sparse = hasher_sparse.fit_transform(X)
@@ -603,7 +609,7 @@ def test_random_hasher():
     # test fit and transform:
     hasher = RandomOKTreesEmbedding(n_estimators=30, random_state=1, kernel="mse_reg")
     assert_array_equal(hasher.fit(X).transform(X).toarray(),
-                       X_transformed.toarray())
+                        X_transformed.toarray())
 
     # one leaf active per data point per forest
     assert X_transformed.shape[0] == X.shape[0]
@@ -641,7 +647,7 @@ def test_parallel_train():
     preds = [clf.predict(X_test) for clf in clfs]
     for preds1, preds2 in zip(preds, preds[1:]):
         assert_array_almost_equal(preds1, preds2)
-
+    
     # classifier
     clfs = [
         RandomOKForestRegressor(n_estimators=20, n_jobs=n_jobs,
@@ -670,8 +676,8 @@ def test_distribution():
     uniques = defaultdict(int)
     for tree in reg.estimators_:
         tree = "".join(("%d,%d/" % (f, int(t)) if f >= 0 else "-")
-                       for f, t in zip(tree.tree_.feature,
-                                       tree.tree_.threshold))
+                        for f, t in zip(tree.tree_.feature,
+                                        tree.tree_.threshold))
 
         uniques[tree] += 1
 
@@ -702,8 +708,8 @@ def test_distribution():
     uniques = defaultdict(int)
     for tree in reg.estimators_:
         tree = "".join(("%d,%d/" % (f, int(t)) if f >= 0 else "-")
-                       for f, t in zip(tree.tree_.feature,
-                                       tree.tree_.threshold))
+                        for f, t in zip(tree.tree_.feature,
+                                        tree.tree_.threshold))
 
         uniques[tree] += 1
 
@@ -730,8 +736,8 @@ def check_max_leaf_nodes_max_depth(name, kernel):
 
 
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(FOREST_ESTIMATORS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(FOREST_ESTIMATORS,
+                                ["gini_clf", "mse_reg"])))
 def test_max_leaf_nodes_max_depth(name, kernel):
     check_max_leaf_nodes_max_depth(name, kernel)
 
@@ -767,8 +773,8 @@ def check_min_samples_split(name, kernel):
 
 
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(FOREST_ESTIMATORS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(FOREST_ESTIMATORS,
+                                ["gini_clf", "mse_reg"])))
 def test_min_samples_split(name, kernel):
     check_min_samples_split(name, kernel)
 
@@ -805,8 +811,8 @@ def check_min_samples_leaf(name, kernel):
 
 
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(FOREST_ESTIMATORS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(FOREST_ESTIMATORS,
+                                ["gini_clf", "mse_reg"])))
 def test_min_samples_leaf(name, kernel):
     check_min_samples_leaf(name, kernel)
 
@@ -835,15 +841,15 @@ def check_min_weight_fraction_leaf(name, kernel):
         # drop inner nodes
         leaf_weights = node_weights[node_weights != 0]
         assert (
-                np.min(leaf_weights) >=
-                total_weight * est.min_weight_fraction_leaf), (
-            "Failed with {0} min_weight_fraction_leaf={1}".format(
-                name, est.min_weight_fraction_leaf))
+            np.min(leaf_weights) >=
+            total_weight * est.min_weight_fraction_leaf), (
+                "Failed with {0} min_weight_fraction_leaf={1}".format(
+                    name, est.min_weight_fraction_leaf))
 
 
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(FOREST_ESTIMATORS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(FOREST_ESTIMATORS,
+                                ["gini_clf", "mse_reg"])))
 def test_min_weight_fraction_leaf(name, kernel):
     check_min_weight_fraction_leaf(name, kernel)
 
@@ -875,13 +881,13 @@ def check_sparse_input(name, kernel, X, X_sparse, y):
 
 
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(FOREST_ESTIMATORS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(FOREST_ESTIMATORS,
+                                ["gini_clf", "mse_reg"])))
 @pytest.mark.parametrize('sparse_matrix',
-                         (csr_matrix, csc_matrix, coo_matrix))
+                          (csr_matrix, csc_matrix, coo_matrix))
 def test_sparse_input(name, kernel, sparse_matrix):
     X, y = datasets.make_multilabel_classification(random_state=0,
-                                                   n_samples=50)
+                                                    n_samples=50)
 
     check_sparse_input(name, kernel, X, sparse_matrix(X), y)
 
@@ -934,8 +940,8 @@ def check_memory_layout(name, kernel, dtype):
 
 
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(OK_FORESTS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(OK_FORESTS,
+                                ["gini_clf", "mse_reg"])))
 @pytest.mark.parametrize('dtype', (np.float64, np.float32))
 def test_memory_layout(name, kernel, dtype):
     check_memory_layout(name, kernel, dtype)
@@ -956,8 +962,8 @@ def check_1d_input(name, kernel, X, X_2d, y):
 
 
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(FOREST_ESTIMATORS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(FOREST_ESTIMATORS,
+                                ["gini_clf", "mse_reg"])))
 def test_1d_input(name, kernel):
     X = iris.data[:, 0]
     X_2d = iris.data[:, 0].reshape((-1, 1))
@@ -1073,9 +1079,9 @@ def check_warm_start(name, kernel, random_state=42):
     for n_estimators in [5, 10]:
         if est_ws is None:
             est_ws = ForestEstimator(n_estimators=n_estimators,
-                                     random_state=random_state,
-                                     warm_start=True,
-                                     kernel=kernel)
+                                      random_state=random_state,
+                                      warm_start=True,
+                                      kernel=kernel)
         else:
             est_ws.set_params(n_estimators=n_estimators)
         est_ws.fit(X, y)
@@ -1089,12 +1095,12 @@ def check_warm_start(name, kernel, random_state=42):
             set([tree.random_state for tree in est_no_ws]))
 
     assert_array_equal(est_ws.apply(X), est_no_ws.apply(X),
-                       err_msg="Failed with {0}".format(name))
+                        err_msg="Failed with {0}".format(name))
 
 
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(FOREST_ESTIMATORS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(FOREST_ESTIMATORS,
+                                ["gini_clf", "mse_reg"])))
 def test_warm_start(name, kernel):
     check_warm_start(name, kernel)
 
@@ -1117,8 +1123,8 @@ def check_warm_start_clear(name, kernel):
 
 
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(FOREST_ESTIMATORS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(FOREST_ESTIMATORS,
+                                ["gini_clf", "mse_reg"])))
 def test_warm_start_clear(name, kernel):
     check_warm_start_clear(name, kernel)
 
@@ -1134,8 +1140,8 @@ def check_warm_start_smaller_n_estimators(name, kernel):
 
 
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(FOREST_ESTIMATORS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(FOREST_ESTIMATORS,
+                                ["gini_clf", "mse_reg"])))
 def test_warm_start_smaller_n_estimators(name, kernel):
     check_warm_start_smaller_n_estimators(name, kernel)
 
@@ -1162,8 +1168,8 @@ def check_warm_start_equal_n_estimators(name, kernel):
 
 
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(FOREST_ESTIMATORS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(FOREST_ESTIMATORS,
+                                ["gini_clf", "mse_reg"])))
 def test_warm_start_equal_n_estimators(name, kernel):
     check_warm_start_equal_n_estimators(name, kernel)
 
@@ -1201,8 +1207,8 @@ def check_warm_start_oob(name, kernel):
 
 
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(OK_FORESTS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(OK_FORESTS,
+                                ["gini_clf", "mse_reg"])))
 def test_warm_start_oob(name, kernel):
     check_warm_start_oob(name, kernel)
 
@@ -1231,19 +1237,19 @@ def check_decision_path(name, kernel):
     assert indicator.shape[1] == n_nodes_ptr[-1]
     assert indicator.shape[0] == n_samples
     assert_array_equal(np.diff(n_nodes_ptr),
-                       [e.tree_.node_count for e in est.estimators_])
+                        [e.tree_.node_count for e in est.estimators_])
 
     # Assert that leaves index are correct
     leaves = est.apply(X)
     for est_id in range(leaves.shape[1]):
         leave_indicator = [indicator[i, n_nodes_ptr[est_id] + j]
-                           for i, j in enumerate(leaves[:, est_id])]
+                            for i, j in enumerate(leaves[:, est_id])]
         assert_array_almost_equal(leave_indicator, np.ones(shape=n_samples))
 
 
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(OK_FORESTS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(OK_FORESTS,
+                                ["gini_clf", "mse_reg"])))
 def test_decision_path(name, kernel):
     check_decision_path(name, kernel)
 
@@ -1255,15 +1261,15 @@ def check_min_impurity_split(name, kernel):
 
     est = FOREST_ESTIMATORS[name](min_impurity_split=0.1, kernel=kernel)
     est = assert_warns_message(FutureWarning,
-                               "min_impurity_decrease",
-                               est.fit, X, y)
+                                "min_impurity_decrease",
+                                est.fit, X, y)
     for tree in est.estimators_:
         assert tree.min_impurity_split == 0.1
 
 
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(OK_FORESTS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(OK_FORESTS,
+                                ["gini_clf", "mse_reg"])))
 def test_min_impurity_split(name, kernel):
     check_min_impurity_split(name, kernel)
 
@@ -1280,10 +1286,12 @@ def check_min_impurity_decrease(name, kernel):
 
 
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(OK_FORESTS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(OK_FORESTS,
+                                ["gini_clf", "mse_reg"])))
 def test_min_impurity_decrease(name, kernel):
     check_min_impurity_decrease(name, kernel)
+
+
 
 
 # mypy error: Variable "DEFAULT_JOBLIB_BACKEND" is not valid type
@@ -1298,7 +1306,6 @@ class MyBackend(DEFAULT_JOBLIB_BACKEND):  # type: ignore
 
 
 joblib.register_parallel_backend('testing', MyBackend)
-
 
 # @pytest.mark.skipif(parse_version(joblib.__version__) < parse_version('0.12'),
 #                     reason='tests not yet supported in joblib <0.12')
@@ -1321,7 +1328,7 @@ def test_backend_respected():
 
 def test_forest_feature_importances_sum():
     X, y = make_classification(n_samples=15, n_informative=3, random_state=1,
-                               n_classes=3)
+                                n_classes=3)
     clf = RandomOKForestRegressor(min_samples_leaf=5, random_state=42,
                                   n_estimators=200, kernel="gini_clf").fit(X, y)
     assert math.isclose(1, clf.feature_importances_.sum(), abs_tol=1e-7)
@@ -1333,30 +1340,30 @@ def test_forest_degenerate_feature_importances():
     y = np.ones((10,))
     gbr = RandomOKForestRegressor(n_estimators=10, kernel="mse_reg").fit(X, y)
     assert_array_equal(gbr.feature_importances_,
-                       np.zeros(10, dtype=np.float64))
+                        np.zeros(10, dtype=np.float64))
 
 
 @pytest.mark.parametrize('name, kernel',
-                         itertools.chain(product(OK_FORESTS,
-                                                 ["gini_clf", "mse_reg"])))
+        itertools.chain(product(OK_FORESTS,
+                                ["gini_clf", "mse_reg"])))
 @pytest.mark.parametrize(
     'max_samples, exc_type, exc_msg',
     [(int(1e9), ValueError,
       "`max_samples` must be in range 1 to 6 but got value 1000000000"),
-     (1.0, ValueError,
+      (1.0, ValueError,
       r"`max_samples` must be in range \(0, 1\) but got value 1.0"),
-     (2.0, ValueError,
+      (2.0, ValueError,
       r"`max_samples` must be in range \(0, 1\) but got value 2.0"),
-     (0.0, ValueError,
+      (0.0, ValueError,
       r"`max_samples` must be in range \(0, 1\) but got value 0.0"),
-     (np.nan, ValueError,
+      (np.nan, ValueError,
       r"`max_samples` must be in range \(0, 1\) but got value nan"),
-     (np.inf, ValueError,
+      (np.inf, ValueError,
       r"`max_samples` must be in range \(0, 1\) but got value inf"),
-     ('str max_samples?!', TypeError,
+      ('str max_samples?!', TypeError,
       r"`max_samples` should be int or float, but got "
       r"type '\<class 'str'\>'"),
-     (np.ones(2), TypeError,
+      (np.ones(2), TypeError,
       r"`max_samples` should be int or float, but got type "
       r"'\<class 'numpy.ndarray'\>'")]
 )
