@@ -51,9 +51,9 @@ jobs:
 
     - name: Build and compile
       run: |
-        # make dist
-        # python setup.py develop
-        pip install -i https://test.pypi.org/simple/ structured-predictions
+        make dist
+        python setup.py develop
+        #pip install -i https://test.pypi.org/simple/ structured-predictions
         python tests/tests_DIOKR/Demo_DeepIOKR_bibtex.py
     - name: Test with pytest
       run: |
