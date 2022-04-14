@@ -2,7 +2,7 @@ from os.path import join
 
 import pytest
 import torch
-from skmultilearn.dataset import load_from_arff
+from stpredictions.datasets.load_data import load_from_arff
 
 from stpredictions.models.DIOKR import IOKR
 from stpredictions.models.DIOKR import cost
