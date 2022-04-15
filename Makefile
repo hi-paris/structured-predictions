@@ -121,4 +121,9 @@ dist: clean ## builds source and wheel package
 pydocstyle :
 	pydocstyle ot
 
+git :
+	git add . *
+	git commit -m "Testing Package"
+	git push
+
 FORCE :
