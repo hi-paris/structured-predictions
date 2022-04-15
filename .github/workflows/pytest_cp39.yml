@@ -52,6 +52,7 @@ jobs:
 
     - name: Build and compile
       run: |
+        jmake clean
         pip install .
         # make dist
         # pip install dist/*
