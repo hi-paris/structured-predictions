@@ -12,8 +12,8 @@ import numpy as np
 from os.path import join
 from stpredictions.models.DIOKR.utils import project_root
 
-import seaborn as sns
-plt.style.use('seaborn')
+# import seaborn as sns
+# plt.style.use('seaborn')
 
 
 # Load data

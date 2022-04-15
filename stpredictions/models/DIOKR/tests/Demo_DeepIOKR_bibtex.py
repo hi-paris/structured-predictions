@@ -14,8 +14,8 @@ from skmultilearn.dataset import load_from_arff
 from scipy.linalg import block_diag
 import numpy as np
 
-import seaborn as sns
-plt.style.use('seaborn')
+# import seaborn as sns
+# plt.style.use('seaborn')
 
 x_train, y_train = load_bibtex_train()
 x_train, y_train = x_train.todense(), y_train.todense()
