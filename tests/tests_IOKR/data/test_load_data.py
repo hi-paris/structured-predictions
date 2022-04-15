@@ -47,7 +47,7 @@ class TestLoadBibtex():
         actual_x_shape = load[0].shape
         actual_y_shape = load[1].shape
         expected_x_shape = (7395, 1836)
-        expected_y_shape = (7395, 149)
+        expected_y_shape = (7395, 159)
         assert actual_x_shape == expected_x_shape, f"'X' should be {expected_x_shape}, but is {actual_x_shape} "
         assert actual_y_shape == expected_y_shape, f"'Y' should be {expected_y_shape}, but is {actual_y_shape} "
 
