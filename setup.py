@@ -88,7 +88,7 @@ setup(
     data_files=[],
     setup_requires=["oldest-supported-numpy", "cython>=0.23"],
     install_requires=["numpy>=1.16", "scipy>=1.0", "scikit-learn", "torch", 
-             "pandas", "scikit-multilearn", "liac-arff", "requests"],
+             "liac-arff", "requests"],
     python_requires=">=3.6",
     classifiers=[
         'Development Status :: 5 - Production/Stable',

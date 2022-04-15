@@ -10,7 +10,7 @@ from stpredictions.datasets.load_data import load_mulan_arff
 from stpredictions.datasets.load_data import load_bibtex_train, load_bibtex_test
 
 from sklearn.metrics.pairwise import rbf_kernel
-from skmultilearn.dataset import load_from_arff
+# from skmultilearn.dataset import load_from_arff
 from scipy.linalg import block_diag
 import numpy as np
 
