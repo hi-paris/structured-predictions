@@ -6,7 +6,7 @@ import torch
 # import matplotlib.cm as cm
 from stpredictions.models.DIOKR import cost, kernel, estimator, IOKR
 from sklearn.metrics.pairwise import rbf_kernel
-from stpredictions.datasets.load_data import load_from_arff
+from stpredictions.datasets.load_data import load_from_arff, load_bibtex_train, load_bibtex_test
 from scipy.linalg import block_diag
 import numpy as np
 from os.path import join
@@ -17,13 +17,11 @@ from stpredictions.models.DIOKR.utils import project_root
 
 
 # Load data
-path_tr = join(project_root(), 'datasets/bibtex/bibtex-train.arff')
-print(path_tr)
-x_train, y_train = load_from_arff(path_tr, label_count=159)
+
+x_train, y_train = load_bibtex_train()
 x_train, y_train = x_train.todense(), y_train.todense()
 
-path_te = join(project_root(), 'datasets/bibtex/bibtex-test.arff')
-x_test, y_test = load_from_arff(path_te, label_count=159)
+x_test, y_test = load_bibtex_test()
 x_test, y_test = x_test.todense(), y_test.todense()
 
 x_train, y_train = x_train[:2000], y_train[:2000]

@@ -57,6 +57,74 @@ def load_bibtex():
     return X, Y
 
 
+def load_bibtex_train():
+    """
+    Load the bibtex dataset.
+    __author__ = "Michael Gygli, ETH Zurich"
+    from https://github.com/gyglim/dvn/blob/master/mlc_datasets/__init__.py
+
+    Parameters
+    ----------
+    dir_path : string - containing location of bibtex.arff
+
+
+    Returns
+    -------
+    X : np.array
+        Explanatory variables - N * 1836 array variables in one vector - e.g. 'dependent', 'always'
+
+    Y : np.array
+        Target variables - N * 159 array variables in one vector - e.g. 'TAG_system', 'TAG_social_nets'
+
+    X_txt : list
+            Explanatory variables - N * 1836 list variables in one vector - e.g. 'dependent', 'always'
+
+    Y_txt : list
+            Target variables - N * 159 list variables in one vector - e.g. 'TAG_system', 'TAG_social_nets'
+
+    """
+
+    this_dir, this_filename = os.path.split(__file__)
+    DATA_PATH = os.path.join(this_dir, "bibtex", "bibtex-train.arff")
+
+    load_from_arff(DATA_PATH, label_count=159)
+
+    return X, Y
+
+
+def load_bibtex_test():
+    """
+    Load the bibtex dataset.
+    __author__ = "Michael Gygli, ETH Zurich"
+    from https://github.com/gyglim/dvn/blob/master/mlc_datasets/__init__.py
+
+    Parameters
+    ----------
+    dir_path : string - containing location of bibtex.arff
+
+
+    Returns
+    -------
+    X : np.array
+        Explanatory variables - N * 1836 array variables in one vector - e.g. 'dependent', 'always'
+
+    Y : np.array
+        Target variables - N * 159 array variables in one vector - e.g. 'TAG_system', 'TAG_social_nets'
+
+    X_txt : list
+            Explanatory variables - N * 1836 list variables in one vector - e.g. 'dependent', 'always'
+
+    Y_txt : list
+            Target variables - N * 159 list variables in one vector - e.g. 'TAG_system', 'TAG_social_nets'
+
+    """
+
+    this_dir, this_filename = os.path.split(__file__)
+    DATA_PATH = os.path.join(this_dir, "bibtex", "bibtex-test.arff")
+
+    load_from_arff(DATA_PATH, label_count=159)
+
+    return X, Y
 
 
 def load_corel5k():
