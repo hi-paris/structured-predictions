@@ -52,7 +52,7 @@ def load_bibtex():
     this_dir, this_filename = os.path.split(__file__)
     DATA_PATH = os.path.join(this_dir, "bibtex", "bibtex.arff")
 
-    load_from_arff(DATA_PATH, label_count=159)
+    X, Y = load_from_arff(DATA_PATH, label_count=159)
 
     return X, Y
 
@@ -87,7 +87,7 @@ def load_bibtex_train():
     this_dir, this_filename = os.path.split(__file__)
     DATA_PATH = os.path.join(this_dir, "bibtex", "bibtex-train.arff")
 
-    load_from_arff(DATA_PATH, label_count=159)
+    X, Y = load_from_arff(DATA_PATH, label_count=159)
 
     return X, Y
 
@@ -122,7 +122,7 @@ def load_bibtex_test():
     this_dir, this_filename = os.path.split(__file__)
     DATA_PATH = os.path.join(this_dir, "bibtex", "bibtex-test.arff")
 
-    load_from_arff(DATA_PATH, label_count=159)
+    X, Y = load_from_arff(DATA_PATH, label_count=159)
 
     return X, Y
 
