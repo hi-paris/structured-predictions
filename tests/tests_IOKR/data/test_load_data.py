@@ -32,7 +32,6 @@ class TestLoadBibtex():
         actual_x = type(load[0])
         actual_y = type(load[1])
         expected1 = "np.array"
-        print(actual_x, actual_y, actual_x_txt, actual_y_txt)
         assert isinstance(load[0], np.ndarray), f"'X' should be {expected1}, but is {actual_x} "
         assert isinstance(load[1], np.ndarray), f"'Y' should be {expected1}, but is {actual_y} "
 
@@ -49,7 +48,6 @@ class TestLoadBibtex():
         actual_y_shape = load[1].shape
         expected_x_shape = (7395, 1836)
         expected_y_shape = (7395, 149)
-        print(actual_x_shape, actual_y_shape, actual_x_txt_len, actual_y_txt_len)
         assert actual_x_shape == expected_x_shape, f"'X' should be {expected_x_shape}, but is {actual_x_shape} "
         assert actual_y_shape == expected_y_shape, f"'Y' should be {expected_y_shape}, but is {actual_y_shape} "
 
