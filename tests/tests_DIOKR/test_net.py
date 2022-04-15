@@ -5,13 +5,15 @@
 from os.path import join
 
 import torch
-from stpredictions.datasets.load_data import load_from_arff
+from stpredictions.datasets.load_data import load_bibtex_train_from_arff
+from stpredictions.models.DIOKR.utils import project_root
+
 
 from stpredictions.models.DIOKR import net
 from stpredictions.models.DIOKR.utils import project_root
 
-path_tr = join(project_root(), 'datasets/bibtex/bibtex-train.arff')
-x_train, y_train = load_from_arff(path_tr, label_count=159)
+
+x_train, y_train = load_bibtex_train_from_arff
 x_train, y_train = x_train.todense(), y_train.todense()
 
 x_train, y_train = x_train[:2000], y_train[:2000]
