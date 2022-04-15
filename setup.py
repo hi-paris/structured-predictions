@@ -89,7 +89,7 @@ setup(
     setup_requires=["oldest-supported-numpy", "cython>=0.23"],
     # install_requires=["numpy>=1.16", "scipy>=1.0", "scikit-learn", "torch", 
     #          "liac-arff", "requests"],
-    install_requires=["numpy, "scipy", "scikit-learn", "torch", 
+    install_requires=["numpy", "scipy", "scikit-learn", "torch", 
              "liac-arff", "requests"],
     python_requires=">=3.6",
     classifiers=[
