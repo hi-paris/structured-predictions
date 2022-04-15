@@ -9,6 +9,7 @@ import numpy as np
 import os
 from os.path import join
 from scipy import sparse
+from stpredictions.models.DIOKR.utils import project_root
 
 # bibtex
 # files (sparse): Train and test sets along with their union and the XML header [bibtex.rar]
