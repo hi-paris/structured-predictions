@@ -1,6 +1,5 @@
 # Ignore environments
 venv
-venv2
 .env
 .venv
 env/

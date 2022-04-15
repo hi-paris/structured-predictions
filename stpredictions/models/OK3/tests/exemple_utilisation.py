@@ -6,12 +6,13 @@ from stpredictions.models.OK3._classes import OK3Regressor, ExtraOK3Regressor
 from stpredictions.models.OK3.kernel import *
 from sklearn import datasets
 
-# %% Générer un dataset dont les sorties sont des longs vecteurs de 0 et de 1
 
-n_samples = 4000
-n_features = 100
-n_classes = 1000
-n_labels = 2
+#%% Générer un dataset dont les sorties sont des longs vecteurs de 0 et de 1
+
+n_samples=4000
+n_features=100
+n_classes=1000
+n_labels=2
 
 # On va fitter sur la moitié, 
 #       tester sur un quart 
@@ -21,24 +22,25 @@ n_labels = 2
 # il faut surtout bien penser à mettre des paramètres régulant la croissance de l'abre :
 # --> max_depth, max_features 
 
-X, y = datasets.make_multilabel_classification(n_samples=n_samples,
-                                               n_features=n_features,
-                                               n_classes=n_classes,
+X, y = datasets.make_multilabel_classification(n_samples=n_samples, 
+                                               n_features=n_features, 
+                                               n_classes=n_classes, 
                                                n_labels=n_labels)
 
 # La première moitié constitue les données d'entrainement
-X_train = X[:n_samples // 2]
-y_train = y[:n_samples // 2]
+X_train = X[:n_samples//2]
+y_train = y[:n_samples//2]
 
 # Le troisième quart les données de test
-X_test = X[n_samples // 2: 3 * n_samples // 4]
-y_test = y[n_samples // 2: 3 * n_samples // 4]
+X_test = X[n_samples//2 : 3*n_samples//4]
+y_test = y[n_samples//2 : 3*n_samples//4]
 
 # Le dernier quart des sorties est utilisé pour fournir des candidats pour le décodage de l'arbre
 # Les prédictions seront donc dans cet ensemble
-y_candidates = y[3 * n_samples // 4:]
+y_candidates = y[3*n_samples//4:]
 
-# %% Fitter un (deux) arbre(s) aux données
+
+#%% Fitter un (deux) arbre(s) aux données
 
 # Pour cela il faut renseigner un noyau à utiliser sur 
 # les données de sorties sous forme vectorielles ci-dessus.
@@ -51,12 +53,12 @@ kernel_names = ["linear", "mean_dirac", "gaussian", "laplacian"]
 
 # Choisissons un noyau
 # On peut indifféremment renseigner le nom (et les éventuels paramètres) :
-kernel1 = ("gaussian", .1)  # ou bien kernel1 = "linear"
+kernel1 = ("gaussian", .1) # ou bien kernel1 = "linear"
 # ou bien
 kernel2 = Mean_Dirac_Kernel()
 
 # Ensuite on peut créer notre estimateur, qui travaillera en sachant calculer des noyaux gaussiens entre les sorties :
-ok3 = OK3Regressor(max_depth=6, max_features='sqrt', kernel=kernel1)
+ok3 = OK3Regressor(max_depth=6, max_features='sqrt', kernel=kernel1) 
 
 # c'est également à la création de l'estimateur que l'on peut renseigner 
 # la profondeur maximale, la réduction minimale d'impureté à chaque split, 
@@ -72,9 +74,10 @@ print("check")
 # ce qui permet de changer de noyau avec le même estimateur
 # ex:
 extraok3 = ExtraOK3Regressor(max_depth=6, max_features='sqrt')
-extraok3.fit(X_train, y_train, kernel=kernel2)  # l'estimateur garde en mémoire ce nouveau kernel
+extraok3.fit(X_train, y_train, kernel=kernel2) # l'estimateur garde en mémoire ce nouveau kernel
 
-# %% (OPTIONNEL) Avant de décoder l'arbre
+
+#%% (OPTIONNEL) Avant de décoder l'arbre
 
 # On peut :
 # obtenir la profondeur de l'arbre
@@ -88,9 +91,10 @@ X_test_leaves = ok3.apply(X_test)
 # obtenir les prédictions sous forme de poids pour de nouvelles données
 test_weights = ok3.predict_weights(X_test)
 # calculer le score R2 de nos prédictions dans l'espace de Hilbert dans lequel sont plongées les sorties
-r2_score = ok3.r2_score_in_Hilbert(X_test, y_test)  # on peut y spécifier un vecteur sample_weight
+r2_score = ok3.r2_score_in_Hilbert(X_test, y_test) # on peut y spécifier un vecteur sample_weight
 
-# %% Décodage de(s) (l')arbre(s) pour la prédiction des sorties
+
+#%% Décodage de(s) (l')arbre(s) pour la prédiction des sorties
 
 # Pour le décodage, on peut proposer un ensemble de sorties candidates, 
 # ou bien ne rien fournir (None), dans ce cas les sorties candidates 
@@ -108,24 +112,26 @@ print("check")
 
 # Soit décoder pour une série d'entrées en précisant les candidats
 y_pred_extra_1 = extraok3.predict(X_test[::2], candidates=y_candidates)
-y_pred_extra_2 = extraok3.predict(X_test[1::2])  # on se souvient des prédictions de chaque feuille
+y_pred_extra_2 = extraok3.predict(X_test[1::2]) # on se souvient des prédictions de chaque feuille
 
-# %% Evaluation des performances
+
+#%% Evaluation des performances
 
 # On peut calculer le score R2 dans l'espace de Hilbert comme dit précédemment (qui ne nécessite pas de décodage):
-r2_score = extraok3.r2_score_in_Hilbert(X_test, y_test)  # on peut y spécifier un vecteur sample_weight
+r2_score = extraok3.r2_score_in_Hilbert(X_test, y_test) # on peut y spécifier un vecteur sample_weight
 
 # On peut calculer des scores sur les vraies données décodées :
-hamming_score = ok3.score(X_test, y_test, metric="hamming")  # on peut y spécifier un vecteur sample_weight
+hamming_score = ok3.score(X_test, y_test, metric="hamming") # on peut y spécifier un vecteur sample_weight
 # remarque : on est pas obligé de repréciser un ensemble de candidats maintenant que ok3 en a déjà reçu un
 
 # Une des métrique disponible pour cette fonction score est la présence de la 'top k accuracy'.
 # Pour cela il faut renseigner l'ensemble des candidats dans la fonction à chaque appel:
-top_3_score = ok3.score(X_test, y_test, candidates=y_candidates, metric="top_3")
+top_3_score = ok3.score(X_test, y_test, candidates=y_candidates, metric="top_3") 
 # on peut renseigner n'importe quel entier à la place du 3 ci-dessus :
-top_11_score = ok3.score(X_test, y_test, candidates=y_candidates, metric="top_11")
+top_11_score = ok3.score(X_test, y_test, candidates=y_candidates, metric="top_11") 
 
-# %% A savoir
+
+#%% A savoir
 
 ##### A propos de 'candidates' #####
 
@@ -140,6 +146,7 @@ top_11_score = ok3.score(X_test, y_test, candidates=y_candidates, metric="top_11
 # l'ensemble candidates lui même car étant potentiellement très grand), c'est pourquoi 
 # il n'est pas nécessaire et même pas souhaitable computationnellement de renseigner 
 # plusieurs fois le même ensemble de candidats, la première fois suffit. 
-# En revanche lorsque l'on calcule un score de top k accuracy alors il faut
+#En revanche lorsque l'on calcule un score de top k accuracy alors il faut 
 # obligatoirement renseigner un ensemble de candidats car le décodage est différent 
 # si l'on doit renvoyer plusieurs prédictions pour chaque feuille.
+

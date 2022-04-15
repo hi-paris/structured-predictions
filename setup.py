@@ -61,7 +61,7 @@ if sys.platform.startswith('darwin'):
 
 setup(
     name='structured-predictions',
-    version='0.0.9',
+    version='0.0.6',
     description='Structured-Predictions',
     # long_description=README,
     long_description_content_type='text/markdown',
@@ -87,9 +87,11 @@ setup(
     scripts=[],
     data_files=[],
     setup_requires=["oldest-supported-numpy", "cython>=0.23"],
-    install_requires=["numpy>=1.20.0", "scipy>=1.0", "scikit-learn", "torch>=1.11.0",
-             "liac-arff", ],
-    python_requires=">=3.7",
+    # install_requires=["numpy>=1.16", "scipy>=1.0", "scikit-learn", "torch", 
+    #          "liac-arff", "requests"],
+    install_requires=["numpy", "scipy", "scikit-learn", "torch", 
+             "liac-arff", "requests"],
+    python_requires=">=3.6",
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
@@ -111,6 +113,7 @@ setup(
         'Topic :: Scientific/Engineering :: Mathematics',
         'Topic :: Scientific/Engineering :: Information Analysis',
         'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',

@@ -114,11 +114,16 @@ dist_wheels: clean   wheels
 	python setup.py sdist
 
 dist: clean ## builds source and wheel package
-	python setup.py sdist
+	# python setup.py sdist
 	python setup.py bdist_wheel
 
 
 pydocstyle :
 	pydocstyle ot
+
+git :
+	git add . *
+	git commit -m "Testing Package"
+	git push
 
 FORCE :
