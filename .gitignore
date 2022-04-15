@@ -3,6 +3,7 @@ venv
 .env
 .venv
 env/
+venv2
 venv/
 ENV/
 env.bak/
