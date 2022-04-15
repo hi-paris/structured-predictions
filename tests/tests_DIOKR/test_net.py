@@ -13,7 +13,7 @@ from stpredictions.models.DIOKR import net
 from stpredictions.models.DIOKR.utils import project_root
 
 
-x_train, y_train = load_bibtex_train_from_arff
+x_train, y_train = load_bibtex_train_from_arff()
 x_train, y_train = x_train.todense(), y_train.todense()
 
 x_train, y_train = x_train[:2000], y_train[:2000]
