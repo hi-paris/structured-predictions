@@ -2,8 +2,8 @@
 # coding: utf-8
 
 import torch
-import matplotlib.pyplot as plt
-import matplotlib.cm as cm
+# import matplotlib.pyplot as plt
+# import matplotlib.cm as cm
 from stpredictions.models.DIOKR import cost, kernel, estimator, IOKR
 from sklearn.metrics.pairwise import rbf_kernel
 from stpredictions.datasets.load_data import load_from_arff

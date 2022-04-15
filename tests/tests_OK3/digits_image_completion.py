@@ -96,7 +96,7 @@ print("RBF loss 4 : ", rbf_loss4)
 
 # %%
 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 test_ex = 3
 
