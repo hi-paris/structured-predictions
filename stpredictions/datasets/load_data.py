@@ -52,7 +52,13 @@ def load_bibtex():
     this_dir, this_filename = os.path.split(__file__)
     DATA_PATH = os.path.join(this_dir, "bibtex", "bibtex.arff")
 
-    X, Y = load_from_arff(DATA_PATH, label_count=159)
+    feature_idx = 1836
+
+    dataset = arff.load(open(DATA_PATH), "r")
+    data = np.array(dataset['data'], np.int64)
+
+    X = data[:, 0:feature_idx]
+    Y = data[:, feature_idx:]
 
     return X, Y
 
@@ -87,7 +93,13 @@ def load_bibtex_train():
     this_dir, this_filename = os.path.split(__file__)
     DATA_PATH = os.path.join(this_dir, "bibtex", "bibtex-train.arff")
 
-    X, Y = load_from_arff(DATA_PATH, label_count=159)
+    feature_idx = 1836
+
+    dataset = arff.load(open(DATA_PATH), "r")
+    data = np.array(dataset['data'], np.int64)
+
+    X = data[:, 0:feature_idx]
+    Y = data[:, feature_idx:]
 
     return X, Y
 
@@ -122,7 +134,13 @@ def load_bibtex_test():
     this_dir, this_filename = os.path.split(__file__)
     DATA_PATH = os.path.join(this_dir, "bibtex", "bibtex-test.arff")
 
-    X, Y = load_from_arff(DATA_PATH, label_count=159)
+    feature_idx = 1836
+
+    dataset = arff.load(open(DATA_PATH), "r")
+    data = np.array(dataset['data'], np.int64)
+
+    X = data[:, 0:feature_idx]
+    Y = data[:, feature_idx:]
 
     return X, Y
 
@@ -168,7 +186,6 @@ def load_corel5k():
     Y_txt = [t[0] for t in dataset['attributes'][feature_idx:]]
 
     return X, Y, X_txt, Y_txt
-
 
 
 def load_from_arff(filename, label_count, label_location="end",
