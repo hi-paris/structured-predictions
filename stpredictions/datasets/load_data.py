@@ -24,7 +24,7 @@ from scipy import sparse
 
 def load_bibtex():
     """
-    Load the bibtex dataset.
+    Load the bibtex dataset for IOKR.
     __author__ = "Michael Gygli, ETH Zurich"
     from https://github.com/gyglim/dvn/blob/master/mlc_datasets/__init__.py
 
@@ -63,91 +63,9 @@ def load_bibtex():
     return X, Y
 
 
-def load_bibtex_train():
-    """
-    Load the bibtex dataset.
-    __author__ = "Michael Gygli, ETH Zurich"
-    from https://github.com/gyglim/dvn/blob/master/mlc_datasets/__init__.py
-
-    Parameters
-    ----------
-    dir_path : string - containing location of bibtex.arff
-
-
-    Returns
-    -------
-    X : np.array
-        Explanatory variables - N * 1836 array variables in one vector - e.g. 'dependent', 'always'
-
-    Y : np.array
-        Target variables - N * 159 array variables in one vector - e.g. 'TAG_system', 'TAG_social_nets'
-
-    X_txt : list
-            Explanatory variables - N * 1836 list variables in one vector - e.g. 'dependent', 'always'
-
-    Y_txt : list
-            Target variables - N * 159 list variables in one vector - e.g. 'TAG_system', 'TAG_social_nets'
-
-    """
-
-    this_dir, this_filename = os.path.split(__file__)
-    DATA_PATH = os.path.join(this_dir, "bibtex", "bibtex-train.arff")
-
-    feature_idx = 1836
-
-    dataset = arff.load(open(DATA_PATH), "r")
-    data = np.array(dataset['data'], np.int64)
-
-    X = data[:, 0:feature_idx]
-    Y = data[:, feature_idx:]
-
-    return X, Y
-
-
-def load_bibtex_test():
-    """
-    Load the bibtex dataset.
-    __author__ = "Michael Gygli, ETH Zurich"
-    from https://github.com/gyglim/dvn/blob/master/mlc_datasets/__init__.py
-
-    Parameters
-    ----------
-    dir_path : string - containing location of bibtex.arff
-
-
-    Returns
-    -------
-    X : np.array
-        Explanatory variables - N * 1836 array variables in one vector - e.g. 'dependent', 'always'
-
-    Y : np.array
-        Target variables - N * 159 array variables in one vector - e.g. 'TAG_system', 'TAG_social_nets'
-
-    X_txt : list
-            Explanatory variables - N * 1836 list variables in one vector - e.g. 'dependent', 'always'
-
-    Y_txt : list
-            Target variables - N * 159 list variables in one vector - e.g. 'TAG_system', 'TAG_social_nets'
-
-    """
-
-    this_dir, this_filename = os.path.split(__file__)
-    DATA_PATH = os.path.join(this_dir, "bibtex", "bibtex-test.arff")
-
-    feature_idx = 1836
-
-    dataset = arff.load(open(DATA_PATH), "r")
-    data = np.array(dataset['data'], np.int64)
-
-    X = data[:, 0:feature_idx]
-    Y = data[:, feature_idx:]
-
-    return X, Y
-
-
 def load_corel5k():
     """
-    Load the bibtex dataset.
+    Load the corel5k dataset for IOKR.
     __author__ = "Michael Gygli, ETH Zurich"
     from https://github.com/gyglim/dvn/blob/master/mlc_datasets/__init__.py
 
@@ -261,7 +179,23 @@ def load_from_arff(filename, label_count, label_location="end",
     else:
         return X, y
 
+def load_bibtex_train_from_arff():
+    """Load the bibtex dataset for DIOKR
 
+    """
+    path_tr = join(project_root(), 'datasets/bibtex/bibtex-train.arff')
+    print(path_tr)
+    X_train, Y_train = load_from_arff(path_tr, label_count=159)
+    return X_train, Y_train
+
+def load_bibtex_test_from_arff():
+    """Load the bibtex dataset for DIOKR
+
+    """
+    path_tr = join(project_root(), 'datasets/bibtex/bibtex-test.arff')
+    print(path_tr)
+    X_test, Y_test = load_from_arff(path_tr, label_count=159)
+    return X_test, Y_test
 
 # ####### Use Case
 # path = "../data/bibtex"
