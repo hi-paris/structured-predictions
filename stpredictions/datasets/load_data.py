@@ -7,7 +7,9 @@ Created on December 12, 2021
 import arff
 import numpy as np
 import os
+from os.path import join
 from scipy import sparse
+from stpredictions.models.DIOKR.utils import project_root
 
 # bibtex
 # files (sparse): Train and test sets along with their union and the XML header [bibtex.rar]
@@ -24,7 +26,7 @@ from scipy import sparse
 
 def load_bibtex():
     """
-    Load the bibtex dataset.
+    Load the bibtex dataset for IOKR.
     __author__ = "Michael Gygli, ETH Zurich"
     from https://github.com/gyglim/dvn/blob/master/mlc_datasets/__init__.py
 
@@ -60,17 +62,12 @@ def load_bibtex():
     X = data[:, 0:feature_idx]
     Y = data[:, feature_idx:]
 
-    X_txt = [t[0] for t in dataset['attributes'][:feature_idx]]
-    Y_txt = [t[0] for t in dataset['attributes'][feature_idx:]]
-
-    return X, Y, X_txt, Y_txt
-
-
+    return X, Y
 
 
 def load_corel5k():
     """
-    Load the bibtex dataset.
+    Load the corel5k dataset for IOKR.
     __author__ = "Michael Gygli, ETH Zurich"
     from https://github.com/gyglim/dvn/blob/master/mlc_datasets/__init__.py
 
@@ -109,7 +106,6 @@ def load_corel5k():
     Y_txt = [t[0] for t in dataset['attributes'][feature_idx:]]
 
     return X, Y, X_txt, Y_txt
-
 
 
 def load_from_arff(filename, label_count, label_location="end",
@@ -185,7 +181,23 @@ def load_from_arff(filename, label_count, label_location="end",
     else:
         return X, y
 
+def load_bibtex_train_from_arff():
+    """Load the bibtex dataset for DIOKR
 
+    """
+    path_tr = join(project_root(), 'datasets/bibtex/bibtex-train.arff')
+    print(path_tr)
+    X_train, Y_train = load_from_arff(path_tr, label_count=159)
+    return X_train, Y_train
+
+def load_bibtex_test_from_arff():
+    """Load the bibtex dataset for DIOKR
+
+    """
+    path_tr = join(project_root(), 'datasets/bibtex/bibtex-test.arff')
+    print(path_tr)
+    X_test, Y_test = load_from_arff(path_tr, label_count=159)
+    return X_test, Y_test
 
 # ####### Use Case
 # path = "../data/bibtex"
