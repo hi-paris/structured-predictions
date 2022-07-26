@@ -1,8 +1,8 @@
 # structured-predictions
 
-![Build Status](https://github.com/hi-paris/structured-predictions/workflows/pytesting/badge.svg)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Github All Releases](https://img.shields.io/github/downloads/hi-paris/IOKR/total.svg)]()
+
 
 Structured prediction or structured (output) learning is an umbrella term for supervised machine learning techniques that involves predicting structured objects, rather than scalar discrete or real values.
 
