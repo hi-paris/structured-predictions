@@ -33,22 +33,14 @@ The library has been tested on Linux, MacOSX and Windows. It requires a C++ comp
 You can install the toolbox through PyPI with:
 
 ```console
-pip install IOKR
-```
-
-#### Anaconda installation with conda-forge
-
-If you use the Anaconda python distribution, POT is available in [conda-forge](https://conda-forge.org). To install it and the required dependencies:
-
-```console
-conda install -c conda-forge IOKR
+pip install -i https://test.pypi.org/pypi/ --extra-index-url https://pypi.org/simple structured-predictions==0.0.8 --no-cache-dir
 ```
 
 #### Post installation check
 After a correct installation, you should be able to import the module without errors:
 
 ```python
-import IOKR
+import stpredictions
 ```
 
 
