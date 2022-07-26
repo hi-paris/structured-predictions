@@ -392,9 +392,9 @@ Every contribution is welcome and should respect the [contribution guidelines](.
 
 You can ask questions and join the development discussion:
 
-* On the IOKR [slack channel](https://OK3-toolbox.slack.com)
-* On the IOKR [gitter channel](https://gitter.im/OK3/community)
-* On the IOKR [mailing list](https://mail.python.org/mm3/mailman3/lists/OK3.python.org/)
+* On the structured-predictions [slack channel](https://OK3-toolbox.slack.com)
+* On the structured-predictions [gitter channel](https://gitter.im/OK3/community)
+* On the structured-predictions [mailing list](https://mail.python.org/mm3/mailman3/lists/OK3.python.org/)
 
 You can also post bug reports and feature requests in Github issues. Make sure to read our [guidelines](.github/CONTRIBUTING.md) first.
 
