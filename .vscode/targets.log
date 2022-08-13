@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Aug 13 05:18:00 2022
+# Make data base, printed on Sat Aug 13 13:03:07 2022
 
 # Variables
 
@@ -45,11 +45,11 @@ CURDIR := /home/daniel/Documents/AA_Télécom/HiParis/Project/PROJECT/structured
 # makefile
 SHELL = /bin/sh
 # environment
-SNAP_DATA = /var/snap/code/103
+SNAP_DATA = /var/snap/code/104
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:45875
+JOURNAL_STREAM = 8:49893
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -71,37 +71,31 @@ XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/d
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
-_ = /snap/code/103/usr/share/code/code
-# environment
-MANAGERPID = 1691
-# environment
-LESSOPEN = | /usr/bin/lesspipe %s
+MANAGERPID = 1690
 # environment
 LC_NAME = fr_FR.UTF-8
 # environment
 VSCODE_CWD = /home/daniel
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/103/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/104/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/daniel/.local/bin:/home/daniel/bin:/home/daniel/anaconda3/bin:/home/daniel/anaconda3/condabin:/home/daniel/.cargo/bin:/home/daniel/.local/bin:/home/daniel/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH = /home/daniel/.cargo/bin:/home/daniel/.local/bin:/home/daniel/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/daniel-vahos:@/tmp/.ICE-unix/1917,unix/daniel-vahos:/tmp/.ICE-unix/1917
+SESSION_MANAGER = local/daniel-vahos:@/tmp/.ICE-unix/1921,unix/daniel-vahos:/tmp/.ICE-unix/1921
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/daniel/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-SNAP = /snap/code/103
+SNAP = /snap/code/104
 # makefile (from 'Makefile', line 4)
 branch := main
 # environment
-SNAP_VERSION = da76f933
-# environment
-CONDA_PREFIX = /home/daniel/anaconda3
+SNAP_VERSION = 6d9b74a7
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
@@ -109,25 +103,21 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 0375c206a9704800b22b123f671c4476
+INVOCATION_ID = c898efa472314ca5b07317184ef732a5
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/103/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/104/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
-# environment
-LS_COLORS = 
 # environment
 XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 17255
+GIO_LAUNCHED_DESKTOP_FILE_PID = 22017
 # automatic
 %F = $(notdir $%)
 # environment
 DISPLAY = :0
-# environment
-CONDA_EXE = /home/daniel/anaconda3/bin/conda
 # environment
 SNAP_INSTANCE_KEY = 
 # environment
@@ -135,7 +125,7 @@ PWD = /home/daniel/Documents/AA_Télécom/HiParis/Project/PROJECT/structured-pre
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1879
+SSH_AGENT_PID = 1882
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -147,11 +137,9 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /home/daniel
 # environment
-LESSCLOSE = /usr/bin/lesspipe %s %s
-# environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /home/daniel/.config/Code/CachedData/da76f93349a72022ca4670c1b84860304616aaa2
+VSCODE_CODE_CACHE_PATH = /home/daniel/.config/Code/CachedData/6d9b74a70ca9c7733b29f0456fd8195364076dda
 # environment
 LOGNAME = daniel
 # environment
@@ -160,8 +148,6 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # environment
 SNAP_CONTEXT = JGOB4hpVwX0BmYwxeKc9WFtDe5mkoBOZ8gQetOaL_ySvay8X6P51
-# environment
-CONDA_PROMPT_MODIFIER = (base) 
 # automatic
 +F = $(notdir $+)
 # environment
@@ -178,8 +164,6 @@ GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 LC_TIME = fr_FR.UTF-8
 # environment
 SNAP_REAL_HOME = /home/daniel
-# environment
-CONDA_DEFAULT_ENV = base
 # default
 MAKE = $(MAKE_COMMAND)
 # default
@@ -187,7 +171,7 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SNAP_USER_DATA = /home/daniel/snap/code/103
+SNAP_USER_DATA = /home/daniel/snap/code/104
 # environment
 SHLVL = 0
 # environment
@@ -197,7 +181,7 @@ MAKE_VERSION := 4.2.1
 # environment
 USER = daniel
 # environment
-SNAP_REVISION = 103
+SNAP_REVISION = 104
 # environment
 LC_MONETARY = fr_FR.UTF-8
 # makefile
@@ -208,8 +192,6 @@ XDG_CURRENT_DESKTOP = Unity
 %D = $(patsubst %/,%,$(dir $%))
 # environment
 LC_TELEPHONE = fr_FR.UTF-8
-# environment
-CONDA_SHLVL = 1
 # default
 MAKE_COMMAND := make
 # default
@@ -217,7 +199,7 @@ MAKE_COMMAND := make
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-419f9acc-1.70.0-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-419f9acc-1.70.1-main.sock
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # makefile
@@ -253,8 +235,6 @@ SNAP_NAME = code
 # environment
 LC_ALL = C
 # environment
-CONDA_PYTHON_EXE = /home/daniel/anaconda3/bin/python
-# environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # automatic
 ^F = $(notdir $^)
@@ -262,8 +242,6 @@ GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 SUFFIXES := 
 # environment
 SNAP_REEXEC = 
-# environment
-_CE_M = 
 # environment
 CHROME_DESKTOP = code-url-handler.desktop
 # environment
@@ -279,16 +257,13 @@ LC_ADDRESS = fr_FR.UTF-8
 # environment
 LANG = C
 # environment
-VSCODE_PID = 17302
-# environment
-_CE_CONDA = 
+VSCODE_PID = 22070
 # variable set hash-table stats:
-# Load=135/1024=13%, Rehash=0, Collisions=23/163=14%
+# Load=123/1024=12%, Rehash=0, Collisions=21/151=14%
 
 # Pattern-specific Variable Values
 
 # No pattern-specific variable values.
- 
 
 # Directories
 
@@ -329,6 +304,7 @@ wheels:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 #  recipe to execute (from 'Makefile', line 111):
 	CIBW_BEFORE_BUILD="pip install numpy cython" cibuildwheel --platform linux --output-dir dist
 
@@ -565,6 +541,6 @@ install:
 # strcache performance: lookups = 97 / hit rate = 41%
 # hash-table stats:
 # Load=57/8192=1%, Rehash=0, Collisions=3/97=3%
-# Finished Make data base on Sat Aug 13 05:18:00 2022
+# Finished Make data base on Sat Aug 13 13:03:07 2022
 
  
