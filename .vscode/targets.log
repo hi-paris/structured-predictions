@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Aug 13 03:09:31 2022
+# Make data base, printed on Sat Aug 13 05:18:00 2022
 
 # Variables
 
@@ -121,7 +121,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 6119
+GIO_LAUNCHED_DESKTOP_FILE_PID = 17255
 # automatic
 %F = $(notdir $%)
 # environment
@@ -279,22 +279,22 @@ LC_ADDRESS = fr_FR.UTF-8
 # environment
 LANG = C
 # environment
-VSCODE_PID = 6169
+VSCODE_PID = 17302
 # environment
 _CE_CONDA = 
 # variable set hash-table stats:
- 
 # Load=135/1024=13%, Rehash=0, Collisions=23/163=14%
 
 # Pattern-specific Variable Values
 
 # No pattern-specific variable values.
+ 
 
 # Directories
 
-# . (device 2052, inode 4342599): 26 files, no impossibilities.
+# . (device 2052, inode 4342599): 25 files, no impossibilities.
 
-# 26 files, no impossibilities in 1 directories.
+# 25 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -559,12 +559,12 @@ install:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 58 / storage = 511 B / avg = 8 B
-# current buf: size = 8162 B / used = 511 B / count = 58 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 57 / storage = 507 B / avg = 8 B
+# current buf: size = 8162 B / used = 507 B / count = 57 / avg = 8 B
 
-# strcache performance: lookups = 98 / hit rate = 40%
+# strcache performance: lookups = 97 / hit rate = 41%
 # hash-table stats:
-# Load=58/8192=1%, Rehash=0, Collisions=3/98=3%
-# Finished Make data base on Sat Aug 13 03:09:31 2022
+# Load=57/8192=1%, Rehash=0, Collisions=3/97=3%
+# Finished Make data base on Sat Aug 13 05:18:00 2022
 
  
