@@ -1,0 +1,13 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/daniel/Documents/AA_Télécom/HiParis/Project/PROJECT/structured-predictions'
+echo "The following make targets are available:"
+echo "    help - print this message"
+echo "    build - build python package"
+echo "    install - install python package (local user)"
+echo "    sinstall - install python package (system with sudo)"
+echo "    remove - remove the package (local user)"
+echo "    sremove - remove the package (system with sudo)"
+echo "    clean - remove any temporary files"
+echo "    notebook - launch ipython notebook"
+make: Leaving directory '/home/daniel/Documents/AA_Télécom/HiParis/Project/PROJECT/structured-predictions'
+ 
