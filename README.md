@@ -1,8 +1,8 @@
 # structured-predictions
 
-![Build Status](https://github.com/hi-paris/structured-predictions/workflows/pytesting/badge.svg)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Github All Releases](https://img.shields.io/github/downloads/hi-paris/IOKR/total.svg)]()
+
 
 Structured prediction or structured (output) learning is an umbrella term for supervised machine learning techniques that involves predicting structured objects, rather than scalar discrete or real values.
 
@@ -33,22 +33,14 @@ The library has been tested on Linux, MacOSX and Windows. It requires a C++ comp
 You can install the toolbox through PyPI with:
 
 ```console
-pip install IOKR
-```
-
-#### Anaconda installation with conda-forge
-
-If you use the Anaconda python distribution, POT is available in [conda-forge](https://conda-forge.org). To install it and the required dependencies:
-
-```console
-conda install -c conda-forge IOKR
+pip install -i https://test.pypi.org/pypi/ --extra-index-url https://pypi.org/simple structured-predictions==0.0.8 --no-cache-dir
 ```
 
 #### Post installation check
 After a correct installation, you should be able to import the module without errors:
 
 ```python
-import IOKR
+import stpredictions
 ```
 
 
@@ -400,9 +392,9 @@ Every contribution is welcome and should respect the [contribution guidelines](.
 
 You can ask questions and join the development discussion:
 
-* On the IOKR [slack channel](https://OK3-toolbox.slack.com)
-* On the IOKR [gitter channel](https://gitter.im/OK3/community)
-* On the IOKR [mailing list](https://mail.python.org/mm3/mailman3/lists/OK3.python.org/)
+* On the structured-predictions [slack channel](https://OK3-toolbox.slack.com)
+* On the structured-predictions [gitter channel](https://gitter.im/OK3/community)
+* On the structured-predictions [mailing list](https://mail.python.org/mm3/mailman3/lists/OK3.python.org/)
 
 You can also post bug reports and feature requests in Github issues. Make sure to read our [guidelines](.github/CONTRIBUTING.md) first.
 

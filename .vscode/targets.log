@@ -1,0 +1,546 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sat Aug 13 13:03:07 2022
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+SNAP_COMMON = /var/snap/code/common
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+IM_CONFIG_PHASE = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/daniel/Documents/AA_Télécom/HiParis/Project/PROJECT/structured-predictions
+# makefile
+SHELL = /bin/sh
+# environment
+SNAP_DATA = /var/snap/code/104
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+JOURNAL_STREAM = 8:49893
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+SNAP_ARCH = amd64
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+USERNAME = daniel
+# environment
+MAKELEVEL := 0
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# environment
+MANAGERPID = 1690
+# environment
+LC_NAME = fr_FR.UTF-8
+# environment
+VSCODE_CWD = /home/daniel
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/104/usr/share/glib-2.0/schemas
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/daniel/.cargo/bin:/home/daniel/.local/bin:/home/daniel/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+SESSION_MANAGER = local/daniel-vahos:@/tmp/.ICE-unix/1921,unix/daniel-vahos:/tmp/.ICE-unix/1921
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/daniel/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+SNAP = /snap/code/104
+# makefile (from 'Makefile', line 4)
+branch := main
+# environment
+SNAP_VERSION = 6d9b74a7
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+DISABLE_WAYLAND = 1
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+INVOCATION_ID = c898efa472314ca5b07317184ef732a5
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/104/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 22017
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+PWD = /home/daniel/Documents/AA_Télécom/HiParis/Project/PROJECT/structured-predictions
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 1882
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# makefile (from 'Makefile', line 3)
+PYTHON = python3
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/daniel
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /home/daniel/.config/Code/CachedData/6d9b74a70ca9c7733b29f0456fd8195364076dda
+# environment
+LOGNAME = daniel
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# environment
+SNAP_CONTEXT = JGOB4hpVwX0BmYwxeKc9WFtDe5mkoBOZ8gQetOaL_ySvay8X6P51
+# automatic
++F = $(notdir $+)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_USER_COMMON = /home/daniel/snap/code/common
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+LC_TIME = fr_FR.UTF-8
+# environment
+SNAP_REAL_HOME = /home/daniel
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# environment
+SNAP_USER_DATA = /home/daniel/snap/code/104
+# environment
+SHLVL = 0
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = daniel
+# environment
+SNAP_REVISION = 104
+# environment
+LC_MONETARY = fr_FR.UTF-8
+# makefile
+.DEFAULT_GOAL := help
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LC_TELEPHONE = fr_FR.UTF-8
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-419f9acc-1.70.1-main.sock
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# environment
+LC_PAPER = fr_FR.UTF-8
+# environment
+LC_IDENTIFICATION = fr_FR.UTF-8
+# environment
+QT_ACCESSIBILITY = 1
+# 'override' directive
+.SHELLSTATUS := 0
+# default
+MAKEFILES := 
+# environment
+SNAP_COOKIE = JGOB4hpVwX0BmYwxeKc9WFtDe5mkoBOZ8gQetOaL_ySvay8X6P51
+# environment
+LC_NUMERIC = fr_FR.UTF-8
+# automatic
+<F = $(notdir $<)
+# environment
+LC_MEASUREMENT = fr_FR.UTF-8
+# environment
+SNAP_NAME = code
+# environment
+LC_ALL = C
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+SNAP_REEXEC = 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+WINDOWPATH = 2
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# default
+.RECIPEPREFIX := 
+# environment
+LC_ADDRESS = fr_FR.UTF-8
+# environment
+LANG = C
+# environment
+VSCODE_PID = 22070
+# variable set hash-table stats:
+# Load=123/1024=12%, Rehash=0, Collisions=21/151=14%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2052, inode 4342599): 25 files, no impossibilities.
+
+# 25 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+clean-build:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 47):
+	rm -fr build/
+	rm -fr dist/
+	rm -fr .eggs/
+	find . -name '*.egg-info' -exec rm -fr {} +
+	find . -name '*.egg' -exec rm -f {} +
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+FORCE:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+wheels:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+#  recipe to execute (from 'Makefile', line 111):
+	CIBW_BEFORE_BUILD="pip install numpy cython" cibuildwheel --platform linux --output-dir dist
+
+pytest: FORCE
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 74):
+	$(PYTHON) -m pytest --durations=20 -v test/ --doctest-modules --ignore ot/gpu/  
+
+git:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 125):
+	git add . *
+	git commit -m "Testing Package"
+	git push
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 12:08:47.935970338
+#  File has been updated.
+#  Successfully updated.
+
+remove:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 32):
+	$(PYTHON) setup.py install --user --record files.txt
+	tr '\n' '\0' < files.txt | xargs -0 rm -f --
+	rm files.txt
+
+release_test:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 80):
+	twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
+test: FORCE pep8
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 71):
+	$(PYTHON) -m pytest --durations=20 -v test/ --doctest-modules --ignore ot/gpu/  
+	
+
+build:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 20):
+	$(PYTHON) setup.py build
+
+help:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 9):
+	@echo "The following make targets are available:"
+	@echo "    help - print this message"
+	@echo "    build - build python package"
+	@echo "    install - install python package (local user)"
+	@echo "    sinstall - install python package (system with sudo)"
+	@echo "    remove - remove the package (local user)"
+	@echo "    sremove - remove the package (system with sudo)"
+	@echo "    clean - remove any temporary files"
+	@echo "    notebook - launch ipython notebook"
+
+sinstall:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 29):
+	sudo $(PYTHON) setup.py install
+
+release:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 77):
+	twine upload dist/*
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean-test:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 62):
+	rm -fr .tox/
+	rm -f .coverage
+	rm -fr htmlcov/
+	rm -fr .pytest_cache
+
+dist_wheels: clean wheels
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 114):
+	python setup.py sdist
+
+buildext:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 23):
+	$(PYTHON) setup.py build_ext --inplace
+
+autopep8:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 105):
+	autopep8 -ir test ot examples --jobs -1
+
+pep8:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 68):
+	flake8 examples/ ot/ test/
+
+clean-pyc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 54):
+	find . -name '*.pyc' -exec rm -f {} +
+	find . -name '*.pyo' -exec rm -f {} +
+	find . -name '*.so' -exec rm -f {} +
+	find . -name '*.c' -exec rm -f {} +
+	find . -name '*~' -exec rm -f {} +
+	find . -name '__pycache__' -exec rm -fr {} +
+
+clean: clean-build clean-pyc clean-test
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+dist: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 117):
+	# python setup.py sdist
+	python setup.py bdist_wheel
+
+sremove:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 37):
+	$(PYTHON) setup.py install  --record files.txt
+	tr '\n' '\0' < files.txt | sudo xargs -0 rm -f --
+	rm files.txt
+
+rdoc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 83):
+	pandoc --from=markdown --to=rst --output=docs/source/readme.rst README.md
+	sed -i 's,https://pythonot.github.io/auto_examples/,auto_examples/,g' docs/source/readme.rst 
+	pandoc --from=markdown --to=rst --output=docs/source/releases.rst RELEASES.md
+	sed -i 's,https://pot.readthedocs.io/en/latest/,,g' docs/source/releases.rst
+	sed -i 's,https://github.com/rflamary/POT/blob/master/notebooks/,auto_examples/,g' docs/source/releases.rst 
+	sed -i 's,.ipynb,.html,g' docs/source/releases.rst 
+	sed -i 's,https://pythonot.github.io/auto_examples/,auto_examples/,g' docs/source/releases.rst
+
+bench:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 95):
+	@git stash  >/dev/null 2>&1
+	@echo 'Branch master'
+	@git checkout master >/dev/null 2>&1
+	python3 $(script)
+	@echo 'Branch $(branch)'
+	@git checkout $(branch) >/dev/null 2>&1
+	python3 $(script)
+	@git stash apply >/dev/null 2>&1
+	
+
+pydocstyle:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 122):
+	pydocstyle ot
+
+aautopep8:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 108):
+	autopep8 -air test ot examples --jobs -1
+	
+
+notebook:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 92):
+	ipython notebook --matplotlib=inline  --notebook-dir=notebooks/
+	
+
+install:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 26):
+	$(PYTHON) setup.py install --user
+
+# files hash-table stats:
+# Load=31/1024=3%, Rehash=0, Collisions=0/54=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 57 / storage = 507 B / avg = 8 B
+# current buf: size = 8162 B / used = 507 B / count = 57 / avg = 8 B
+
+# strcache performance: lookups = 97 / hit rate = 41%
+# hash-table stats:
+# Load=57/8192=1%, Rehash=0, Collisions=3/97=3%
+# Finished Make data base on Sat Aug 13 13:03:07 2022
+
+ 
