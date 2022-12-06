@@ -55,8 +55,8 @@ jobs:
         # make clean
         # pip install .
         make dist
-        # pip install dist/*
-        python setup.py develop
+        pip install dist/*
+        # python setup.py develop
         # pip install -i https://test.pypi.org/simple/ structured-predictions==0.0.6
         # pip install -i https://test.pypi.org/simple/ structured-predictions
         python tests/tests_DIOKR/Demo_DeepIOKR_bibtex.py
