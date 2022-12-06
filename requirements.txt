@@ -9,7 +9,7 @@ cibuildwheel==2.3.1
 colorama==0.4.4
 cryptography==36.0.2
 cycler==0.11.0
-Cython
+Cython==0.29.23
 docutils==0.18.1
 fonttools>=4.27.1
 h5py>=3.1.0
