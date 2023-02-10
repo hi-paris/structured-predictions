@@ -9,7 +9,7 @@
 #     strategy:
 #       matrix:
 #         # os: [ubuntu-20.04, windows-2019, macos-10.15]
-#         os: [ubuntu-20.04]
+#         os: [windows-2019]
 
 #     steps:
 #       - uses: actions/checkout@v2
@@ -26,33 +26,33 @@
 
 
 
-name: Build
+# # name: Build
 
-on: 
-  push:
-    branches-ignore:
-     - main 
-  pull_request:
-    branches-ignore:
-     - main
+# # on: 
+# #   push:
+# #     branches-ignore:
+# #      - main 
+# #   pull_request:
+# #     branches-ignore:
+# #      - main
 
-jobs:
-  build_wheels:
-    name: Build wheels on ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-       os: [macos-10.15]
-     # os: [ubuntu-20.04, windows-2019, macos-10.15]
+# # jobs:
+# #   build_wheels:
+# #     name: Build wheels on ${{ matrix.os }}
+# #     runs-on: ${{ matrix.os }}
+# #     strategy:
+# #       matrix:
+# #        os: [macos-10.15]
+# #      # os: [ubuntu-20.04, windows-2019, macos-10.15]
 
-    steps:
-       - uses: actions/checkout@v2
+# #     steps:
+# #        - uses: actions/checkout@v2
 
-       - name: Build wheels
-         uses: pypa/cibuildwheel@v2.4.0
-         # to supply options, put them in 'env', like:
-         # env:
-         #   CIBW_SOME_OPTION: value
-       - uses: actions/upload-artifact@v2
-         with:
-           path: ./wheelhouse/*.whl
+# #        - name: Build wheels
+# #          uses: pypa/cibuildwheel@v2.4.0
+# #          # to supply options, put them in 'env', like:
+# #          # env:
+# #          #   CIBW_SOME_OPTION: value
+# #        - uses: actions/upload-artifact@v2
+# #          with:
+# #            path: ./wheelhouse/*.whl

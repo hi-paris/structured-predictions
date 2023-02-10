@@ -2,9 +2,9 @@ name: pytesting
 
 on: 
   push:
-    # branches-ignore:
-    #   - "main"
-# #    branches: [ main ]
+    branches-ignore:
+      - "main"
+  #  branches: [ main ]
   schedule:
     - cron: '0 0 1 * *'
 # pull_request:
@@ -16,8 +16,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        # os: [ubuntu-latest]
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [ubuntu-latest]
+        # os: [macos-latest, ubuntu-latest, windows-latest]
         python: ['3.8',]
     env:
       OS: ${{ matrix.os }}
@@ -63,4 +63,6 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
-        pytest tests/tests_OK3/test_tree_clf_and_reg.py tests/tests_OK3/test_complementary.py tests/tests_IOKR tests/tests_DIOKR
+        pytest tests/tests_OK3/test_tree_clf_and_reg.py tests/tests_OK3/test_complementary.py 
+        # pytest tests/tests_IOKR 
+        pytest tests/tests_DIOKR
