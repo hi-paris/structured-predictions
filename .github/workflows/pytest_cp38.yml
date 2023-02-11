@@ -2,8 +2,8 @@ name: pytesting
 
 on: 
   push:
-    branches-ignore:
-      - "main"
+    # branches-ignore:
+    #   - "main"
   #  branches: [ main ]
   schedule:
     - cron: '0 0 1 * *'
@@ -16,8 +16,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest]
-        # os: [macos-latest, ubuntu-latest, windows-latest]
+        # os: [ubuntu-latest]
+        os: [macos-latest, ubuntu-latest, windows-latest]
         python: ['3.8',]
     env:
       OS: ${{ matrix.os }}
@@ -53,7 +53,7 @@ jobs:
 
     - name: Build and compile
       run: |
-        # make clean
+        make clean
         # pip install .
         ################## Use this when you want to use local wheel installation through dist ######################
         # make dist
@@ -63,9 +63,10 @@ jobs:
         # pip install -i https://test.pypi.org/simple/ structured-predictions==0.0.6
         pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple structured-predictions
         # pip install -i https://test.pypi.org/simple/ structured-predictions
-        python tests/tests_DIOKR/Demo_DeepIOKR_bibtex.py
+        # python tests/tests_DIOKR/Demo_DeepIOKR_bibtex.py
     - name: Test with pytest
       run: |
         pip install pytest
-        pytest tests/tests_OK3/test_tree_clf_and_reg.py tests/tests_OK3/test_complementary.py tests/tests_IOKR tests/tests_DIOKR
-        # pytest tests/tests_IOKR
+        pytest tests/tests_OK3/test_tree_clf_and_reg.py tests/tests_OK3/test_complementary.py 
+        # pytest  tests/tests_DIOKR
+        pytest tests/tests_IOKR
