@@ -61,7 +61,7 @@ jobs:
         #############################################################################
         # python setup.py develop
         # pip install -i https://test.pypi.org/simple/ structured-predictions==0.0.6
-        pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple structured-predictions==0.0.6
+        pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple structured-predictions
         # pip install -i https://test.pypi.org/simple/ structured-predictions
         # python tests/tests_DIOKR/Demo_DeepIOKR_bibtex.py
     - name: Test with pytest
