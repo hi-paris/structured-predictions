@@ -53,7 +53,7 @@ jobs:
 
     - name: Build and compile
       run: |
-        # make clean
+        make clean
         # pip install .
         ################## Use this when you want to use local wheel installation through dist ######################
         # make dist
