@@ -1,5 +1,5 @@
 # structured-predictions
-
+Recommend using python 3.7 version when running
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
