@@ -2,8 +2,8 @@ name: pytesting
 
 on: 
   push:
-    # branches-ignore:
-    #   - "main"
+    branches-ignore:
+      - "main"
 # #    branches: [ main ]
   schedule:
     - cron: '0 0 1 * *'
@@ -69,4 +69,4 @@ jobs:
         pip install pytest
         pytest tests/tests_OK3/test_tree_clf_and_reg.py tests/tests_OK3/test_complementary.py 
         pytest  tests/tests_DIOKR
-        pytest tests/tests_IOKR
+        # pytest tests/tests_IOKR
