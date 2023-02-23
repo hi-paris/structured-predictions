@@ -16,7 +16,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-latest, windows-latest]
+        os: [windows-latest]
         # os: [macos-latest, ubuntu-latest, windows-latest]
         python: ['3.9',]
     env:
@@ -57,7 +57,7 @@ jobs:
         # pip install .
         ################## Use this when you want to use local wheel installation through dist ######################
         make dist
-        pip install ./dist/*
+        pip install ../dist/*
         #############################################################################
         # python setup.py develop
         # pip install -i https://test.pypi.org/simple/ structured-predictions==0.0.6
