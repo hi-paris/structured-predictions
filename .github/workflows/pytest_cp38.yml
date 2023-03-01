@@ -68,4 +68,6 @@ jobs:
         pip install pytest
         pytest tests/tests_OK3/test_tree_clf_and_reg.py tests/tests_OK3/test_complementary.py 
         pytest  tests/tests_DIOKR
+        # python tests/tests_IOKR/ISOKR.py   
+        # python tests/tests_IOKR/SISOKR.py
         # pytest tests/tests_IOKR
