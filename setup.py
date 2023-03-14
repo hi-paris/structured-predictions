@@ -61,7 +61,7 @@ if sys.platform.startswith('darwin'):
 
 setup(
     name='structured-predictions',
-    version='0.0.9',
+    version='0.1.0',
     description='Structured-Predictions',
     # long_description=README,
     long_description_content_type='text/markdown',
