@@ -29,7 +29,7 @@ jobs:
     - name: Build manylinux Python wheels scikit-learn
       uses: RalfG/python-wheels-manylinux-build@v0.7.1-manylinux2014_x86_64
       with:
-        python-versions: 'cp37-cp37'
+        python-versions: 'cp37-cp37m'
         build-requirements: 'cython numpy'
     - uses: actions/upload-artifact@v2
       with:
