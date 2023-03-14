@@ -1,4 +1,4 @@
-name: pytesting 3.9
+name: Generating Wheels
 
 on: 
   push:
