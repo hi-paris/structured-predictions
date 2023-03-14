@@ -1,8 +1,12 @@
 name: Python package build and publish
 
-on:
-  release:
-    types: [created]
+# on:
+#   release:
+#     types: [created]
+on: 
+  push:
+    # branches-ignore:
+    #   - "main"
 
 jobs:
   deploy:
