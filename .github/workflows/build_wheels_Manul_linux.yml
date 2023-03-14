@@ -16,7 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v1
       with:
-        python-version: 3.9
+        python-version: 3.7
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
@@ -29,7 +29,7 @@ jobs:
     - name: Build manylinux Python wheels scikit-learn
       uses: RalfG/python-wheels-manylinux-build@v0.7.1-manylinux2014_x86_64
       with:
-        python-versions: 'cp39-cp39'
+        python-versions: 'cp37-cp37'
         build-requirements: 'cython numpy'
     - uses: actions/upload-artifact@v2
       with:
