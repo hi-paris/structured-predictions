@@ -27,3 +27,6 @@ archs = ["x86_64", "universal2", "arm64"]
 #archs = ["auto", "aarch64"]   # aarch64 results in unfinished job on github Action
 # archs = ["auto"]
 archs = ["x86_64"]
+
+[tool.cibuildwheel.windows]
+archs = ["x86_64"]
