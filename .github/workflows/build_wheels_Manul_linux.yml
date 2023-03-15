@@ -5,8 +5,8 @@ name: Python package build and publish
 #     types: [created]
 on: 
   push:
-    # branches-ignore:
-    #   - "main"
+    branches-ignore:
+      - "main"
 
 jobs:
   deploy:

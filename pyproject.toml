@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools", "wheel", "oldest-supported-numpy", "cython>=0.23", "scikit-learn"]
+requires = ["setuptools", "wheel", "oldest-supported-numpy", "cython>=0.23", "scikit-learn==0.24.2"]
 build-backend = "setuptools.build_meta"
 
 [tool.cibuildwheel]
 # Only build on CPython 3.9
-# build = "cp37-*"
+build = "cp39-*"
 #skip = ["cp39-musllinux*"]
 
 # Skip for Windows
