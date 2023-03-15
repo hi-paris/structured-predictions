@@ -8,9 +8,9 @@ build-backend = "setuptools.build_meta"
 #skip = ["cp39-musllinux*"]
 
 # Skip for Windows
-# skip = ["pp*", "cp310-*"]
+skip = ["pp*", "cp310-*", "cp36-*"]
 #Skip for MacOS
-skip = ["pp*", "cp36-*"]
+# skip = ["pp*", "cp36-*"]
 # Skip for Ubuntu   # 32bit cp310 results in error
 # skip = ["cp36-musllinux*", "cp37-musllinux*", "cp38-musllinux*", "cp39-musllinux*", "pp*", "cp310-*", "cp36-*"]
 # skip = ["cp36-*", "cp37-*", "cp38-*", "pp*", "cp310-*"]
