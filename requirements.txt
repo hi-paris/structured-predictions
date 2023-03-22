@@ -1,4 +1,4 @@
-
+absl-py==0.13.0
 astunparse==1.6.3
 attrs==21.4.0
 cachetools==4.2.2
@@ -23,7 +23,8 @@ Keras-Preprocessing==1.1.2
 kiwisolver==1.3.1
 Markdown==3.3.4
 matplotlib==3.4.2
-numpy==1.19.5
+# numpy==1.19.5
+numpy>=1.20.0
 oauthlib==3.1.1
 operalib==0.2b27
 opt-einsum==3.3.0
@@ -45,17 +46,17 @@ rsa==4.7.2
 scikit-learn==0.24.2
 scipy==1.7.0
 six==1.15.0
-sobol-seq==0.2.0
-tensorboard==2.5.0
-tensorboard-data-server==0.6.1
-tensorboard-plugin-wit==1.8.0
-tensorflow==2.5.0
-tensorflow-estimator==2.5.0
-termcolor==1.1.0
-threadpoolctl==2.1.0
-tomli==2.0.0
-torch==1.9.0
-typing-extensions==3.7.4.3
-urllib3==1.26.5
-Werkzeug==2.0.1
-wrapt==1.12.1
+# sobol-seq==0.2.0
+# tensorboard==2.5.0
+# tensorboard-data-server==0.6.1
+# tensorboard-plugin-wit==1.8.0
+# tensorflow==2.5.0
+# tensorflow-estimator==2.5.0
+# termcolor==1.1.0
+# threadpoolctl==2.1.0
+# tomli==2.0.0
+# torch==1.9.0
+# typing-extensions==3.7.4.3
+# urllib3==1.26.5
+# Werkzeug==2.0.1
+# wrapt==1.12.1
