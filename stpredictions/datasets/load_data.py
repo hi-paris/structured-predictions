@@ -186,7 +186,7 @@ def load_bibtex_train_from_arff():
 
     """
     path_tr = join(project_root(), 'datasets/bibtex/bibtex-train.arff')
-    print(path_tr)
+    # print(path_tr)
     X_train, Y_train = load_from_arff(path_tr, label_count=159)
     return X_train, Y_train
 
@@ -195,7 +195,7 @@ def load_bibtex_test_from_arff():
 
     """
     path_tr = join(project_root(), 'datasets/bibtex/bibtex-test.arff')
-    print(path_tr)
+    # print(path_tr)
     X_test, Y_test = load_from_arff(path_tr, label_count=159)
     return X_test, Y_test
 

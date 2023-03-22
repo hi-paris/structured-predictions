@@ -1,18 +1,19 @@
 [build-system]
-requires = ["setuptools", "wheel", "oldest-supported-numpy", "cython>=0.23", "scikit-learn"]
+requires = ["setuptools", "wheel", "oldest-supported-numpy", "cython>=0.23", "scikit-learn==0.24.2"]
 build-backend = "setuptools.build_meta"
 
 [tool.cibuildwheel]
 # Only build on CPython 3.9
-#build = "cp39-*"
+# build = "cp310-*"
 #skip = ["cp39-musllinux*"]
 
 # Skip for Windows
-skip = ["pp*", "cp310-*"]
+# skip = ["pp*", "cp310-*", "cp36-*"]
 #Skip for MacOS
-# skip = ["pp*"]
-#Skip for Ubuntu   # 32bit cp310 results in error
-# skip = ["cp36-musllinux*", "cp37-musllinux*", "cp38-musllinux*", "cp39-musllinux*", "pp*", "cp310-*"]
+# skip = ["pp*", "cp36-*"]
+# Skip for Ubuntu   # 32bit cp310 results in error
+skip = ["cp36-musllinux*", "cp37-musllinux*", "cp38-musllinux*", "cp39-musllinux*", "pp*", "cp310-*", "cp36-*"]
+# skip = ["cp36-*", "cp37-*", "cp38-*", "pp*", "cp310-*"]
 
 
 # Build `universal2` and `arm64` wheels on an Intel runner.
@@ -24,5 +25,8 @@ archs = ["x86_64", "universal2", "arm64"]
 # On an Linux Intel runner with qemu installed, build Intel and ARM wheels
 [tool.cibuildwheel.linux]
 #archs = ["auto", "aarch64"]   # aarch64 results in unfinished job on github Action
-archs = ["auto"]
-#archs = ["x86_64"]
+# archs = ["auto"]
+archs = ["x86_64"]
+
+[tool.cibuildwheel.windows]
+archs = ['AMD64']
