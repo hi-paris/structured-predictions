@@ -1,5 +1,5 @@
 # structured-predictions
-
+Recommend using python 3.7 version when running
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -380,8 +380,9 @@ This toolbox has been created and is maintained by
 
 The contributors to this library are 
 
+* [Tamim El Ahmad](https://datascienceandai.wp.imt.fr/en/?team=el-ahmad-2) (Phd)
+* [Luc Motte](https://www.researchgate.net/profile/Luc-Brogat-Motte) (Phd)
 * [Florence d'Alché-Buc](https://perso.telecom-paristech.fr/fdalche/) (Researcher)
-
 
 
 ## Contributions and code of conduct
