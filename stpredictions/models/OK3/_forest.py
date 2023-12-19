@@ -44,15 +44,15 @@ from joblib import Parallel, delayed
 
 import itertools
 
-from stpredictions.models.OK3.base import StructuredOutputMixin
+from base import StructuredOutputMixin
 
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import hamming_loss
 from sklearn.metrics import r2_score
 
 from sklearn.preprocessing import OneHotEncoder
-from stpredictions.models.OK3._classes import OK3Regressor, ExtraOK3Regressor
-from stpredictions.models.OK3._tree import DTYPE, DOUBLE
+from _classes import OK3Regressor, ExtraOK3Regressor
+from _tree import DTYPE, DOUBLE
 from sklearn.utils import check_random_state, check_array
 from sklearn.exceptions import DataConversionWarning
 
@@ -63,12 +63,12 @@ from sklearn.utils.multiclass import check_classification_targets
 from sklearn.utils.validation import check_is_fitted, _check_sample_weight
 from sklearn.utils.validation import _deprecate_positional_args
 
-from stpredictions.models.OK3.kernel import Kernel
-from stpredictions.models.OK3._classes import KERNELS, CRITERIA
+from kernel import Kernel
+from _classes import KERNELS, CRITERIA
 
-from stpredictions.models.OK3._criterion import Criterion, KernelizedMSE
+from _criterion import Criterion, KernelizedMSE
 
-# import line_profiler
+import line_profiler
 
 __all__ = ["RandomOKForestRegressor",
            "ExtraOKTreesRegressor",
@@ -161,7 +161,7 @@ def _parallel_build_trees(tree, forest, X, y, Gram_y, sample_weight, tree_idx, n
         tree.fit(X, y, sample_weight=curr_sample_weight, check_input=False, in_ensemble=True, Gram_y=Gram_y)
     else:
         tree.fit(X, y, sample_weight=sample_weight, check_input=False, in_ensemble=True, Gram_y=Gram_y)
-
+    
     return tree
 
 
@@ -185,7 +185,7 @@ class BaseOKForest(StructuredOutputMixin, BaseEnsemble, metaclass=ABCMeta):
                  verbose=0,
                  warm_start=False,
                  max_samples=None,
-                 kernel="linear"):
+                 kernel="linear"):        
 
         super().__init__(
             base_estimator=base_estimator,
@@ -262,7 +262,7 @@ class BaseOKForest(StructuredOutputMixin, BaseEnsemble, metaclass=ABCMeta):
         n_nodes_ptr = np.array(n_nodes).cumsum()
 
         return sparse_hstack(indicators).tocsr(), n_nodes_ptr
-
+    
     def fit(self, X, y, sample_weight=None):
         """
         Build a forest of ok-trees from the training set (X, y).
@@ -290,7 +290,7 @@ class BaseOKForest(StructuredOutputMixin, BaseEnsemble, metaclass=ABCMeta):
         self : object
         """
         kernel = self.kernel
-
+        
         # Validate or convert input data
         if issparse(y):
             raise ValueError(
@@ -311,6 +311,7 @@ class BaseOKForest(StructuredOutputMixin, BaseEnsemble, metaclass=ABCMeta):
 
         y = np.atleast_1d(y)
 
+
         if not isinstance(kernel, Kernel):
             params = ()
             if isinstance(kernel, tuple):
@@ -318,30 +319,30 @@ class BaseOKForest(StructuredOutputMixin, BaseEnsemble, metaclass=ABCMeta):
             try:
                 kernel = KERNELS[kernel](*params)
             except KeyError:
-                print(
-                    "Error : 'kernel' attribute (or its first element if it is a tuple) has to be either a Kernel class or a string which is a valid key for the dict 'KERNELS'.")
+                print("Error : 'kernel' attribute (or its first element if it is a tuple) has to be either a Kernel class or a string which is a valid key for the dict 'KERNELS'.")
                 raise
+
 
         if y.ndim == 1:
             # reshape is necessary to preserve the data contiguity against vs
             # [:, np.newaxis] that does not.
             y = np.reshape(y, (-1, 1))
-
+        
         if y.shape[1] == y.shape[0]:
             warn("The target parameter is a square matrix."
-                 "Are you sure this is the matrix of outputs and "
-                 "not a Gram matrix ? ")
-
+                          "Are you sure this is the matrix of outputs and "
+                          "not a Gram matrix ? ")
+                    
         if "clf" in kernel.get_name():
             check_classification_targets(y)
-
+        
         start_computation = time.time()
         # compute the Gram matrix of the outputs
         K_y = kernel.get_Gram_matrix(y)
         print("Time to compute the training Gram matrix : " + str(time.time() - start_computation) + " s.")
-
+        
         self.n_outputs_ = y.shape[1]
-
+        
         if getattr(y, "dtype", None) != DOUBLE or not y.flags.contiguous:
             y = np.ascontiguousarray(y, dtype=DOUBLE)
         if getattr(K_y, "dtype", None) != DOUBLE or not K_y.flags.contiguous:
@@ -396,7 +397,7 @@ class BaseOKForest(StructuredOutputMixin, BaseEnsemble, metaclass=ABCMeta):
                              **_joblib_parallel_args(prefer='threads'))(
                 delayed(_parallel_build_trees)(
                     t, self, X, y, K_y, sample_weight, i, len(trees),
-                    verbose=self.verbose,
+                    verbose=self.verbose, 
                     n_samples_bootstrap=n_samples_bootstrap)
                 for i, t in enumerate(trees))
 
@@ -508,7 +509,7 @@ class OKForestRegressor(BaseOKForest, metaclass=ABCMeta):
             warm_start=warm_start,
             max_samples=max_samples,
             kernel=kernel)
-
+    
     def predict_weights(self, X):
         """
         Predict weights (on the training samples) for X.
@@ -535,22 +536,25 @@ class OKForestRegressor(BaseOKForest, metaclass=ABCMeta):
 
         # Assign chunk of trees to jobs
         n_jobs, _, _ = _partition_estimators(self.n_estimators, self.n_jobs)
-
+        
         # avoid storing the output of every estimator by summing them here
         weights = np.zeros((X.shape[0], self.estimators_[0].tree_.y.shape[0]), dtype=np.float64)
-
+        
         # Parallel loop
         lock = threading.Lock()
 
         Parallel(n_jobs=n_jobs, verbose=self.verbose,
-                 **_joblib_parallel_args(require="sharedmem"))(
-            delayed(_accumulate_prediction)(e.predict_weights, X, [weights], lock)
-            for e in self.estimators_)
+             **_joblib_parallel_args(require="sharedmem"))(
+        delayed(_accumulate_prediction)(e.predict_weights, X, [weights], lock)
+        for e in self.estimators_)
 
         weights /= len(self.estimators_)
 
         return weights
 
+
+
+    
     def predict(self, X, candidates=None, return_top_k=1, precomputed_weights=None):
         """Predict structured objects for X.
 
@@ -587,7 +591,7 @@ class OKForestRegressor(BaseOKForest, metaclass=ABCMeta):
             representations of the structured output objects (found in the set of candidates, 
             or if it is not given, among the training outputs).
         """
-
+        
         kernel = self.kernel
         if not isinstance(kernel, Kernel):
             params = ()
@@ -596,13 +600,12 @@ class OKForestRegressor(BaseOKForest, metaclass=ABCMeta):
             try:
                 kernel = KERNELS[kernel](*params)
             except KeyError:
-                print(
-                    "Error : 'kernel' attribute (or its first element if it is a tuple) has to be either a Kernel class or a string which is a valid key for the dict 'KERNELS'.")
+                print("Error : 'kernel' attribute (or its first element if it is a tuple) has to be either a Kernel class or a string which is a valid key for the dict 'KERNELS'.")
                 raise
-
+        
         check_is_fitted(self)
         X = self._validate_X_predict(X)
-
+        
         criterion = self.estimators_[0].criterion
         if not isinstance(criterion, Criterion):
             criterion = CRITERIA[criterion](X.shape[0])
@@ -610,139 +613,138 @@ class OKForestRegressor(BaseOKForest, metaclass=ABCMeta):
         if candidates is not None:
             # candidates doit etre un ensemble : pas de répétition
             candidates = np.unique(candidates, axis=0)
-
+            
             K_cand_train = kernel.get_Gram_matrix(candidates, self.estimators_[0].tree_.y)
             sq_norms_cand = kernel.get_sq_norms(candidates)
-        else:  # recherche dans le learning set
+        else: # recherche dans le learning set
             candidates, indices = np.unique(self.estimators_[0].tree_.y, return_index=True, axis=0)
             K_cand_train = self.estimators_[0].tree_.K_y[indices]
             sq_norms_cand = self.estimators_[0].tree_.K_y[indices, indices]
-
+        
         if return_top_k > 1 and return_top_k >= len(candidates):
-            warn(
-                "Le nombre de prédictions demandées pour chaque entrée dépasse le nombre de sorties candidates, return_top_k va être réduit à sa valeur maximale.")
-            return_top_k = len(candidates) - 1
-
+            warn("Le nombre de prédictions demandées pour chaque entrée dépasse le nombre de sorties candidates, return_top_k va être réduit à sa valeur maximale.")
+            return_top_k = len(candidates)-1
+        
         if "reg" in kernel.get_name() and return_top_k > 1:
-            warn(
-                "On ne peut pas retourner plusieurs candidats d'outputs dans le cas d'une régression, veuillez plutôt choisir kernel=linear. "
-                "return_top_k va etre mis à 1.")
+            warn("On ne peut pas retourner plusieurs candidats d'outputs dans le cas d'une régression, veuillez plutôt choisir kernel=linear. "
+                          "return_top_k va etre mis à 1.")
             return_top_k = 1
-
+        
         if precomputed_weights is None:
             weights = self.predict_weights(X)
         else:
             weights = precomputed_weights
-
+        
         if isinstance(criterion, KernelizedMSE):
 
             # Cas particulier de la classification : recherche EXHAUSTIVE
             if kernel.get_name() == "gini_clf":
-
+                
                 # rechercher la meilleure combinaison de labels parmis toutes celles possible
-
+                                    
                 y_train = self.estimators_[0].tree_.y
                 n_outputs = y_train.shape[1]
 
                 classes = []
                 n_classes = []
-
+                
                 y_train_encoded = np.zeros((y_train.shape[0], n_outputs), dtype=int)
-
+                
                 for l in range(n_outputs):
                     classes_l, y_train_encoded[:, l] = np.unique(y_train[:, l], return_inverse=True)
                     classes.append(classes_l)
                     n_classes.append(classes_l.shape[0])
-
+                
                 n_classes = np.array(n_classes, dtype=np.intp)
-
-                out = np.zeros((X.shape[0] * return_top_k, n_outputs), dtype=np.intp)
-
+                                
+                out = np.zeros((X.shape[0]*return_top_k,n_outputs), dtype=np.intp)
+    
                 nb_candidates = 1
                 for nb_classes in n_classes:
                     nb_candidates *= nb_classes
                 # array to store the value of the criteria to minimize, for each training sample
                 value = np.zeros((nb_candidates,), dtype=np.float64)
-
+                
                 recherche_exhaustive_equivalente = False
-
+                
                 # node k
                 for test_ex in range(X.shape[0]):
 
-                    if recherche_exhaustive_equivalente or return_top_k > 1:  # n_outputs boucles sur les classes de chaque output imbriquées dans le product --> long
-
+                    if recherche_exhaustive_equivalente or return_top_k > 1: # n_outputs boucles sur les classes de chaque output imbriquées dans le product --> long
+                        
                         for ind, candidate in enumerate(list(itertools.product(*classes))):
+                            
                             # la valeur a minimiser est k(candidate,candidate) - 2 * moyenne_des_Kernel(candidate,train_exs_in_same_leaf)
                             # dans le cas de gini, k(candidate,candidate) est toujours égal à 1 peu importe candidate
                             # on peut donc plutôt maximiser la quantité somme_des_Kernel(candidate,train_exs_in_same_leaf)
-
-                            value[ind] = np.sum([weights[test_ex, ex] * (y_train[ex] == candidate).mean() for ex in
-                                                 range(weights.shape[1])])
-
+                                                            
+                            value[ind] = np.sum([ weights[test_ex,ex] * (y_train[ex] == candidate).mean() for ex in range(weights.shape[1])])
+                        
                         ind_top_candidates = np.argpartition(value, - return_top_k)[- return_top_k:]
-
+                            
                         top_candidates = list(itertools.product(*classes))[ind_top_candidates]
                         top_candidates = np.array(top_candidates, dtype=int)
-
-                        out[test_ex * return_top_k: (test_ex + 1) * return_top_k] = top_candidates
-
+                        
+                        out[test_ex*return_top_k : (test_ex+1)*return_top_k] = top_candidates
+                    
                     else:
-
+                                                        
                         for l in range(n_outputs):
-                            major_class = np.argmax(
-                                [np.sum(weights[test_ex, np.where(y_train[:, l] == class_i)[0]]) for class_i in
-                                 classes[l]])
 
-                            out[test_ex, l] = classes[l][major_class]
+                            major_class = np.argmax( [ np.sum( weights[test_ex, np.where( y_train[:,l] == class_i )[0] ] ) for class_i in classes[l] ] )
+                            
+                            out[test_ex,l] = classes[l][ major_class ]
 
             # Cas particulier de la régression : Recherche EXACTE
-            elif kernel.get_name() == "mse_reg":
-
+            elif kernel.get_name() == "mse_reg": 
+                
                 # rechercher la meilleure combinaison de labels parmis toutes celles possible
                 # avec un critère MSE et donc un kernel linéaire, 
                 # la solution exacte (argmin_y [k(y,y) - 2 moyenne_i(k(y,y_leaf_i))]) peut être calculée : 
                 # c'est la moyenne des sorties de chaque feuille
                 #
                 # On ne peut pas rechercher les k meilleurs candidats car l'ensemble de recherche de candidats pour la régression est infini (R^d)
-
+                                    
                 y_train = self.estimators_[0].tree_.y
                 n_outputs = y_train.shape[1]
-
+                
                 out = weights @ y_train
-
+                
             # Dans ce else, on a donc une matrice de Gram de candidats fournie
-            else:  # cas général : pas de classification ou de régression mais recherche de l'argmin dans l'ensemble de candidats fourni
+            else: # cas général : pas de classification ou de régression mais recherche de l'argmin dans l'ensemble de candidats fourni
 
                 # on a comme candidats une matrice de Gram des des candidats contre les training (+contre soi meme).
-
+                
                 # on renvoie l'indce du candidat représentant le mieux la feuille (on ne check pas les training examples, ils sont à mettre dans les candidats)
-
-                out = np.zeros((X.shape[0] * return_top_k, candidates.shape[1]), dtype=candidates.dtype)
-
+                
+                out = np.zeros((X.shape[0]*return_top_k,candidates.shape[1]), dtype=candidates.dtype)
+                
                 # array to store the value of the criteria to minimize, for each training sample
                 value = np.zeros((len(candidates),), dtype=np.float64)
-
+                
                 for test_ex in range(X.shape[0]):
 
                     # parmi les candidats, calculer k[candidat,candidat] - 2/self.n_node_samples * sum_i=0^self.n_node_samples k[candidat,i]
                     for candidate in range(len(candidates)):
-                        value[candidate] = sq_norms_cand[candidate] - 2 * np.sum(
-                            [weights[test_ex, ex] * K_cand_train[candidate, ex] for ex in range(weights.shape[1])])
-
+                        
+                        value[candidate] = sq_norms_cand[candidate] - 2 * np.sum([weights[test_ex,ex] * K_cand_train[candidate,ex] for ex in range(weights.shape[1])])
+                    
                     # choisir l'entrée ex* qui donnait la plus petite valeur
                     ind_top_candidates = np.argpartition(value, return_top_k)[:return_top_k]
-
-                    out[test_ex * return_top_k: (test_ex + 1) * return_top_k] = candidates[ind_top_candidates]
-
+                    
+                    out[test_ex*return_top_k : (test_ex+1)*return_top_k] = candidates[ind_top_candidates]
+                        
             if out.shape[1] == 1:
                 out = out.reshape(-1)
-
+                
             return out
 
-
+            
         else:
             raise NotImplementedError('only the "KernelizedMSE" criterion is supported')
+    
 
+    
     def _set_oob_score(self, X, y, K_y, candidates=None, metric="accuracy"):
         """
         Compute out-of-bag R2 scores in self.oob_score (computed in the HS : no need to decode).
@@ -771,6 +773,7 @@ class OKForestRegressor(BaseOKForest, metaclass=ABCMeta):
         n_predictions = np.zeros((n_samples, n_samples))
 
         for estimator in self.estimators_:
+            
             unsampled_indices = _generate_unsampled_indices(
                 estimator.random_state, n_samples, n_samples_bootstrap)
 
@@ -779,7 +782,7 @@ class OKForestRegressor(BaseOKForest, metaclass=ABCMeta):
 
             weights[unsampled_indices, :] += p_estimator
             n_predictions[unsampled_indices, :] += 1
-
+        
         if (n_predictions == 0).any():
             warn("Some inputs do not have OOB scores. "
                  "This probably means too few trees were used "
@@ -789,29 +792,30 @@ class OKForestRegressor(BaseOKForest, metaclass=ABCMeta):
         weights /= n_predictions
         # on enregistre LES POIDS : pas les prédictions décodées
         self.oob_prediction_ = weights
-
+                    
         # TODO : vérifier si ce calcul est correct pour le R2 dans le HS des samples oob.
 
         K_train = K_y
 
         res_sq_sums = np.diag(K_train) - 2 * np.diag(K_train @ (weights.T)) + np.diag(weights @ K_train @ (weights.T))
-
-        tot_sq_sums = np.diag(K_train) - np.sum(K_train, axis=1) / K_train.shape[1]
-
+        
+        tot_sq_sums = np.diag(K_train) - np.sum(K_train, axis=1)/K_train.shape[1]
+        
+        
         res_sq_sum = np.mean(res_sq_sums)
         tot_sq_sum = np.mean(tot_sq_sums)
-
-        r2 = 1 - (res_sq_sum / tot_sq_sum)
-
+        
+        r2 = 1 - ( res_sq_sum / tot_sq_sum )
+        
         self.oob_score_ = r2
-
+            
         # compute also the decoded score :
         # compute the same function as 'score' bellow
-
+        
         score = self.score(X, y, candidates=candidates, metric=metric, precomputed_weights=weights)
-
+        
         self.oob_decoded_score_ = score
-
+    
     def score(self, X, y, candidates=None, metric="accuracy", sample_weight=None, precomputed_weights=None):
         """
         Calcule le score après décodage 
@@ -872,13 +876,10 @@ class OKForestRegressor(BaseOKForest, metaclass=ABCMeta):
                 return_top_k = int(metric[4:])
                 top_k_score = True
             except ValueError:
-                raise (ValueError(
-                    "Pour calculer le score 'top k', veuillez renseigner un nombre juste après le 'top_'. Nous avons reçu '" + metric[
-                                                                                                                               4:] + "'."))
-
-        y_pred = self.predict(X, candidates=candidates, return_top_k=return_top_k,
-                              precomputed_weights=precomputed_weights)
-
+                raise(ValueError("Pour calculer le score 'top k', veuillez renseigner un nombre juste après le 'top_'. Nous avons reçu '"+metric[4:]+"'."))
+        
+        y_pred = self.predict(X, candidates=candidates, return_top_k=return_top_k, precomputed_weights=precomputed_weights)
+        
         if "reg" in kernel:
             return r2_score(y, y_pred, sample_weight=sample_weight)
         else:
@@ -887,9 +888,9 @@ class OKForestRegressor(BaseOKForest, metaclass=ABCMeta):
             elif metric == "hamming":
                 return 1 - hamming_loss(y, y_pred, sample_weight=sample_weight)
             elif top_k_score:
-                contains_true = [False] * len(y)
+                contains_true = [False]*len(y)
                 for ex in range(len(y)):
-                    for candidate in range(ex * return_top_k, (ex + 1) * return_top_k):
+                    for candidate in range(ex*return_top_k, (ex+1)*return_top_k):
                         if np.atleast_1d(y[ex] == y_pred[candidate]).all():
                             contains_true[ex] = True
                 if sample_weight is not None:
@@ -899,6 +900,7 @@ class OKForestRegressor(BaseOKForest, metaclass=ABCMeta):
                 return score
             else:
                 raise ValueError("La metric renseignée n'est pas prise en charge.")
+
 
     def r2_score_in_Hilbert(self, X, y, sample_weight=None):
         """
@@ -922,9 +924,9 @@ class OKForestRegressor(BaseOKForest, metaclass=ABCMeta):
         score : float
             R2 score of the predictions in the Hilbert space wrt. the embedded values of y.
         """
-
+        
         kernel = self.kernel
-
+        
         if not isinstance(kernel, Kernel):
             params = ()
             if isinstance(kernel, tuple):
@@ -932,47 +934,46 @@ class OKForestRegressor(BaseOKForest, metaclass=ABCMeta):
             try:
                 kernel = KERNELS[kernel](*params)
             except KeyError:
-                print(
-                    "Error : 'kernel' attribute (or its first element if it is a tuple) has to be either a Kernel class or a string which is a valid key for the dict 'KERNELS'.")
+                print("Error : 'kernel' attribute (or its first element if it is a tuple) has to be either a Kernel class or a string which is a valid key for the dict 'KERNELS'.")
                 raise
-
+        
         weights = self.predict_weights(X)
-
+        
         K_train = self.estimators_[0].tree_.K_y
-
+        
         K_test_train = kernel.get_Gram_matrix(y, self.estimators_[0].tree_.y)
-
+        
         K_test_test = kernel.get_Gram_matrix(y)
+
 
         if sample_weight is not None:
             if len(sample_weight != len(y)):
                 raise ValueError("sample_weights has to have the same length as y. "
-                                 "y is len " + str(len(y)) + ", and sample_weight is len " + str(len(sample_weight)))
-            sample_weight[sample_weight < 0] = 0
+                                 "y is len "+str(len(y))+", and sample_weight is len "+str(len(sample_weight)))
+            sample_weight[sample_weight<0] = 0
             if np.sum(sample_weight) == 0:
-                warn(
-                    "all weights in sample_weight were set to 0 or bellow. It is unvalid so sample_weight will be ignored.")
+                warn("all weights in sample_weight were set to 0 or bellow. It is unvalid so sample_weight will be ignored.")
                 sample_weight = None
 
-        res_sq_sums = np.diag(K_test_test) - 2 * np.diag(K_test_train @ (weights.T)) + np.diag(
-            weights @ K_train @ (weights.T))
-
+        res_sq_sums = np.diag(K_test_test) - 2 * np.diag(K_test_train @ (weights.T)) + np.diag(weights @ K_train @ (weights.T))
+        
         if sample_weight is not None:
-            tot_sq_sums = np.diag(K_test_test) - np.sum(K_test_test @ np.diag(sample_weight), axis=1) / np.sum(
-                sample_weight)
+            tot_sq_sums = np.diag(K_test_test) - np.sum(K_test_test @ np.diag(sample_weight), axis=1) / np.sum(sample_weight)
         else:
-            tot_sq_sums = np.diag(K_test_test) - np.sum(K_test_test, axis=1) / K_test_test.shape[1]
-
+            tot_sq_sums = np.diag(K_test_test) - np.sum(K_test_test, axis=1)/K_test_test.shape[1]
+        
+        
         if sample_weight is not None:
-            res_sq_sum = np.sum(sample_weight * res_sq_sums) / np.sum(sample_weight)
-            tot_sq_sum = np.sum(sample_weight * tot_sq_sums) / np.sum(sample_weight)
+            res_sq_sum = np.sum(sample_weight*res_sq_sums) / np.sum(sample_weight)
+            tot_sq_sum = np.sum(sample_weight*tot_sq_sums) / np.sum(sample_weight)
         else:
             res_sq_sum = np.mean(res_sq_sums)
             tot_sq_sum = np.mean(tot_sq_sums)
-
-        r2 = 1 - (res_sq_sum / tot_sq_sum)
-
+        
+        r2 = 1 - ( res_sq_sum / tot_sq_sum )
+        
         return r2
+
 
 
 class RandomOKForestRegressor(OKForestRegressor):
@@ -1196,7 +1197,6 @@ class RandomOKForestRegressor(OKForestRegressor):
     >>> print(regr.predict([[0, 0, 0, 0]]))
     [-8.32987858]
     """
-
     @_deprecate_positional_args
     def __init__(self,
                  n_estimators=100, *,
@@ -1456,7 +1456,6 @@ class ExtraOKTreesRegressor(OKForestRegressor):
     >>> reg.score(X_test, y_test)
     0.2708...
     """
-
     @_deprecate_positional_args
     def __init__(self,
                  n_estimators=100, *,
@@ -1762,8 +1761,7 @@ class RandomOKTreesEmbedding(BaseOKForest):
         rnd = check_random_state(self.random_state)
         y = rnd.uniform(size=X.shape[0])
         if "clf" in self.kernel:
-            warn(
-                "Un noyau opérant sur des valeurs discrètes de y n'est pas compatible avec RandomOKTreesEmbedding, le noyau va être choisi linéaire (régression classique)")
+            warn("Un noyau opérant sur des valeurs discrètes de y n'est pas compatible avec RandomOKTreesEmbedding, le noyau va être choisi linéaire (régression classique)")
             self.kernel = "mse_reg"
         super().fit(X, y, sample_weight=sample_weight)
 
