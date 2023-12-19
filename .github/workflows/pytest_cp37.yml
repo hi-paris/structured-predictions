@@ -1,3 +1,7 @@
+################## GitHub Action Tips ##############3
+# If you use GitHub Action for specific project after long Time.
+# You first need to modify the Action file in order for GitHub Action to work
+
 name: pytesting 3.7
 
 on: 
@@ -33,7 +37,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         ################### Use this when you want to use local wheel installation through dist  #################
-        # pip install -r requirements.txt
+        pip install -r requirements.txt
     # - name: Lint with flake8
     #   run: |
     #     pip install flake8
