@@ -6,7 +6,8 @@ certifi==2021.5.30
 chardet==4.0.0
 cvxopt==1.2.6
 cycler==0.10.0
-Cython==0.29.23
+# Cython==0.29.23
+Cython
 flatbuffers==1.12
 gast==0.4.0
 ghalton==0.6.2
