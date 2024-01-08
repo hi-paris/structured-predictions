@@ -2,8 +2,8 @@ name: pytesting 3.10
 
 on: 
   push:
-    branches-ignore:
-      - "main"
+    # branches-ignore:
+    #   - "main"
 #    branches: [ main ]
   schedule:
     - cron: '0 0 1 * *'
@@ -16,8 +16,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest]
+        # os: [ubuntu-latest]
         # os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [macos-latest, ubuntu-latest]
         python: ['3.10',]
     env:
       OS: ${{ matrix.os }}

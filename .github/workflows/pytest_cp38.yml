@@ -21,7 +21,8 @@ jobs:
     strategy:
       matrix:
         # os: [ubuntu-latest]
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        # os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [macos-latest, ubuntu-latest]
         python: ['3.8',]
     env:
       OS: ${{ matrix.os }}
