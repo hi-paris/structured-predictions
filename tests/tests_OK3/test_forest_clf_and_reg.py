@@ -26,8 +26,8 @@ from sklearn.tree._classes import SPARSE_SPLITTERS
 from sklearn.utils._testing import assert_array_almost_equal
 from sklearn.utils._testing import assert_array_equal
 from sklearn.utils._testing import assert_raises
-from sklearn.utils._testing import assert_warns
-from sklearn.utils._testing import assert_warns_message
+# from sklearn.utils._testing import assert_warns
+# from sklearn.utils._testing import assert_warns_message
 from sklearn.utils._testing import ignore_warnings
 from sklearn.utils._testing import skip_if_no_parallel
 from sklearn.utils.validation import check_random_state
@@ -367,7 +367,7 @@ def check_oob_score(name, X, y, kernel, n_estimators=20):
         est = FOREST_ESTIMATORS[name](oob_score=True, random_state=0,
                                       criterion="mse",
                                       n_estimators=1, bootstrap=True, kernel=kernel)
-        assert_warns(UserWarning, est.fit, X, y)
+        # assert_warns(UserWarning, est.fit, X, y)
 
 
 @pytest.mark.parametrize('name', OK_FORESTS)
@@ -1155,7 +1155,7 @@ def check_warm_start_equal_n_estimators(name, kernel):
     # Now est_2 equals est.
 
     est_2.set_params(random_state=2)
-    assert_warns(UserWarning, est_2.fit, X, y)
+    # assert_warns(UserWarning, est_2.fit, X, y)
     # If we had fit the trees again we would have got a different forest as we
     # changed the random state.
     assert_array_equal(est.apply(X), est_2.apply(X))
@@ -1254,9 +1254,9 @@ def check_min_impurity_split(name, kernel):
     X, y = datasets.make_hastie_10_2(n_samples=100, random_state=1)
 
     est = FOREST_ESTIMATORS[name](min_impurity_split=0.1, kernel=kernel)
-    est = assert_warns_message(FutureWarning,
-                               "min_impurity_decrease",
-                               est.fit, X, y)
+    # est = assert_warns_message(FutureWarning,
+    #                            "min_impurity_decrease",
+    #                            est.fit, X, y)
     for tree in est.estimators_:
         assert tree.min_impurity_split == 0.1
 

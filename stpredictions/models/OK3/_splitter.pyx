@@ -15,11 +15,11 @@ np.import_array()
 
 from scipy.sparse import csc_matrix
 
-from sklearn.tree._utils cimport log
-from sklearn.tree._utils cimport rand_int
-from sklearn.tree._utils cimport rand_uniform
-from sklearn.tree._utils cimport RAND_R_MAX
-from sklearn.tree._utils cimport safe_realloc
+from ._utils cimport log
+from ._utils cimport rand_int
+from ._utils cimport rand_uniform
+from ._utils cimport RAND_R_MAX
+from ._utils cimport safe_realloc
 
 cdef double INFINITY = np.inf
 

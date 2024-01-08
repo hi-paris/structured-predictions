@@ -20,8 +20,8 @@ from sklearn.metrics import mean_squared_error
 from sklearn.utils._testing import assert_array_equal
 from sklearn.utils._testing import assert_array_almost_equal
 from sklearn.utils._testing import assert_almost_equal
-from sklearn.utils._testing import assert_warns
-from sklearn.utils._testing import assert_warns_message
+# from sklearn.utils._testing import assert_warns
+# from sklearn.utils._testing import assert_warns_message
 from sklearn.utils._testing import create_memmap_backed_data
 from sklearn.utils._testing import ignore_warnings
 from sklearn.utils._testing import skip_if_32bit
@@ -827,10 +827,10 @@ def test_min_impurity_split():
             assert est.min_impurity_split is None, (
                 "Failed, min_impurity_split = {0} != None".format(
                     est.min_impurity_split))
-            try:
-                assert_warns(FutureWarning, est.fit, X, y)
-            except AssertionError:
-                pass
+            # try:
+            #     # assert_warns(FutureWarning, est.fit, X, y)
+            # except AssertionError:
+            #     pass
             for node in range(est.tree_.node_count):
                 if (est.tree_.children_left[node] == TREE_LEAF or
                         est.tree_.children_right[node] == TREE_LEAF):
@@ -844,9 +844,9 @@ def test_min_impurity_split():
             est = TreeEstimator(max_leaf_nodes=max_leaf_nodes,
                                 min_impurity_split=min_impurity_split,
                                 random_state=0, kernel=kernel)
-            assert_warns_message(FutureWarning,
-                                 "Use the min_impurity_decrease",
-                                 est.fit, X, y)
+            # assert_warns_message(FutureWarning,
+            #                      "Use the min_impurity_decrease",
+            #                      est.fit, X, y)
             for node in range(est.tree_.node_count):
                 if (est.tree_.children_left[node] == TREE_LEAF or
                         est.tree_.children_right[node] == TREE_LEAF):

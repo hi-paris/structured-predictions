@@ -22,12 +22,12 @@ from scipy.sparse import issparse
 from scipy.sparse import csc_matrix
 from scipy.sparse import csr_matrix
 
-from sklearn.tree._utils cimport Stack
-from sklearn.tree._utils cimport StackRecord
-from sklearn.tree._utils cimport PriorityHeap
-from sklearn.tree._utils cimport PriorityHeapRecord
-from sklearn.tree._utils cimport safe_realloc
-from sklearn.tree._utils cimport sizet_ptr_to_ndarray
+from ._utils cimport Stack
+from ._utils cimport StackRecord
+from ._utils cimport PriorityHeap
+from ._utils cimport PriorityHeapRecord
+from ._utils cimport safe_realloc
+from ._utils cimport sizet_ptr_to_ndarray
 
 from _criterion import Criterion
 from _criterion import KernelizedMSE

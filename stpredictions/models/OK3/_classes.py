@@ -22,7 +22,7 @@ from sklearn.metrics import r2_score
 from sklearn.base import BaseEstimator
 from sklearn.base import clone
 
-from base import StructuredOutputMixin
+from .base import StructuredOutputMixin
 
 from sklearn.utils import Bunch
 from sklearn.utils import check_array
@@ -32,15 +32,19 @@ from sklearn.utils.multiclass import check_classification_targets
 from sklearn.utils.validation import check_is_fitted
 from sklearn.utils.validation import _deprecate_positional_args
 
-from _criterion import Criterion
-from _splitter import Splitter
-from kernel import Kernel
-from _tree import DepthFirstTreeBuilder
-from _tree import BestFirstTreeBuilder
-from _tree import Tree
-from _tree import _build_pruned_tree_ccp
-from _tree import ccp_pruning_path
-import _tree, _splitter, _criterion, kernel
+from ._criterion import Criterion
+from ._splitter import Splitter
+from .kernel import Kernel
+from ._tree import DepthFirstTreeBuilder
+from ._tree import BestFirstTreeBuilder
+from ._tree import Tree
+from ._tree import _build_pruned_tree_ccp
+from ._tree import ccp_pruning_path
+
+from ._tree import DTYPE, DOUBLE
+from .kernel import Gini_Kernel, MSE_Kernel, Mean_Dirac_Kernel, Linear_Kernel, Laplacian_Kernel, Gaussian_Kernel
+from ._criterion import KernelizedMSE
+from ._splitter import BestSplitter, RandomSplitter, BestSparseSplitter, RandomSparseSplitter
 
 __all__ = ["OK3Regressor", "ExtraOK3Regressor"]
 
@@ -49,12 +53,13 @@ __all__ = ["OK3Regressor", "ExtraOK3Regressor"]
 # Types and constants
 # =============================================================================
 
-DTYPE = _tree.DTYPE
-DOUBLE = _tree.DOUBLE
+#DTYPE = _tree.DTYPE
+#DOUBLE = _tree.DOUBLE
 
 # The criteria is the loss function (in the embedding Hilbert space) the tree 
 # wants to minimise. Here we've implemented the classic variance reduction, called here "mse".
-CRITERIA = {"mse": _criterion.KernelizedMSE}
+#CRITERIA = {"mse": _criterion.KernelizedMSE}
+CRITERIA = {"mse": KernelizedMSE}
 
 # This is the different types of kernels which can be used to compute similarities between vectorial representations of the outputs.
 # Each one of them corresponds to a different embedding in an Hilbert space.
@@ -62,19 +67,19 @@ CRITERIA = {"mse": _criterion.KernelizedMSE}
 # to the "mean-dirac" kernel and the linear kernel but by specifying that we want 
 # (for a classification or a regression task) to perform an exact search of the output 
 # instead of an approximate minimisation of the criterion among  alist of candidates.
-KERNELS = {"gini_clf": kernel.Gini_Kernel, 
-           "mse_reg": kernel.MSE_Kernel,
-           "mean_dirac": kernel.Mean_Dirac_Kernel,
-           "linear": kernel.Linear_Kernel,
-           "laplacian": kernel.Laplacian_Kernel,
-           "gaussian": kernel.Gaussian_Kernel}
+KERNELS = {"gini_clf": Gini_Kernel, 
+           "mse_reg": MSE_Kernel,
+           "mean_dirac": Mean_Dirac_Kernel,
+           "linear": Linear_Kernel,
+           "laplacian": Laplacian_Kernel,
+           "gaussian": Gaussian_Kernel}
 
 # Les splitters sont des classes définissant les stratégies de recherche des splits (feature+threshold)
-DENSE_SPLITTERS = {"best": _splitter.BestSplitter,
-                   "random": _splitter.RandomSplitter}
+DENSE_SPLITTERS = {"best": BestSplitter,
+                   "random": RandomSplitter}
 
-SPARSE_SPLITTERS = {"best": _splitter.BestSparseSplitter,
-                    "random": _splitter.RandomSparseSplitter}
+SPARSE_SPLITTERS = {"best": BestSparseSplitter,
+                    "random": RandomSparseSplitter}
 
 # =============================================================================
 # Base decision tree

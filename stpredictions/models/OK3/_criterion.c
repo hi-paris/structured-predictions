@@ -4,8 +4,8 @@
 {
     "distutils": {
         "depends": [
-            "/home/asani/anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/core/include/numpy/arrayobject.h",
-            "/home/asani/anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/core/include/numpy/ufuncobject.h"
+            "/home/asani/Documents/Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/core/include/numpy/arrayobject.h",
+            "/home/asani/Documents/Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/core/include/numpy/ufuncobject.h"
         ],
         "extra_compile_args": [
             "-O3",
@@ -16,15 +16,15 @@
             "-fopenmp"
         ],
         "include_dirs": [
-            "/home/asani/anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/core/include",
+            "/home/asani/Documents/Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/core/include",
             "/home/asani/Documents/Hi_Paris_Code_Projects/Florence/structured-predictions/stpredictions/models/OK3/test"
         ],
-        "name": "_criterion",
+        "name": "stpredictions.models.OK3._criterion",
         "sources": [
             "stpredictions/models/OK3/_criterion.pyx"
         ]
     },
-    "module_name": "_criterion"
+    "module_name": "stpredictions.models.OK3._criterion"
 }
 END: Cython Metadata */
 
@@ -632,8 +632,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE___criterion
-#define __PYX_HAVE_API___criterion
+#define __PYX_HAVE__stpredictions__models__OK3___criterion
+#define __PYX_HAVE_API__stpredictions__models__OK3___criterion
 /* Early includes */
 #include <string.h>
 #include <stdio.h>
@@ -880,11 +880,10 @@ static const char *__pyx_f[] = {
   "stpredictions/models/OK3/_criterion.pyx",
   "__init__.pxd",
   "type.pxd",
-  "_criterion.pxd",
-  "_splitter.pxd",
-  "_tree.pxd",
-  "_quad_tree.pxd",
-  "_utils.pxd",
+  "stpredictions/models/OK3/_splitter.pxd",
+  "stpredictions/models/OK3/_tree.pxd",
+  "stpredictions/models/OK3/_quad_tree.pxd",
+  "stpredictions/models/OK3/_utils.pxd",
 };
 /* MemviewSliceStruct.proto */
 struct __pyx_memoryview_obj;
@@ -995,7 +994,7 @@ typedef struct {
 } __Pyx_BufFmt_Context;
 
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":689
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":689
  * # in Cython to enable them only on the right systems.
  * 
  * ctypedef npy_int8       int8_t             # <<<<<<<<<<<<<<
@@ -1004,7 +1003,7 @@ typedef struct {
  */
 typedef npy_int8 __pyx_t_5numpy_int8_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":690
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":690
  * 
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t             # <<<<<<<<<<<<<<
@@ -1013,7 +1012,7 @@ typedef npy_int8 __pyx_t_5numpy_int8_t;
  */
 typedef npy_int16 __pyx_t_5numpy_int16_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":691
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":691
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t             # <<<<<<<<<<<<<<
@@ -1022,7 +1021,7 @@ typedef npy_int16 __pyx_t_5numpy_int16_t;
  */
 typedef npy_int32 __pyx_t_5numpy_int32_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":692
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":692
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t
  * ctypedef npy_int64      int64_t             # <<<<<<<<<<<<<<
@@ -1031,7 +1030,7 @@ typedef npy_int32 __pyx_t_5numpy_int32_t;
  */
 typedef npy_int64 __pyx_t_5numpy_int64_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":696
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":696
  * #ctypedef npy_int128     int128_t
  * 
  * ctypedef npy_uint8      uint8_t             # <<<<<<<<<<<<<<
@@ -1040,7 +1039,7 @@ typedef npy_int64 __pyx_t_5numpy_int64_t;
  */
 typedef npy_uint8 __pyx_t_5numpy_uint8_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":697
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":697
  * 
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t             # <<<<<<<<<<<<<<
@@ -1049,7 +1048,7 @@ typedef npy_uint8 __pyx_t_5numpy_uint8_t;
  */
 typedef npy_uint16 __pyx_t_5numpy_uint16_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":698
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":698
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t             # <<<<<<<<<<<<<<
@@ -1058,7 +1057,7 @@ typedef npy_uint16 __pyx_t_5numpy_uint16_t;
  */
 typedef npy_uint32 __pyx_t_5numpy_uint32_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":699
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":699
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t
  * ctypedef npy_uint64     uint64_t             # <<<<<<<<<<<<<<
@@ -1067,7 +1066,7 @@ typedef npy_uint32 __pyx_t_5numpy_uint32_t;
  */
 typedef npy_uint64 __pyx_t_5numpy_uint64_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":703
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":703
  * #ctypedef npy_uint128    uint128_t
  * 
  * ctypedef npy_float32    float32_t             # <<<<<<<<<<<<<<
@@ -1076,7 +1075,7 @@ typedef npy_uint64 __pyx_t_5numpy_uint64_t;
  */
 typedef npy_float32 __pyx_t_5numpy_float32_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":704
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":704
  * 
  * ctypedef npy_float32    float32_t
  * ctypedef npy_float64    float64_t             # <<<<<<<<<<<<<<
@@ -1085,7 +1084,7 @@ typedef npy_float32 __pyx_t_5numpy_float32_t;
  */
 typedef npy_float64 __pyx_t_5numpy_float64_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":713
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":713
  * # The int types are mapped a bit surprising --
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t             # <<<<<<<<<<<<<<
@@ -1094,7 +1093,7 @@ typedef npy_float64 __pyx_t_5numpy_float64_t;
  */
 typedef npy_long __pyx_t_5numpy_int_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":714
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":714
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t             # <<<<<<<<<<<<<<
@@ -1103,7 +1102,7 @@ typedef npy_long __pyx_t_5numpy_int_t;
  */
 typedef npy_longlong __pyx_t_5numpy_long_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":715
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":715
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t
  * ctypedef npy_longlong   longlong_t             # <<<<<<<<<<<<<<
@@ -1112,7 +1111,7 @@ typedef npy_longlong __pyx_t_5numpy_long_t;
  */
 typedef npy_longlong __pyx_t_5numpy_longlong_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":717
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":717
  * ctypedef npy_longlong   longlong_t
  * 
  * ctypedef npy_ulong      uint_t             # <<<<<<<<<<<<<<
@@ -1121,7 +1120,7 @@ typedef npy_longlong __pyx_t_5numpy_longlong_t;
  */
 typedef npy_ulong __pyx_t_5numpy_uint_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":718
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":718
  * 
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t             # <<<<<<<<<<<<<<
@@ -1130,7 +1129,7 @@ typedef npy_ulong __pyx_t_5numpy_uint_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":719
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":719
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t
  * ctypedef npy_ulonglong  ulonglong_t             # <<<<<<<<<<<<<<
@@ -1139,7 +1138,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":721
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":721
  * ctypedef npy_ulonglong  ulonglong_t
  * 
  * ctypedef npy_intp       intp_t             # <<<<<<<<<<<<<<
@@ -1148,7 +1147,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
  */
 typedef npy_intp __pyx_t_5numpy_intp_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":722
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":722
  * 
  * ctypedef npy_intp       intp_t
  * ctypedef npy_uintp      uintp_t             # <<<<<<<<<<<<<<
@@ -1157,7 +1156,7 @@ typedef npy_intp __pyx_t_5numpy_intp_t;
  */
 typedef npy_uintp __pyx_t_5numpy_uintp_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":724
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":724
  * ctypedef npy_uintp      uintp_t
  * 
  * ctypedef npy_double     float_t             # <<<<<<<<<<<<<<
@@ -1166,7 +1165,7 @@ typedef npy_uintp __pyx_t_5numpy_uintp_t;
  */
 typedef npy_double __pyx_t_5numpy_float_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":725
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":725
  * 
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t             # <<<<<<<<<<<<<<
@@ -1175,7 +1174,7 @@ typedef npy_double __pyx_t_5numpy_float_t;
  */
 typedef npy_double __pyx_t_5numpy_double_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":726
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":726
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t
  * ctypedef npy_longdouble longdouble_t             # <<<<<<<<<<<<<<
@@ -1184,131 +1183,131 @@ typedef npy_double __pyx_t_5numpy_double_t;
  */
 typedef npy_longdouble __pyx_t_5numpy_longdouble_t;
 
-/* "sklearn/tree/_tree.pxd":16
+/* "_tree.pxd":7
  * cimport numpy as np
  * 
  * ctypedef np.npy_float32 DTYPE_t          # Type of X             # <<<<<<<<<<<<<<
  * ctypedef np.npy_float64 DOUBLE_t         # Type of y, sample_weight
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  */
-typedef npy_float32 __pyx_t_7sklearn_4tree_5_tree_DTYPE_t;
+typedef npy_float32 __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t;
 
-/* "sklearn/tree/_tree.pxd":17
+/* "_tree.pxd":8
  * 
  * ctypedef np.npy_float32 DTYPE_t          # Type of X
  * ctypedef np.npy_float64 DOUBLE_t         # Type of y, sample_weight             # <<<<<<<<<<<<<<
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer
  */
-typedef npy_float64 __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t;
+typedef npy_float64 __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t;
 
-/* "sklearn/tree/_tree.pxd":18
+/* "_tree.pxd":9
  * ctypedef np.npy_float32 DTYPE_t          # Type of X
  * ctypedef np.npy_float64 DOUBLE_t         # Type of y, sample_weight
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters             # <<<<<<<<<<<<<<
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer
  * ctypedef np.npy_uint32 UINT32_t          # Unsigned 32 bit integer
  */
-typedef npy_intp __pyx_t_7sklearn_4tree_5_tree_SIZE_t;
+typedef npy_intp __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t;
 
-/* "sklearn/tree/_tree.pxd":19
+/* "_tree.pxd":10
  * ctypedef np.npy_float64 DOUBLE_t         # Type of y, sample_weight
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer             # <<<<<<<<<<<<<<
  * ctypedef np.npy_uint32 UINT32_t          # Unsigned 32 bit integer
  * 
  */
-typedef npy_int32 __pyx_t_7sklearn_4tree_5_tree_INT32_t;
+typedef npy_int32 __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t;
 
-/* "sklearn/tree/_tree.pxd":20
+/* "_tree.pxd":11
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer
  * ctypedef np.npy_uint32 UINT32_t          # Unsigned 32 bit integer             # <<<<<<<<<<<<<<
  * 
- * from ._splitter cimport Splitter
+ * from _splitter cimport Splitter
  */
-typedef npy_uint32 __pyx_t_7sklearn_4tree_5_tree_UINT32_t;
+typedef npy_uint32 __pyx_t_13stpredictions_6models_3OK3_5_tree_UINT32_t;
 
-/* "neighbors/_quad_tree.pxd":13
+/* "_quad_tree.pxd":13
  * cimport numpy as np
  * 
  * ctypedef np.npy_float32 DTYPE_t          # Type of X             # <<<<<<<<<<<<<<
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer
  */
-typedef npy_float32 __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t;
+typedef npy_float32 __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t;
 
-/* "neighbors/_quad_tree.pxd":14
+/* "_quad_tree.pxd":14
  * 
  * ctypedef np.npy_float32 DTYPE_t          # Type of X
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters             # <<<<<<<<<<<<<<
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer
  * ctypedef np.npy_uint32 UINT32_t          # Unsigned 32 bit integer
  */
-typedef npy_intp __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t;
+typedef npy_intp __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t;
 
-/* "neighbors/_quad_tree.pxd":15
+/* "_quad_tree.pxd":15
  * ctypedef np.npy_float32 DTYPE_t          # Type of X
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer             # <<<<<<<<<<<<<<
  * ctypedef np.npy_uint32 UINT32_t          # Unsigned 32 bit integer
  * 
  */
-typedef npy_int32 __pyx_t_7sklearn_9neighbors_10_quad_tree_INT32_t;
+typedef npy_int32 __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_INT32_t;
 
-/* "neighbors/_quad_tree.pxd":16
+/* "_quad_tree.pxd":16
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer
  * ctypedef np.npy_uint32 UINT32_t          # Unsigned 32 bit integer             # <<<<<<<<<<<<<<
  * 
  * # This is effectively an ifdef statement in Cython
  */
-typedef npy_uint32 __pyx_t_7sklearn_9neighbors_10_quad_tree_UINT32_t;
+typedef npy_uint32 __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_UINT32_t;
 
-/* "sklearn/tree/_utils.pxd":16
- * from ..neighbors._quad_tree cimport Cell
+/* "_utils.pxd":16
+ * from ._quad_tree cimport Cell
  * 
  * ctypedef np.npy_float32 DTYPE_t          # Type of X             # <<<<<<<<<<<<<<
  * ctypedef np.npy_float64 DOUBLE_t         # Type of y, sample_weight
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  */
-typedef npy_float32 __pyx_t_7sklearn_4tree_6_utils_DTYPE_t;
+typedef npy_float32 __pyx_t_13stpredictions_6models_3OK3_6_utils_DTYPE_t;
 
-/* "sklearn/tree/_utils.pxd":17
+/* "_utils.pxd":17
  * 
  * ctypedef np.npy_float32 DTYPE_t          # Type of X
  * ctypedef np.npy_float64 DOUBLE_t         # Type of y, sample_weight             # <<<<<<<<<<<<<<
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer
  */
-typedef npy_float64 __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t;
+typedef npy_float64 __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t;
 
-/* "sklearn/tree/_utils.pxd":18
+/* "_utils.pxd":18
  * ctypedef np.npy_float32 DTYPE_t          # Type of X
  * ctypedef np.npy_float64 DOUBLE_t         # Type of y, sample_weight
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters             # <<<<<<<<<<<<<<
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer
  * ctypedef np.npy_uint32 UINT32_t          # Unsigned 32 bit integer
  */
-typedef npy_intp __pyx_t_7sklearn_4tree_6_utils_SIZE_t;
+typedef npy_intp __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t;
 
-/* "sklearn/tree/_utils.pxd":19
+/* "_utils.pxd":19
  * ctypedef np.npy_float64 DOUBLE_t         # Type of y, sample_weight
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer             # <<<<<<<<<<<<<<
  * ctypedef np.npy_uint32 UINT32_t          # Unsigned 32 bit integer
  * 
  */
-typedef npy_int32 __pyx_t_7sklearn_4tree_6_utils_INT32_t;
+typedef npy_int32 __pyx_t_13stpredictions_6models_3OK3_6_utils_INT32_t;
 
-/* "sklearn/tree/_utils.pxd":20
+/* "_utils.pxd":20
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer
  * ctypedef np.npy_uint32 UINT32_t          # Unsigned 32 bit integer             # <<<<<<<<<<<<<<
  * 
  * 
  */
-typedef npy_uint32 __pyx_t_7sklearn_4tree_6_utils_UINT32_t;
+typedef npy_uint32 __pyx_t_13stpredictions_6models_3OK3_6_utils_UINT32_t;
 /* Declarations.proto */
 #if CYTHON_CCOMPLEX
   #ifdef __cplusplus
@@ -1335,26 +1334,23 @@ static CYTHON_INLINE __pyx_t_double_complex __pyx_t_double_complex_from_parts(do
 
 
 /*--- Type declarations ---*/
-struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion;
-struct __pyx_obj_7sklearn_4tree_10_criterion_ClassificationCriterion;
-struct __pyx_obj_7sklearn_4tree_10_criterion_RegressionCriterion;
-struct __pyx_obj_7sklearn_4tree_9_splitter_Splitter;
-struct __pyx_obj_7sklearn_4tree_5_tree_Tree;
-struct __pyx_obj_7sklearn_4tree_5_tree_TreeBuilder;
-struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree;
-struct __pyx_obj_7sklearn_4tree_6_utils_Stack;
-struct __pyx_obj_7sklearn_4tree_6_utils_PriorityHeap;
-struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue;
-struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator;
-struct __pyx_obj_10_criterion_Criterion;
-struct __pyx_obj_10_criterion_KernelizedRegressionCriterion;
-struct __pyx_obj_10_criterion_KernelizedMSE;
+struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter;
+struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree;
+struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_TreeBuilder;
+struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree;
+struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_Stack;
+struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_PriorityHeap;
+struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue;
+struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator;
+struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion;
+struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion;
+struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE;
 struct __pyx_array_obj;
 struct __pyx_MemviewEnum_obj;
 struct __pyx_memoryview_obj;
 struct __pyx_memoryviewslice_obj;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":728
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":728
  * ctypedef npy_longdouble longdouble_t
  * 
  * ctypedef npy_cfloat      cfloat_t             # <<<<<<<<<<<<<<
@@ -1363,7 +1359,7 @@ struct __pyx_memoryviewslice_obj;
  */
 typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":729
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":729
  * 
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t             # <<<<<<<<<<<<<<
@@ -1372,7 +1368,7 @@ typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":730
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":730
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t
  * ctypedef npy_clongdouble clongdouble_t             # <<<<<<<<<<<<<<
@@ -1381,7 +1377,7 @@ typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
  */
 typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":732
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":732
  * ctypedef npy_clongdouble clongdouble_t
  * 
  * ctypedef npy_cdouble     complex_t             # <<<<<<<<<<<<<<
@@ -1389,88 +1385,88 @@ typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
  * cdef inline object PyArray_MultiIterNew1(a):
  */
 typedef npy_cdouble __pyx_t_5numpy_complex_t;
-struct __pyx_t_7sklearn_4tree_9_splitter_SplitRecord;
+struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord;
 
-/* "_splitter.pxd":23
+/* "_splitter.pxd":14
  * from ._tree cimport UINT32_t         # Unsigned 32 bit integer
  * 
  * cdef struct SplitRecord:             # <<<<<<<<<<<<<<
  *     # Data to track sample split
  *     SIZE_t feature         # Which feature to split on.
  */
-struct __pyx_t_7sklearn_4tree_9_splitter_SplitRecord {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t feature;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t pos;
+struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t feature;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t pos;
   double threshold;
   double improvement;
   double impurity_left;
   double impurity_right;
 };
-struct __pyx_t_7sklearn_4tree_5_tree_Node;
-struct __pyx_opt_args_7sklearn_4tree_5_tree_4Tree__resize_c;
-struct __pyx_opt_args_7sklearn_4tree_5_tree_4Tree_compute_feature_importances;
-struct __pyx_opt_args_7sklearn_4tree_5_tree_11TreeBuilder_build;
+struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node;
+struct __pyx_opt_args_13stpredictions_6models_3OK3_5_tree_4Tree__resize_c;
+struct __pyx_opt_args_13stpredictions_6models_3OK3_5_tree_4Tree_compute_feature_importances;
+struct __pyx_opt_args_13stpredictions_6models_3OK3_5_tree_11TreeBuilder_build;
 
-/* "sklearn/tree/_tree.pxd":25
- * from ._splitter cimport SplitRecord
+/* "_tree.pxd":16
+ * from _splitter cimport SplitRecord
  * 
  * cdef struct Node:             # <<<<<<<<<<<<<<
  *     # Base storage structure for the nodes in a Tree object
  * 
  */
-struct __pyx_t_7sklearn_4tree_5_tree_Node {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t left_child;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t right_child;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t feature;
-  __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t threshold;
-  __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t impurity;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_node_samples;
-  __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t weighted_n_node_samples;
+struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t left_child;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t right_child;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t feature;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t threshold;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t impurity;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t n_node_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t weighted_n_node_samples;
 };
 
-/* "sklearn/tree/_tree.pxd":63
+/* "_tree.pxd":52
  *                           double weighted_n_samples) nogil except -1
  *     cdef int _resize(self, SIZE_t capacity) nogil except -1
  *     cdef int _resize_c(self, SIZE_t capacity=*) nogil except -1             # <<<<<<<<<<<<<<
  * 
  *     cdef np.ndarray _get_value_ndarray(self)
  */
-struct __pyx_opt_args_7sklearn_4tree_5_tree_4Tree__resize_c {
+struct __pyx_opt_args_13stpredictions_6models_3OK3_5_tree_4Tree__resize_c {
   int __pyx_n;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t capacity;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t capacity;
 };
 
-/* "sklearn/tree/_tree.pxd":78
+/* "_tree.pxd":68
  *     cdef object _decision_path_sparse_csr(self, object X)
  * 
  *     cpdef compute_feature_importances(self, normalize=*)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-struct __pyx_opt_args_7sklearn_4tree_5_tree_4Tree_compute_feature_importances {
+struct __pyx_opt_args_13stpredictions_6models_3OK3_5_tree_4Tree_compute_feature_importances {
   int __pyx_n;
   PyObject *normalize;
 };
 
-/* "sklearn/tree/_tree.pxd":102
+/* "_tree.pxd":92
  *     cdef double min_impurity_decrease   # Impurity threshold for early stopping
  * 
  *     cpdef build(self, Tree tree, object X, np.ndarray y,             # <<<<<<<<<<<<<<
  *                 np.ndarray sample_weight=*)
  *     cdef _check_input(self, object X, np.ndarray y, np.ndarray sample_weight)
  */
-struct __pyx_opt_args_7sklearn_4tree_5_tree_11TreeBuilder_build {
+struct __pyx_opt_args_13stpredictions_6models_3OK3_5_tree_11TreeBuilder_build {
   int __pyx_n;
   PyArrayObject *sample_weight;
 };
-struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell;
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree_insert_point;
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__insert_point_in_new_child;
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree_summarize;
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__resize_c;
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__get_cell;
+struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell;
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree_insert_point;
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree__insert_point_in_new_child;
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree_summarize;
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree__resize_c;
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree__get_cell;
 
-/* "neighbors/_quad_tree.pxd":21
+/* "_quad_tree.pxd":21
  * # It allows us to write printf debugging lines
  * # and remove them at compile time
  * cdef enum:             # <<<<<<<<<<<<<<
@@ -1478,96 +1474,96 @@ struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__get_cell;
  * 
  */
 enum  {
-  __pyx_e_7sklearn_9neighbors_10_quad_tree_DEBUGFLAG = 0
+  __pyx_e_13stpredictions_6models_3OK3_10_quad_tree_DEBUGFLAG = 0
 };
 
-/* "neighbors/_quad_tree.pxd":29
+/* "_quad_tree.pxd":29
  * # have is_leaf and max_width consecutive as it permits to avoid padding by
  * # the compiler and keep the size coherent for both C and numpy data structures.
  * cdef struct Cell:             # <<<<<<<<<<<<<<
  *     # Base storage structure for cells in a QuadTree object
  * 
  */
-struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell {
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t parent;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t children[8];
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t cell_id;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t point_index;
+struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell {
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t parent;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t children[8];
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t cell_id;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t point_index;
   int is_leaf;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t squared_max_width;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t depth;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t cumulative_size;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t center[3];
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t barycenter[3];
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t min_bounds[3];
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t max_bounds[3];
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t squared_max_width;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t depth;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t cumulative_size;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t center[3];
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t barycenter[3];
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t min_bounds[3];
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t max_bounds[3];
 };
 
-/* "neighbors/_quad_tree.pxd":75
+/* "_quad_tree.pxd":75
  * 
  *     # Point insertion methods
  *     cdef int insert_point(self, DTYPE_t[3] point, SIZE_t point_index,             # <<<<<<<<<<<<<<
  *                           SIZE_t cell_id=*) nogil except -1
  *     cdef SIZE_t _insert_point_in_new_child(self, DTYPE_t[3] point, Cell* cell,
  */
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree_insert_point {
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree_insert_point {
   int __pyx_n;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t cell_id;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t cell_id;
 };
 
-/* "neighbors/_quad_tree.pxd":77
+/* "_quad_tree.pxd":77
  *     cdef int insert_point(self, DTYPE_t[3] point, SIZE_t point_index,
  *                           SIZE_t cell_id=*) nogil except -1
  *     cdef SIZE_t _insert_point_in_new_child(self, DTYPE_t[3] point, Cell* cell,             # <<<<<<<<<<<<<<
  *                                            SIZE_t point_index, SIZE_t size=*
  *                                            ) nogil
  */
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__insert_point_in_new_child {
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree__insert_point_in_new_child {
   int __pyx_n;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t size;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t size;
 };
 
-/* "neighbors/_quad_tree.pxd":84
+/* "_quad_tree.pxd":84
  * 
  *     # Create a summary of the Tree compare to a query point
  *     cdef long summarize(self, DTYPE_t[3] point, DTYPE_t* results,             # <<<<<<<<<<<<<<
  *                         float squared_theta=*, SIZE_t cell_id=*, long idx=*
  *                         ) nogil
  */
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree_summarize {
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree_summarize {
   int __pyx_n;
   float squared_theta;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t cell_id;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t cell_id;
   long idx;
 };
 
-/* "neighbors/_quad_tree.pxd":99
+/* "_quad_tree.pxd":99
  *     # Private array manipulation to manage the ``cells`` array
  *     cdef int _resize(self, SIZE_t capacity) nogil except -1
  *     cdef int _resize_c(self, SIZE_t capacity=*) nogil except -1             # <<<<<<<<<<<<<<
  *     cdef int _get_cell(self, DTYPE_t[3] point, SIZE_t cell_id=*) nogil except -1
  *     cdef np.ndarray _get_cell_ndarray(self)
  */
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__resize_c {
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree__resize_c {
   int __pyx_n;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t capacity;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t capacity;
 };
 
-/* "neighbors/_quad_tree.pxd":100
+/* "_quad_tree.pxd":100
  *     cdef int _resize(self, SIZE_t capacity) nogil except -1
  *     cdef int _resize_c(self, SIZE_t capacity=*) nogil except -1
  *     cdef int _get_cell(self, DTYPE_t[3] point, SIZE_t cell_id=*) nogil except -1             # <<<<<<<<<<<<<<
  *     cdef np.ndarray _get_cell_ndarray(self)
  */
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__get_cell {
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree__get_cell {
   int __pyx_n;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t cell_id;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t cell_id;
 };
-struct __pyx_t_7sklearn_4tree_6_utils_StackRecord;
-struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord;
-struct __pyx_t_7sklearn_4tree_6_utils_WeightedPQueueRecord;
+struct __pyx_t_13stpredictions_6models_3OK3_6_utils_StackRecord;
+struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord;
+struct __pyx_t_13stpredictions_6models_3OK3_6_utils_WeightedPQueueRecord;
 
-/* "sklearn/tree/_utils.pxd":23
+/* "_utils.pxd":23
  * 
  * 
  * cdef enum:             # <<<<<<<<<<<<<<
@@ -1575,39 +1571,39 @@ struct __pyx_t_7sklearn_4tree_6_utils_WeightedPQueueRecord;
  *     # We don't use RAND_MAX because it's different across platforms and
  */
 enum  {
-  __pyx_e_7sklearn_4tree_6_utils_RAND_R_MAX = 0x7FFFFFFF
+  __pyx_e_13stpredictions_6models_3OK3_6_utils_RAND_R_MAX = 0x7FFFFFFF
 };
 
-/* "sklearn/tree/_utils.pxd":70
+/* "_utils.pxd":70
  * 
  * # A record on the stack for depth-first tree growing
  * cdef struct StackRecord:             # <<<<<<<<<<<<<<
  *     SIZE_t start
  *     SIZE_t end
  */
-struct __pyx_t_7sklearn_4tree_6_utils_StackRecord {
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t start;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t end;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t depth;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t parent;
+struct __pyx_t_13stpredictions_6models_3OK3_6_utils_StackRecord {
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t start;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t end;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t depth;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t parent;
   int is_left;
   double impurity;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t n_constant_features;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t n_constant_features;
 };
 
-/* "sklearn/tree/_utils.pxd":96
+/* "_utils.pxd":96
  * 
  * # A record on the frontier for best-first tree growing
  * cdef struct PriorityHeapRecord:             # <<<<<<<<<<<<<<
  *     SIZE_t node_id
  *     SIZE_t start
  */
-struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord {
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t node_id;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t start;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t end;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t pos;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t depth;
+struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord {
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t node_id;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t start;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t end;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t pos;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t depth;
   int is_leaf;
   double impurity;
   double impurity_left;
@@ -1615,252 +1611,194 @@ struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord {
   double improvement;
 };
 
-/* "sklearn/tree/_utils.pxd":127
+/* "_utils.pxd":127
  * 
  * # A record stored in the WeightedPQueue
  * cdef struct WeightedPQueueRecord:             # <<<<<<<<<<<<<<
  *     DOUBLE_t data
  *     DOUBLE_t weight
  */
-struct __pyx_t_7sklearn_4tree_6_utils_WeightedPQueueRecord {
-  __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t data;
-  __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t weight;
+struct __pyx_t_13stpredictions_6models_3OK3_6_utils_WeightedPQueueRecord {
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t data;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t weight;
 };
 
-/* "_criterion.pxd":21
- * from ._tree cimport UINT32_t         # Unsigned 32 bit integer
- * 
- * cdef class Criterion:             # <<<<<<<<<<<<<<
- *     # The criterion computes the impurity of a node and the reduction of
- *     # impurity of a split on that node. It also computes the output statistics
- */
-struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion {
-  PyObject_HEAD
-  struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_Criterion *__pyx_vtab;
-  __Pyx_memviewslice y;
-  __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *sample_weight;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t start;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t pos;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t end;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_outputs;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_node_samples;
-  double weighted_n_samples;
-  double weighted_n_node_samples;
-  double weighted_n_left;
-  double weighted_n_right;
-  double *sum_total;
-  double *sum_left;
-  double *sum_right;
-};
-
-
-/* "_criterion.pxd":70
- *     cdef double proxy_impurity_improvement(self) nogil
- * 
- * cdef class ClassificationCriterion(Criterion):             # <<<<<<<<<<<<<<
- *     """Abstract criterion for classification."""
- * 
- */
-struct __pyx_obj_7sklearn_4tree_10_criterion_ClassificationCriterion {
-  struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion __pyx_base;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *n_classes;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t sum_stride;
-};
-
-
-/* "_criterion.pxd":76
- *     cdef SIZE_t sum_stride
- * 
- * cdef class RegressionCriterion(Criterion):             # <<<<<<<<<<<<<<
- *     """Abstract regression criterion."""
- * 
- */
-struct __pyx_obj_7sklearn_4tree_10_criterion_RegressionCriterion {
-  struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion __pyx_base;
-  double sq_sum_total;
-};
-
-
-/* "_splitter.pxd":34
+/* "_splitter.pxd":25
  *     double impurity_right  # Impurity of the right split.
  * 
  * cdef class Splitter:             # <<<<<<<<<<<<<<
  *     # The splitter searches in the input space for a feature and a threshold
  *     # to split the samples samples[start:end].
  */
-struct __pyx_obj_7sklearn_4tree_9_splitter_Splitter {
+struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter {
   PyObject_HEAD
-  struct __pyx_vtabstruct_7sklearn_4tree_9_splitter_Splitter *__pyx_vtab;
-  struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *criterion;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t max_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t min_samples_leaf;
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_vtab;
+  struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *criterion;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t max_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t min_samples_leaf;
   double min_weight_leaf;
   PyObject *random_state;
-  __pyx_t_7sklearn_4tree_5_tree_UINT32_t rand_r_state;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_UINT32_t rand_r_state;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t n_samples;
   double weighted_n_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *constant_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_features;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *feature_values;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t start;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t end;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *constant_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t n_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *feature_values;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t start;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t end;
   __Pyx_memviewslice y;
-  __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *sample_weight;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *sample_weight;
 };
 
 
-/* "sklearn/tree/_tree.pxd":37
+/* "_tree.pxd":28
  * 
  * 
  * cdef class Tree:             # <<<<<<<<<<<<<<
  *     # The Tree object is a binary tree structure constructed by the
- *     # TreeBuilder. The tree structure is used for predictions and
+ *     # TreeBuilder.
  */
-struct __pyx_obj_7sklearn_4tree_5_tree_Tree {
+struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree {
   PyObject_HEAD
-  struct __pyx_vtabstruct_7sklearn_4tree_5_tree_Tree *__pyx_vtab;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *n_classes;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_outputs;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t max_n_classes;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t max_depth;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t node_count;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t capacity;
-  struct __pyx_t_7sklearn_4tree_5_tree_Node *nodes;
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_5_tree_Tree *__pyx_vtab;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t n_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t max_depth;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t node_count;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t capacity;
+  PyArrayObject *K_y;
+  PyArrayObject *y;
+  struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node *nodes;
   double *value;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t value_stride;
 };
 
 
-/* "sklearn/tree/_tree.pxd":85
+/* "_tree.pxd":75
  * # =============================================================================
  * 
  * cdef class TreeBuilder:             # <<<<<<<<<<<<<<
  *     # The TreeBuilder recursively builds a Tree object from training samples,
  *     # using a Splitter object for splitting internal nodes and assigning
  */
-struct __pyx_obj_7sklearn_4tree_5_tree_TreeBuilder {
+struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_TreeBuilder {
   PyObject_HEAD
-  struct __pyx_vtabstruct_7sklearn_4tree_5_tree_TreeBuilder *__pyx_vtab;
-  struct __pyx_obj_7sklearn_4tree_9_splitter_Splitter *splitter;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t min_samples_split;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t min_samples_leaf;
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_5_tree_TreeBuilder *__pyx_vtab;
+  struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *splitter;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t min_samples_split;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t min_samples_leaf;
   double min_weight_leaf;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t max_depth;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t max_depth;
   double min_impurity_split;
   double min_impurity_decrease;
 };
 
 
-/* "neighbors/_quad_tree.pxd":55
+/* "_quad_tree.pxd":55
  * 
  * 
  * cdef class _QuadTree:             # <<<<<<<<<<<<<<
  *     # The QuadTree object is a quad tree structure constructed by inserting
  *     # recursively points in the tree and splitting cells in 4 so that each
  */
-struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree {
+struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree {
   PyObject_HEAD
-  struct __pyx_vtabstruct_7sklearn_9neighbors_10_quad_tree__QuadTree *__pyx_vtab;
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *__pyx_vtab;
   int n_dimensions;
   int verbose;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t n_cells_per_cell;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t max_depth;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t cell_count;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t capacity;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t n_points;
-  struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell *cells;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t n_cells_per_cell;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t max_depth;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t cell_count;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t capacity;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t n_points;
+  struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell *cells;
 };
 
 
-/* "sklearn/tree/_utils.pxd":79
+/* "_utils.pxd":79
  *     SIZE_t n_constant_features
  * 
  * cdef class Stack:             # <<<<<<<<<<<<<<
  *     cdef SIZE_t capacity
  *     cdef SIZE_t top
  */
-struct __pyx_obj_7sklearn_4tree_6_utils_Stack {
+struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_Stack {
   PyObject_HEAD
-  struct __pyx_vtabstruct_7sklearn_4tree_6_utils_Stack *__pyx_vtab;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t capacity;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t top;
-  struct __pyx_t_7sklearn_4tree_6_utils_StackRecord *stack_;
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_Stack *__pyx_vtab;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t capacity;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t top;
+  struct __pyx_t_13stpredictions_6models_3OK3_6_utils_StackRecord *stack_;
 };
 
 
-/* "sklearn/tree/_utils.pxd":108
+/* "_utils.pxd":108
  *     double improvement
  * 
  * cdef class PriorityHeap:             # <<<<<<<<<<<<<<
  *     cdef SIZE_t capacity
  *     cdef SIZE_t heap_ptr
  */
-struct __pyx_obj_7sklearn_4tree_6_utils_PriorityHeap {
+struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_PriorityHeap {
   PyObject_HEAD
-  struct __pyx_vtabstruct_7sklearn_4tree_6_utils_PriorityHeap *__pyx_vtab;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t capacity;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t heap_ptr;
-  struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord *heap_;
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_PriorityHeap *__pyx_vtab;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t capacity;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t heap_ptr;
+  struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord *heap_;
 };
 
 
-/* "sklearn/tree/_utils.pxd":131
+/* "_utils.pxd":131
  *     DOUBLE_t weight
  * 
  * cdef class WeightedPQueue:             # <<<<<<<<<<<<<<
  *     cdef SIZE_t capacity
  *     cdef SIZE_t array_ptr
  */
-struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue {
+struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue {
   PyObject_HEAD
-  struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedPQueue *__pyx_vtab;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t capacity;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t array_ptr;
-  struct __pyx_t_7sklearn_4tree_6_utils_WeightedPQueueRecord *array_;
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *__pyx_vtab;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t capacity;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t array_ptr;
+  struct __pyx_t_13stpredictions_6models_3OK3_6_utils_WeightedPQueueRecord *array_;
 };
 
 
-/* "sklearn/tree/_utils.pxd":151
+/* "_utils.pxd":151
  * # =============================================================================
  * 
  * cdef class WeightedMedianCalculator:             # <<<<<<<<<<<<<<
  *     cdef SIZE_t initial_capacity
  *     cdef WeightedPQueue samples
  */
-struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator {
+struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator {
   PyObject_HEAD
-  struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedMedianCalculator *__pyx_vtab;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t initial_capacity;
-  struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *samples;
-  __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t total_weight;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t k;
-  __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t sum_w_0_k;
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *__pyx_vtab;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t initial_capacity;
+  struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *samples;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t total_weight;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t k;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t sum_w_0_k;
 };
 
 
-/* "_criterion.pxd":12
- * from sklearn.tree._tree cimport UINT32_t         # Unsigned 32 bit integer
+/* "stpredictions/models/OK3/_criterion.pxd":12
+ * from ._tree cimport UINT32_t         # Unsigned 32 bit integer
  * 
  * cdef class Criterion:             # <<<<<<<<<<<<<<
  *     # The criterion computes the impurity of a node and the reduction of
  *     # impurity of a split on that node.
  */
-struct __pyx_obj_10_criterion_Criterion {
+struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion {
   PyObject_HEAD
-  struct __pyx_vtabstruct_10_criterion_Criterion *__pyx_vtab;
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_vtab;
   __Pyx_memviewslice y;
-  __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *sample_weight;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t start;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t pos;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t end;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_node_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *sample_weight;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t start;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t pos;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t end;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t n_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t n_node_samples;
   double weighted_n_samples;
   double weighted_n_node_samples;
   double weighted_n_left;
@@ -1868,15 +1806,15 @@ struct __pyx_obj_10_criterion_Criterion {
 };
 
 
-/* "_criterion.pxd":50
+/* "stpredictions/models/OK3/_criterion.pxd":50
  * 
  * 
  * cdef class KernelizedRegressionCriterion(Criterion):             # <<<<<<<<<<<<<<
  *     """Abstract kernelized output regression criterion."""
  * 
  */
-struct __pyx_obj_10_criterion_KernelizedRegressionCriterion {
-  struct __pyx_obj_10_criterion_Criterion __pyx_base;
+struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion {
+  struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion __pyx_base;
   double sum_diag_Gramm;
   double sum_total_Gramm;
   double sum_diag_Gramm_left;
@@ -1886,15 +1824,15 @@ struct __pyx_obj_10_criterion_KernelizedRegressionCriterion {
 };
 
 
-/* "_criterion.pyx":445
+/* "stpredictions/models/OK3/_criterion.pyx":445
  * 
  * 
  * cdef class KernelizedMSE(KernelizedRegressionCriterion):             # <<<<<<<<<<<<<<
  *     """Mean squared error impurity criterion.
  * 
  */
-struct __pyx_obj_10_criterion_KernelizedMSE {
-  struct __pyx_obj_10_criterion_KernelizedRegressionCriterion __pyx_base;
+struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE {
+  struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion __pyx_base;
 };
 
 
@@ -1976,57 +1914,7 @@ struct __pyx_memoryviewslice_obj {
 
 
 
-/* "_criterion.pxd":21
- * from ._tree cimport UINT32_t         # Unsigned 32 bit integer
- * 
- * cdef class Criterion:             # <<<<<<<<<<<<<<
- *     # The criterion computes the impurity of a node and the reduction of
- *     # impurity of a split on that node. It also computes the output statistics
- */
-
-struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_Criterion {
-  int (*init)(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *, __Pyx_memviewslice, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *, double, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t);
-  int (*reset)(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *);
-  int (*reverse_reset)(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *);
-  int (*update)(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t);
-  double (*node_impurity)(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *);
-  void (*children_impurity)(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *, double *, double *);
-  void (*node_value)(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *, double *);
-  double (*impurity_improvement)(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *, double, double, double);
-  double (*proxy_impurity_improvement)(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *);
-};
-static struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_Criterion *__pyx_vtabptr_7sklearn_4tree_10_criterion_Criterion;
-
-
-/* "_criterion.pxd":70
- *     cdef double proxy_impurity_improvement(self) nogil
- * 
- * cdef class ClassificationCriterion(Criterion):             # <<<<<<<<<<<<<<
- *     """Abstract criterion for classification."""
- * 
- */
-
-struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_ClassificationCriterion {
-  struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_Criterion __pyx_base;
-};
-static struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_ClassificationCriterion *__pyx_vtabptr_7sklearn_4tree_10_criterion_ClassificationCriterion;
-
-
-/* "_criterion.pxd":76
- *     cdef SIZE_t sum_stride
- * 
- * cdef class RegressionCriterion(Criterion):             # <<<<<<<<<<<<<<
- *     """Abstract regression criterion."""
- * 
- */
-
-struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_RegressionCriterion {
-  struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_Criterion __pyx_base;
-};
-static struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_RegressionCriterion *__pyx_vtabptr_7sklearn_4tree_10_criterion_RegressionCriterion;
-
-
-/* "_splitter.pxd":34
+/* "_splitter.pxd":25
  *     double impurity_right  # Impurity of the right split.
  * 
  * cdef class Splitter:             # <<<<<<<<<<<<<<
@@ -2034,43 +1922,44 @@ static struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_RegressionCriterion *
  *     # to split the samples samples[start:end].
  */
 
-struct __pyx_vtabstruct_7sklearn_4tree_9_splitter_Splitter {
-  int (*init)(struct __pyx_obj_7sklearn_4tree_9_splitter_Splitter *, PyObject *, __Pyx_memviewslice, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *);
-  int (*node_reset)(struct __pyx_obj_7sklearn_4tree_9_splitter_Splitter *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, double *);
-  int (*node_split)(struct __pyx_obj_7sklearn_4tree_9_splitter_Splitter *, double, struct __pyx_t_7sklearn_4tree_9_splitter_SplitRecord *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *);
-  void (*node_value)(struct __pyx_obj_7sklearn_4tree_9_splitter_Splitter *, double *);
-  double (*node_impurity)(struct __pyx_obj_7sklearn_4tree_9_splitter_Splitter *);
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_Splitter {
+  int (*init)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *, PyObject *, __Pyx_memviewslice, __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *);
+  int (*node_reset)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, double *);
+  int (*node_split)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *, double, struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *);
+  void (*node_value)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *, double *);
+  double (*node_impurity)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *);
 };
-static struct __pyx_vtabstruct_7sklearn_4tree_9_splitter_Splitter *__pyx_vtabptr_7sklearn_4tree_9_splitter_Splitter;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_Splitter;
 
 
-/* "sklearn/tree/_tree.pxd":37
+/* "_tree.pxd":28
  * 
  * 
  * cdef class Tree:             # <<<<<<<<<<<<<<
  *     # The Tree object is a binary tree structure constructed by the
- *     # TreeBuilder. The tree structure is used for predictions and
+ *     # TreeBuilder.
  */
 
-struct __pyx_vtabstruct_7sklearn_4tree_5_tree_Tree {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t (*_add_node)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, int, int, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, double, double, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, double);
-  int (*_resize)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t);
-  int (*_resize_c)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, struct __pyx_opt_args_7sklearn_4tree_5_tree_4Tree__resize_c *__pyx_optional_args);
-  PyArrayObject *(*_get_value_ndarray)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *);
-  PyArrayObject *(*_get_node_ndarray)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *);
-  PyArrayObject *(*predict)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, PyObject *, int __pyx_skip_dispatch);
-  PyArrayObject *(*apply)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, PyObject *, int __pyx_skip_dispatch);
-  PyArrayObject *(*_apply_dense)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, PyObject *);
-  PyArrayObject *(*_apply_sparse_csr)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, PyObject *);
-  PyObject *(*decision_path)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, PyObject *, int __pyx_skip_dispatch);
-  PyObject *(*_decision_path_dense)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, PyObject *);
-  PyObject *(*_decision_path_sparse_csr)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, PyObject *);
-  PyObject *(*compute_feature_importances)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, int __pyx_skip_dispatch, struct __pyx_opt_args_7sklearn_4tree_5_tree_4Tree_compute_feature_importances *__pyx_optional_args);
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_5_tree_Tree {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t (*_add_node)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, int, int, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, double, double, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, double);
+  int (*_resize)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t);
+  int (*_resize_c)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, struct __pyx_opt_args_13stpredictions_6models_3OK3_5_tree_4Tree__resize_c *__pyx_optional_args);
+  PyArrayObject *(*_get_value_ndarray)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *);
+  PyArrayObject *(*_get_node_ndarray)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *);
+  PyArrayObject *(*decode_tree)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, PyArrayObject *, PyArrayObject *, PyObject *, PyObject *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, int __pyx_skip_dispatch);
+  PyArrayObject *(*predict)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, PyObject *, int __pyx_skip_dispatch);
+  PyArrayObject *(*apply)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, PyObject *, int __pyx_skip_dispatch);
+  PyArrayObject *(*_apply_dense)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, PyObject *);
+  PyArrayObject *(*_apply_sparse_csr)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, PyObject *);
+  PyObject *(*decision_path)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, PyObject *, int __pyx_skip_dispatch);
+  PyObject *(*_decision_path_dense)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, PyObject *);
+  PyObject *(*_decision_path_sparse_csr)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, PyObject *);
+  PyObject *(*compute_feature_importances)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, int __pyx_skip_dispatch, struct __pyx_opt_args_13stpredictions_6models_3OK3_5_tree_4Tree_compute_feature_importances *__pyx_optional_args);
 };
-static struct __pyx_vtabstruct_7sklearn_4tree_5_tree_Tree *__pyx_vtabptr_7sklearn_4tree_5_tree_Tree;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_5_tree_Tree *__pyx_vtabptr_13stpredictions_6models_3OK3_5_tree_Tree;
 
 
-/* "sklearn/tree/_tree.pxd":85
+/* "_tree.pxd":75
  * # =============================================================================
  * 
  * cdef class TreeBuilder:             # <<<<<<<<<<<<<<
@@ -2078,14 +1967,14 @@ static struct __pyx_vtabstruct_7sklearn_4tree_5_tree_Tree *__pyx_vtabptr_7sklear
  *     # using a Splitter object for splitting internal nodes and assigning
  */
 
-struct __pyx_vtabstruct_7sklearn_4tree_5_tree_TreeBuilder {
-  PyObject *(*build)(struct __pyx_obj_7sklearn_4tree_5_tree_TreeBuilder *, struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, PyObject *, PyArrayObject *, int __pyx_skip_dispatch, struct __pyx_opt_args_7sklearn_4tree_5_tree_11TreeBuilder_build *__pyx_optional_args);
-  PyObject *(*_check_input)(struct __pyx_obj_7sklearn_4tree_5_tree_TreeBuilder *, PyObject *, PyArrayObject *, PyArrayObject *);
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_5_tree_TreeBuilder {
+  PyObject *(*build)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_TreeBuilder *, struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, PyObject *, PyArrayObject *, int __pyx_skip_dispatch, struct __pyx_opt_args_13stpredictions_6models_3OK3_5_tree_11TreeBuilder_build *__pyx_optional_args);
+  PyObject *(*_check_input)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_TreeBuilder *, PyObject *, PyArrayObject *, PyArrayObject *);
 };
-static struct __pyx_vtabstruct_7sklearn_4tree_5_tree_TreeBuilder *__pyx_vtabptr_7sklearn_4tree_5_tree_TreeBuilder;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_5_tree_TreeBuilder *__pyx_vtabptr_13stpredictions_6models_3OK3_5_tree_TreeBuilder;
 
 
-/* "neighbors/_quad_tree.pxd":55
+/* "_quad_tree.pxd":55
  * 
  * 
  * cdef class _QuadTree:             # <<<<<<<<<<<<<<
@@ -2093,24 +1982,24 @@ static struct __pyx_vtabstruct_7sklearn_4tree_5_tree_TreeBuilder *__pyx_vtabptr_
  *     # recursively points in the tree and splitting cells in 4 so that each
  */
 
-struct __pyx_vtabstruct_7sklearn_9neighbors_10_quad_tree__QuadTree {
-  int (*insert_point)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *, __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t, struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree_insert_point *__pyx_optional_args);
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t (*_insert_point_in_new_child)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *, struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell *, __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t, struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__insert_point_in_new_child *__pyx_optional_args);
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t (*_select_child)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *, struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell *);
-  int (*_is_duplicate)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *);
-  long (*summarize)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *, struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree_summarize *__pyx_optional_args);
-  void (*_init_cell)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell *, __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t, __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t);
-  void (*_init_root)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *);
-  int (*_check_point_in_cell)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *, struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell *);
-  int (*_resize)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t);
-  int (*_resize_c)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__resize_c *__pyx_optional_args);
-  int (*_get_cell)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *, struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__get_cell *__pyx_optional_args);
-  PyArrayObject *(*_get_cell_ndarray)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *);
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_quad_tree__QuadTree {
+  int (*insert_point)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t, struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree_insert_point *__pyx_optional_args);
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t (*_insert_point_in_new_child)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *, struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t, struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree__insert_point_in_new_child *__pyx_optional_args);
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t (*_select_child)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *, struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell *);
+  int (*_is_duplicate)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *);
+  long (*summarize)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *, struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree_summarize *__pyx_optional_args);
+  void (*_init_cell)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t);
+  void (*_init_root)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *);
+  int (*_check_point_in_cell)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *, struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell *);
+  int (*_resize)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t);
+  int (*_resize_c)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree__resize_c *__pyx_optional_args);
+  int (*_get_cell)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *, struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree__get_cell *__pyx_optional_args);
+  PyArrayObject *(*_get_cell_ndarray)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *);
 };
-static struct __pyx_vtabstruct_7sklearn_9neighbors_10_quad_tree__QuadTree *__pyx_vtabptr_7sklearn_9neighbors_10_quad_tree__QuadTree;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *__pyx_vtabptr_13stpredictions_6models_3OK3_10_quad_tree__QuadTree;
 
 
-/* "sklearn/tree/_utils.pxd":79
+/* "_utils.pxd":79
  *     SIZE_t n_constant_features
  * 
  * cdef class Stack:             # <<<<<<<<<<<<<<
@@ -2118,15 +2007,15 @@ static struct __pyx_vtabstruct_7sklearn_9neighbors_10_quad_tree__QuadTree *__pyx
  *     cdef SIZE_t top
  */
 
-struct __pyx_vtabstruct_7sklearn_4tree_6_utils_Stack {
-  int (*is_empty)(struct __pyx_obj_7sklearn_4tree_6_utils_Stack *);
-  int (*push)(struct __pyx_obj_7sklearn_4tree_6_utils_Stack *, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, int, double, __pyx_t_7sklearn_4tree_6_utils_SIZE_t);
-  int (*pop)(struct __pyx_obj_7sklearn_4tree_6_utils_Stack *, struct __pyx_t_7sklearn_4tree_6_utils_StackRecord *);
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_Stack {
+  int (*is_empty)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_Stack *);
+  int (*push)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_Stack *, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, int, double, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t);
+  int (*pop)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_Stack *, struct __pyx_t_13stpredictions_6models_3OK3_6_utils_StackRecord *);
 };
-static struct __pyx_vtabstruct_7sklearn_4tree_6_utils_Stack *__pyx_vtabptr_7sklearn_4tree_6_utils_Stack;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_Stack *__pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_Stack;
 
 
-/* "sklearn/tree/_utils.pxd":108
+/* "_utils.pxd":108
  *     double improvement
  * 
  * cdef class PriorityHeap:             # <<<<<<<<<<<<<<
@@ -2134,17 +2023,17 @@ static struct __pyx_vtabstruct_7sklearn_4tree_6_utils_Stack *__pyx_vtabptr_7skle
  *     cdef SIZE_t heap_ptr
  */
 
-struct __pyx_vtabstruct_7sklearn_4tree_6_utils_PriorityHeap {
-  int (*is_empty)(struct __pyx_obj_7sklearn_4tree_6_utils_PriorityHeap *);
-  void (*heapify_up)(struct __pyx_obj_7sklearn_4tree_6_utils_PriorityHeap *, struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord *, __pyx_t_7sklearn_4tree_6_utils_SIZE_t);
-  void (*heapify_down)(struct __pyx_obj_7sklearn_4tree_6_utils_PriorityHeap *, struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord *, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_SIZE_t);
-  int (*push)(struct __pyx_obj_7sklearn_4tree_6_utils_PriorityHeap *, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, int, double, double, double, double);
-  int (*pop)(struct __pyx_obj_7sklearn_4tree_6_utils_PriorityHeap *, struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord *);
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_PriorityHeap {
+  int (*is_empty)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_PriorityHeap *);
+  void (*heapify_up)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_PriorityHeap *, struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord *, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t);
+  void (*heapify_down)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_PriorityHeap *, struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord *, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t);
+  int (*push)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_PriorityHeap *, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, int, double, double, double, double);
+  int (*pop)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_PriorityHeap *, struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord *);
 };
-static struct __pyx_vtabstruct_7sklearn_4tree_6_utils_PriorityHeap *__pyx_vtabptr_7sklearn_4tree_6_utils_PriorityHeap;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_PriorityHeap *__pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_PriorityHeap;
 
 
-/* "sklearn/tree/_utils.pxd":131
+/* "_utils.pxd":131
  *     DOUBLE_t weight
  * 
  * cdef class WeightedPQueue:             # <<<<<<<<<<<<<<
@@ -2152,21 +2041,21 @@ static struct __pyx_vtabstruct_7sklearn_4tree_6_utils_PriorityHeap *__pyx_vtabpt
  *     cdef SIZE_t array_ptr
  */
 
-struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedPQueue {
-  int (*is_empty)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *);
-  int (*reset)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *);
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t (*size)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *);
-  int (*push)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t);
-  int (*remove)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t);
-  int (*pop)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t *);
-  int (*peek)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t *);
-  __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t (*get_weight_from_index)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *, __pyx_t_7sklearn_4tree_6_utils_SIZE_t);
-  __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t (*get_value_from_index)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *, __pyx_t_7sklearn_4tree_6_utils_SIZE_t);
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_WeightedPQueue {
+  int (*is_empty)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *);
+  int (*reset)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *);
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t (*size)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *);
+  int (*push)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t);
+  int (*remove)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t);
+  int (*pop)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t *);
+  int (*peek)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t *);
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t (*get_weight_from_index)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t);
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t (*get_value_from_index)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t);
 };
-static struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedPQueue *__pyx_vtabptr_7sklearn_4tree_6_utils_WeightedPQueue;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *__pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_WeightedPQueue;
 
 
-/* "sklearn/tree/_utils.pxd":151
+/* "_utils.pxd":151
  * # =============================================================================
  * 
  * cdef class WeightedMedianCalculator:             # <<<<<<<<<<<<<<
@@ -2174,20 +2063,20 @@ static struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedPQueue *__pyx_vtab
  *     cdef WeightedPQueue samples
  */
 
-struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedMedianCalculator {
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t (*size)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator *);
-  int (*push)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t);
-  int (*reset)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator *);
-  int (*update_median_parameters_post_push)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t);
-  int (*remove)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t);
-  int (*pop)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t *);
-  int (*update_median_parameters_post_remove)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t);
-  __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t (*get_median)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator *);
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator {
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t (*size)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *);
+  int (*push)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t);
+  int (*reset)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *);
+  int (*update_median_parameters_post_push)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t);
+  int (*remove)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t);
+  int (*pop)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t *);
+  int (*update_median_parameters_post_remove)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t);
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t (*get_median)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *);
 };
-static struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedMedianCalculator *__pyx_vtabptr_7sklearn_4tree_6_utils_WeightedMedianCalculator;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *__pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator;
 
 
-/* "_criterion.pyx":22
+/* "stpredictions/models/OK3/_criterion.pyx":22
  * # from kernel import Kernel
  * 
  * cdef class Criterion:             # <<<<<<<<<<<<<<
@@ -2195,21 +2084,21 @@ static struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedMedianCalculator *
  * 
  */
 
-struct __pyx_vtabstruct_10_criterion_Criterion {
-  int (*init)(struct __pyx_obj_10_criterion_Criterion *, __Pyx_memviewslice, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *, double, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t);
-  int (*reset)(struct __pyx_obj_10_criterion_Criterion *);
-  int (*reverse_reset)(struct __pyx_obj_10_criterion_Criterion *);
-  int (*update)(struct __pyx_obj_10_criterion_Criterion *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t);
-  double (*node_impurity)(struct __pyx_obj_10_criterion_Criterion *);
-  void (*children_impurity)(struct __pyx_obj_10_criterion_Criterion *, double *, double *);
-  void (*node_value)(struct __pyx_obj_10_criterion_Criterion *, double *);
-  double (*impurity_improvement)(struct __pyx_obj_10_criterion_Criterion *, double);
-  double (*proxy_impurity_improvement)(struct __pyx_obj_10_criterion_Criterion *);
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion {
+  int (*init)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, __Pyx_memviewslice, __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *, double, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t);
+  int (*reset)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *);
+  int (*reverse_reset)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *);
+  int (*update)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t);
+  double (*node_impurity)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *);
+  void (*children_impurity)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, double *, double *);
+  void (*node_value)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, double *);
+  double (*impurity_improvement)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, double);
+  double (*proxy_impurity_improvement)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *);
 };
-static struct __pyx_vtabstruct_10_criterion_Criterion *__pyx_vtabptr_10_criterion_Criterion;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_Criterion;
 
 
-/* "_criterion.pyx":209
+/* "stpredictions/models/OK3/_criterion.pyx":209
  * 
  * 
  * cdef class KernelizedRegressionCriterion(Criterion):             # <<<<<<<<<<<<<<
@@ -2217,13 +2106,13 @@ static struct __pyx_vtabstruct_10_criterion_Criterion *__pyx_vtabptr_10_criterio
  * 
  */
 
-struct __pyx_vtabstruct_10_criterion_KernelizedRegressionCriterion {
-  struct __pyx_vtabstruct_10_criterion_Criterion __pyx_base;
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion {
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion __pyx_base;
 };
-static struct __pyx_vtabstruct_10_criterion_KernelizedRegressionCriterion *__pyx_vtabptr_10_criterion_KernelizedRegressionCriterion;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion;
 
 
-/* "_criterion.pyx":445
+/* "stpredictions/models/OK3/_criterion.pyx":445
  * 
  * 
  * cdef class KernelizedMSE(KernelizedRegressionCriterion):             # <<<<<<<<<<<<<<
@@ -2231,10 +2120,10 @@ static struct __pyx_vtabstruct_10_criterion_KernelizedRegressionCriterion *__pyx
  * 
  */
 
-struct __pyx_vtabstruct_10_criterion_KernelizedMSE {
-  struct __pyx_vtabstruct_10_criterion_KernelizedRegressionCriterion __pyx_base;
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE {
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion __pyx_base;
 };
-static struct __pyx_vtabstruct_10_criterion_KernelizedMSE *__pyx_vtabptr_10_criterion_KernelizedMSE;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE *__pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE;
 
 
 /* "View.MemoryView":105
@@ -2993,25 +2882,25 @@ static int __Pyx_ImportFunction(PyObject *module, const char *funcname, void (**
 /* InitStrings.proto */
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
-static int __pyx_f_10_criterion_9Criterion_init(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_y, CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *__pyx_v_sample_weight, CYTHON_UNUSED double __pyx_v_weighted_n_samples, CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples, CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start, CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end); /* proto*/
-static int __pyx_f_10_criterion_9Criterion_reset(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self); /* proto*/
-static int __pyx_f_10_criterion_9Criterion_reverse_reset(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self); /* proto*/
-static int __pyx_f_10_criterion_9Criterion_update(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_new_pos); /* proto*/
-static double __pyx_f_10_criterion_9Criterion_node_impurity(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self); /* proto*/
-static void __pyx_f_10_criterion_9Criterion_children_impurity(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED double *__pyx_v_impurity_left, CYTHON_UNUSED double *__pyx_v_impurity_right); /* proto*/
-static void __pyx_f_10_criterion_9Criterion_node_value(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED double *__pyx_v_dest); /* proto*/
-static double __pyx_f_10_criterion_9Criterion_proxy_impurity_improvement(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self); /* proto*/
-static double __pyx_f_10_criterion_9Criterion_impurity_improvement(struct __pyx_obj_10_criterion_Criterion *__pyx_v_self, double __pyx_v_impurity); /* proto*/
-static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, __Pyx_memviewslice __pyx_v_y, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *__pyx_v_sample_weight, double __pyx_v_weighted_n_samples, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end); /* proto*/
-static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reset(struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *__pyx_v_self); /* proto*/
-static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reverse_reset(struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *__pyx_v_self); /* proto*/
-static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_new_pos); /* proto*/
-static double __pyx_f_10_criterion_29KernelizedRegressionCriterion_node_impurity(CYTHON_UNUSED struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *__pyx_v_self); /* proto*/
-static void __pyx_f_10_criterion_29KernelizedRegressionCriterion_children_impurity(CYTHON_UNUSED struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, CYTHON_UNUSED double *__pyx_v_impurity_left, CYTHON_UNUSED double *__pyx_v_impurity_right); /* proto*/
-static void __pyx_f_10_criterion_29KernelizedRegressionCriterion_node_value(struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, double *__pyx_v_dest); /* proto*/
-static double __pyx_f_10_criterion_13KernelizedMSE_node_impurity(struct __pyx_obj_10_criterion_KernelizedMSE *__pyx_v_self); /* proto*/
-static double __pyx_f_10_criterion_13KernelizedMSE_proxy_impurity_improvement(struct __pyx_obj_10_criterion_KernelizedMSE *__pyx_v_self); /* proto*/
-static void __pyx_f_10_criterion_13KernelizedMSE_children_impurity(struct __pyx_obj_10_criterion_KernelizedMSE *__pyx_v_self, double *__pyx_v_impurity_left, double *__pyx_v_impurity_right); /* proto*/
+static int __pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_init(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_y, CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *__pyx_v_sample_weight, CYTHON_UNUSED double __pyx_v_weighted_n_samples, CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples, CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start, CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end); /* proto*/
+static int __pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_reset(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self); /* proto*/
+static int __pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_reverse_reset(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self); /* proto*/
+static int __pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_update(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_new_pos); /* proto*/
+static double __pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_node_impurity(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self); /* proto*/
+static void __pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_children_impurity(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED double *__pyx_v_impurity_left, CYTHON_UNUSED double *__pyx_v_impurity_right); /* proto*/
+static void __pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_node_value(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED double *__pyx_v_dest); /* proto*/
+static double __pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_proxy_impurity_improvement(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self); /* proto*/
+static double __pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_impurity_improvement(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self, double __pyx_v_impurity); /* proto*/
+static int __pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_init(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, __Pyx_memviewslice __pyx_v_y, __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *__pyx_v_sample_weight, double __pyx_v_weighted_n_samples, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end); /* proto*/
+static int __pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_reset(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_v_self); /* proto*/
+static int __pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_reverse_reset(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_v_self); /* proto*/
+static int __pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_update(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_new_pos); /* proto*/
+static double __pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_node_impurity(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_v_self); /* proto*/
+static void __pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_children_impurity(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, CYTHON_UNUSED double *__pyx_v_impurity_left, CYTHON_UNUSED double *__pyx_v_impurity_right); /* proto*/
+static void __pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_node_value(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, double *__pyx_v_dest); /* proto*/
+static double __pyx_f_13stpredictions_6models_3OK3_10_criterion_13KernelizedMSE_node_impurity(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE *__pyx_v_self); /* proto*/
+static double __pyx_f_13stpredictions_6models_3OK3_10_criterion_13KernelizedMSE_proxy_impurity_improvement(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE *__pyx_v_self); /* proto*/
+static void __pyx_f_13stpredictions_6models_3OK3_10_criterion_13KernelizedMSE_children_impurity(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE *__pyx_v_self, double *__pyx_v_impurity_left, double *__pyx_v_impurity_right); /* proto*/
 static PyObject *__pyx_array_get_memview(struct __pyx_array_obj *__pyx_v_self); /* proto*/
 static char *__pyx_memoryview_get_item_pointer(struct __pyx_memoryview_obj *__pyx_v_self, PyObject *__pyx_v_index); /* proto*/
 static PyObject *__pyx_memoryview_is_slice(struct __pyx_memoryview_obj *__pyx_v_self, PyObject *__pyx_v_obj); /* proto*/
@@ -3052,50 +2941,45 @@ static PyTypeObject *__pyx_ptype_5numpy_ndarray = 0;
 static PyTypeObject *__pyx_ptype_5numpy_ufunc = 0;
 static CYTHON_INLINE int __pyx_f_5numpy_import_array(void); /*proto*/
 
-/* Module declarations from 'sklearn.tree._criterion' */
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_10_criterion_Criterion = 0;
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_10_criterion_ClassificationCriterion = 0;
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_10_criterion_RegressionCriterion = 0;
+/* Module declarations from 'stpredictions.models.OK3._splitter' */
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_Splitter = 0;
 
-/* Module declarations from 'sklearn.tree._splitter' */
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_9_splitter_Splitter = 0;
-
-/* Module declarations from 'sklearn.tree._tree' */
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_5_tree_Tree = 0;
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_5_tree_TreeBuilder = 0;
+/* Module declarations from 'stpredictions.models.OK3._tree' */
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_5_tree_Tree = 0;
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_5_tree_TreeBuilder = 0;
 
 /* Module declarations from 'libc.stdlib' */
 
 /* Module declarations from 'libc.math' */
 
-/* Module declarations from 'sklearn.neighbors._quad_tree' */
-static PyTypeObject *__pyx_ptype_7sklearn_9neighbors_10_quad_tree__QuadTree = 0;
-static float *__pyx_vp_7sklearn_9neighbors_10_quad_tree_EPSILON = 0;
-#define __pyx_v_7sklearn_9neighbors_10_quad_tree_EPSILON (*__pyx_vp_7sklearn_9neighbors_10_quad_tree_EPSILON)
+/* Module declarations from 'stpredictions.models.OK3._quad_tree' */
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_10_quad_tree__QuadTree = 0;
+static float *__pyx_vp_13stpredictions_6models_3OK3_10_quad_tree_EPSILON = 0;
+#define __pyx_v_13stpredictions_6models_3OK3_10_quad_tree_EPSILON (*__pyx_vp_13stpredictions_6models_3OK3_10_quad_tree_EPSILON)
 
-/* Module declarations from 'sklearn.tree._utils' */
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_6_utils_Stack = 0;
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_6_utils_PriorityHeap = 0;
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_6_utils_WeightedPQueue = 0;
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_6_utils_WeightedMedianCalculator = 0;
-static PyArrayObject *(*__pyx_f_7sklearn_4tree_6_utils_sizet_ptr_to_ndarray)(__pyx_t_7sklearn_4tree_6_utils_SIZE_t *, __pyx_t_7sklearn_4tree_6_utils_SIZE_t); /*proto*/
-static double (*__pyx_f_7sklearn_4tree_6_utils_log)(double); /*proto*/
-static __pyx_t_7sklearn_4tree_6_utils_DTYPE_t *(*__pyx_fuse_0__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(__pyx_t_7sklearn_4tree_6_utils_DTYPE_t **, size_t); /*proto*/
-static __pyx_t_7sklearn_4tree_6_utils_SIZE_t *(*__pyx_fuse_1__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(__pyx_t_7sklearn_4tree_6_utils_SIZE_t **, size_t); /*proto*/
-static unsigned char *(*__pyx_fuse_2__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(unsigned char **, size_t); /*proto*/
-static struct __pyx_t_7sklearn_4tree_6_utils_WeightedPQueueRecord *(*__pyx_fuse_3__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(struct __pyx_t_7sklearn_4tree_6_utils_WeightedPQueueRecord **, size_t); /*proto*/
-static __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t *(*__pyx_fuse_4__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(__pyx_t_7sklearn_4tree_6_utils_DOUBLE_t **, size_t); /*proto*/
-static __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t **(*__pyx_fuse_5__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(__pyx_t_7sklearn_4tree_6_utils_DOUBLE_t ***, size_t); /*proto*/
-static struct __pyx_t_7sklearn_4tree_5_tree_Node *(*__pyx_fuse_6__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(struct __pyx_t_7sklearn_4tree_5_tree_Node **, size_t); /*proto*/
-static struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell *(*__pyx_fuse_7__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell **, size_t); /*proto*/
-static struct __pyx_t_7sklearn_4tree_5_tree_Node **(*__pyx_fuse_8__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(struct __pyx_t_7sklearn_4tree_5_tree_Node ***, size_t); /*proto*/
-static struct __pyx_t_7sklearn_4tree_6_utils_StackRecord *(*__pyx_fuse_9__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(struct __pyx_t_7sklearn_4tree_6_utils_StackRecord **, size_t); /*proto*/
-static struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord *(*__pyx_fuse_10__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord **, size_t); /*proto*/
+/* Module declarations from 'stpredictions.models.OK3._utils' */
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_6_utils_Stack = 0;
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_6_utils_PriorityHeap = 0;
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_6_utils_WeightedPQueue = 0;
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator = 0;
+static PyArrayObject *(*__pyx_f_13stpredictions_6models_3OK3_6_utils_sizet_ptr_to_ndarray)(__pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t); /*proto*/
+static double (*__pyx_f_13stpredictions_6models_3OK3_6_utils_log)(double); /*proto*/
+static __pyx_t_13stpredictions_6models_3OK3_6_utils_DTYPE_t *(*__pyx_fuse_0__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(__pyx_t_13stpredictions_6models_3OK3_6_utils_DTYPE_t **, size_t); /*proto*/
+static __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t *(*__pyx_fuse_1__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(__pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t **, size_t); /*proto*/
+static unsigned char *(*__pyx_fuse_2__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(unsigned char **, size_t); /*proto*/
+static struct __pyx_t_13stpredictions_6models_3OK3_6_utils_WeightedPQueueRecord *(*__pyx_fuse_3__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(struct __pyx_t_13stpredictions_6models_3OK3_6_utils_WeightedPQueueRecord **, size_t); /*proto*/
+static __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t *(*__pyx_fuse_4__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(__pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t **, size_t); /*proto*/
+static __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t **(*__pyx_fuse_5__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(__pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t ***, size_t); /*proto*/
+static struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node *(*__pyx_fuse_6__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node **, size_t); /*proto*/
+static struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell *(*__pyx_fuse_7__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell **, size_t); /*proto*/
+static struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node **(*__pyx_fuse_8__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node ***, size_t); /*proto*/
+static struct __pyx_t_13stpredictions_6models_3OK3_6_utils_StackRecord *(*__pyx_fuse_9__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(struct __pyx_t_13stpredictions_6models_3OK3_6_utils_StackRecord **, size_t); /*proto*/
+static struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord *(*__pyx_fuse_10__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord **, size_t); /*proto*/
 
-/* Module declarations from '_criterion' */
-static PyTypeObject *__pyx_ptype_10_criterion_Criterion = 0;
-static PyTypeObject *__pyx_ptype_10_criterion_KernelizedRegressionCriterion = 0;
-static PyTypeObject *__pyx_ptype_10_criterion_KernelizedMSE = 0;
+/* Module declarations from 'stpredictions.models.OK3._criterion' */
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_10_criterion_Criterion = 0;
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion = 0;
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE = 0;
 static PyTypeObject *__pyx_array_type = 0;
 static PyTypeObject *__pyx_MemviewEnum_type = 0;
 static PyTypeObject *__pyx_memoryview_type = 0;
@@ -3140,11 +3024,11 @@ static void __pyx_memoryview_refcount_objects_in_slice(char *, Py_ssize_t *, Py_
 static void __pyx_memoryview_slice_assign_scalar(__Pyx_memviewslice *, int, size_t, void *, int); /*proto*/
 static void __pyx_memoryview__slice_assign_scalar(char *, Py_ssize_t *, Py_ssize_t *, int, size_t, void *); /*proto*/
 static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *, PyObject *); /*proto*/
-#define __Pyx_MODULE_NAME "_criterion"
-extern int __pyx_module_is_main__criterion;
-int __pyx_module_is_main__criterion = 0;
+#define __Pyx_MODULE_NAME "stpredictions.models.OK3._criterion"
+extern int __pyx_module_is_main_stpredictions__models__OK3___criterion;
+int __pyx_module_is_main_stpredictions__models__OK3___criterion = 0;
 
-/* Implementation of '_criterion' */
+/* Implementation of 'stpredictions.models.OK3._criterion' */
 static PyObject *__pyx_builtin_TypeError;
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_ImportError;
@@ -3344,13 +3228,13 @@ static PyObject *__pyx_kp_s_unable_to_allocate_array_data;
 static PyObject *__pyx_kp_s_unable_to_allocate_shape_and_str;
 static PyObject *__pyx_n_s_unpack;
 static PyObject *__pyx_n_s_update;
-static void __pyx_pf_10_criterion_9Criterion___dealloc__(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_10_criterion_9Criterion_2__getstate__(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_10_criterion_9Criterion_4__setstate__(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_d); /* proto */
-static PyObject *__pyx_pf_10_criterion_9Criterion_6__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_10_criterion_9Criterion_8__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_samples); /* proto */
-static PyObject *__pyx_pf_10_criterion_29KernelizedRegressionCriterion_2__reduce__(struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *__pyx_v_self); /* proto */
+static void __pyx_pf_13stpredictions_6models_3OK3_10_criterion_9Criterion___dealloc__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_10_criterion_9Criterion_2__getstate__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_10_criterion_9Criterion_4__setstate__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_d); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_10_criterion_9Criterion_6__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_10_criterion_9Criterion_8__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static int __pyx_pf_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion___cinit__(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_samples); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_2__reduce__(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_v_self); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __pyx_array_obj *__pyx_v_self, PyObject *__pyx_v_shape, Py_ssize_t __pyx_v_itemsize, PyObject *__pyx_v_format, PyObject *__pyx_v_mode, int __pyx_v_allocate_buffer); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array_2__getbuffer__(struct __pyx_array_obj *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_array___pyx_pf_15View_dot_MemoryView_5array_4__dealloc__(struct __pyx_array_obj *__pyx_v_self); /* proto */
@@ -3393,9 +3277,9 @@ static PyObject *__pyx_pf_15View_dot_MemoryView_16_memoryviewslice_4base___get__
 static PyObject *__pyx_pf___pyx_memoryviewslice___reduce_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf___pyx_memoryviewslice_2__setstate_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_15View_dot_MemoryView___pyx_unpickle_Enum(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_tp_new_10_criterion_Criterion(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_10_criterion_KernelizedRegressionCriterion(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_10_criterion_KernelizedMSE(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_10_criterion_Criterion(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_array(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_Enum(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_memoryview(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
@@ -3435,7 +3319,7 @@ static PyObject *__pyx_tuple__28;
 static PyObject *__pyx_codeobj__29;
 /* Late includes */
 
-/* "_criterion.pyx":29
+/* "stpredictions/models/OK3/_criterion.pyx":29
  *     """
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -3444,17 +3328,17 @@ static PyObject *__pyx_codeobj__29;
  */
 
 /* Python wrapper */
-static void __pyx_pw_10_criterion_9Criterion_1__dealloc__(PyObject *__pyx_v_self); /*proto*/
-static void __pyx_pw_10_criterion_9Criterion_1__dealloc__(PyObject *__pyx_v_self) {
+static void __pyx_pw_13stpredictions_6models_3OK3_10_criterion_9Criterion_1__dealloc__(PyObject *__pyx_v_self); /*proto*/
+static void __pyx_pw_13stpredictions_6models_3OK3_10_criterion_9Criterion_1__dealloc__(PyObject *__pyx_v_self) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__ (wrapper)", 0);
-  __pyx_pf_10_criterion_9Criterion___dealloc__(((struct __pyx_obj_10_criterion_Criterion *)__pyx_v_self));
+  __pyx_pf_13stpredictions_6models_3OK3_10_criterion_9Criterion___dealloc__(((struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
 }
 
-static void __pyx_pf_10_criterion_9Criterion___dealloc__(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self) {
+static void __pyx_pf_13stpredictions_6models_3OK3_10_criterion_9Criterion___dealloc__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
@@ -3462,7 +3346,7 @@ static void __pyx_pf_10_criterion_9Criterion___dealloc__(CYTHON_UNUSED struct __
   __Pyx_RefNannyFinishContext();
 }
 
-/* "_criterion.pyx":34
+/* "stpredictions/models/OK3/_criterion.pyx":34
  *         pass
  * 
  *     def __getstate__(self):             # <<<<<<<<<<<<<<
@@ -3471,19 +3355,19 @@ static void __pyx_pf_10_criterion_9Criterion___dealloc__(CYTHON_UNUSED struct __
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_10_criterion_9Criterion_3__getstate__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_10_criterion_9Criterion_3__getstate__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_10_criterion_9Criterion_3__getstate__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_10_criterion_9Criterion_3__getstate__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__getstate__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_10_criterion_9Criterion_2__getstate__(((struct __pyx_obj_10_criterion_Criterion *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_10_criterion_9Criterion_2__getstate__(((struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_10_criterion_9Criterion_2__getstate__(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_10_criterion_9Criterion_2__getstate__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3492,7 +3376,7 @@ static PyObject *__pyx_pf_10_criterion_9Criterion_2__getstate__(CYTHON_UNUSED st
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__getstate__", 0);
 
-  /* "_criterion.pyx":35
+  /* "stpredictions/models/OK3/_criterion.pyx":35
  * 
  *     def __getstate__(self):
  *         return {}             # <<<<<<<<<<<<<<
@@ -3506,7 +3390,7 @@ static PyObject *__pyx_pf_10_criterion_9Criterion_2__getstate__(CYTHON_UNUSED st
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "_criterion.pyx":34
+  /* "stpredictions/models/OK3/_criterion.pyx":34
  *         pass
  * 
  *     def __getstate__(self):             # <<<<<<<<<<<<<<
@@ -3517,7 +3401,7 @@ static PyObject *__pyx_pf_10_criterion_9Criterion_2__getstate__(CYTHON_UNUSED st
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_criterion.Criterion.__getstate__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._criterion.Criterion.__getstate__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3525,7 +3409,7 @@ static PyObject *__pyx_pf_10_criterion_9Criterion_2__getstate__(CYTHON_UNUSED st
   return __pyx_r;
 }
 
-/* "_criterion.pyx":37
+/* "stpredictions/models/OK3/_criterion.pyx":37
  *         return {}
  * 
  *     def __setstate__(self, d):             # <<<<<<<<<<<<<<
@@ -3534,19 +3418,19 @@ static PyObject *__pyx_pf_10_criterion_9Criterion_2__getstate__(CYTHON_UNUSED st
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_10_criterion_9Criterion_5__setstate__(PyObject *__pyx_v_self, PyObject *__pyx_v_d); /*proto*/
-static PyObject *__pyx_pw_10_criterion_9Criterion_5__setstate__(PyObject *__pyx_v_self, PyObject *__pyx_v_d) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_10_criterion_9Criterion_5__setstate__(PyObject *__pyx_v_self, PyObject *__pyx_v_d); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_10_criterion_9Criterion_5__setstate__(PyObject *__pyx_v_self, PyObject *__pyx_v_d) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_10_criterion_9Criterion_4__setstate__(((struct __pyx_obj_10_criterion_Criterion *)__pyx_v_self), ((PyObject *)__pyx_v_d));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_10_criterion_9Criterion_4__setstate__(((struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self), ((PyObject *)__pyx_v_d));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_10_criterion_9Criterion_4__setstate__(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_d) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_10_criterion_9Criterion_4__setstate__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_d) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate__", 0);
@@ -3558,7 +3442,7 @@ static PyObject *__pyx_pf_10_criterion_9Criterion_4__setstate__(CYTHON_UNUSED st
   return __pyx_r;
 }
 
-/* "_criterion.pyx":40
+/* "stpredictions/models/OK3/_criterion.pyx":40
  *         pass
  * 
  *     cdef int init(self, const DOUBLE_t[:, ::1] y, DOUBLE_t* sample_weight,             # <<<<<<<<<<<<<<
@@ -3566,7 +3450,7 @@ static PyObject *__pyx_pf_10_criterion_9Criterion_4__setstate__(CYTHON_UNUSED st
  *                   SIZE_t end) nogil except -1:
  */
 
-static int __pyx_f_10_criterion_9Criterion_init(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_y, CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *__pyx_v_sample_weight, CYTHON_UNUSED double __pyx_v_weighted_n_samples, CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples, CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start, CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end) {
+static int __pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_init(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_y, CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *__pyx_v_sample_weight, CYTHON_UNUSED double __pyx_v_weighted_n_samples, CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples, CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start, CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end) {
   int __pyx_r;
 
   /* function exit code */
@@ -3574,7 +3458,7 @@ static int __pyx_f_10_criterion_9Criterion_init(CYTHON_UNUSED struct __pyx_obj_1
   return __pyx_r;
 }
 
-/* "_criterion.pyx":68
+/* "stpredictions/models/OK3/_criterion.pyx":68
  *         pass
  * 
  *     cdef int reset(self) nogil except -1:             # <<<<<<<<<<<<<<
@@ -3582,7 +3466,7 @@ static int __pyx_f_10_criterion_9Criterion_init(CYTHON_UNUSED struct __pyx_obj_1
  * 
  */
 
-static int __pyx_f_10_criterion_9Criterion_reset(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self) {
+static int __pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_reset(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self) {
   int __pyx_r;
 
   /* function exit code */
@@ -3590,7 +3474,7 @@ static int __pyx_f_10_criterion_9Criterion_reset(CYTHON_UNUSED struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "_criterion.pyx":76
+/* "stpredictions/models/OK3/_criterion.pyx":76
  *         pass
  * 
  *     cdef int reverse_reset(self) nogil except -1:             # <<<<<<<<<<<<<<
@@ -3598,7 +3482,7 @@ static int __pyx_f_10_criterion_9Criterion_reset(CYTHON_UNUSED struct __pyx_obj_
  * 
  */
 
-static int __pyx_f_10_criterion_9Criterion_reverse_reset(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self) {
+static int __pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_reverse_reset(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self) {
   int __pyx_r;
 
   /* function exit code */
@@ -3606,7 +3490,7 @@ static int __pyx_f_10_criterion_9Criterion_reverse_reset(CYTHON_UNUSED struct __
   return __pyx_r;
 }
 
-/* "_criterion.pyx":83
+/* "stpredictions/models/OK3/_criterion.pyx":83
  *         pass
  * 
  *     cdef int update(self, SIZE_t new_pos) nogil except -1:             # <<<<<<<<<<<<<<
@@ -3614,7 +3498,7 @@ static int __pyx_f_10_criterion_9Criterion_reverse_reset(CYTHON_UNUSED struct __
  * 
  */
 
-static int __pyx_f_10_criterion_9Criterion_update(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_new_pos) {
+static int __pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_update(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_new_pos) {
   int __pyx_r;
 
   /* function exit code */
@@ -3622,7 +3506,7 @@ static int __pyx_f_10_criterion_9Criterion_update(CYTHON_UNUSED struct __pyx_obj
   return __pyx_r;
 }
 
-/* "_criterion.pyx":98
+/* "stpredictions/models/OK3/_criterion.pyx":98
  *         pass
  * 
  *     cdef double node_impurity(self) nogil:             # <<<<<<<<<<<<<<
@@ -3630,7 +3514,7 @@ static int __pyx_f_10_criterion_9Criterion_update(CYTHON_UNUSED struct __pyx_obj
  * 
  */
 
-static double __pyx_f_10_criterion_9Criterion_node_impurity(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self) {
+static double __pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_node_impurity(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self) {
   double __pyx_r;
 
   /* function exit code */
@@ -3638,7 +3522,7 @@ static double __pyx_f_10_criterion_9Criterion_node_impurity(CYTHON_UNUSED struct
   return __pyx_r;
 }
 
-/* "_criterion.pyx":108
+/* "stpredictions/models/OK3/_criterion.pyx":108
  *         pass
  * 
  *     cdef void children_impurity(self, double* impurity_left,             # <<<<<<<<<<<<<<
@@ -3646,12 +3530,12 @@ static double __pyx_f_10_criterion_9Criterion_node_impurity(CYTHON_UNUSED struct
  *         """Placeholder for calculating the impurity of children.
  */
 
-static void __pyx_f_10_criterion_9Criterion_children_impurity(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED double *__pyx_v_impurity_left, CYTHON_UNUSED double *__pyx_v_impurity_right) {
+static void __pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_children_impurity(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED double *__pyx_v_impurity_left, CYTHON_UNUSED double *__pyx_v_impurity_right) {
 
   /* function exit code */
 }
 
-/* "_criterion.pyx":128
+/* "stpredictions/models/OK3/_criterion.pyx":128
  *         pass
  * 
  *     cdef void node_value(self, double* dest) nogil:             # <<<<<<<<<<<<<<
@@ -3659,12 +3543,12 @@ static void __pyx_f_10_criterion_9Criterion_children_impurity(CYTHON_UNUSED stru
  * 
  */
 
-static void __pyx_f_10_criterion_9Criterion_node_value(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED double *__pyx_v_dest) {
+static void __pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_node_value(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED double *__pyx_v_dest) {
 
   /* function exit code */
 }
 
-/* "_criterion.pyx":142
+/* "stpredictions/models/OK3/_criterion.pyx":142
  *         pass
  * 
  *     cdef double proxy_impurity_improvement(self) nogil:             # <<<<<<<<<<<<<<
@@ -3672,7 +3556,7 @@ static void __pyx_f_10_criterion_9Criterion_node_value(CYTHON_UNUSED struct __py
  * 
  */
 
-static double __pyx_f_10_criterion_9Criterion_proxy_impurity_improvement(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self) {
+static double __pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_proxy_impurity_improvement(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self) {
   double __pyx_r;
 
   /* function exit code */
@@ -3680,7 +3564,7 @@ static double __pyx_f_10_criterion_9Criterion_proxy_impurity_improvement(CYTHON_
   return __pyx_r;
 }
 
-/* "_criterion.pyx":162
+/* "stpredictions/models/OK3/_criterion.pyx":162
  *         pass
  * 
  *     cdef double impurity_improvement(self, double impurity) nogil:             # <<<<<<<<<<<<<<
@@ -3688,21 +3572,21 @@ static double __pyx_f_10_criterion_9Criterion_proxy_impurity_improvement(CYTHON_
  * 
  */
 
-static double __pyx_f_10_criterion_9Criterion_impurity_improvement(struct __pyx_obj_10_criterion_Criterion *__pyx_v_self, double __pyx_v_impurity) {
+static double __pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_impurity_improvement(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self, double __pyx_v_impurity) {
   double __pyx_v_impurity_left;
   double __pyx_v_impurity_right;
   double __pyx_r;
 
-  /* "_criterion.pyx":188
+  /* "stpredictions/models/OK3/_criterion.pyx":188
  *         cdef double impurity_right
  * 
  *         self.children_impurity(&impurity_left, &impurity_right)             # <<<<<<<<<<<<<<
  * 
  *         return ((self.weighted_n_node_samples / self.weighted_n_samples) *
  */
-  ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_vtab)->children_impurity(__pyx_v_self, (&__pyx_v_impurity_left), (&__pyx_v_impurity_right));
+  ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_vtab)->children_impurity(__pyx_v_self, (&__pyx_v_impurity_left), (&__pyx_v_impurity_right));
 
-  /* "_criterion.pyx":190
+  /* "stpredictions/models/OK3/_criterion.pyx":190
  *         self.children_impurity(&impurity_left, &impurity_right)
  * 
  *         return ((self.weighted_n_node_samples / self.weighted_n_samples) *             # <<<<<<<<<<<<<<
@@ -3712,7 +3596,7 @@ static double __pyx_f_10_criterion_9Criterion_impurity_improvement(struct __pyx_
   __pyx_r = ((__pyx_v_self->weighted_n_node_samples / __pyx_v_self->weighted_n_samples) * ((__pyx_v_impurity - ((__pyx_v_self->weighted_n_right / __pyx_v_self->weighted_n_node_samples) * __pyx_v_impurity_right)) - ((__pyx_v_self->weighted_n_left / __pyx_v_self->weighted_n_node_samples) * __pyx_v_impurity_left)));
   goto __pyx_L0;
 
-  /* "_criterion.pyx":162
+  /* "stpredictions/models/OK3/_criterion.pyx":162
  *         pass
  * 
  *     cdef double impurity_improvement(self, double impurity) nogil:             # <<<<<<<<<<<<<<
@@ -3732,19 +3616,19 @@ static double __pyx_f_10_criterion_9Criterion_impurity_improvement(struct __pyx_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_10_criterion_9Criterion_7__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_10_criterion_9Criterion_7__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_10_criterion_9Criterion_7__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_10_criterion_9Criterion_7__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_10_criterion_9Criterion_6__reduce_cython__(((struct __pyx_obj_10_criterion_Criterion *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_10_criterion_9Criterion_6__reduce_cython__(((struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_10_criterion_9Criterion_6__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_10_criterion_9Criterion_6__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3774,7 +3658,7 @@ static PyObject *__pyx_pf_10_criterion_9Criterion_6__reduce_cython__(CYTHON_UNUS
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_criterion.Criterion.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._criterion.Criterion.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -3789,19 +3673,19 @@ static PyObject *__pyx_pf_10_criterion_9Criterion_6__reduce_cython__(CYTHON_UNUS
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_10_criterion_9Criterion_9__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_10_criterion_9Criterion_9__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_10_criterion_9Criterion_9__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_10_criterion_9Criterion_9__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_10_criterion_9Criterion_8__setstate_cython__(((struct __pyx_obj_10_criterion_Criterion *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_10_criterion_9Criterion_8__setstate_cython__(((struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_10_criterion_9Criterion_8__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_10_criterion_9Criterion_8__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3831,14 +3715,14 @@ static PyObject *__pyx_pf_10_criterion_9Criterion_8__setstate_cython__(CYTHON_UN
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_criterion.Criterion.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._criterion.Criterion.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "_criterion.pyx":218
+/* "stpredictions/models/OK3/_criterion.pyx":218
  *     """
  * 
  *     def __cinit__(self, SIZE_t n_samples):             # <<<<<<<<<<<<<<
@@ -3847,9 +3731,9 @@ static PyObject *__pyx_pf_10_criterion_9Criterion_8__setstate_cython__(CYTHON_UN
  */
 
 /* Python wrapper */
-static int __pyx_pw_10_criterion_29KernelizedRegressionCriterion_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_10_criterion_29KernelizedRegressionCriterion_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_samples;
+static int __pyx_pw_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_samples;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -3888,23 +3772,23 @@ static int __pyx_pw_10_criterion_29KernelizedRegressionCriterion_1__cinit__(PyOb
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 218, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("_criterion.KernelizedRegressionCriterion.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._criterion.KernelizedRegressionCriterion.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(((struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *)__pyx_v_self), __pyx_v_n_samples);
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion___cinit__(((struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *)__pyx_v_self), __pyx_v_n_samples);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_samples) {
+static int __pyx_pf_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion___cinit__(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_samples) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "_criterion.pyx":228
+  /* "stpredictions/models/OK3/_criterion.pyx":228
  * 
  *         # Default values
  *         self.sample_weight = NULL             # <<<<<<<<<<<<<<
@@ -3913,7 +3797,7 @@ static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struc
  */
   __pyx_v_self->__pyx_base.sample_weight = NULL;
 
-  /* "_criterion.pyx":230
+  /* "stpredictions/models/OK3/_criterion.pyx":230
  *         self.sample_weight = NULL
  * 
  *         self.samples = NULL             # <<<<<<<<<<<<<<
@@ -3922,7 +3806,7 @@ static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struc
  */
   __pyx_v_self->__pyx_base.samples = NULL;
 
-  /* "_criterion.pyx":231
+  /* "stpredictions/models/OK3/_criterion.pyx":231
  * 
  *         self.samples = NULL
  *         self.start = 0             # <<<<<<<<<<<<<<
@@ -3931,7 +3815,7 @@ static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struc
  */
   __pyx_v_self->__pyx_base.start = 0;
 
-  /* "_criterion.pyx":232
+  /* "stpredictions/models/OK3/_criterion.pyx":232
  *         self.samples = NULL
  *         self.start = 0
  *         self.pos = 0             # <<<<<<<<<<<<<<
@@ -3940,7 +3824,7 @@ static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struc
  */
   __pyx_v_self->__pyx_base.pos = 0;
 
-  /* "_criterion.pyx":233
+  /* "stpredictions/models/OK3/_criterion.pyx":233
  *         self.start = 0
  *         self.pos = 0
  *         self.end = 0             # <<<<<<<<<<<<<<
@@ -3949,7 +3833,7 @@ static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struc
  */
   __pyx_v_self->__pyx_base.end = 0;
 
-  /* "_criterion.pyx":235
+  /* "stpredictions/models/OK3/_criterion.pyx":235
  *         self.end = 0
  * 
  *         self.n_samples = n_samples             # <<<<<<<<<<<<<<
@@ -3958,7 +3842,7 @@ static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struc
  */
   __pyx_v_self->__pyx_base.n_samples = __pyx_v_n_samples;
 
-  /* "_criterion.pyx":236
+  /* "stpredictions/models/OK3/_criterion.pyx":236
  * 
  *         self.n_samples = n_samples
  *         self.n_node_samples = 0             # <<<<<<<<<<<<<<
@@ -3967,7 +3851,7 @@ static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struc
  */
   __pyx_v_self->__pyx_base.n_node_samples = 0;
 
-  /* "_criterion.pyx":237
+  /* "stpredictions/models/OK3/_criterion.pyx":237
  *         self.n_samples = n_samples
  *         self.n_node_samples = 0
  *         self.weighted_n_node_samples = 0.0             # <<<<<<<<<<<<<<
@@ -3976,7 +3860,7 @@ static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struc
  */
   __pyx_v_self->__pyx_base.weighted_n_node_samples = 0.0;
 
-  /* "_criterion.pyx":238
+  /* "stpredictions/models/OK3/_criterion.pyx":238
  *         self.n_node_samples = 0
  *         self.weighted_n_node_samples = 0.0
  *         self.weighted_n_left = 0.0             # <<<<<<<<<<<<<<
@@ -3985,7 +3869,7 @@ static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struc
  */
   __pyx_v_self->__pyx_base.weighted_n_left = 0.0;
 
-  /* "_criterion.pyx":239
+  /* "stpredictions/models/OK3/_criterion.pyx":239
  *         self.weighted_n_node_samples = 0.0
  *         self.weighted_n_left = 0.0
  *         self.weighted_n_right = 0.0             # <<<<<<<<<<<<<<
@@ -3994,7 +3878,7 @@ static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struc
  */
   __pyx_v_self->__pyx_base.weighted_n_right = 0.0;
 
-  /* "_criterion.pyx":241
+  /* "stpredictions/models/OK3/_criterion.pyx":241
  *         self.weighted_n_right = 0.0
  * 
  *         self.sum_diag_Gramm = 0.0             # <<<<<<<<<<<<<<
@@ -4003,7 +3887,7 @@ static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struc
  */
   __pyx_v_self->sum_diag_Gramm = 0.0;
 
-  /* "_criterion.pyx":242
+  /* "stpredictions/models/OK3/_criterion.pyx":242
  * 
  *         self.sum_diag_Gramm = 0.0
  *         self.sum_total_Gramm = 0.0             # <<<<<<<<<<<<<<
@@ -4012,7 +3896,7 @@ static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struc
  */
   __pyx_v_self->sum_total_Gramm = 0.0;
 
-  /* "_criterion.pyx":244
+  /* "stpredictions/models/OK3/_criterion.pyx":244
  *         self.sum_total_Gramm = 0.0
  * 
  *         self.sum_diag_Gramm_left = 0.0             # <<<<<<<<<<<<<<
@@ -4021,7 +3905,7 @@ static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struc
  */
   __pyx_v_self->sum_diag_Gramm_left = 0.0;
 
-  /* "_criterion.pyx":245
+  /* "stpredictions/models/OK3/_criterion.pyx":245
  * 
  *         self.sum_diag_Gramm_left = 0.0
  *         self.sum_diag_Gramm_right = 0.0             # <<<<<<<<<<<<<<
@@ -4030,7 +3914,7 @@ static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struc
  */
   __pyx_v_self->sum_diag_Gramm_right = 0.0;
 
-  /* "_criterion.pyx":247
+  /* "stpredictions/models/OK3/_criterion.pyx":247
  *         self.sum_diag_Gramm_right = 0.0
  * 
  *         self.sum_total_Gramm_left = 0.0             # <<<<<<<<<<<<<<
@@ -4039,7 +3923,7 @@ static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struc
  */
   __pyx_v_self->sum_total_Gramm_left = 0.0;
 
-  /* "_criterion.pyx":248
+  /* "stpredictions/models/OK3/_criterion.pyx":248
  * 
  *         self.sum_total_Gramm_left = 0.0
  *         self.sum_total_Gramm_right = 0.0             # <<<<<<<<<<<<<<
@@ -4048,7 +3932,7 @@ static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struc
  */
   __pyx_v_self->sum_total_Gramm_right = 0.0;
 
-  /* "_criterion.pyx":218
+  /* "stpredictions/models/OK3/_criterion.pyx":218
  *     """
  * 
  *     def __cinit__(self, SIZE_t n_samples):             # <<<<<<<<<<<<<<
@@ -4062,7 +3946,7 @@ static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struc
   return __pyx_r;
 }
 
-/* "_criterion.pyx":251
+/* "stpredictions/models/OK3/_criterion.pyx":251
  * 
  * 
  *     def __reduce__(self):             # <<<<<<<<<<<<<<
@@ -4071,19 +3955,19 @@ static int __pyx_pf_10_criterion_29KernelizedRegressionCriterion___cinit__(struc
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_10_criterion_29KernelizedRegressionCriterion_3__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_10_criterion_29KernelizedRegressionCriterion_3__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_3__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_3__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_10_criterion_29KernelizedRegressionCriterion_2__reduce__(((struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_2__reduce__(((struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_10_criterion_29KernelizedRegressionCriterion_2__reduce__(struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *__pyx_v_self) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_2__reduce__(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4095,7 +3979,7 @@ static PyObject *__pyx_pf_10_criterion_29KernelizedRegressionCriterion_2__reduce
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__reduce__", 0);
 
-  /* "_criterion.pyx":252
+  /* "stpredictions/models/OK3/_criterion.pyx":252
  * 
  *     def __reduce__(self):
  *         return (type(self), (self.n_samples,), self.__getstate__())             # <<<<<<<<<<<<<<
@@ -4142,7 +4026,7 @@ static PyObject *__pyx_pf_10_criterion_29KernelizedRegressionCriterion_2__reduce
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "_criterion.pyx":251
+  /* "stpredictions/models/OK3/_criterion.pyx":251
  * 
  * 
  *     def __reduce__(self):             # <<<<<<<<<<<<<<
@@ -4156,7 +4040,7 @@ static PyObject *__pyx_pf_10_criterion_29KernelizedRegressionCriterion_2__reduce
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("_criterion.KernelizedRegressionCriterion.__reduce__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._criterion.KernelizedRegressionCriterion.__reduce__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4164,7 +4048,7 @@ static PyObject *__pyx_pf_10_criterion_29KernelizedRegressionCriterion_2__reduce
   return __pyx_r;
 }
 
-/* "_criterion.pyx":254
+/* "stpredictions/models/OK3/_criterion.pyx":254
  *         return (type(self), (self.n_samples,), self.__getstate__())
  * 
  *     cdef int init(self, const DOUBLE_t[:, ::1] y, DOUBLE_t* sample_weight,             # <<<<<<<<<<<<<<
@@ -4172,29 +4056,29 @@ static PyObject *__pyx_pf_10_criterion_29KernelizedRegressionCriterion_2__reduce
  *                   SIZE_t end) nogil except -1:
  */
 
-static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, __Pyx_memviewslice __pyx_v_y, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *__pyx_v_sample_weight, double __pyx_v_weighted_n_samples, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end) {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_i;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_j;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_p;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_q;
-  __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t __pyx_v_w_i;
-  __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t __pyx_v_w_j;
+static int __pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_init(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, __Pyx_memviewslice __pyx_v_y, __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *__pyx_v_sample_weight, double __pyx_v_weighted_n_samples, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end) {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_i;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_j;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_p;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_q;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t __pyx_v_w_i;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t __pyx_v_w_j;
   int __pyx_r;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_1;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_2;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_3;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_1;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_2;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_3;
   int __pyx_t_4;
   Py_ssize_t __pyx_t_5;
   Py_ssize_t __pyx_t_6;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_7;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_8;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_9;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_7;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_8;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_9;
   int __pyx_t_10;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
 
-  /* "_criterion.pyx":260
+  /* "stpredictions/models/OK3/_criterion.pyx":260
  *            children samples[start:start] and samples[start:end]."""
  *         # Initialize fields
  *         self.y = y             # <<<<<<<<<<<<<<
@@ -4205,7 +4089,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
   __PYX_INC_MEMVIEW(&__pyx_v_y, 1);
   __pyx_v_self->__pyx_base.y = __pyx_v_y;
 
-  /* "_criterion.pyx":261
+  /* "stpredictions/models/OK3/_criterion.pyx":261
  *         # Initialize fields
  *         self.y = y
  *         self.sample_weight = sample_weight             # <<<<<<<<<<<<<<
@@ -4214,7 +4098,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
   __pyx_v_self->__pyx_base.sample_weight = __pyx_v_sample_weight;
 
-  /* "_criterion.pyx":262
+  /* "stpredictions/models/OK3/_criterion.pyx":262
  *         self.y = y
  *         self.sample_weight = sample_weight
  *         self.samples = samples             # <<<<<<<<<<<<<<
@@ -4223,7 +4107,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
   __pyx_v_self->__pyx_base.samples = __pyx_v_samples;
 
-  /* "_criterion.pyx":263
+  /* "stpredictions/models/OK3/_criterion.pyx":263
  *         self.sample_weight = sample_weight
  *         self.samples = samples
  *         self.start = start             # <<<<<<<<<<<<<<
@@ -4232,7 +4116,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
   __pyx_v_self->__pyx_base.start = __pyx_v_start;
 
-  /* "_criterion.pyx":264
+  /* "stpredictions/models/OK3/_criterion.pyx":264
  *         self.samples = samples
  *         self.start = start
  *         self.end = end             # <<<<<<<<<<<<<<
@@ -4241,7 +4125,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
   __pyx_v_self->__pyx_base.end = __pyx_v_end;
 
-  /* "_criterion.pyx":265
+  /* "stpredictions/models/OK3/_criterion.pyx":265
  *         self.start = start
  *         self.end = end
  *         self.n_node_samples = end - start             # <<<<<<<<<<<<<<
@@ -4250,7 +4134,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
   __pyx_v_self->__pyx_base.n_node_samples = (__pyx_v_end - __pyx_v_start);
 
-  /* "_criterion.pyx":266
+  /* "stpredictions/models/OK3/_criterion.pyx":266
  *         self.end = end
  *         self.n_node_samples = end - start
  *         self.weighted_n_samples = weighted_n_samples             # <<<<<<<<<<<<<<
@@ -4259,7 +4143,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
   __pyx_v_self->__pyx_base.weighted_n_samples = __pyx_v_weighted_n_samples;
 
-  /* "_criterion.pyx":267
+  /* "stpredictions/models/OK3/_criterion.pyx":267
  *         self.n_node_samples = end - start
  *         self.weighted_n_samples = weighted_n_samples
  *         self.weighted_n_node_samples = 0.             # <<<<<<<<<<<<<<
@@ -4268,7 +4152,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
   __pyx_v_self->__pyx_base.weighted_n_node_samples = 0.;
 
-  /* "_criterion.pyx":273
+  /* "stpredictions/models/OK3/_criterion.pyx":273
  *         cdef SIZE_t p
  *         cdef SIZE_t q
  *         cdef DOUBLE_t w_i = 1.0             # <<<<<<<<<<<<<<
@@ -4277,7 +4161,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
   __pyx_v_w_i = 1.0;
 
-  /* "_criterion.pyx":274
+  /* "stpredictions/models/OK3/_criterion.pyx":274
  *         cdef SIZE_t q
  *         cdef DOUBLE_t w_i = 1.0
  *         cdef DOUBLE_t w_j = 1.0             # <<<<<<<<<<<<<<
@@ -4286,7 +4170,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
   __pyx_v_w_j = 1.0;
 
-  /* "_criterion.pyx":276
+  /* "stpredictions/models/OK3/_criterion.pyx":276
  *         cdef DOUBLE_t w_j = 1.0
  * 
  *         self.sum_diag_Gramm = 0.0             # <<<<<<<<<<<<<<
@@ -4295,7 +4179,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
   __pyx_v_self->sum_diag_Gramm = 0.0;
 
-  /* "_criterion.pyx":277
+  /* "stpredictions/models/OK3/_criterion.pyx":277
  * 
  *         self.sum_diag_Gramm = 0.0
  *         self.sum_total_Gramm = 0.0             # <<<<<<<<<<<<<<
@@ -4304,7 +4188,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
   __pyx_v_self->sum_total_Gramm = 0.0;
 
-  /* "_criterion.pyx":279
+  /* "stpredictions/models/OK3/_criterion.pyx":279
  *         self.sum_total_Gramm = 0.0
  * 
  *         self.sum_diag_Gramm_left = 0.0             # <<<<<<<<<<<<<<
@@ -4313,7 +4197,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
   __pyx_v_self->sum_diag_Gramm_left = 0.0;
 
-  /* "_criterion.pyx":280
+  /* "stpredictions/models/OK3/_criterion.pyx":280
  * 
  *         self.sum_diag_Gramm_left = 0.0
  *         self.sum_diag_Gramm_right = 0.0             # <<<<<<<<<<<<<<
@@ -4322,7 +4206,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
   __pyx_v_self->sum_diag_Gramm_right = 0.0;
 
-  /* "_criterion.pyx":282
+  /* "stpredictions/models/OK3/_criterion.pyx":282
  *         self.sum_diag_Gramm_right = 0.0
  * 
  *         self.sum_total_Gramm_left = 0.0             # <<<<<<<<<<<<<<
@@ -4331,7 +4215,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
   __pyx_v_self->sum_total_Gramm_left = 0.0;
 
-  /* "_criterion.pyx":283
+  /* "stpredictions/models/OK3/_criterion.pyx":283
  * 
  *         self.sum_total_Gramm_left = 0.0
  *         self.sum_total_Gramm_right = 0.0             # <<<<<<<<<<<<<<
@@ -4340,7 +4224,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
   __pyx_v_self->sum_total_Gramm_right = 0.0;
 
-  /* "_criterion.pyx":285
+  /* "stpredictions/models/OK3/_criterion.pyx":285
  *         self.sum_total_Gramm_right = 0.0
  * 
  *         for p in range(start, end):             # <<<<<<<<<<<<<<
@@ -4352,7 +4236,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
   for (__pyx_t_3 = __pyx_v_start; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_p = __pyx_t_3;
 
-    /* "_criterion.pyx":286
+    /* "stpredictions/models/OK3/_criterion.pyx":286
  * 
  *         for p in range(start, end):
  *             i = samples[p]             # <<<<<<<<<<<<<<
@@ -4361,7 +4245,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
     __pyx_v_i = (__pyx_v_samples[__pyx_v_p]);
 
-    /* "_criterion.pyx":290
+    /* "stpredictions/models/OK3/_criterion.pyx":290
  *             #     print("print samples :",i)
  * 
  *             if sample_weight != NULL:             # <<<<<<<<<<<<<<
@@ -4371,7 +4255,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
     __pyx_t_4 = ((__pyx_v_sample_weight != NULL) != 0);
     if (__pyx_t_4) {
 
-      /* "_criterion.pyx":291
+      /* "stpredictions/models/OK3/_criterion.pyx":291
  * 
  *             if sample_weight != NULL:
  *                 w_i = sample_weight[i]             # <<<<<<<<<<<<<<
@@ -4380,7 +4264,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
       __pyx_v_w_i = (__pyx_v_sample_weight[__pyx_v_i]);
 
-      /* "_criterion.pyx":290
+      /* "stpredictions/models/OK3/_criterion.pyx":290
  *             #     print("print samples :",i)
  * 
  *             if sample_weight != NULL:             # <<<<<<<<<<<<<<
@@ -4389,7 +4273,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
     }
 
-    /* "_criterion.pyx":293
+    /* "stpredictions/models/OK3/_criterion.pyx":293
  *                 w_i = sample_weight[i]
  * 
  *             self.weighted_n_node_samples += w_i             # <<<<<<<<<<<<<<
@@ -4398,7 +4282,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
     __pyx_v_self->__pyx_base.weighted_n_node_samples = (__pyx_v_self->__pyx_base.weighted_n_node_samples + __pyx_v_w_i);
 
-    /* "_criterion.pyx":295
+    /* "stpredictions/models/OK3/_criterion.pyx":295
  *             self.weighted_n_node_samples += w_i
  * 
  *             self.sum_diag_Gramm += w_i * self.y[i,i]             # <<<<<<<<<<<<<<
@@ -4408,9 +4292,9 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
     if (unlikely(!__pyx_v_self->__pyx_base.y.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(1, 295, __pyx_L1_error)}
     __pyx_t_5 = __pyx_v_i;
     __pyx_t_6 = __pyx_v_i;
-    __pyx_v_self->sum_diag_Gramm = (__pyx_v_self->sum_diag_Gramm + (__pyx_v_w_i * (*((__pyx_t_7sklearn_4tree_5_tree_DOUBLE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_7sklearn_4tree_5_tree_DOUBLE_t const  *) ( /* dim=0 */ (__pyx_v_self->__pyx_base.y.data + __pyx_t_5 * __pyx_v_self->__pyx_base.y.strides[0]) )) + __pyx_t_6)) )))));
+    __pyx_v_self->sum_diag_Gramm = (__pyx_v_self->sum_diag_Gramm + (__pyx_v_w_i * (*((__pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t const  *) ( /* dim=0 */ (__pyx_v_self->__pyx_base.y.data + __pyx_t_5 * __pyx_v_self->__pyx_base.y.strides[0]) )) + __pyx_t_6)) )))));
 
-    /* "_criterion.pyx":297
+    /* "stpredictions/models/OK3/_criterion.pyx":297
  *             self.sum_diag_Gramm += w_i * self.y[i,i]
  * 
  *             for q in range(start, end):             # <<<<<<<<<<<<<<
@@ -4422,7 +4306,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
     for (__pyx_t_9 = __pyx_v_start; __pyx_t_9 < __pyx_t_8; __pyx_t_9+=1) {
       __pyx_v_q = __pyx_t_9;
 
-      /* "_criterion.pyx":298
+      /* "stpredictions/models/OK3/_criterion.pyx":298
  * 
  *             for q in range(start, end):
  *                 j = samples[q]             # <<<<<<<<<<<<<<
@@ -4431,7 +4315,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
       __pyx_v_j = (__pyx_v_samples[__pyx_v_q]);
 
-      /* "_criterion.pyx":300
+      /* "stpredictions/models/OK3/_criterion.pyx":300
  *                 j = samples[q]
  * 
  *                 if sample_weight != NULL:             # <<<<<<<<<<<<<<
@@ -4441,7 +4325,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
       __pyx_t_4 = ((__pyx_v_sample_weight != NULL) != 0);
       if (__pyx_t_4) {
 
-        /* "_criterion.pyx":301
+        /* "stpredictions/models/OK3/_criterion.pyx":301
  * 
  *                 if sample_weight != NULL:
  *                     w_j = sample_weight[j]             # <<<<<<<<<<<<<<
@@ -4450,7 +4334,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
         __pyx_v_w_j = (__pyx_v_sample_weight[__pyx_v_j]);
 
-        /* "_criterion.pyx":300
+        /* "stpredictions/models/OK3/_criterion.pyx":300
  *                 j = samples[q]
  * 
  *                 if sample_weight != NULL:             # <<<<<<<<<<<<<<
@@ -4459,7 +4343,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  */
       }
 
-      /* "_criterion.pyx":303
+      /* "stpredictions/models/OK3/_criterion.pyx":303
  *                     w_j = sample_weight[j]
  * 
  *                 self.sum_total_Gramm += w_i * w_j * self.y[i,j]             # <<<<<<<<<<<<<<
@@ -4469,20 +4353,20 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
       if (unlikely(!__pyx_v_self->__pyx_base.y.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(1, 303, __pyx_L1_error)}
       __pyx_t_6 = __pyx_v_i;
       __pyx_t_5 = __pyx_v_j;
-      __pyx_v_self->sum_total_Gramm = (__pyx_v_self->sum_total_Gramm + ((__pyx_v_w_i * __pyx_v_w_j) * (*((__pyx_t_7sklearn_4tree_5_tree_DOUBLE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_7sklearn_4tree_5_tree_DOUBLE_t const  *) ( /* dim=0 */ (__pyx_v_self->__pyx_base.y.data + __pyx_t_6 * __pyx_v_self->__pyx_base.y.strides[0]) )) + __pyx_t_5)) )))));
+      __pyx_v_self->sum_total_Gramm = (__pyx_v_self->sum_total_Gramm + ((__pyx_v_w_i * __pyx_v_w_j) * (*((__pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t const  *) ( /* dim=0 */ (__pyx_v_self->__pyx_base.y.data + __pyx_t_6 * __pyx_v_self->__pyx_base.y.strides[0]) )) + __pyx_t_5)) )))));
     }
   }
 
-  /* "_criterion.pyx":306
+  /* "stpredictions/models/OK3/_criterion.pyx":306
  * 
  *         # Reset to pos=start
  *         self.reset()             # <<<<<<<<<<<<<<
  *         # with gil:
  *         #     print("print sum diag  :",self.sum_diag_Gramm)
  */
-  __pyx_t_10 = ((struct __pyx_vtabstruct_10_criterion_KernelizedRegressionCriterion *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base.reset(((struct __pyx_obj_10_criterion_Criterion *)__pyx_v_self)); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(1, 306, __pyx_L1_error)
+  __pyx_t_10 = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base.reset(((struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self)); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(1, 306, __pyx_L1_error)
 
-  /* "_criterion.pyx":311
+  /* "stpredictions/models/OK3/_criterion.pyx":311
  *         #     print("print sum total :",self.sum_total_Gramm)
  *         #     print("print weighted_n_node_samples :",self.weighted_n_node_samples)
  *         return 0             # <<<<<<<<<<<<<<
@@ -4492,7 +4376,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "_criterion.pyx":254
+  /* "stpredictions/models/OK3/_criterion.pyx":254
  *         return (type(self), (self.n_samples,), self.__getstate__())
  * 
  *     cdef int init(self, const DOUBLE_t[:, ::1] y, DOUBLE_t* sample_weight,             # <<<<<<<<<<<<<<
@@ -4506,7 +4390,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
     #ifdef WITH_THREAD
     PyGILState_STATE __pyx_gilstate_save = __Pyx_PyGILState_Ensure();
     #endif
-    __Pyx_AddTraceback("_criterion.KernelizedRegressionCriterion.init", __pyx_clineno, __pyx_lineno, __pyx_filename);
+    __Pyx_AddTraceback("stpredictions.models.OK3._criterion.KernelizedRegressionCriterion.init", __pyx_clineno, __pyx_lineno, __pyx_filename);
     #ifdef WITH_THREAD
     __Pyx_PyGILState_Release(__pyx_gilstate_save);
     #endif
@@ -4516,7 +4400,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
   return __pyx_r;
 }
 
-/* "_criterion.pyx":313
+/* "stpredictions/models/OK3/_criterion.pyx":313
  *         return 0
  * 
  *     cdef int reset(self) nogil except -1:             # <<<<<<<<<<<<<<
@@ -4524,12 +4408,12 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_init(struct __py
  * 
  */
 
-static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reset(struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *__pyx_v_self) {
+static int __pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_reset(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_v_self) {
   int __pyx_r;
   double __pyx_t_1;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_2;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_2;
 
-  /* "_criterion.pyx":316
+  /* "stpredictions/models/OK3/_criterion.pyx":316
  *         """Reset the criterion at pos=start."""
  * 
  *         self.sum_diag_Gramm_left = 0.0             # <<<<<<<<<<<<<<
@@ -4538,7 +4422,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reset(struct __p
  */
   __pyx_v_self->sum_diag_Gramm_left = 0.0;
 
-  /* "_criterion.pyx":317
+  /* "stpredictions/models/OK3/_criterion.pyx":317
  * 
  *         self.sum_diag_Gramm_left = 0.0
  *         self.sum_diag_Gramm_right = self.sum_diag_Gramm             # <<<<<<<<<<<<<<
@@ -4548,7 +4432,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reset(struct __p
   __pyx_t_1 = __pyx_v_self->sum_diag_Gramm;
   __pyx_v_self->sum_diag_Gramm_right = __pyx_t_1;
 
-  /* "_criterion.pyx":319
+  /* "stpredictions/models/OK3/_criterion.pyx":319
  *         self.sum_diag_Gramm_right = self.sum_diag_Gramm
  * 
  *         self.sum_total_Gramm_left = 0.0             # <<<<<<<<<<<<<<
@@ -4557,7 +4441,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reset(struct __p
  */
   __pyx_v_self->sum_total_Gramm_left = 0.0;
 
-  /* "_criterion.pyx":320
+  /* "stpredictions/models/OK3/_criterion.pyx":320
  * 
  *         self.sum_total_Gramm_left = 0.0
  *         self.sum_total_Gramm_right = self.sum_total_Gramm             # <<<<<<<<<<<<<<
@@ -4567,7 +4451,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reset(struct __p
   __pyx_t_1 = __pyx_v_self->sum_total_Gramm;
   __pyx_v_self->sum_total_Gramm_right = __pyx_t_1;
 
-  /* "_criterion.pyx":322
+  /* "stpredictions/models/OK3/_criterion.pyx":322
  *         self.sum_total_Gramm_right = self.sum_total_Gramm
  * 
  *         self.weighted_n_left = 0.0             # <<<<<<<<<<<<<<
@@ -4576,7 +4460,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reset(struct __p
  */
   __pyx_v_self->__pyx_base.weighted_n_left = 0.0;
 
-  /* "_criterion.pyx":323
+  /* "stpredictions/models/OK3/_criterion.pyx":323
  * 
  *         self.weighted_n_left = 0.0
  *         self.weighted_n_right = self.weighted_n_node_samples             # <<<<<<<<<<<<<<
@@ -4586,7 +4470,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reset(struct __p
   __pyx_t_1 = __pyx_v_self->__pyx_base.weighted_n_node_samples;
   __pyx_v_self->__pyx_base.weighted_n_right = __pyx_t_1;
 
-  /* "_criterion.pyx":324
+  /* "stpredictions/models/OK3/_criterion.pyx":324
  *         self.weighted_n_left = 0.0
  *         self.weighted_n_right = self.weighted_n_node_samples
  *         self.pos = self.start             # <<<<<<<<<<<<<<
@@ -4596,7 +4480,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reset(struct __p
   __pyx_t_2 = __pyx_v_self->__pyx_base.start;
   __pyx_v_self->__pyx_base.pos = __pyx_t_2;
 
-  /* "_criterion.pyx":325
+  /* "stpredictions/models/OK3/_criterion.pyx":325
  *         self.weighted_n_right = self.weighted_n_node_samples
  *         self.pos = self.start
  *         return 0             # <<<<<<<<<<<<<<
@@ -4606,7 +4490,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reset(struct __p
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "_criterion.pyx":313
+  /* "stpredictions/models/OK3/_criterion.pyx":313
  *         return 0
  * 
  *     cdef int reset(self) nogil except -1:             # <<<<<<<<<<<<<<
@@ -4619,7 +4503,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reset(struct __p
   return __pyx_r;
 }
 
-/* "_criterion.pyx":327
+/* "stpredictions/models/OK3/_criterion.pyx":327
  *         return 0
  * 
  *     cdef int reverse_reset(self) nogil except -1:             # <<<<<<<<<<<<<<
@@ -4627,12 +4511,12 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reset(struct __p
  * 
  */
 
-static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reverse_reset(struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *__pyx_v_self) {
+static int __pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_reverse_reset(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_v_self) {
   int __pyx_r;
   double __pyx_t_1;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_2;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_2;
 
-  /* "_criterion.pyx":330
+  /* "stpredictions/models/OK3/_criterion.pyx":330
  *         """Reset the criterion at pos=end."""
  * 
  *         self.sum_diag_Gramm_right = 0.0             # <<<<<<<<<<<<<<
@@ -4641,7 +4525,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reverse_reset(st
  */
   __pyx_v_self->sum_diag_Gramm_right = 0.0;
 
-  /* "_criterion.pyx":331
+  /* "stpredictions/models/OK3/_criterion.pyx":331
  * 
  *         self.sum_diag_Gramm_right = 0.0
  *         self.sum_diag_Gramm_left = self.sum_diag_Gramm             # <<<<<<<<<<<<<<
@@ -4651,7 +4535,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reverse_reset(st
   __pyx_t_1 = __pyx_v_self->sum_diag_Gramm;
   __pyx_v_self->sum_diag_Gramm_left = __pyx_t_1;
 
-  /* "_criterion.pyx":333
+  /* "stpredictions/models/OK3/_criterion.pyx":333
  *         self.sum_diag_Gramm_left = self.sum_diag_Gramm
  * 
  *         self.sum_total_Gramm_right = 0.0             # <<<<<<<<<<<<<<
@@ -4660,7 +4544,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reverse_reset(st
  */
   __pyx_v_self->sum_total_Gramm_right = 0.0;
 
-  /* "_criterion.pyx":334
+  /* "stpredictions/models/OK3/_criterion.pyx":334
  * 
  *         self.sum_total_Gramm_right = 0.0
  *         self.sum_total_Gramm_left = self.sum_total_Gramm             # <<<<<<<<<<<<<<
@@ -4670,7 +4554,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reverse_reset(st
   __pyx_t_1 = __pyx_v_self->sum_total_Gramm;
   __pyx_v_self->sum_total_Gramm_left = __pyx_t_1;
 
-  /* "_criterion.pyx":336
+  /* "stpredictions/models/OK3/_criterion.pyx":336
  *         self.sum_total_Gramm_left = self.sum_total_Gramm
  * 
  *         self.weighted_n_right = 0.0             # <<<<<<<<<<<<<<
@@ -4679,7 +4563,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reverse_reset(st
  */
   __pyx_v_self->__pyx_base.weighted_n_right = 0.0;
 
-  /* "_criterion.pyx":337
+  /* "stpredictions/models/OK3/_criterion.pyx":337
  * 
  *         self.weighted_n_right = 0.0
  *         self.weighted_n_left = self.weighted_n_node_samples             # <<<<<<<<<<<<<<
@@ -4689,7 +4573,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reverse_reset(st
   __pyx_t_1 = __pyx_v_self->__pyx_base.weighted_n_node_samples;
   __pyx_v_self->__pyx_base.weighted_n_left = __pyx_t_1;
 
-  /* "_criterion.pyx":338
+  /* "stpredictions/models/OK3/_criterion.pyx":338
  *         self.weighted_n_right = 0.0
  *         self.weighted_n_left = self.weighted_n_node_samples
  *         self.pos = self.end             # <<<<<<<<<<<<<<
@@ -4699,7 +4583,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reverse_reset(st
   __pyx_t_2 = __pyx_v_self->__pyx_base.end;
   __pyx_v_self->__pyx_base.pos = __pyx_t_2;
 
-  /* "_criterion.pyx":339
+  /* "stpredictions/models/OK3/_criterion.pyx":339
  *         self.weighted_n_left = self.weighted_n_node_samples
  *         self.pos = self.end
  *         return 0             # <<<<<<<<<<<<<<
@@ -4709,7 +4593,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reverse_reset(st
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "_criterion.pyx":327
+  /* "stpredictions/models/OK3/_criterion.pyx":327
  *         return 0
  * 
  *     cdef int reverse_reset(self) nogil except -1:             # <<<<<<<<<<<<<<
@@ -4722,7 +4606,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reverse_reset(st
   return __pyx_r;
 }
 
-/* "_criterion.pyx":341
+/* "stpredictions/models/OK3/_criterion.pyx":341
  *         return 0
  * 
  *     cdef int update(self, SIZE_t new_pos) nogil except -1:             # <<<<<<<<<<<<<<
@@ -4730,35 +4614,35 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_reverse_reset(st
  * 
  */
 
-static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_new_pos) {
+static int __pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_update(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_new_pos) {
   double *__pyx_v_sample_weight;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_pos;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_i;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_j;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_p;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_q;
-  __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t __pyx_v_w_i;
-  __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t __pyx_v_w_j;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_pos;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_i;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_j;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_p;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_q;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t __pyx_v_w_i;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t __pyx_v_w_j;
   int __pyx_r;
-  __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *__pyx_t_1;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_t_2;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_3;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_4;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_5;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *__pyx_t_1;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_t_2;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_3;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_4;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_5;
   int __pyx_t_6;
   Py_ssize_t __pyx_t_7;
   Py_ssize_t __pyx_t_8;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_9;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_10;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_11;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_9;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_10;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_11;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
 
-  /* "_criterion.pyx":344
+  /* "stpredictions/models/OK3/_criterion.pyx":344
  *         """Updated statistics by moving samples[pos:new_pos] to the left."""
  * 
  *         cdef double* sample_weight = self.sample_weight             # <<<<<<<<<<<<<<
@@ -4768,7 +4652,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
   __pyx_t_1 = __pyx_v_self->__pyx_base.sample_weight;
   __pyx_v_sample_weight = __pyx_t_1;
 
-  /* "_criterion.pyx":345
+  /* "stpredictions/models/OK3/_criterion.pyx":345
  * 
  *         cdef double* sample_weight = self.sample_weight
  *         cdef SIZE_t* samples = self.samples             # <<<<<<<<<<<<<<
@@ -4778,7 +4662,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
   __pyx_t_2 = __pyx_v_self->__pyx_base.samples;
   __pyx_v_samples = __pyx_t_2;
 
-  /* "_criterion.pyx":347
+  /* "stpredictions/models/OK3/_criterion.pyx":347
  *         cdef SIZE_t* samples = self.samples
  * 
  *         cdef SIZE_t start = self.start             # <<<<<<<<<<<<<<
@@ -4788,7 +4672,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
   __pyx_t_3 = __pyx_v_self->__pyx_base.start;
   __pyx_v_start = __pyx_t_3;
 
-  /* "_criterion.pyx":348
+  /* "stpredictions/models/OK3/_criterion.pyx":348
  * 
  *         cdef SIZE_t start = self.start
  *         cdef SIZE_t pos = self.pos             # <<<<<<<<<<<<<<
@@ -4798,7 +4682,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
   __pyx_t_3 = __pyx_v_self->__pyx_base.pos;
   __pyx_v_pos = __pyx_t_3;
 
-  /* "_criterion.pyx":349
+  /* "stpredictions/models/OK3/_criterion.pyx":349
  *         cdef SIZE_t start = self.start
  *         cdef SIZE_t pos = self.pos
  *         cdef SIZE_t end = self.end             # <<<<<<<<<<<<<<
@@ -4808,7 +4692,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
   __pyx_t_3 = __pyx_v_self->__pyx_base.end;
   __pyx_v_end = __pyx_t_3;
 
-  /* "_criterion.pyx":355
+  /* "stpredictions/models/OK3/_criterion.pyx":355
  *         cdef SIZE_t p
  *         cdef SIZE_t q
  *         cdef DOUBLE_t w_i = 1.0             # <<<<<<<<<<<<<<
@@ -4817,7 +4701,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
   __pyx_v_w_i = 1.0;
 
-  /* "_criterion.pyx":356
+  /* "stpredictions/models/OK3/_criterion.pyx":356
  *         cdef SIZE_t q
  *         cdef DOUBLE_t w_i = 1.0
  *         cdef DOUBLE_t w_j = 1.0             # <<<<<<<<<<<<<<
@@ -4826,7 +4710,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
   __pyx_v_w_j = 1.0;
 
-  /* "_criterion.pyx":360
+  /* "stpredictions/models/OK3/_criterion.pyx":360
  *         # Update statistics up to new_pos
  * 
  *         for p in range(pos, new_pos):             # <<<<<<<<<<<<<<
@@ -4838,7 +4722,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
   for (__pyx_t_5 = __pyx_v_pos; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_p = __pyx_t_5;
 
-    /* "_criterion.pyx":361
+    /* "stpredictions/models/OK3/_criterion.pyx":361
  * 
  *         for p in range(pos, new_pos):
  *             i = samples[p]             # <<<<<<<<<<<<<<
@@ -4847,7 +4731,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
     __pyx_v_i = (__pyx_v_samples[__pyx_v_p]);
 
-    /* "_criterion.pyx":363
+    /* "stpredictions/models/OK3/_criterion.pyx":363
  *             i = samples[p]
  * 
  *             if sample_weight != NULL:             # <<<<<<<<<<<<<<
@@ -4857,7 +4741,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
     __pyx_t_6 = ((__pyx_v_sample_weight != NULL) != 0);
     if (__pyx_t_6) {
 
-      /* "_criterion.pyx":364
+      /* "stpredictions/models/OK3/_criterion.pyx":364
  * 
  *             if sample_weight != NULL:
  *                 w_i = sample_weight[i]             # <<<<<<<<<<<<<<
@@ -4866,7 +4750,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
       __pyx_v_w_i = (__pyx_v_sample_weight[__pyx_v_i]);
 
-      /* "_criterion.pyx":363
+      /* "stpredictions/models/OK3/_criterion.pyx":363
  *             i = samples[p]
  * 
  *             if sample_weight != NULL:             # <<<<<<<<<<<<<<
@@ -4875,7 +4759,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
     }
 
-    /* "_criterion.pyx":366
+    /* "stpredictions/models/OK3/_criterion.pyx":366
  *                 w_i = sample_weight[i]
  * 
  *             self.sum_diag_Gramm_left += w_i * self.y[i,i]             # <<<<<<<<<<<<<<
@@ -4885,9 +4769,9 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
     if (unlikely(!__pyx_v_self->__pyx_base.y.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(1, 366, __pyx_L1_error)}
     __pyx_t_7 = __pyx_v_i;
     __pyx_t_8 = __pyx_v_i;
-    __pyx_v_self->sum_diag_Gramm_left = (__pyx_v_self->sum_diag_Gramm_left + (__pyx_v_w_i * (*((__pyx_t_7sklearn_4tree_5_tree_DOUBLE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_7sklearn_4tree_5_tree_DOUBLE_t const  *) ( /* dim=0 */ (__pyx_v_self->__pyx_base.y.data + __pyx_t_7 * __pyx_v_self->__pyx_base.y.strides[0]) )) + __pyx_t_8)) )))));
+    __pyx_v_self->sum_diag_Gramm_left = (__pyx_v_self->sum_diag_Gramm_left + (__pyx_v_w_i * (*((__pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t const  *) ( /* dim=0 */ (__pyx_v_self->__pyx_base.y.data + __pyx_t_7 * __pyx_v_self->__pyx_base.y.strides[0]) )) + __pyx_t_8)) )))));
 
-    /* "_criterion.pyx":368
+    /* "stpredictions/models/OK3/_criterion.pyx":368
  *             self.sum_diag_Gramm_left += w_i * self.y[i,i]
  * 
  *             self.sum_diag_Gramm_right -= w_i * self.y[i,i]             # <<<<<<<<<<<<<<
@@ -4897,9 +4781,9 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
     if (unlikely(!__pyx_v_self->__pyx_base.y.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(1, 368, __pyx_L1_error)}
     __pyx_t_8 = __pyx_v_i;
     __pyx_t_7 = __pyx_v_i;
-    __pyx_v_self->sum_diag_Gramm_right = (__pyx_v_self->sum_diag_Gramm_right - (__pyx_v_w_i * (*((__pyx_t_7sklearn_4tree_5_tree_DOUBLE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_7sklearn_4tree_5_tree_DOUBLE_t const  *) ( /* dim=0 */ (__pyx_v_self->__pyx_base.y.data + __pyx_t_8 * __pyx_v_self->__pyx_base.y.strides[0]) )) + __pyx_t_7)) )))));
+    __pyx_v_self->sum_diag_Gramm_right = (__pyx_v_self->sum_diag_Gramm_right - (__pyx_v_w_i * (*((__pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t const  *) ( /* dim=0 */ (__pyx_v_self->__pyx_base.y.data + __pyx_t_8 * __pyx_v_self->__pyx_base.y.strides[0]) )) + __pyx_t_7)) )))));
 
-    /* "_criterion.pyx":370
+    /* "stpredictions/models/OK3/_criterion.pyx":370
  *             self.sum_diag_Gramm_right -= w_i * self.y[i,i]
  * 
  *             self.weighted_n_left += w_i             # <<<<<<<<<<<<<<
@@ -4908,7 +4792,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
     __pyx_v_self->__pyx_base.weighted_n_left = (__pyx_v_self->__pyx_base.weighted_n_left + __pyx_v_w_i);
 
-    /* "_criterion.pyx":372
+    /* "stpredictions/models/OK3/_criterion.pyx":372
  *             self.weighted_n_left += w_i
  * 
  *             self.weighted_n_right -= w_i             # <<<<<<<<<<<<<<
@@ -4917,7 +4801,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
     __pyx_v_self->__pyx_base.weighted_n_right = (__pyx_v_self->__pyx_base.weighted_n_right - __pyx_v_w_i);
 
-    /* "_criterion.pyx":374
+    /* "stpredictions/models/OK3/_criterion.pyx":374
  *             self.weighted_n_right -= w_i
  * 
  *             for q in range(start, pos):             # <<<<<<<<<<<<<<
@@ -4929,7 +4813,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
     for (__pyx_t_11 = __pyx_v_start; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_q = __pyx_t_11;
 
-      /* "_criterion.pyx":375
+      /* "stpredictions/models/OK3/_criterion.pyx":375
  * 
  *             for q in range(start, pos):
  *                 j = samples[q]             # <<<<<<<<<<<<<<
@@ -4938,7 +4822,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
       __pyx_v_j = (__pyx_v_samples[__pyx_v_q]);
 
-      /* "_criterion.pyx":377
+      /* "stpredictions/models/OK3/_criterion.pyx":377
  *                 j = samples[q]
  * 
  *                 if sample_weight != NULL:             # <<<<<<<<<<<<<<
@@ -4948,7 +4832,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
       __pyx_t_6 = ((__pyx_v_sample_weight != NULL) != 0);
       if (__pyx_t_6) {
 
-        /* "_criterion.pyx":378
+        /* "stpredictions/models/OK3/_criterion.pyx":378
  * 
  *                 if sample_weight != NULL:
  *                     w_j = sample_weight[j]             # <<<<<<<<<<<<<<
@@ -4957,7 +4841,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
         __pyx_v_w_j = (__pyx_v_sample_weight[__pyx_v_j]);
 
-        /* "_criterion.pyx":377
+        /* "stpredictions/models/OK3/_criterion.pyx":377
  *                 j = samples[q]
  * 
  *                 if sample_weight != NULL:             # <<<<<<<<<<<<<<
@@ -4966,7 +4850,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
       }
 
-      /* "_criterion.pyx":380
+      /* "stpredictions/models/OK3/_criterion.pyx":380
  *                     w_j = sample_weight[j]
  * 
  *                 self.sum_total_Gramm_left += 2 * w_i * w_j * self.y[i,j]             # <<<<<<<<<<<<<<
@@ -4976,10 +4860,10 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
       if (unlikely(!__pyx_v_self->__pyx_base.y.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(1, 380, __pyx_L1_error)}
       __pyx_t_7 = __pyx_v_i;
       __pyx_t_8 = __pyx_v_j;
-      __pyx_v_self->sum_total_Gramm_left = (__pyx_v_self->sum_total_Gramm_left + (((2.0 * __pyx_v_w_i) * __pyx_v_w_j) * (*((__pyx_t_7sklearn_4tree_5_tree_DOUBLE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_7sklearn_4tree_5_tree_DOUBLE_t const  *) ( /* dim=0 */ (__pyx_v_self->__pyx_base.y.data + __pyx_t_7 * __pyx_v_self->__pyx_base.y.strides[0]) )) + __pyx_t_8)) )))));
+      __pyx_v_self->sum_total_Gramm_left = (__pyx_v_self->sum_total_Gramm_left + (((2.0 * __pyx_v_w_i) * __pyx_v_w_j) * (*((__pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t const  *) ( /* dim=0 */ (__pyx_v_self->__pyx_base.y.data + __pyx_t_7 * __pyx_v_self->__pyx_base.y.strides[0]) )) + __pyx_t_8)) )))));
     }
 
-    /* "_criterion.pyx":382
+    /* "stpredictions/models/OK3/_criterion.pyx":382
  *                 self.sum_total_Gramm_left += 2 * w_i * w_j * self.y[i,j]
  * 
  *             for q in range(pos, new_pos):             # <<<<<<<<<<<<<<
@@ -4991,7 +4875,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
     for (__pyx_t_11 = __pyx_v_pos; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_q = __pyx_t_11;
 
-      /* "_criterion.pyx":383
+      /* "stpredictions/models/OK3/_criterion.pyx":383
  * 
  *             for q in range(pos, new_pos):
  *                 j = samples[q]             # <<<<<<<<<<<<<<
@@ -5000,7 +4884,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
       __pyx_v_j = (__pyx_v_samples[__pyx_v_q]);
 
-      /* "_criterion.pyx":385
+      /* "stpredictions/models/OK3/_criterion.pyx":385
  *                 j = samples[q]
  * 
  *                 if sample_weight != NULL:             # <<<<<<<<<<<<<<
@@ -5010,7 +4894,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
       __pyx_t_6 = ((__pyx_v_sample_weight != NULL) != 0);
       if (__pyx_t_6) {
 
-        /* "_criterion.pyx":386
+        /* "stpredictions/models/OK3/_criterion.pyx":386
  * 
  *                 if sample_weight != NULL:
  *                     w_j = sample_weight[j]             # <<<<<<<<<<<<<<
@@ -5019,7 +4903,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
         __pyx_v_w_j = (__pyx_v_sample_weight[__pyx_v_j]);
 
-        /* "_criterion.pyx":385
+        /* "stpredictions/models/OK3/_criterion.pyx":385
  *                 j = samples[q]
  * 
  *                 if sample_weight != NULL:             # <<<<<<<<<<<<<<
@@ -5028,7 +4912,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
       }
 
-      /* "_criterion.pyx":388
+      /* "stpredictions/models/OK3/_criterion.pyx":388
  *                     w_j = sample_weight[j]
  * 
  *                 self.sum_total_Gramm_left += w_i * w_j * self.y[i,j]             # <<<<<<<<<<<<<<
@@ -5038,9 +4922,9 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
       if (unlikely(!__pyx_v_self->__pyx_base.y.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(1, 388, __pyx_L1_error)}
       __pyx_t_8 = __pyx_v_i;
       __pyx_t_7 = __pyx_v_j;
-      __pyx_v_self->sum_total_Gramm_left = (__pyx_v_self->sum_total_Gramm_left + ((__pyx_v_w_i * __pyx_v_w_j) * (*((__pyx_t_7sklearn_4tree_5_tree_DOUBLE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_7sklearn_4tree_5_tree_DOUBLE_t const  *) ( /* dim=0 */ (__pyx_v_self->__pyx_base.y.data + __pyx_t_8 * __pyx_v_self->__pyx_base.y.strides[0]) )) + __pyx_t_7)) )))));
+      __pyx_v_self->sum_total_Gramm_left = (__pyx_v_self->sum_total_Gramm_left + ((__pyx_v_w_i * __pyx_v_w_j) * (*((__pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t const  *) ( /* dim=0 */ (__pyx_v_self->__pyx_base.y.data + __pyx_t_8 * __pyx_v_self->__pyx_base.y.strides[0]) )) + __pyx_t_7)) )))));
 
-      /* "_criterion.pyx":390
+      /* "stpredictions/models/OK3/_criterion.pyx":390
  *                 self.sum_total_Gramm_left += w_i * w_j * self.y[i,j]
  * 
  *                 self.sum_total_Gramm_right -= w_i * w_j * self.y[i,j]             # <<<<<<<<<<<<<<
@@ -5050,11 +4934,11 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
       if (unlikely(!__pyx_v_self->__pyx_base.y.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(1, 390, __pyx_L1_error)}
       __pyx_t_7 = __pyx_v_i;
       __pyx_t_8 = __pyx_v_j;
-      __pyx_v_self->sum_total_Gramm_right = (__pyx_v_self->sum_total_Gramm_right - ((__pyx_v_w_i * __pyx_v_w_j) * (*((__pyx_t_7sklearn_4tree_5_tree_DOUBLE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_7sklearn_4tree_5_tree_DOUBLE_t const  *) ( /* dim=0 */ (__pyx_v_self->__pyx_base.y.data + __pyx_t_7 * __pyx_v_self->__pyx_base.y.strides[0]) )) + __pyx_t_8)) )))));
+      __pyx_v_self->sum_total_Gramm_right = (__pyx_v_self->sum_total_Gramm_right - ((__pyx_v_w_i * __pyx_v_w_j) * (*((__pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t const  *) ( /* dim=0 */ (__pyx_v_self->__pyx_base.y.data + __pyx_t_7 * __pyx_v_self->__pyx_base.y.strides[0]) )) + __pyx_t_8)) )))));
     }
   }
 
-  /* "_criterion.pyx":392
+  /* "stpredictions/models/OK3/_criterion.pyx":392
  *                 self.sum_total_Gramm_right -= w_i * w_j * self.y[i,j]
  * 
  *         for p in range(new_pos, end):             # <<<<<<<<<<<<<<
@@ -5066,7 +4950,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
   for (__pyx_t_5 = __pyx_v_new_pos; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_p = __pyx_t_5;
 
-    /* "_criterion.pyx":393
+    /* "stpredictions/models/OK3/_criterion.pyx":393
  * 
  *         for p in range(new_pos, end):
  *             i = samples[p]             # <<<<<<<<<<<<<<
@@ -5075,7 +4959,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
     __pyx_v_i = (__pyx_v_samples[__pyx_v_p]);
 
-    /* "_criterion.pyx":395
+    /* "stpredictions/models/OK3/_criterion.pyx":395
  *             i = samples[p]
  * 
  *             if sample_weight != NULL:             # <<<<<<<<<<<<<<
@@ -5085,7 +4969,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
     __pyx_t_6 = ((__pyx_v_sample_weight != NULL) != 0);
     if (__pyx_t_6) {
 
-      /* "_criterion.pyx":396
+      /* "stpredictions/models/OK3/_criterion.pyx":396
  * 
  *             if sample_weight != NULL:
  *                 w_i = sample_weight[i]             # <<<<<<<<<<<<<<
@@ -5094,7 +4978,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
       __pyx_v_w_i = (__pyx_v_sample_weight[__pyx_v_i]);
 
-      /* "_criterion.pyx":395
+      /* "stpredictions/models/OK3/_criterion.pyx":395
  *             i = samples[p]
  * 
  *             if sample_weight != NULL:             # <<<<<<<<<<<<<<
@@ -5103,7 +4987,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
     }
 
-    /* "_criterion.pyx":398
+    /* "stpredictions/models/OK3/_criterion.pyx":398
  *                 w_i = sample_weight[i]
  * 
  *             for q in range(pos, new_pos):             # <<<<<<<<<<<<<<
@@ -5115,7 +4999,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
     for (__pyx_t_11 = __pyx_v_pos; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_q = __pyx_t_11;
 
-      /* "_criterion.pyx":399
+      /* "stpredictions/models/OK3/_criterion.pyx":399
  * 
  *             for q in range(pos, new_pos):
  *                 j = samples[q]             # <<<<<<<<<<<<<<
@@ -5124,7 +5008,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
       __pyx_v_j = (__pyx_v_samples[__pyx_v_q]);
 
-      /* "_criterion.pyx":401
+      /* "stpredictions/models/OK3/_criterion.pyx":401
  *                 j = samples[q]
  * 
  *                 if sample_weight != NULL:             # <<<<<<<<<<<<<<
@@ -5134,7 +5018,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
       __pyx_t_6 = ((__pyx_v_sample_weight != NULL) != 0);
       if (__pyx_t_6) {
 
-        /* "_criterion.pyx":402
+        /* "stpredictions/models/OK3/_criterion.pyx":402
  * 
  *                 if sample_weight != NULL:
  *                     w_j = sample_weight[j]             # <<<<<<<<<<<<<<
@@ -5143,7 +5027,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
         __pyx_v_w_j = (__pyx_v_sample_weight[__pyx_v_j]);
 
-        /* "_criterion.pyx":401
+        /* "stpredictions/models/OK3/_criterion.pyx":401
  *                 j = samples[q]
  * 
  *                 if sample_weight != NULL:             # <<<<<<<<<<<<<<
@@ -5152,7 +5036,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
       }
 
-      /* "_criterion.pyx":404
+      /* "stpredictions/models/OK3/_criterion.pyx":404
  *                     w_j = sample_weight[j]
  * 
  *                 self.sum_total_Gramm_right -= 2 * w_i * w_j * self.y[i,j]             # <<<<<<<<<<<<<<
@@ -5162,11 +5046,11 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
       if (unlikely(!__pyx_v_self->__pyx_base.y.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(1, 404, __pyx_L1_error)}
       __pyx_t_8 = __pyx_v_i;
       __pyx_t_7 = __pyx_v_j;
-      __pyx_v_self->sum_total_Gramm_right = (__pyx_v_self->sum_total_Gramm_right - (((2.0 * __pyx_v_w_i) * __pyx_v_w_j) * (*((__pyx_t_7sklearn_4tree_5_tree_DOUBLE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_7sklearn_4tree_5_tree_DOUBLE_t const  *) ( /* dim=0 */ (__pyx_v_self->__pyx_base.y.data + __pyx_t_8 * __pyx_v_self->__pyx_base.y.strides[0]) )) + __pyx_t_7)) )))));
+      __pyx_v_self->sum_total_Gramm_right = (__pyx_v_self->sum_total_Gramm_right - (((2.0 * __pyx_v_w_i) * __pyx_v_w_j) * (*((__pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t const  *) ( /* dim=0 */ (__pyx_v_self->__pyx_base.y.data + __pyx_t_8 * __pyx_v_self->__pyx_base.y.strides[0]) )) + __pyx_t_7)) )))));
     }
   }
 
-  /* "_criterion.pyx":406
+  /* "stpredictions/models/OK3/_criterion.pyx":406
  *                 self.sum_total_Gramm_right -= 2 * w_i * w_j * self.y[i,j]
  * 
  *         self.pos = new_pos             # <<<<<<<<<<<<<<
@@ -5175,7 +5059,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  */
   __pyx_v_self->__pyx_base.pos = __pyx_v_new_pos;
 
-  /* "_criterion.pyx":407
+  /* "stpredictions/models/OK3/_criterion.pyx":407
  * 
  *         self.pos = new_pos
  *         return 0             # <<<<<<<<<<<<<<
@@ -5185,7 +5069,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "_criterion.pyx":341
+  /* "stpredictions/models/OK3/_criterion.pyx":341
  *         return 0
  * 
  *     cdef int update(self, SIZE_t new_pos) nogil except -1:             # <<<<<<<<<<<<<<
@@ -5199,7 +5083,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
     #ifdef WITH_THREAD
     PyGILState_STATE __pyx_gilstate_save = __Pyx_PyGILState_Ensure();
     #endif
-    __Pyx_AddTraceback("_criterion.KernelizedRegressionCriterion.update", __pyx_clineno, __pyx_lineno, __pyx_filename);
+    __Pyx_AddTraceback("stpredictions.models.OK3._criterion.KernelizedRegressionCriterion.update", __pyx_clineno, __pyx_lineno, __pyx_filename);
     #ifdef WITH_THREAD
     __Pyx_PyGILState_Release(__pyx_gilstate_save);
     #endif
@@ -5209,7 +5093,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
   return __pyx_r;
 }
 
-/* "_criterion.pyx":409
+/* "stpredictions/models/OK3/_criterion.pyx":409
  *         return 0
  * 
  *     cdef double node_impurity(self) nogil:             # <<<<<<<<<<<<<<
@@ -5217,7 +5101,7 @@ static int __pyx_f_10_criterion_29KernelizedRegressionCriterion_update(struct __
  * 
  */
 
-static double __pyx_f_10_criterion_29KernelizedRegressionCriterion_node_impurity(CYTHON_UNUSED struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *__pyx_v_self) {
+static double __pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_node_impurity(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_v_self) {
   double __pyx_r;
 
   /* function exit code */
@@ -5225,7 +5109,7 @@ static double __pyx_f_10_criterion_29KernelizedRegressionCriterion_node_impurity
   return __pyx_r;
 }
 
-/* "_criterion.pyx":412
+/* "stpredictions/models/OK3/_criterion.pyx":412
  *         pass
  * 
  *     cdef void children_impurity(self, double* impurity_left, double* impurity_right) nogil:             # <<<<<<<<<<<<<<
@@ -5233,12 +5117,12 @@ static double __pyx_f_10_criterion_29KernelizedRegressionCriterion_node_impurity
  * 
  */
 
-static void __pyx_f_10_criterion_29KernelizedRegressionCriterion_children_impurity(CYTHON_UNUSED struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, CYTHON_UNUSED double *__pyx_v_impurity_left, CYTHON_UNUSED double *__pyx_v_impurity_right) {
+static void __pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_children_impurity(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, CYTHON_UNUSED double *__pyx_v_impurity_left, CYTHON_UNUSED double *__pyx_v_impurity_right) {
 
   /* function exit code */
 }
 
-/* "_criterion.pyx":415
+/* "stpredictions/models/OK3/_criterion.pyx":415
  *         pass
  * 
  *     cdef void node_value(self, double* dest) nogil:             # <<<<<<<<<<<<<<
@@ -5246,16 +5130,16 @@ static void __pyx_f_10_criterion_29KernelizedRegressionCriterion_children_impuri
  * 
  */
 
-static void __pyx_f_10_criterion_29KernelizedRegressionCriterion_node_value(struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, double *__pyx_v_dest) {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_p;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_k;
-  __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t __pyx_v_w;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_1;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_2;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_3;
+static void __pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_node_value(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_v_self, double *__pyx_v_dest) {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_p;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_k;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t __pyx_v_w;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_1;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_2;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_3;
   int __pyx_t_4;
 
-  /* "_criterion.pyx":420
+  /* "stpredictions/models/OK3/_criterion.pyx":420
  *         cdef SIZE_t p
  *         cdef SIZE_t k
  *         cdef DOUBLE_t w = 1.0             # <<<<<<<<<<<<<<
@@ -5264,7 +5148,7 @@ static void __pyx_f_10_criterion_29KernelizedRegressionCriterion_node_value(stru
  */
   __pyx_v_w = 1.0;
 
-  /* "_criterion.pyx":422
+  /* "stpredictions/models/OK3/_criterion.pyx":422
  *         cdef DOUBLE_t w = 1.0
  * 
  *         for p in range(self.start, self.end):             # <<<<<<<<<<<<<<
@@ -5276,7 +5160,7 @@ static void __pyx_f_10_criterion_29KernelizedRegressionCriterion_node_value(stru
   for (__pyx_t_3 = __pyx_v_self->__pyx_base.start; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_p = __pyx_t_3;
 
-    /* "_criterion.pyx":424
+    /* "stpredictions/models/OK3/_criterion.pyx":424
  *         for p in range(self.start, self.end):
  * 
  *             k = self.samples[p]             # <<<<<<<<<<<<<<
@@ -5285,7 +5169,7 @@ static void __pyx_f_10_criterion_29KernelizedRegressionCriterion_node_value(stru
  */
     __pyx_v_k = (__pyx_v_self->__pyx_base.samples[__pyx_v_p]);
 
-    /* "_criterion.pyx":426
+    /* "stpredictions/models/OK3/_criterion.pyx":426
  *             k = self.samples[p]
  * 
  *             if self.sample_weight != NULL:             # <<<<<<<<<<<<<<
@@ -5295,7 +5179,7 @@ static void __pyx_f_10_criterion_29KernelizedRegressionCriterion_node_value(stru
     __pyx_t_4 = ((__pyx_v_self->__pyx_base.sample_weight != NULL) != 0);
     if (__pyx_t_4) {
 
-      /* "_criterion.pyx":427
+      /* "stpredictions/models/OK3/_criterion.pyx":427
  * 
  *             if self.sample_weight != NULL:
  *                 w = self.sample_weight[k]             # <<<<<<<<<<<<<<
@@ -5304,7 +5188,7 @@ static void __pyx_f_10_criterion_29KernelizedRegressionCriterion_node_value(stru
  */
       __pyx_v_w = (__pyx_v_self->__pyx_base.sample_weight[__pyx_v_k]);
 
-      /* "_criterion.pyx":426
+      /* "stpredictions/models/OK3/_criterion.pyx":426
  *             k = self.samples[p]
  * 
  *             if self.sample_weight != NULL:             # <<<<<<<<<<<<<<
@@ -5313,7 +5197,7 @@ static void __pyx_f_10_criterion_29KernelizedRegressionCriterion_node_value(stru
  */
     }
 
-    /* "_criterion.pyx":429
+    /* "stpredictions/models/OK3/_criterion.pyx":429
  *                 w = self.sample_weight[k]
  * 
  *             dest[k] = w / self.weighted_n_node_samples             # <<<<<<<<<<<<<<
@@ -5323,7 +5207,7 @@ static void __pyx_f_10_criterion_29KernelizedRegressionCriterion_node_value(stru
     (__pyx_v_dest[__pyx_v_k]) = (__pyx_v_w / __pyx_v_self->__pyx_base.weighted_n_node_samples);
   }
 
-  /* "_criterion.pyx":415
+  /* "stpredictions/models/OK3/_criterion.pyx":415
  *         pass
  * 
  *     cdef void node_value(self, double* dest) nogil:             # <<<<<<<<<<<<<<
@@ -5334,7 +5218,7 @@ static void __pyx_f_10_criterion_29KernelizedRegressionCriterion_node_value(stru
   /* function exit code */
 }
 
-/* "_criterion.pyx":454
+/* "stpredictions/models/OK3/_criterion.pyx":454
  *     """
  * 
  *     cdef double node_impurity(self) nogil:             # <<<<<<<<<<<<<<
@@ -5342,11 +5226,11 @@ static void __pyx_f_10_criterion_29KernelizedRegressionCriterion_node_value(stru
  *            samples[start:end]."""
  */
 
-static double __pyx_f_10_criterion_13KernelizedMSE_node_impurity(struct __pyx_obj_10_criterion_KernelizedMSE *__pyx_v_self) {
+static double __pyx_f_13stpredictions_6models_3OK3_10_criterion_13KernelizedMSE_node_impurity(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE *__pyx_v_self) {
   double __pyx_v_impurity;
   double __pyx_r;
 
-  /* "_criterion.pyx":460
+  /* "stpredictions/models/OK3/_criterion.pyx":460
  *         cdef double impurity
  * 
  *         impurity = self.sum_diag_Gramm / self.weighted_n_node_samples - self.sum_total_Gramm / (self.weighted_n_node_samples)**2             # <<<<<<<<<<<<<<
@@ -5355,7 +5239,7 @@ static double __pyx_f_10_criterion_13KernelizedMSE_node_impurity(struct __pyx_ob
  */
   __pyx_v_impurity = ((__pyx_v_self->__pyx_base.sum_diag_Gramm / __pyx_v_self->__pyx_base.__pyx_base.weighted_n_node_samples) - (__pyx_v_self->__pyx_base.sum_total_Gramm / pow(__pyx_v_self->__pyx_base.__pyx_base.weighted_n_node_samples, 2.0)));
 
-  /* "_criterion.pyx":462
+  /* "stpredictions/models/OK3/_criterion.pyx":462
  *         impurity = self.sum_diag_Gramm / self.weighted_n_node_samples - self.sum_total_Gramm / (self.weighted_n_node_samples)**2
  * 
  *         return impurity             # <<<<<<<<<<<<<<
@@ -5365,7 +5249,7 @@ static double __pyx_f_10_criterion_13KernelizedMSE_node_impurity(struct __pyx_ob
   __pyx_r = __pyx_v_impurity;
   goto __pyx_L0;
 
-  /* "_criterion.pyx":454
+  /* "stpredictions/models/OK3/_criterion.pyx":454
  *     """
  * 
  *     cdef double node_impurity(self) nogil:             # <<<<<<<<<<<<<<
@@ -5378,7 +5262,7 @@ static double __pyx_f_10_criterion_13KernelizedMSE_node_impurity(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "_criterion.pyx":464
+/* "stpredictions/models/OK3/_criterion.pyx":464
  *         return impurity
  * 
  *     cdef double proxy_impurity_improvement(self) nogil:             # <<<<<<<<<<<<<<
@@ -5386,12 +5270,12 @@ static double __pyx_f_10_criterion_13KernelizedMSE_node_impurity(struct __pyx_ob
  * 
  */
 
-static double __pyx_f_10_criterion_13KernelizedMSE_proxy_impurity_improvement(struct __pyx_obj_10_criterion_KernelizedMSE *__pyx_v_self) {
+static double __pyx_f_13stpredictions_6models_3OK3_10_criterion_13KernelizedMSE_proxy_impurity_improvement(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE *__pyx_v_self) {
   double __pyx_v_proxy_impurity_left;
   double __pyx_v_proxy_impurity_right;
   double __pyx_r;
 
-  /* "_criterion.pyx":476
+  /* "stpredictions/models/OK3/_criterion.pyx":476
  *         """
  * 
  *         cdef double proxy_impurity_left = self.sum_diag_Gramm_left - self.sum_total_Gramm_left / self.weighted_n_left             # <<<<<<<<<<<<<<
@@ -5400,7 +5284,7 @@ static double __pyx_f_10_criterion_13KernelizedMSE_proxy_impurity_improvement(st
  */
   __pyx_v_proxy_impurity_left = (__pyx_v_self->__pyx_base.sum_diag_Gramm_left - (__pyx_v_self->__pyx_base.sum_total_Gramm_left / __pyx_v_self->__pyx_base.__pyx_base.weighted_n_left));
 
-  /* "_criterion.pyx":477
+  /* "stpredictions/models/OK3/_criterion.pyx":477
  * 
  *         cdef double proxy_impurity_left = self.sum_diag_Gramm_left - self.sum_total_Gramm_left / self.weighted_n_left
  *         cdef double proxy_impurity_right = self.sum_diag_Gramm_right - self.sum_total_Gramm_right / self.weighted_n_right             # <<<<<<<<<<<<<<
@@ -5409,7 +5293,7 @@ static double __pyx_f_10_criterion_13KernelizedMSE_proxy_impurity_improvement(st
  */
   __pyx_v_proxy_impurity_right = (__pyx_v_self->__pyx_base.sum_diag_Gramm_right - (__pyx_v_self->__pyx_base.sum_total_Gramm_right / __pyx_v_self->__pyx_base.__pyx_base.weighted_n_right));
 
-  /* "_criterion.pyx":479
+  /* "stpredictions/models/OK3/_criterion.pyx":479
  *         cdef double proxy_impurity_right = self.sum_diag_Gramm_right - self.sum_total_Gramm_right / self.weighted_n_right
  * 
  *         return (- proxy_impurity_left - proxy_impurity_right)             # <<<<<<<<<<<<<<
@@ -5419,7 +5303,7 @@ static double __pyx_f_10_criterion_13KernelizedMSE_proxy_impurity_improvement(st
   __pyx_r = ((-__pyx_v_proxy_impurity_left) - __pyx_v_proxy_impurity_right);
   goto __pyx_L0;
 
-  /* "_criterion.pyx":464
+  /* "stpredictions/models/OK3/_criterion.pyx":464
  *         return impurity
  * 
  *     cdef double proxy_impurity_improvement(self) nogil:             # <<<<<<<<<<<<<<
@@ -5432,7 +5316,7 @@ static double __pyx_f_10_criterion_13KernelizedMSE_proxy_impurity_improvement(st
   return __pyx_r;
 }
 
-/* "_criterion.pyx":481
+/* "stpredictions/models/OK3/_criterion.pyx":481
  *         return (- proxy_impurity_left - proxy_impurity_right)
  * 
  *     cdef void children_impurity(self, double* impurity_left, double* impurity_right) nogil:             # <<<<<<<<<<<<<<
@@ -5440,14 +5324,14 @@ static double __pyx_f_10_criterion_13KernelizedMSE_proxy_impurity_improvement(st
  *            left child (samples[start:pos]) and the impurity the right child
  */
 
-static void __pyx_f_10_criterion_13KernelizedMSE_children_impurity(struct __pyx_obj_10_criterion_KernelizedMSE *__pyx_v_self, double *__pyx_v_impurity_left, double *__pyx_v_impurity_right) {
+static void __pyx_f_13stpredictions_6models_3OK3_10_criterion_13KernelizedMSE_children_impurity(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE *__pyx_v_self, double *__pyx_v_impurity_left, double *__pyx_v_impurity_right) {
   double __pyx_v_sum_diag_Gramm_left;
   double __pyx_v_sum_diag_Gramm_right;
   double __pyx_v_sum_total_Gramm_left;
   double __pyx_v_sum_total_Gramm_right;
   double __pyx_t_1;
 
-  /* "_criterion.pyx":486
+  /* "stpredictions/models/OK3/_criterion.pyx":486
  *            (samples[pos:end])."""
  * 
  *         cdef double sum_diag_Gramm_left = self.sum_diag_Gramm_left             # <<<<<<<<<<<<<<
@@ -5457,7 +5341,7 @@ static void __pyx_f_10_criterion_13KernelizedMSE_children_impurity(struct __pyx_
   __pyx_t_1 = __pyx_v_self->__pyx_base.sum_diag_Gramm_left;
   __pyx_v_sum_diag_Gramm_left = __pyx_t_1;
 
-  /* "_criterion.pyx":487
+  /* "stpredictions/models/OK3/_criterion.pyx":487
  * 
  *         cdef double sum_diag_Gramm_left = self.sum_diag_Gramm_left
  *         cdef double sum_diag_Gramm_right = self.sum_diag_Gramm_right             # <<<<<<<<<<<<<<
@@ -5467,7 +5351,7 @@ static void __pyx_f_10_criterion_13KernelizedMSE_children_impurity(struct __pyx_
   __pyx_t_1 = __pyx_v_self->__pyx_base.sum_diag_Gramm_right;
   __pyx_v_sum_diag_Gramm_right = __pyx_t_1;
 
-  /* "_criterion.pyx":489
+  /* "stpredictions/models/OK3/_criterion.pyx":489
  *         cdef double sum_diag_Gramm_right = self.sum_diag_Gramm_right
  * 
  *         cdef double sum_total_Gramm_left = self.sum_total_Gramm_left             # <<<<<<<<<<<<<<
@@ -5477,7 +5361,7 @@ static void __pyx_f_10_criterion_13KernelizedMSE_children_impurity(struct __pyx_
   __pyx_t_1 = __pyx_v_self->__pyx_base.sum_total_Gramm_left;
   __pyx_v_sum_total_Gramm_left = __pyx_t_1;
 
-  /* "_criterion.pyx":490
+  /* "stpredictions/models/OK3/_criterion.pyx":490
  * 
  *         cdef double sum_total_Gramm_left = self.sum_total_Gramm_left
  *         cdef double sum_total_Gramm_right = self.sum_total_Gramm_right             # <<<<<<<<<<<<<<
@@ -5487,7 +5371,7 @@ static void __pyx_f_10_criterion_13KernelizedMSE_children_impurity(struct __pyx_
   __pyx_t_1 = __pyx_v_self->__pyx_base.sum_total_Gramm_right;
   __pyx_v_sum_total_Gramm_right = __pyx_t_1;
 
-  /* "_criterion.pyx":492
+  /* "stpredictions/models/OK3/_criterion.pyx":492
  *         cdef double sum_total_Gramm_right = self.sum_total_Gramm_right
  * 
  *         impurity_left[0] = sum_diag_Gramm_left / self.weighted_n_left - sum_total_Gramm_left / (self.weighted_n_left)**2             # <<<<<<<<<<<<<<
@@ -5496,7 +5380,7 @@ static void __pyx_f_10_criterion_13KernelizedMSE_children_impurity(struct __pyx_
  */
   (__pyx_v_impurity_left[0]) = ((__pyx_v_sum_diag_Gramm_left / __pyx_v_self->__pyx_base.__pyx_base.weighted_n_left) - (__pyx_v_sum_total_Gramm_left / pow(__pyx_v_self->__pyx_base.__pyx_base.weighted_n_left, 2.0)));
 
-  /* "_criterion.pyx":493
+  /* "stpredictions/models/OK3/_criterion.pyx":493
  * 
  *         impurity_left[0] = sum_diag_Gramm_left / self.weighted_n_left - sum_total_Gramm_left / (self.weighted_n_left)**2
  *         impurity_right[0] = sum_diag_Gramm_right / self.weighted_n_right - sum_total_Gramm_right / (self.weighted_n_right)**2             # <<<<<<<<<<<<<<
@@ -5505,7 +5389,7 @@ static void __pyx_f_10_criterion_13KernelizedMSE_children_impurity(struct __pyx_
  */
   (__pyx_v_impurity_right[0]) = ((__pyx_v_sum_diag_Gramm_right / __pyx_v_self->__pyx_base.__pyx_base.weighted_n_right) - (__pyx_v_sum_total_Gramm_right / pow(__pyx_v_self->__pyx_base.__pyx_base.weighted_n_right, 2.0)));
 
-  /* "_criterion.pyx":481
+  /* "stpredictions/models/OK3/_criterion.pyx":481
  *         return (- proxy_impurity_left - proxy_impurity_right)
  * 
  *     cdef void children_impurity(self, double* impurity_left, double* impurity_right) nogil:             # <<<<<<<<<<<<<<
@@ -5516,7 +5400,7 @@ static void __pyx_f_10_criterion_13KernelizedMSE_children_impurity(struct __pyx_
   /* function exit code */
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":734
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":734
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -5533,7 +5417,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew1", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":735
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":735
  * 
  * cdef inline object PyArray_MultiIterNew1(a):
  *     return PyArray_MultiIterNew(1, <void*>a)             # <<<<<<<<<<<<<<
@@ -5547,7 +5431,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":734
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":734
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -5566,7 +5450,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":737
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":737
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -5583,7 +5467,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew2", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":738
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":738
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)             # <<<<<<<<<<<<<<
@@ -5597,7 +5481,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":737
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":737
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -5616,7 +5500,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":740
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":740
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -5633,7 +5517,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew3", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":741
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":741
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)             # <<<<<<<<<<<<<<
@@ -5647,7 +5531,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":740
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":740
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -5666,7 +5550,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":743
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":743
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -5683,7 +5567,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew4", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":744
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":744
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)             # <<<<<<<<<<<<<<
@@ -5697,7 +5581,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":743
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":743
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -5716,7 +5600,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":746
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":746
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -5733,7 +5617,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew5", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":747
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":747
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)             # <<<<<<<<<<<<<<
@@ -5747,7 +5631,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":746
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":746
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -5766,7 +5650,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":749
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":749
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -5780,7 +5664,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("PyDataType_SHAPE", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":750
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":750
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -5790,7 +5674,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   __pyx_t_1 = (PyDataType_HASSUBARRAY(__pyx_v_d) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":751
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":751
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):
  *         return <tuple>d.subarray.shape             # <<<<<<<<<<<<<<
@@ -5802,7 +5686,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     __pyx_r = ((PyObject*)__pyx_v_d->subarray->shape);
     goto __pyx_L0;
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":750
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":750
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -5811,7 +5695,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
  */
   }
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":753
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":753
  *         return <tuple>d.subarray.shape
  *     else:
  *         return ()             # <<<<<<<<<<<<<<
@@ -5825,7 +5709,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     goto __pyx_L0;
   }
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":749
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":749
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -5840,7 +5724,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":868
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":868
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -5852,7 +5736,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("set_array_base", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":869
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":869
  * 
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!             # <<<<<<<<<<<<<<
@@ -5861,7 +5745,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   Py_INCREF(__pyx_v_base);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":870
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":870
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!
  *     PyArray_SetBaseObject(arr, base)             # <<<<<<<<<<<<<<
@@ -5870,7 +5754,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   (void)(PyArray_SetBaseObject(__pyx_v_arr, __pyx_v_base));
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":868
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":868
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -5882,7 +5766,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyFinishContext();
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":872
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":872
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -5897,7 +5781,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("get_array_base", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":873
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":873
  * 
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)             # <<<<<<<<<<<<<<
@@ -5906,7 +5790,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   __pyx_v_base = PyArray_BASE(__pyx_v_arr);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":874
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":874
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -5916,7 +5800,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_t_1 = ((__pyx_v_base == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":875
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":875
  *     base = PyArray_BASE(arr)
  *     if base is NULL:
  *         return None             # <<<<<<<<<<<<<<
@@ -5927,7 +5811,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":874
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":874
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -5936,7 +5820,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   }
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":876
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":876
  *     if base is NULL:
  *         return None
  *     return <object>base             # <<<<<<<<<<<<<<
@@ -5948,7 +5832,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_r = ((PyObject *)__pyx_v_base);
   goto __pyx_L0;
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":872
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":872
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -5963,7 +5847,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":880
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":880
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -5987,7 +5871,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_array", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":881
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":881
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -6003,7 +5887,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":882
+      /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":882
  * cdef inline int import_array() except -1:
  *     try:
  *         __pyx_import_array()             # <<<<<<<<<<<<<<
@@ -6012,7 +5896,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
  */
       __pyx_t_4 = _import_array(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 882, __pyx_L3_error)
 
-      /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":881
+      /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":881
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -6026,7 +5910,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":883
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":883
  *     try:
  *         __pyx_import_array()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -6041,7 +5925,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":884
+      /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":884
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -6057,7 +5941,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":881
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":881
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -6072,7 +5956,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":880
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":880
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -6095,7 +5979,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":886
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":886
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -6119,7 +6003,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_umath", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":887
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":887
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -6135,7 +6019,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":888
+      /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":888
  * cdef inline int import_umath() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -6144,7 +6028,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 888, __pyx_L3_error)
 
-      /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":887
+      /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":887
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -6158,7 +6042,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":889
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":889
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -6173,7 +6057,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":890
+      /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":890
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -6189,7 +6073,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":887
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":887
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -6204,7 +6088,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":886
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":886
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -6227,7 +6111,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":892
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":892
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -6251,7 +6135,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_ufunc", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":893
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":893
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -6267,7 +6151,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":894
+      /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":894
  * cdef inline int import_ufunc() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -6276,7 +6160,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 894, __pyx_L3_error)
 
-      /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":893
+      /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":893
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -6290,7 +6174,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":895
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":895
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -6305,7 +6189,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":896
+      /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":896
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -6321,7 +6205,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":893
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":893
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -6336,7 +6220,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":892
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":892
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -19376,10 +19260,10 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *__
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static struct __pyx_vtabstruct_10_criterion_Criterion __pyx_vtable_10_criterion_Criterion;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_Criterion;
 
-static PyObject *__pyx_tp_new_10_criterion_Criterion(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
-  struct __pyx_obj_10_criterion_Criterion *p;
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_10_criterion_Criterion(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+  struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *p;
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -19387,15 +19271,15 @@ static PyObject *__pyx_tp_new_10_criterion_Criterion(PyTypeObject *t, CYTHON_UNU
     o = (PyObject *) PyBaseObject_Type.tp_new(t, __pyx_empty_tuple, 0);
   }
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_10_criterion_Criterion *)o);
-  p->__pyx_vtab = __pyx_vtabptr_10_criterion_Criterion;
+  p = ((struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *)o);
+  p->__pyx_vtab = __pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_Criterion;
   p->y.data = NULL;
   p->y.memview = NULL;
   return o;
 }
 
-static void __pyx_tp_dealloc_10_criterion_Criterion(PyObject *o) {
-  struct __pyx_obj_10_criterion_Criterion *p = (struct __pyx_obj_10_criterion_Criterion *)o;
+static void __pyx_tp_dealloc_13stpredictions_6models_3OK3_10_criterion_Criterion(PyObject *o) {
+  struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *p = (struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && (!PyType_IS_GC(Py_TYPE(o)) || !_PyGC_FINALIZED(o))) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -19405,7 +19289,7 @@ static void __pyx_tp_dealloc_10_criterion_Criterion(PyObject *o) {
     PyObject *etype, *eval, *etb;
     PyErr_Fetch(&etype, &eval, &etb);
     __Pyx_SET_REFCNT(o, Py_REFCNT(o) + 1);
-    __pyx_pw_10_criterion_9Criterion_1__dealloc__(o);
+    __pyx_pw_13stpredictions_6models_3OK3_10_criterion_9Criterion_1__dealloc__(o);
     __Pyx_SET_REFCNT(o, Py_REFCNT(o) - 1);
     PyErr_Restore(etype, eval, etb);
   }
@@ -19413,20 +19297,20 @@ static void __pyx_tp_dealloc_10_criterion_Criterion(PyObject *o) {
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static PyMethodDef __pyx_methods_10_criterion_Criterion[] = {
-  {"__getstate__", (PyCFunction)__pyx_pw_10_criterion_9Criterion_3__getstate__, METH_NOARGS, 0},
-  {"__setstate__", (PyCFunction)__pyx_pw_10_criterion_9Criterion_5__setstate__, METH_O, 0},
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_10_criterion_9Criterion_7__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_10_criterion_9Criterion_9__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_13stpredictions_6models_3OK3_10_criterion_Criterion[] = {
+  {"__getstate__", (PyCFunction)__pyx_pw_13stpredictions_6models_3OK3_10_criterion_9Criterion_3__getstate__, METH_NOARGS, 0},
+  {"__setstate__", (PyCFunction)__pyx_pw_13stpredictions_6models_3OK3_10_criterion_9Criterion_5__setstate__, METH_O, 0},
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_13stpredictions_6models_3OK3_10_criterion_9Criterion_7__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_13stpredictions_6models_3OK3_10_criterion_9Criterion_9__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_10_criterion_Criterion = {
+static PyTypeObject __pyx_type_13stpredictions_6models_3OK3_10_criterion_Criterion = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_criterion.Criterion", /*tp_name*/
-  sizeof(struct __pyx_obj_10_criterion_Criterion), /*tp_basicsize*/
+  "stpredictions.models.OK3._criterion.Criterion", /*tp_name*/
+  sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_10_criterion_Criterion, /*tp_dealloc*/
+  __pyx_tp_dealloc_13stpredictions_6models_3OK3_10_criterion_Criterion, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -19459,7 +19343,7 @@ static PyTypeObject __pyx_type_10_criterion_Criterion = {
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_10_criterion_Criterion, /*tp_methods*/
+  __pyx_methods_13stpredictions_6models_3OK3_10_criterion_Criterion, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -19469,7 +19353,7 @@ static PyTypeObject __pyx_type_10_criterion_Criterion = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_10_criterion_Criterion, /*tp_new*/
+  __pyx_tp_new_13stpredictions_6models_3OK3_10_criterion_Criterion, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -19489,32 +19373,32 @@ static PyTypeObject __pyx_type_10_criterion_Criterion = {
   0, /*tp_print*/
   #endif
 };
-static struct __pyx_vtabstruct_10_criterion_KernelizedRegressionCriterion __pyx_vtable_10_criterion_KernelizedRegressionCriterion;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion;
 
-static PyObject *__pyx_tp_new_10_criterion_KernelizedRegressionCriterion(PyTypeObject *t, PyObject *a, PyObject *k) {
-  struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *p;
-  PyObject *o = __pyx_tp_new_10_criterion_Criterion(t, a, k);
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion(PyTypeObject *t, PyObject *a, PyObject *k) {
+  struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *p;
+  PyObject *o = __pyx_tp_new_13stpredictions_6models_3OK3_10_criterion_Criterion(t, a, k);
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_10_criterion_KernelizedRegressionCriterion *)o);
-  p->__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_10_criterion_Criterion*)__pyx_vtabptr_10_criterion_KernelizedRegressionCriterion;
-  if (unlikely(__pyx_pw_10_criterion_29KernelizedRegressionCriterion_1__cinit__(o, a, k) < 0)) goto bad;
+  p = ((struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *)o);
+  p->__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion*)__pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion;
+  if (unlikely(__pyx_pw_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_1__cinit__(o, a, k) < 0)) goto bad;
   return o;
   bad:
   Py_DECREF(o); o = 0;
   return NULL;
 }
 
-static PyMethodDef __pyx_methods_10_criterion_KernelizedRegressionCriterion[] = {
-  {"__reduce__", (PyCFunction)__pyx_pw_10_criterion_29KernelizedRegressionCriterion_3__reduce__, METH_NOARGS, 0},
+static PyMethodDef __pyx_methods_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion[] = {
+  {"__reduce__", (PyCFunction)__pyx_pw_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_3__reduce__, METH_NOARGS, 0},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_10_criterion_KernelizedRegressionCriterion = {
+static PyTypeObject __pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_criterion.KernelizedRegressionCriterion", /*tp_name*/
-  sizeof(struct __pyx_obj_10_criterion_KernelizedRegressionCriterion), /*tp_basicsize*/
+  "stpredictions.models.OK3._criterion.KernelizedRegressionCriterion", /*tp_name*/
+  sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_10_criterion_Criterion, /*tp_dealloc*/
+  __pyx_tp_dealloc_13stpredictions_6models_3OK3_10_criterion_Criterion, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -19547,7 +19431,7 @@ static PyTypeObject __pyx_type_10_criterion_KernelizedRegressionCriterion = {
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_10_criterion_KernelizedRegressionCriterion, /*tp_methods*/
+  __pyx_methods_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -19557,7 +19441,7 @@ static PyTypeObject __pyx_type_10_criterion_KernelizedRegressionCriterion = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_10_criterion_KernelizedRegressionCriterion, /*tp_new*/
+  __pyx_tp_new_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -19577,23 +19461,23 @@ static PyTypeObject __pyx_type_10_criterion_KernelizedRegressionCriterion = {
   0, /*tp_print*/
   #endif
 };
-static struct __pyx_vtabstruct_10_criterion_KernelizedMSE __pyx_vtable_10_criterion_KernelizedMSE;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE;
 
-static PyObject *__pyx_tp_new_10_criterion_KernelizedMSE(PyTypeObject *t, PyObject *a, PyObject *k) {
-  struct __pyx_obj_10_criterion_KernelizedMSE *p;
-  PyObject *o = __pyx_tp_new_10_criterion_KernelizedRegressionCriterion(t, a, k);
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE(PyTypeObject *t, PyObject *a, PyObject *k) {
+  struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE *p;
+  PyObject *o = __pyx_tp_new_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion(t, a, k);
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_10_criterion_KernelizedMSE *)o);
-  p->__pyx_base.__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_10_criterion_Criterion*)__pyx_vtabptr_10_criterion_KernelizedMSE;
+  p = ((struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE *)o);
+  p->__pyx_base.__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion*)__pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE;
   return o;
 }
 
-static PyTypeObject __pyx_type_10_criterion_KernelizedMSE = {
+static PyTypeObject __pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_criterion.KernelizedMSE", /*tp_name*/
-  sizeof(struct __pyx_obj_10_criterion_KernelizedMSE), /*tp_basicsize*/
+  "stpredictions.models.OK3._criterion.KernelizedMSE", /*tp_name*/
+  sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_10_criterion_Criterion, /*tp_dealloc*/
+  __pyx_tp_dealloc_13stpredictions_6models_3OK3_10_criterion_Criterion, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -19636,7 +19520,7 @@ static PyTypeObject __pyx_type_10_criterion_KernelizedMSE = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_10_criterion_KernelizedMSE, /*tp_new*/
+  __pyx_tp_new_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -19779,7 +19663,7 @@ static PyBufferProcs __pyx_tp_as_buffer_array = {
 
 static PyTypeObject __pyx_type___pyx_array = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_criterion.array", /*tp_name*/
+  "stpredictions.models.OK3._criterion.array", /*tp_name*/
   sizeof(struct __pyx_array_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_array, /*tp_dealloc*/
@@ -19898,7 +19782,7 @@ static PyMethodDef __pyx_methods_Enum[] = {
 
 static PyTypeObject __pyx_type___pyx_MemviewEnum = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_criterion.Enum", /*tp_name*/
+  "stpredictions.models.OK3._criterion.Enum", /*tp_name*/
   sizeof(struct __pyx_MemviewEnum_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_Enum, /*tp_dealloc*/
@@ -20159,7 +20043,7 @@ static PyBufferProcs __pyx_tp_as_buffer_memoryview = {
 
 static PyTypeObject __pyx_type___pyx_memoryview = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_criterion.memoryview", /*tp_name*/
+  "stpredictions.models.OK3._criterion.memoryview", /*tp_name*/
   sizeof(struct __pyx_memoryview_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_memoryview, /*tp_dealloc*/
@@ -20297,7 +20181,7 @@ static struct PyGetSetDef __pyx_getsets__memoryviewslice[] = {
 
 static PyTypeObject __pyx_type___pyx_memoryviewslice = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_criterion._memoryviewslice", /*tp_name*/
+  "stpredictions.models.OK3._criterion._memoryviewslice", /*tp_name*/
   sizeof(struct __pyx_memoryviewslice_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc__memoryviewslice, /*tp_dealloc*/
@@ -20554,7 +20438,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":884
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":884
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -20565,7 +20449,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":890
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":890
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -20894,63 +20778,63 @@ static int __Pyx_modinit_type_init_code(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  __pyx_vtabptr_10_criterion_Criterion = &__pyx_vtable_10_criterion_Criterion;
-  __pyx_vtable_10_criterion_Criterion.init = (int (*)(struct __pyx_obj_10_criterion_Criterion *, __Pyx_memviewslice, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *, double, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t))__pyx_f_10_criterion_9Criterion_init;
-  __pyx_vtable_10_criterion_Criterion.reset = (int (*)(struct __pyx_obj_10_criterion_Criterion *))__pyx_f_10_criterion_9Criterion_reset;
-  __pyx_vtable_10_criterion_Criterion.reverse_reset = (int (*)(struct __pyx_obj_10_criterion_Criterion *))__pyx_f_10_criterion_9Criterion_reverse_reset;
-  __pyx_vtable_10_criterion_Criterion.update = (int (*)(struct __pyx_obj_10_criterion_Criterion *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t))__pyx_f_10_criterion_9Criterion_update;
-  __pyx_vtable_10_criterion_Criterion.node_impurity = (double (*)(struct __pyx_obj_10_criterion_Criterion *))__pyx_f_10_criterion_9Criterion_node_impurity;
-  __pyx_vtable_10_criterion_Criterion.children_impurity = (void (*)(struct __pyx_obj_10_criterion_Criterion *, double *, double *))__pyx_f_10_criterion_9Criterion_children_impurity;
-  __pyx_vtable_10_criterion_Criterion.node_value = (void (*)(struct __pyx_obj_10_criterion_Criterion *, double *))__pyx_f_10_criterion_9Criterion_node_value;
-  __pyx_vtable_10_criterion_Criterion.impurity_improvement = (double (*)(struct __pyx_obj_10_criterion_Criterion *, double))__pyx_f_10_criterion_9Criterion_impurity_improvement;
-  __pyx_vtable_10_criterion_Criterion.proxy_impurity_improvement = (double (*)(struct __pyx_obj_10_criterion_Criterion *))__pyx_f_10_criterion_9Criterion_proxy_impurity_improvement;
-  if (PyType_Ready(&__pyx_type_10_criterion_Criterion) < 0) __PYX_ERR(1, 22, __pyx_L1_error)
+  __pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_Criterion = &__pyx_vtable_13stpredictions_6models_3OK3_10_criterion_Criterion;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_Criterion.init = (int (*)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, __Pyx_memviewslice, __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *, double, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t))__pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_init;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_Criterion.reset = (int (*)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *))__pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_reset;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_Criterion.reverse_reset = (int (*)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *))__pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_reverse_reset;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_Criterion.update = (int (*)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t))__pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_update;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_Criterion.node_impurity = (double (*)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *))__pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_node_impurity;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_Criterion.children_impurity = (void (*)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, double *, double *))__pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_children_impurity;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_Criterion.node_value = (void (*)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, double *))__pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_node_value;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_Criterion.impurity_improvement = (double (*)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, double))__pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_impurity_improvement;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_Criterion.proxy_impurity_improvement = (double (*)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *))__pyx_f_13stpredictions_6models_3OK3_10_criterion_9Criterion_proxy_impurity_improvement;
+  if (PyType_Ready(&__pyx_type_13stpredictions_6models_3OK3_10_criterion_Criterion) < 0) __PYX_ERR(1, 22, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_10_criterion_Criterion.tp_print = 0;
+  __pyx_type_13stpredictions_6models_3OK3_10_criterion_Criterion.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_10_criterion_Criterion.tp_dictoffset && __pyx_type_10_criterion_Criterion.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_10_criterion_Criterion.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_13stpredictions_6models_3OK3_10_criterion_Criterion.tp_dictoffset && __pyx_type_13stpredictions_6models_3OK3_10_criterion_Criterion.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_13stpredictions_6models_3OK3_10_criterion_Criterion.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_10_criterion_Criterion.tp_dict, __pyx_vtabptr_10_criterion_Criterion) < 0) __PYX_ERR(1, 22, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_Criterion, (PyObject *)&__pyx_type_10_criterion_Criterion) < 0) __PYX_ERR(1, 22, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_10_criterion_Criterion) < 0) __PYX_ERR(1, 22, __pyx_L1_error)
-  __pyx_ptype_10_criterion_Criterion = &__pyx_type_10_criterion_Criterion;
-  __pyx_vtabptr_10_criterion_KernelizedRegressionCriterion = &__pyx_vtable_10_criterion_KernelizedRegressionCriterion;
-  __pyx_vtable_10_criterion_KernelizedRegressionCriterion.__pyx_base = *__pyx_vtabptr_10_criterion_Criterion;
-  __pyx_vtable_10_criterion_KernelizedRegressionCriterion.__pyx_base.init = (int (*)(struct __pyx_obj_10_criterion_Criterion *, __Pyx_memviewslice, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *, double, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t))__pyx_f_10_criterion_29KernelizedRegressionCriterion_init;
-  __pyx_vtable_10_criterion_KernelizedRegressionCriterion.__pyx_base.reset = (int (*)(struct __pyx_obj_10_criterion_Criterion *))__pyx_f_10_criterion_29KernelizedRegressionCriterion_reset;
-  __pyx_vtable_10_criterion_KernelizedRegressionCriterion.__pyx_base.reverse_reset = (int (*)(struct __pyx_obj_10_criterion_Criterion *))__pyx_f_10_criterion_29KernelizedRegressionCriterion_reverse_reset;
-  __pyx_vtable_10_criterion_KernelizedRegressionCriterion.__pyx_base.update = (int (*)(struct __pyx_obj_10_criterion_Criterion *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t))__pyx_f_10_criterion_29KernelizedRegressionCriterion_update;
-  __pyx_vtable_10_criterion_KernelizedRegressionCriterion.__pyx_base.node_impurity = (double (*)(struct __pyx_obj_10_criterion_Criterion *))__pyx_f_10_criterion_29KernelizedRegressionCriterion_node_impurity;
-  __pyx_vtable_10_criterion_KernelizedRegressionCriterion.__pyx_base.children_impurity = (void (*)(struct __pyx_obj_10_criterion_Criterion *, double *, double *))__pyx_f_10_criterion_29KernelizedRegressionCriterion_children_impurity;
-  __pyx_vtable_10_criterion_KernelizedRegressionCriterion.__pyx_base.node_value = (void (*)(struct __pyx_obj_10_criterion_Criterion *, double *))__pyx_f_10_criterion_29KernelizedRegressionCriterion_node_value;
-  __pyx_type_10_criterion_KernelizedRegressionCriterion.tp_base = __pyx_ptype_10_criterion_Criterion;
-  if (PyType_Ready(&__pyx_type_10_criterion_KernelizedRegressionCriterion) < 0) __PYX_ERR(1, 209, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_13stpredictions_6models_3OK3_10_criterion_Criterion.tp_dict, __pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_Criterion) < 0) __PYX_ERR(1, 22, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_Criterion, (PyObject *)&__pyx_type_13stpredictions_6models_3OK3_10_criterion_Criterion) < 0) __PYX_ERR(1, 22, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_13stpredictions_6models_3OK3_10_criterion_Criterion) < 0) __PYX_ERR(1, 22, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_10_criterion_Criterion = &__pyx_type_13stpredictions_6models_3OK3_10_criterion_Criterion;
+  __pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion = &__pyx_vtable_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion.__pyx_base = *__pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_Criterion;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion.__pyx_base.init = (int (*)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, __Pyx_memviewslice, __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *, double, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t))__pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_init;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion.__pyx_base.reset = (int (*)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *))__pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_reset;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion.__pyx_base.reverse_reset = (int (*)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *))__pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_reverse_reset;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion.__pyx_base.update = (int (*)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t))__pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_update;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion.__pyx_base.node_impurity = (double (*)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *))__pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_node_impurity;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion.__pyx_base.children_impurity = (void (*)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, double *, double *))__pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_children_impurity;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion.__pyx_base.node_value = (void (*)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, double *))__pyx_f_13stpredictions_6models_3OK3_10_criterion_29KernelizedRegressionCriterion_node_value;
+  __pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion.tp_base = __pyx_ptype_13stpredictions_6models_3OK3_10_criterion_Criterion;
+  if (PyType_Ready(&__pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion) < 0) __PYX_ERR(1, 209, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_10_criterion_KernelizedRegressionCriterion.tp_print = 0;
+  __pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_10_criterion_KernelizedRegressionCriterion.tp_dictoffset && __pyx_type_10_criterion_KernelizedRegressionCriterion.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_10_criterion_KernelizedRegressionCriterion.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion.tp_dictoffset && __pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_10_criterion_KernelizedRegressionCriterion.tp_dict, __pyx_vtabptr_10_criterion_KernelizedRegressionCriterion) < 0) __PYX_ERR(1, 209, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_KernelizedRegressionCriterion, (PyObject *)&__pyx_type_10_criterion_KernelizedRegressionCriterion) < 0) __PYX_ERR(1, 209, __pyx_L1_error)
-  __pyx_ptype_10_criterion_KernelizedRegressionCriterion = &__pyx_type_10_criterion_KernelizedRegressionCriterion;
-  __pyx_vtabptr_10_criterion_KernelizedMSE = &__pyx_vtable_10_criterion_KernelizedMSE;
-  __pyx_vtable_10_criterion_KernelizedMSE.__pyx_base = *__pyx_vtabptr_10_criterion_KernelizedRegressionCriterion;
-  __pyx_vtable_10_criterion_KernelizedMSE.__pyx_base.__pyx_base.node_impurity = (double (*)(struct __pyx_obj_10_criterion_Criterion *))__pyx_f_10_criterion_13KernelizedMSE_node_impurity;
-  __pyx_vtable_10_criterion_KernelizedMSE.__pyx_base.__pyx_base.children_impurity = (void (*)(struct __pyx_obj_10_criterion_Criterion *, double *, double *))__pyx_f_10_criterion_13KernelizedMSE_children_impurity;
-  __pyx_vtable_10_criterion_KernelizedMSE.__pyx_base.__pyx_base.proxy_impurity_improvement = (double (*)(struct __pyx_obj_10_criterion_Criterion *))__pyx_f_10_criterion_13KernelizedMSE_proxy_impurity_improvement;
-  __pyx_type_10_criterion_KernelizedMSE.tp_base = __pyx_ptype_10_criterion_KernelizedRegressionCriterion;
-  if (PyType_Ready(&__pyx_type_10_criterion_KernelizedMSE) < 0) __PYX_ERR(1, 445, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion.tp_dict, __pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion) < 0) __PYX_ERR(1, 209, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_KernelizedRegressionCriterion, (PyObject *)&__pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion) < 0) __PYX_ERR(1, 209, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion = &__pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion;
+  __pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE = &__pyx_vtable_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE.__pyx_base = *__pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE.__pyx_base.__pyx_base.node_impurity = (double (*)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *))__pyx_f_13stpredictions_6models_3OK3_10_criterion_13KernelizedMSE_node_impurity;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE.__pyx_base.__pyx_base.children_impurity = (void (*)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, double *, double *))__pyx_f_13stpredictions_6models_3OK3_10_criterion_13KernelizedMSE_children_impurity;
+  __pyx_vtable_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE.__pyx_base.__pyx_base.proxy_impurity_improvement = (double (*)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *))__pyx_f_13stpredictions_6models_3OK3_10_criterion_13KernelizedMSE_proxy_impurity_improvement;
+  __pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE.tp_base = __pyx_ptype_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion;
+  if (PyType_Ready(&__pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE) < 0) __PYX_ERR(1, 445, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_10_criterion_KernelizedMSE.tp_print = 0;
+  __pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_10_criterion_KernelizedMSE.tp_dictoffset && __pyx_type_10_criterion_KernelizedMSE.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_10_criterion_KernelizedMSE.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE.tp_dictoffset && __pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_10_criterion_KernelizedMSE.tp_dict, __pyx_vtabptr_10_criterion_KernelizedMSE) < 0) __PYX_ERR(1, 445, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_KernelizedMSE, (PyObject *)&__pyx_type_10_criterion_KernelizedMSE) < 0) __PYX_ERR(1, 445, __pyx_L1_error)
-  __pyx_ptype_10_criterion_KernelizedMSE = &__pyx_type_10_criterion_KernelizedMSE;
+  if (__Pyx_SetVtable(__pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE.tp_dict, __pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE) < 0) __PYX_ERR(1, 445, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_KernelizedMSE, (PyObject *)&__pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE) < 0) __PYX_ERR(1, 445, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE = &__pyx_type_13stpredictions_6models_3OK3_10_criterion_KernelizedMSE;
   __pyx_vtabptr_array = &__pyx_vtable_array;
   __pyx_vtable_array.get_memview = (PyObject *(*)(struct __pyx_array_obj *))__pyx_array_get_memview;
   if (PyType_Ready(&__pyx_type___pyx_array) < 0) __PYX_ERR(0, 105, __pyx_L1_error)
@@ -21041,53 +20925,41 @@ static int __Pyx_modinit_type_import_code(void) {
   __pyx_ptype_5numpy_ufunc = __Pyx_ImportType(__pyx_t_1, "numpy", "ufunc", sizeof(PyUFuncObject), __Pyx_ImportType_CheckSize_Ignore);
    if (!__pyx_ptype_5numpy_ufunc) __PYX_ERR(2, 764, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyImport_ImportModule("sklearn.tree._criterion"); if (unlikely(!__pyx_t_1)) __PYX_ERR(4, 21, __pyx_L1_error)
+  __pyx_t_1 = PyImport_ImportModule("stpredictions.models.OK3._splitter"); if (unlikely(!__pyx_t_1)) __PYX_ERR(4, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_ptype_7sklearn_4tree_10_criterion_Criterion = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._criterion", "Criterion", sizeof(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_10_criterion_Criterion) __PYX_ERR(4, 21, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_10_criterion_Criterion = (struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_Criterion*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_10_criterion_Criterion->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_10_criterion_Criterion)) __PYX_ERR(4, 21, __pyx_L1_error)
-  __pyx_ptype_7sklearn_4tree_10_criterion_ClassificationCriterion = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._criterion", "ClassificationCriterion", sizeof(struct __pyx_obj_7sklearn_4tree_10_criterion_ClassificationCriterion), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_10_criterion_ClassificationCriterion) __PYX_ERR(4, 70, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_10_criterion_ClassificationCriterion = (struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_ClassificationCriterion*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_10_criterion_ClassificationCriterion->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_10_criterion_ClassificationCriterion)) __PYX_ERR(4, 70, __pyx_L1_error)
-  __pyx_ptype_7sklearn_4tree_10_criterion_RegressionCriterion = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._criterion", "RegressionCriterion", sizeof(struct __pyx_obj_7sklearn_4tree_10_criterion_RegressionCriterion), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_10_criterion_RegressionCriterion) __PYX_ERR(4, 76, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_10_criterion_RegressionCriterion = (struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_RegressionCriterion*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_10_criterion_RegressionCriterion->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_10_criterion_RegressionCriterion)) __PYX_ERR(4, 76, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_9_splitter_Splitter = __Pyx_ImportType(__pyx_t_1, "stpredictions.models.OK3._splitter", "Splitter", sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter), __Pyx_ImportType_CheckSize_Warn);
+   if (!__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_Splitter) __PYX_ERR(4, 25, __pyx_L1_error)
+  __pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_Splitter = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_Splitter*)__Pyx_GetVtable(__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_Splitter->tp_dict); if (unlikely(!__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_Splitter)) __PYX_ERR(4, 25, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyImport_ImportModule("sklearn.tree._splitter"); if (unlikely(!__pyx_t_1)) __PYX_ERR(5, 34, __pyx_L1_error)
+  __pyx_t_1 = PyImport_ImportModule("stpredictions.models.OK3._tree"); if (unlikely(!__pyx_t_1)) __PYX_ERR(5, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_ptype_7sklearn_4tree_9_splitter_Splitter = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._splitter", "Splitter", sizeof(struct __pyx_obj_7sklearn_4tree_9_splitter_Splitter), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_9_splitter_Splitter) __PYX_ERR(5, 34, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_9_splitter_Splitter = (struct __pyx_vtabstruct_7sklearn_4tree_9_splitter_Splitter*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_9_splitter_Splitter->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_9_splitter_Splitter)) __PYX_ERR(5, 34, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_5_tree_Tree = __Pyx_ImportType(__pyx_t_1, "stpredictions.models.OK3._tree", "Tree", sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree), __Pyx_ImportType_CheckSize_Warn);
+   if (!__pyx_ptype_13stpredictions_6models_3OK3_5_tree_Tree) __PYX_ERR(5, 28, __pyx_L1_error)
+  __pyx_vtabptr_13stpredictions_6models_3OK3_5_tree_Tree = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_5_tree_Tree*)__Pyx_GetVtable(__pyx_ptype_13stpredictions_6models_3OK3_5_tree_Tree->tp_dict); if (unlikely(!__pyx_vtabptr_13stpredictions_6models_3OK3_5_tree_Tree)) __PYX_ERR(5, 28, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_5_tree_TreeBuilder = __Pyx_ImportType(__pyx_t_1, "stpredictions.models.OK3._tree", "TreeBuilder", sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_TreeBuilder), __Pyx_ImportType_CheckSize_Warn);
+   if (!__pyx_ptype_13stpredictions_6models_3OK3_5_tree_TreeBuilder) __PYX_ERR(5, 75, __pyx_L1_error)
+  __pyx_vtabptr_13stpredictions_6models_3OK3_5_tree_TreeBuilder = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_5_tree_TreeBuilder*)__Pyx_GetVtable(__pyx_ptype_13stpredictions_6models_3OK3_5_tree_TreeBuilder->tp_dict); if (unlikely(!__pyx_vtabptr_13stpredictions_6models_3OK3_5_tree_TreeBuilder)) __PYX_ERR(5, 75, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyImport_ImportModule("sklearn.tree._tree"); if (unlikely(!__pyx_t_1)) __PYX_ERR(6, 37, __pyx_L1_error)
+  __pyx_t_1 = PyImport_ImportModule("stpredictions.models.OK3._quad_tree"); if (unlikely(!__pyx_t_1)) __PYX_ERR(6, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_ptype_7sklearn_4tree_5_tree_Tree = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._tree", "Tree", sizeof(struct __pyx_obj_7sklearn_4tree_5_tree_Tree), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_5_tree_Tree) __PYX_ERR(6, 37, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_5_tree_Tree = (struct __pyx_vtabstruct_7sklearn_4tree_5_tree_Tree*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_5_tree_Tree->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_5_tree_Tree)) __PYX_ERR(6, 37, __pyx_L1_error)
-  __pyx_ptype_7sklearn_4tree_5_tree_TreeBuilder = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._tree", "TreeBuilder", sizeof(struct __pyx_obj_7sklearn_4tree_5_tree_TreeBuilder), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_5_tree_TreeBuilder) __PYX_ERR(6, 85, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_5_tree_TreeBuilder = (struct __pyx_vtabstruct_7sklearn_4tree_5_tree_TreeBuilder*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_5_tree_TreeBuilder->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_5_tree_TreeBuilder)) __PYX_ERR(6, 85, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_10_quad_tree__QuadTree = __Pyx_ImportType(__pyx_t_1, "stpredictions.models.OK3._quad_tree", "_QuadTree", sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree), __Pyx_ImportType_CheckSize_Warn);
+   if (!__pyx_ptype_13stpredictions_6models_3OK3_10_quad_tree__QuadTree) __PYX_ERR(6, 55, __pyx_L1_error)
+  __pyx_vtabptr_13stpredictions_6models_3OK3_10_quad_tree__QuadTree = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_quad_tree__QuadTree*)__Pyx_GetVtable(__pyx_ptype_13stpredictions_6models_3OK3_10_quad_tree__QuadTree->tp_dict); if (unlikely(!__pyx_vtabptr_13stpredictions_6models_3OK3_10_quad_tree__QuadTree)) __PYX_ERR(6, 55, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyImport_ImportModule("sklearn.neighbors._quad_tree"); if (unlikely(!__pyx_t_1)) __PYX_ERR(7, 55, __pyx_L1_error)
+  __pyx_t_1 = PyImport_ImportModule("stpredictions.models.OK3._utils"); if (unlikely(!__pyx_t_1)) __PYX_ERR(7, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_ptype_7sklearn_9neighbors_10_quad_tree__QuadTree = __Pyx_ImportType(__pyx_t_1, "sklearn.neighbors._quad_tree", "_QuadTree", sizeof(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_9neighbors_10_quad_tree__QuadTree) __PYX_ERR(7, 55, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_9neighbors_10_quad_tree__QuadTree = (struct __pyx_vtabstruct_7sklearn_9neighbors_10_quad_tree__QuadTree*)__Pyx_GetVtable(__pyx_ptype_7sklearn_9neighbors_10_quad_tree__QuadTree->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_9neighbors_10_quad_tree__QuadTree)) __PYX_ERR(7, 55, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyImport_ImportModule("sklearn.tree._utils"); if (unlikely(!__pyx_t_1)) __PYX_ERR(8, 79, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_ptype_7sklearn_4tree_6_utils_Stack = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._utils", "Stack", sizeof(struct __pyx_obj_7sklearn_4tree_6_utils_Stack), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_6_utils_Stack) __PYX_ERR(8, 79, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_6_utils_Stack = (struct __pyx_vtabstruct_7sklearn_4tree_6_utils_Stack*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_6_utils_Stack->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_6_utils_Stack)) __PYX_ERR(8, 79, __pyx_L1_error)
-  __pyx_ptype_7sklearn_4tree_6_utils_PriorityHeap = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._utils", "PriorityHeap", sizeof(struct __pyx_obj_7sklearn_4tree_6_utils_PriorityHeap), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_6_utils_PriorityHeap) __PYX_ERR(8, 108, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_6_utils_PriorityHeap = (struct __pyx_vtabstruct_7sklearn_4tree_6_utils_PriorityHeap*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_6_utils_PriorityHeap->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_6_utils_PriorityHeap)) __PYX_ERR(8, 108, __pyx_L1_error)
-  __pyx_ptype_7sklearn_4tree_6_utils_WeightedPQueue = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._utils", "WeightedPQueue", sizeof(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_6_utils_WeightedPQueue) __PYX_ERR(8, 131, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_6_utils_WeightedPQueue = (struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedPQueue*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_6_utils_WeightedPQueue->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_6_utils_WeightedPQueue)) __PYX_ERR(8, 131, __pyx_L1_error)
-  __pyx_ptype_7sklearn_4tree_6_utils_WeightedMedianCalculator = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._utils", "WeightedMedianCalculator", sizeof(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_6_utils_WeightedMedianCalculator) __PYX_ERR(8, 151, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_6_utils_WeightedMedianCalculator = (struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedMedianCalculator*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_6_utils_WeightedMedianCalculator->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_6_utils_WeightedMedianCalculator)) __PYX_ERR(8, 151, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_6_utils_Stack = __Pyx_ImportType(__pyx_t_1, "stpredictions.models.OK3._utils", "Stack", sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_Stack), __Pyx_ImportType_CheckSize_Warn);
+   if (!__pyx_ptype_13stpredictions_6models_3OK3_6_utils_Stack) __PYX_ERR(7, 79, __pyx_L1_error)
+  __pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_Stack = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_Stack*)__Pyx_GetVtable(__pyx_ptype_13stpredictions_6models_3OK3_6_utils_Stack->tp_dict); if (unlikely(!__pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_Stack)) __PYX_ERR(7, 79, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_6_utils_PriorityHeap = __Pyx_ImportType(__pyx_t_1, "stpredictions.models.OK3._utils", "PriorityHeap", sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_PriorityHeap), __Pyx_ImportType_CheckSize_Warn);
+   if (!__pyx_ptype_13stpredictions_6models_3OK3_6_utils_PriorityHeap) __PYX_ERR(7, 108, __pyx_L1_error)
+  __pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_PriorityHeap = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_PriorityHeap*)__Pyx_GetVtable(__pyx_ptype_13stpredictions_6models_3OK3_6_utils_PriorityHeap->tp_dict); if (unlikely(!__pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_PriorityHeap)) __PYX_ERR(7, 108, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_6_utils_WeightedPQueue = __Pyx_ImportType(__pyx_t_1, "stpredictions.models.OK3._utils", "WeightedPQueue", sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue), __Pyx_ImportType_CheckSize_Warn);
+   if (!__pyx_ptype_13stpredictions_6models_3OK3_6_utils_WeightedPQueue) __PYX_ERR(7, 131, __pyx_L1_error)
+  __pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_WeightedPQueue = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_WeightedPQueue*)__Pyx_GetVtable(__pyx_ptype_13stpredictions_6models_3OK3_6_utils_WeightedPQueue->tp_dict); if (unlikely(!__pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_WeightedPQueue)) __PYX_ERR(7, 131, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator = __Pyx_ImportType(__pyx_t_1, "stpredictions.models.OK3._utils", "WeightedMedianCalculator", sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator), __Pyx_ImportType_CheckSize_Warn);
+   if (!__pyx_ptype_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator) __PYX_ERR(7, 151, __pyx_L1_error)
+  __pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator*)__Pyx_GetVtable(__pyx_ptype_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator->tp_dict); if (unlikely(!__pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator)) __PYX_ERR(7, 151, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_RefNannyFinishContext();
   return 0;
@@ -21105,9 +20977,9 @@ static int __Pyx_modinit_variable_import_code(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_variable_import_code", 0);
   /*--- Variable import code ---*/
-  __pyx_t_1 = PyImport_ImportModule("sklearn.neighbors._quad_tree"); if (!__pyx_t_1) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_t_1 = PyImport_ImportModule("stpredictions.models.OK3._quad_tree"); if (!__pyx_t_1) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_ImportVoidPtr(__pyx_t_1, "EPSILON", (void **)&__pyx_vp_7sklearn_9neighbors_10_quad_tree_EPSILON, "float") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  if (__Pyx_ImportVoidPtr(__pyx_t_1, "EPSILON", (void **)&__pyx_vp_13stpredictions_6models_3OK3_10_quad_tree_EPSILON, "float") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_RefNannyFinishContext();
   return 0;
@@ -21125,21 +20997,21 @@ static int __Pyx_modinit_function_import_code(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_function_import_code", 0);
   /*--- Function import code ---*/
-  __pyx_t_1 = PyImport_ImportModule("sklearn.tree._utils"); if (!__pyx_t_1) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_t_1 = PyImport_ImportModule("stpredictions.models.OK3._utils"); if (!__pyx_t_1) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_ImportFunction(__pyx_t_1, "sizet_ptr_to_ndarray", (void (**)(void))&__pyx_f_7sklearn_4tree_6_utils_sizet_ptr_to_ndarray, "PyArrayObject *(__pyx_t_7sklearn_4tree_6_utils_SIZE_t *, __pyx_t_7sklearn_4tree_6_utils_SIZE_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "log", (void (**)(void))&__pyx_f_7sklearn_4tree_6_utils_log, "double (double)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_0safe_realloc", (void (**)(void))&__pyx_fuse_0__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "__pyx_t_7sklearn_4tree_6_utils_DTYPE_t *(__pyx_t_7sklearn_4tree_6_utils_DTYPE_t **, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_1safe_realloc", (void (**)(void))&__pyx_fuse_1__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "__pyx_t_7sklearn_4tree_6_utils_SIZE_t *(__pyx_t_7sklearn_4tree_6_utils_SIZE_t **, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_2safe_realloc", (void (**)(void))&__pyx_fuse_2__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "unsigned char *(unsigned char **, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_3safe_realloc", (void (**)(void))&__pyx_fuse_3__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "struct __pyx_t_7sklearn_4tree_6_utils_WeightedPQueueRecord *(struct __pyx_t_7sklearn_4tree_6_utils_WeightedPQueueRecord **, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_4safe_realloc", (void (**)(void))&__pyx_fuse_4__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "__pyx_t_7sklearn_4tree_6_utils_DOUBLE_t *(__pyx_t_7sklearn_4tree_6_utils_DOUBLE_t **, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_5safe_realloc", (void (**)(void))&__pyx_fuse_5__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "__pyx_t_7sklearn_4tree_6_utils_DOUBLE_t **(__pyx_t_7sklearn_4tree_6_utils_DOUBLE_t ***, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_6safe_realloc", (void (**)(void))&__pyx_fuse_6__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "struct __pyx_t_7sklearn_4tree_5_tree_Node *(struct __pyx_t_7sklearn_4tree_5_tree_Node **, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_7safe_realloc", (void (**)(void))&__pyx_fuse_7__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell *(struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell **, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_8safe_realloc", (void (**)(void))&__pyx_fuse_8__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "struct __pyx_t_7sklearn_4tree_5_tree_Node **(struct __pyx_t_7sklearn_4tree_5_tree_Node ***, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_9safe_realloc", (void (**)(void))&__pyx_fuse_9__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "struct __pyx_t_7sklearn_4tree_6_utils_StackRecord *(struct __pyx_t_7sklearn_4tree_6_utils_StackRecord **, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_10safe_realloc", (void (**)(void))&__pyx_fuse_10__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord *(struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord **, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "sizet_ptr_to_ndarray", (void (**)(void))&__pyx_f_13stpredictions_6models_3OK3_6_utils_sizet_ptr_to_ndarray, "PyArrayObject *(__pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "log", (void (**)(void))&__pyx_f_13stpredictions_6models_3OK3_6_utils_log, "double (double)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_0safe_realloc", (void (**)(void))&__pyx_fuse_0__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "__pyx_t_13stpredictions_6models_3OK3_6_utils_DTYPE_t *(__pyx_t_13stpredictions_6models_3OK3_6_utils_DTYPE_t **, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_1safe_realloc", (void (**)(void))&__pyx_fuse_1__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "__pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t *(__pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t **, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_2safe_realloc", (void (**)(void))&__pyx_fuse_2__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "unsigned char *(unsigned char **, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_3safe_realloc", (void (**)(void))&__pyx_fuse_3__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "struct __pyx_t_13stpredictions_6models_3OK3_6_utils_WeightedPQueueRecord *(struct __pyx_t_13stpredictions_6models_3OK3_6_utils_WeightedPQueueRecord **, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_4safe_realloc", (void (**)(void))&__pyx_fuse_4__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "__pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t *(__pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t **, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_5safe_realloc", (void (**)(void))&__pyx_fuse_5__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "__pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t **(__pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t ***, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_6safe_realloc", (void (**)(void))&__pyx_fuse_6__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node *(struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node **, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_7safe_realloc", (void (**)(void))&__pyx_fuse_7__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell *(struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell **, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_8safe_realloc", (void (**)(void))&__pyx_fuse_8__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node **(struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node ***, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_9safe_realloc", (void (**)(void))&__pyx_fuse_9__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "struct __pyx_t_13stpredictions_6models_3OK3_6_utils_StackRecord *(struct __pyx_t_13stpredictions_6models_3OK3_6_utils_StackRecord **, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_10safe_realloc", (void (**)(void))&__pyx_fuse_10__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord *(struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord **, size_t)") < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_RefNannyFinishContext();
   return 0;
@@ -21325,14 +21197,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main__criterion) {
+  if (__pyx_module_is_main_stpredictions__models__OK3___criterion) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name_2, __pyx_n_s_main) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(1, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "_criterion")) {
-      if (unlikely(PyDict_SetItemString(modules, "_criterion", __pyx_m) < 0)) __PYX_ERR(1, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "stpredictions.models.OK3._criterion")) {
+      if (unlikely(PyDict_SetItemString(modules, "stpredictions.models.OK3._criterion", __pyx_m) < 0)) __PYX_ERR(1, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -21353,7 +21225,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   #endif
 
-  /* "_criterion.pyx":11
+  /* "stpredictions/models/OK3/_criterion.pyx":11
  * from libc.math cimport fabs
  * 
  * import numpy as np             # <<<<<<<<<<<<<<
@@ -21365,16 +21237,16 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(1, 11, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "_criterion.pyx":13
+  /* "stpredictions/models/OK3/_criterion.pyx":13
  * import numpy as np
  * cimport numpy as np
  * np.import_array()             # <<<<<<<<<<<<<<
  * 
- * from sklearn.tree._utils cimport log
+ * from ._utils cimport log
  */
   __pyx_t_2 = __pyx_f_5numpy_import_array(); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(1, 13, __pyx_L1_error)
 
-  /* "_criterion.pyx":1
+  /* "stpredictions/models/OK3/_criterion.pyx":1
  * # cython: cdivision=True             # <<<<<<<<<<<<<<
  * # cython: boundscheck=False
  * # cython: wraparound=False
@@ -21544,11 +21416,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_1);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init _criterion", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init stpredictions.models.OK3._criterion", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init _criterion");
+    PyErr_SetString(PyExc_ImportError, "init stpredictions.models.OK3._criterion");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

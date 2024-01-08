@@ -4,8 +4,8 @@
 {
     "distutils": {
         "depends": [
-            "/home/asani/anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/core/include/numpy/arrayobject.h",
-            "/home/asani/anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/core/include/numpy/ufuncobject.h"
+            "/home/asani/Documents/Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/core/include/numpy/arrayobject.h",
+            "/home/asani/Documents/Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/core/include/numpy/ufuncobject.h"
         ],
         "extra_compile_args": [
             "-O3",
@@ -16,15 +16,15 @@
             "-fopenmp"
         ],
         "include_dirs": [
-            "/home/asani/anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/core/include",
+            "/home/asani/Documents/Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/core/include",
             "/home/asani/Documents/Hi_Paris_Code_Projects/Florence/structured-predictions/stpredictions/models/OK3/test"
         ],
-        "name": "_splitter",
+        "name": "stpredictions.models.OK3._splitter",
         "sources": [
             "stpredictions/models/OK3/_splitter.pyx"
         ]
     },
-    "module_name": "_splitter"
+    "module_name": "stpredictions.models.OK3._splitter"
 }
 END: Cython Metadata */
 
@@ -632,8 +632,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE___splitter
-#define __PYX_HAVE_API___splitter
+#define __PYX_HAVE__stpredictions__models__OK3___splitter
+#define __PYX_HAVE_API__stpredictions__models__OK3___splitter
 /* Early includes */
 #include <string.h>
 #include <stdio.h>
@@ -880,12 +880,10 @@ static const char *__pyx_f[] = {
   "stpredictions/models/OK3/_splitter.pxd",
   "__init__.pxd",
   "type.pxd",
-  "_criterion.pxd",
-  "_splitter.pxd",
-  "_tree.pxd",
+  "stpredictions/models/OK3/_tree.pxd",
   "stpredictions/models/OK3/_criterion.pxd",
-  "_quad_tree.pxd",
-  "_utils.pxd",
+  "stpredictions/models/OK3/_quad_tree.pxd",
+  "stpredictions/models/OK3/_utils.pxd",
 };
 /* MemviewSliceStruct.proto */
 struct __pyx_memoryview_obj;
@@ -996,7 +994,7 @@ typedef struct {
 } __Pyx_BufFmt_Context;
 
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":689
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":689
  * # in Cython to enable them only on the right systems.
  * 
  * ctypedef npy_int8       int8_t             # <<<<<<<<<<<<<<
@@ -1005,7 +1003,7 @@ typedef struct {
  */
 typedef npy_int8 __pyx_t_5numpy_int8_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":690
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":690
  * 
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t             # <<<<<<<<<<<<<<
@@ -1014,7 +1012,7 @@ typedef npy_int8 __pyx_t_5numpy_int8_t;
  */
 typedef npy_int16 __pyx_t_5numpy_int16_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":691
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":691
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t             # <<<<<<<<<<<<<<
@@ -1023,7 +1021,7 @@ typedef npy_int16 __pyx_t_5numpy_int16_t;
  */
 typedef npy_int32 __pyx_t_5numpy_int32_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":692
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":692
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t
  * ctypedef npy_int64      int64_t             # <<<<<<<<<<<<<<
@@ -1032,7 +1030,7 @@ typedef npy_int32 __pyx_t_5numpy_int32_t;
  */
 typedef npy_int64 __pyx_t_5numpy_int64_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":696
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":696
  * #ctypedef npy_int128     int128_t
  * 
  * ctypedef npy_uint8      uint8_t             # <<<<<<<<<<<<<<
@@ -1041,7 +1039,7 @@ typedef npy_int64 __pyx_t_5numpy_int64_t;
  */
 typedef npy_uint8 __pyx_t_5numpy_uint8_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":697
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":697
  * 
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t             # <<<<<<<<<<<<<<
@@ -1050,7 +1048,7 @@ typedef npy_uint8 __pyx_t_5numpy_uint8_t;
  */
 typedef npy_uint16 __pyx_t_5numpy_uint16_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":698
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":698
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t             # <<<<<<<<<<<<<<
@@ -1059,7 +1057,7 @@ typedef npy_uint16 __pyx_t_5numpy_uint16_t;
  */
 typedef npy_uint32 __pyx_t_5numpy_uint32_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":699
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":699
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t
  * ctypedef npy_uint64     uint64_t             # <<<<<<<<<<<<<<
@@ -1068,7 +1066,7 @@ typedef npy_uint32 __pyx_t_5numpy_uint32_t;
  */
 typedef npy_uint64 __pyx_t_5numpy_uint64_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":703
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":703
  * #ctypedef npy_uint128    uint128_t
  * 
  * ctypedef npy_float32    float32_t             # <<<<<<<<<<<<<<
@@ -1077,7 +1075,7 @@ typedef npy_uint64 __pyx_t_5numpy_uint64_t;
  */
 typedef npy_float32 __pyx_t_5numpy_float32_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":704
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":704
  * 
  * ctypedef npy_float32    float32_t
  * ctypedef npy_float64    float64_t             # <<<<<<<<<<<<<<
@@ -1086,7 +1084,7 @@ typedef npy_float32 __pyx_t_5numpy_float32_t;
  */
 typedef npy_float64 __pyx_t_5numpy_float64_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":713
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":713
  * # The int types are mapped a bit surprising --
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t             # <<<<<<<<<<<<<<
@@ -1095,7 +1093,7 @@ typedef npy_float64 __pyx_t_5numpy_float64_t;
  */
 typedef npy_long __pyx_t_5numpy_int_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":714
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":714
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t             # <<<<<<<<<<<<<<
@@ -1104,7 +1102,7 @@ typedef npy_long __pyx_t_5numpy_int_t;
  */
 typedef npy_longlong __pyx_t_5numpy_long_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":715
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":715
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t
  * ctypedef npy_longlong   longlong_t             # <<<<<<<<<<<<<<
@@ -1113,7 +1111,7 @@ typedef npy_longlong __pyx_t_5numpy_long_t;
  */
 typedef npy_longlong __pyx_t_5numpy_longlong_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":717
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":717
  * ctypedef npy_longlong   longlong_t
  * 
  * ctypedef npy_ulong      uint_t             # <<<<<<<<<<<<<<
@@ -1122,7 +1120,7 @@ typedef npy_longlong __pyx_t_5numpy_longlong_t;
  */
 typedef npy_ulong __pyx_t_5numpy_uint_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":718
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":718
  * 
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t             # <<<<<<<<<<<<<<
@@ -1131,7 +1129,7 @@ typedef npy_ulong __pyx_t_5numpy_uint_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":719
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":719
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t
  * ctypedef npy_ulonglong  ulonglong_t             # <<<<<<<<<<<<<<
@@ -1140,7 +1138,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":721
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":721
  * ctypedef npy_ulonglong  ulonglong_t
  * 
  * ctypedef npy_intp       intp_t             # <<<<<<<<<<<<<<
@@ -1149,7 +1147,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
  */
 typedef npy_intp __pyx_t_5numpy_intp_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":722
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":722
  * 
  * ctypedef npy_intp       intp_t
  * ctypedef npy_uintp      uintp_t             # <<<<<<<<<<<<<<
@@ -1158,7 +1156,7 @@ typedef npy_intp __pyx_t_5numpy_intp_t;
  */
 typedef npy_uintp __pyx_t_5numpy_uintp_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":724
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":724
  * ctypedef npy_uintp      uintp_t
  * 
  * ctypedef npy_double     float_t             # <<<<<<<<<<<<<<
@@ -1167,7 +1165,7 @@ typedef npy_uintp __pyx_t_5numpy_uintp_t;
  */
 typedef npy_double __pyx_t_5numpy_float_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":725
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":725
  * 
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t             # <<<<<<<<<<<<<<
@@ -1176,7 +1174,7 @@ typedef npy_double __pyx_t_5numpy_float_t;
  */
 typedef npy_double __pyx_t_5numpy_double_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":726
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":726
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t
  * ctypedef npy_longdouble longdouble_t             # <<<<<<<<<<<<<<
@@ -1185,131 +1183,131 @@ typedef npy_double __pyx_t_5numpy_double_t;
  */
 typedef npy_longdouble __pyx_t_5numpy_longdouble_t;
 
-/* "sklearn/tree/_tree.pxd":16
+/* "_tree.pxd":7
  * cimport numpy as np
  * 
  * ctypedef np.npy_float32 DTYPE_t          # Type of X             # <<<<<<<<<<<<<<
  * ctypedef np.npy_float64 DOUBLE_t         # Type of y, sample_weight
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  */
-typedef npy_float32 __pyx_t_7sklearn_4tree_5_tree_DTYPE_t;
+typedef npy_float32 __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t;
 
-/* "sklearn/tree/_tree.pxd":17
+/* "_tree.pxd":8
  * 
  * ctypedef np.npy_float32 DTYPE_t          # Type of X
  * ctypedef np.npy_float64 DOUBLE_t         # Type of y, sample_weight             # <<<<<<<<<<<<<<
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer
  */
-typedef npy_float64 __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t;
+typedef npy_float64 __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t;
 
-/* "sklearn/tree/_tree.pxd":18
+/* "_tree.pxd":9
  * ctypedef np.npy_float32 DTYPE_t          # Type of X
  * ctypedef np.npy_float64 DOUBLE_t         # Type of y, sample_weight
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters             # <<<<<<<<<<<<<<
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer
  * ctypedef np.npy_uint32 UINT32_t          # Unsigned 32 bit integer
  */
-typedef npy_intp __pyx_t_7sklearn_4tree_5_tree_SIZE_t;
+typedef npy_intp __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t;
 
-/* "sklearn/tree/_tree.pxd":19
+/* "_tree.pxd":10
  * ctypedef np.npy_float64 DOUBLE_t         # Type of y, sample_weight
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer             # <<<<<<<<<<<<<<
  * ctypedef np.npy_uint32 UINT32_t          # Unsigned 32 bit integer
  * 
  */
-typedef npy_int32 __pyx_t_7sklearn_4tree_5_tree_INT32_t;
+typedef npy_int32 __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t;
 
-/* "sklearn/tree/_tree.pxd":20
+/* "_tree.pxd":11
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer
  * ctypedef np.npy_uint32 UINT32_t          # Unsigned 32 bit integer             # <<<<<<<<<<<<<<
  * 
- * from ._splitter cimport Splitter
+ * from _splitter cimport Splitter
  */
-typedef npy_uint32 __pyx_t_7sklearn_4tree_5_tree_UINT32_t;
+typedef npy_uint32 __pyx_t_13stpredictions_6models_3OK3_5_tree_UINT32_t;
 
-/* "neighbors/_quad_tree.pxd":13
+/* "_quad_tree.pxd":13
  * cimport numpy as np
  * 
  * ctypedef np.npy_float32 DTYPE_t          # Type of X             # <<<<<<<<<<<<<<
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer
  */
-typedef npy_float32 __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t;
+typedef npy_float32 __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t;
 
-/* "neighbors/_quad_tree.pxd":14
+/* "_quad_tree.pxd":14
  * 
  * ctypedef np.npy_float32 DTYPE_t          # Type of X
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters             # <<<<<<<<<<<<<<
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer
  * ctypedef np.npy_uint32 UINT32_t          # Unsigned 32 bit integer
  */
-typedef npy_intp __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t;
+typedef npy_intp __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t;
 
-/* "neighbors/_quad_tree.pxd":15
+/* "_quad_tree.pxd":15
  * ctypedef np.npy_float32 DTYPE_t          # Type of X
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer             # <<<<<<<<<<<<<<
  * ctypedef np.npy_uint32 UINT32_t          # Unsigned 32 bit integer
  * 
  */
-typedef npy_int32 __pyx_t_7sklearn_9neighbors_10_quad_tree_INT32_t;
+typedef npy_int32 __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_INT32_t;
 
-/* "neighbors/_quad_tree.pxd":16
+/* "_quad_tree.pxd":16
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer
  * ctypedef np.npy_uint32 UINT32_t          # Unsigned 32 bit integer             # <<<<<<<<<<<<<<
  * 
  * # This is effectively an ifdef statement in Cython
  */
-typedef npy_uint32 __pyx_t_7sklearn_9neighbors_10_quad_tree_UINT32_t;
+typedef npy_uint32 __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_UINT32_t;
 
-/* "sklearn/tree/_utils.pxd":16
- * from ..neighbors._quad_tree cimport Cell
+/* "_utils.pxd":16
+ * from ._quad_tree cimport Cell
  * 
  * ctypedef np.npy_float32 DTYPE_t          # Type of X             # <<<<<<<<<<<<<<
  * ctypedef np.npy_float64 DOUBLE_t         # Type of y, sample_weight
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  */
-typedef npy_float32 __pyx_t_7sklearn_4tree_6_utils_DTYPE_t;
+typedef npy_float32 __pyx_t_13stpredictions_6models_3OK3_6_utils_DTYPE_t;
 
-/* "sklearn/tree/_utils.pxd":17
+/* "_utils.pxd":17
  * 
  * ctypedef np.npy_float32 DTYPE_t          # Type of X
  * ctypedef np.npy_float64 DOUBLE_t         # Type of y, sample_weight             # <<<<<<<<<<<<<<
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer
  */
-typedef npy_float64 __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t;
+typedef npy_float64 __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t;
 
-/* "sklearn/tree/_utils.pxd":18
+/* "_utils.pxd":18
  * ctypedef np.npy_float32 DTYPE_t          # Type of X
  * ctypedef np.npy_float64 DOUBLE_t         # Type of y, sample_weight
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters             # <<<<<<<<<<<<<<
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer
  * ctypedef np.npy_uint32 UINT32_t          # Unsigned 32 bit integer
  */
-typedef npy_intp __pyx_t_7sklearn_4tree_6_utils_SIZE_t;
+typedef npy_intp __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t;
 
-/* "sklearn/tree/_utils.pxd":19
+/* "_utils.pxd":19
  * ctypedef np.npy_float64 DOUBLE_t         # Type of y, sample_weight
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer             # <<<<<<<<<<<<<<
  * ctypedef np.npy_uint32 UINT32_t          # Unsigned 32 bit integer
  * 
  */
-typedef npy_int32 __pyx_t_7sklearn_4tree_6_utils_INT32_t;
+typedef npy_int32 __pyx_t_13stpredictions_6models_3OK3_6_utils_INT32_t;
 
-/* "sklearn/tree/_utils.pxd":20
+/* "_utils.pxd":20
  * ctypedef np.npy_intp SIZE_t              # Type for indices and counters
  * ctypedef np.npy_int32 INT32_t            # Signed 32 bit integer
  * ctypedef np.npy_uint32 UINT32_t          # Unsigned 32 bit integer             # <<<<<<<<<<<<<<
  * 
  * 
  */
-typedef npy_uint32 __pyx_t_7sklearn_4tree_6_utils_UINT32_t;
+typedef npy_uint32 __pyx_t_13stpredictions_6models_3OK3_6_utils_UINT32_t;
 /* Declarations.proto */
 #if CYTHON_CCOMPLEX
   #ifdef __cplusplus
@@ -1336,32 +1334,28 @@ static CYTHON_INLINE __pyx_t_double_complex __pyx_t_double_complex_from_parts(do
 
 
 /*--- Type declarations ---*/
-struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion;
-struct __pyx_obj_7sklearn_4tree_10_criterion_ClassificationCriterion;
-struct __pyx_obj_7sklearn_4tree_10_criterion_RegressionCriterion;
-struct __pyx_obj_7sklearn_4tree_9_splitter_Splitter;
-struct __pyx_obj_7sklearn_4tree_5_tree_Tree;
-struct __pyx_obj_7sklearn_4tree_5_tree_TreeBuilder;
-struct __pyx_obj_10_criterion_Criterion;
-struct __pyx_obj_10_criterion_KernelizedRegressionCriterion;
-struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree;
-struct __pyx_obj_7sklearn_4tree_6_utils_Stack;
-struct __pyx_obj_7sklearn_4tree_6_utils_PriorityHeap;
-struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue;
-struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator;
-struct __pyx_obj_9_splitter_Splitter;
-struct __pyx_obj_9_splitter_BaseDenseSplitter;
-struct __pyx_obj_9_splitter_BestSplitter;
-struct __pyx_obj_9_splitter_RandomSplitter;
-struct __pyx_obj_9_splitter_BaseSparseSplitter;
-struct __pyx_obj_9_splitter_BestSparseSplitter;
-struct __pyx_obj_9_splitter_RandomSparseSplitter;
+struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree;
+struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_TreeBuilder;
+struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion;
+struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion;
+struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree;
+struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_Stack;
+struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_PriorityHeap;
+struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue;
+struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator;
+struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter;
+struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter;
+struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSplitter;
+struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSplitter;
+struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter;
+struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter;
+struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter;
 struct __pyx_array_obj;
 struct __pyx_MemviewEnum_obj;
 struct __pyx_memoryview_obj;
 struct __pyx_memoryviewslice_obj;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":728
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":728
  * ctypedef npy_longdouble longdouble_t
  * 
  * ctypedef npy_cfloat      cfloat_t             # <<<<<<<<<<<<<<
@@ -1370,7 +1364,7 @@ struct __pyx_memoryviewslice_obj;
  */
 typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":729
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":729
  * 
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t             # <<<<<<<<<<<<<<
@@ -1379,7 +1373,7 @@ typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":730
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":730
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t
  * ctypedef npy_clongdouble clongdouble_t             # <<<<<<<<<<<<<<
@@ -1388,7 +1382,7 @@ typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
  */
 typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":732
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":732
  * ctypedef npy_clongdouble clongdouble_t
  * 
  * ctypedef npy_cdouble     complex_t             # <<<<<<<<<<<<<<
@@ -1396,88 +1390,71 @@ typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
  * cdef inline object PyArray_MultiIterNew1(a):
  */
 typedef npy_cdouble __pyx_t_5numpy_complex_t;
-struct __pyx_t_7sklearn_4tree_9_splitter_SplitRecord;
+struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node;
+struct __pyx_opt_args_13stpredictions_6models_3OK3_5_tree_4Tree__resize_c;
+struct __pyx_opt_args_13stpredictions_6models_3OK3_5_tree_4Tree_compute_feature_importances;
+struct __pyx_opt_args_13stpredictions_6models_3OK3_5_tree_11TreeBuilder_build;
 
-/* "_splitter.pxd":23
- * from ._tree cimport UINT32_t         # Unsigned 32 bit integer
- * 
- * cdef struct SplitRecord:             # <<<<<<<<<<<<<<
- *     # Data to track sample split
- *     SIZE_t feature         # Which feature to split on.
- */
-struct __pyx_t_7sklearn_4tree_9_splitter_SplitRecord {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t feature;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t pos;
-  double threshold;
-  double improvement;
-  double impurity_left;
-  double impurity_right;
-};
-struct __pyx_t_7sklearn_4tree_5_tree_Node;
-struct __pyx_opt_args_7sklearn_4tree_5_tree_4Tree__resize_c;
-struct __pyx_opt_args_7sklearn_4tree_5_tree_4Tree_compute_feature_importances;
-struct __pyx_opt_args_7sklearn_4tree_5_tree_11TreeBuilder_build;
-
-/* "sklearn/tree/_tree.pxd":25
- * from ._splitter cimport SplitRecord
+/* "_tree.pxd":16
+ * from _splitter cimport SplitRecord
  * 
  * cdef struct Node:             # <<<<<<<<<<<<<<
  *     # Base storage structure for the nodes in a Tree object
  * 
  */
-struct __pyx_t_7sklearn_4tree_5_tree_Node {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t left_child;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t right_child;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t feature;
-  __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t threshold;
-  __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t impurity;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_node_samples;
-  __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t weighted_n_node_samples;
+struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t left_child;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t right_child;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t feature;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t threshold;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t impurity;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t n_node_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t weighted_n_node_samples;
 };
 
-/* "sklearn/tree/_tree.pxd":63
+/* "_tree.pxd":52
  *                           double weighted_n_samples) nogil except -1
  *     cdef int _resize(self, SIZE_t capacity) nogil except -1
  *     cdef int _resize_c(self, SIZE_t capacity=*) nogil except -1             # <<<<<<<<<<<<<<
  * 
  *     cdef np.ndarray _get_value_ndarray(self)
  */
-struct __pyx_opt_args_7sklearn_4tree_5_tree_4Tree__resize_c {
+struct __pyx_opt_args_13stpredictions_6models_3OK3_5_tree_4Tree__resize_c {
   int __pyx_n;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t capacity;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t capacity;
 };
 
-/* "sklearn/tree/_tree.pxd":78
+/* "_tree.pxd":68
  *     cdef object _decision_path_sparse_csr(self, object X)
  * 
  *     cpdef compute_feature_importances(self, normalize=*)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-struct __pyx_opt_args_7sklearn_4tree_5_tree_4Tree_compute_feature_importances {
+struct __pyx_opt_args_13stpredictions_6models_3OK3_5_tree_4Tree_compute_feature_importances {
   int __pyx_n;
   PyObject *normalize;
 };
 
-/* "sklearn/tree/_tree.pxd":102
+/* "_tree.pxd":92
  *     cdef double min_impurity_decrease   # Impurity threshold for early stopping
  * 
  *     cpdef build(self, Tree tree, object X, np.ndarray y,             # <<<<<<<<<<<<<<
  *                 np.ndarray sample_weight=*)
  *     cdef _check_input(self, object X, np.ndarray y, np.ndarray sample_weight)
  */
-struct __pyx_opt_args_7sklearn_4tree_5_tree_11TreeBuilder_build {
+struct __pyx_opt_args_13stpredictions_6models_3OK3_5_tree_11TreeBuilder_build {
   int __pyx_n;
   PyArrayObject *sample_weight;
 };
-struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell;
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree_insert_point;
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__insert_point_in_new_child;
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree_summarize;
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__resize_c;
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__get_cell;
+struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell;
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree_insert_point;
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree__insert_point_in_new_child;
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree_summarize;
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree__resize_c;
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree__get_cell;
 
-/* "neighbors/_quad_tree.pxd":21
+/* "_quad_tree.pxd":21
  * # It allows us to write printf debugging lines
  * # and remove them at compile time
  * cdef enum:             # <<<<<<<<<<<<<<
@@ -1485,96 +1462,96 @@ struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__get_cell;
  * 
  */
 enum  {
-  __pyx_e_7sklearn_9neighbors_10_quad_tree_DEBUGFLAG = 0
+  __pyx_e_13stpredictions_6models_3OK3_10_quad_tree_DEBUGFLAG = 0
 };
 
-/* "neighbors/_quad_tree.pxd":29
+/* "_quad_tree.pxd":29
  * # have is_leaf and max_width consecutive as it permits to avoid padding by
  * # the compiler and keep the size coherent for both C and numpy data structures.
  * cdef struct Cell:             # <<<<<<<<<<<<<<
  *     # Base storage structure for cells in a QuadTree object
  * 
  */
-struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell {
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t parent;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t children[8];
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t cell_id;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t point_index;
+struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell {
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t parent;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t children[8];
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t cell_id;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t point_index;
   int is_leaf;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t squared_max_width;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t depth;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t cumulative_size;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t center[3];
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t barycenter[3];
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t min_bounds[3];
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t max_bounds[3];
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t squared_max_width;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t depth;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t cumulative_size;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t center[3];
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t barycenter[3];
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t min_bounds[3];
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t max_bounds[3];
 };
 
-/* "neighbors/_quad_tree.pxd":75
+/* "_quad_tree.pxd":75
  * 
  *     # Point insertion methods
  *     cdef int insert_point(self, DTYPE_t[3] point, SIZE_t point_index,             # <<<<<<<<<<<<<<
  *                           SIZE_t cell_id=*) nogil except -1
  *     cdef SIZE_t _insert_point_in_new_child(self, DTYPE_t[3] point, Cell* cell,
  */
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree_insert_point {
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree_insert_point {
   int __pyx_n;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t cell_id;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t cell_id;
 };
 
-/* "neighbors/_quad_tree.pxd":77
+/* "_quad_tree.pxd":77
  *     cdef int insert_point(self, DTYPE_t[3] point, SIZE_t point_index,
  *                           SIZE_t cell_id=*) nogil except -1
  *     cdef SIZE_t _insert_point_in_new_child(self, DTYPE_t[3] point, Cell* cell,             # <<<<<<<<<<<<<<
  *                                            SIZE_t point_index, SIZE_t size=*
  *                                            ) nogil
  */
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__insert_point_in_new_child {
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree__insert_point_in_new_child {
   int __pyx_n;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t size;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t size;
 };
 
-/* "neighbors/_quad_tree.pxd":84
+/* "_quad_tree.pxd":84
  * 
  *     # Create a summary of the Tree compare to a query point
  *     cdef long summarize(self, DTYPE_t[3] point, DTYPE_t* results,             # <<<<<<<<<<<<<<
  *                         float squared_theta=*, SIZE_t cell_id=*, long idx=*
  *                         ) nogil
  */
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree_summarize {
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree_summarize {
   int __pyx_n;
   float squared_theta;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t cell_id;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t cell_id;
   long idx;
 };
 
-/* "neighbors/_quad_tree.pxd":99
+/* "_quad_tree.pxd":99
  *     # Private array manipulation to manage the ``cells`` array
  *     cdef int _resize(self, SIZE_t capacity) nogil except -1
  *     cdef int _resize_c(self, SIZE_t capacity=*) nogil except -1             # <<<<<<<<<<<<<<
  *     cdef int _get_cell(self, DTYPE_t[3] point, SIZE_t cell_id=*) nogil except -1
  *     cdef np.ndarray _get_cell_ndarray(self)
  */
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__resize_c {
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree__resize_c {
   int __pyx_n;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t capacity;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t capacity;
 };
 
-/* "neighbors/_quad_tree.pxd":100
+/* "_quad_tree.pxd":100
  *     cdef int _resize(self, SIZE_t capacity) nogil except -1
  *     cdef int _resize_c(self, SIZE_t capacity=*) nogil except -1
  *     cdef int _get_cell(self, DTYPE_t[3] point, SIZE_t cell_id=*) nogil except -1             # <<<<<<<<<<<<<<
  *     cdef np.ndarray _get_cell_ndarray(self)
  */
-struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__get_cell {
+struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree__get_cell {
   int __pyx_n;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t cell_id;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t cell_id;
 };
-struct __pyx_t_7sklearn_4tree_6_utils_StackRecord;
-struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord;
-struct __pyx_t_7sklearn_4tree_6_utils_WeightedPQueueRecord;
+struct __pyx_t_13stpredictions_6models_3OK3_6_utils_StackRecord;
+struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord;
+struct __pyx_t_13stpredictions_6models_3OK3_6_utils_WeightedPQueueRecord;
 
-/* "sklearn/tree/_utils.pxd":23
+/* "_utils.pxd":23
  * 
  * 
  * cdef enum:             # <<<<<<<<<<<<<<
@@ -1582,39 +1559,39 @@ struct __pyx_t_7sklearn_4tree_6_utils_WeightedPQueueRecord;
  *     # We don't use RAND_MAX because it's different across platforms and
  */
 enum  {
-  __pyx_e_7sklearn_4tree_6_utils_RAND_R_MAX = 0x7FFFFFFF
+  __pyx_e_13stpredictions_6models_3OK3_6_utils_RAND_R_MAX = 0x7FFFFFFF
 };
 
-/* "sklearn/tree/_utils.pxd":70
+/* "_utils.pxd":70
  * 
  * # A record on the stack for depth-first tree growing
  * cdef struct StackRecord:             # <<<<<<<<<<<<<<
  *     SIZE_t start
  *     SIZE_t end
  */
-struct __pyx_t_7sklearn_4tree_6_utils_StackRecord {
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t start;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t end;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t depth;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t parent;
+struct __pyx_t_13stpredictions_6models_3OK3_6_utils_StackRecord {
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t start;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t end;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t depth;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t parent;
   int is_left;
   double impurity;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t n_constant_features;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t n_constant_features;
 };
 
-/* "sklearn/tree/_utils.pxd":96
+/* "_utils.pxd":96
  * 
  * # A record on the frontier for best-first tree growing
  * cdef struct PriorityHeapRecord:             # <<<<<<<<<<<<<<
  *     SIZE_t node_id
  *     SIZE_t start
  */
-struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord {
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t node_id;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t start;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t end;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t pos;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t depth;
+struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord {
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t node_id;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t start;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t end;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t pos;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t depth;
   int is_leaf;
   double impurity;
   double impurity_left;
@@ -1622,182 +1599,94 @@ struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord {
   double improvement;
 };
 
-/* "sklearn/tree/_utils.pxd":127
+/* "_utils.pxd":127
  * 
  * # A record stored in the WeightedPQueue
  * cdef struct WeightedPQueueRecord:             # <<<<<<<<<<<<<<
  *     DOUBLE_t data
  *     DOUBLE_t weight
  */
-struct __pyx_t_7sklearn_4tree_6_utils_WeightedPQueueRecord {
-  __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t data;
-  __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t weight;
+struct __pyx_t_13stpredictions_6models_3OK3_6_utils_WeightedPQueueRecord {
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t data;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t weight;
 };
-struct __pyx_t_9_splitter_SplitRecord;
+struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord;
 
-/* "_splitter.pxd":14
- * from sklearn.tree._tree cimport UINT32_t         # Unsigned 32 bit integer
+/* "stpredictions/models/OK3/_splitter.pxd":14
+ * from ._tree cimport UINT32_t         # Unsigned 32 bit integer
  * 
  * cdef struct SplitRecord:             # <<<<<<<<<<<<<<
  *     # Data to track sample split
  *     SIZE_t feature         # Which feature to split on.
  */
-struct __pyx_t_9_splitter_SplitRecord {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t feature;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t pos;
+struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t feature;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t pos;
   double threshold;
   double improvement;
   double impurity_left;
   double impurity_right;
 };
 
-/* "_criterion.pxd":21
- * from ._tree cimport UINT32_t         # Unsigned 32 bit integer
- * 
- * cdef class Criterion:             # <<<<<<<<<<<<<<
- *     # The criterion computes the impurity of a node and the reduction of
- *     # impurity of a split on that node. It also computes the output statistics
- */
-struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion {
-  PyObject_HEAD
-  struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_Criterion *__pyx_vtab;
-  __Pyx_memviewslice y;
-  __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *sample_weight;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t start;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t pos;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t end;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_outputs;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_node_samples;
-  double weighted_n_samples;
-  double weighted_n_node_samples;
-  double weighted_n_left;
-  double weighted_n_right;
-  double *sum_total;
-  double *sum_left;
-  double *sum_right;
-};
-
-
-/* "_criterion.pxd":70
- *     cdef double proxy_impurity_improvement(self) nogil
- * 
- * cdef class ClassificationCriterion(Criterion):             # <<<<<<<<<<<<<<
- *     """Abstract criterion for classification."""
- * 
- */
-struct __pyx_obj_7sklearn_4tree_10_criterion_ClassificationCriterion {
-  struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion __pyx_base;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *n_classes;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t sum_stride;
-};
-
-
-/* "_criterion.pxd":76
- *     cdef SIZE_t sum_stride
- * 
- * cdef class RegressionCriterion(Criterion):             # <<<<<<<<<<<<<<
- *     """Abstract regression criterion."""
- * 
- */
-struct __pyx_obj_7sklearn_4tree_10_criterion_RegressionCriterion {
-  struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion __pyx_base;
-  double sq_sum_total;
-};
-
-
-/* "_splitter.pxd":34
- *     double impurity_right  # Impurity of the right split.
- * 
- * cdef class Splitter:             # <<<<<<<<<<<<<<
- *     # The splitter searches in the input space for a feature and a threshold
- *     # to split the samples samples[start:end].
- */
-struct __pyx_obj_7sklearn_4tree_9_splitter_Splitter {
-  PyObject_HEAD
-  struct __pyx_vtabstruct_7sklearn_4tree_9_splitter_Splitter *__pyx_vtab;
-  struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *criterion;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t max_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t min_samples_leaf;
-  double min_weight_leaf;
-  PyObject *random_state;
-  __pyx_t_7sklearn_4tree_5_tree_UINT32_t rand_r_state;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_samples;
-  double weighted_n_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *constant_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_features;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *feature_values;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t start;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t end;
-  __Pyx_memviewslice y;
-  __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *sample_weight;
-};
-
-
-/* "sklearn/tree/_tree.pxd":37
+/* "_tree.pxd":28
  * 
  * 
  * cdef class Tree:             # <<<<<<<<<<<<<<
  *     # The Tree object is a binary tree structure constructed by the
- *     # TreeBuilder. The tree structure is used for predictions and
+ *     # TreeBuilder.
  */
-struct __pyx_obj_7sklearn_4tree_5_tree_Tree {
+struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree {
   PyObject_HEAD
-  struct __pyx_vtabstruct_7sklearn_4tree_5_tree_Tree *__pyx_vtab;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *n_classes;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_outputs;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t max_n_classes;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t max_depth;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t node_count;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t capacity;
-  struct __pyx_t_7sklearn_4tree_5_tree_Node *nodes;
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_5_tree_Tree *__pyx_vtab;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t n_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t max_depth;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t node_count;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t capacity;
+  PyArrayObject *K_y;
+  PyArrayObject *y;
+  struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node *nodes;
   double *value;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t value_stride;
 };
 
 
-/* "sklearn/tree/_tree.pxd":85
+/* "_tree.pxd":75
  * # =============================================================================
  * 
  * cdef class TreeBuilder:             # <<<<<<<<<<<<<<
  *     # The TreeBuilder recursively builds a Tree object from training samples,
  *     # using a Splitter object for splitting internal nodes and assigning
  */
-struct __pyx_obj_7sklearn_4tree_5_tree_TreeBuilder {
+struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_TreeBuilder {
   PyObject_HEAD
-  struct __pyx_vtabstruct_7sklearn_4tree_5_tree_TreeBuilder *__pyx_vtab;
-  struct __pyx_obj_7sklearn_4tree_9_splitter_Splitter *splitter;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t min_samples_split;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t min_samples_leaf;
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_5_tree_TreeBuilder *__pyx_vtab;
+  struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *splitter;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t min_samples_split;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t min_samples_leaf;
   double min_weight_leaf;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t max_depth;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t max_depth;
   double min_impurity_split;
   double min_impurity_decrease;
 };
 
 
 /* "_criterion.pxd":12
- * from sklearn.tree._tree cimport UINT32_t         # Unsigned 32 bit integer
+ * from ._tree cimport UINT32_t         # Unsigned 32 bit integer
  * 
  * cdef class Criterion:             # <<<<<<<<<<<<<<
  *     # The criterion computes the impurity of a node and the reduction of
  *     # impurity of a split on that node.
  */
-struct __pyx_obj_10_criterion_Criterion {
+struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion {
   PyObject_HEAD
-  struct __pyx_vtabstruct_10_criterion_Criterion *__pyx_vtab;
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_vtab;
   __Pyx_memviewslice y;
-  __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *sample_weight;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t start;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t pos;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t end;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_node_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *sample_weight;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t start;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t pos;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t end;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t n_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t n_node_samples;
   double weighted_n_samples;
   double weighted_n_node_samples;
   double weighted_n_left;
@@ -1812,8 +1701,8 @@ struct __pyx_obj_10_criterion_Criterion {
  *     """Abstract kernelized output regression criterion."""
  * 
  */
-struct __pyx_obj_10_criterion_KernelizedRegressionCriterion {
-  struct __pyx_obj_10_criterion_Criterion __pyx_base;
+struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion {
+  struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion __pyx_base;
   double sum_diag_Gramm;
   double sum_total_Gramm;
   double sum_diag_Gramm_left;
@@ -1823,200 +1712,200 @@ struct __pyx_obj_10_criterion_KernelizedRegressionCriterion {
 };
 
 
-/* "neighbors/_quad_tree.pxd":55
+/* "_quad_tree.pxd":55
  * 
  * 
  * cdef class _QuadTree:             # <<<<<<<<<<<<<<
  *     # The QuadTree object is a quad tree structure constructed by inserting
  *     # recursively points in the tree and splitting cells in 4 so that each
  */
-struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree {
+struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree {
   PyObject_HEAD
-  struct __pyx_vtabstruct_7sklearn_9neighbors_10_quad_tree__QuadTree *__pyx_vtab;
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *__pyx_vtab;
   int n_dimensions;
   int verbose;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t n_cells_per_cell;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t max_depth;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t cell_count;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t capacity;
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t n_points;
-  struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell *cells;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t n_cells_per_cell;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t max_depth;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t cell_count;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t capacity;
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t n_points;
+  struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell *cells;
 };
 
 
-/* "sklearn/tree/_utils.pxd":79
+/* "_utils.pxd":79
  *     SIZE_t n_constant_features
  * 
  * cdef class Stack:             # <<<<<<<<<<<<<<
  *     cdef SIZE_t capacity
  *     cdef SIZE_t top
  */
-struct __pyx_obj_7sklearn_4tree_6_utils_Stack {
+struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_Stack {
   PyObject_HEAD
-  struct __pyx_vtabstruct_7sklearn_4tree_6_utils_Stack *__pyx_vtab;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t capacity;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t top;
-  struct __pyx_t_7sklearn_4tree_6_utils_StackRecord *stack_;
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_Stack *__pyx_vtab;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t capacity;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t top;
+  struct __pyx_t_13stpredictions_6models_3OK3_6_utils_StackRecord *stack_;
 };
 
 
-/* "sklearn/tree/_utils.pxd":108
+/* "_utils.pxd":108
  *     double improvement
  * 
  * cdef class PriorityHeap:             # <<<<<<<<<<<<<<
  *     cdef SIZE_t capacity
  *     cdef SIZE_t heap_ptr
  */
-struct __pyx_obj_7sklearn_4tree_6_utils_PriorityHeap {
+struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_PriorityHeap {
   PyObject_HEAD
-  struct __pyx_vtabstruct_7sklearn_4tree_6_utils_PriorityHeap *__pyx_vtab;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t capacity;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t heap_ptr;
-  struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord *heap_;
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_PriorityHeap *__pyx_vtab;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t capacity;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t heap_ptr;
+  struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord *heap_;
 };
 
 
-/* "sklearn/tree/_utils.pxd":131
+/* "_utils.pxd":131
  *     DOUBLE_t weight
  * 
  * cdef class WeightedPQueue:             # <<<<<<<<<<<<<<
  *     cdef SIZE_t capacity
  *     cdef SIZE_t array_ptr
  */
-struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue {
+struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue {
   PyObject_HEAD
-  struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedPQueue *__pyx_vtab;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t capacity;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t array_ptr;
-  struct __pyx_t_7sklearn_4tree_6_utils_WeightedPQueueRecord *array_;
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *__pyx_vtab;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t capacity;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t array_ptr;
+  struct __pyx_t_13stpredictions_6models_3OK3_6_utils_WeightedPQueueRecord *array_;
 };
 
 
-/* "sklearn/tree/_utils.pxd":151
+/* "_utils.pxd":151
  * # =============================================================================
  * 
  * cdef class WeightedMedianCalculator:             # <<<<<<<<<<<<<<
  *     cdef SIZE_t initial_capacity
  *     cdef WeightedPQueue samples
  */
-struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator {
+struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator {
   PyObject_HEAD
-  struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedMedianCalculator *__pyx_vtab;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t initial_capacity;
-  struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *samples;
-  __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t total_weight;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t k;
-  __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t sum_w_0_k;
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *__pyx_vtab;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t initial_capacity;
+  struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *samples;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t total_weight;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t k;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t sum_w_0_k;
 };
 
 
-/* "_splitter.pxd":25
+/* "stpredictions/models/OK3/_splitter.pxd":25
  *     double impurity_right  # Impurity of the right split.
  * 
  * cdef class Splitter:             # <<<<<<<<<<<<<<
  *     # The splitter searches in the input space for a feature and a threshold
  *     # to split the samples samples[start:end].
  */
-struct __pyx_obj_9_splitter_Splitter {
+struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter {
   PyObject_HEAD
-  struct __pyx_vtabstruct_9_splitter_Splitter *__pyx_vtab;
-  struct __pyx_obj_10_criterion_Criterion *criterion;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t max_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t min_samples_leaf;
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_vtab;
+  struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *criterion;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t max_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t min_samples_leaf;
   double min_weight_leaf;
   PyObject *random_state;
-  __pyx_t_7sklearn_4tree_5_tree_UINT32_t rand_r_state;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_UINT32_t rand_r_state;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t n_samples;
   double weighted_n_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *constant_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_features;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *feature_values;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t start;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t end;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *constant_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t n_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *feature_values;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t start;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t end;
   __Pyx_memviewslice y;
-  __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *sample_weight;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *sample_weight;
 };
 
 
-/* "_splitter.pyx":223
+/* "stpredictions/models/OK3/_splitter.pyx":223
  * 
  * 
  * cdef class BaseDenseSplitter(Splitter):             # <<<<<<<<<<<<<<
  *     cdef const DTYPE_t[:, :] X
  * 
  */
-struct __pyx_obj_9_splitter_BaseDenseSplitter {
-  struct __pyx_obj_9_splitter_Splitter __pyx_base;
+struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter {
+  struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter __pyx_base;
   __Pyx_memviewslice X;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_total_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t n_total_samples;
 };
 
 
-/* "_splitter.pyx":245
+/* "stpredictions/models/OK3/_splitter.pyx":245
  * 
  * 
  * cdef class BestSplitter(BaseDenseSplitter):             # <<<<<<<<<<<<<<
  *     """Splitter for finding the best split."""
  *     def __reduce__(self):
  */
-struct __pyx_obj_9_splitter_BestSplitter {
-  struct __pyx_obj_9_splitter_BaseDenseSplitter __pyx_base;
+struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSplitter {
+  struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter __pyx_base;
 };
 
 
-/* "_splitter.pyx":564
+/* "stpredictions/models/OK3/_splitter.pyx":564
  * 
  * 
  * cdef class RandomSplitter(BaseDenseSplitter):             # <<<<<<<<<<<<<<
  *     """Splitter for finding the best random split."""
  *     def __reduce__(self):
  */
-struct __pyx_obj_9_splitter_RandomSplitter {
-  struct __pyx_obj_9_splitter_BaseDenseSplitter __pyx_base;
+struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSplitter {
+  struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter __pyx_base;
 };
 
 
-/* "_splitter.pyx":761
+/* "stpredictions/models/OK3/_splitter.pyx":761
  * 
  * 
  * cdef class BaseSparseSplitter(Splitter):             # <<<<<<<<<<<<<<
  *     # The sparse splitter works only with csc sparse matrix format
  *     cdef DTYPE_t* X_data
  */
-struct __pyx_obj_9_splitter_BaseSparseSplitter {
-  struct __pyx_obj_9_splitter_Splitter __pyx_base;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *X_data;
-  __pyx_t_7sklearn_4tree_5_tree_INT32_t *X_indices;
-  __pyx_t_7sklearn_4tree_5_tree_INT32_t *X_indptr;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t n_total_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *index_to_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *sorted_samples;
+struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter {
+  struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter __pyx_base;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *X_data;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t *X_indices;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t *X_indptr;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t n_total_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *index_to_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *sorted_samples;
 };
 
 
-/* "_splitter.pyx":1080
+/* "stpredictions/models/OK3/_splitter.pyx":1080
  * 
  * 
  * cdef class BestSparseSplitter(BaseSparseSplitter):             # <<<<<<<<<<<<<<
  *     """Splitter for finding the best split, using the sparse data."""
  * 
  */
-struct __pyx_obj_9_splitter_BestSparseSplitter {
-  struct __pyx_obj_9_splitter_BaseSparseSplitter __pyx_base;
+struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter {
+  struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter __pyx_base;
 };
 
 
-/* "_splitter.pyx":1309
+/* "stpredictions/models/OK3/_splitter.pyx":1309
  * 
  * 
  * cdef class RandomSparseSplitter(BaseSparseSplitter):             # <<<<<<<<<<<<<<
  *     """Splitter for finding a random split, using the sparse data."""
  * 
  */
-struct __pyx_obj_9_splitter_RandomSparseSplitter {
-  struct __pyx_obj_9_splitter_BaseSparseSplitter __pyx_base;
+struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter {
+  struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter __pyx_base;
 };
 
 
@@ -2098,101 +1987,34 @@ struct __pyx_memoryviewslice_obj {
 
 
 
-/* "_criterion.pxd":21
- * from ._tree cimport UINT32_t         # Unsigned 32 bit integer
- * 
- * cdef class Criterion:             # <<<<<<<<<<<<<<
- *     # The criterion computes the impurity of a node and the reduction of
- *     # impurity of a split on that node. It also computes the output statistics
- */
-
-struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_Criterion {
-  int (*init)(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *, __Pyx_memviewslice, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *, double, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t);
-  int (*reset)(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *);
-  int (*reverse_reset)(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *);
-  int (*update)(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t);
-  double (*node_impurity)(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *);
-  void (*children_impurity)(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *, double *, double *);
-  void (*node_value)(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *, double *);
-  double (*impurity_improvement)(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *, double, double, double);
-  double (*proxy_impurity_improvement)(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion *);
-};
-static struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_Criterion *__pyx_vtabptr_7sklearn_4tree_10_criterion_Criterion;
-
-
-/* "_criterion.pxd":70
- *     cdef double proxy_impurity_improvement(self) nogil
- * 
- * cdef class ClassificationCriterion(Criterion):             # <<<<<<<<<<<<<<
- *     """Abstract criterion for classification."""
- * 
- */
-
-struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_ClassificationCriterion {
-  struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_Criterion __pyx_base;
-};
-static struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_ClassificationCriterion *__pyx_vtabptr_7sklearn_4tree_10_criterion_ClassificationCriterion;
-
-
-/* "_criterion.pxd":76
- *     cdef SIZE_t sum_stride
- * 
- * cdef class RegressionCriterion(Criterion):             # <<<<<<<<<<<<<<
- *     """Abstract regression criterion."""
- * 
- */
-
-struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_RegressionCriterion {
-  struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_Criterion __pyx_base;
-};
-static struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_RegressionCriterion *__pyx_vtabptr_7sklearn_4tree_10_criterion_RegressionCriterion;
-
-
-/* "_splitter.pxd":34
- *     double impurity_right  # Impurity of the right split.
- * 
- * cdef class Splitter:             # <<<<<<<<<<<<<<
- *     # The splitter searches in the input space for a feature and a threshold
- *     # to split the samples samples[start:end].
- */
-
-struct __pyx_vtabstruct_7sklearn_4tree_9_splitter_Splitter {
-  int (*init)(struct __pyx_obj_7sklearn_4tree_9_splitter_Splitter *, PyObject *, __Pyx_memviewslice, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *);
-  int (*node_reset)(struct __pyx_obj_7sklearn_4tree_9_splitter_Splitter *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, double *);
-  int (*node_split)(struct __pyx_obj_7sklearn_4tree_9_splitter_Splitter *, double, struct __pyx_t_7sklearn_4tree_9_splitter_SplitRecord *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *);
-  void (*node_value)(struct __pyx_obj_7sklearn_4tree_9_splitter_Splitter *, double *);
-  double (*node_impurity)(struct __pyx_obj_7sklearn_4tree_9_splitter_Splitter *);
-};
-static struct __pyx_vtabstruct_7sklearn_4tree_9_splitter_Splitter *__pyx_vtabptr_7sklearn_4tree_9_splitter_Splitter;
-
-
-/* "sklearn/tree/_tree.pxd":37
+/* "_tree.pxd":28
  * 
  * 
  * cdef class Tree:             # <<<<<<<<<<<<<<
  *     # The Tree object is a binary tree structure constructed by the
- *     # TreeBuilder. The tree structure is used for predictions and
+ *     # TreeBuilder.
  */
 
-struct __pyx_vtabstruct_7sklearn_4tree_5_tree_Tree {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t (*_add_node)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, int, int, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, double, double, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, double);
-  int (*_resize)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t);
-  int (*_resize_c)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, struct __pyx_opt_args_7sklearn_4tree_5_tree_4Tree__resize_c *__pyx_optional_args);
-  PyArrayObject *(*_get_value_ndarray)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *);
-  PyArrayObject *(*_get_node_ndarray)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *);
-  PyArrayObject *(*predict)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, PyObject *, int __pyx_skip_dispatch);
-  PyArrayObject *(*apply)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, PyObject *, int __pyx_skip_dispatch);
-  PyArrayObject *(*_apply_dense)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, PyObject *);
-  PyArrayObject *(*_apply_sparse_csr)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, PyObject *);
-  PyObject *(*decision_path)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, PyObject *, int __pyx_skip_dispatch);
-  PyObject *(*_decision_path_dense)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, PyObject *);
-  PyObject *(*_decision_path_sparse_csr)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, PyObject *);
-  PyObject *(*compute_feature_importances)(struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, int __pyx_skip_dispatch, struct __pyx_opt_args_7sklearn_4tree_5_tree_4Tree_compute_feature_importances *__pyx_optional_args);
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_5_tree_Tree {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t (*_add_node)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, int, int, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, double, double, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, double);
+  int (*_resize)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t);
+  int (*_resize_c)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, struct __pyx_opt_args_13stpredictions_6models_3OK3_5_tree_4Tree__resize_c *__pyx_optional_args);
+  PyArrayObject *(*_get_value_ndarray)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *);
+  PyArrayObject *(*_get_node_ndarray)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *);
+  PyArrayObject *(*decode_tree)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, PyArrayObject *, PyArrayObject *, PyObject *, PyObject *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, int __pyx_skip_dispatch);
+  PyArrayObject *(*predict)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, PyObject *, int __pyx_skip_dispatch);
+  PyArrayObject *(*apply)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, PyObject *, int __pyx_skip_dispatch);
+  PyArrayObject *(*_apply_dense)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, PyObject *);
+  PyArrayObject *(*_apply_sparse_csr)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, PyObject *);
+  PyObject *(*decision_path)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, PyObject *, int __pyx_skip_dispatch);
+  PyObject *(*_decision_path_dense)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, PyObject *);
+  PyObject *(*_decision_path_sparse_csr)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, PyObject *);
+  PyObject *(*compute_feature_importances)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, int __pyx_skip_dispatch, struct __pyx_opt_args_13stpredictions_6models_3OK3_5_tree_4Tree_compute_feature_importances *__pyx_optional_args);
 };
-static struct __pyx_vtabstruct_7sklearn_4tree_5_tree_Tree *__pyx_vtabptr_7sklearn_4tree_5_tree_Tree;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_5_tree_Tree *__pyx_vtabptr_13stpredictions_6models_3OK3_5_tree_Tree;
 
 
-/* "sklearn/tree/_tree.pxd":85
+/* "_tree.pxd":75
  * # =============================================================================
  * 
  * cdef class TreeBuilder:             # <<<<<<<<<<<<<<
@@ -2200,33 +2022,33 @@ static struct __pyx_vtabstruct_7sklearn_4tree_5_tree_Tree *__pyx_vtabptr_7sklear
  *     # using a Splitter object for splitting internal nodes and assigning
  */
 
-struct __pyx_vtabstruct_7sklearn_4tree_5_tree_TreeBuilder {
-  PyObject *(*build)(struct __pyx_obj_7sklearn_4tree_5_tree_TreeBuilder *, struct __pyx_obj_7sklearn_4tree_5_tree_Tree *, PyObject *, PyArrayObject *, int __pyx_skip_dispatch, struct __pyx_opt_args_7sklearn_4tree_5_tree_11TreeBuilder_build *__pyx_optional_args);
-  PyObject *(*_check_input)(struct __pyx_obj_7sklearn_4tree_5_tree_TreeBuilder *, PyObject *, PyArrayObject *, PyArrayObject *);
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_5_tree_TreeBuilder {
+  PyObject *(*build)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_TreeBuilder *, struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree *, PyObject *, PyArrayObject *, int __pyx_skip_dispatch, struct __pyx_opt_args_13stpredictions_6models_3OK3_5_tree_11TreeBuilder_build *__pyx_optional_args);
+  PyObject *(*_check_input)(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_TreeBuilder *, PyObject *, PyArrayObject *, PyArrayObject *);
 };
-static struct __pyx_vtabstruct_7sklearn_4tree_5_tree_TreeBuilder *__pyx_vtabptr_7sklearn_4tree_5_tree_TreeBuilder;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_5_tree_TreeBuilder *__pyx_vtabptr_13stpredictions_6models_3OK3_5_tree_TreeBuilder;
 
 
 /* "_criterion.pxd":12
- * from sklearn.tree._tree cimport UINT32_t         # Unsigned 32 bit integer
+ * from ._tree cimport UINT32_t         # Unsigned 32 bit integer
  * 
  * cdef class Criterion:             # <<<<<<<<<<<<<<
  *     # The criterion computes the impurity of a node and the reduction of
  *     # impurity of a split on that node.
  */
 
-struct __pyx_vtabstruct_10_criterion_Criterion {
-  int (*init)(struct __pyx_obj_10_criterion_Criterion *, __Pyx_memviewslice, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *, double, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t);
-  int (*reset)(struct __pyx_obj_10_criterion_Criterion *);
-  int (*reverse_reset)(struct __pyx_obj_10_criterion_Criterion *);
-  int (*update)(struct __pyx_obj_10_criterion_Criterion *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t);
-  double (*node_impurity)(struct __pyx_obj_10_criterion_Criterion *);
-  void (*children_impurity)(struct __pyx_obj_10_criterion_Criterion *, double *, double *);
-  void (*node_value)(struct __pyx_obj_10_criterion_Criterion *, double *);
-  double (*impurity_improvement)(struct __pyx_obj_10_criterion_Criterion *, double);
-  double (*proxy_impurity_improvement)(struct __pyx_obj_10_criterion_Criterion *);
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion {
+  int (*init)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, __Pyx_memviewslice, __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *, double, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t);
+  int (*reset)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *);
+  int (*reverse_reset)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *);
+  int (*update)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t);
+  double (*node_impurity)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *);
+  void (*children_impurity)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, double *, double *);
+  void (*node_value)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, double *);
+  double (*impurity_improvement)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *, double);
+  double (*proxy_impurity_improvement)(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *);
 };
-static struct __pyx_vtabstruct_10_criterion_Criterion *__pyx_vtabptr_10_criterion_Criterion;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_Criterion;
 
 
 /* "_criterion.pxd":50
@@ -2237,13 +2059,13 @@ static struct __pyx_vtabstruct_10_criterion_Criterion *__pyx_vtabptr_10_criterio
  * 
  */
 
-struct __pyx_vtabstruct_10_criterion_KernelizedRegressionCriterion {
-  struct __pyx_vtabstruct_10_criterion_Criterion __pyx_base;
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion {
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion __pyx_base;
 };
-static struct __pyx_vtabstruct_10_criterion_KernelizedRegressionCriterion *__pyx_vtabptr_10_criterion_KernelizedRegressionCriterion;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion *__pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion;
 
 
-/* "neighbors/_quad_tree.pxd":55
+/* "_quad_tree.pxd":55
  * 
  * 
  * cdef class _QuadTree:             # <<<<<<<<<<<<<<
@@ -2251,24 +2073,24 @@ static struct __pyx_vtabstruct_10_criterion_KernelizedRegressionCriterion *__pyx
  *     # recursively points in the tree and splitting cells in 4 so that each
  */
 
-struct __pyx_vtabstruct_7sklearn_9neighbors_10_quad_tree__QuadTree {
-  int (*insert_point)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *, __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t, struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree_insert_point *__pyx_optional_args);
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t (*_insert_point_in_new_child)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *, struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell *, __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t, struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__insert_point_in_new_child *__pyx_optional_args);
-  __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t (*_select_child)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *, struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell *);
-  int (*_is_duplicate)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *);
-  long (*summarize)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *, struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree_summarize *__pyx_optional_args);
-  void (*_init_cell)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell *, __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t, __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t);
-  void (*_init_root)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *);
-  int (*_check_point_in_cell)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *, struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell *);
-  int (*_resize)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, __pyx_t_7sklearn_9neighbors_10_quad_tree_SIZE_t);
-  int (*_resize_c)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__resize_c *__pyx_optional_args);
-  int (*_get_cell)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *, __pyx_t_7sklearn_9neighbors_10_quad_tree_DTYPE_t *, struct __pyx_opt_args_7sklearn_9neighbors_10_quad_tree_9_QuadTree__get_cell *__pyx_optional_args);
-  PyArrayObject *(*_get_cell_ndarray)(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree *);
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_quad_tree__QuadTree {
+  int (*insert_point)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t, struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree_insert_point *__pyx_optional_args);
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t (*_insert_point_in_new_child)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *, struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t, struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree__insert_point_in_new_child *__pyx_optional_args);
+  __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t (*_select_child)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *, struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell *);
+  int (*_is_duplicate)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *);
+  long (*summarize)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *, struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree_summarize *__pyx_optional_args);
+  void (*_init_cell)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t);
+  void (*_init_root)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *);
+  int (*_check_point_in_cell)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *, struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell *);
+  int (*_resize)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_SIZE_t);
+  int (*_resize_c)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree__resize_c *__pyx_optional_args);
+  int (*_get_cell)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *, __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_DTYPE_t *, struct __pyx_opt_args_13stpredictions_6models_3OK3_10_quad_tree_9_QuadTree__get_cell *__pyx_optional_args);
+  PyArrayObject *(*_get_cell_ndarray)(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *);
 };
-static struct __pyx_vtabstruct_7sklearn_9neighbors_10_quad_tree__QuadTree *__pyx_vtabptr_7sklearn_9neighbors_10_quad_tree__QuadTree;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_quad_tree__QuadTree *__pyx_vtabptr_13stpredictions_6models_3OK3_10_quad_tree__QuadTree;
 
 
-/* "sklearn/tree/_utils.pxd":79
+/* "_utils.pxd":79
  *     SIZE_t n_constant_features
  * 
  * cdef class Stack:             # <<<<<<<<<<<<<<
@@ -2276,15 +2098,15 @@ static struct __pyx_vtabstruct_7sklearn_9neighbors_10_quad_tree__QuadTree *__pyx
  *     cdef SIZE_t top
  */
 
-struct __pyx_vtabstruct_7sklearn_4tree_6_utils_Stack {
-  int (*is_empty)(struct __pyx_obj_7sklearn_4tree_6_utils_Stack *);
-  int (*push)(struct __pyx_obj_7sklearn_4tree_6_utils_Stack *, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, int, double, __pyx_t_7sklearn_4tree_6_utils_SIZE_t);
-  int (*pop)(struct __pyx_obj_7sklearn_4tree_6_utils_Stack *, struct __pyx_t_7sklearn_4tree_6_utils_StackRecord *);
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_Stack {
+  int (*is_empty)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_Stack *);
+  int (*push)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_Stack *, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, int, double, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t);
+  int (*pop)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_Stack *, struct __pyx_t_13stpredictions_6models_3OK3_6_utils_StackRecord *);
 };
-static struct __pyx_vtabstruct_7sklearn_4tree_6_utils_Stack *__pyx_vtabptr_7sklearn_4tree_6_utils_Stack;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_Stack *__pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_Stack;
 
 
-/* "sklearn/tree/_utils.pxd":108
+/* "_utils.pxd":108
  *     double improvement
  * 
  * cdef class PriorityHeap:             # <<<<<<<<<<<<<<
@@ -2292,17 +2114,17 @@ static struct __pyx_vtabstruct_7sklearn_4tree_6_utils_Stack *__pyx_vtabptr_7skle
  *     cdef SIZE_t heap_ptr
  */
 
-struct __pyx_vtabstruct_7sklearn_4tree_6_utils_PriorityHeap {
-  int (*is_empty)(struct __pyx_obj_7sklearn_4tree_6_utils_PriorityHeap *);
-  void (*heapify_up)(struct __pyx_obj_7sklearn_4tree_6_utils_PriorityHeap *, struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord *, __pyx_t_7sklearn_4tree_6_utils_SIZE_t);
-  void (*heapify_down)(struct __pyx_obj_7sklearn_4tree_6_utils_PriorityHeap *, struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord *, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_SIZE_t);
-  int (*push)(struct __pyx_obj_7sklearn_4tree_6_utils_PriorityHeap *, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, int, double, double, double, double);
-  int (*pop)(struct __pyx_obj_7sklearn_4tree_6_utils_PriorityHeap *, struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord *);
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_PriorityHeap {
+  int (*is_empty)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_PriorityHeap *);
+  void (*heapify_up)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_PriorityHeap *, struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord *, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t);
+  void (*heapify_down)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_PriorityHeap *, struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord *, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t);
+  int (*push)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_PriorityHeap *, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, int, double, double, double, double);
+  int (*pop)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_PriorityHeap *, struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord *);
 };
-static struct __pyx_vtabstruct_7sklearn_4tree_6_utils_PriorityHeap *__pyx_vtabptr_7sklearn_4tree_6_utils_PriorityHeap;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_PriorityHeap *__pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_PriorityHeap;
 
 
-/* "sklearn/tree/_utils.pxd":131
+/* "_utils.pxd":131
  *     DOUBLE_t weight
  * 
  * cdef class WeightedPQueue:             # <<<<<<<<<<<<<<
@@ -2310,21 +2132,21 @@ static struct __pyx_vtabstruct_7sklearn_4tree_6_utils_PriorityHeap *__pyx_vtabpt
  *     cdef SIZE_t array_ptr
  */
 
-struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedPQueue {
-  int (*is_empty)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *);
-  int (*reset)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *);
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t (*size)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *);
-  int (*push)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t);
-  int (*remove)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t);
-  int (*pop)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t *);
-  int (*peek)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t *);
-  __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t (*get_weight_from_index)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *, __pyx_t_7sklearn_4tree_6_utils_SIZE_t);
-  __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t (*get_value_from_index)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue *, __pyx_t_7sklearn_4tree_6_utils_SIZE_t);
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_WeightedPQueue {
+  int (*is_empty)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *);
+  int (*reset)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *);
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t (*size)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *);
+  int (*push)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t);
+  int (*remove)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t);
+  int (*pop)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t *);
+  int (*peek)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t *);
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t (*get_weight_from_index)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t);
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t (*get_value_from_index)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t);
 };
-static struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedPQueue *__pyx_vtabptr_7sklearn_4tree_6_utils_WeightedPQueue;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_WeightedPQueue *__pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_WeightedPQueue;
 
 
-/* "sklearn/tree/_utils.pxd":151
+/* "_utils.pxd":151
  * # =============================================================================
  * 
  * cdef class WeightedMedianCalculator:             # <<<<<<<<<<<<<<
@@ -2332,20 +2154,20 @@ static struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedPQueue *__pyx_vtab
  *     cdef WeightedPQueue samples
  */
 
-struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedMedianCalculator {
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t (*size)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator *);
-  int (*push)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t);
-  int (*reset)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator *);
-  int (*update_median_parameters_post_push)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t);
-  int (*remove)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t);
-  int (*pop)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t *);
-  int (*update_median_parameters_post_remove)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator *, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t, __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t);
-  __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t (*get_median)(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator *);
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator {
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t (*size)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *);
+  int (*push)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t);
+  int (*reset)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *);
+  int (*update_median_parameters_post_push)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t);
+  int (*remove)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t);
+  int (*pop)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t *);
+  int (*update_median_parameters_post_remove)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t);
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t (*get_median)(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *);
 };
-static struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedMedianCalculator *__pyx_vtabptr_7sklearn_4tree_6_utils_WeightedMedianCalculator;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator *__pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator;
 
 
-/* "_splitter.pyx":41
+/* "stpredictions/models/OK3/_splitter.pyx":41
  *     self.improvement = -INFINITY
  * 
  * cdef class Splitter:             # <<<<<<<<<<<<<<
@@ -2353,17 +2175,17 @@ static struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedMedianCalculator *
  * 
  */
 
-struct __pyx_vtabstruct_9_splitter_Splitter {
-  int (*init)(struct __pyx_obj_9_splitter_Splitter *, PyObject *, __Pyx_memviewslice, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *);
-  int (*node_reset)(struct __pyx_obj_9_splitter_Splitter *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, double *);
-  int (*node_split)(struct __pyx_obj_9_splitter_Splitter *, double, struct __pyx_t_9_splitter_SplitRecord *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *);
-  void (*node_value)(struct __pyx_obj_9_splitter_Splitter *, double *);
-  double (*node_impurity)(struct __pyx_obj_9_splitter_Splitter *);
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_Splitter {
+  int (*init)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *, PyObject *, __Pyx_memviewslice, __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *);
+  int (*node_reset)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, double *);
+  int (*node_split)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *, double, struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *);
+  void (*node_value)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *, double *);
+  double (*node_impurity)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *);
 };
-static struct __pyx_vtabstruct_9_splitter_Splitter *__pyx_vtabptr_9_splitter_Splitter;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_Splitter;
 
 
-/* "_splitter.pyx":223
+/* "stpredictions/models/OK3/_splitter.pyx":223
  * 
  * 
  * cdef class BaseDenseSplitter(Splitter):             # <<<<<<<<<<<<<<
@@ -2371,13 +2193,13 @@ static struct __pyx_vtabstruct_9_splitter_Splitter *__pyx_vtabptr_9_splitter_Spl
  * 
  */
 
-struct __pyx_vtabstruct_9_splitter_BaseDenseSplitter {
-  struct __pyx_vtabstruct_9_splitter_Splitter __pyx_base;
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter {
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_Splitter __pyx_base;
 };
-static struct __pyx_vtabstruct_9_splitter_BaseDenseSplitter *__pyx_vtabptr_9_splitter_BaseDenseSplitter;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter *__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter;
 
 
-/* "_splitter.pyx":245
+/* "stpredictions/models/OK3/_splitter.pyx":245
  * 
  * 
  * cdef class BestSplitter(BaseDenseSplitter):             # <<<<<<<<<<<<<<
@@ -2385,13 +2207,13 @@ static struct __pyx_vtabstruct_9_splitter_BaseDenseSplitter *__pyx_vtabptr_9_spl
  *     def __reduce__(self):
  */
 
-struct __pyx_vtabstruct_9_splitter_BestSplitter {
-  struct __pyx_vtabstruct_9_splitter_BaseDenseSplitter __pyx_base;
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_BestSplitter {
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter __pyx_base;
 };
-static struct __pyx_vtabstruct_9_splitter_BestSplitter *__pyx_vtabptr_9_splitter_BestSplitter;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_BestSplitter *__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BestSplitter;
 
 
-/* "_splitter.pyx":564
+/* "stpredictions/models/OK3/_splitter.pyx":564
  * 
  * 
  * cdef class RandomSplitter(BaseDenseSplitter):             # <<<<<<<<<<<<<<
@@ -2399,13 +2221,13 @@ static struct __pyx_vtabstruct_9_splitter_BestSplitter *__pyx_vtabptr_9_splitter
  *     def __reduce__(self):
  */
 
-struct __pyx_vtabstruct_9_splitter_RandomSplitter {
-  struct __pyx_vtabstruct_9_splitter_BaseDenseSplitter __pyx_base;
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_RandomSplitter {
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter __pyx_base;
 };
-static struct __pyx_vtabstruct_9_splitter_RandomSplitter *__pyx_vtabptr_9_splitter_RandomSplitter;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_RandomSplitter *__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_RandomSplitter;
 
 
-/* "_splitter.pyx":761
+/* "stpredictions/models/OK3/_splitter.pyx":761
  * 
  * 
  * cdef class BaseSparseSplitter(Splitter):             # <<<<<<<<<<<<<<
@@ -2413,17 +2235,17 @@ static struct __pyx_vtabstruct_9_splitter_RandomSplitter *__pyx_vtabptr_9_splitt
  *     cdef DTYPE_t* X_data
  */
 
-struct __pyx_vtabstruct_9_splitter_BaseSparseSplitter {
-  struct __pyx_vtabstruct_9_splitter_Splitter __pyx_base;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t (*_partition)(struct __pyx_obj_9_splitter_BaseSparseSplitter *, double, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t);
-  void (*extract_nnz)(struct __pyx_obj_9_splitter_BaseSparseSplitter *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, int *);
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter {
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_Splitter __pyx_base;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t (*_partition)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *, double, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t);
+  void (*extract_nnz)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, int *);
 };
-static struct __pyx_vtabstruct_9_splitter_BaseSparseSplitter *__pyx_vtabptr_9_splitter_BaseSparseSplitter;
-static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18BaseSparseSplitter__partition(struct __pyx_obj_9_splitter_BaseSparseSplitter *, double, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t);
-static CYTHON_INLINE void __pyx_f_9_splitter_18BaseSparseSplitter_extract_nnz(struct __pyx_obj_9_splitter_BaseSparseSplitter *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, int *);
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter;
+static CYTHON_INLINE __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_f_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter__partition(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *, double, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t);
+static CYTHON_INLINE void __pyx_f_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_extract_nnz(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, int *);
 
 
-/* "_splitter.pyx":1080
+/* "stpredictions/models/OK3/_splitter.pyx":1080
  * 
  * 
  * cdef class BestSparseSplitter(BaseSparseSplitter):             # <<<<<<<<<<<<<<
@@ -2431,13 +2253,13 @@ static CYTHON_INLINE void __pyx_f_9_splitter_18BaseSparseSplitter_extract_nnz(st
  * 
  */
 
-struct __pyx_vtabstruct_9_splitter_BestSparseSplitter {
-  struct __pyx_vtabstruct_9_splitter_BaseSparseSplitter __pyx_base;
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter {
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter __pyx_base;
 };
-static struct __pyx_vtabstruct_9_splitter_BestSparseSplitter *__pyx_vtabptr_9_splitter_BestSparseSplitter;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter *__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter;
 
 
-/* "_splitter.pyx":1309
+/* "stpredictions/models/OK3/_splitter.pyx":1309
  * 
  * 
  * cdef class RandomSparseSplitter(BaseSparseSplitter):             # <<<<<<<<<<<<<<
@@ -2445,10 +2267,10 @@ static struct __pyx_vtabstruct_9_splitter_BestSparseSplitter *__pyx_vtabptr_9_sp
  * 
  */
 
-struct __pyx_vtabstruct_9_splitter_RandomSparseSplitter {
-  struct __pyx_vtabstruct_9_splitter_BaseSparseSplitter __pyx_base;
+struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter {
+  struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter __pyx_base;
 };
-static struct __pyx_vtabstruct_9_splitter_RandomSparseSplitter *__pyx_vtabptr_9_splitter_RandomSparseSplitter;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter *__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter;
 
 
 /* "View.MemoryView":105
@@ -3240,7 +3062,7 @@ static int __Pyx_ValidateAndInit_memviewslice(
                 PyObject *original_obj);
 
 /* ObjectToMemviewSlice.proto */
-static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dsds_nn___pyx_t_7sklearn_4tree_5_tree_DTYPE_t__const__(PyObject *, int writable_flag);
+static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dsds_nn___pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t__const__(PyObject *, int writable_flag);
 
 /* CheckBinaryVersion.proto */
 static int __Pyx_check_binary_version(void);
@@ -3254,19 +3076,19 @@ static int __Pyx_ImportFunction(PyObject *module, const char *funcname, void (**
 /* InitStrings.proto */
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
-static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_X, __Pyx_memviewslice __pyx_v_y, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *__pyx_v_sample_weight); /* proto*/
-static int __pyx_f_9_splitter_8Splitter_node_reset(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end, double *__pyx_v_weighted_n_node_samples); /* proto*/
-static int __pyx_f_9_splitter_8Splitter_node_split(CYTHON_UNUSED struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, CYTHON_UNUSED double __pyx_v_impurity, CYTHON_UNUSED struct __pyx_t_9_splitter_SplitRecord *__pyx_v_split, CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_n_constant_features); /* proto*/
-static void __pyx_f_9_splitter_8Splitter_node_value(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, double *__pyx_v_dest); /* proto*/
-static double __pyx_f_9_splitter_8Splitter_node_impurity(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self); /* proto*/
-static int __pyx_f_9_splitter_17BaseDenseSplitter_init(struct __pyx_obj_9_splitter_BaseDenseSplitter *__pyx_v_self, PyObject *__pyx_v_X, __Pyx_memviewslice __pyx_v_y, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *__pyx_v_sample_weight); /* proto*/
-static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_splitter_BestSplitter *__pyx_v_self, double __pyx_v_impurity, struct __pyx_t_9_splitter_SplitRecord *__pyx_v_split, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_n_constant_features); /* proto*/
-static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_splitter_RandomSplitter *__pyx_v_self, double __pyx_v_impurity, struct __pyx_t_9_splitter_SplitRecord *__pyx_v_split, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_n_constant_features); /* proto*/
-static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_splitter_BaseSparseSplitter *__pyx_v_self, PyObject *__pyx_v_X, __Pyx_memviewslice __pyx_v_y, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *__pyx_v_sample_weight); /* proto*/
-static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18BaseSparseSplitter__partition(struct __pyx_obj_9_splitter_BaseSparseSplitter *__pyx_v_self, double __pyx_v_threshold, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end_negative, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start_positive, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_zero_pos); /* proto*/
-static CYTHON_INLINE void __pyx_f_9_splitter_18BaseSparseSplitter_extract_nnz(struct __pyx_obj_9_splitter_BaseSparseSplitter *__pyx_v_self, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_feature, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_end_negative, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_start_positive, int *__pyx_v_is_samples_sorted); /* proto*/
-static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9_splitter_BestSparseSplitter *__pyx_v_self, double __pyx_v_impurity, struct __pyx_t_9_splitter_SplitRecord *__pyx_v_split, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_n_constant_features); /* proto*/
-static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj_9_splitter_RandomSparseSplitter *__pyx_v_self, double __pyx_v_impurity, struct __pyx_t_9_splitter_SplitRecord *__pyx_v_split, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_n_constant_features); /* proto*/
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_8Splitter_init(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_X, __Pyx_memviewslice __pyx_v_y, __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *__pyx_v_sample_weight); /* proto*/
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_8Splitter_node_reset(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end, double *__pyx_v_weighted_n_node_samples); /* proto*/
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_8Splitter_node_split(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, CYTHON_UNUSED double __pyx_v_impurity, CYTHON_UNUSED struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord *__pyx_v_split, CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_n_constant_features); /* proto*/
+static void __pyx_f_13stpredictions_6models_3OK3_9_splitter_8Splitter_node_value(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, double *__pyx_v_dest); /* proto*/
+static double __pyx_f_13stpredictions_6models_3OK3_9_splitter_8Splitter_node_impurity(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self); /* proto*/
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_17BaseDenseSplitter_init(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter *__pyx_v_self, PyObject *__pyx_v_X, __Pyx_memviewslice __pyx_v_y, __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *__pyx_v_sample_weight); /* proto*/
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_12BestSplitter_node_split(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSplitter *__pyx_v_self, double __pyx_v_impurity, struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord *__pyx_v_split, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_n_constant_features); /* proto*/
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSplitter *__pyx_v_self, double __pyx_v_impurity, struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord *__pyx_v_split, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_n_constant_features); /* proto*/
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *__pyx_v_self, PyObject *__pyx_v_X, __Pyx_memviewslice __pyx_v_y, __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *__pyx_v_sample_weight); /* proto*/
+static CYTHON_INLINE __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_f_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter__partition(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *__pyx_v_self, double __pyx_v_threshold, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end_negative, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start_positive, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_zero_pos); /* proto*/
+static CYTHON_INLINE void __pyx_f_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_extract_nnz(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *__pyx_v_self, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_feature, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_end_negative, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_start_positive, int *__pyx_v_is_samples_sorted); /* proto*/
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter *__pyx_v_self, double __pyx_v_impurity, struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord *__pyx_v_split, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_n_constant_features); /* proto*/
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter *__pyx_v_self, double __pyx_v_impurity, struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord *__pyx_v_split, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_n_constant_features); /* proto*/
 static PyObject *__pyx_array_get_memview(struct __pyx_array_obj *__pyx_v_self); /* proto*/
 static char *__pyx_memoryview_get_item_pointer(struct __pyx_memoryview_obj *__pyx_v_self, PyObject *__pyx_v_index); /* proto*/
 static PyObject *__pyx_memoryview_is_slice(struct __pyx_memoryview_obj *__pyx_v_self, PyObject *__pyx_v_obj); /* proto*/
@@ -3307,64 +3129,56 @@ static PyTypeObject *__pyx_ptype_5numpy_ndarray = 0;
 static PyTypeObject *__pyx_ptype_5numpy_ufunc = 0;
 static CYTHON_INLINE int __pyx_f_5numpy_import_array(void); /*proto*/
 
-/* Module declarations from 'sklearn.tree._criterion' */
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_10_criterion_Criterion = 0;
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_10_criterion_ClassificationCriterion = 0;
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_10_criterion_RegressionCriterion = 0;
+/* Module declarations from 'stpredictions.models.OK3._tree' */
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_5_tree_Tree = 0;
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_5_tree_TreeBuilder = 0;
 
-/* Module declarations from 'sklearn.tree._splitter' */
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_9_splitter_Splitter = 0;
-
-/* Module declarations from 'sklearn.tree._tree' */
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_5_tree_Tree = 0;
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_5_tree_TreeBuilder = 0;
-
-/* Module declarations from '_criterion' */
-static PyTypeObject *__pyx_ptype_10_criterion_Criterion = 0;
-static PyTypeObject *__pyx_ptype_10_criterion_KernelizedRegressionCriterion = 0;
+/* Module declarations from 'stpredictions.models.OK3._criterion' */
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_10_criterion_Criterion = 0;
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion = 0;
 
 /* Module declarations from 'libc.stdlib' */
 
-/* Module declarations from 'sklearn.neighbors._quad_tree' */
-static PyTypeObject *__pyx_ptype_7sklearn_9neighbors_10_quad_tree__QuadTree = 0;
-static float *__pyx_vp_7sklearn_9neighbors_10_quad_tree_EPSILON = 0;
-#define __pyx_v_7sklearn_9neighbors_10_quad_tree_EPSILON (*__pyx_vp_7sklearn_9neighbors_10_quad_tree_EPSILON)
+/* Module declarations from 'stpredictions.models.OK3._quad_tree' */
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_10_quad_tree__QuadTree = 0;
+static float *__pyx_vp_13stpredictions_6models_3OK3_10_quad_tree_EPSILON = 0;
+#define __pyx_v_13stpredictions_6models_3OK3_10_quad_tree_EPSILON (*__pyx_vp_13stpredictions_6models_3OK3_10_quad_tree_EPSILON)
 
-/* Module declarations from 'sklearn.tree._utils' */
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_6_utils_Stack = 0;
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_6_utils_PriorityHeap = 0;
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_6_utils_WeightedPQueue = 0;
-static PyTypeObject *__pyx_ptype_7sklearn_4tree_6_utils_WeightedMedianCalculator = 0;
-static __pyx_t_7sklearn_4tree_6_utils_SIZE_t (*__pyx_f_7sklearn_4tree_6_utils_rand_int)(__pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_UINT32_t *); /*proto*/
-static double (*__pyx_f_7sklearn_4tree_6_utils_rand_uniform)(double, double, __pyx_t_7sklearn_4tree_6_utils_UINT32_t *); /*proto*/
-static double (*__pyx_f_7sklearn_4tree_6_utils_log)(double); /*proto*/
-static __pyx_t_7sklearn_4tree_6_utils_DTYPE_t *(*__pyx_fuse_0__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(__pyx_t_7sklearn_4tree_6_utils_DTYPE_t **, size_t); /*proto*/
-static __pyx_t_7sklearn_4tree_6_utils_SIZE_t *(*__pyx_fuse_1__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(__pyx_t_7sklearn_4tree_6_utils_SIZE_t **, size_t); /*proto*/
-static unsigned char *(*__pyx_fuse_2__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(unsigned char **, size_t); /*proto*/
-static struct __pyx_t_7sklearn_4tree_6_utils_WeightedPQueueRecord *(*__pyx_fuse_3__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(struct __pyx_t_7sklearn_4tree_6_utils_WeightedPQueueRecord **, size_t); /*proto*/
-static __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t *(*__pyx_fuse_4__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(__pyx_t_7sklearn_4tree_6_utils_DOUBLE_t **, size_t); /*proto*/
-static __pyx_t_7sklearn_4tree_6_utils_DOUBLE_t **(*__pyx_fuse_5__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(__pyx_t_7sklearn_4tree_6_utils_DOUBLE_t ***, size_t); /*proto*/
-static struct __pyx_t_7sklearn_4tree_5_tree_Node *(*__pyx_fuse_6__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(struct __pyx_t_7sklearn_4tree_5_tree_Node **, size_t); /*proto*/
-static struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell *(*__pyx_fuse_7__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell **, size_t); /*proto*/
-static struct __pyx_t_7sklearn_4tree_5_tree_Node **(*__pyx_fuse_8__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(struct __pyx_t_7sklearn_4tree_5_tree_Node ***, size_t); /*proto*/
-static struct __pyx_t_7sklearn_4tree_6_utils_StackRecord *(*__pyx_fuse_9__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(struct __pyx_t_7sklearn_4tree_6_utils_StackRecord **, size_t); /*proto*/
-static struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord *(*__pyx_fuse_10__pyx_f_7sklearn_4tree_6_utils_safe_realloc)(struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord **, size_t); /*proto*/
+/* Module declarations from 'stpredictions.models.OK3._utils' */
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_6_utils_Stack = 0;
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_6_utils_PriorityHeap = 0;
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_6_utils_WeightedPQueue = 0;
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator = 0;
+static __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t (*__pyx_f_13stpredictions_6models_3OK3_6_utils_rand_int)(__pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_UINT32_t *); /*proto*/
+static double (*__pyx_f_13stpredictions_6models_3OK3_6_utils_rand_uniform)(double, double, __pyx_t_13stpredictions_6models_3OK3_6_utils_UINT32_t *); /*proto*/
+static double (*__pyx_f_13stpredictions_6models_3OK3_6_utils_log)(double); /*proto*/
+static __pyx_t_13stpredictions_6models_3OK3_6_utils_DTYPE_t *(*__pyx_fuse_0__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(__pyx_t_13stpredictions_6models_3OK3_6_utils_DTYPE_t **, size_t); /*proto*/
+static __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t *(*__pyx_fuse_1__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(__pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t **, size_t); /*proto*/
+static unsigned char *(*__pyx_fuse_2__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(unsigned char **, size_t); /*proto*/
+static struct __pyx_t_13stpredictions_6models_3OK3_6_utils_WeightedPQueueRecord *(*__pyx_fuse_3__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(struct __pyx_t_13stpredictions_6models_3OK3_6_utils_WeightedPQueueRecord **, size_t); /*proto*/
+static __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t *(*__pyx_fuse_4__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(__pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t **, size_t); /*proto*/
+static __pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t **(*__pyx_fuse_5__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(__pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t ***, size_t); /*proto*/
+static struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node *(*__pyx_fuse_6__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node **, size_t); /*proto*/
+static struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell *(*__pyx_fuse_7__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell **, size_t); /*proto*/
+static struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node **(*__pyx_fuse_8__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node ***, size_t); /*proto*/
+static struct __pyx_t_13stpredictions_6models_3OK3_6_utils_StackRecord *(*__pyx_fuse_9__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(struct __pyx_t_13stpredictions_6models_3OK3_6_utils_StackRecord **, size_t); /*proto*/
+static struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord *(*__pyx_fuse_10__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc)(struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord **, size_t); /*proto*/
 
-/* Module declarations from '_splitter' */
-static PyTypeObject *__pyx_ptype_9_splitter_Splitter = 0;
-static PyTypeObject *__pyx_ptype_9_splitter_BaseDenseSplitter = 0;
-static PyTypeObject *__pyx_ptype_9_splitter_BestSplitter = 0;
-static PyTypeObject *__pyx_ptype_9_splitter_RandomSplitter = 0;
-static PyTypeObject *__pyx_ptype_9_splitter_BaseSparseSplitter = 0;
-static PyTypeObject *__pyx_ptype_9_splitter_BestSparseSplitter = 0;
-static PyTypeObject *__pyx_ptype_9_splitter_RandomSparseSplitter = 0;
+/* Module declarations from 'stpredictions.models.OK3._splitter' */
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_Splitter = 0;
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter = 0;
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_BestSplitter = 0;
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_RandomSplitter = 0;
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter = 0;
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter = 0;
+static PyTypeObject *__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter = 0;
 static PyTypeObject *__pyx_array_type = 0;
 static PyTypeObject *__pyx_MemviewEnum_type = 0;
 static PyTypeObject *__pyx_memoryview_type = 0;
 static PyTypeObject *__pyx_memoryviewslice_type = 0;
-static double __pyx_v_9_splitter_INFINITY;
-static __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_v_9_splitter_FEATURE_THRESHOLD;
-static __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_v_9_splitter_EXTRACT_NNZ_SWITCH;
+static double __pyx_v_13stpredictions_6models_3OK3_9_splitter_INFINITY;
+static __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_v_13stpredictions_6models_3OK3_9_splitter_FEATURE_THRESHOLD;
+static __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_v_13stpredictions_6models_3OK3_9_splitter_EXTRACT_NNZ_SWITCH;
 static PyObject *generic = 0;
 static PyObject *strided = 0;
 static PyObject *indirect = 0;
@@ -3372,18 +3186,18 @@ static PyObject *contiguous = 0;
 static PyObject *indirect_contiguous = 0;
 static int __pyx_memoryview_thread_locks_used;
 static PyThread_type_lock __pyx_memoryview_thread_locks[8];
-static CYTHON_INLINE void __pyx_f_9_splitter__init_split(struct __pyx_t_9_splitter_SplitRecord *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t); /*proto*/
-static CYTHON_INLINE void __pyx_f_9_splitter_sort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t); /*proto*/
-static CYTHON_INLINE void __pyx_f_9_splitter_swap(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t); /*proto*/
-static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_median3(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t); /*proto*/
-static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, int); /*proto*/
-static CYTHON_INLINE void __pyx_f_9_splitter_sift_down(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t); /*proto*/
-static void __pyx_f_9_splitter_heapsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t); /*proto*/
-static int __pyx_f_9_splitter_compare_SIZE_t(void const *, void const *); /*proto*/
-static CYTHON_INLINE void __pyx_f_9_splitter_binary_search(__pyx_t_7sklearn_4tree_5_tree_INT32_t *, __pyx_t_7sklearn_4tree_5_tree_INT32_t, __pyx_t_7sklearn_4tree_5_tree_INT32_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_INT32_t *); /*proto*/
-static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_t_7sklearn_4tree_5_tree_INT32_t *, __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *, __pyx_t_7sklearn_4tree_5_tree_INT32_t, __pyx_t_7sklearn_4tree_5_tree_INT32_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *); /*proto*/
-static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7sklearn_4tree_5_tree_INT32_t *, __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *, __pyx_t_7sklearn_4tree_5_tree_INT32_t, __pyx_t_7sklearn_4tree_5_tree_INT32_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, int *); /*proto*/
-static CYTHON_INLINE void __pyx_f_9_splitter_sparse_swap(__pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t); /*proto*/
+static CYTHON_INLINE void __pyx_f_13stpredictions_6models_3OK3_9_splitter__init_split(struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t); /*proto*/
+static CYTHON_INLINE void __pyx_f_13stpredictions_6models_3OK3_9_splitter_sort(__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t); /*proto*/
+static CYTHON_INLINE void __pyx_f_13stpredictions_6models_3OK3_9_splitter_swap(__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t); /*proto*/
+static CYTHON_INLINE __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_f_13stpredictions_6models_3OK3_9_splitter_median3(__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t); /*proto*/
+static void __pyx_f_13stpredictions_6models_3OK3_9_splitter_introsort(__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, int); /*proto*/
+static CYTHON_INLINE void __pyx_f_13stpredictions_6models_3OK3_9_splitter_sift_down(__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t); /*proto*/
+static void __pyx_f_13stpredictions_6models_3OK3_9_splitter_heapsort(__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t); /*proto*/
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_compare_SIZE_t(void const *, void const *); /*proto*/
+static CYTHON_INLINE void __pyx_f_13stpredictions_6models_3OK3_9_splitter_binary_search(__pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t *); /*proto*/
+static CYTHON_INLINE void __pyx_f_13stpredictions_6models_3OK3_9_splitter_extract_nnz_index_to_samples(__pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *); /*proto*/
+static CYTHON_INLINE void __pyx_f_13stpredictions_6models_3OK3_9_splitter_extract_nnz_binary_search(__pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, int *); /*proto*/
+static CYTHON_INLINE void __pyx_f_13stpredictions_6models_3OK3_9_splitter_sparse_swap(__pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t); /*proto*/
 static struct __pyx_array_obj *__pyx_array_new(PyObject *, Py_ssize_t, char *, char *, char *); /*proto*/
 static void *__pyx_align_pointer(void *, size_t); /*proto*/
 static PyObject *__pyx_memoryview_new(PyObject *, int, int, __Pyx_TypeInfo *); /*proto*/
@@ -3417,14 +3231,14 @@ static void __pyx_memoryview_refcount_objects_in_slice(char *, Py_ssize_t *, Py_
 static void __pyx_memoryview_slice_assign_scalar(__Pyx_memviewslice *, int, size_t, void *, int); /*proto*/
 static void __pyx_memoryview__slice_assign_scalar(char *, Py_ssize_t *, Py_ssize_t *, int, size_t, void *); /*proto*/
 static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *, PyObject *); /*proto*/
-static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_7sklearn_4tree_5_tree_DTYPE_t = { "DTYPE_t", NULL, sizeof(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t), { 0 }, 0, 'R', 0, 0 };
-static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_7sklearn_4tree_5_tree_INT32_t = { "INT32_t", NULL, sizeof(__pyx_t_7sklearn_4tree_5_tree_INT32_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_7sklearn_4tree_5_tree_INT32_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_7sklearn_4tree_5_tree_INT32_t), 0 };
-static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_7sklearn_4tree_5_tree_DTYPE_t__const__ = { "const DTYPE_t", NULL, sizeof(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t const ), { 0 }, 0, 'R', 0, 0 };
-#define __Pyx_MODULE_NAME "_splitter"
-extern int __pyx_module_is_main__splitter;
-int __pyx_module_is_main__splitter = 0;
+static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t = { "DTYPE_t", NULL, sizeof(__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t), { 0 }, 0, 'R', 0, 0 };
+static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t = { "INT32_t", NULL, sizeof(__pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t), 0 };
+static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t__const__ = { "const DTYPE_t", NULL, sizeof(__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t const ), { 0 }, 0, 'R', 0, 0 };
+#define __Pyx_MODULE_NAME "stpredictions.models.OK3._splitter"
+extern int __pyx_module_is_main_stpredictions__models__OK3___splitter;
+int __pyx_module_is_main_stpredictions__models__OK3___splitter = 0;
 
-/* Implementation of '_splitter' */
+/* Implementation of 'stpredictions.models.OK3._splitter' */
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_TypeError;
 static PyObject *__pyx_builtin_ValueError;
@@ -3654,31 +3468,31 @@ static PyObject *__pyx_kp_s_unable_to_allocate_array_data;
 static PyObject *__pyx_kp_s_unable_to_allocate_shape_and_str;
 static PyObject *__pyx_n_s_unpack;
 static PyObject *__pyx_n_s_update;
-static int __pyx_pf_9_splitter_8Splitter___cinit__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, struct __pyx_obj_10_criterion_Criterion *__pyx_v_criterion, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_max_features, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_min_samples_leaf, double __pyx_v_min_weight_leaf, PyObject *__pyx_v_random_state); /* proto */
-static void __pyx_pf_9_splitter_8Splitter_2__dealloc__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9_splitter_8Splitter_4__getstate__(CYTHON_UNUSED struct __pyx_obj_9_splitter_Splitter *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9_splitter_8Splitter_6__setstate__(CYTHON_UNUSED struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_d); /* proto */
-static PyObject *__pyx_pf_9_splitter_8Splitter_9criterion___get__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self); /* proto */
-static int __pyx_pf_9_splitter_8Splitter_9criterion_2__set__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static int __pyx_pf_9_splitter_8Splitter_9criterion_4__del__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9_splitter_8Splitter_12max_features___get__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self); /* proto */
-static int __pyx_pf_9_splitter_8Splitter_12max_features_2__set__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_9_splitter_8Splitter_16min_samples_leaf___get__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self); /* proto */
-static int __pyx_pf_9_splitter_8Splitter_16min_samples_leaf_2__set__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_9_splitter_8Splitter_15min_weight_leaf___get__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self); /* proto */
-static int __pyx_pf_9_splitter_8Splitter_15min_weight_leaf_2__set__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_9_splitter_8Splitter_8__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_9_splitter_Splitter *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9_splitter_8Splitter_10__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_pf_9_splitter_17BaseDenseSplitter___reduce_cython__(CYTHON_UNUSED struct __pyx_obj_9_splitter_BaseDenseSplitter *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9_splitter_17BaseDenseSplitter_2__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_9_splitter_BaseDenseSplitter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_pf_9_splitter_12BestSplitter___reduce__(struct __pyx_obj_9_splitter_BestSplitter *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9_splitter_14RandomSplitter___reduce__(struct __pyx_obj_9_splitter_RandomSplitter *__pyx_v_self); /* proto */
-static int __pyx_pf_9_splitter_18BaseSparseSplitter___cinit__(struct __pyx_obj_9_splitter_BaseSparseSplitter *__pyx_v_self, CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_criterion, CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_max_features, CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_min_samples_leaf, CYTHON_UNUSED double __pyx_v_min_weight_leaf, CYTHON_UNUSED PyObject *__pyx_v_random_state); /* proto */
-static void __pyx_pf_9_splitter_18BaseSparseSplitter_2__dealloc__(struct __pyx_obj_9_splitter_BaseSparseSplitter *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9_splitter_18BaseSparseSplitter_4__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_9_splitter_BaseSparseSplitter *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9_splitter_18BaseSparseSplitter_6__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_9_splitter_BaseSparseSplitter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_pf_9_splitter_18BestSparseSplitter___reduce__(struct __pyx_obj_9_splitter_BestSparseSplitter *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9_splitter_20RandomSparseSplitter___reduce__(struct __pyx_obj_9_splitter_RandomSparseSplitter *__pyx_v_self); /* proto */
+static int __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter___cinit__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_criterion, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_max_features, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_min_samples_leaf, double __pyx_v_min_weight_leaf, PyObject *__pyx_v_random_state); /* proto */
+static void __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_2__dealloc__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_4__getstate__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_6__setstate__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_d); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_9criterion___get__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self); /* proto */
+static int __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_9criterion_2__set__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static int __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_9criterion_4__del__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_12max_features___get__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self); /* proto */
+static int __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_12max_features_2__set__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_16min_samples_leaf___get__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self); /* proto */
+static int __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_16min_samples_leaf_2__set__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_15min_weight_leaf___get__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self); /* proto */
+static int __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_15min_weight_leaf_2__set__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_8__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_10__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_17BaseDenseSplitter___reduce_cython__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_17BaseDenseSplitter_2__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_12BestSplitter___reduce__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSplitter *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_14RandomSplitter___reduce__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSplitter *__pyx_v_self); /* proto */
+static int __pyx_pf_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter___cinit__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *__pyx_v_self, CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_criterion, CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_max_features, CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_min_samples_leaf, CYTHON_UNUSED double __pyx_v_min_weight_leaf, CYTHON_UNUSED PyObject *__pyx_v_random_state); /* proto */
+static void __pyx_pf_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_2__dealloc__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_4__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_6__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_18BestSparseSplitter___reduce__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_20RandomSparseSplitter___reduce__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter *__pyx_v_self); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __pyx_array_obj *__pyx_v_self, PyObject *__pyx_v_shape, Py_ssize_t __pyx_v_itemsize, PyObject *__pyx_v_format, PyObject *__pyx_v_mode, int __pyx_v_allocate_buffer); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array_2__getbuffer__(struct __pyx_array_obj *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_array___pyx_pf_15View_dot_MemoryView_5array_4__dealloc__(struct __pyx_array_obj *__pyx_v_self); /* proto */
@@ -3721,13 +3535,13 @@ static PyObject *__pyx_pf_15View_dot_MemoryView_16_memoryviewslice_4base___get__
 static PyObject *__pyx_pf___pyx_memoryviewslice___reduce_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf___pyx_memoryviewslice_2__setstate_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_15View_dot_MemoryView___pyx_unpickle_Enum(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_tp_new_9_splitter_Splitter(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_9_splitter_BaseDenseSplitter(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_9_splitter_BestSplitter(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_9_splitter_RandomSplitter(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_9_splitter_BaseSparseSplitter(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_9_splitter_BestSparseSplitter(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_9_splitter_RandomSparseSplitter(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_Splitter(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_BestSplitter(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_RandomSplitter(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_array(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_Enum(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_memoryview(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
@@ -3772,7 +3586,7 @@ static PyObject *__pyx_tuple__33;
 static PyObject *__pyx_codeobj__34;
 /* Late includes */
 
-/* "_splitter.pyx":33
+/* "stpredictions/models/OK3/_splitter.pyx":33
  * cdef DTYPE_t EXTRACT_NNZ_SWITCH = 0.1
  * 
  * cdef inline void _init_split(SplitRecord* self, SIZE_t start_pos) nogil:             # <<<<<<<<<<<<<<
@@ -3780,27 +3594,27 @@ static PyObject *__pyx_codeobj__34;
  *     self.impurity_right = INFINITY
  */
 
-static CYTHON_INLINE void __pyx_f_9_splitter__init_split(struct __pyx_t_9_splitter_SplitRecord *__pyx_v_self, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start_pos) {
+static CYTHON_INLINE void __pyx_f_13stpredictions_6models_3OK3_9_splitter__init_split(struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord *__pyx_v_self, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start_pos) {
 
-  /* "_splitter.pyx":34
+  /* "stpredictions/models/OK3/_splitter.pyx":34
  * 
  * cdef inline void _init_split(SplitRecord* self, SIZE_t start_pos) nogil:
  *     self.impurity_left = INFINITY             # <<<<<<<<<<<<<<
  *     self.impurity_right = INFINITY
  *     self.pos = start_pos
  */
-  __pyx_v_self->impurity_left = __pyx_v_9_splitter_INFINITY;
+  __pyx_v_self->impurity_left = __pyx_v_13stpredictions_6models_3OK3_9_splitter_INFINITY;
 
-  /* "_splitter.pyx":35
+  /* "stpredictions/models/OK3/_splitter.pyx":35
  * cdef inline void _init_split(SplitRecord* self, SIZE_t start_pos) nogil:
  *     self.impurity_left = INFINITY
  *     self.impurity_right = INFINITY             # <<<<<<<<<<<<<<
  *     self.pos = start_pos
  *     self.feature = 0
  */
-  __pyx_v_self->impurity_right = __pyx_v_9_splitter_INFINITY;
+  __pyx_v_self->impurity_right = __pyx_v_13stpredictions_6models_3OK3_9_splitter_INFINITY;
 
-  /* "_splitter.pyx":36
+  /* "stpredictions/models/OK3/_splitter.pyx":36
  *     self.impurity_left = INFINITY
  *     self.impurity_right = INFINITY
  *     self.pos = start_pos             # <<<<<<<<<<<<<<
@@ -3809,7 +3623,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter__init_split(struct __pyx_t_9_splitt
  */
   __pyx_v_self->pos = __pyx_v_start_pos;
 
-  /* "_splitter.pyx":37
+  /* "stpredictions/models/OK3/_splitter.pyx":37
  *     self.impurity_right = INFINITY
  *     self.pos = start_pos
  *     self.feature = 0             # <<<<<<<<<<<<<<
@@ -3818,7 +3632,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter__init_split(struct __pyx_t_9_splitt
  */
   __pyx_v_self->feature = 0;
 
-  /* "_splitter.pyx":38
+  /* "stpredictions/models/OK3/_splitter.pyx":38
  *     self.pos = start_pos
  *     self.feature = 0
  *     self.threshold = 0.             # <<<<<<<<<<<<<<
@@ -3827,16 +3641,16 @@ static CYTHON_INLINE void __pyx_f_9_splitter__init_split(struct __pyx_t_9_splitt
  */
   __pyx_v_self->threshold = 0.;
 
-  /* "_splitter.pyx":39
+  /* "stpredictions/models/OK3/_splitter.pyx":39
  *     self.feature = 0
  *     self.threshold = 0.
  *     self.improvement = -INFINITY             # <<<<<<<<<<<<<<
  * 
  * cdef class Splitter:
  */
-  __pyx_v_self->improvement = (-__pyx_v_9_splitter_INFINITY);
+  __pyx_v_self->improvement = (-__pyx_v_13stpredictions_6models_3OK3_9_splitter_INFINITY);
 
-  /* "_splitter.pyx":33
+  /* "stpredictions/models/OK3/_splitter.pyx":33
  * cdef DTYPE_t EXTRACT_NNZ_SWITCH = 0.1
  * 
  * cdef inline void _init_split(SplitRecord* self, SIZE_t start_pos) nogil:             # <<<<<<<<<<<<<<
@@ -3847,7 +3661,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter__init_split(struct __pyx_t_9_splitt
   /* function exit code */
 }
 
-/* "_splitter.pyx":48
+/* "stpredictions/models/OK3/_splitter.pyx":48
  *     """
  * 
  *     def __cinit__(self, Criterion criterion, SIZE_t max_features,             # <<<<<<<<<<<<<<
@@ -3856,11 +3670,11 @@ static CYTHON_INLINE void __pyx_f_9_splitter__init_split(struct __pyx_t_9_splitt
  */
 
 /* Python wrapper */
-static int __pyx_pw_9_splitter_8Splitter_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_9_splitter_8Splitter_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
-  struct __pyx_obj_10_criterion_Criterion *__pyx_v_criterion = 0;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_max_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_min_samples_leaf;
+static int __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+  struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_criterion = 0;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_max_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_min_samples_leaf;
   double __pyx_v_min_weight_leaf;
   PyObject *__pyx_v_random_state = 0;
   int __pyx_lineno = 0;
@@ -3931,7 +3745,7 @@ static int __pyx_pw_9_splitter_8Splitter_1__cinit__(PyObject *__pyx_v_self, PyOb
       values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
       values[4] = PyTuple_GET_ITEM(__pyx_args, 4);
     }
-    __pyx_v_criterion = ((struct __pyx_obj_10_criterion_Criterion *)values[0]);
+    __pyx_v_criterion = ((struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *)values[0]);
     __pyx_v_max_features = __Pyx_PyInt_As_Py_intptr_t(values[1]); if (unlikely((__pyx_v_max_features == ((npy_intp)-1)) && PyErr_Occurred())) __PYX_ERR(0, 48, __pyx_L3_error)
     __pyx_v_min_samples_leaf = __Pyx_PyInt_As_Py_intptr_t(values[2]); if (unlikely((__pyx_v_min_samples_leaf == ((npy_intp)-1)) && PyErr_Occurred())) __PYX_ERR(0, 49, __pyx_L3_error)
     __pyx_v_min_weight_leaf = __pyx_PyFloat_AsDouble(values[3]); if (unlikely((__pyx_v_min_weight_leaf == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 49, __pyx_L3_error)
@@ -3941,12 +3755,12 @@ static int __pyx_pw_9_splitter_8Splitter_1__cinit__(PyObject *__pyx_v_self, PyOb
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 5, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 48, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("_splitter.Splitter.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.Splitter.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_criterion), __pyx_ptype_10_criterion_Criterion, 1, "criterion", 0))) __PYX_ERR(0, 48, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9_splitter_8Splitter___cinit__(((struct __pyx_obj_9_splitter_Splitter *)__pyx_v_self), __pyx_v_criterion, __pyx_v_max_features, __pyx_v_min_samples_leaf, __pyx_v_min_weight_leaf, __pyx_v_random_state);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_criterion), __pyx_ptype_13stpredictions_6models_3OK3_10_criterion_Criterion, 1, "criterion", 0))) __PYX_ERR(0, 48, __pyx_L1_error)
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter___cinit__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)__pyx_v_self), __pyx_v_criterion, __pyx_v_max_features, __pyx_v_min_samples_leaf, __pyx_v_min_weight_leaf, __pyx_v_random_state);
 
   /* function exit code */
   goto __pyx_L0;
@@ -3957,12 +3771,12 @@ static int __pyx_pw_9_splitter_8Splitter_1__cinit__(PyObject *__pyx_v_self, PyOb
   return __pyx_r;
 }
 
-static int __pyx_pf_9_splitter_8Splitter___cinit__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, struct __pyx_obj_10_criterion_Criterion *__pyx_v_criterion, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_max_features, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_min_samples_leaf, double __pyx_v_min_weight_leaf, PyObject *__pyx_v_random_state) {
+static int __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter___cinit__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_criterion, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_max_features, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_min_samples_leaf, double __pyx_v_min_weight_leaf, PyObject *__pyx_v_random_state) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "_splitter.pyx":74
+  /* "stpredictions/models/OK3/_splitter.pyx":74
  *         """
  * 
  *         self.criterion = criterion             # <<<<<<<<<<<<<<
@@ -3975,7 +3789,7 @@ static int __pyx_pf_9_splitter_8Splitter___cinit__(struct __pyx_obj_9_splitter_S
   __Pyx_DECREF(((PyObject *)__pyx_v_self->criterion));
   __pyx_v_self->criterion = __pyx_v_criterion;
 
-  /* "_splitter.pyx":76
+  /* "stpredictions/models/OK3/_splitter.pyx":76
  *         self.criterion = criterion
  * 
  *         self.samples = NULL             # <<<<<<<<<<<<<<
@@ -3984,7 +3798,7 @@ static int __pyx_pf_9_splitter_8Splitter___cinit__(struct __pyx_obj_9_splitter_S
  */
   __pyx_v_self->samples = NULL;
 
-  /* "_splitter.pyx":77
+  /* "stpredictions/models/OK3/_splitter.pyx":77
  * 
  *         self.samples = NULL
  *         self.n_samples = 0             # <<<<<<<<<<<<<<
@@ -3993,7 +3807,7 @@ static int __pyx_pf_9_splitter_8Splitter___cinit__(struct __pyx_obj_9_splitter_S
  */
   __pyx_v_self->n_samples = 0;
 
-  /* "_splitter.pyx":78
+  /* "stpredictions/models/OK3/_splitter.pyx":78
  *         self.samples = NULL
  *         self.n_samples = 0
  *         self.features = NULL             # <<<<<<<<<<<<<<
@@ -4002,7 +3816,7 @@ static int __pyx_pf_9_splitter_8Splitter___cinit__(struct __pyx_obj_9_splitter_S
  */
   __pyx_v_self->features = NULL;
 
-  /* "_splitter.pyx":79
+  /* "stpredictions/models/OK3/_splitter.pyx":79
  *         self.n_samples = 0
  *         self.features = NULL
  *         self.n_features = 0             # <<<<<<<<<<<<<<
@@ -4011,7 +3825,7 @@ static int __pyx_pf_9_splitter_8Splitter___cinit__(struct __pyx_obj_9_splitter_S
  */
   __pyx_v_self->n_features = 0;
 
-  /* "_splitter.pyx":80
+  /* "stpredictions/models/OK3/_splitter.pyx":80
  *         self.features = NULL
  *         self.n_features = 0
  *         self.feature_values = NULL             # <<<<<<<<<<<<<<
@@ -4020,7 +3834,7 @@ static int __pyx_pf_9_splitter_8Splitter___cinit__(struct __pyx_obj_9_splitter_S
  */
   __pyx_v_self->feature_values = NULL;
 
-  /* "_splitter.pyx":82
+  /* "stpredictions/models/OK3/_splitter.pyx":82
  *         self.feature_values = NULL
  * 
  *         self.sample_weight = NULL             # <<<<<<<<<<<<<<
@@ -4029,7 +3843,7 @@ static int __pyx_pf_9_splitter_8Splitter___cinit__(struct __pyx_obj_9_splitter_S
  */
   __pyx_v_self->sample_weight = NULL;
 
-  /* "_splitter.pyx":84
+  /* "stpredictions/models/OK3/_splitter.pyx":84
  *         self.sample_weight = NULL
  * 
  *         self.max_features = max_features             # <<<<<<<<<<<<<<
@@ -4038,7 +3852,7 @@ static int __pyx_pf_9_splitter_8Splitter___cinit__(struct __pyx_obj_9_splitter_S
  */
   __pyx_v_self->max_features = __pyx_v_max_features;
 
-  /* "_splitter.pyx":85
+  /* "stpredictions/models/OK3/_splitter.pyx":85
  * 
  *         self.max_features = max_features
  *         self.min_samples_leaf = min_samples_leaf             # <<<<<<<<<<<<<<
@@ -4047,7 +3861,7 @@ static int __pyx_pf_9_splitter_8Splitter___cinit__(struct __pyx_obj_9_splitter_S
  */
   __pyx_v_self->min_samples_leaf = __pyx_v_min_samples_leaf;
 
-  /* "_splitter.pyx":86
+  /* "stpredictions/models/OK3/_splitter.pyx":86
  *         self.max_features = max_features
  *         self.min_samples_leaf = min_samples_leaf
  *         self.min_weight_leaf = min_weight_leaf             # <<<<<<<<<<<<<<
@@ -4056,7 +3870,7 @@ static int __pyx_pf_9_splitter_8Splitter___cinit__(struct __pyx_obj_9_splitter_S
  */
   __pyx_v_self->min_weight_leaf = __pyx_v_min_weight_leaf;
 
-  /* "_splitter.pyx":87
+  /* "stpredictions/models/OK3/_splitter.pyx":87
  *         self.min_samples_leaf = min_samples_leaf
  *         self.min_weight_leaf = min_weight_leaf
  *         self.random_state = random_state             # <<<<<<<<<<<<<<
@@ -4069,7 +3883,7 @@ static int __pyx_pf_9_splitter_8Splitter___cinit__(struct __pyx_obj_9_splitter_S
   __Pyx_DECREF(__pyx_v_self->random_state);
   __pyx_v_self->random_state = __pyx_v_random_state;
 
-  /* "_splitter.pyx":48
+  /* "stpredictions/models/OK3/_splitter.pyx":48
  *     """
  * 
  *     def __cinit__(self, Criterion criterion, SIZE_t max_features,             # <<<<<<<<<<<<<<
@@ -4083,7 +3897,7 @@ static int __pyx_pf_9_splitter_8Splitter___cinit__(struct __pyx_obj_9_splitter_S
   return __pyx_r;
 }
 
-/* "_splitter.pyx":89
+/* "stpredictions/models/OK3/_splitter.pyx":89
  *         self.random_state = random_state
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -4092,21 +3906,21 @@ static int __pyx_pf_9_splitter_8Splitter___cinit__(struct __pyx_obj_9_splitter_S
  */
 
 /* Python wrapper */
-static void __pyx_pw_9_splitter_8Splitter_3__dealloc__(PyObject *__pyx_v_self); /*proto*/
-static void __pyx_pw_9_splitter_8Splitter_3__dealloc__(PyObject *__pyx_v_self) {
+static void __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_3__dealloc__(PyObject *__pyx_v_self); /*proto*/
+static void __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_3__dealloc__(PyObject *__pyx_v_self) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__ (wrapper)", 0);
-  __pyx_pf_9_splitter_8Splitter_2__dealloc__(((struct __pyx_obj_9_splitter_Splitter *)__pyx_v_self));
+  __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_2__dealloc__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
 }
 
-static void __pyx_pf_9_splitter_8Splitter_2__dealloc__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self) {
+static void __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_2__dealloc__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "_splitter.pyx":92
+  /* "stpredictions/models/OK3/_splitter.pyx":92
  *         """Destructor."""
  * 
  *         free(self.samples)             # <<<<<<<<<<<<<<
@@ -4115,7 +3929,7 @@ static void __pyx_pf_9_splitter_8Splitter_2__dealloc__(struct __pyx_obj_9_splitt
  */
   free(__pyx_v_self->samples);
 
-  /* "_splitter.pyx":93
+  /* "stpredictions/models/OK3/_splitter.pyx":93
  * 
  *         free(self.samples)
  *         free(self.features)             # <<<<<<<<<<<<<<
@@ -4124,7 +3938,7 @@ static void __pyx_pf_9_splitter_8Splitter_2__dealloc__(struct __pyx_obj_9_splitt
  */
   free(__pyx_v_self->features);
 
-  /* "_splitter.pyx":94
+  /* "stpredictions/models/OK3/_splitter.pyx":94
  *         free(self.samples)
  *         free(self.features)
  *         free(self.constant_features)             # <<<<<<<<<<<<<<
@@ -4133,7 +3947,7 @@ static void __pyx_pf_9_splitter_8Splitter_2__dealloc__(struct __pyx_obj_9_splitt
  */
   free(__pyx_v_self->constant_features);
 
-  /* "_splitter.pyx":95
+  /* "stpredictions/models/OK3/_splitter.pyx":95
  *         free(self.features)
  *         free(self.constant_features)
  *         free(self.feature_values)             # <<<<<<<<<<<<<<
@@ -4142,7 +3956,7 @@ static void __pyx_pf_9_splitter_8Splitter_2__dealloc__(struct __pyx_obj_9_splitt
  */
   free(__pyx_v_self->feature_values);
 
-  /* "_splitter.pyx":89
+  /* "stpredictions/models/OK3/_splitter.pyx":89
  *         self.random_state = random_state
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -4154,7 +3968,7 @@ static void __pyx_pf_9_splitter_8Splitter_2__dealloc__(struct __pyx_obj_9_splitt
   __Pyx_RefNannyFinishContext();
 }
 
-/* "_splitter.pyx":97
+/* "stpredictions/models/OK3/_splitter.pyx":97
  *         free(self.feature_values)
  * 
  *     def __getstate__(self):             # <<<<<<<<<<<<<<
@@ -4163,19 +3977,19 @@ static void __pyx_pf_9_splitter_8Splitter_2__dealloc__(struct __pyx_obj_9_splitt
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9_splitter_8Splitter_5__getstate__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_9_splitter_8Splitter_5__getstate__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_5__getstate__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_5__getstate__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__getstate__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_8Splitter_4__getstate__(((struct __pyx_obj_9_splitter_Splitter *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_4__getstate__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9_splitter_8Splitter_4__getstate__(CYTHON_UNUSED struct __pyx_obj_9_splitter_Splitter *__pyx_v_self) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_4__getstate__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4184,7 +3998,7 @@ static PyObject *__pyx_pf_9_splitter_8Splitter_4__getstate__(CYTHON_UNUSED struc
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__getstate__", 0);
 
-  /* "_splitter.pyx":98
+  /* "stpredictions/models/OK3/_splitter.pyx":98
  * 
  *     def __getstate__(self):
  *         return {}             # <<<<<<<<<<<<<<
@@ -4198,7 +4012,7 @@ static PyObject *__pyx_pf_9_splitter_8Splitter_4__getstate__(CYTHON_UNUSED struc
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "_splitter.pyx":97
+  /* "stpredictions/models/OK3/_splitter.pyx":97
  *         free(self.feature_values)
  * 
  *     def __getstate__(self):             # <<<<<<<<<<<<<<
@@ -4209,7 +4023,7 @@ static PyObject *__pyx_pf_9_splitter_8Splitter_4__getstate__(CYTHON_UNUSED struc
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_splitter.Splitter.__getstate__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.Splitter.__getstate__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4217,7 +4031,7 @@ static PyObject *__pyx_pf_9_splitter_8Splitter_4__getstate__(CYTHON_UNUSED struc
   return __pyx_r;
 }
 
-/* "_splitter.pyx":100
+/* "stpredictions/models/OK3/_splitter.pyx":100
  *         return {}
  * 
  *     def __setstate__(self, d):             # <<<<<<<<<<<<<<
@@ -4226,19 +4040,19 @@ static PyObject *__pyx_pf_9_splitter_8Splitter_4__getstate__(CYTHON_UNUSED struc
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9_splitter_8Splitter_7__setstate__(PyObject *__pyx_v_self, PyObject *__pyx_v_d); /*proto*/
-static PyObject *__pyx_pw_9_splitter_8Splitter_7__setstate__(PyObject *__pyx_v_self, PyObject *__pyx_v_d) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_7__setstate__(PyObject *__pyx_v_self, PyObject *__pyx_v_d); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_7__setstate__(PyObject *__pyx_v_self, PyObject *__pyx_v_d) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_8Splitter_6__setstate__(((struct __pyx_obj_9_splitter_Splitter *)__pyx_v_self), ((PyObject *)__pyx_v_d));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_6__setstate__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)__pyx_v_self), ((PyObject *)__pyx_v_d));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9_splitter_8Splitter_6__setstate__(CYTHON_UNUSED struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_d) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_6__setstate__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_d) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate__", 0);
@@ -4250,7 +4064,7 @@ static PyObject *__pyx_pf_9_splitter_8Splitter_6__setstate__(CYTHON_UNUSED struc
   return __pyx_r;
 }
 
-/* "_splitter.pyx":103
+/* "stpredictions/models/OK3/_splitter.pyx":103
  *         pass
  * 
  *     cdef int init(self,             # <<<<<<<<<<<<<<
@@ -4258,14 +4072,14 @@ static PyObject *__pyx_pf_9_splitter_8Splitter_6__setstate__(CYTHON_UNUSED struc
  *                    const DOUBLE_t[:, ::1] y,
  */
 
-static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_X, __Pyx_memviewslice __pyx_v_y, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *__pyx_v_sample_weight) {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_i;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_j;
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_8Splitter_init(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_X, __Pyx_memviewslice __pyx_v_y, __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *__pyx_v_sample_weight) {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_i;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_j;
   double __pyx_v_weighted_n_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_features;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4274,11 +4088,11 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
   PyObject *__pyx_t_4 = NULL;
   int __pyx_t_5;
   PyObject *__pyx_t_6 = NULL;
-  __pyx_t_7sklearn_4tree_5_tree_UINT32_t __pyx_t_7;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_8;
-  __pyx_t_7sklearn_4tree_6_utils_SIZE_t *__pyx_t_9;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_10;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_11;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_UINT32_t __pyx_t_7;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_8;
+  __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t *__pyx_t_9;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_10;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_11;
   int __pyx_t_12;
   int __pyx_t_13;
   int __pyx_lineno = 0;
@@ -4286,7 +4100,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("init", 0);
 
-  /* "_splitter.pyx":128
+  /* "stpredictions/models/OK3/_splitter.pyx":128
  *         """
  * 
  *         self.rand_r_state = self.random_state.randint(0, RAND_R_MAX)             # <<<<<<<<<<<<<<
@@ -4295,7 +4109,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->random_state, __pyx_n_s_randint); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_e_7sklearn_4tree_6_utils_RAND_R_MAX); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_e_13stpredictions_6models_3OK3_6_utils_RAND_R_MAX); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   __pyx_t_5 = 0;
@@ -4348,7 +4162,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_self->rand_r_state = __pyx_t_7;
 
-  /* "_splitter.pyx":129
+  /* "stpredictions/models/OK3/_splitter.pyx":129
  * 
  *         self.rand_r_state = self.random_state.randint(0, RAND_R_MAX)
  *         cdef SIZE_t n_samples = X.shape[0]             # <<<<<<<<<<<<<<
@@ -4364,17 +4178,17 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_n_samples = __pyx_t_8;
 
-  /* "_splitter.pyx":133
+  /* "stpredictions/models/OK3/_splitter.pyx":133
  *         # Create a new array which will be used to store nonzero
  *         # samples from the feature of interest
  *         cdef SIZE_t* samples = safe_realloc(&self.samples, n_samples)             # <<<<<<<<<<<<<<
  * 
  *         cdef SIZE_t i, j
  */
-  __pyx_t_9 = __pyx_fuse_1__pyx_f_7sklearn_4tree_6_utils_safe_realloc((&__pyx_v_self->samples), __pyx_v_n_samples); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 133, __pyx_L1_error)
+  __pyx_t_9 = __pyx_fuse_1__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc((&__pyx_v_self->samples), __pyx_v_n_samples); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 133, __pyx_L1_error)
   __pyx_v_samples = __pyx_t_9;
 
-  /* "_splitter.pyx":136
+  /* "stpredictions/models/OK3/_splitter.pyx":136
  * 
  *         cdef SIZE_t i, j
  *         cdef double weighted_n_samples = 0.0             # <<<<<<<<<<<<<<
@@ -4383,7 +4197,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
  */
   __pyx_v_weighted_n_samples = 0.0;
 
-  /* "_splitter.pyx":137
+  /* "stpredictions/models/OK3/_splitter.pyx":137
  *         cdef SIZE_t i, j
  *         cdef double weighted_n_samples = 0.0
  *         j = 0             # <<<<<<<<<<<<<<
@@ -4392,7 +4206,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
  */
   __pyx_v_j = 0;
 
-  /* "_splitter.pyx":139
+  /* "stpredictions/models/OK3/_splitter.pyx":139
  *         j = 0
  * 
  *         for i in range(n_samples):             # <<<<<<<<<<<<<<
@@ -4404,7 +4218,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
   for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
     __pyx_v_i = __pyx_t_11;
 
-    /* "_splitter.pyx":141
+    /* "stpredictions/models/OK3/_splitter.pyx":141
  *         for i in range(n_samples):
  *             # Only work with positively weighted samples
  *             if sample_weight == NULL or sample_weight[i] != 0.0:             # <<<<<<<<<<<<<<
@@ -4422,7 +4236,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
     __pyx_L6_bool_binop_done:;
     if (__pyx_t_12) {
 
-      /* "_splitter.pyx":142
+      /* "stpredictions/models/OK3/_splitter.pyx":142
  *             # Only work with positively weighted samples
  *             if sample_weight == NULL or sample_weight[i] != 0.0:
  *                 samples[j] = i             # <<<<<<<<<<<<<<
@@ -4431,7 +4245,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
  */
       (__pyx_v_samples[__pyx_v_j]) = __pyx_v_i;
 
-      /* "_splitter.pyx":143
+      /* "stpredictions/models/OK3/_splitter.pyx":143
  *             if sample_weight == NULL or sample_weight[i] != 0.0:
  *                 samples[j] = i
  *                 j += 1             # <<<<<<<<<<<<<<
@@ -4440,7 +4254,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
  */
       __pyx_v_j = (__pyx_v_j + 1);
 
-      /* "_splitter.pyx":141
+      /* "stpredictions/models/OK3/_splitter.pyx":141
  *         for i in range(n_samples):
  *             # Only work with positively weighted samples
  *             if sample_weight == NULL or sample_weight[i] != 0.0:             # <<<<<<<<<<<<<<
@@ -4449,7 +4263,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
  */
     }
 
-    /* "_splitter.pyx":145
+    /* "stpredictions/models/OK3/_splitter.pyx":145
  *                 j += 1
  * 
  *             if sample_weight != NULL:             # <<<<<<<<<<<<<<
@@ -4459,7 +4273,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
     __pyx_t_12 = ((__pyx_v_sample_weight != NULL) != 0);
     if (__pyx_t_12) {
 
-      /* "_splitter.pyx":146
+      /* "stpredictions/models/OK3/_splitter.pyx":146
  * 
  *             if sample_weight != NULL:
  *                 weighted_n_samples += sample_weight[i]             # <<<<<<<<<<<<<<
@@ -4468,7 +4282,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
  */
       __pyx_v_weighted_n_samples = (__pyx_v_weighted_n_samples + (__pyx_v_sample_weight[__pyx_v_i]));
 
-      /* "_splitter.pyx":145
+      /* "stpredictions/models/OK3/_splitter.pyx":145
  *                 j += 1
  * 
  *             if sample_weight != NULL:             # <<<<<<<<<<<<<<
@@ -4478,7 +4292,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
       goto __pyx_L8;
     }
 
-    /* "_splitter.pyx":148
+    /* "stpredictions/models/OK3/_splitter.pyx":148
  *                 weighted_n_samples += sample_weight[i]
  *             else:
  *                 weighted_n_samples += 1.0             # <<<<<<<<<<<<<<
@@ -4491,7 +4305,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
     __pyx_L8:;
   }
 
-  /* "_splitter.pyx":151
+  /* "stpredictions/models/OK3/_splitter.pyx":151
  * 
  *         # Number of samples is number of positively weighted samples
  *         self.n_samples = j             # <<<<<<<<<<<<<<
@@ -4500,7 +4314,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
  */
   __pyx_v_self->n_samples = __pyx_v_j;
 
-  /* "_splitter.pyx":152
+  /* "stpredictions/models/OK3/_splitter.pyx":152
  *         # Number of samples is number of positively weighted samples
  *         self.n_samples = j
  *         self.weighted_n_samples = weighted_n_samples             # <<<<<<<<<<<<<<
@@ -4509,7 +4323,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
  */
   __pyx_v_self->weighted_n_samples = __pyx_v_weighted_n_samples;
 
-  /* "_splitter.pyx":154
+  /* "stpredictions/models/OK3/_splitter.pyx":154
  *         self.weighted_n_samples = weighted_n_samples
  * 
  *         cdef SIZE_t n_features = X.shape[1]             # <<<<<<<<<<<<<<
@@ -4525,17 +4339,17 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_n_features = __pyx_t_8;
 
-  /* "_splitter.pyx":155
+  /* "stpredictions/models/OK3/_splitter.pyx":155
  * 
  *         cdef SIZE_t n_features = X.shape[1]
  *         cdef SIZE_t* features = safe_realloc(&self.features, n_features)             # <<<<<<<<<<<<<<
  * 
  *         for i in range(n_features):
  */
-  __pyx_t_9 = __pyx_fuse_1__pyx_f_7sklearn_4tree_6_utils_safe_realloc((&__pyx_v_self->features), __pyx_v_n_features); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 155, __pyx_L1_error)
+  __pyx_t_9 = __pyx_fuse_1__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc((&__pyx_v_self->features), __pyx_v_n_features); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 155, __pyx_L1_error)
   __pyx_v_features = __pyx_t_9;
 
-  /* "_splitter.pyx":157
+  /* "stpredictions/models/OK3/_splitter.pyx":157
  *         cdef SIZE_t* features = safe_realloc(&self.features, n_features)
  * 
  *         for i in range(n_features):             # <<<<<<<<<<<<<<
@@ -4547,7 +4361,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
   for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
     __pyx_v_i = __pyx_t_11;
 
-    /* "_splitter.pyx":158
+    /* "stpredictions/models/OK3/_splitter.pyx":158
  * 
  *         for i in range(n_features):
  *             features[i] = i             # <<<<<<<<<<<<<<
@@ -4557,7 +4371,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
     (__pyx_v_features[__pyx_v_i]) = __pyx_v_i;
   }
 
-  /* "_splitter.pyx":160
+  /* "stpredictions/models/OK3/_splitter.pyx":160
  *             features[i] = i
  * 
  *         self.n_features = n_features             # <<<<<<<<<<<<<<
@@ -4566,25 +4380,25 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
  */
   __pyx_v_self->n_features = __pyx_v_n_features;
 
-  /* "_splitter.pyx":162
+  /* "stpredictions/models/OK3/_splitter.pyx":162
  *         self.n_features = n_features
  * 
  *         safe_realloc(&self.feature_values, n_samples)             # <<<<<<<<<<<<<<
  *         safe_realloc(&self.constant_features, n_features)
  * 
  */
-  __pyx_fuse_0__pyx_f_7sklearn_4tree_6_utils_safe_realloc((&__pyx_v_self->feature_values), __pyx_v_n_samples); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 162, __pyx_L1_error)
+  __pyx_fuse_0__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc((&__pyx_v_self->feature_values), __pyx_v_n_samples); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 162, __pyx_L1_error)
 
-  /* "_splitter.pyx":163
+  /* "stpredictions/models/OK3/_splitter.pyx":163
  * 
  *         safe_realloc(&self.feature_values, n_samples)
  *         safe_realloc(&self.constant_features, n_features)             # <<<<<<<<<<<<<<
  * 
  *         self.y = y
  */
-  __pyx_fuse_1__pyx_f_7sklearn_4tree_6_utils_safe_realloc((&__pyx_v_self->constant_features), __pyx_v_n_features); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 163, __pyx_L1_error)
+  __pyx_fuse_1__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc((&__pyx_v_self->constant_features), __pyx_v_n_features); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 163, __pyx_L1_error)
 
-  /* "_splitter.pyx":165
+  /* "stpredictions/models/OK3/_splitter.pyx":165
  *         safe_realloc(&self.constant_features, n_features)
  * 
  *         self.y = y             # <<<<<<<<<<<<<<
@@ -4595,7 +4409,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
   __PYX_INC_MEMVIEW(&__pyx_v_y, 0);
   __pyx_v_self->y = __pyx_v_y;
 
-  /* "_splitter.pyx":167
+  /* "stpredictions/models/OK3/_splitter.pyx":167
  *         self.y = y
  * 
  *         self.sample_weight = sample_weight             # <<<<<<<<<<<<<<
@@ -4604,7 +4418,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
  */
   __pyx_v_self->sample_weight = __pyx_v_sample_weight;
 
-  /* "_splitter.pyx":168
+  /* "stpredictions/models/OK3/_splitter.pyx":168
  * 
  *         self.sample_weight = sample_weight
  *         return 0             # <<<<<<<<<<<<<<
@@ -4614,7 +4428,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "_splitter.pyx":103
+  /* "stpredictions/models/OK3/_splitter.pyx":103
  *         pass
  * 
  *     cdef int init(self,             # <<<<<<<<<<<<<<
@@ -4629,14 +4443,14 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_AddTraceback("_splitter.Splitter.init", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.Splitter.init", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "_splitter.pyx":170
+/* "stpredictions/models/OK3/_splitter.pyx":170
  *         return 0
  * 
  *     cdef int node_reset(self, SIZE_t start, SIZE_t end,             # <<<<<<<<<<<<<<
@@ -4644,7 +4458,7 @@ static int __pyx_f_9_splitter_8Splitter_init(struct __pyx_obj_9_splitter_Splitte
  *         """Reset splitter on node samples[start:end].
  */
 
-static int __pyx_f_9_splitter_8Splitter_node_reset(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end, double *__pyx_v_weighted_n_node_samples) {
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_8Splitter_node_reset(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end, double *__pyx_v_weighted_n_node_samples) {
   int __pyx_r;
   int __pyx_t_1;
   double __pyx_t_2;
@@ -4652,7 +4466,7 @@ static int __pyx_f_9_splitter_8Splitter_node_reset(struct __pyx_obj_9_splitter_S
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
 
-  /* "_splitter.pyx":187
+  /* "stpredictions/models/OK3/_splitter.pyx":187
  *         """
  * 
  *         self.start = start             # <<<<<<<<<<<<<<
@@ -4661,7 +4475,7 @@ static int __pyx_f_9_splitter_8Splitter_node_reset(struct __pyx_obj_9_splitter_S
  */
   __pyx_v_self->start = __pyx_v_start;
 
-  /* "_splitter.pyx":188
+  /* "stpredictions/models/OK3/_splitter.pyx":188
  * 
  *         self.start = start
  *         self.end = end             # <<<<<<<<<<<<<<
@@ -4670,7 +4484,7 @@ static int __pyx_f_9_splitter_8Splitter_node_reset(struct __pyx_obj_9_splitter_S
  */
   __pyx_v_self->end = __pyx_v_end;
 
-  /* "_splitter.pyx":190
+  /* "stpredictions/models/OK3/_splitter.pyx":190
  *         self.end = end
  * 
  *         self.criterion.init(self.y,             # <<<<<<<<<<<<<<
@@ -4679,16 +4493,16 @@ static int __pyx_f_9_splitter_8Splitter_node_reset(struct __pyx_obj_9_splitter_S
  */
   if (unlikely(!__pyx_v_self->y.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(0, 190, __pyx_L1_error)}
 
-  /* "_splitter.pyx":195
+  /* "stpredictions/models/OK3/_splitter.pyx":195
  *                             self.samples,
  *                             start,
  *                             end)             # <<<<<<<<<<<<<<
  * 
  *         weighted_n_node_samples[0] = self.criterion.weighted_n_node_samples
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->criterion->__pyx_vtab)->init(__pyx_v_self->criterion, __pyx_v_self->y, __pyx_v_self->sample_weight, __pyx_v_self->weighted_n_samples, __pyx_v_self->samples, __pyx_v_start, __pyx_v_end); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 190, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->criterion->__pyx_vtab)->init(__pyx_v_self->criterion, __pyx_v_self->y, __pyx_v_self->sample_weight, __pyx_v_self->weighted_n_samples, __pyx_v_self->samples, __pyx_v_start, __pyx_v_end); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 190, __pyx_L1_error)
 
-  /* "_splitter.pyx":197
+  /* "stpredictions/models/OK3/_splitter.pyx":197
  *                             end)
  * 
  *         weighted_n_node_samples[0] = self.criterion.weighted_n_node_samples             # <<<<<<<<<<<<<<
@@ -4698,7 +4512,7 @@ static int __pyx_f_9_splitter_8Splitter_node_reset(struct __pyx_obj_9_splitter_S
   __pyx_t_2 = __pyx_v_self->criterion->weighted_n_node_samples;
   (__pyx_v_weighted_n_node_samples[0]) = __pyx_t_2;
 
-  /* "_splitter.pyx":198
+  /* "stpredictions/models/OK3/_splitter.pyx":198
  * 
  *         weighted_n_node_samples[0] = self.criterion.weighted_n_node_samples
  *         return 0             # <<<<<<<<<<<<<<
@@ -4708,7 +4522,7 @@ static int __pyx_f_9_splitter_8Splitter_node_reset(struct __pyx_obj_9_splitter_S
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "_splitter.pyx":170
+  /* "stpredictions/models/OK3/_splitter.pyx":170
  *         return 0
  * 
  *     cdef int node_reset(self, SIZE_t start, SIZE_t end,             # <<<<<<<<<<<<<<
@@ -4722,7 +4536,7 @@ static int __pyx_f_9_splitter_8Splitter_node_reset(struct __pyx_obj_9_splitter_S
     #ifdef WITH_THREAD
     PyGILState_STATE __pyx_gilstate_save = __Pyx_PyGILState_Ensure();
     #endif
-    __Pyx_AddTraceback("_splitter.Splitter.node_reset", __pyx_clineno, __pyx_lineno, __pyx_filename);
+    __Pyx_AddTraceback("stpredictions.models.OK3._splitter.Splitter.node_reset", __pyx_clineno, __pyx_lineno, __pyx_filename);
     #ifdef WITH_THREAD
     __Pyx_PyGILState_Release(__pyx_gilstate_save);
     #endif
@@ -4732,7 +4546,7 @@ static int __pyx_f_9_splitter_8Splitter_node_reset(struct __pyx_obj_9_splitter_S
   return __pyx_r;
 }
 
-/* "_splitter.pyx":200
+/* "stpredictions/models/OK3/_splitter.pyx":200
  *         return 0
  * 
  *     cdef int node_split(self, double impurity, SplitRecord* split,             # <<<<<<<<<<<<<<
@@ -4740,7 +4554,7 @@ static int __pyx_f_9_splitter_8Splitter_node_reset(struct __pyx_obj_9_splitter_S
  *         """Find the best split on node samples[start:end].
  */
 
-static int __pyx_f_9_splitter_8Splitter_node_split(CYTHON_UNUSED struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, CYTHON_UNUSED double __pyx_v_impurity, CYTHON_UNUSED struct __pyx_t_9_splitter_SplitRecord *__pyx_v_split, CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_n_constant_features) {
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_8Splitter_node_split(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, CYTHON_UNUSED double __pyx_v_impurity, CYTHON_UNUSED struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord *__pyx_v_split, CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_n_constant_features) {
   int __pyx_r;
 
   /* function exit code */
@@ -4748,7 +4562,7 @@ static int __pyx_f_9_splitter_8Splitter_node_split(CYTHON_UNUSED struct __pyx_ob
   return __pyx_r;
 }
 
-/* "_splitter.pyx":212
+/* "stpredictions/models/OK3/_splitter.pyx":212
  *         pass
  * 
  *     cdef void node_value(self, double* dest) nogil:             # <<<<<<<<<<<<<<
@@ -4756,18 +4570,18 @@ static int __pyx_f_9_splitter_8Splitter_node_split(CYTHON_UNUSED struct __pyx_ob
  * 
  */
 
-static void __pyx_f_9_splitter_8Splitter_node_value(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, double *__pyx_v_dest) {
+static void __pyx_f_13stpredictions_6models_3OK3_9_splitter_8Splitter_node_value(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, double *__pyx_v_dest) {
 
-  /* "_splitter.pyx":215
+  /* "stpredictions/models/OK3/_splitter.pyx":215
  *         """Copy the value of node samples[start:end] into dest."""
  * 
  *         self.criterion.node_value(dest)             # <<<<<<<<<<<<<<
  * 
  *     cdef double node_impurity(self) nogil:
  */
-  ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->criterion->__pyx_vtab)->node_value(__pyx_v_self->criterion, __pyx_v_dest);
+  ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->criterion->__pyx_vtab)->node_value(__pyx_v_self->criterion, __pyx_v_dest);
 
-  /* "_splitter.pyx":212
+  /* "stpredictions/models/OK3/_splitter.pyx":212
  *         pass
  * 
  *     cdef void node_value(self, double* dest) nogil:             # <<<<<<<<<<<<<<
@@ -4778,7 +4592,7 @@ static void __pyx_f_9_splitter_8Splitter_node_value(struct __pyx_obj_9_splitter_
   /* function exit code */
 }
 
-/* "_splitter.pyx":217
+/* "stpredictions/models/OK3/_splitter.pyx":217
  *         self.criterion.node_value(dest)
  * 
  *     cdef double node_impurity(self) nogil:             # <<<<<<<<<<<<<<
@@ -4786,20 +4600,20 @@ static void __pyx_f_9_splitter_8Splitter_node_value(struct __pyx_obj_9_splitter_
  * 
  */
 
-static double __pyx_f_9_splitter_8Splitter_node_impurity(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self) {
+static double __pyx_f_13stpredictions_6models_3OK3_9_splitter_8Splitter_node_impurity(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self) {
   double __pyx_r;
 
-  /* "_splitter.pyx":220
+  /* "stpredictions/models/OK3/_splitter.pyx":220
  *         """Return the impurity of the current node."""
  * 
  *         return self.criterion.node_impurity()             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_r = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->criterion->__pyx_vtab)->node_impurity(__pyx_v_self->criterion);
+  __pyx_r = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->criterion->__pyx_vtab)->node_impurity(__pyx_v_self->criterion);
   goto __pyx_L0;
 
-  /* "_splitter.pyx":217
+  /* "stpredictions/models/OK3/_splitter.pyx":217
  *         self.criterion.node_value(dest)
  * 
  *     cdef double node_impurity(self) nogil:             # <<<<<<<<<<<<<<
@@ -4812,7 +4626,7 @@ static double __pyx_f_9_splitter_8Splitter_node_impurity(struct __pyx_obj_9_spli
   return __pyx_r;
 }
 
-/* "_splitter.pxd":32
+/* "stpredictions/models/OK3/_splitter.pxd":32
  * 
  *     # Internal structures
  *     cdef public Criterion criterion      # Impurity criterion             # <<<<<<<<<<<<<<
@@ -4821,19 +4635,19 @@ static double __pyx_f_9_splitter_8Splitter_node_impurity(struct __pyx_obj_9_spli
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9_splitter_8Splitter_9criterion_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_9_splitter_8Splitter_9criterion_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_9criterion_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_9criterion_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_8Splitter_9criterion___get__(((struct __pyx_obj_9_splitter_Splitter *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_9criterion___get__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9_splitter_8Splitter_9criterion___get__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_9criterion___get__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
@@ -4850,19 +4664,19 @@ static PyObject *__pyx_pf_9_splitter_8Splitter_9criterion___get__(struct __pyx_o
 }
 
 /* Python wrapper */
-static int __pyx_pw_9_splitter_8Splitter_9criterion_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
-static int __pyx_pw_9_splitter_8Splitter_9criterion_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_9criterion_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
+static int __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_9criterion_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_8Splitter_9criterion_2__set__(((struct __pyx_obj_9_splitter_Splitter *)__pyx_v_self), ((PyObject *)__pyx_v_value));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_9criterion_2__set__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)__pyx_v_self), ((PyObject *)__pyx_v_value));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_9_splitter_8Splitter_9criterion_2__set__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_9criterion_2__set__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4870,13 +4684,13 @@ static int __pyx_pf_9_splitter_8Splitter_9criterion_2__set__(struct __pyx_obj_9_
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__set__", 0);
-  if (!(likely(((__pyx_v_value) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_value, __pyx_ptype_10_criterion_Criterion))))) __PYX_ERR(2, 32, __pyx_L1_error)
+  if (!(likely(((__pyx_v_value) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_value, __pyx_ptype_13stpredictions_6models_3OK3_10_criterion_Criterion))))) __PYX_ERR(2, 32, __pyx_L1_error)
   __pyx_t_1 = __pyx_v_value;
   __Pyx_INCREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v_self->criterion);
   __Pyx_DECREF(((PyObject *)__pyx_v_self->criterion));
-  __pyx_v_self->criterion = ((struct __pyx_obj_10_criterion_Criterion *)__pyx_t_1);
+  __pyx_v_self->criterion = ((struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_t_1);
   __pyx_t_1 = 0;
 
   /* function exit code */
@@ -4884,7 +4698,7 @@ static int __pyx_pf_9_splitter_8Splitter_9criterion_2__set__(struct __pyx_obj_9_
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_splitter.Splitter.criterion.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.Splitter.criterion.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -4892,19 +4706,19 @@ static int __pyx_pf_9_splitter_8Splitter_9criterion_2__set__(struct __pyx_obj_9_
 }
 
 /* Python wrapper */
-static int __pyx_pw_9_splitter_8Splitter_9criterion_5__del__(PyObject *__pyx_v_self); /*proto*/
-static int __pyx_pw_9_splitter_8Splitter_9criterion_5__del__(PyObject *__pyx_v_self) {
+static int __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_9criterion_5__del__(PyObject *__pyx_v_self); /*proto*/
+static int __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_9criterion_5__del__(PyObject *__pyx_v_self) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__del__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_8Splitter_9criterion_4__del__(((struct __pyx_obj_9_splitter_Splitter *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_9criterion_4__del__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_9_splitter_8Splitter_9criterion_4__del__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self) {
+static int __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_9criterion_4__del__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__del__", 0);
@@ -4912,7 +4726,7 @@ static int __pyx_pf_9_splitter_8Splitter_9criterion_4__del__(struct __pyx_obj_9_
   __Pyx_GIVEREF(Py_None);
   __Pyx_GOTREF(__pyx_v_self->criterion);
   __Pyx_DECREF(((PyObject *)__pyx_v_self->criterion));
-  __pyx_v_self->criterion = ((struct __pyx_obj_10_criterion_Criterion *)Py_None);
+  __pyx_v_self->criterion = ((struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *)Py_None);
 
   /* function exit code */
   __pyx_r = 0;
@@ -4920,7 +4734,7 @@ static int __pyx_pf_9_splitter_8Splitter_9criterion_4__del__(struct __pyx_obj_9_
   return __pyx_r;
 }
 
-/* "_splitter.pxd":33
+/* "stpredictions/models/OK3/_splitter.pxd":33
  *     # Internal structures
  *     cdef public Criterion criterion      # Impurity criterion
  *     cdef public SIZE_t max_features      # Number of features to test             # <<<<<<<<<<<<<<
@@ -4929,19 +4743,19 @@ static int __pyx_pf_9_splitter_8Splitter_9criterion_4__del__(struct __pyx_obj_9_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9_splitter_8Splitter_12max_features_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_9_splitter_8Splitter_12max_features_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_12max_features_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_12max_features_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_8Splitter_12max_features___get__(((struct __pyx_obj_9_splitter_Splitter *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_12max_features___get__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9_splitter_8Splitter_12max_features___get__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_12max_features___get__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4959,7 +4773,7 @@ static PyObject *__pyx_pf_9_splitter_8Splitter_12max_features___get__(struct __p
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_splitter.Splitter.max_features.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.Splitter.max_features.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4968,22 +4782,22 @@ static PyObject *__pyx_pf_9_splitter_8Splitter_12max_features___get__(struct __p
 }
 
 /* Python wrapper */
-static int __pyx_pw_9_splitter_8Splitter_12max_features_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
-static int __pyx_pw_9_splitter_8Splitter_12max_features_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_12max_features_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
+static int __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_12max_features_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_8Splitter_12max_features_2__set__(((struct __pyx_obj_9_splitter_Splitter *)__pyx_v_self), ((PyObject *)__pyx_v_value));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_12max_features_2__set__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)__pyx_v_self), ((PyObject *)__pyx_v_value));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_9_splitter_8Splitter_12max_features_2__set__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_12max_features_2__set__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_1;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_1;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -4995,14 +4809,14 @@ static int __pyx_pf_9_splitter_8Splitter_12max_features_2__set__(struct __pyx_ob
   __pyx_r = 0;
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("_splitter.Splitter.max_features.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.Splitter.max_features.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "_splitter.pxd":34
+/* "stpredictions/models/OK3/_splitter.pxd":34
  *     cdef public Criterion criterion      # Impurity criterion
  *     cdef public SIZE_t max_features      # Number of features to test
  *     cdef public SIZE_t min_samples_leaf  # Min samples in a leaf             # <<<<<<<<<<<<<<
@@ -5011,19 +4825,19 @@ static int __pyx_pf_9_splitter_8Splitter_12max_features_2__set__(struct __pyx_ob
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9_splitter_8Splitter_16min_samples_leaf_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_9_splitter_8Splitter_16min_samples_leaf_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_16min_samples_leaf_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_16min_samples_leaf_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_8Splitter_16min_samples_leaf___get__(((struct __pyx_obj_9_splitter_Splitter *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_16min_samples_leaf___get__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9_splitter_8Splitter_16min_samples_leaf___get__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_16min_samples_leaf___get__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5041,7 +4855,7 @@ static PyObject *__pyx_pf_9_splitter_8Splitter_16min_samples_leaf___get__(struct
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_splitter.Splitter.min_samples_leaf.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.Splitter.min_samples_leaf.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -5050,22 +4864,22 @@ static PyObject *__pyx_pf_9_splitter_8Splitter_16min_samples_leaf___get__(struct
 }
 
 /* Python wrapper */
-static int __pyx_pw_9_splitter_8Splitter_16min_samples_leaf_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
-static int __pyx_pw_9_splitter_8Splitter_16min_samples_leaf_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_16min_samples_leaf_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
+static int __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_16min_samples_leaf_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_8Splitter_16min_samples_leaf_2__set__(((struct __pyx_obj_9_splitter_Splitter *)__pyx_v_self), ((PyObject *)__pyx_v_value));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_16min_samples_leaf_2__set__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)__pyx_v_self), ((PyObject *)__pyx_v_value));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_9_splitter_8Splitter_16min_samples_leaf_2__set__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_16min_samples_leaf_2__set__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_1;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_1;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -5077,14 +4891,14 @@ static int __pyx_pf_9_splitter_8Splitter_16min_samples_leaf_2__set__(struct __py
   __pyx_r = 0;
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("_splitter.Splitter.min_samples_leaf.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.Splitter.min_samples_leaf.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "_splitter.pxd":35
+/* "stpredictions/models/OK3/_splitter.pxd":35
  *     cdef public SIZE_t max_features      # Number of features to test
  *     cdef public SIZE_t min_samples_leaf  # Min samples in a leaf
  *     cdef public double min_weight_leaf   # Minimum weight in a leaf             # <<<<<<<<<<<<<<
@@ -5093,19 +4907,19 @@ static int __pyx_pf_9_splitter_8Splitter_16min_samples_leaf_2__set__(struct __py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9_splitter_8Splitter_15min_weight_leaf_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_9_splitter_8Splitter_15min_weight_leaf_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_15min_weight_leaf_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_15min_weight_leaf_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_8Splitter_15min_weight_leaf___get__(((struct __pyx_obj_9_splitter_Splitter *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_15min_weight_leaf___get__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9_splitter_8Splitter_15min_weight_leaf___get__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_15min_weight_leaf___get__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5123,7 +4937,7 @@ static PyObject *__pyx_pf_9_splitter_8Splitter_15min_weight_leaf___get__(struct 
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_splitter.Splitter.min_weight_leaf.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.Splitter.min_weight_leaf.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -5132,19 +4946,19 @@ static PyObject *__pyx_pf_9_splitter_8Splitter_15min_weight_leaf___get__(struct 
 }
 
 /* Python wrapper */
-static int __pyx_pw_9_splitter_8Splitter_15min_weight_leaf_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
-static int __pyx_pw_9_splitter_8Splitter_15min_weight_leaf_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_15min_weight_leaf_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
+static int __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_15min_weight_leaf_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_8Splitter_15min_weight_leaf_2__set__(((struct __pyx_obj_9_splitter_Splitter *)__pyx_v_self), ((PyObject *)__pyx_v_value));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_15min_weight_leaf_2__set__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)__pyx_v_self), ((PyObject *)__pyx_v_value));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_9_splitter_8Splitter_15min_weight_leaf_2__set__(struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_15min_weight_leaf_2__set__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   double __pyx_t_1;
@@ -5159,7 +4973,7 @@ static int __pyx_pf_9_splitter_8Splitter_15min_weight_leaf_2__set__(struct __pyx
   __pyx_r = 0;
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("_splitter.Splitter.min_weight_leaf.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.Splitter.min_weight_leaf.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -5173,19 +4987,19 @@ static int __pyx_pf_9_splitter_8Splitter_15min_weight_leaf_2__set__(struct __pyx
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9_splitter_8Splitter_9__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_9_splitter_8Splitter_9__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_9__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_9__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_8Splitter_8__reduce_cython__(((struct __pyx_obj_9_splitter_Splitter *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_8__reduce_cython__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9_splitter_8Splitter_8__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_9_splitter_Splitter *__pyx_v_self) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_8__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5215,7 +5029,7 @@ static PyObject *__pyx_pf_9_splitter_8Splitter_8__reduce_cython__(CYTHON_UNUSED 
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_splitter.Splitter.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.Splitter.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -5230,19 +5044,19 @@ static PyObject *__pyx_pf_9_splitter_8Splitter_8__reduce_cython__(CYTHON_UNUSED 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9_splitter_8Splitter_11__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_9_splitter_8Splitter_11__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_11__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_11__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_8Splitter_10__setstate_cython__(((struct __pyx_obj_9_splitter_Splitter *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_10__setstate_cython__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9_splitter_8Splitter_10__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_9_splitter_Splitter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_8Splitter_10__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5272,14 +5086,14 @@ static PyObject *__pyx_pf_9_splitter_8Splitter_10__setstate_cython__(CYTHON_UNUS
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_splitter.Splitter.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.Splitter.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "_splitter.pyx":228
+/* "stpredictions/models/OK3/_splitter.pyx":228
  *     cdef SIZE_t n_total_samples
  * 
  *     cdef int init(self,             # <<<<<<<<<<<<<<
@@ -5287,7 +5101,7 @@ static PyObject *__pyx_pf_9_splitter_8Splitter_10__setstate_cython__(CYTHON_UNUS
  *                   const DOUBLE_t[:, ::1] y,
  */
 
-static int __pyx_f_9_splitter_17BaseDenseSplitter_init(struct __pyx_obj_9_splitter_BaseDenseSplitter *__pyx_v_self, PyObject *__pyx_v_X, __Pyx_memviewslice __pyx_v_y, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *__pyx_v_sample_weight) {
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_17BaseDenseSplitter_init(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter *__pyx_v_self, PyObject *__pyx_v_X, __Pyx_memviewslice __pyx_v_y, __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *__pyx_v_sample_weight) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -5297,29 +5111,29 @@ static int __pyx_f_9_splitter_17BaseDenseSplitter_init(struct __pyx_obj_9_splitt
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("init", 0);
 
-  /* "_splitter.pyx":239
+  /* "stpredictions/models/OK3/_splitter.pyx":239
  * 
  *         # Call parent init
  *         Splitter.init(self, X, y, sample_weight)             # <<<<<<<<<<<<<<
  * 
  *         self.X = X
  */
-  __pyx_t_1 = __pyx_f_9_splitter_8Splitter_init(((struct __pyx_obj_9_splitter_Splitter *)__pyx_v_self), __pyx_v_X, __pyx_v_y, __pyx_v_sample_weight); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 239, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_13stpredictions_6models_3OK3_9_splitter_8Splitter_init(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)__pyx_v_self), __pyx_v_X, __pyx_v_y, __pyx_v_sample_weight); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 239, __pyx_L1_error)
 
-  /* "_splitter.pyx":241
+  /* "stpredictions/models/OK3/_splitter.pyx":241
  *         Splitter.init(self, X, y, sample_weight)
  * 
  *         self.X = X             # <<<<<<<<<<<<<<
  *         return 0
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_to_MemoryviewSlice_dsds_nn___pyx_t_7sklearn_4tree_5_tree_DTYPE_t__const__(__pyx_v_X, 0); if (unlikely(!__pyx_t_2.memview)) __PYX_ERR(0, 241, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_to_MemoryviewSlice_dsds_nn___pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t__const__(__pyx_v_X, 0); if (unlikely(!__pyx_t_2.memview)) __PYX_ERR(0, 241, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->X, 0);
   __pyx_v_self->X = __pyx_t_2;
   __pyx_t_2.memview = NULL;
   __pyx_t_2.data = NULL;
 
-  /* "_splitter.pyx":242
+  /* "stpredictions/models/OK3/_splitter.pyx":242
  * 
  *         self.X = X
  *         return 0             # <<<<<<<<<<<<<<
@@ -5329,7 +5143,7 @@ static int __pyx_f_9_splitter_17BaseDenseSplitter_init(struct __pyx_obj_9_splitt
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "_splitter.pyx":228
+  /* "stpredictions/models/OK3/_splitter.pyx":228
  *     cdef SIZE_t n_total_samples
  * 
  *     cdef int init(self,             # <<<<<<<<<<<<<<
@@ -5340,7 +5154,7 @@ static int __pyx_f_9_splitter_17BaseDenseSplitter_init(struct __pyx_obj_9_splitt
   /* function exit code */
   __pyx_L1_error:;
   __PYX_XDEC_MEMVIEW(&__pyx_t_2, 1);
-  __Pyx_AddTraceback("_splitter.BaseDenseSplitter.init", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.BaseDenseSplitter.init", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -5354,19 +5168,19 @@ static int __pyx_f_9_splitter_17BaseDenseSplitter_init(struct __pyx_obj_9_splitt
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9_splitter_17BaseDenseSplitter_1__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_9_splitter_17BaseDenseSplitter_1__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_17BaseDenseSplitter_1__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_17BaseDenseSplitter_1__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_17BaseDenseSplitter___reduce_cython__(((struct __pyx_obj_9_splitter_BaseDenseSplitter *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_17BaseDenseSplitter___reduce_cython__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9_splitter_17BaseDenseSplitter___reduce_cython__(CYTHON_UNUSED struct __pyx_obj_9_splitter_BaseDenseSplitter *__pyx_v_self) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_17BaseDenseSplitter___reduce_cython__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5396,7 +5210,7 @@ static PyObject *__pyx_pf_9_splitter_17BaseDenseSplitter___reduce_cython__(CYTHO
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_splitter.BaseDenseSplitter.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.BaseDenseSplitter.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -5411,19 +5225,19 @@ static PyObject *__pyx_pf_9_splitter_17BaseDenseSplitter___reduce_cython__(CYTHO
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9_splitter_17BaseDenseSplitter_3__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_9_splitter_17BaseDenseSplitter_3__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_17BaseDenseSplitter_3__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_17BaseDenseSplitter_3__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_17BaseDenseSplitter_2__setstate_cython__(((struct __pyx_obj_9_splitter_BaseDenseSplitter *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_17BaseDenseSplitter_2__setstate_cython__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9_splitter_17BaseDenseSplitter_2__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_9_splitter_BaseDenseSplitter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_17BaseDenseSplitter_2__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5453,14 +5267,14 @@ static PyObject *__pyx_pf_9_splitter_17BaseDenseSplitter_2__setstate_cython__(CY
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_splitter.BaseDenseSplitter.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.BaseDenseSplitter.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "_splitter.pyx":247
+/* "stpredictions/models/OK3/_splitter.pyx":247
  * cdef class BestSplitter(BaseDenseSplitter):
  *     """Splitter for finding the best split."""
  *     def __reduce__(self):             # <<<<<<<<<<<<<<
@@ -5469,19 +5283,19 @@ static PyObject *__pyx_pf_9_splitter_17BaseDenseSplitter_2__setstate_cython__(CY
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9_splitter_12BestSplitter_1__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_9_splitter_12BestSplitter_1__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_12BestSplitter_1__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_12BestSplitter_1__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_12BestSplitter___reduce__(((struct __pyx_obj_9_splitter_BestSplitter *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_12BestSplitter___reduce__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSplitter *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9_splitter_12BestSplitter___reduce__(struct __pyx_obj_9_splitter_BestSplitter *__pyx_v_self) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_12BestSplitter___reduce__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSplitter *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5493,7 +5307,7 @@ static PyObject *__pyx_pf_9_splitter_12BestSplitter___reduce__(struct __pyx_obj_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__reduce__", 0);
 
-  /* "_splitter.pyx":248
+  /* "stpredictions/models/OK3/_splitter.pyx":248
  *     """Splitter for finding the best split."""
  *     def __reduce__(self):
  *         return (BestSplitter, (self.criterion,             # <<<<<<<<<<<<<<
@@ -5502,7 +5316,7 @@ static PyObject *__pyx_pf_9_splitter_12BestSplitter___reduce__(struct __pyx_obj_
  */
   __Pyx_XDECREF(__pyx_r);
 
-  /* "_splitter.pyx":249
+  /* "stpredictions/models/OK3/_splitter.pyx":249
  *     def __reduce__(self):
  *         return (BestSplitter, (self.criterion,
  *                                self.max_features,             # <<<<<<<<<<<<<<
@@ -5512,7 +5326,7 @@ static PyObject *__pyx_pf_9_splitter_12BestSplitter___reduce__(struct __pyx_obj_
   __pyx_t_1 = __Pyx_PyInt_From_Py_intptr_t(__pyx_v_self->__pyx_base.__pyx_base.max_features); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 249, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
 
-  /* "_splitter.pyx":250
+  /* "stpredictions/models/OK3/_splitter.pyx":250
  *         return (BestSplitter, (self.criterion,
  *                                self.max_features,
  *                                self.min_samples_leaf,             # <<<<<<<<<<<<<<
@@ -5522,7 +5336,7 @@ static PyObject *__pyx_pf_9_splitter_12BestSplitter___reduce__(struct __pyx_obj_
   __pyx_t_2 = __Pyx_PyInt_From_Py_intptr_t(__pyx_v_self->__pyx_base.__pyx_base.min_samples_leaf); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 250, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "_splitter.pyx":251
+  /* "stpredictions/models/OK3/_splitter.pyx":251
  *                                self.max_features,
  *                                self.min_samples_leaf,
  *                                self.min_weight_leaf,             # <<<<<<<<<<<<<<
@@ -5532,7 +5346,7 @@ static PyObject *__pyx_pf_9_splitter_12BestSplitter___reduce__(struct __pyx_obj_
   __pyx_t_3 = PyFloat_FromDouble(__pyx_v_self->__pyx_base.__pyx_base.min_weight_leaf); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 251, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
 
-  /* "_splitter.pyx":248
+  /* "stpredictions/models/OK3/_splitter.pyx":248
  *     """Splitter for finding the best split."""
  *     def __reduce__(self):
  *         return (BestSplitter, (self.criterion,             # <<<<<<<<<<<<<<
@@ -5557,7 +5371,7 @@ static PyObject *__pyx_pf_9_splitter_12BestSplitter___reduce__(struct __pyx_obj_
   __pyx_t_2 = 0;
   __pyx_t_3 = 0;
 
-  /* "_splitter.pyx":252
+  /* "stpredictions/models/OK3/_splitter.pyx":252
  *                                self.min_samples_leaf,
  *                                self.min_weight_leaf,
  *                                self.random_state), self.__getstate__())             # <<<<<<<<<<<<<<
@@ -5582,7 +5396,7 @@ static PyObject *__pyx_pf_9_splitter_12BestSplitter___reduce__(struct __pyx_obj_
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "_splitter.pyx":248
+  /* "stpredictions/models/OK3/_splitter.pyx":248
  *     """Splitter for finding the best split."""
  *     def __reduce__(self):
  *         return (BestSplitter, (self.criterion,             # <<<<<<<<<<<<<<
@@ -5591,9 +5405,9 @@ static PyObject *__pyx_pf_9_splitter_12BestSplitter___reduce__(struct __pyx_obj_
  */
   __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_INCREF(((PyObject *)__pyx_ptype_9_splitter_BestSplitter));
-  __Pyx_GIVEREF(((PyObject *)__pyx_ptype_9_splitter_BestSplitter));
-  PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)__pyx_ptype_9_splitter_BestSplitter));
+  __Pyx_INCREF(((PyObject *)__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_BestSplitter));
+  __Pyx_GIVEREF(((PyObject *)__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_BestSplitter));
+  PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_BestSplitter));
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_3);
@@ -5604,7 +5418,7 @@ static PyObject *__pyx_pf_9_splitter_12BestSplitter___reduce__(struct __pyx_obj_
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "_splitter.pyx":247
+  /* "stpredictions/models/OK3/_splitter.pyx":247
  * cdef class BestSplitter(BaseDenseSplitter):
  *     """Splitter for finding the best split."""
  *     def __reduce__(self):             # <<<<<<<<<<<<<<
@@ -5618,7 +5432,7 @@ static PyObject *__pyx_pf_9_splitter_12BestSplitter___reduce__(struct __pyx_obj_
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("_splitter.BestSplitter.__reduce__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.BestSplitter.__reduce__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -5626,7 +5440,7 @@ static PyObject *__pyx_pf_9_splitter_12BestSplitter___reduce__(struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "_splitter.pyx":254
+/* "stpredictions/models/OK3/_splitter.pyx":254
  *                                self.random_state), self.__getstate__())
  * 
  *     cdef int node_split(self, double impurity, SplitRecord* split,             # <<<<<<<<<<<<<<
@@ -5634,41 +5448,41 @@ static PyObject *__pyx_pf_9_splitter_12BestSplitter___reduce__(struct __pyx_obj_
  *         """Find the best split on node samples[start:end]
  */
 
-static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_splitter_BestSplitter *__pyx_v_self, double __pyx_v_impurity, struct __pyx_t_9_splitter_SplitRecord *__pyx_v_split, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_n_constant_features) {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_constant_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_features;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_v_Xf;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_max_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_min_samples_leaf;
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_12BestSplitter_node_split(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSplitter *__pyx_v_self, double __pyx_v_impurity, struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord *__pyx_v_split, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_n_constant_features) {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_constant_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_v_Xf;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_max_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_min_samples_leaf;
   double __pyx_v_min_weight_leaf;
-  __pyx_t_7sklearn_4tree_5_tree_UINT32_t *__pyx_v_random_state;
-  struct __pyx_t_9_splitter_SplitRecord __pyx_v_best;
-  struct __pyx_t_9_splitter_SplitRecord __pyx_v_current;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_UINT32_t *__pyx_v_random_state;
+  struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord __pyx_v_best;
+  struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord __pyx_v_current;
   double __pyx_v_current_proxy_improvement;
   double __pyx_v_best_proxy_improvement;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_f_i;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_f_j;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_p;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_i;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_visited_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_found_constants;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_drawn_constants;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_known_constants;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_total_constants;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_partition_end;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_f_i;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_f_j;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_p;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_i;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_visited_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_found_constants;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_drawn_constants;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_known_constants;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_total_constants;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_partition_end;
   int __pyx_r;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_t_1;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_2;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_t_3;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_t_1;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_2;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_t_3;
   double __pyx_t_4;
   int __pyx_t_5;
   int __pyx_t_6;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_7;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_8;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_7;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_8;
   Py_ssize_t __pyx_t_9;
   Py_ssize_t __pyx_t_10;
   int __pyx_t_11;
@@ -5676,7 +5490,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
 
-  /* "_splitter.pyx":262
+  /* "stpredictions/models/OK3/_splitter.pyx":262
  *         """
  *         # Find the best split
  *         cdef SIZE_t* samples = self.samples             # <<<<<<<<<<<<<<
@@ -5686,7 +5500,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
   __pyx_t_1 = __pyx_v_self->__pyx_base.__pyx_base.samples;
   __pyx_v_samples = __pyx_t_1;
 
-  /* "_splitter.pyx":263
+  /* "stpredictions/models/OK3/_splitter.pyx":263
  *         # Find the best split
  *         cdef SIZE_t* samples = self.samples
  *         cdef SIZE_t start = self.start             # <<<<<<<<<<<<<<
@@ -5696,7 +5510,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.start;
   __pyx_v_start = __pyx_t_2;
 
-  /* "_splitter.pyx":264
+  /* "stpredictions/models/OK3/_splitter.pyx":264
  *         cdef SIZE_t* samples = self.samples
  *         cdef SIZE_t start = self.start
  *         cdef SIZE_t end = self.end             # <<<<<<<<<<<<<<
@@ -5706,7 +5520,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.end;
   __pyx_v_end = __pyx_t_2;
 
-  /* "_splitter.pyx":266
+  /* "stpredictions/models/OK3/_splitter.pyx":266
  *         cdef SIZE_t end = self.end
  * 
  *         cdef SIZE_t* features = self.features             # <<<<<<<<<<<<<<
@@ -5716,7 +5530,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
   __pyx_t_1 = __pyx_v_self->__pyx_base.__pyx_base.features;
   __pyx_v_features = __pyx_t_1;
 
-  /* "_splitter.pyx":267
+  /* "stpredictions/models/OK3/_splitter.pyx":267
  * 
  *         cdef SIZE_t* features = self.features
  *         cdef SIZE_t* constant_features = self.constant_features             # <<<<<<<<<<<<<<
@@ -5726,7 +5540,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
   __pyx_t_1 = __pyx_v_self->__pyx_base.__pyx_base.constant_features;
   __pyx_v_constant_features = __pyx_t_1;
 
-  /* "_splitter.pyx":268
+  /* "stpredictions/models/OK3/_splitter.pyx":268
  *         cdef SIZE_t* features = self.features
  *         cdef SIZE_t* constant_features = self.constant_features
  *         cdef SIZE_t n_features = self.n_features             # <<<<<<<<<<<<<<
@@ -5736,7 +5550,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.n_features;
   __pyx_v_n_features = __pyx_t_2;
 
-  /* "_splitter.pyx":270
+  /* "stpredictions/models/OK3/_splitter.pyx":270
  *         cdef SIZE_t n_features = self.n_features
  * 
  *         cdef DTYPE_t* Xf = self.feature_values             # <<<<<<<<<<<<<<
@@ -5746,7 +5560,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
   __pyx_t_3 = __pyx_v_self->__pyx_base.__pyx_base.feature_values;
   __pyx_v_Xf = __pyx_t_3;
 
-  /* "_splitter.pyx":271
+  /* "stpredictions/models/OK3/_splitter.pyx":271
  * 
  *         cdef DTYPE_t* Xf = self.feature_values
  *         cdef SIZE_t max_features = self.max_features             # <<<<<<<<<<<<<<
@@ -5756,7 +5570,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.max_features;
   __pyx_v_max_features = __pyx_t_2;
 
-  /* "_splitter.pyx":272
+  /* "stpredictions/models/OK3/_splitter.pyx":272
  *         cdef DTYPE_t* Xf = self.feature_values
  *         cdef SIZE_t max_features = self.max_features
  *         cdef SIZE_t min_samples_leaf = self.min_samples_leaf             # <<<<<<<<<<<<<<
@@ -5766,7 +5580,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.min_samples_leaf;
   __pyx_v_min_samples_leaf = __pyx_t_2;
 
-  /* "_splitter.pyx":273
+  /* "stpredictions/models/OK3/_splitter.pyx":273
  *         cdef SIZE_t max_features = self.max_features
  *         cdef SIZE_t min_samples_leaf = self.min_samples_leaf
  *         cdef double min_weight_leaf = self.min_weight_leaf             # <<<<<<<<<<<<<<
@@ -5776,7 +5590,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
   __pyx_t_4 = __pyx_v_self->__pyx_base.__pyx_base.min_weight_leaf;
   __pyx_v_min_weight_leaf = __pyx_t_4;
 
-  /* "_splitter.pyx":274
+  /* "stpredictions/models/OK3/_splitter.pyx":274
  *         cdef SIZE_t min_samples_leaf = self.min_samples_leaf
  *         cdef double min_weight_leaf = self.min_weight_leaf
  *         cdef UINT32_t* random_state = &self.rand_r_state             # <<<<<<<<<<<<<<
@@ -5785,25 +5599,25 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
   __pyx_v_random_state = (&__pyx_v_self->__pyx_base.__pyx_base.rand_r_state);
 
-  /* "_splitter.pyx":277
+  /* "stpredictions/models/OK3/_splitter.pyx":277
  * 
  *         cdef SplitRecord best, current
  *         cdef double current_proxy_improvement = -INFINITY             # <<<<<<<<<<<<<<
  *         cdef double best_proxy_improvement = -INFINITY
  * 
  */
-  __pyx_v_current_proxy_improvement = (-__pyx_v_9_splitter_INFINITY);
+  __pyx_v_current_proxy_improvement = (-__pyx_v_13stpredictions_6models_3OK3_9_splitter_INFINITY);
 
-  /* "_splitter.pyx":278
+  /* "stpredictions/models/OK3/_splitter.pyx":278
  *         cdef SplitRecord best, current
  *         cdef double current_proxy_improvement = -INFINITY
  *         cdef double best_proxy_improvement = -INFINITY             # <<<<<<<<<<<<<<
  * 
  *         cdef SIZE_t f_i = n_features
  */
-  __pyx_v_best_proxy_improvement = (-__pyx_v_9_splitter_INFINITY);
+  __pyx_v_best_proxy_improvement = (-__pyx_v_13stpredictions_6models_3OK3_9_splitter_INFINITY);
 
-  /* "_splitter.pyx":280
+  /* "stpredictions/models/OK3/_splitter.pyx":280
  *         cdef double best_proxy_improvement = -INFINITY
  * 
  *         cdef SIZE_t f_i = n_features             # <<<<<<<<<<<<<<
@@ -5812,7 +5626,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
   __pyx_v_f_i = __pyx_v_n_features;
 
-  /* "_splitter.pyx":288
+  /* "stpredictions/models/OK3/_splitter.pyx":288
  *         cdef SIZE_t j
  * 
  *         cdef SIZE_t n_visited_features = 0             # <<<<<<<<<<<<<<
@@ -5821,7 +5635,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
   __pyx_v_n_visited_features = 0;
 
-  /* "_splitter.pyx":290
+  /* "stpredictions/models/OK3/_splitter.pyx":290
  *         cdef SIZE_t n_visited_features = 0
  *         # Number of features discovered to be constant during the split search
  *         cdef SIZE_t n_found_constants = 0             # <<<<<<<<<<<<<<
@@ -5830,7 +5644,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
   __pyx_v_n_found_constants = 0;
 
-  /* "_splitter.pyx":292
+  /* "stpredictions/models/OK3/_splitter.pyx":292
  *         cdef SIZE_t n_found_constants = 0
  *         # Number of features known to be constant and drawn without replacement
  *         cdef SIZE_t n_drawn_constants = 0             # <<<<<<<<<<<<<<
@@ -5839,7 +5653,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
   __pyx_v_n_drawn_constants = 0;
 
-  /* "_splitter.pyx":293
+  /* "stpredictions/models/OK3/_splitter.pyx":293
  *         # Number of features known to be constant and drawn without replacement
  *         cdef SIZE_t n_drawn_constants = 0
  *         cdef SIZE_t n_known_constants = n_constant_features[0]             # <<<<<<<<<<<<<<
@@ -5848,7 +5662,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
   __pyx_v_n_known_constants = (__pyx_v_n_constant_features[0]);
 
-  /* "_splitter.pyx":295
+  /* "stpredictions/models/OK3/_splitter.pyx":295
  *         cdef SIZE_t n_known_constants = n_constant_features[0]
  *         # n_total_constants = n_known_constants + n_found_constants
  *         cdef SIZE_t n_total_constants = n_known_constants             # <<<<<<<<<<<<<<
@@ -5857,16 +5671,16 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
   __pyx_v_n_total_constants = __pyx_v_n_known_constants;
 
-  /* "_splitter.pyx":299
+  /* "stpredictions/models/OK3/_splitter.pyx":299
  *         cdef SIZE_t partition_end
  * 
  *         _init_split(&best, end)             # <<<<<<<<<<<<<<
  * 
  *         # Sample up to max_features without replacement using a
  */
-  __pyx_f_9_splitter__init_split((&__pyx_v_best), __pyx_v_end);
+  __pyx_f_13stpredictions_6models_3OK3_9_splitter__init_split((&__pyx_v_best), __pyx_v_end);
 
-  /* "_splitter.pyx":310
+  /* "stpredictions/models/OK3/_splitter.pyx":310
  *         # newly discovered constant features to spare computation on descendant
  *         # nodes.
  *         while (f_i > n_total_constants and  # Stop early if remaining features             # <<<<<<<<<<<<<<
@@ -5881,7 +5695,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
       goto __pyx_L5_bool_binop_done;
     }
 
-    /* "_splitter.pyx":312
+    /* "stpredictions/models/OK3/_splitter.pyx":312
  *         while (f_i > n_total_constants and  # Stop early if remaining features
  *                                             # are constant
  *                 (n_visited_features < max_features or             # <<<<<<<<<<<<<<
@@ -5895,7 +5709,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
       goto __pyx_L5_bool_binop_done;
     }
 
-    /* "_splitter.pyx":314
+    /* "stpredictions/models/OK3/_splitter.pyx":314
  *                 (n_visited_features < max_features or
  *                  # At least one drawn features must be non constant
  *                  n_visited_features <= n_found_constants + n_drawn_constants)):             # <<<<<<<<<<<<<<
@@ -5907,7 +5721,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
     __pyx_L5_bool_binop_done:;
     if (!__pyx_t_5) break;
 
-    /* "_splitter.pyx":316
+    /* "stpredictions/models/OK3/_splitter.pyx":316
  *                  n_visited_features <= n_found_constants + n_drawn_constants)):
  * 
  *             n_visited_features += 1             # <<<<<<<<<<<<<<
@@ -5916,16 +5730,16 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
     __pyx_v_n_visited_features = (__pyx_v_n_visited_features + 1);
 
-    /* "_splitter.pyx":330
+    /* "stpredictions/models/OK3/_splitter.pyx":330
  * 
  *             # Draw a feature at random
  *             f_j = rand_int(n_drawn_constants, f_i - n_found_constants,             # <<<<<<<<<<<<<<
  *                            random_state)
  * 
  */
-    __pyx_v_f_j = __pyx_f_7sklearn_4tree_6_utils_rand_int(__pyx_v_n_drawn_constants, (__pyx_v_f_i - __pyx_v_n_found_constants), __pyx_v_random_state);
+    __pyx_v_f_j = __pyx_f_13stpredictions_6models_3OK3_6_utils_rand_int(__pyx_v_n_drawn_constants, (__pyx_v_f_i - __pyx_v_n_found_constants), __pyx_v_random_state);
 
-    /* "_splitter.pyx":333
+    /* "stpredictions/models/OK3/_splitter.pyx":333
  *                            random_state)
  * 
  *             if f_j < n_known_constants:             # <<<<<<<<<<<<<<
@@ -5935,7 +5749,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
     __pyx_t_5 = ((__pyx_v_f_j < __pyx_v_n_known_constants) != 0);
     if (__pyx_t_5) {
 
-      /* "_splitter.pyx":335
+      /* "stpredictions/models/OK3/_splitter.pyx":335
  *             if f_j < n_known_constants:
  *                 # f_j in the interval [n_drawn_constants, n_known_constants[
  *                 features[n_drawn_constants], features[f_j] = features[f_j], features[n_drawn_constants]             # <<<<<<<<<<<<<<
@@ -5947,7 +5761,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
       (__pyx_v_features[__pyx_v_n_drawn_constants]) = __pyx_t_2;
       (__pyx_v_features[__pyx_v_f_j]) = __pyx_t_7;
 
-      /* "_splitter.pyx":337
+      /* "stpredictions/models/OK3/_splitter.pyx":337
  *                 features[n_drawn_constants], features[f_j] = features[f_j], features[n_drawn_constants]
  * 
  *                 n_drawn_constants += 1             # <<<<<<<<<<<<<<
@@ -5956,7 +5770,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
       __pyx_v_n_drawn_constants = (__pyx_v_n_drawn_constants + 1);
 
-      /* "_splitter.pyx":333
+      /* "stpredictions/models/OK3/_splitter.pyx":333
  *                            random_state)
  * 
  *             if f_j < n_known_constants:             # <<<<<<<<<<<<<<
@@ -5966,7 +5780,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
       goto __pyx_L8;
     }
 
-    /* "_splitter.pyx":341
+    /* "stpredictions/models/OK3/_splitter.pyx":341
  *             else:
  *                 # f_j in the interval [n_known_constants, f_i - n_found_constants[
  *                 f_j += n_found_constants             # <<<<<<<<<<<<<<
@@ -5976,7 +5790,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
     /*else*/ {
       __pyx_v_f_j = (__pyx_v_f_j + __pyx_v_n_found_constants);
 
-      /* "_splitter.pyx":343
+      /* "stpredictions/models/OK3/_splitter.pyx":343
  *                 f_j += n_found_constants
  *                 # f_j in the interval [n_total_constants, f_i[
  *                 current.feature = features[f_j]             # <<<<<<<<<<<<<<
@@ -5985,7 +5799,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
       __pyx_v_current.feature = (__pyx_v_features[__pyx_v_f_j]);
 
-      /* "_splitter.pyx":349
+      /* "stpredictions/models/OK3/_splitter.pyx":349
  *                 # sorting the array in a manner which utilizes the cache more
  *                 # effectively.
  *                 for i in range(start, end):             # <<<<<<<<<<<<<<
@@ -5997,7 +5811,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
       for (__pyx_t_8 = __pyx_v_start; __pyx_t_8 < __pyx_t_2; __pyx_t_8+=1) {
         __pyx_v_i = __pyx_t_8;
 
-        /* "_splitter.pyx":350
+        /* "stpredictions/models/OK3/_splitter.pyx":350
  *                 # effectively.
  *                 for i in range(start, end):
  *                     Xf[i] = self.X[samples[i], current.feature]             # <<<<<<<<<<<<<<
@@ -6007,29 +5821,29 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
         if (unlikely(!__pyx_v_self->__pyx_base.X.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(0, 350, __pyx_L1_error)}
         __pyx_t_9 = (__pyx_v_samples[__pyx_v_i]);
         __pyx_t_10 = __pyx_v_current.feature;
-        (__pyx_v_Xf[__pyx_v_i]) = (*((__pyx_t_7sklearn_4tree_5_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_self->__pyx_base.X.data + __pyx_t_9 * __pyx_v_self->__pyx_base.X.strides[0]) ) + __pyx_t_10 * __pyx_v_self->__pyx_base.X.strides[1]) )));
+        (__pyx_v_Xf[__pyx_v_i]) = (*((__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_self->__pyx_base.X.data + __pyx_t_9 * __pyx_v_self->__pyx_base.X.strides[0]) ) + __pyx_t_10 * __pyx_v_self->__pyx_base.X.strides[1]) )));
       }
 
-      /* "_splitter.pyx":352
+      /* "stpredictions/models/OK3/_splitter.pyx":352
  *                     Xf[i] = self.X[samples[i], current.feature]
  * 
  *                 sort(Xf + start, samples + start, end - start)             # <<<<<<<<<<<<<<
  * 
  *                 if Xf[end - 1] <= Xf[start] + FEATURE_THRESHOLD:
  */
-      __pyx_f_9_splitter_sort((__pyx_v_Xf + __pyx_v_start), (__pyx_v_samples + __pyx_v_start), (__pyx_v_end - __pyx_v_start));
+      __pyx_f_13stpredictions_6models_3OK3_9_splitter_sort((__pyx_v_Xf + __pyx_v_start), (__pyx_v_samples + __pyx_v_start), (__pyx_v_end - __pyx_v_start));
 
-      /* "_splitter.pyx":354
+      /* "stpredictions/models/OK3/_splitter.pyx":354
  *                 sort(Xf + start, samples + start, end - start)
  * 
  *                 if Xf[end - 1] <= Xf[start] + FEATURE_THRESHOLD:             # <<<<<<<<<<<<<<
  *                     features[f_j], features[n_total_constants] = features[n_total_constants], features[f_j]
  * 
  */
-      __pyx_t_5 = (((__pyx_v_Xf[(__pyx_v_end - 1)]) <= ((__pyx_v_Xf[__pyx_v_start]) + __pyx_v_9_splitter_FEATURE_THRESHOLD)) != 0);
+      __pyx_t_5 = (((__pyx_v_Xf[(__pyx_v_end - 1)]) <= ((__pyx_v_Xf[__pyx_v_start]) + __pyx_v_13stpredictions_6models_3OK3_9_splitter_FEATURE_THRESHOLD)) != 0);
       if (__pyx_t_5) {
 
-        /* "_splitter.pyx":355
+        /* "stpredictions/models/OK3/_splitter.pyx":355
  * 
  *                 if Xf[end - 1] <= Xf[start] + FEATURE_THRESHOLD:
  *                     features[f_j], features[n_total_constants] = features[n_total_constants], features[f_j]             # <<<<<<<<<<<<<<
@@ -6041,7 +5855,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
         (__pyx_v_features[__pyx_v_f_j]) = __pyx_t_7;
         (__pyx_v_features[__pyx_v_n_total_constants]) = __pyx_t_2;
 
-        /* "_splitter.pyx":357
+        /* "stpredictions/models/OK3/_splitter.pyx":357
  *                     features[f_j], features[n_total_constants] = features[n_total_constants], features[f_j]
  * 
  *                     n_found_constants += 1             # <<<<<<<<<<<<<<
@@ -6050,7 +5864,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
         __pyx_v_n_found_constants = (__pyx_v_n_found_constants + 1);
 
-        /* "_splitter.pyx":358
+        /* "stpredictions/models/OK3/_splitter.pyx":358
  * 
  *                     n_found_constants += 1
  *                     n_total_constants += 1             # <<<<<<<<<<<<<<
@@ -6059,7 +5873,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
         __pyx_v_n_total_constants = (__pyx_v_n_total_constants + 1);
 
-        /* "_splitter.pyx":354
+        /* "stpredictions/models/OK3/_splitter.pyx":354
  *                 sort(Xf + start, samples + start, end - start)
  * 
  *                 if Xf[end - 1] <= Xf[start] + FEATURE_THRESHOLD:             # <<<<<<<<<<<<<<
@@ -6069,7 +5883,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
         goto __pyx_L11;
       }
 
-      /* "_splitter.pyx":361
+      /* "stpredictions/models/OK3/_splitter.pyx":361
  * 
  *                 else:
  *                     f_i -= 1             # <<<<<<<<<<<<<<
@@ -6079,7 +5893,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
       /*else*/ {
         __pyx_v_f_i = (__pyx_v_f_i - 1);
 
-        /* "_splitter.pyx":362
+        /* "stpredictions/models/OK3/_splitter.pyx":362
  *                 else:
  *                     f_i -= 1
  *                     features[f_i], features[f_j] = features[f_j], features[f_i]             # <<<<<<<<<<<<<<
@@ -6091,16 +5905,16 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
         (__pyx_v_features[__pyx_v_f_i]) = __pyx_t_2;
         (__pyx_v_features[__pyx_v_f_j]) = __pyx_t_7;
 
-        /* "_splitter.pyx":365
+        /* "stpredictions/models/OK3/_splitter.pyx":365
  * 
  *                     # Evaluate all splits
  *                     self.criterion.reset()             # <<<<<<<<<<<<<<
  *                     p = start
  * 
  */
-        __pyx_t_11 = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->reset(__pyx_v_self->__pyx_base.__pyx_base.criterion); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 365, __pyx_L1_error)
+        __pyx_t_11 = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->reset(__pyx_v_self->__pyx_base.__pyx_base.criterion); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 365, __pyx_L1_error)
 
-        /* "_splitter.pyx":366
+        /* "stpredictions/models/OK3/_splitter.pyx":366
  *                     # Evaluate all splits
  *                     self.criterion.reset()
  *                     p = start             # <<<<<<<<<<<<<<
@@ -6109,7 +5923,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
         __pyx_v_p = __pyx_v_start;
 
-        /* "_splitter.pyx":368
+        /* "stpredictions/models/OK3/_splitter.pyx":368
  *                     p = start
  * 
  *                     while p < end:             # <<<<<<<<<<<<<<
@@ -6120,7 +5934,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
           __pyx_t_5 = ((__pyx_v_p < __pyx_v_end) != 0);
           if (!__pyx_t_5) break;
 
-          /* "_splitter.pyx":369
+          /* "stpredictions/models/OK3/_splitter.pyx":369
  * 
  *                     while p < end:
  *                         while (p + 1 < end and             # <<<<<<<<<<<<<<
@@ -6135,19 +5949,19 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
               goto __pyx_L16_bool_binop_done;
             }
 
-            /* "_splitter.pyx":370
+            /* "stpredictions/models/OK3/_splitter.pyx":370
  *                     while p < end:
  *                         while (p + 1 < end and
  *                                Xf[p + 1] <= Xf[p] + FEATURE_THRESHOLD):             # <<<<<<<<<<<<<<
  *                             p += 1
  * 
  */
-            __pyx_t_6 = (((__pyx_v_Xf[(__pyx_v_p + 1)]) <= ((__pyx_v_Xf[__pyx_v_p]) + __pyx_v_9_splitter_FEATURE_THRESHOLD)) != 0);
+            __pyx_t_6 = (((__pyx_v_Xf[(__pyx_v_p + 1)]) <= ((__pyx_v_Xf[__pyx_v_p]) + __pyx_v_13stpredictions_6models_3OK3_9_splitter_FEATURE_THRESHOLD)) != 0);
             __pyx_t_5 = __pyx_t_6;
             __pyx_L16_bool_binop_done:;
             if (!__pyx_t_5) break;
 
-            /* "_splitter.pyx":371
+            /* "stpredictions/models/OK3/_splitter.pyx":371
  *                         while (p + 1 < end and
  *                                Xf[p + 1] <= Xf[p] + FEATURE_THRESHOLD):
  *                             p += 1             # <<<<<<<<<<<<<<
@@ -6157,7 +5971,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
             __pyx_v_p = (__pyx_v_p + 1);
           }
 
-          /* "_splitter.pyx":375
+          /* "stpredictions/models/OK3/_splitter.pyx":375
  *                         # (p + 1 >= end) or (X[samples[p + 1], current.feature] >
  *                         #                    X[samples[p], current.feature])
  *                         p += 1             # <<<<<<<<<<<<<<
@@ -6166,7 +5980,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
           __pyx_v_p = (__pyx_v_p + 1);
 
-          /* "_splitter.pyx":379
+          /* "stpredictions/models/OK3/_splitter.pyx":379
  *                         #                X[samples[p - 1], current.feature])
  * 
  *                         if p < end:             # <<<<<<<<<<<<<<
@@ -6176,7 +5990,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
           __pyx_t_5 = ((__pyx_v_p < __pyx_v_end) != 0);
           if (__pyx_t_5) {
 
-            /* "_splitter.pyx":380
+            /* "stpredictions/models/OK3/_splitter.pyx":380
  * 
  *                         if p < end:
  *                             current.pos = p             # <<<<<<<<<<<<<<
@@ -6185,7 +5999,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
             __pyx_v_current.pos = __pyx_v_p;
 
-            /* "_splitter.pyx":383
+            /* "stpredictions/models/OK3/_splitter.pyx":383
  * 
  *                             # Reject if min_samples_leaf is not guaranteed
  *                             if (((current.pos - start) < min_samples_leaf) or             # <<<<<<<<<<<<<<
@@ -6199,7 +6013,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
               goto __pyx_L20_bool_binop_done;
             }
 
-            /* "_splitter.pyx":384
+            /* "stpredictions/models/OK3/_splitter.pyx":384
  *                             # Reject if min_samples_leaf is not guaranteed
  *                             if (((current.pos - start) < min_samples_leaf) or
  *                                     ((end - current.pos) < min_samples_leaf)):             # <<<<<<<<<<<<<<
@@ -6210,7 +6024,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
             __pyx_t_5 = __pyx_t_6;
             __pyx_L20_bool_binop_done:;
 
-            /* "_splitter.pyx":383
+            /* "stpredictions/models/OK3/_splitter.pyx":383
  * 
  *                             # Reject if min_samples_leaf is not guaranteed
  *                             if (((current.pos - start) < min_samples_leaf) or             # <<<<<<<<<<<<<<
@@ -6219,7 +6033,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
             if (__pyx_t_5) {
 
-              /* "_splitter.pyx":385
+              /* "stpredictions/models/OK3/_splitter.pyx":385
  *                             if (((current.pos - start) < min_samples_leaf) or
  *                                     ((end - current.pos) < min_samples_leaf)):
  *                                 continue             # <<<<<<<<<<<<<<
@@ -6228,7 +6042,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
               goto __pyx_L12_continue;
 
-              /* "_splitter.pyx":383
+              /* "stpredictions/models/OK3/_splitter.pyx":383
  * 
  *                             # Reject if min_samples_leaf is not guaranteed
  *                             if (((current.pos - start) < min_samples_leaf) or             # <<<<<<<<<<<<<<
@@ -6237,16 +6051,16 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
             }
 
-            /* "_splitter.pyx":387
+            /* "stpredictions/models/OK3/_splitter.pyx":387
  *                                 continue
  * 
  *                             self.criterion.update(current.pos)             # <<<<<<<<<<<<<<
  * 
  *                             # Reject if min_weight_leaf is not satisfied
  */
-            __pyx_t_11 = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->update(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_current.pos); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 387, __pyx_L1_error)
+            __pyx_t_11 = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->update(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_current.pos); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 387, __pyx_L1_error)
 
-            /* "_splitter.pyx":390
+            /* "stpredictions/models/OK3/_splitter.pyx":390
  * 
  *                             # Reject if min_weight_leaf is not satisfied
  *                             if ((self.criterion.weighted_n_left < min_weight_leaf) or             # <<<<<<<<<<<<<<
@@ -6260,7 +6074,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
               goto __pyx_L23_bool_binop_done;
             }
 
-            /* "_splitter.pyx":391
+            /* "stpredictions/models/OK3/_splitter.pyx":391
  *                             # Reject if min_weight_leaf is not satisfied
  *                             if ((self.criterion.weighted_n_left < min_weight_leaf) or
  *                                     (self.criterion.weighted_n_right < min_weight_leaf)):             # <<<<<<<<<<<<<<
@@ -6271,7 +6085,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
             __pyx_t_5 = __pyx_t_6;
             __pyx_L23_bool_binop_done:;
 
-            /* "_splitter.pyx":390
+            /* "stpredictions/models/OK3/_splitter.pyx":390
  * 
  *                             # Reject if min_weight_leaf is not satisfied
  *                             if ((self.criterion.weighted_n_left < min_weight_leaf) or             # <<<<<<<<<<<<<<
@@ -6280,7 +6094,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
             if (__pyx_t_5) {
 
-              /* "_splitter.pyx":392
+              /* "stpredictions/models/OK3/_splitter.pyx":392
  *                             if ((self.criterion.weighted_n_left < min_weight_leaf) or
  *                                     (self.criterion.weighted_n_right < min_weight_leaf)):
  *                                 continue             # <<<<<<<<<<<<<<
@@ -6289,7 +6103,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
               goto __pyx_L12_continue;
 
-              /* "_splitter.pyx":390
+              /* "stpredictions/models/OK3/_splitter.pyx":390
  * 
  *                             # Reject if min_weight_leaf is not satisfied
  *                             if ((self.criterion.weighted_n_left < min_weight_leaf) or             # <<<<<<<<<<<<<<
@@ -6298,16 +6112,16 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
             }
 
-            /* "_splitter.pyx":394
+            /* "stpredictions/models/OK3/_splitter.pyx":394
  *                                 continue
  * 
  *                             current_proxy_improvement = self.criterion.proxy_impurity_improvement()             # <<<<<<<<<<<<<<
  * 
  *                             # with gil:
  */
-            __pyx_v_current_proxy_improvement = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->proxy_impurity_improvement(__pyx_v_self->__pyx_base.__pyx_base.criterion);
+            __pyx_v_current_proxy_improvement = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->proxy_impurity_improvement(__pyx_v_self->__pyx_base.__pyx_base.criterion);
 
-            /* "_splitter.pyx":402
+            /* "stpredictions/models/OK3/_splitter.pyx":402
  *                             #     print()
  * 
  *                             if current_proxy_improvement > best_proxy_improvement:             # <<<<<<<<<<<<<<
@@ -6317,7 +6131,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
             __pyx_t_5 = ((__pyx_v_current_proxy_improvement > __pyx_v_best_proxy_improvement) != 0);
             if (__pyx_t_5) {
 
-              /* "_splitter.pyx":403
+              /* "stpredictions/models/OK3/_splitter.pyx":403
  * 
  *                             if current_proxy_improvement > best_proxy_improvement:
  *                                 best_proxy_improvement = current_proxy_improvement             # <<<<<<<<<<<<<<
@@ -6326,7 +6140,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
               __pyx_v_best_proxy_improvement = __pyx_v_current_proxy_improvement;
 
-              /* "_splitter.pyx":405
+              /* "stpredictions/models/OK3/_splitter.pyx":405
  *                                 best_proxy_improvement = current_proxy_improvement
  *                                 # sum of halves is used to avoid infinite value
  *                                 current.threshold = Xf[p - 1] / 2.0 + Xf[p] / 2.0             # <<<<<<<<<<<<<<
@@ -6335,7 +6149,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
               __pyx_v_current.threshold = (((__pyx_v_Xf[(__pyx_v_p - 1)]) / 2.0) + ((__pyx_v_Xf[__pyx_v_p]) / 2.0));
 
-              /* "_splitter.pyx":407
+              /* "stpredictions/models/OK3/_splitter.pyx":407
  *                                 current.threshold = Xf[p - 1] / 2.0 + Xf[p] / 2.0
  * 
  *                                 if ((current.threshold == Xf[p]) or             # <<<<<<<<<<<<<<
@@ -6349,32 +6163,32 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
                 goto __pyx_L27_bool_binop_done;
               }
 
-              /* "_splitter.pyx":408
+              /* "stpredictions/models/OK3/_splitter.pyx":408
  * 
  *                                 if ((current.threshold == Xf[p]) or
  *                                     (current.threshold == INFINITY) or             # <<<<<<<<<<<<<<
  *                                     (current.threshold == -INFINITY)):
  *                                     current.threshold = Xf[p - 1]
  */
-              __pyx_t_6 = ((__pyx_v_current.threshold == __pyx_v_9_splitter_INFINITY) != 0);
+              __pyx_t_6 = ((__pyx_v_current.threshold == __pyx_v_13stpredictions_6models_3OK3_9_splitter_INFINITY) != 0);
               if (!__pyx_t_6) {
               } else {
                 __pyx_t_5 = __pyx_t_6;
                 goto __pyx_L27_bool_binop_done;
               }
 
-              /* "_splitter.pyx":409
+              /* "stpredictions/models/OK3/_splitter.pyx":409
  *                                 if ((current.threshold == Xf[p]) or
  *                                     (current.threshold == INFINITY) or
  *                                     (current.threshold == -INFINITY)):             # <<<<<<<<<<<<<<
  *                                     current.threshold = Xf[p - 1]
  * 
  */
-              __pyx_t_6 = ((__pyx_v_current.threshold == (-__pyx_v_9_splitter_INFINITY)) != 0);
+              __pyx_t_6 = ((__pyx_v_current.threshold == (-__pyx_v_13stpredictions_6models_3OK3_9_splitter_INFINITY)) != 0);
               __pyx_t_5 = __pyx_t_6;
               __pyx_L27_bool_binop_done:;
 
-              /* "_splitter.pyx":407
+              /* "stpredictions/models/OK3/_splitter.pyx":407
  *                                 current.threshold = Xf[p - 1] / 2.0 + Xf[p] / 2.0
  * 
  *                                 if ((current.threshold == Xf[p]) or             # <<<<<<<<<<<<<<
@@ -6383,7 +6197,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
               if (__pyx_t_5) {
 
-                /* "_splitter.pyx":410
+                /* "stpredictions/models/OK3/_splitter.pyx":410
  *                                     (current.threshold == INFINITY) or
  *                                     (current.threshold == -INFINITY)):
  *                                     current.threshold = Xf[p - 1]             # <<<<<<<<<<<<<<
@@ -6392,7 +6206,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
                 __pyx_v_current.threshold = (__pyx_v_Xf[(__pyx_v_p - 1)]);
 
-                /* "_splitter.pyx":407
+                /* "stpredictions/models/OK3/_splitter.pyx":407
  *                                 current.threshold = Xf[p - 1] / 2.0 + Xf[p] / 2.0
  * 
  *                                 if ((current.threshold == Xf[p]) or             # <<<<<<<<<<<<<<
@@ -6401,7 +6215,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
               }
 
-              /* "_splitter.pyx":412
+              /* "stpredictions/models/OK3/_splitter.pyx":412
  *                                     current.threshold = Xf[p - 1]
  * 
  *                                 best = current  # copy             # <<<<<<<<<<<<<<
@@ -6410,7 +6224,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
               __pyx_v_best = __pyx_v_current;
 
-              /* "_splitter.pyx":402
+              /* "stpredictions/models/OK3/_splitter.pyx":402
  *                             #     print()
  * 
  *                             if current_proxy_improvement > best_proxy_improvement:             # <<<<<<<<<<<<<<
@@ -6419,7 +6233,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
             }
 
-            /* "_splitter.pyx":379
+            /* "stpredictions/models/OK3/_splitter.pyx":379
  *                         #                X[samples[p - 1], current.feature])
  * 
  *                         if p < end:             # <<<<<<<<<<<<<<
@@ -6435,7 +6249,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
     __pyx_L8:;
   }
 
-  /* "_splitter.pyx":415
+  /* "stpredictions/models/OK3/_splitter.pyx":415
  * 
  *         # Reorganize into samples[start:best.pos] + samples[best.pos:end]
  *         if best.pos < end:             # <<<<<<<<<<<<<<
@@ -6445,7 +6259,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
   __pyx_t_5 = ((__pyx_v_best.pos < __pyx_v_end) != 0);
   if (__pyx_t_5) {
 
-    /* "_splitter.pyx":416
+    /* "stpredictions/models/OK3/_splitter.pyx":416
  *         # Reorganize into samples[start:best.pos] + samples[best.pos:end]
  *         if best.pos < end:
  *             partition_end = end             # <<<<<<<<<<<<<<
@@ -6454,7 +6268,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
     __pyx_v_partition_end = __pyx_v_end;
 
-    /* "_splitter.pyx":417
+    /* "stpredictions/models/OK3/_splitter.pyx":417
  *         if best.pos < end:
  *             partition_end = end
  *             p = start             # <<<<<<<<<<<<<<
@@ -6463,7 +6277,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
     __pyx_v_p = __pyx_v_start;
 
-    /* "_splitter.pyx":419
+    /* "stpredictions/models/OK3/_splitter.pyx":419
  *             p = start
  * 
  *             while p < partition_end:             # <<<<<<<<<<<<<<
@@ -6474,7 +6288,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
       __pyx_t_5 = ((__pyx_v_p < __pyx_v_partition_end) != 0);
       if (!__pyx_t_5) break;
 
-      /* "_splitter.pyx":420
+      /* "stpredictions/models/OK3/_splitter.pyx":420
  * 
  *             while p < partition_end:
  *                 if self.X[samples[p], best.feature] <= best.threshold:             # <<<<<<<<<<<<<<
@@ -6484,10 +6298,10 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
       if (unlikely(!__pyx_v_self->__pyx_base.X.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(0, 420, __pyx_L1_error)}
       __pyx_t_10 = (__pyx_v_samples[__pyx_v_p]);
       __pyx_t_9 = __pyx_v_best.feature;
-      __pyx_t_5 = (((*((__pyx_t_7sklearn_4tree_5_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_self->__pyx_base.X.data + __pyx_t_10 * __pyx_v_self->__pyx_base.X.strides[0]) ) + __pyx_t_9 * __pyx_v_self->__pyx_base.X.strides[1]) ))) <= __pyx_v_best.threshold) != 0);
+      __pyx_t_5 = (((*((__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_self->__pyx_base.X.data + __pyx_t_10 * __pyx_v_self->__pyx_base.X.strides[0]) ) + __pyx_t_9 * __pyx_v_self->__pyx_base.X.strides[1]) ))) <= __pyx_v_best.threshold) != 0);
       if (__pyx_t_5) {
 
-        /* "_splitter.pyx":421
+        /* "stpredictions/models/OK3/_splitter.pyx":421
  *             while p < partition_end:
  *                 if self.X[samples[p], best.feature] <= best.threshold:
  *                     p += 1             # <<<<<<<<<<<<<<
@@ -6496,7 +6310,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
         __pyx_v_p = (__pyx_v_p + 1);
 
-        /* "_splitter.pyx":420
+        /* "stpredictions/models/OK3/_splitter.pyx":420
  * 
  *             while p < partition_end:
  *                 if self.X[samples[p], best.feature] <= best.threshold:             # <<<<<<<<<<<<<<
@@ -6506,7 +6320,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
         goto __pyx_L33;
       }
 
-      /* "_splitter.pyx":424
+      /* "stpredictions/models/OK3/_splitter.pyx":424
  * 
  *                 else:
  *                     partition_end -= 1             # <<<<<<<<<<<<<<
@@ -6516,7 +6330,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
       /*else*/ {
         __pyx_v_partition_end = (__pyx_v_partition_end - 1);
 
-        /* "_splitter.pyx":426
+        /* "stpredictions/models/OK3/_splitter.pyx":426
  *                     partition_end -= 1
  * 
  *                     samples[p], samples[partition_end] = samples[partition_end], samples[p]             # <<<<<<<<<<<<<<
@@ -6531,43 +6345,43 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
       __pyx_L33:;
     }
 
-    /* "_splitter.pyx":428
+    /* "stpredictions/models/OK3/_splitter.pyx":428
  *                     samples[p], samples[partition_end] = samples[partition_end], samples[p]
  * 
  *             self.criterion.reset()             # <<<<<<<<<<<<<<
  *             self.criterion.update(best.pos)
  *             best.improvement = self.criterion.impurity_improvement(impurity)
  */
-    __pyx_t_11 = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->reset(__pyx_v_self->__pyx_base.__pyx_base.criterion); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 428, __pyx_L1_error)
+    __pyx_t_11 = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->reset(__pyx_v_self->__pyx_base.__pyx_base.criterion); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 428, __pyx_L1_error)
 
-    /* "_splitter.pyx":429
+    /* "stpredictions/models/OK3/_splitter.pyx":429
  * 
  *             self.criterion.reset()
  *             self.criterion.update(best.pos)             # <<<<<<<<<<<<<<
  *             best.improvement = self.criterion.impurity_improvement(impurity)
  *             self.criterion.children_impurity(&best.impurity_left,
  */
-    __pyx_t_11 = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->update(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_best.pos); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 429, __pyx_L1_error)
+    __pyx_t_11 = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->update(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_best.pos); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 429, __pyx_L1_error)
 
-    /* "_splitter.pyx":430
+    /* "stpredictions/models/OK3/_splitter.pyx":430
  *             self.criterion.reset()
  *             self.criterion.update(best.pos)
  *             best.improvement = self.criterion.impurity_improvement(impurity)             # <<<<<<<<<<<<<<
  *             self.criterion.children_impurity(&best.impurity_left,
  *                                              &best.impurity_right)
  */
-    __pyx_v_best.improvement = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->impurity_improvement(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_impurity);
+    __pyx_v_best.improvement = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->impurity_improvement(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_impurity);
 
-    /* "_splitter.pyx":431
+    /* "stpredictions/models/OK3/_splitter.pyx":431
  *             self.criterion.update(best.pos)
  *             best.improvement = self.criterion.impurity_improvement(impurity)
  *             self.criterion.children_impurity(&best.impurity_left,             # <<<<<<<<<<<<<<
  *                                              &best.impurity_right)
  * 
  */
-    ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->children_impurity(__pyx_v_self->__pyx_base.__pyx_base.criterion, (&__pyx_v_best.impurity_left), (&__pyx_v_best.impurity_right));
+    ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->children_impurity(__pyx_v_self->__pyx_base.__pyx_base.criterion, (&__pyx_v_best.impurity_left), (&__pyx_v_best.impurity_right));
 
-    /* "_splitter.pyx":415
+    /* "stpredictions/models/OK3/_splitter.pyx":415
  * 
  *         # Reorganize into samples[start:best.pos] + samples[best.pos:end]
  *         if best.pos < end:             # <<<<<<<<<<<<<<
@@ -6576,25 +6390,25 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
   }
 
-  /* "_splitter.pyx":437
+  /* "stpredictions/models/OK3/_splitter.pyx":437
  *         # element in features[:n_known_constants] must be preserved for sibling
  *         # and child nodes
  *         memcpy(features, constant_features, sizeof(SIZE_t) * n_known_constants)             # <<<<<<<<<<<<<<
  * 
  *         # Copy newly found constant features
  */
-  (void)(memcpy(__pyx_v_features, __pyx_v_constant_features, ((sizeof(__pyx_t_7sklearn_4tree_5_tree_SIZE_t)) * __pyx_v_n_known_constants)));
+  (void)(memcpy(__pyx_v_features, __pyx_v_constant_features, ((sizeof(__pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t)) * __pyx_v_n_known_constants)));
 
-  /* "_splitter.pyx":440
+  /* "stpredictions/models/OK3/_splitter.pyx":440
  * 
  *         # Copy newly found constant features
  *         memcpy(constant_features + n_known_constants,             # <<<<<<<<<<<<<<
  *                features + n_known_constants,
  *                sizeof(SIZE_t) * n_found_constants)
  */
-  (void)(memcpy((__pyx_v_constant_features + __pyx_v_n_known_constants), (__pyx_v_features + __pyx_v_n_known_constants), ((sizeof(__pyx_t_7sklearn_4tree_5_tree_SIZE_t)) * __pyx_v_n_found_constants)));
+  (void)(memcpy((__pyx_v_constant_features + __pyx_v_n_known_constants), (__pyx_v_features + __pyx_v_n_known_constants), ((sizeof(__pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t)) * __pyx_v_n_found_constants)));
 
-  /* "_splitter.pyx":445
+  /* "stpredictions/models/OK3/_splitter.pyx":445
  * 
  *         # Return values
  *         split[0] = best             # <<<<<<<<<<<<<<
@@ -6603,7 +6417,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
   (__pyx_v_split[0]) = __pyx_v_best;
 
-  /* "_splitter.pyx":446
+  /* "stpredictions/models/OK3/_splitter.pyx":446
  *         # Return values
  *         split[0] = best
  *         n_constant_features[0] = n_total_constants             # <<<<<<<<<<<<<<
@@ -6612,7 +6426,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  */
   (__pyx_v_n_constant_features[0]) = __pyx_v_n_total_constants;
 
-  /* "_splitter.pyx":447
+  /* "stpredictions/models/OK3/_splitter.pyx":447
  *         split[0] = best
  *         n_constant_features[0] = n_total_constants
  *         return 0             # <<<<<<<<<<<<<<
@@ -6622,7 +6436,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "_splitter.pyx":254
+  /* "stpredictions/models/OK3/_splitter.pyx":254
  *                                self.random_state), self.__getstate__())
  * 
  *     cdef int node_split(self, double impurity, SplitRecord* split,             # <<<<<<<<<<<<<<
@@ -6636,7 +6450,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
     #ifdef WITH_THREAD
     PyGILState_STATE __pyx_gilstate_save = __Pyx_PyGILState_Ensure();
     #endif
-    __Pyx_AddTraceback("_splitter.BestSplitter.node_split", __pyx_clineno, __pyx_lineno, __pyx_filename);
+    __Pyx_AddTraceback("stpredictions.models.OK3._splitter.BestSplitter.node_split", __pyx_clineno, __pyx_lineno, __pyx_filename);
     #ifdef WITH_THREAD
     __Pyx_PyGILState_Release(__pyx_gilstate_save);
     #endif
@@ -6646,7 +6460,7 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
   return __pyx_r;
 }
 
-/* "_splitter.pyx":452
+/* "stpredictions/models/OK3/_splitter.pyx":452
  * # Sort n-element arrays pointed to by Xf and samples, simultaneously,
  * # by the values in Xf. Algorithm: Introsort (Musser, SP&E, 1997).
  * cdef inline void sort(DTYPE_t* Xf, SIZE_t* samples, SIZE_t n) nogil:             # <<<<<<<<<<<<<<
@@ -6654,11 +6468,11 @@ static int __pyx_f_9_splitter_12BestSplitter_node_split(struct __pyx_obj_9_split
  *       return
  */
 
-static CYTHON_INLINE void __pyx_f_9_splitter_sort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_v_Xf, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n) {
+static CYTHON_INLINE void __pyx_f_13stpredictions_6models_3OK3_9_splitter_sort(__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_v_Xf, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n) {
   int __pyx_v_maxd;
   int __pyx_t_1;
 
-  /* "_splitter.pyx":453
+  /* "stpredictions/models/OK3/_splitter.pyx":453
  * # by the values in Xf. Algorithm: Introsort (Musser, SP&E, 1997).
  * cdef inline void sort(DTYPE_t* Xf, SIZE_t* samples, SIZE_t n) nogil:
  *     if n == 0:             # <<<<<<<<<<<<<<
@@ -6668,7 +6482,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sort(__pyx_t_7sklearn_4tree_5_tree_
   __pyx_t_1 = ((__pyx_v_n == 0) != 0);
   if (__pyx_t_1) {
 
-    /* "_splitter.pyx":454
+    /* "stpredictions/models/OK3/_splitter.pyx":454
  * cdef inline void sort(DTYPE_t* Xf, SIZE_t* samples, SIZE_t n) nogil:
  *     if n == 0:
  *       return             # <<<<<<<<<<<<<<
@@ -6677,7 +6491,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sort(__pyx_t_7sklearn_4tree_5_tree_
  */
     goto __pyx_L0;
 
-    /* "_splitter.pyx":453
+    /* "stpredictions/models/OK3/_splitter.pyx":453
  * # by the values in Xf. Algorithm: Introsort (Musser, SP&E, 1997).
  * cdef inline void sort(DTYPE_t* Xf, SIZE_t* samples, SIZE_t n) nogil:
  *     if n == 0:             # <<<<<<<<<<<<<<
@@ -6686,25 +6500,25 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sort(__pyx_t_7sklearn_4tree_5_tree_
  */
   }
 
-  /* "_splitter.pyx":455
+  /* "stpredictions/models/OK3/_splitter.pyx":455
  *     if n == 0:
  *       return
  *     cdef int maxd = 2 * <int>log(n)             # <<<<<<<<<<<<<<
  *     introsort(Xf, samples, n, maxd)
  * 
  */
-  __pyx_v_maxd = (2 * ((int)__pyx_f_7sklearn_4tree_6_utils_log(__pyx_v_n)));
+  __pyx_v_maxd = (2 * ((int)__pyx_f_13stpredictions_6models_3OK3_6_utils_log(__pyx_v_n)));
 
-  /* "_splitter.pyx":456
+  /* "stpredictions/models/OK3/_splitter.pyx":456
  *       return
  *     cdef int maxd = 2 * <int>log(n)
  *     introsort(Xf, samples, n, maxd)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_f_9_splitter_introsort(__pyx_v_Xf, __pyx_v_samples, __pyx_v_n, __pyx_v_maxd);
+  __pyx_f_13stpredictions_6models_3OK3_9_splitter_introsort(__pyx_v_Xf, __pyx_v_samples, __pyx_v_n, __pyx_v_maxd);
 
-  /* "_splitter.pyx":452
+  /* "stpredictions/models/OK3/_splitter.pyx":452
  * # Sort n-element arrays pointed to by Xf and samples, simultaneously,
  * # by the values in Xf. Algorithm: Introsort (Musser, SP&E, 1997).
  * cdef inline void sort(DTYPE_t* Xf, SIZE_t* samples, SIZE_t n) nogil:             # <<<<<<<<<<<<<<
@@ -6716,7 +6530,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sort(__pyx_t_7sklearn_4tree_5_tree_
   __pyx_L0:;
 }
 
-/* "_splitter.pyx":459
+/* "stpredictions/models/OK3/_splitter.pyx":459
  * 
  * 
  * cdef inline void swap(DTYPE_t* Xf, SIZE_t* samples,             # <<<<<<<<<<<<<<
@@ -6724,13 +6538,13 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sort(__pyx_t_7sklearn_4tree_5_tree_
  *     # Helper for sort
  */
 
-static CYTHON_INLINE void __pyx_f_9_splitter_swap(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_v_Xf, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_i, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_j) {
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_t_1;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_t_2;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_3;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_4;
+static CYTHON_INLINE void __pyx_f_13stpredictions_6models_3OK3_9_splitter_swap(__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_v_Xf, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_i, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_j) {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_t_1;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_t_2;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_3;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_4;
 
-  /* "_splitter.pyx":462
+  /* "stpredictions/models/OK3/_splitter.pyx":462
  *         SIZE_t i, SIZE_t j) nogil:
  *     # Helper for sort
  *     Xf[i], Xf[j] = Xf[j], Xf[i]             # <<<<<<<<<<<<<<
@@ -6742,7 +6556,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_swap(__pyx_t_7sklearn_4tree_5_tree_
   (__pyx_v_Xf[__pyx_v_i]) = __pyx_t_1;
   (__pyx_v_Xf[__pyx_v_j]) = __pyx_t_2;
 
-  /* "_splitter.pyx":463
+  /* "stpredictions/models/OK3/_splitter.pyx":463
  *     # Helper for sort
  *     Xf[i], Xf[j] = Xf[j], Xf[i]
  *     samples[i], samples[j] = samples[j], samples[i]             # <<<<<<<<<<<<<<
@@ -6754,7 +6568,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_swap(__pyx_t_7sklearn_4tree_5_tree_
   (__pyx_v_samples[__pyx_v_i]) = __pyx_t_3;
   (__pyx_v_samples[__pyx_v_j]) = __pyx_t_4;
 
-  /* "_splitter.pyx":459
+  /* "stpredictions/models/OK3/_splitter.pyx":459
  * 
  * 
  * cdef inline void swap(DTYPE_t* Xf, SIZE_t* samples,             # <<<<<<<<<<<<<<
@@ -6765,7 +6579,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_swap(__pyx_t_7sklearn_4tree_5_tree_
   /* function exit code */
 }
 
-/* "_splitter.pyx":466
+/* "stpredictions/models/OK3/_splitter.pyx":466
  * 
  * 
  * cdef inline DTYPE_t median3(DTYPE_t* Xf, SIZE_t n) nogil:             # <<<<<<<<<<<<<<
@@ -6773,14 +6587,14 @@ static CYTHON_INLINE void __pyx_f_9_splitter_swap(__pyx_t_7sklearn_4tree_5_tree_
  *     # Engineering a sort function. SP&E. Requires 8/3 comparisons on average.
  */
 
-static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_median3(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_v_Xf, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n) {
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_v_a;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_v_b;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_v_c;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_r;
+static CYTHON_INLINE __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_f_13stpredictions_6models_3OK3_9_splitter_median3(__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_v_Xf, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n) {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_v_a;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_v_b;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_v_c;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_r;
   int __pyx_t_1;
 
-  /* "_splitter.pyx":469
+  /* "stpredictions/models/OK3/_splitter.pyx":469
  *     # Median of three pivot selection, after Bentley and McIlroy (1993).
  *     # Engineering a sort function. SP&E. Requires 8/3 comparisons on average.
  *     cdef DTYPE_t a = Xf[0], b = Xf[n / 2], c = Xf[n - 1]             # <<<<<<<<<<<<<<
@@ -6791,7 +6605,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_me
   __pyx_v_b = (__pyx_v_Xf[(__pyx_v_n / 2)]);
   __pyx_v_c = (__pyx_v_Xf[(__pyx_v_n - 1)]);
 
-  /* "_splitter.pyx":470
+  /* "stpredictions/models/OK3/_splitter.pyx":470
  *     # Engineering a sort function. SP&E. Requires 8/3 comparisons on average.
  *     cdef DTYPE_t a = Xf[0], b = Xf[n / 2], c = Xf[n - 1]
  *     if a < b:             # <<<<<<<<<<<<<<
@@ -6801,7 +6615,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_me
   __pyx_t_1 = ((__pyx_v_a < __pyx_v_b) != 0);
   if (__pyx_t_1) {
 
-    /* "_splitter.pyx":471
+    /* "stpredictions/models/OK3/_splitter.pyx":471
  *     cdef DTYPE_t a = Xf[0], b = Xf[n / 2], c = Xf[n - 1]
  *     if a < b:
  *         if b < c:             # <<<<<<<<<<<<<<
@@ -6811,7 +6625,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_me
     __pyx_t_1 = ((__pyx_v_b < __pyx_v_c) != 0);
     if (__pyx_t_1) {
 
-      /* "_splitter.pyx":472
+      /* "stpredictions/models/OK3/_splitter.pyx":472
  *     if a < b:
  *         if b < c:
  *             return b             # <<<<<<<<<<<<<<
@@ -6821,7 +6635,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_me
       __pyx_r = __pyx_v_b;
       goto __pyx_L0;
 
-      /* "_splitter.pyx":471
+      /* "stpredictions/models/OK3/_splitter.pyx":471
  *     cdef DTYPE_t a = Xf[0], b = Xf[n / 2], c = Xf[n - 1]
  *     if a < b:
  *         if b < c:             # <<<<<<<<<<<<<<
@@ -6830,7 +6644,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_me
  */
     }
 
-    /* "_splitter.pyx":473
+    /* "stpredictions/models/OK3/_splitter.pyx":473
  *         if b < c:
  *             return b
  *         elif a < c:             # <<<<<<<<<<<<<<
@@ -6840,7 +6654,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_me
     __pyx_t_1 = ((__pyx_v_a < __pyx_v_c) != 0);
     if (__pyx_t_1) {
 
-      /* "_splitter.pyx":474
+      /* "stpredictions/models/OK3/_splitter.pyx":474
  *             return b
  *         elif a < c:
  *             return c             # <<<<<<<<<<<<<<
@@ -6850,7 +6664,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_me
       __pyx_r = __pyx_v_c;
       goto __pyx_L0;
 
-      /* "_splitter.pyx":473
+      /* "stpredictions/models/OK3/_splitter.pyx":473
  *         if b < c:
  *             return b
  *         elif a < c:             # <<<<<<<<<<<<<<
@@ -6859,7 +6673,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_me
  */
     }
 
-    /* "_splitter.pyx":476
+    /* "stpredictions/models/OK3/_splitter.pyx":476
  *             return c
  *         else:
  *             return a             # <<<<<<<<<<<<<<
@@ -6871,7 +6685,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_me
       goto __pyx_L0;
     }
 
-    /* "_splitter.pyx":470
+    /* "stpredictions/models/OK3/_splitter.pyx":470
  *     # Engineering a sort function. SP&E. Requires 8/3 comparisons on average.
  *     cdef DTYPE_t a = Xf[0], b = Xf[n / 2], c = Xf[n - 1]
  *     if a < b:             # <<<<<<<<<<<<<<
@@ -6880,7 +6694,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_me
  */
   }
 
-  /* "_splitter.pyx":477
+  /* "stpredictions/models/OK3/_splitter.pyx":477
  *         else:
  *             return a
  *     elif b < c:             # <<<<<<<<<<<<<<
@@ -6890,7 +6704,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_me
   __pyx_t_1 = ((__pyx_v_b < __pyx_v_c) != 0);
   if (__pyx_t_1) {
 
-    /* "_splitter.pyx":478
+    /* "stpredictions/models/OK3/_splitter.pyx":478
  *             return a
  *     elif b < c:
  *         if a < c:             # <<<<<<<<<<<<<<
@@ -6900,7 +6714,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_me
     __pyx_t_1 = ((__pyx_v_a < __pyx_v_c) != 0);
     if (__pyx_t_1) {
 
-      /* "_splitter.pyx":479
+      /* "stpredictions/models/OK3/_splitter.pyx":479
  *     elif b < c:
  *         if a < c:
  *             return a             # <<<<<<<<<<<<<<
@@ -6910,7 +6724,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_me
       __pyx_r = __pyx_v_a;
       goto __pyx_L0;
 
-      /* "_splitter.pyx":478
+      /* "stpredictions/models/OK3/_splitter.pyx":478
  *             return a
  *     elif b < c:
  *         if a < c:             # <<<<<<<<<<<<<<
@@ -6919,7 +6733,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_me
  */
     }
 
-    /* "_splitter.pyx":481
+    /* "stpredictions/models/OK3/_splitter.pyx":481
  *             return a
  *         else:
  *             return c             # <<<<<<<<<<<<<<
@@ -6931,7 +6745,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_me
       goto __pyx_L0;
     }
 
-    /* "_splitter.pyx":477
+    /* "stpredictions/models/OK3/_splitter.pyx":477
  *         else:
  *             return a
  *     elif b < c:             # <<<<<<<<<<<<<<
@@ -6940,7 +6754,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_me
  */
   }
 
-  /* "_splitter.pyx":483
+  /* "stpredictions/models/OK3/_splitter.pyx":483
  *             return c
  *     else:
  *         return b             # <<<<<<<<<<<<<<
@@ -6952,7 +6766,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_me
     goto __pyx_L0;
   }
 
-  /* "_splitter.pyx":466
+  /* "stpredictions/models/OK3/_splitter.pyx":466
  * 
  * 
  * cdef inline DTYPE_t median3(DTYPE_t* Xf, SIZE_t n) nogil:             # <<<<<<<<<<<<<<
@@ -6965,7 +6779,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_me
   return __pyx_r;
 }
 
-/* "_splitter.pyx":488
+/* "stpredictions/models/OK3/_splitter.pyx":488
  * # Introsort with median of 3 pivot selection and 3-way partition function
  * # (robust to repeated elements, e.g. lots of zero features).
  * cdef void introsort(DTYPE_t* Xf, SIZE_t *samples,             # <<<<<<<<<<<<<<
@@ -6973,14 +6787,14 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_f_9_splitter_me
  *     cdef DTYPE_t pivot
  */
 
-static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_v_Xf, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n, int __pyx_v_maxd) {
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_v_pivot;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_i;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_l;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_r;
+static void __pyx_f_13stpredictions_6models_3OK3_9_splitter_introsort(__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_v_Xf, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n, int __pyx_v_maxd) {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_v_pivot;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_i;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_l;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_r;
   int __pyx_t_1;
 
-  /* "_splitter.pyx":493
+  /* "stpredictions/models/OK3/_splitter.pyx":493
  *     cdef SIZE_t i, l, r
  * 
  *     while n > 1:             # <<<<<<<<<<<<<<
@@ -6991,7 +6805,7 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
     __pyx_t_1 = ((__pyx_v_n > 1) != 0);
     if (!__pyx_t_1) break;
 
-    /* "_splitter.pyx":494
+    /* "stpredictions/models/OK3/_splitter.pyx":494
  * 
  *     while n > 1:
  *         if maxd <= 0:   # max depth limit exceeded ("gone quadratic")             # <<<<<<<<<<<<<<
@@ -7001,16 +6815,16 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
     __pyx_t_1 = ((__pyx_v_maxd <= 0) != 0);
     if (__pyx_t_1) {
 
-      /* "_splitter.pyx":495
+      /* "stpredictions/models/OK3/_splitter.pyx":495
  *     while n > 1:
  *         if maxd <= 0:   # max depth limit exceeded ("gone quadratic")
  *             heapsort(Xf, samples, n)             # <<<<<<<<<<<<<<
  *             return
  *         maxd -= 1
  */
-      __pyx_f_9_splitter_heapsort(__pyx_v_Xf, __pyx_v_samples, __pyx_v_n);
+      __pyx_f_13stpredictions_6models_3OK3_9_splitter_heapsort(__pyx_v_Xf, __pyx_v_samples, __pyx_v_n);
 
-      /* "_splitter.pyx":496
+      /* "stpredictions/models/OK3/_splitter.pyx":496
  *         if maxd <= 0:   # max depth limit exceeded ("gone quadratic")
  *             heapsort(Xf, samples, n)
  *             return             # <<<<<<<<<<<<<<
@@ -7019,7 +6833,7 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
  */
       goto __pyx_L0;
 
-      /* "_splitter.pyx":494
+      /* "stpredictions/models/OK3/_splitter.pyx":494
  * 
  *     while n > 1:
  *         if maxd <= 0:   # max depth limit exceeded ("gone quadratic")             # <<<<<<<<<<<<<<
@@ -7028,7 +6842,7 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
  */
     }
 
-    /* "_splitter.pyx":497
+    /* "stpredictions/models/OK3/_splitter.pyx":497
  *             heapsort(Xf, samples, n)
  *             return
  *         maxd -= 1             # <<<<<<<<<<<<<<
@@ -7037,16 +6851,16 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
  */
     __pyx_v_maxd = (__pyx_v_maxd - 1);
 
-    /* "_splitter.pyx":499
+    /* "stpredictions/models/OK3/_splitter.pyx":499
  *         maxd -= 1
  * 
  *         pivot = median3(Xf, n)             # <<<<<<<<<<<<<<
  * 
  *         # Three-way partition.
  */
-    __pyx_v_pivot = __pyx_f_9_splitter_median3(__pyx_v_Xf, __pyx_v_n);
+    __pyx_v_pivot = __pyx_f_13stpredictions_6models_3OK3_9_splitter_median3(__pyx_v_Xf, __pyx_v_n);
 
-    /* "_splitter.pyx":502
+    /* "stpredictions/models/OK3/_splitter.pyx":502
  * 
  *         # Three-way partition.
  *         i = l = 0             # <<<<<<<<<<<<<<
@@ -7056,7 +6870,7 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
     __pyx_v_i = 0;
     __pyx_v_l = 0;
 
-    /* "_splitter.pyx":503
+    /* "stpredictions/models/OK3/_splitter.pyx":503
  *         # Three-way partition.
  *         i = l = 0
  *         r = n             # <<<<<<<<<<<<<<
@@ -7065,7 +6879,7 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
  */
     __pyx_v_r = __pyx_v_n;
 
-    /* "_splitter.pyx":504
+    /* "stpredictions/models/OK3/_splitter.pyx":504
  *         i = l = 0
  *         r = n
  *         while i < r:             # <<<<<<<<<<<<<<
@@ -7076,7 +6890,7 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
       __pyx_t_1 = ((__pyx_v_i < __pyx_v_r) != 0);
       if (!__pyx_t_1) break;
 
-      /* "_splitter.pyx":505
+      /* "stpredictions/models/OK3/_splitter.pyx":505
  *         r = n
  *         while i < r:
  *             if Xf[i] < pivot:             # <<<<<<<<<<<<<<
@@ -7086,16 +6900,16 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
       __pyx_t_1 = (((__pyx_v_Xf[__pyx_v_i]) < __pyx_v_pivot) != 0);
       if (__pyx_t_1) {
 
-        /* "_splitter.pyx":506
+        /* "stpredictions/models/OK3/_splitter.pyx":506
  *         while i < r:
  *             if Xf[i] < pivot:
  *                 swap(Xf, samples, i, l)             # <<<<<<<<<<<<<<
  *                 i += 1
  *                 l += 1
  */
-        __pyx_f_9_splitter_swap(__pyx_v_Xf, __pyx_v_samples, __pyx_v_i, __pyx_v_l);
+        __pyx_f_13stpredictions_6models_3OK3_9_splitter_swap(__pyx_v_Xf, __pyx_v_samples, __pyx_v_i, __pyx_v_l);
 
-        /* "_splitter.pyx":507
+        /* "stpredictions/models/OK3/_splitter.pyx":507
  *             if Xf[i] < pivot:
  *                 swap(Xf, samples, i, l)
  *                 i += 1             # <<<<<<<<<<<<<<
@@ -7104,7 +6918,7 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
  */
         __pyx_v_i = (__pyx_v_i + 1);
 
-        /* "_splitter.pyx":508
+        /* "stpredictions/models/OK3/_splitter.pyx":508
  *                 swap(Xf, samples, i, l)
  *                 i += 1
  *                 l += 1             # <<<<<<<<<<<<<<
@@ -7113,7 +6927,7 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
  */
         __pyx_v_l = (__pyx_v_l + 1);
 
-        /* "_splitter.pyx":505
+        /* "stpredictions/models/OK3/_splitter.pyx":505
  *         r = n
  *         while i < r:
  *             if Xf[i] < pivot:             # <<<<<<<<<<<<<<
@@ -7123,7 +6937,7 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
         goto __pyx_L8;
       }
 
-      /* "_splitter.pyx":509
+      /* "stpredictions/models/OK3/_splitter.pyx":509
  *                 i += 1
  *                 l += 1
  *             elif Xf[i] > pivot:             # <<<<<<<<<<<<<<
@@ -7133,7 +6947,7 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
       __pyx_t_1 = (((__pyx_v_Xf[__pyx_v_i]) > __pyx_v_pivot) != 0);
       if (__pyx_t_1) {
 
-        /* "_splitter.pyx":510
+        /* "stpredictions/models/OK3/_splitter.pyx":510
  *                 l += 1
  *             elif Xf[i] > pivot:
  *                 r -= 1             # <<<<<<<<<<<<<<
@@ -7142,16 +6956,16 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
  */
         __pyx_v_r = (__pyx_v_r - 1);
 
-        /* "_splitter.pyx":511
+        /* "stpredictions/models/OK3/_splitter.pyx":511
  *             elif Xf[i] > pivot:
  *                 r -= 1
  *                 swap(Xf, samples, i, r)             # <<<<<<<<<<<<<<
  *             else:
  *                 i += 1
  */
-        __pyx_f_9_splitter_swap(__pyx_v_Xf, __pyx_v_samples, __pyx_v_i, __pyx_v_r);
+        __pyx_f_13stpredictions_6models_3OK3_9_splitter_swap(__pyx_v_Xf, __pyx_v_samples, __pyx_v_i, __pyx_v_r);
 
-        /* "_splitter.pyx":509
+        /* "stpredictions/models/OK3/_splitter.pyx":509
  *                 i += 1
  *                 l += 1
  *             elif Xf[i] > pivot:             # <<<<<<<<<<<<<<
@@ -7161,7 +6975,7 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
         goto __pyx_L8;
       }
 
-      /* "_splitter.pyx":513
+      /* "stpredictions/models/OK3/_splitter.pyx":513
  *                 swap(Xf, samples, i, r)
  *             else:
  *                 i += 1             # <<<<<<<<<<<<<<
@@ -7174,16 +6988,16 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
       __pyx_L8:;
     }
 
-    /* "_splitter.pyx":515
+    /* "stpredictions/models/OK3/_splitter.pyx":515
  *                 i += 1
  * 
  *         introsort(Xf, samples, l, maxd)             # <<<<<<<<<<<<<<
  *         Xf += r
  *         samples += r
  */
-    __pyx_f_9_splitter_introsort(__pyx_v_Xf, __pyx_v_samples, __pyx_v_l, __pyx_v_maxd);
+    __pyx_f_13stpredictions_6models_3OK3_9_splitter_introsort(__pyx_v_Xf, __pyx_v_samples, __pyx_v_l, __pyx_v_maxd);
 
-    /* "_splitter.pyx":516
+    /* "stpredictions/models/OK3/_splitter.pyx":516
  * 
  *         introsort(Xf, samples, l, maxd)
  *         Xf += r             # <<<<<<<<<<<<<<
@@ -7192,7 +7006,7 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
  */
     __pyx_v_Xf = (__pyx_v_Xf + __pyx_v_r);
 
-    /* "_splitter.pyx":517
+    /* "stpredictions/models/OK3/_splitter.pyx":517
  *         introsort(Xf, samples, l, maxd)
  *         Xf += r
  *         samples += r             # <<<<<<<<<<<<<<
@@ -7201,7 +7015,7 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
  */
     __pyx_v_samples = (__pyx_v_samples + __pyx_v_r);
 
-    /* "_splitter.pyx":518
+    /* "stpredictions/models/OK3/_splitter.pyx":518
  *         Xf += r
  *         samples += r
  *         n -= r             # <<<<<<<<<<<<<<
@@ -7211,7 +7025,7 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
     __pyx_v_n = (__pyx_v_n - __pyx_v_r);
   }
 
-  /* "_splitter.pyx":488
+  /* "stpredictions/models/OK3/_splitter.pyx":488
  * # Introsort with median of 3 pivot selection and 3-way partition function
  * # (robust to repeated elements, e.g. lots of zero features).
  * cdef void introsort(DTYPE_t* Xf, SIZE_t *samples,             # <<<<<<<<<<<<<<
@@ -7223,7 +7037,7 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
   __pyx_L0:;
 }
 
-/* "_splitter.pyx":521
+/* "stpredictions/models/OK3/_splitter.pyx":521
  * 
  * 
  * cdef inline void sift_down(DTYPE_t* Xf, SIZE_t* samples,             # <<<<<<<<<<<<<<
@@ -7231,14 +7045,14 @@ static void __pyx_f_9_splitter_introsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *
  *     # Restore heap order in Xf[start:end] by moving the max element to start.
  */
 
-static CYTHON_INLINE void __pyx_f_9_splitter_sift_down(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_v_Xf, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end) {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_child;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_maxind;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_root;
+static CYTHON_INLINE void __pyx_f_13stpredictions_6models_3OK3_9_splitter_sift_down(__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_v_Xf, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end) {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_child;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_maxind;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_root;
   int __pyx_t_1;
   int __pyx_t_2;
 
-  /* "_splitter.pyx":526
+  /* "stpredictions/models/OK3/_splitter.pyx":526
  *     cdef SIZE_t child, maxind, root
  * 
  *     root = start             # <<<<<<<<<<<<<<
@@ -7247,7 +7061,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sift_down(__pyx_t_7sklearn_4tree_5_
  */
   __pyx_v_root = __pyx_v_start;
 
-  /* "_splitter.pyx":527
+  /* "stpredictions/models/OK3/_splitter.pyx":527
  * 
  *     root = start
  *     while True:             # <<<<<<<<<<<<<<
@@ -7256,7 +7070,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sift_down(__pyx_t_7sklearn_4tree_5_
  */
   while (1) {
 
-    /* "_splitter.pyx":528
+    /* "stpredictions/models/OK3/_splitter.pyx":528
  *     root = start
  *     while True:
  *         child = root * 2 + 1             # <<<<<<<<<<<<<<
@@ -7265,7 +7079,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sift_down(__pyx_t_7sklearn_4tree_5_
  */
     __pyx_v_child = ((__pyx_v_root * 2) + 1);
 
-    /* "_splitter.pyx":531
+    /* "stpredictions/models/OK3/_splitter.pyx":531
  * 
  *         # find max of root, left child, right child
  *         maxind = root             # <<<<<<<<<<<<<<
@@ -7274,7 +7088,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sift_down(__pyx_t_7sklearn_4tree_5_
  */
     __pyx_v_maxind = __pyx_v_root;
 
-    /* "_splitter.pyx":532
+    /* "stpredictions/models/OK3/_splitter.pyx":532
  *         # find max of root, left child, right child
  *         maxind = root
  *         if child < end and Xf[maxind] < Xf[child]:             # <<<<<<<<<<<<<<
@@ -7292,7 +7106,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sift_down(__pyx_t_7sklearn_4tree_5_
     __pyx_L6_bool_binop_done:;
     if (__pyx_t_1) {
 
-      /* "_splitter.pyx":533
+      /* "stpredictions/models/OK3/_splitter.pyx":533
  *         maxind = root
  *         if child < end and Xf[maxind] < Xf[child]:
  *             maxind = child             # <<<<<<<<<<<<<<
@@ -7301,7 +7115,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sift_down(__pyx_t_7sklearn_4tree_5_
  */
       __pyx_v_maxind = __pyx_v_child;
 
-      /* "_splitter.pyx":532
+      /* "stpredictions/models/OK3/_splitter.pyx":532
  *         # find max of root, left child, right child
  *         maxind = root
  *         if child < end and Xf[maxind] < Xf[child]:             # <<<<<<<<<<<<<<
@@ -7310,7 +7124,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sift_down(__pyx_t_7sklearn_4tree_5_
  */
     }
 
-    /* "_splitter.pyx":534
+    /* "stpredictions/models/OK3/_splitter.pyx":534
  *         if child < end and Xf[maxind] < Xf[child]:
  *             maxind = child
  *         if child + 1 < end and Xf[maxind] < Xf[child + 1]:             # <<<<<<<<<<<<<<
@@ -7328,7 +7142,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sift_down(__pyx_t_7sklearn_4tree_5_
     __pyx_L9_bool_binop_done:;
     if (__pyx_t_1) {
 
-      /* "_splitter.pyx":535
+      /* "stpredictions/models/OK3/_splitter.pyx":535
  *             maxind = child
  *         if child + 1 < end and Xf[maxind] < Xf[child + 1]:
  *             maxind = child + 1             # <<<<<<<<<<<<<<
@@ -7337,7 +7151,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sift_down(__pyx_t_7sklearn_4tree_5_
  */
       __pyx_v_maxind = (__pyx_v_child + 1);
 
-      /* "_splitter.pyx":534
+      /* "stpredictions/models/OK3/_splitter.pyx":534
  *         if child < end and Xf[maxind] < Xf[child]:
  *             maxind = child
  *         if child + 1 < end and Xf[maxind] < Xf[child + 1]:             # <<<<<<<<<<<<<<
@@ -7346,7 +7160,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sift_down(__pyx_t_7sklearn_4tree_5_
  */
     }
 
-    /* "_splitter.pyx":537
+    /* "stpredictions/models/OK3/_splitter.pyx":537
  *             maxind = child + 1
  * 
  *         if maxind == root:             # <<<<<<<<<<<<<<
@@ -7356,7 +7170,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sift_down(__pyx_t_7sklearn_4tree_5_
     __pyx_t_1 = ((__pyx_v_maxind == __pyx_v_root) != 0);
     if (__pyx_t_1) {
 
-      /* "_splitter.pyx":538
+      /* "stpredictions/models/OK3/_splitter.pyx":538
  * 
  *         if maxind == root:
  *             break             # <<<<<<<<<<<<<<
@@ -7365,7 +7179,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sift_down(__pyx_t_7sklearn_4tree_5_
  */
       goto __pyx_L4_break;
 
-      /* "_splitter.pyx":537
+      /* "stpredictions/models/OK3/_splitter.pyx":537
  *             maxind = child + 1
  * 
  *         if maxind == root:             # <<<<<<<<<<<<<<
@@ -7374,7 +7188,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sift_down(__pyx_t_7sklearn_4tree_5_
  */
     }
 
-    /* "_splitter.pyx":540
+    /* "stpredictions/models/OK3/_splitter.pyx":540
  *             break
  *         else:
  *             swap(Xf, samples, root, maxind)             # <<<<<<<<<<<<<<
@@ -7382,9 +7196,9 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sift_down(__pyx_t_7sklearn_4tree_5_
  * 
  */
     /*else*/ {
-      __pyx_f_9_splitter_swap(__pyx_v_Xf, __pyx_v_samples, __pyx_v_root, __pyx_v_maxind);
+      __pyx_f_13stpredictions_6models_3OK3_9_splitter_swap(__pyx_v_Xf, __pyx_v_samples, __pyx_v_root, __pyx_v_maxind);
 
-      /* "_splitter.pyx":541
+      /* "stpredictions/models/OK3/_splitter.pyx":541
  *         else:
  *             swap(Xf, samples, root, maxind)
  *             root = maxind             # <<<<<<<<<<<<<<
@@ -7396,7 +7210,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sift_down(__pyx_t_7sklearn_4tree_5_
   }
   __pyx_L4_break:;
 
-  /* "_splitter.pyx":521
+  /* "stpredictions/models/OK3/_splitter.pyx":521
  * 
  * 
  * cdef inline void sift_down(DTYPE_t* Xf, SIZE_t* samples,             # <<<<<<<<<<<<<<
@@ -7407,7 +7221,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sift_down(__pyx_t_7sklearn_4tree_5_
   /* function exit code */
 }
 
-/* "_splitter.pyx":544
+/* "stpredictions/models/OK3/_splitter.pyx":544
  * 
  * 
  * cdef void heapsort(DTYPE_t* Xf, SIZE_t* samples, SIZE_t n) nogil:             # <<<<<<<<<<<<<<
@@ -7415,12 +7229,12 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sift_down(__pyx_t_7sklearn_4tree_5_
  * 
  */
 
-static void __pyx_f_9_splitter_heapsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_v_Xf, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n) {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end;
+static void __pyx_f_13stpredictions_6models_3OK3_9_splitter_heapsort(__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_v_Xf, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n) {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end;
   int __pyx_t_1;
 
-  /* "_splitter.pyx":548
+  /* "stpredictions/models/OK3/_splitter.pyx":548
  * 
  *     # heapify
  *     start = (n - 2) / 2             # <<<<<<<<<<<<<<
@@ -7429,7 +7243,7 @@ static void __pyx_f_9_splitter_heapsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *_
  */
   __pyx_v_start = ((__pyx_v_n - 2) / 2);
 
-  /* "_splitter.pyx":549
+  /* "stpredictions/models/OK3/_splitter.pyx":549
  *     # heapify
  *     start = (n - 2) / 2
  *     end = n             # <<<<<<<<<<<<<<
@@ -7438,7 +7252,7 @@ static void __pyx_f_9_splitter_heapsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *_
  */
   __pyx_v_end = __pyx_v_n;
 
-  /* "_splitter.pyx":550
+  /* "stpredictions/models/OK3/_splitter.pyx":550
  *     start = (n - 2) / 2
  *     end = n
  *     while True:             # <<<<<<<<<<<<<<
@@ -7447,16 +7261,16 @@ static void __pyx_f_9_splitter_heapsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *_
  */
   while (1) {
 
-    /* "_splitter.pyx":551
+    /* "stpredictions/models/OK3/_splitter.pyx":551
  *     end = n
  *     while True:
  *         sift_down(Xf, samples, start, end)             # <<<<<<<<<<<<<<
  *         if start == 0:
  *             break
  */
-    __pyx_f_9_splitter_sift_down(__pyx_v_Xf, __pyx_v_samples, __pyx_v_start, __pyx_v_end);
+    __pyx_f_13stpredictions_6models_3OK3_9_splitter_sift_down(__pyx_v_Xf, __pyx_v_samples, __pyx_v_start, __pyx_v_end);
 
-    /* "_splitter.pyx":552
+    /* "stpredictions/models/OK3/_splitter.pyx":552
  *     while True:
  *         sift_down(Xf, samples, start, end)
  *         if start == 0:             # <<<<<<<<<<<<<<
@@ -7466,7 +7280,7 @@ static void __pyx_f_9_splitter_heapsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *_
     __pyx_t_1 = ((__pyx_v_start == 0) != 0);
     if (__pyx_t_1) {
 
-      /* "_splitter.pyx":553
+      /* "stpredictions/models/OK3/_splitter.pyx":553
  *         sift_down(Xf, samples, start, end)
  *         if start == 0:
  *             break             # <<<<<<<<<<<<<<
@@ -7475,7 +7289,7 @@ static void __pyx_f_9_splitter_heapsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *_
  */
       goto __pyx_L4_break;
 
-      /* "_splitter.pyx":552
+      /* "stpredictions/models/OK3/_splitter.pyx":552
  *     while True:
  *         sift_down(Xf, samples, start, end)
  *         if start == 0:             # <<<<<<<<<<<<<<
@@ -7484,7 +7298,7 @@ static void __pyx_f_9_splitter_heapsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *_
  */
     }
 
-    /* "_splitter.pyx":554
+    /* "stpredictions/models/OK3/_splitter.pyx":554
  *         if start == 0:
  *             break
  *         start -= 1             # <<<<<<<<<<<<<<
@@ -7495,7 +7309,7 @@ static void __pyx_f_9_splitter_heapsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *_
   }
   __pyx_L4_break:;
 
-  /* "_splitter.pyx":557
+  /* "stpredictions/models/OK3/_splitter.pyx":557
  * 
  *     # sort by shrinking the heap, putting the max element immediately after it
  *     end = n - 1             # <<<<<<<<<<<<<<
@@ -7504,7 +7318,7 @@ static void __pyx_f_9_splitter_heapsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *_
  */
   __pyx_v_end = (__pyx_v_n - 1);
 
-  /* "_splitter.pyx":558
+  /* "stpredictions/models/OK3/_splitter.pyx":558
  *     # sort by shrinking the heap, putting the max element immediately after it
  *     end = n - 1
  *     while end > 0:             # <<<<<<<<<<<<<<
@@ -7515,25 +7329,25 @@ static void __pyx_f_9_splitter_heapsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *_
     __pyx_t_1 = ((__pyx_v_end > 0) != 0);
     if (!__pyx_t_1) break;
 
-    /* "_splitter.pyx":559
+    /* "stpredictions/models/OK3/_splitter.pyx":559
  *     end = n - 1
  *     while end > 0:
  *         swap(Xf, samples, 0, end)             # <<<<<<<<<<<<<<
  *         sift_down(Xf, samples, 0, end)
  *         end = end - 1
  */
-    __pyx_f_9_splitter_swap(__pyx_v_Xf, __pyx_v_samples, 0, __pyx_v_end);
+    __pyx_f_13stpredictions_6models_3OK3_9_splitter_swap(__pyx_v_Xf, __pyx_v_samples, 0, __pyx_v_end);
 
-    /* "_splitter.pyx":560
+    /* "stpredictions/models/OK3/_splitter.pyx":560
  *     while end > 0:
  *         swap(Xf, samples, 0, end)
  *         sift_down(Xf, samples, 0, end)             # <<<<<<<<<<<<<<
  *         end = end - 1
  * 
  */
-    __pyx_f_9_splitter_sift_down(__pyx_v_Xf, __pyx_v_samples, 0, __pyx_v_end);
+    __pyx_f_13stpredictions_6models_3OK3_9_splitter_sift_down(__pyx_v_Xf, __pyx_v_samples, 0, __pyx_v_end);
 
-    /* "_splitter.pyx":561
+    /* "stpredictions/models/OK3/_splitter.pyx":561
  *         swap(Xf, samples, 0, end)
  *         sift_down(Xf, samples, 0, end)
  *         end = end - 1             # <<<<<<<<<<<<<<
@@ -7543,7 +7357,7 @@ static void __pyx_f_9_splitter_heapsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *_
     __pyx_v_end = (__pyx_v_end - 1);
   }
 
-  /* "_splitter.pyx":544
+  /* "stpredictions/models/OK3/_splitter.pyx":544
  * 
  * 
  * cdef void heapsort(DTYPE_t* Xf, SIZE_t* samples, SIZE_t n) nogil:             # <<<<<<<<<<<<<<
@@ -7554,7 +7368,7 @@ static void __pyx_f_9_splitter_heapsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *_
   /* function exit code */
 }
 
-/* "_splitter.pyx":566
+/* "stpredictions/models/OK3/_splitter.pyx":566
  * cdef class RandomSplitter(BaseDenseSplitter):
  *     """Splitter for finding the best random split."""
  *     def __reduce__(self):             # <<<<<<<<<<<<<<
@@ -7563,19 +7377,19 @@ static void __pyx_f_9_splitter_heapsort(__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9_splitter_14RandomSplitter_1__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_9_splitter_14RandomSplitter_1__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_14RandomSplitter_1__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_14RandomSplitter_1__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_14RandomSplitter___reduce__(((struct __pyx_obj_9_splitter_RandomSplitter *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_14RandomSplitter___reduce__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSplitter *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9_splitter_14RandomSplitter___reduce__(struct __pyx_obj_9_splitter_RandomSplitter *__pyx_v_self) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_14RandomSplitter___reduce__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSplitter *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -7587,7 +7401,7 @@ static PyObject *__pyx_pf_9_splitter_14RandomSplitter___reduce__(struct __pyx_ob
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__reduce__", 0);
 
-  /* "_splitter.pyx":567
+  /* "stpredictions/models/OK3/_splitter.pyx":567
  *     """Splitter for finding the best random split."""
  *     def __reduce__(self):
  *         return (RandomSplitter, (self.criterion,             # <<<<<<<<<<<<<<
@@ -7596,7 +7410,7 @@ static PyObject *__pyx_pf_9_splitter_14RandomSplitter___reduce__(struct __pyx_ob
  */
   __Pyx_XDECREF(__pyx_r);
 
-  /* "_splitter.pyx":568
+  /* "stpredictions/models/OK3/_splitter.pyx":568
  *     def __reduce__(self):
  *         return (RandomSplitter, (self.criterion,
  *                                  self.max_features,             # <<<<<<<<<<<<<<
@@ -7606,7 +7420,7 @@ static PyObject *__pyx_pf_9_splitter_14RandomSplitter___reduce__(struct __pyx_ob
   __pyx_t_1 = __Pyx_PyInt_From_Py_intptr_t(__pyx_v_self->__pyx_base.__pyx_base.max_features); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 568, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
 
-  /* "_splitter.pyx":569
+  /* "stpredictions/models/OK3/_splitter.pyx":569
  *         return (RandomSplitter, (self.criterion,
  *                                  self.max_features,
  *                                  self.min_samples_leaf,             # <<<<<<<<<<<<<<
@@ -7616,7 +7430,7 @@ static PyObject *__pyx_pf_9_splitter_14RandomSplitter___reduce__(struct __pyx_ob
   __pyx_t_2 = __Pyx_PyInt_From_Py_intptr_t(__pyx_v_self->__pyx_base.__pyx_base.min_samples_leaf); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 569, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "_splitter.pyx":570
+  /* "stpredictions/models/OK3/_splitter.pyx":570
  *                                  self.max_features,
  *                                  self.min_samples_leaf,
  *                                  self.min_weight_leaf,             # <<<<<<<<<<<<<<
@@ -7626,7 +7440,7 @@ static PyObject *__pyx_pf_9_splitter_14RandomSplitter___reduce__(struct __pyx_ob
   __pyx_t_3 = PyFloat_FromDouble(__pyx_v_self->__pyx_base.__pyx_base.min_weight_leaf); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 570, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
 
-  /* "_splitter.pyx":567
+  /* "stpredictions/models/OK3/_splitter.pyx":567
  *     """Splitter for finding the best random split."""
  *     def __reduce__(self):
  *         return (RandomSplitter, (self.criterion,             # <<<<<<<<<<<<<<
@@ -7651,7 +7465,7 @@ static PyObject *__pyx_pf_9_splitter_14RandomSplitter___reduce__(struct __pyx_ob
   __pyx_t_2 = 0;
   __pyx_t_3 = 0;
 
-  /* "_splitter.pyx":571
+  /* "stpredictions/models/OK3/_splitter.pyx":571
  *                                  self.min_samples_leaf,
  *                                  self.min_weight_leaf,
  *                                  self.random_state), self.__getstate__())             # <<<<<<<<<<<<<<
@@ -7676,7 +7490,7 @@ static PyObject *__pyx_pf_9_splitter_14RandomSplitter___reduce__(struct __pyx_ob
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "_splitter.pyx":567
+  /* "stpredictions/models/OK3/_splitter.pyx":567
  *     """Splitter for finding the best random split."""
  *     def __reduce__(self):
  *         return (RandomSplitter, (self.criterion,             # <<<<<<<<<<<<<<
@@ -7685,9 +7499,9 @@ static PyObject *__pyx_pf_9_splitter_14RandomSplitter___reduce__(struct __pyx_ob
  */
   __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 567, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_INCREF(((PyObject *)__pyx_ptype_9_splitter_RandomSplitter));
-  __Pyx_GIVEREF(((PyObject *)__pyx_ptype_9_splitter_RandomSplitter));
-  PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)__pyx_ptype_9_splitter_RandomSplitter));
+  __Pyx_INCREF(((PyObject *)__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_RandomSplitter));
+  __Pyx_GIVEREF(((PyObject *)__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_RandomSplitter));
+  PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_RandomSplitter));
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_3);
@@ -7698,7 +7512,7 @@ static PyObject *__pyx_pf_9_splitter_14RandomSplitter___reduce__(struct __pyx_ob
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "_splitter.pyx":566
+  /* "stpredictions/models/OK3/_splitter.pyx":566
  * cdef class RandomSplitter(BaseDenseSplitter):
  *     """Splitter for finding the best random split."""
  *     def __reduce__(self):             # <<<<<<<<<<<<<<
@@ -7712,7 +7526,7 @@ static PyObject *__pyx_pf_9_splitter_14RandomSplitter___reduce__(struct __pyx_ob
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("_splitter.RandomSplitter.__reduce__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.RandomSplitter.__reduce__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -7720,7 +7534,7 @@ static PyObject *__pyx_pf_9_splitter_14RandomSplitter___reduce__(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "_splitter.pyx":573
+/* "stpredictions/models/OK3/_splitter.pyx":573
  *                                  self.random_state), self.__getstate__())
  * 
  *     cdef int node_split(self, double impurity, SplitRecord* split,             # <<<<<<<<<<<<<<
@@ -7728,53 +7542,53 @@ static PyObject *__pyx_pf_9_splitter_14RandomSplitter___reduce__(struct __pyx_ob
  *         """Find the best random split on node samples[start:end]
  */
 
-static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_splitter_RandomSplitter *__pyx_v_self, double __pyx_v_impurity, struct __pyx_t_9_splitter_SplitRecord *__pyx_v_split, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_n_constant_features) {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_constant_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_features;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_v_Xf;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_max_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_min_samples_leaf;
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSplitter *__pyx_v_self, double __pyx_v_impurity, struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord *__pyx_v_split, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_n_constant_features) {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_constant_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_v_Xf;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_max_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_min_samples_leaf;
   double __pyx_v_min_weight_leaf;
-  __pyx_t_7sklearn_4tree_5_tree_UINT32_t *__pyx_v_random_state;
-  struct __pyx_t_9_splitter_SplitRecord __pyx_v_best;
-  struct __pyx_t_9_splitter_SplitRecord __pyx_v_current;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_UINT32_t *__pyx_v_random_state;
+  struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord __pyx_v_best;
+  struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord __pyx_v_current;
   double __pyx_v_current_proxy_improvement;
   double __pyx_v_best_proxy_improvement;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_f_i;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_f_j;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_p;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_partition_end;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_found_constants;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_drawn_constants;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_known_constants;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_total_constants;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_visited_features;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_v_min_feature_value;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_v_max_feature_value;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_v_current_feature_value;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_f_i;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_f_j;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_p;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_partition_end;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_found_constants;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_drawn_constants;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_known_constants;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_total_constants;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_visited_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_v_min_feature_value;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_v_max_feature_value;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_v_current_feature_value;
   int __pyx_r;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_t_1;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_2;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_t_3;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_t_1;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_2;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_t_3;
   double __pyx_t_4;
   int __pyx_t_5;
   int __pyx_t_6;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_7;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_7;
   Py_ssize_t __pyx_t_8;
   Py_ssize_t __pyx_t_9;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_10;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_t_11;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_t_12;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_10;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_t_11;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_t_12;
   int __pyx_t_13;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
 
-  /* "_splitter.pyx":581
+  /* "stpredictions/models/OK3/_splitter.pyx":581
  *         """
  *         # Draw random splits and pick the best
  *         cdef SIZE_t* samples = self.samples             # <<<<<<<<<<<<<<
@@ -7784,7 +7598,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
   __pyx_t_1 = __pyx_v_self->__pyx_base.__pyx_base.samples;
   __pyx_v_samples = __pyx_t_1;
 
-  /* "_splitter.pyx":582
+  /* "stpredictions/models/OK3/_splitter.pyx":582
  *         # Draw random splits and pick the best
  *         cdef SIZE_t* samples = self.samples
  *         cdef SIZE_t start = self.start             # <<<<<<<<<<<<<<
@@ -7794,7 +7608,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.start;
   __pyx_v_start = __pyx_t_2;
 
-  /* "_splitter.pyx":583
+  /* "stpredictions/models/OK3/_splitter.pyx":583
  *         cdef SIZE_t* samples = self.samples
  *         cdef SIZE_t start = self.start
  *         cdef SIZE_t end = self.end             # <<<<<<<<<<<<<<
@@ -7804,7 +7618,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.end;
   __pyx_v_end = __pyx_t_2;
 
-  /* "_splitter.pyx":585
+  /* "stpredictions/models/OK3/_splitter.pyx":585
  *         cdef SIZE_t end = self.end
  * 
  *         cdef SIZE_t* features = self.features             # <<<<<<<<<<<<<<
@@ -7814,7 +7628,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
   __pyx_t_1 = __pyx_v_self->__pyx_base.__pyx_base.features;
   __pyx_v_features = __pyx_t_1;
 
-  /* "_splitter.pyx":586
+  /* "stpredictions/models/OK3/_splitter.pyx":586
  * 
  *         cdef SIZE_t* features = self.features
  *         cdef SIZE_t* constant_features = self.constant_features             # <<<<<<<<<<<<<<
@@ -7824,7 +7638,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
   __pyx_t_1 = __pyx_v_self->__pyx_base.__pyx_base.constant_features;
   __pyx_v_constant_features = __pyx_t_1;
 
-  /* "_splitter.pyx":587
+  /* "stpredictions/models/OK3/_splitter.pyx":587
  *         cdef SIZE_t* features = self.features
  *         cdef SIZE_t* constant_features = self.constant_features
  *         cdef SIZE_t n_features = self.n_features             # <<<<<<<<<<<<<<
@@ -7834,7 +7648,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.n_features;
   __pyx_v_n_features = __pyx_t_2;
 
-  /* "_splitter.pyx":589
+  /* "stpredictions/models/OK3/_splitter.pyx":589
  *         cdef SIZE_t n_features = self.n_features
  * 
  *         cdef DTYPE_t* Xf = self.feature_values             # <<<<<<<<<<<<<<
@@ -7844,7 +7658,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
   __pyx_t_3 = __pyx_v_self->__pyx_base.__pyx_base.feature_values;
   __pyx_v_Xf = __pyx_t_3;
 
-  /* "_splitter.pyx":590
+  /* "stpredictions/models/OK3/_splitter.pyx":590
  * 
  *         cdef DTYPE_t* Xf = self.feature_values
  *         cdef SIZE_t max_features = self.max_features             # <<<<<<<<<<<<<<
@@ -7854,7 +7668,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.max_features;
   __pyx_v_max_features = __pyx_t_2;
 
-  /* "_splitter.pyx":591
+  /* "stpredictions/models/OK3/_splitter.pyx":591
  *         cdef DTYPE_t* Xf = self.feature_values
  *         cdef SIZE_t max_features = self.max_features
  *         cdef SIZE_t min_samples_leaf = self.min_samples_leaf             # <<<<<<<<<<<<<<
@@ -7864,7 +7678,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.min_samples_leaf;
   __pyx_v_min_samples_leaf = __pyx_t_2;
 
-  /* "_splitter.pyx":592
+  /* "stpredictions/models/OK3/_splitter.pyx":592
  *         cdef SIZE_t max_features = self.max_features
  *         cdef SIZE_t min_samples_leaf = self.min_samples_leaf
  *         cdef double min_weight_leaf = self.min_weight_leaf             # <<<<<<<<<<<<<<
@@ -7874,7 +7688,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
   __pyx_t_4 = __pyx_v_self->__pyx_base.__pyx_base.min_weight_leaf;
   __pyx_v_min_weight_leaf = __pyx_t_4;
 
-  /* "_splitter.pyx":593
+  /* "stpredictions/models/OK3/_splitter.pyx":593
  *         cdef SIZE_t min_samples_leaf = self.min_samples_leaf
  *         cdef double min_weight_leaf = self.min_weight_leaf
  *         cdef UINT32_t* random_state = &self.rand_r_state             # <<<<<<<<<<<<<<
@@ -7883,25 +7697,25 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
   __pyx_v_random_state = (&__pyx_v_self->__pyx_base.__pyx_base.rand_r_state);
 
-  /* "_splitter.pyx":596
+  /* "stpredictions/models/OK3/_splitter.pyx":596
  * 
  *         cdef SplitRecord best, current
  *         cdef double current_proxy_improvement = - INFINITY             # <<<<<<<<<<<<<<
  *         cdef double best_proxy_improvement = - INFINITY
  * 
  */
-  __pyx_v_current_proxy_improvement = (-__pyx_v_9_splitter_INFINITY);
+  __pyx_v_current_proxy_improvement = (-__pyx_v_13stpredictions_6models_3OK3_9_splitter_INFINITY);
 
-  /* "_splitter.pyx":597
+  /* "stpredictions/models/OK3/_splitter.pyx":597
  *         cdef SplitRecord best, current
  *         cdef double current_proxy_improvement = - INFINITY
  *         cdef double best_proxy_improvement = - INFINITY             # <<<<<<<<<<<<<<
  * 
  *         cdef SIZE_t f_i = n_features
  */
-  __pyx_v_best_proxy_improvement = (-__pyx_v_9_splitter_INFINITY);
+  __pyx_v_best_proxy_improvement = (-__pyx_v_13stpredictions_6models_3OK3_9_splitter_INFINITY);
 
-  /* "_splitter.pyx":599
+  /* "stpredictions/models/OK3/_splitter.pyx":599
  *         cdef double best_proxy_improvement = - INFINITY
  * 
  *         cdef SIZE_t f_i = n_features             # <<<<<<<<<<<<<<
@@ -7910,7 +7724,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
   __pyx_v_f_i = __pyx_v_n_features;
 
-  /* "_splitter.pyx":605
+  /* "stpredictions/models/OK3/_splitter.pyx":605
  *         cdef SIZE_t feature_stride
  *         # Number of features discovered to be constant during the split search
  *         cdef SIZE_t n_found_constants = 0             # <<<<<<<<<<<<<<
@@ -7919,7 +7733,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
   __pyx_v_n_found_constants = 0;
 
-  /* "_splitter.pyx":607
+  /* "stpredictions/models/OK3/_splitter.pyx":607
  *         cdef SIZE_t n_found_constants = 0
  *         # Number of features known to be constant and drawn without replacement
  *         cdef SIZE_t n_drawn_constants = 0             # <<<<<<<<<<<<<<
@@ -7928,7 +7742,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
   __pyx_v_n_drawn_constants = 0;
 
-  /* "_splitter.pyx":608
+  /* "stpredictions/models/OK3/_splitter.pyx":608
  *         # Number of features known to be constant and drawn without replacement
  *         cdef SIZE_t n_drawn_constants = 0
  *         cdef SIZE_t n_known_constants = n_constant_features[0]             # <<<<<<<<<<<<<<
@@ -7937,7 +7751,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
   __pyx_v_n_known_constants = (__pyx_v_n_constant_features[0]);
 
-  /* "_splitter.pyx":610
+  /* "stpredictions/models/OK3/_splitter.pyx":610
  *         cdef SIZE_t n_known_constants = n_constant_features[0]
  *         # n_total_constants = n_known_constants + n_found_constants
  *         cdef SIZE_t n_total_constants = n_known_constants             # <<<<<<<<<<<<<<
@@ -7946,7 +7760,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
   __pyx_v_n_total_constants = __pyx_v_n_known_constants;
 
-  /* "_splitter.pyx":611
+  /* "stpredictions/models/OK3/_splitter.pyx":611
  *         # n_total_constants = n_known_constants + n_found_constants
  *         cdef SIZE_t n_total_constants = n_known_constants
  *         cdef SIZE_t n_visited_features = 0             # <<<<<<<<<<<<<<
@@ -7955,16 +7769,16 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
   __pyx_v_n_visited_features = 0;
 
-  /* "_splitter.pyx":616
+  /* "stpredictions/models/OK3/_splitter.pyx":616
  *         cdef DTYPE_t current_feature_value
  * 
  *         _init_split(&best, end)             # <<<<<<<<<<<<<<
  * 
  *         # Sample up to max_features without replacement using a
  */
-  __pyx_f_9_splitter__init_split((&__pyx_v_best), __pyx_v_end);
+  __pyx_f_13stpredictions_6models_3OK3_9_splitter__init_split((&__pyx_v_best), __pyx_v_end);
 
-  /* "_splitter.pyx":627
+  /* "stpredictions/models/OK3/_splitter.pyx":627
  *         # newly discovered constant features to spare computation on descendant
  *         # nodes.
  *         while (f_i > n_total_constants and  # Stop early if remaining features             # <<<<<<<<<<<<<<
@@ -7979,7 +7793,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
       goto __pyx_L5_bool_binop_done;
     }
 
-    /* "_splitter.pyx":629
+    /* "stpredictions/models/OK3/_splitter.pyx":629
  *         while (f_i > n_total_constants and  # Stop early if remaining features
  *                                             # are constant
  *                 (n_visited_features < max_features or             # <<<<<<<<<<<<<<
@@ -7993,7 +7807,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
       goto __pyx_L5_bool_binop_done;
     }
 
-    /* "_splitter.pyx":631
+    /* "stpredictions/models/OK3/_splitter.pyx":631
  *                 (n_visited_features < max_features or
  *                  # At least one drawn features must be non constant
  *                  n_visited_features <= n_found_constants + n_drawn_constants)):             # <<<<<<<<<<<<<<
@@ -8005,7 +7819,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
     __pyx_L5_bool_binop_done:;
     if (!__pyx_t_5) break;
 
-    /* "_splitter.pyx":632
+    /* "stpredictions/models/OK3/_splitter.pyx":632
  *                  # At least one drawn features must be non constant
  *                  n_visited_features <= n_found_constants + n_drawn_constants)):
  *             n_visited_features += 1             # <<<<<<<<<<<<<<
@@ -8014,16 +7828,16 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
     __pyx_v_n_visited_features = (__pyx_v_n_visited_features + 1);
 
-    /* "_splitter.pyx":646
+    /* "stpredictions/models/OK3/_splitter.pyx":646
  * 
  *             # Draw a feature at random
  *             f_j = rand_int(n_drawn_constants, f_i - n_found_constants,             # <<<<<<<<<<<<<<
  *                            random_state)
  * 
  */
-    __pyx_v_f_j = __pyx_f_7sklearn_4tree_6_utils_rand_int(__pyx_v_n_drawn_constants, (__pyx_v_f_i - __pyx_v_n_found_constants), __pyx_v_random_state);
+    __pyx_v_f_j = __pyx_f_13stpredictions_6models_3OK3_6_utils_rand_int(__pyx_v_n_drawn_constants, (__pyx_v_f_i - __pyx_v_n_found_constants), __pyx_v_random_state);
 
-    /* "_splitter.pyx":649
+    /* "stpredictions/models/OK3/_splitter.pyx":649
  *                            random_state)
  * 
  *             if f_j < n_known_constants:             # <<<<<<<<<<<<<<
@@ -8033,7 +7847,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
     __pyx_t_5 = ((__pyx_v_f_j < __pyx_v_n_known_constants) != 0);
     if (__pyx_t_5) {
 
-      /* "_splitter.pyx":651
+      /* "stpredictions/models/OK3/_splitter.pyx":651
  *             if f_j < n_known_constants:
  *                 # f_j in the interval [n_drawn_constants, n_known_constants[
  *                 features[n_drawn_constants], features[f_j] = features[f_j], features[n_drawn_constants]             # <<<<<<<<<<<<<<
@@ -8045,7 +7859,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
       (__pyx_v_features[__pyx_v_n_drawn_constants]) = __pyx_t_2;
       (__pyx_v_features[__pyx_v_f_j]) = __pyx_t_7;
 
-      /* "_splitter.pyx":652
+      /* "stpredictions/models/OK3/_splitter.pyx":652
  *                 # f_j in the interval [n_drawn_constants, n_known_constants[
  *                 features[n_drawn_constants], features[f_j] = features[f_j], features[n_drawn_constants]
  *                 n_drawn_constants += 1             # <<<<<<<<<<<<<<
@@ -8054,7 +7868,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
       __pyx_v_n_drawn_constants = (__pyx_v_n_drawn_constants + 1);
 
-      /* "_splitter.pyx":649
+      /* "stpredictions/models/OK3/_splitter.pyx":649
  *                            random_state)
  * 
  *             if f_j < n_known_constants:             # <<<<<<<<<<<<<<
@@ -8064,7 +7878,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
       goto __pyx_L8;
     }
 
-    /* "_splitter.pyx":656
+    /* "stpredictions/models/OK3/_splitter.pyx":656
  *             else:
  *                 # f_j in the interval [n_known_constants, f_i - n_found_constants[
  *                 f_j += n_found_constants             # <<<<<<<<<<<<<<
@@ -8074,7 +7888,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
     /*else*/ {
       __pyx_v_f_j = (__pyx_v_f_j + __pyx_v_n_found_constants);
 
-      /* "_splitter.pyx":659
+      /* "stpredictions/models/OK3/_splitter.pyx":659
  *                 # f_j in the interval [n_total_constants, f_i[
  * 
  *                 current.feature = features[f_j]             # <<<<<<<<<<<<<<
@@ -8083,7 +7897,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
       __pyx_v_current.feature = (__pyx_v_features[__pyx_v_f_j]);
 
-      /* "_splitter.pyx":662
+      /* "stpredictions/models/OK3/_splitter.pyx":662
  * 
  *                 # Find min, max
  *                 min_feature_value = self.X[samples[start], current.feature]             # <<<<<<<<<<<<<<
@@ -8093,9 +7907,9 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
       if (unlikely(!__pyx_v_self->__pyx_base.X.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(0, 662, __pyx_L1_error)}
       __pyx_t_8 = (__pyx_v_samples[__pyx_v_start]);
       __pyx_t_9 = __pyx_v_current.feature;
-      __pyx_v_min_feature_value = (*((__pyx_t_7sklearn_4tree_5_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_self->__pyx_base.X.data + __pyx_t_8 * __pyx_v_self->__pyx_base.X.strides[0]) ) + __pyx_t_9 * __pyx_v_self->__pyx_base.X.strides[1]) )));
+      __pyx_v_min_feature_value = (*((__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_self->__pyx_base.X.data + __pyx_t_8 * __pyx_v_self->__pyx_base.X.strides[0]) ) + __pyx_t_9 * __pyx_v_self->__pyx_base.X.strides[1]) )));
 
-      /* "_splitter.pyx":663
+      /* "stpredictions/models/OK3/_splitter.pyx":663
  *                 # Find min, max
  *                 min_feature_value = self.X[samples[start], current.feature]
  *                 max_feature_value = min_feature_value             # <<<<<<<<<<<<<<
@@ -8104,7 +7918,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
       __pyx_v_max_feature_value = __pyx_v_min_feature_value;
 
-      /* "_splitter.pyx":664
+      /* "stpredictions/models/OK3/_splitter.pyx":664
  *                 min_feature_value = self.X[samples[start], current.feature]
  *                 max_feature_value = min_feature_value
  *                 Xf[start] = min_feature_value             # <<<<<<<<<<<<<<
@@ -8113,7 +7927,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
       (__pyx_v_Xf[__pyx_v_start]) = __pyx_v_min_feature_value;
 
-      /* "_splitter.pyx":666
+      /* "stpredictions/models/OK3/_splitter.pyx":666
  *                 Xf[start] = min_feature_value
  * 
  *                 for p in range(start + 1, end):             # <<<<<<<<<<<<<<
@@ -8125,7 +7939,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
       for (__pyx_t_10 = (__pyx_v_start + 1); __pyx_t_10 < __pyx_t_2; __pyx_t_10+=1) {
         __pyx_v_p = __pyx_t_10;
 
-        /* "_splitter.pyx":667
+        /* "stpredictions/models/OK3/_splitter.pyx":667
  * 
  *                 for p in range(start + 1, end):
  *                     current_feature_value = self.X[samples[p], current.feature]             # <<<<<<<<<<<<<<
@@ -8135,9 +7949,9 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
         if (unlikely(!__pyx_v_self->__pyx_base.X.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(0, 667, __pyx_L1_error)}
         __pyx_t_9 = (__pyx_v_samples[__pyx_v_p]);
         __pyx_t_8 = __pyx_v_current.feature;
-        __pyx_v_current_feature_value = (*((__pyx_t_7sklearn_4tree_5_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_self->__pyx_base.X.data + __pyx_t_9 * __pyx_v_self->__pyx_base.X.strides[0]) ) + __pyx_t_8 * __pyx_v_self->__pyx_base.X.strides[1]) )));
+        __pyx_v_current_feature_value = (*((__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_self->__pyx_base.X.data + __pyx_t_9 * __pyx_v_self->__pyx_base.X.strides[0]) ) + __pyx_t_8 * __pyx_v_self->__pyx_base.X.strides[1]) )));
 
-        /* "_splitter.pyx":668
+        /* "stpredictions/models/OK3/_splitter.pyx":668
  *                 for p in range(start + 1, end):
  *                     current_feature_value = self.X[samples[p], current.feature]
  *                     Xf[p] = current_feature_value             # <<<<<<<<<<<<<<
@@ -8146,7 +7960,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
         (__pyx_v_Xf[__pyx_v_p]) = __pyx_v_current_feature_value;
 
-        /* "_splitter.pyx":670
+        /* "stpredictions/models/OK3/_splitter.pyx":670
  *                     Xf[p] = current_feature_value
  * 
  *                     if current_feature_value < min_feature_value:             # <<<<<<<<<<<<<<
@@ -8156,7 +7970,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
         __pyx_t_5 = ((__pyx_v_current_feature_value < __pyx_v_min_feature_value) != 0);
         if (__pyx_t_5) {
 
-          /* "_splitter.pyx":671
+          /* "stpredictions/models/OK3/_splitter.pyx":671
  * 
  *                     if current_feature_value < min_feature_value:
  *                         min_feature_value = current_feature_value             # <<<<<<<<<<<<<<
@@ -8165,7 +7979,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
           __pyx_v_min_feature_value = __pyx_v_current_feature_value;
 
-          /* "_splitter.pyx":670
+          /* "stpredictions/models/OK3/_splitter.pyx":670
  *                     Xf[p] = current_feature_value
  * 
  *                     if current_feature_value < min_feature_value:             # <<<<<<<<<<<<<<
@@ -8175,7 +7989,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
           goto __pyx_L11;
         }
 
-        /* "_splitter.pyx":672
+        /* "stpredictions/models/OK3/_splitter.pyx":672
  *                     if current_feature_value < min_feature_value:
  *                         min_feature_value = current_feature_value
  *                     elif current_feature_value > max_feature_value:             # <<<<<<<<<<<<<<
@@ -8185,7 +7999,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
         __pyx_t_5 = ((__pyx_v_current_feature_value > __pyx_v_max_feature_value) != 0);
         if (__pyx_t_5) {
 
-          /* "_splitter.pyx":673
+          /* "stpredictions/models/OK3/_splitter.pyx":673
  *                         min_feature_value = current_feature_value
  *                     elif current_feature_value > max_feature_value:
  *                         max_feature_value = current_feature_value             # <<<<<<<<<<<<<<
@@ -8194,7 +8008,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
           __pyx_v_max_feature_value = __pyx_v_current_feature_value;
 
-          /* "_splitter.pyx":672
+          /* "stpredictions/models/OK3/_splitter.pyx":672
  *                     if current_feature_value < min_feature_value:
  *                         min_feature_value = current_feature_value
  *                     elif current_feature_value > max_feature_value:             # <<<<<<<<<<<<<<
@@ -8205,17 +8019,17 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
         __pyx_L11:;
       }
 
-      /* "_splitter.pyx":675
+      /* "stpredictions/models/OK3/_splitter.pyx":675
  *                         max_feature_value = current_feature_value
  * 
  *                 if max_feature_value <= min_feature_value + FEATURE_THRESHOLD:             # <<<<<<<<<<<<<<
  *                     features[f_j], features[n_total_constants] = features[n_total_constants], current.feature
  * 
  */
-      __pyx_t_5 = ((__pyx_v_max_feature_value <= (__pyx_v_min_feature_value + __pyx_v_9_splitter_FEATURE_THRESHOLD)) != 0);
+      __pyx_t_5 = ((__pyx_v_max_feature_value <= (__pyx_v_min_feature_value + __pyx_v_13stpredictions_6models_3OK3_9_splitter_FEATURE_THRESHOLD)) != 0);
       if (__pyx_t_5) {
 
-        /* "_splitter.pyx":676
+        /* "stpredictions/models/OK3/_splitter.pyx":676
  * 
  *                 if max_feature_value <= min_feature_value + FEATURE_THRESHOLD:
  *                     features[f_j], features[n_total_constants] = features[n_total_constants], current.feature             # <<<<<<<<<<<<<<
@@ -8227,7 +8041,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
         (__pyx_v_features[__pyx_v_f_j]) = __pyx_t_7;
         (__pyx_v_features[__pyx_v_n_total_constants]) = __pyx_t_2;
 
-        /* "_splitter.pyx":678
+        /* "stpredictions/models/OK3/_splitter.pyx":678
  *                     features[f_j], features[n_total_constants] = features[n_total_constants], current.feature
  * 
  *                     n_found_constants += 1             # <<<<<<<<<<<<<<
@@ -8236,7 +8050,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
         __pyx_v_n_found_constants = (__pyx_v_n_found_constants + 1);
 
-        /* "_splitter.pyx":679
+        /* "stpredictions/models/OK3/_splitter.pyx":679
  * 
  *                     n_found_constants += 1
  *                     n_total_constants += 1             # <<<<<<<<<<<<<<
@@ -8245,7 +8059,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
         __pyx_v_n_total_constants = (__pyx_v_n_total_constants + 1);
 
-        /* "_splitter.pyx":675
+        /* "stpredictions/models/OK3/_splitter.pyx":675
  *                         max_feature_value = current_feature_value
  * 
  *                 if max_feature_value <= min_feature_value + FEATURE_THRESHOLD:             # <<<<<<<<<<<<<<
@@ -8255,7 +8069,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
         goto __pyx_L12;
       }
 
-      /* "_splitter.pyx":682
+      /* "stpredictions/models/OK3/_splitter.pyx":682
  * 
  *                 else:
  *                     f_i -= 1             # <<<<<<<<<<<<<<
@@ -8265,7 +8079,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
       /*else*/ {
         __pyx_v_f_i = (__pyx_v_f_i - 1);
 
-        /* "_splitter.pyx":683
+        /* "stpredictions/models/OK3/_splitter.pyx":683
  *                 else:
  *                     f_i -= 1
  *                     features[f_i], features[f_j] = features[f_j], features[f_i]             # <<<<<<<<<<<<<<
@@ -8277,16 +8091,16 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
         (__pyx_v_features[__pyx_v_f_i]) = __pyx_t_2;
         (__pyx_v_features[__pyx_v_f_j]) = __pyx_t_7;
 
-        /* "_splitter.pyx":686
+        /* "stpredictions/models/OK3/_splitter.pyx":686
  * 
  *                     # Draw a random threshold
  *                     current.threshold = rand_uniform(min_feature_value,             # <<<<<<<<<<<<<<
  *                                                      max_feature_value,
  *                                                      random_state)
  */
-        __pyx_v_current.threshold = __pyx_f_7sklearn_4tree_6_utils_rand_uniform(__pyx_v_min_feature_value, __pyx_v_max_feature_value, __pyx_v_random_state);
+        __pyx_v_current.threshold = __pyx_f_13stpredictions_6models_3OK3_6_utils_rand_uniform(__pyx_v_min_feature_value, __pyx_v_max_feature_value, __pyx_v_random_state);
 
-        /* "_splitter.pyx":690
+        /* "stpredictions/models/OK3/_splitter.pyx":690
  *                                                      random_state)
  * 
  *                     if current.threshold == max_feature_value:             # <<<<<<<<<<<<<<
@@ -8296,7 +8110,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
         __pyx_t_5 = ((__pyx_v_current.threshold == __pyx_v_max_feature_value) != 0);
         if (__pyx_t_5) {
 
-          /* "_splitter.pyx":691
+          /* "stpredictions/models/OK3/_splitter.pyx":691
  * 
  *                     if current.threshold == max_feature_value:
  *                         current.threshold = min_feature_value             # <<<<<<<<<<<<<<
@@ -8305,7 +8119,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
           __pyx_v_current.threshold = __pyx_v_min_feature_value;
 
-          /* "_splitter.pyx":690
+          /* "stpredictions/models/OK3/_splitter.pyx":690
  *                                                      random_state)
  * 
  *                     if current.threshold == max_feature_value:             # <<<<<<<<<<<<<<
@@ -8314,7 +8128,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
         }
 
-        /* "_splitter.pyx":694
+        /* "stpredictions/models/OK3/_splitter.pyx":694
  * 
  *                     # Partition
  *                     p, partition_end = start, end             # <<<<<<<<<<<<<<
@@ -8326,7 +8140,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
         __pyx_v_p = __pyx_t_7;
         __pyx_v_partition_end = __pyx_t_2;
 
-        /* "_splitter.pyx":695
+        /* "stpredictions/models/OK3/_splitter.pyx":695
  *                     # Partition
  *                     p, partition_end = start, end
  *                     while p < partition_end:             # <<<<<<<<<<<<<<
@@ -8337,7 +8151,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
           __pyx_t_5 = ((__pyx_v_p < __pyx_v_partition_end) != 0);
           if (!__pyx_t_5) break;
 
-          /* "_splitter.pyx":696
+          /* "stpredictions/models/OK3/_splitter.pyx":696
  *                     p, partition_end = start, end
  *                     while p < partition_end:
  *                         if Xf[p] <= current.threshold:             # <<<<<<<<<<<<<<
@@ -8347,7 +8161,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
           __pyx_t_5 = (((__pyx_v_Xf[__pyx_v_p]) <= __pyx_v_current.threshold) != 0);
           if (__pyx_t_5) {
 
-            /* "_splitter.pyx":697
+            /* "stpredictions/models/OK3/_splitter.pyx":697
  *                     while p < partition_end:
  *                         if Xf[p] <= current.threshold:
  *                             p += 1             # <<<<<<<<<<<<<<
@@ -8356,7 +8170,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
             __pyx_v_p = (__pyx_v_p + 1);
 
-            /* "_splitter.pyx":696
+            /* "stpredictions/models/OK3/_splitter.pyx":696
  *                     p, partition_end = start, end
  *                     while p < partition_end:
  *                         if Xf[p] <= current.threshold:             # <<<<<<<<<<<<<<
@@ -8366,7 +8180,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
             goto __pyx_L16;
           }
 
-          /* "_splitter.pyx":699
+          /* "stpredictions/models/OK3/_splitter.pyx":699
  *                             p += 1
  *                         else:
  *                             partition_end -= 1             # <<<<<<<<<<<<<<
@@ -8376,7 +8190,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
           /*else*/ {
             __pyx_v_partition_end = (__pyx_v_partition_end - 1);
 
-            /* "_splitter.pyx":701
+            /* "stpredictions/models/OK3/_splitter.pyx":701
  *                             partition_end -= 1
  * 
  *                             Xf[p], Xf[partition_end] = Xf[partition_end], Xf[p]             # <<<<<<<<<<<<<<
@@ -8388,7 +8202,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
             (__pyx_v_Xf[__pyx_v_p]) = __pyx_t_11;
             (__pyx_v_Xf[__pyx_v_partition_end]) = __pyx_t_12;
 
-            /* "_splitter.pyx":702
+            /* "stpredictions/models/OK3/_splitter.pyx":702
  * 
  *                             Xf[p], Xf[partition_end] = Xf[partition_end], Xf[p]
  *                             samples[p], samples[partition_end] = samples[partition_end], samples[p]             # <<<<<<<<<<<<<<
@@ -8403,7 +8217,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
           __pyx_L16:;
         }
 
-        /* "_splitter.pyx":704
+        /* "stpredictions/models/OK3/_splitter.pyx":704
  *                             samples[p], samples[partition_end] = samples[partition_end], samples[p]
  * 
  *                     current.pos = partition_end             # <<<<<<<<<<<<<<
@@ -8412,7 +8226,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
         __pyx_v_current.pos = __pyx_v_partition_end;
 
-        /* "_splitter.pyx":707
+        /* "stpredictions/models/OK3/_splitter.pyx":707
  * 
  *                     # Reject if min_samples_leaf is not guaranteed
  *                     if (((current.pos - start) < min_samples_leaf) or             # <<<<<<<<<<<<<<
@@ -8426,7 +8240,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
           goto __pyx_L18_bool_binop_done;
         }
 
-        /* "_splitter.pyx":708
+        /* "stpredictions/models/OK3/_splitter.pyx":708
  *                     # Reject if min_samples_leaf is not guaranteed
  *                     if (((current.pos - start) < min_samples_leaf) or
  *                             ((end - current.pos) < min_samples_leaf)):             # <<<<<<<<<<<<<<
@@ -8437,7 +8251,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
         __pyx_t_5 = __pyx_t_6;
         __pyx_L18_bool_binop_done:;
 
-        /* "_splitter.pyx":707
+        /* "stpredictions/models/OK3/_splitter.pyx":707
  * 
  *                     # Reject if min_samples_leaf is not guaranteed
  *                     if (((current.pos - start) < min_samples_leaf) or             # <<<<<<<<<<<<<<
@@ -8446,7 +8260,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
         if (__pyx_t_5) {
 
-          /* "_splitter.pyx":709
+          /* "stpredictions/models/OK3/_splitter.pyx":709
  *                     if (((current.pos - start) < min_samples_leaf) or
  *                             ((end - current.pos) < min_samples_leaf)):
  *                         continue             # <<<<<<<<<<<<<<
@@ -8455,7 +8269,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
           goto __pyx_L3_continue;
 
-          /* "_splitter.pyx":707
+          /* "stpredictions/models/OK3/_splitter.pyx":707
  * 
  *                     # Reject if min_samples_leaf is not guaranteed
  *                     if (((current.pos - start) < min_samples_leaf) or             # <<<<<<<<<<<<<<
@@ -8464,25 +8278,25 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
         }
 
-        /* "_splitter.pyx":712
+        /* "stpredictions/models/OK3/_splitter.pyx":712
  * 
  *                     # Evaluate split
  *                     self.criterion.reset()             # <<<<<<<<<<<<<<
  *                     self.criterion.update(current.pos)
  * 
  */
-        __pyx_t_13 = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->reset(__pyx_v_self->__pyx_base.__pyx_base.criterion); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 712, __pyx_L1_error)
+        __pyx_t_13 = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->reset(__pyx_v_self->__pyx_base.__pyx_base.criterion); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 712, __pyx_L1_error)
 
-        /* "_splitter.pyx":713
+        /* "stpredictions/models/OK3/_splitter.pyx":713
  *                     # Evaluate split
  *                     self.criterion.reset()
  *                     self.criterion.update(current.pos)             # <<<<<<<<<<<<<<
  * 
  *                     # Reject if min_weight_leaf is not satisfied
  */
-        __pyx_t_13 = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->update(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_current.pos); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 713, __pyx_L1_error)
+        __pyx_t_13 = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->update(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_current.pos); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 713, __pyx_L1_error)
 
-        /* "_splitter.pyx":716
+        /* "stpredictions/models/OK3/_splitter.pyx":716
  * 
  *                     # Reject if min_weight_leaf is not satisfied
  *                     if ((self.criterion.weighted_n_left < min_weight_leaf) or             # <<<<<<<<<<<<<<
@@ -8496,7 +8310,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
           goto __pyx_L21_bool_binop_done;
         }
 
-        /* "_splitter.pyx":717
+        /* "stpredictions/models/OK3/_splitter.pyx":717
  *                     # Reject if min_weight_leaf is not satisfied
  *                     if ((self.criterion.weighted_n_left < min_weight_leaf) or
  *                             (self.criterion.weighted_n_right < min_weight_leaf)):             # <<<<<<<<<<<<<<
@@ -8507,7 +8321,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
         __pyx_t_5 = __pyx_t_6;
         __pyx_L21_bool_binop_done:;
 
-        /* "_splitter.pyx":716
+        /* "stpredictions/models/OK3/_splitter.pyx":716
  * 
  *                     # Reject if min_weight_leaf is not satisfied
  *                     if ((self.criterion.weighted_n_left < min_weight_leaf) or             # <<<<<<<<<<<<<<
@@ -8516,7 +8330,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
         if (__pyx_t_5) {
 
-          /* "_splitter.pyx":718
+          /* "stpredictions/models/OK3/_splitter.pyx":718
  *                     if ((self.criterion.weighted_n_left < min_weight_leaf) or
  *                             (self.criterion.weighted_n_right < min_weight_leaf)):
  *                         continue             # <<<<<<<<<<<<<<
@@ -8525,7 +8339,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
           goto __pyx_L3_continue;
 
-          /* "_splitter.pyx":716
+          /* "stpredictions/models/OK3/_splitter.pyx":716
  * 
  *                     # Reject if min_weight_leaf is not satisfied
  *                     if ((self.criterion.weighted_n_left < min_weight_leaf) or             # <<<<<<<<<<<<<<
@@ -8534,16 +8348,16 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
         }
 
-        /* "_splitter.pyx":720
+        /* "stpredictions/models/OK3/_splitter.pyx":720
  *                         continue
  * 
  *                     current_proxy_improvement = self.criterion.proxy_impurity_improvement()             # <<<<<<<<<<<<<<
  * 
  *                     if current_proxy_improvement > best_proxy_improvement:
  */
-        __pyx_v_current_proxy_improvement = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->proxy_impurity_improvement(__pyx_v_self->__pyx_base.__pyx_base.criterion);
+        __pyx_v_current_proxy_improvement = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->proxy_impurity_improvement(__pyx_v_self->__pyx_base.__pyx_base.criterion);
 
-        /* "_splitter.pyx":722
+        /* "stpredictions/models/OK3/_splitter.pyx":722
  *                     current_proxy_improvement = self.criterion.proxy_impurity_improvement()
  * 
  *                     if current_proxy_improvement > best_proxy_improvement:             # <<<<<<<<<<<<<<
@@ -8553,7 +8367,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
         __pyx_t_5 = ((__pyx_v_current_proxy_improvement > __pyx_v_best_proxy_improvement) != 0);
         if (__pyx_t_5) {
 
-          /* "_splitter.pyx":723
+          /* "stpredictions/models/OK3/_splitter.pyx":723
  * 
  *                     if current_proxy_improvement > best_proxy_improvement:
  *                         best_proxy_improvement = current_proxy_improvement             # <<<<<<<<<<<<<<
@@ -8562,7 +8376,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
           __pyx_v_best_proxy_improvement = __pyx_v_current_proxy_improvement;
 
-          /* "_splitter.pyx":724
+          /* "stpredictions/models/OK3/_splitter.pyx":724
  *                     if current_proxy_improvement > best_proxy_improvement:
  *                         best_proxy_improvement = current_proxy_improvement
  *                         best = current  # copy             # <<<<<<<<<<<<<<
@@ -8571,7 +8385,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
           __pyx_v_best = __pyx_v_current;
 
-          /* "_splitter.pyx":722
+          /* "stpredictions/models/OK3/_splitter.pyx":722
  *                     current_proxy_improvement = self.criterion.proxy_impurity_improvement()
  * 
  *                     if current_proxy_improvement > best_proxy_improvement:             # <<<<<<<<<<<<<<
@@ -8586,7 +8400,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
     __pyx_L3_continue:;
   }
 
-  /* "_splitter.pyx":727
+  /* "stpredictions/models/OK3/_splitter.pyx":727
  * 
  *         # Reorganize into samples[start:best.pos] + samples[best.pos:end]
  *         if best.pos < end:             # <<<<<<<<<<<<<<
@@ -8596,7 +8410,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
   __pyx_t_5 = ((__pyx_v_best.pos < __pyx_v_end) != 0);
   if (__pyx_t_5) {
 
-    /* "_splitter.pyx":728
+    /* "stpredictions/models/OK3/_splitter.pyx":728
  *         # Reorganize into samples[start:best.pos] + samples[best.pos:end]
  *         if best.pos < end:
  *             if current.feature != best.feature:             # <<<<<<<<<<<<<<
@@ -8606,7 +8420,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
     __pyx_t_5 = ((__pyx_v_current.feature != __pyx_v_best.feature) != 0);
     if (__pyx_t_5) {
 
-      /* "_splitter.pyx":729
+      /* "stpredictions/models/OK3/_splitter.pyx":729
  *         if best.pos < end:
  *             if current.feature != best.feature:
  *                 p, partition_end = start, end             # <<<<<<<<<<<<<<
@@ -8618,7 +8432,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
       __pyx_v_p = __pyx_t_7;
       __pyx_v_partition_end = __pyx_t_2;
 
-      /* "_splitter.pyx":731
+      /* "stpredictions/models/OK3/_splitter.pyx":731
  *                 p, partition_end = start, end
  * 
  *                 while p < partition_end:             # <<<<<<<<<<<<<<
@@ -8629,7 +8443,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
         __pyx_t_5 = ((__pyx_v_p < __pyx_v_partition_end) != 0);
         if (!__pyx_t_5) break;
 
-        /* "_splitter.pyx":732
+        /* "stpredictions/models/OK3/_splitter.pyx":732
  * 
  *                 while p < partition_end:
  *                     if self.X[samples[p], best.feature] <= best.threshold:             # <<<<<<<<<<<<<<
@@ -8639,10 +8453,10 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
         if (unlikely(!__pyx_v_self->__pyx_base.X.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(0, 732, __pyx_L1_error)}
         __pyx_t_8 = (__pyx_v_samples[__pyx_v_p]);
         __pyx_t_9 = __pyx_v_best.feature;
-        __pyx_t_5 = (((*((__pyx_t_7sklearn_4tree_5_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_self->__pyx_base.X.data + __pyx_t_8 * __pyx_v_self->__pyx_base.X.strides[0]) ) + __pyx_t_9 * __pyx_v_self->__pyx_base.X.strides[1]) ))) <= __pyx_v_best.threshold) != 0);
+        __pyx_t_5 = (((*((__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_self->__pyx_base.X.data + __pyx_t_8 * __pyx_v_self->__pyx_base.X.strides[0]) ) + __pyx_t_9 * __pyx_v_self->__pyx_base.X.strides[1]) ))) <= __pyx_v_best.threshold) != 0);
         if (__pyx_t_5) {
 
-          /* "_splitter.pyx":733
+          /* "stpredictions/models/OK3/_splitter.pyx":733
  *                 while p < partition_end:
  *                     if self.X[samples[p], best.feature] <= best.threshold:
  *                         p += 1             # <<<<<<<<<<<<<<
@@ -8651,7 +8465,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
           __pyx_v_p = (__pyx_v_p + 1);
 
-          /* "_splitter.pyx":732
+          /* "stpredictions/models/OK3/_splitter.pyx":732
  * 
  *                 while p < partition_end:
  *                     if self.X[samples[p], best.feature] <= best.threshold:             # <<<<<<<<<<<<<<
@@ -8661,7 +8475,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
           goto __pyx_L28;
         }
 
-        /* "_splitter.pyx":735
+        /* "stpredictions/models/OK3/_splitter.pyx":735
  *                         p += 1
  *                     else:
  *                         partition_end -= 1             # <<<<<<<<<<<<<<
@@ -8671,7 +8485,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
         /*else*/ {
           __pyx_v_partition_end = (__pyx_v_partition_end - 1);
 
-          /* "_splitter.pyx":737
+          /* "stpredictions/models/OK3/_splitter.pyx":737
  *                         partition_end -= 1
  * 
  *                         samples[p], samples[partition_end] = samples[partition_end], samples[p]             # <<<<<<<<<<<<<<
@@ -8686,7 +8500,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
         __pyx_L28:;
       }
 
-      /* "_splitter.pyx":728
+      /* "stpredictions/models/OK3/_splitter.pyx":728
  *         # Reorganize into samples[start:best.pos] + samples[best.pos:end]
  *         if best.pos < end:
  *             if current.feature != best.feature:             # <<<<<<<<<<<<<<
@@ -8695,43 +8509,43 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
     }
 
-    /* "_splitter.pyx":739
+    /* "stpredictions/models/OK3/_splitter.pyx":739
  *                         samples[p], samples[partition_end] = samples[partition_end], samples[p]
  * 
  *             self.criterion.reset()             # <<<<<<<<<<<<<<
  *             self.criterion.update(best.pos)
  *             best.improvement = self.criterion.impurity_improvement(impurity)
  */
-    __pyx_t_13 = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->reset(__pyx_v_self->__pyx_base.__pyx_base.criterion); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 739, __pyx_L1_error)
+    __pyx_t_13 = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->reset(__pyx_v_self->__pyx_base.__pyx_base.criterion); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 739, __pyx_L1_error)
 
-    /* "_splitter.pyx":740
+    /* "stpredictions/models/OK3/_splitter.pyx":740
  * 
  *             self.criterion.reset()
  *             self.criterion.update(best.pos)             # <<<<<<<<<<<<<<
  *             best.improvement = self.criterion.impurity_improvement(impurity)
  *             self.criterion.children_impurity(&best.impurity_left,
  */
-    __pyx_t_13 = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->update(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_best.pos); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 740, __pyx_L1_error)
+    __pyx_t_13 = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->update(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_best.pos); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 740, __pyx_L1_error)
 
-    /* "_splitter.pyx":741
+    /* "stpredictions/models/OK3/_splitter.pyx":741
  *             self.criterion.reset()
  *             self.criterion.update(best.pos)
  *             best.improvement = self.criterion.impurity_improvement(impurity)             # <<<<<<<<<<<<<<
  *             self.criterion.children_impurity(&best.impurity_left,
  *                                              &best.impurity_right)
  */
-    __pyx_v_best.improvement = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->impurity_improvement(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_impurity);
+    __pyx_v_best.improvement = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->impurity_improvement(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_impurity);
 
-    /* "_splitter.pyx":742
+    /* "stpredictions/models/OK3/_splitter.pyx":742
  *             self.criterion.update(best.pos)
  *             best.improvement = self.criterion.impurity_improvement(impurity)
  *             self.criterion.children_impurity(&best.impurity_left,             # <<<<<<<<<<<<<<
  *                                              &best.impurity_right)
  * 
  */
-    ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->children_impurity(__pyx_v_self->__pyx_base.__pyx_base.criterion, (&__pyx_v_best.impurity_left), (&__pyx_v_best.impurity_right));
+    ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->children_impurity(__pyx_v_self->__pyx_base.__pyx_base.criterion, (&__pyx_v_best.impurity_left), (&__pyx_v_best.impurity_right));
 
-    /* "_splitter.pyx":727
+    /* "stpredictions/models/OK3/_splitter.pyx":727
  * 
  *         # Reorganize into samples[start:best.pos] + samples[best.pos:end]
  *         if best.pos < end:             # <<<<<<<<<<<<<<
@@ -8740,25 +8554,25 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
   }
 
-  /* "_splitter.pyx":748
+  /* "stpredictions/models/OK3/_splitter.pyx":748
  *         # element in features[:n_known_constants] must be preserved for sibling
  *         # and child nodes
  *         memcpy(features, constant_features, sizeof(SIZE_t) * n_known_constants)             # <<<<<<<<<<<<<<
  * 
  *         # Copy newly found constant features
  */
-  (void)(memcpy(__pyx_v_features, __pyx_v_constant_features, ((sizeof(__pyx_t_7sklearn_4tree_5_tree_SIZE_t)) * __pyx_v_n_known_constants)));
+  (void)(memcpy(__pyx_v_features, __pyx_v_constant_features, ((sizeof(__pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t)) * __pyx_v_n_known_constants)));
 
-  /* "_splitter.pyx":751
+  /* "stpredictions/models/OK3/_splitter.pyx":751
  * 
  *         # Copy newly found constant features
  *         memcpy(constant_features + n_known_constants,             # <<<<<<<<<<<<<<
  *                features + n_known_constants,
  *                sizeof(SIZE_t) * n_found_constants)
  */
-  (void)(memcpy((__pyx_v_constant_features + __pyx_v_n_known_constants), (__pyx_v_features + __pyx_v_n_known_constants), ((sizeof(__pyx_t_7sklearn_4tree_5_tree_SIZE_t)) * __pyx_v_n_found_constants)));
+  (void)(memcpy((__pyx_v_constant_features + __pyx_v_n_known_constants), (__pyx_v_features + __pyx_v_n_known_constants), ((sizeof(__pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t)) * __pyx_v_n_found_constants)));
 
-  /* "_splitter.pyx":756
+  /* "stpredictions/models/OK3/_splitter.pyx":756
  * 
  *         # Return values
  *         split[0] = best             # <<<<<<<<<<<<<<
@@ -8767,7 +8581,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
   (__pyx_v_split[0]) = __pyx_v_best;
 
-  /* "_splitter.pyx":757
+  /* "stpredictions/models/OK3/_splitter.pyx":757
  *         # Return values
  *         split[0] = best
  *         n_constant_features[0] = n_total_constants             # <<<<<<<<<<<<<<
@@ -8776,7 +8590,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
   (__pyx_v_n_constant_features[0]) = __pyx_v_n_total_constants;
 
-  /* "_splitter.pyx":758
+  /* "stpredictions/models/OK3/_splitter.pyx":758
  *         split[0] = best
  *         n_constant_features[0] = n_total_constants
  *         return 0             # <<<<<<<<<<<<<<
@@ -8786,7 +8600,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "_splitter.pyx":573
+  /* "stpredictions/models/OK3/_splitter.pyx":573
  *                                  self.random_state), self.__getstate__())
  * 
  *     cdef int node_split(self, double impurity, SplitRecord* split,             # <<<<<<<<<<<<<<
@@ -8800,7 +8614,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
     #ifdef WITH_THREAD
     PyGILState_STATE __pyx_gilstate_save = __Pyx_PyGILState_Ensure();
     #endif
-    __Pyx_AddTraceback("_splitter.RandomSplitter.node_split", __pyx_clineno, __pyx_lineno, __pyx_filename);
+    __Pyx_AddTraceback("stpredictions.models.OK3._splitter.RandomSplitter.node_split", __pyx_clineno, __pyx_lineno, __pyx_filename);
     #ifdef WITH_THREAD
     __Pyx_PyGILState_Release(__pyx_gilstate_save);
     #endif
@@ -8810,7 +8624,7 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
   return __pyx_r;
 }
 
-/* "_splitter.pyx":772
+/* "stpredictions/models/OK3/_splitter.pyx":772
  *     cdef SIZE_t* sorted_samples
  * 
  *     def __cinit__(self, Criterion criterion, SIZE_t max_features,             # <<<<<<<<<<<<<<
@@ -8819,11 +8633,11 @@ static int __pyx_f_9_splitter_14RandomSplitter_node_split(struct __pyx_obj_9_spl
  */
 
 /* Python wrapper */
-static int __pyx_pw_9_splitter_18BaseSparseSplitter_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_9_splitter_18BaseSparseSplitter_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
-  CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_criterion = 0;
-  CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_max_features;
-  CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_min_samples_leaf;
+static int __pyx_pw_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+  CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_criterion = 0;
+  CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_max_features;
+  CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_min_samples_leaf;
   CYTHON_UNUSED double __pyx_v_min_weight_leaf;
   CYTHON_UNUSED PyObject *__pyx_v_random_state = 0;
   int __pyx_lineno = 0;
@@ -8894,7 +8708,7 @@ static int __pyx_pw_9_splitter_18BaseSparseSplitter_1__cinit__(PyObject *__pyx_v
       values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
       values[4] = PyTuple_GET_ITEM(__pyx_args, 4);
     }
-    __pyx_v_criterion = ((struct __pyx_obj_10_criterion_Criterion *)values[0]);
+    __pyx_v_criterion = ((struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *)values[0]);
     __pyx_v_max_features = __Pyx_PyInt_As_Py_intptr_t(values[1]); if (unlikely((__pyx_v_max_features == ((npy_intp)-1)) && PyErr_Occurred())) __PYX_ERR(0, 772, __pyx_L3_error)
     __pyx_v_min_samples_leaf = __Pyx_PyInt_As_Py_intptr_t(values[2]); if (unlikely((__pyx_v_min_samples_leaf == ((npy_intp)-1)) && PyErr_Occurred())) __PYX_ERR(0, 773, __pyx_L3_error)
     __pyx_v_min_weight_leaf = __pyx_PyFloat_AsDouble(values[3]); if (unlikely((__pyx_v_min_weight_leaf == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 773, __pyx_L3_error)
@@ -8904,12 +8718,12 @@ static int __pyx_pw_9_splitter_18BaseSparseSplitter_1__cinit__(PyObject *__pyx_v
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 5, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 772, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("_splitter.BaseSparseSplitter.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.BaseSparseSplitter.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_criterion), __pyx_ptype_10_criterion_Criterion, 1, "criterion", 0))) __PYX_ERR(0, 772, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9_splitter_18BaseSparseSplitter___cinit__(((struct __pyx_obj_9_splitter_BaseSparseSplitter *)__pyx_v_self), __pyx_v_criterion, __pyx_v_max_features, __pyx_v_min_samples_leaf, __pyx_v_min_weight_leaf, __pyx_v_random_state);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_criterion), __pyx_ptype_13stpredictions_6models_3OK3_10_criterion_Criterion, 1, "criterion", 0))) __PYX_ERR(0, 772, __pyx_L1_error)
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter___cinit__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *)__pyx_v_self), __pyx_v_criterion, __pyx_v_max_features, __pyx_v_min_samples_leaf, __pyx_v_min_weight_leaf, __pyx_v_random_state);
 
   /* function exit code */
   goto __pyx_L0;
@@ -8920,12 +8734,12 @@ static int __pyx_pw_9_splitter_18BaseSparseSplitter_1__cinit__(PyObject *__pyx_v
   return __pyx_r;
 }
 
-static int __pyx_pf_9_splitter_18BaseSparseSplitter___cinit__(struct __pyx_obj_9_splitter_BaseSparseSplitter *__pyx_v_self, CYTHON_UNUSED struct __pyx_obj_10_criterion_Criterion *__pyx_v_criterion, CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_max_features, CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_min_samples_leaf, CYTHON_UNUSED double __pyx_v_min_weight_leaf, CYTHON_UNUSED PyObject *__pyx_v_random_state) {
+static int __pyx_pf_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter___cinit__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *__pyx_v_self, CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *__pyx_v_criterion, CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_max_features, CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_min_samples_leaf, CYTHON_UNUSED double __pyx_v_min_weight_leaf, CYTHON_UNUSED PyObject *__pyx_v_random_state) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "_splitter.pyx":777
+  /* "stpredictions/models/OK3/_splitter.pyx":777
  *         # Parent __cinit__ is automatically called
  * 
  *         self.X_data = NULL             # <<<<<<<<<<<<<<
@@ -8934,7 +8748,7 @@ static int __pyx_pf_9_splitter_18BaseSparseSplitter___cinit__(struct __pyx_obj_9
  */
   __pyx_v_self->X_data = NULL;
 
-  /* "_splitter.pyx":778
+  /* "stpredictions/models/OK3/_splitter.pyx":778
  * 
  *         self.X_data = NULL
  *         self.X_indices = NULL             # <<<<<<<<<<<<<<
@@ -8943,7 +8757,7 @@ static int __pyx_pf_9_splitter_18BaseSparseSplitter___cinit__(struct __pyx_obj_9
  */
   __pyx_v_self->X_indices = NULL;
 
-  /* "_splitter.pyx":779
+  /* "stpredictions/models/OK3/_splitter.pyx":779
  *         self.X_data = NULL
  *         self.X_indices = NULL
  *         self.X_indptr = NULL             # <<<<<<<<<<<<<<
@@ -8952,7 +8766,7 @@ static int __pyx_pf_9_splitter_18BaseSparseSplitter___cinit__(struct __pyx_obj_9
  */
   __pyx_v_self->X_indptr = NULL;
 
-  /* "_splitter.pyx":781
+  /* "stpredictions/models/OK3/_splitter.pyx":781
  *         self.X_indptr = NULL
  * 
  *         self.n_total_samples = 0             # <<<<<<<<<<<<<<
@@ -8961,7 +8775,7 @@ static int __pyx_pf_9_splitter_18BaseSparseSplitter___cinit__(struct __pyx_obj_9
  */
   __pyx_v_self->n_total_samples = 0;
 
-  /* "_splitter.pyx":783
+  /* "stpredictions/models/OK3/_splitter.pyx":783
  *         self.n_total_samples = 0
  * 
  *         self.index_to_samples = NULL             # <<<<<<<<<<<<<<
@@ -8970,7 +8784,7 @@ static int __pyx_pf_9_splitter_18BaseSparseSplitter___cinit__(struct __pyx_obj_9
  */
   __pyx_v_self->index_to_samples = NULL;
 
-  /* "_splitter.pyx":784
+  /* "stpredictions/models/OK3/_splitter.pyx":784
  * 
  *         self.index_to_samples = NULL
  *         self.sorted_samples = NULL             # <<<<<<<<<<<<<<
@@ -8979,7 +8793,7 @@ static int __pyx_pf_9_splitter_18BaseSparseSplitter___cinit__(struct __pyx_obj_9
  */
   __pyx_v_self->sorted_samples = NULL;
 
-  /* "_splitter.pyx":772
+  /* "stpredictions/models/OK3/_splitter.pyx":772
  *     cdef SIZE_t* sorted_samples
  * 
  *     def __cinit__(self, Criterion criterion, SIZE_t max_features,             # <<<<<<<<<<<<<<
@@ -8993,7 +8807,7 @@ static int __pyx_pf_9_splitter_18BaseSparseSplitter___cinit__(struct __pyx_obj_9
   return __pyx_r;
 }
 
-/* "_splitter.pyx":786
+/* "stpredictions/models/OK3/_splitter.pyx":786
  *         self.sorted_samples = NULL
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -9002,21 +8816,21 @@ static int __pyx_pf_9_splitter_18BaseSparseSplitter___cinit__(struct __pyx_obj_9
  */
 
 /* Python wrapper */
-static void __pyx_pw_9_splitter_18BaseSparseSplitter_3__dealloc__(PyObject *__pyx_v_self); /*proto*/
-static void __pyx_pw_9_splitter_18BaseSparseSplitter_3__dealloc__(PyObject *__pyx_v_self) {
+static void __pyx_pw_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_3__dealloc__(PyObject *__pyx_v_self); /*proto*/
+static void __pyx_pw_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_3__dealloc__(PyObject *__pyx_v_self) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__ (wrapper)", 0);
-  __pyx_pf_9_splitter_18BaseSparseSplitter_2__dealloc__(((struct __pyx_obj_9_splitter_BaseSparseSplitter *)__pyx_v_self));
+  __pyx_pf_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_2__dealloc__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
 }
 
-static void __pyx_pf_9_splitter_18BaseSparseSplitter_2__dealloc__(struct __pyx_obj_9_splitter_BaseSparseSplitter *__pyx_v_self) {
+static void __pyx_pf_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_2__dealloc__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *__pyx_v_self) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "_splitter.pyx":788
+  /* "stpredictions/models/OK3/_splitter.pyx":788
  *     def __dealloc__(self):
  *         """Deallocate memory."""
  *         free(self.index_to_samples)             # <<<<<<<<<<<<<<
@@ -9025,7 +8839,7 @@ static void __pyx_pf_9_splitter_18BaseSparseSplitter_2__dealloc__(struct __pyx_o
  */
   free(__pyx_v_self->index_to_samples);
 
-  /* "_splitter.pyx":789
+  /* "stpredictions/models/OK3/_splitter.pyx":789
  *         """Deallocate memory."""
  *         free(self.index_to_samples)
  *         free(self.sorted_samples)             # <<<<<<<<<<<<<<
@@ -9034,7 +8848,7 @@ static void __pyx_pf_9_splitter_18BaseSparseSplitter_2__dealloc__(struct __pyx_o
  */
   free(__pyx_v_self->sorted_samples);
 
-  /* "_splitter.pyx":786
+  /* "stpredictions/models/OK3/_splitter.pyx":786
  *         self.sorted_samples = NULL
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -9046,7 +8860,7 @@ static void __pyx_pf_9_splitter_18BaseSparseSplitter_2__dealloc__(struct __pyx_o
   __Pyx_RefNannyFinishContext();
 }
 
-/* "_splitter.pyx":791
+/* "stpredictions/models/OK3/_splitter.pyx":791
  *         free(self.sorted_samples)
  * 
  *     cdef int init(self,             # <<<<<<<<<<<<<<
@@ -9054,15 +8868,15 @@ static void __pyx_pf_9_splitter_18BaseSparseSplitter_2__dealloc__(struct __pyx_o
  *                   const DOUBLE_t[:, ::1] y,
  */
 
-static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_splitter_BaseSparseSplitter *__pyx_v_self, PyObject *__pyx_v_X, __Pyx_memviewslice __pyx_v_y, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *__pyx_v_sample_weight) {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_samples;
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *__pyx_v_self, PyObject *__pyx_v_X, __Pyx_memviewslice __pyx_v_y, __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *__pyx_v_sample_weight) {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_samples;
   PyArrayObject *__pyx_v_data = 0;
   PyArrayObject *__pyx_v_indices = 0;
   PyArrayObject *__pyx_v_indptr = 0;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_total_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_index_to_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_p;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_total_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_index_to_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_p;
   __Pyx_LocalBuf_ND __pyx_pybuffernd_data;
   __Pyx_Buffer __pyx_pybuffer_data;
   __Pyx_LocalBuf_ND __pyx_pybuffernd_indices;
@@ -9075,14 +8889,14 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
   PyObject *__pyx_t_2 = NULL;
   int __pyx_t_3;
   int __pyx_t_4;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_t_5;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_6;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_t_5;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_6;
   PyArrayObject *__pyx_t_7 = NULL;
   PyArrayObject *__pyx_t_8 = NULL;
   PyArrayObject *__pyx_t_9 = NULL;
   PyObject *__pyx_t_10 = NULL;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_11;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_12;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_11;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_12;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -9100,16 +8914,16 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
   __pyx_pybuffernd_indptr.data = NULL;
   __pyx_pybuffernd_indptr.rcbuffer = &__pyx_pybuffer_indptr;
 
-  /* "_splitter.pyx":801
+  /* "stpredictions/models/OK3/_splitter.pyx":801
  *         """
  *         # Call parent init
  *         Splitter.init(self, X, y, sample_weight)             # <<<<<<<<<<<<<<
  * 
  *         if not isinstance(X, csc_matrix):
  */
-  __pyx_t_1 = __pyx_f_9_splitter_8Splitter_init(((struct __pyx_obj_9_splitter_Splitter *)__pyx_v_self), __pyx_v_X, __pyx_v_y, __pyx_v_sample_weight); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 801, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_13stpredictions_6models_3OK3_9_splitter_8Splitter_init(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)__pyx_v_self), __pyx_v_X, __pyx_v_y, __pyx_v_sample_weight); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 801, __pyx_L1_error)
 
-  /* "_splitter.pyx":803
+  /* "stpredictions/models/OK3/_splitter.pyx":803
  *         Splitter.init(self, X, y, sample_weight)
  * 
  *         if not isinstance(X, csc_matrix):             # <<<<<<<<<<<<<<
@@ -9123,7 +8937,7 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
   __pyx_t_4 = ((!(__pyx_t_3 != 0)) != 0);
   if (unlikely(__pyx_t_4)) {
 
-    /* "_splitter.pyx":804
+    /* "stpredictions/models/OK3/_splitter.pyx":804
  * 
  *         if not isinstance(X, csc_matrix):
  *             raise ValueError("X should be in csc format")             # <<<<<<<<<<<<<<
@@ -9136,7 +8950,7 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __PYX_ERR(0, 804, __pyx_L1_error)
 
-    /* "_splitter.pyx":803
+    /* "stpredictions/models/OK3/_splitter.pyx":803
  *         Splitter.init(self, X, y, sample_weight)
  * 
  *         if not isinstance(X, csc_matrix):             # <<<<<<<<<<<<<<
@@ -9145,7 +8959,7 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
  */
   }
 
-  /* "_splitter.pyx":806
+  /* "stpredictions/models/OK3/_splitter.pyx":806
  *             raise ValueError("X should be in csc format")
  * 
  *         cdef SIZE_t* samples = self.samples             # <<<<<<<<<<<<<<
@@ -9155,7 +8969,7 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
   __pyx_t_5 = __pyx_v_self->__pyx_base.samples;
   __pyx_v_samples = __pyx_t_5;
 
-  /* "_splitter.pyx":807
+  /* "stpredictions/models/OK3/_splitter.pyx":807
  * 
  *         cdef SIZE_t* samples = self.samples
  *         cdef SIZE_t n_samples = self.n_samples             # <<<<<<<<<<<<<<
@@ -9165,7 +8979,7 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
   __pyx_t_6 = __pyx_v_self->__pyx_base.n_samples;
   __pyx_v_n_samples = __pyx_t_6;
 
-  /* "_splitter.pyx":810
+  /* "stpredictions/models/OK3/_splitter.pyx":810
  * 
  *         # Initialize X
  *         cdef np.ndarray[dtype=DTYPE_t, ndim=1] data = X.data             # <<<<<<<<<<<<<<
@@ -9178,7 +8992,7 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
   __pyx_t_7 = ((PyArrayObject *)__pyx_t_2);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_data.rcbuffer->pybuffer, (PyObject*)__pyx_t_7, &__Pyx_TypeInfo_nn___pyx_t_7sklearn_4tree_5_tree_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) {
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_data.rcbuffer->pybuffer, (PyObject*)__pyx_t_7, &__Pyx_TypeInfo_nn___pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) {
       __pyx_v_data = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_data.rcbuffer->pybuffer.buf = NULL;
       __PYX_ERR(0, 810, __pyx_L1_error)
     } else {__pyx_pybuffernd_data.diminfo[0].strides = __pyx_pybuffernd_data.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_data.diminfo[0].shape = __pyx_pybuffernd_data.rcbuffer->pybuffer.shape[0];
@@ -9188,7 +9002,7 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
   __pyx_v_data = ((PyArrayObject *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "_splitter.pyx":811
+  /* "stpredictions/models/OK3/_splitter.pyx":811
  *         # Initialize X
  *         cdef np.ndarray[dtype=DTYPE_t, ndim=1] data = X.data
  *         cdef np.ndarray[dtype=INT32_t, ndim=1] indices = X.indices             # <<<<<<<<<<<<<<
@@ -9201,7 +9015,7 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
   __pyx_t_8 = ((PyArrayObject *)__pyx_t_2);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_indices.rcbuffer->pybuffer, (PyObject*)__pyx_t_8, &__Pyx_TypeInfo_nn___pyx_t_7sklearn_4tree_5_tree_INT32_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) {
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_indices.rcbuffer->pybuffer, (PyObject*)__pyx_t_8, &__Pyx_TypeInfo_nn___pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) {
       __pyx_v_indices = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_indices.rcbuffer->pybuffer.buf = NULL;
       __PYX_ERR(0, 811, __pyx_L1_error)
     } else {__pyx_pybuffernd_indices.diminfo[0].strides = __pyx_pybuffernd_indices.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_indices.diminfo[0].shape = __pyx_pybuffernd_indices.rcbuffer->pybuffer.shape[0];
@@ -9211,7 +9025,7 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
   __pyx_v_indices = ((PyArrayObject *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "_splitter.pyx":812
+  /* "stpredictions/models/OK3/_splitter.pyx":812
  *         cdef np.ndarray[dtype=DTYPE_t, ndim=1] data = X.data
  *         cdef np.ndarray[dtype=INT32_t, ndim=1] indices = X.indices
  *         cdef np.ndarray[dtype=INT32_t, ndim=1] indptr = X.indptr             # <<<<<<<<<<<<<<
@@ -9224,7 +9038,7 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
   __pyx_t_9 = ((PyArrayObject *)__pyx_t_2);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_indptr.rcbuffer->pybuffer, (PyObject*)__pyx_t_9, &__Pyx_TypeInfo_nn___pyx_t_7sklearn_4tree_5_tree_INT32_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) {
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_indptr.rcbuffer->pybuffer, (PyObject*)__pyx_t_9, &__Pyx_TypeInfo_nn___pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) {
       __pyx_v_indptr = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_indptr.rcbuffer->pybuffer.buf = NULL;
       __PYX_ERR(0, 812, __pyx_L1_error)
     } else {__pyx_pybuffernd_indptr.diminfo[0].strides = __pyx_pybuffernd_indptr.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_indptr.diminfo[0].shape = __pyx_pybuffernd_indptr.rcbuffer->pybuffer.shape[0];
@@ -9234,7 +9048,7 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
   __pyx_v_indptr = ((PyArrayObject *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "_splitter.pyx":813
+  /* "stpredictions/models/OK3/_splitter.pyx":813
  *         cdef np.ndarray[dtype=INT32_t, ndim=1] indices = X.indices
  *         cdef np.ndarray[dtype=INT32_t, ndim=1] indptr = X.indptr
  *         cdef SIZE_t n_total_samples = X.shape[0]             # <<<<<<<<<<<<<<
@@ -9250,34 +9064,34 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
   __pyx_v_n_total_samples = __pyx_t_6;
 
-  /* "_splitter.pyx":815
+  /* "stpredictions/models/OK3/_splitter.pyx":815
  *         cdef SIZE_t n_total_samples = X.shape[0]
  * 
  *         self.X_data = <DTYPE_t*> data.data             # <<<<<<<<<<<<<<
  *         self.X_indices = <INT32_t*> indices.data
  *         self.X_indptr = <INT32_t*> indptr.data
  */
-  __pyx_v_self->X_data = ((__pyx_t_7sklearn_4tree_5_tree_DTYPE_t *)__pyx_v_data->data);
+  __pyx_v_self->X_data = ((__pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *)__pyx_v_data->data);
 
-  /* "_splitter.pyx":816
+  /* "stpredictions/models/OK3/_splitter.pyx":816
  * 
  *         self.X_data = <DTYPE_t*> data.data
  *         self.X_indices = <INT32_t*> indices.data             # <<<<<<<<<<<<<<
  *         self.X_indptr = <INT32_t*> indptr.data
  *         self.n_total_samples = n_total_samples
  */
-  __pyx_v_self->X_indices = ((__pyx_t_7sklearn_4tree_5_tree_INT32_t *)__pyx_v_indices->data);
+  __pyx_v_self->X_indices = ((__pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t *)__pyx_v_indices->data);
 
-  /* "_splitter.pyx":817
+  /* "stpredictions/models/OK3/_splitter.pyx":817
  *         self.X_data = <DTYPE_t*> data.data
  *         self.X_indices = <INT32_t*> indices.data
  *         self.X_indptr = <INT32_t*> indptr.data             # <<<<<<<<<<<<<<
  *         self.n_total_samples = n_total_samples
  * 
  */
-  __pyx_v_self->X_indptr = ((__pyx_t_7sklearn_4tree_5_tree_INT32_t *)__pyx_v_indptr->data);
+  __pyx_v_self->X_indptr = ((__pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t *)__pyx_v_indptr->data);
 
-  /* "_splitter.pyx":818
+  /* "stpredictions/models/OK3/_splitter.pyx":818
  *         self.X_indices = <INT32_t*> indices.data
  *         self.X_indptr = <INT32_t*> indptr.data
  *         self.n_total_samples = n_total_samples             # <<<<<<<<<<<<<<
@@ -9286,25 +9100,25 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
  */
   __pyx_v_self->n_total_samples = __pyx_v_n_total_samples;
 
-  /* "_splitter.pyx":821
+  /* "stpredictions/models/OK3/_splitter.pyx":821
  * 
  *         # Initialize auxiliary array used to perform split
  *         safe_realloc(&self.index_to_samples, n_total_samples)             # <<<<<<<<<<<<<<
  *         safe_realloc(&self.sorted_samples, n_samples)
  * 
  */
-  __pyx_fuse_1__pyx_f_7sklearn_4tree_6_utils_safe_realloc((&__pyx_v_self->index_to_samples), __pyx_v_n_total_samples); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 821, __pyx_L1_error)
+  __pyx_fuse_1__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc((&__pyx_v_self->index_to_samples), __pyx_v_n_total_samples); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 821, __pyx_L1_error)
 
-  /* "_splitter.pyx":822
+  /* "stpredictions/models/OK3/_splitter.pyx":822
  *         # Initialize auxiliary array used to perform split
  *         safe_realloc(&self.index_to_samples, n_total_samples)
  *         safe_realloc(&self.sorted_samples, n_samples)             # <<<<<<<<<<<<<<
  * 
  *         cdef SIZE_t* index_to_samples = self.index_to_samples
  */
-  __pyx_fuse_1__pyx_f_7sklearn_4tree_6_utils_safe_realloc((&__pyx_v_self->sorted_samples), __pyx_v_n_samples); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 822, __pyx_L1_error)
+  __pyx_fuse_1__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc((&__pyx_v_self->sorted_samples), __pyx_v_n_samples); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 822, __pyx_L1_error)
 
-  /* "_splitter.pyx":824
+  /* "stpredictions/models/OK3/_splitter.pyx":824
  *         safe_realloc(&self.sorted_samples, n_samples)
  * 
  *         cdef SIZE_t* index_to_samples = self.index_to_samples             # <<<<<<<<<<<<<<
@@ -9314,7 +9128,7 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
   __pyx_t_5 = __pyx_v_self->index_to_samples;
   __pyx_v_index_to_samples = __pyx_t_5;
 
-  /* "_splitter.pyx":826
+  /* "stpredictions/models/OK3/_splitter.pyx":826
  *         cdef SIZE_t* index_to_samples = self.index_to_samples
  *         cdef SIZE_t p
  *         for p in range(n_total_samples):             # <<<<<<<<<<<<<<
@@ -9326,7 +9140,7 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
   for (__pyx_t_12 = 0; __pyx_t_12 < __pyx_t_11; __pyx_t_12+=1) {
     __pyx_v_p = __pyx_t_12;
 
-    /* "_splitter.pyx":827
+    /* "stpredictions/models/OK3/_splitter.pyx":827
  *         cdef SIZE_t p
  *         for p in range(n_total_samples):
  *             index_to_samples[p] = -1             # <<<<<<<<<<<<<<
@@ -9336,7 +9150,7 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
     (__pyx_v_index_to_samples[__pyx_v_p]) = -1;
   }
 
-  /* "_splitter.pyx":829
+  /* "stpredictions/models/OK3/_splitter.pyx":829
  *             index_to_samples[p] = -1
  * 
  *         for p in range(n_samples):             # <<<<<<<<<<<<<<
@@ -9348,7 +9162,7 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
   for (__pyx_t_12 = 0; __pyx_t_12 < __pyx_t_11; __pyx_t_12+=1) {
     __pyx_v_p = __pyx_t_12;
 
-    /* "_splitter.pyx":830
+    /* "stpredictions/models/OK3/_splitter.pyx":830
  * 
  *         for p in range(n_samples):
  *             index_to_samples[samples[p]] = p             # <<<<<<<<<<<<<<
@@ -9358,7 +9172,7 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
     (__pyx_v_index_to_samples[(__pyx_v_samples[__pyx_v_p])]) = __pyx_v_p;
   }
 
-  /* "_splitter.pyx":831
+  /* "stpredictions/models/OK3/_splitter.pyx":831
  *         for p in range(n_samples):
  *             index_to_samples[samples[p]] = p
  *         return 0             # <<<<<<<<<<<<<<
@@ -9368,7 +9182,7 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "_splitter.pyx":791
+  /* "stpredictions/models/OK3/_splitter.pyx":791
  *         free(self.sorted_samples)
  * 
  *     cdef int init(self,             # <<<<<<<<<<<<<<
@@ -9388,7 +9202,7 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_indices.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_indptr.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("_splitter.BaseSparseSplitter.init", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.BaseSparseSplitter.init", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   goto __pyx_L2;
   __pyx_L0:;
@@ -9403,7 +9217,7 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
   return __pyx_r;
 }
 
-/* "_splitter.pyx":833
+/* "stpredictions/models/OK3/_splitter.pyx":833
  *         return 0
  * 
  *     cdef inline SIZE_t _partition(self, double threshold,             # <<<<<<<<<<<<<<
@@ -9411,21 +9225,21 @@ static int __pyx_f_9_splitter_18BaseSparseSplitter_init(struct __pyx_obj_9_split
  *                                   SIZE_t zero_pos) nogil:
  */
 
-static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18BaseSparseSplitter__partition(struct __pyx_obj_9_splitter_BaseSparseSplitter *__pyx_v_self, double __pyx_v_threshold, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end_negative, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start_positive, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_zero_pos) {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_p;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_partition_end;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_v_Xf;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_index_to_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_r;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_t_1;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_t_2;
+static CYTHON_INLINE __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_f_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter__partition(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *__pyx_v_self, double __pyx_v_threshold, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end_negative, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start_positive, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_zero_pos) {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_p;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_partition_end;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_v_Xf;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_index_to_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_r;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_t_1;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_t_2;
   int __pyx_t_3;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_4;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_t_5;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_t_6;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_4;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_t_5;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_t_6;
 
-  /* "_splitter.pyx":841
+  /* "stpredictions/models/OK3/_splitter.pyx":841
  *         cdef SIZE_t partition_end
  * 
  *         cdef DTYPE_t* Xf = self.feature_values             # <<<<<<<<<<<<<<
@@ -9435,7 +9249,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
   __pyx_t_1 = __pyx_v_self->__pyx_base.feature_values;
   __pyx_v_Xf = __pyx_t_1;
 
-  /* "_splitter.pyx":842
+  /* "stpredictions/models/OK3/_splitter.pyx":842
  * 
  *         cdef DTYPE_t* Xf = self.feature_values
  *         cdef SIZE_t* samples = self.samples             # <<<<<<<<<<<<<<
@@ -9445,7 +9259,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
   __pyx_t_2 = __pyx_v_self->__pyx_base.samples;
   __pyx_v_samples = __pyx_t_2;
 
-  /* "_splitter.pyx":843
+  /* "stpredictions/models/OK3/_splitter.pyx":843
  *         cdef DTYPE_t* Xf = self.feature_values
  *         cdef SIZE_t* samples = self.samples
  *         cdef SIZE_t* index_to_samples = self.index_to_samples             # <<<<<<<<<<<<<<
@@ -9455,7 +9269,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
   __pyx_t_2 = __pyx_v_self->index_to_samples;
   __pyx_v_index_to_samples = __pyx_t_2;
 
-  /* "_splitter.pyx":845
+  /* "stpredictions/models/OK3/_splitter.pyx":845
  *         cdef SIZE_t* index_to_samples = self.index_to_samples
  * 
  *         if threshold < 0.:             # <<<<<<<<<<<<<<
@@ -9465,7 +9279,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
   __pyx_t_3 = ((__pyx_v_threshold < 0.) != 0);
   if (__pyx_t_3) {
 
-    /* "_splitter.pyx":846
+    /* "stpredictions/models/OK3/_splitter.pyx":846
  * 
  *         if threshold < 0.:
  *             p = self.start             # <<<<<<<<<<<<<<
@@ -9475,7 +9289,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
     __pyx_t_4 = __pyx_v_self->__pyx_base.start;
     __pyx_v_p = __pyx_t_4;
 
-    /* "_splitter.pyx":847
+    /* "stpredictions/models/OK3/_splitter.pyx":847
  *         if threshold < 0.:
  *             p = self.start
  *             partition_end = end_negative             # <<<<<<<<<<<<<<
@@ -9484,7 +9298,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
  */
     __pyx_v_partition_end = __pyx_v_end_negative;
 
-    /* "_splitter.pyx":845
+    /* "stpredictions/models/OK3/_splitter.pyx":845
  *         cdef SIZE_t* index_to_samples = self.index_to_samples
  * 
  *         if threshold < 0.:             # <<<<<<<<<<<<<<
@@ -9494,7 +9308,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
     goto __pyx_L3;
   }
 
-  /* "_splitter.pyx":848
+  /* "stpredictions/models/OK3/_splitter.pyx":848
  *             p = self.start
  *             partition_end = end_negative
  *         elif threshold > 0.:             # <<<<<<<<<<<<<<
@@ -9504,7 +9318,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
   __pyx_t_3 = ((__pyx_v_threshold > 0.) != 0);
   if (__pyx_t_3) {
 
-    /* "_splitter.pyx":849
+    /* "stpredictions/models/OK3/_splitter.pyx":849
  *             partition_end = end_negative
  *         elif threshold > 0.:
  *             p = start_positive             # <<<<<<<<<<<<<<
@@ -9513,7 +9327,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
  */
     __pyx_v_p = __pyx_v_start_positive;
 
-    /* "_splitter.pyx":850
+    /* "stpredictions/models/OK3/_splitter.pyx":850
  *         elif threshold > 0.:
  *             p = start_positive
  *             partition_end = self.end             # <<<<<<<<<<<<<<
@@ -9523,7 +9337,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
     __pyx_t_4 = __pyx_v_self->__pyx_base.end;
     __pyx_v_partition_end = __pyx_t_4;
 
-    /* "_splitter.pyx":848
+    /* "stpredictions/models/OK3/_splitter.pyx":848
  *             p = self.start
  *             partition_end = end_negative
  *         elif threshold > 0.:             # <<<<<<<<<<<<<<
@@ -9533,7 +9347,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
     goto __pyx_L3;
   }
 
-  /* "_splitter.pyx":853
+  /* "stpredictions/models/OK3/_splitter.pyx":853
  *         else:
  *             # Data are already split
  *             return zero_pos             # <<<<<<<<<<<<<<
@@ -9546,7 +9360,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
   }
   __pyx_L3:;
 
-  /* "_splitter.pyx":855
+  /* "stpredictions/models/OK3/_splitter.pyx":855
  *             return zero_pos
  * 
  *         while p < partition_end:             # <<<<<<<<<<<<<<
@@ -9557,7 +9371,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
     __pyx_t_3 = ((__pyx_v_p < __pyx_v_partition_end) != 0);
     if (!__pyx_t_3) break;
 
-    /* "_splitter.pyx":856
+    /* "stpredictions/models/OK3/_splitter.pyx":856
  * 
  *         while p < partition_end:
  *             if Xf[p] <= threshold:             # <<<<<<<<<<<<<<
@@ -9567,7 +9381,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
     __pyx_t_3 = (((__pyx_v_Xf[__pyx_v_p]) <= __pyx_v_threshold) != 0);
     if (__pyx_t_3) {
 
-      /* "_splitter.pyx":857
+      /* "stpredictions/models/OK3/_splitter.pyx":857
  *         while p < partition_end:
  *             if Xf[p] <= threshold:
  *                 p += 1             # <<<<<<<<<<<<<<
@@ -9576,7 +9390,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
  */
       __pyx_v_p = (__pyx_v_p + 1);
 
-      /* "_splitter.pyx":856
+      /* "stpredictions/models/OK3/_splitter.pyx":856
  * 
  *         while p < partition_end:
  *             if Xf[p] <= threshold:             # <<<<<<<<<<<<<<
@@ -9586,7 +9400,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
       goto __pyx_L6;
     }
 
-    /* "_splitter.pyx":860
+    /* "stpredictions/models/OK3/_splitter.pyx":860
  * 
  *             else:
  *                 partition_end -= 1             # <<<<<<<<<<<<<<
@@ -9596,7 +9410,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
     /*else*/ {
       __pyx_v_partition_end = (__pyx_v_partition_end - 1);
 
-      /* "_splitter.pyx":862
+      /* "stpredictions/models/OK3/_splitter.pyx":862
  *                 partition_end -= 1
  * 
  *                 Xf[p], Xf[partition_end] = Xf[partition_end], Xf[p]             # <<<<<<<<<<<<<<
@@ -9608,19 +9422,19 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
       (__pyx_v_Xf[__pyx_v_p]) = __pyx_t_5;
       (__pyx_v_Xf[__pyx_v_partition_end]) = __pyx_t_6;
 
-      /* "_splitter.pyx":863
+      /* "stpredictions/models/OK3/_splitter.pyx":863
  * 
  *                 Xf[p], Xf[partition_end] = Xf[partition_end], Xf[p]
  *                 sparse_swap(index_to_samples, samples, p, partition_end)             # <<<<<<<<<<<<<<
  * 
  *         return partition_end
  */
-      __pyx_f_9_splitter_sparse_swap(__pyx_v_index_to_samples, __pyx_v_samples, __pyx_v_p, __pyx_v_partition_end);
+      __pyx_f_13stpredictions_6models_3OK3_9_splitter_sparse_swap(__pyx_v_index_to_samples, __pyx_v_samples, __pyx_v_p, __pyx_v_partition_end);
     }
     __pyx_L6:;
   }
 
-  /* "_splitter.pyx":865
+  /* "stpredictions/models/OK3/_splitter.pyx":865
  *                 sparse_swap(index_to_samples, samples, p, partition_end)
  * 
  *         return partition_end             # <<<<<<<<<<<<<<
@@ -9630,7 +9444,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
   __pyx_r = __pyx_v_partition_end;
   goto __pyx_L0;
 
-  /* "_splitter.pyx":833
+  /* "stpredictions/models/OK3/_splitter.pyx":833
  *         return 0
  * 
  *     cdef inline SIZE_t _partition(self, double threshold,             # <<<<<<<<<<<<<<
@@ -9643,7 +9457,7 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
   return __pyx_r;
 }
 
-/* "_splitter.pyx":867
+/* "stpredictions/models/OK3/_splitter.pyx":867
  *         return partition_end
  * 
  *     cdef inline void extract_nnz(self, SIZE_t feature,             # <<<<<<<<<<<<<<
@@ -9651,14 +9465,14 @@ static CYTHON_INLINE __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_f_9_splitter_18B
  *                                  bint* is_samples_sorted) nogil:
  */
 
-static CYTHON_INLINE void __pyx_f_9_splitter_18BaseSparseSplitter_extract_nnz(struct __pyx_obj_9_splitter_BaseSparseSplitter *__pyx_v_self, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_feature, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_end_negative, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_start_positive, int *__pyx_v_is_samples_sorted) {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_indptr_start;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_indptr_end;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_indices;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_samples;
+static CYTHON_INLINE void __pyx_f_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_extract_nnz(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *__pyx_v_self, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_feature, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_end_negative, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_start_positive, int *__pyx_v_is_samples_sorted) {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_indptr_start;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_indptr_end;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_indices;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_samples;
   int __pyx_t_1;
 
-  /* "_splitter.pyx":899
+  /* "stpredictions/models/OK3/_splitter.pyx":899
  * 
  *         """
  *         cdef SIZE_t indptr_start = self.X_indptr[feature],             # <<<<<<<<<<<<<<
@@ -9667,7 +9481,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_18BaseSparseSplitter_extract_nnz(st
  */
   __pyx_v_indptr_start = (__pyx_v_self->X_indptr[__pyx_v_feature]);
 
-  /* "_splitter.pyx":900
+  /* "stpredictions/models/OK3/_splitter.pyx":900
  *         """
  *         cdef SIZE_t indptr_start = self.X_indptr[feature],
  *         cdef SIZE_t indptr_end = self.X_indptr[feature + 1]             # <<<<<<<<<<<<<<
@@ -9676,16 +9490,16 @@ static CYTHON_INLINE void __pyx_f_9_splitter_18BaseSparseSplitter_extract_nnz(st
  */
   __pyx_v_indptr_end = (__pyx_v_self->X_indptr[(__pyx_v_feature + 1)]);
 
-  /* "_splitter.pyx":901
+  /* "stpredictions/models/OK3/_splitter.pyx":901
  *         cdef SIZE_t indptr_start = self.X_indptr[feature],
  *         cdef SIZE_t indptr_end = self.X_indptr[feature + 1]
  *         cdef SIZE_t n_indices = <SIZE_t>(indptr_end - indptr_start)             # <<<<<<<<<<<<<<
  *         cdef SIZE_t n_samples = self.end - self.start
  * 
  */
-  __pyx_v_n_indices = ((__pyx_t_7sklearn_4tree_5_tree_SIZE_t)(__pyx_v_indptr_end - __pyx_v_indptr_start));
+  __pyx_v_n_indices = ((__pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t)(__pyx_v_indptr_end - __pyx_v_indptr_start));
 
-  /* "_splitter.pyx":902
+  /* "stpredictions/models/OK3/_splitter.pyx":902
  *         cdef SIZE_t indptr_end = self.X_indptr[feature + 1]
  *         cdef SIZE_t n_indices = <SIZE_t>(indptr_end - indptr_start)
  *         cdef SIZE_t n_samples = self.end - self.start             # <<<<<<<<<<<<<<
@@ -9694,16 +9508,16 @@ static CYTHON_INLINE void __pyx_f_9_splitter_18BaseSparseSplitter_extract_nnz(st
  */
   __pyx_v_n_samples = (__pyx_v_self->__pyx_base.end - __pyx_v_self->__pyx_base.start);
 
-  /* "_splitter.pyx":910
+  /* "stpredictions/models/OK3/_splitter.pyx":910
  *         # approach.
  *         if ((1 - is_samples_sorted[0]) * n_samples * log(n_samples) +
  *                 n_samples * log(n_indices) < EXTRACT_NNZ_SWITCH * n_indices):             # <<<<<<<<<<<<<<
  *             extract_nnz_binary_search(self.X_indices, self.X_data,
  *                                       indptr_start, indptr_end,
  */
-  __pyx_t_1 = ((((((1 - (__pyx_v_is_samples_sorted[0])) * __pyx_v_n_samples) * __pyx_f_7sklearn_4tree_6_utils_log(__pyx_v_n_samples)) + (__pyx_v_n_samples * __pyx_f_7sklearn_4tree_6_utils_log(__pyx_v_n_indices))) < (__pyx_v_9_splitter_EXTRACT_NNZ_SWITCH * __pyx_v_n_indices)) != 0);
+  __pyx_t_1 = ((((((1 - (__pyx_v_is_samples_sorted[0])) * __pyx_v_n_samples) * __pyx_f_13stpredictions_6models_3OK3_6_utils_log(__pyx_v_n_samples)) + (__pyx_v_n_samples * __pyx_f_13stpredictions_6models_3OK3_6_utils_log(__pyx_v_n_indices))) < (__pyx_v_13stpredictions_6models_3OK3_9_splitter_EXTRACT_NNZ_SWITCH * __pyx_v_n_indices)) != 0);
 
-  /* "_splitter.pyx":909
+  /* "stpredictions/models/OK3/_splitter.pyx":909
  *         # search and O(n_indices) is the running time of index_to_samples
  *         # approach.
  *         if ((1 - is_samples_sorted[0]) * n_samples * log(n_samples) +             # <<<<<<<<<<<<<<
@@ -9712,16 +9526,16 @@ static CYTHON_INLINE void __pyx_f_9_splitter_18BaseSparseSplitter_extract_nnz(st
  */
   if (__pyx_t_1) {
 
-    /* "_splitter.pyx":911
+    /* "stpredictions/models/OK3/_splitter.pyx":911
  *         if ((1 - is_samples_sorted[0]) * n_samples * log(n_samples) +
  *                 n_samples * log(n_indices) < EXTRACT_NNZ_SWITCH * n_indices):
  *             extract_nnz_binary_search(self.X_indices, self.X_data,             # <<<<<<<<<<<<<<
  *                                       indptr_start, indptr_end,
  *                                       self.samples, self.start, self.end,
  */
-    __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_v_self->X_indices, __pyx_v_self->X_data, __pyx_v_indptr_start, __pyx_v_indptr_end, __pyx_v_self->__pyx_base.samples, __pyx_v_self->__pyx_base.start, __pyx_v_self->__pyx_base.end, __pyx_v_self->index_to_samples, __pyx_v_self->__pyx_base.feature_values, __pyx_v_end_negative, __pyx_v_start_positive, __pyx_v_self->sorted_samples, __pyx_v_is_samples_sorted);
+    __pyx_f_13stpredictions_6models_3OK3_9_splitter_extract_nnz_binary_search(__pyx_v_self->X_indices, __pyx_v_self->X_data, __pyx_v_indptr_start, __pyx_v_indptr_end, __pyx_v_self->__pyx_base.samples, __pyx_v_self->__pyx_base.start, __pyx_v_self->__pyx_base.end, __pyx_v_self->index_to_samples, __pyx_v_self->__pyx_base.feature_values, __pyx_v_end_negative, __pyx_v_start_positive, __pyx_v_self->sorted_samples, __pyx_v_is_samples_sorted);
 
-    /* "_splitter.pyx":909
+    /* "stpredictions/models/OK3/_splitter.pyx":909
  *         # search and O(n_indices) is the running time of index_to_samples
  *         # approach.
  *         if ((1 - is_samples_sorted[0]) * n_samples * log(n_samples) +             # <<<<<<<<<<<<<<
@@ -9731,7 +9545,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_18BaseSparseSplitter_extract_nnz(st
     goto __pyx_L3;
   }
 
-  /* "_splitter.pyx":922
+  /* "stpredictions/models/OK3/_splitter.pyx":922
  *         # index_to_samples is a mapping from X_indices to samples
  *         else:
  *             extract_nnz_index_to_samples(self.X_indices, self.X_data,             # <<<<<<<<<<<<<<
@@ -9740,18 +9554,18 @@ static CYTHON_INLINE void __pyx_f_9_splitter_18BaseSparseSplitter_extract_nnz(st
  */
   /*else*/ {
 
-    /* "_splitter.pyx":927
+    /* "stpredictions/models/OK3/_splitter.pyx":927
  *                                          self.index_to_samples,
  *                                          self.feature_values,
  *                                          end_negative, start_positive)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-    __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_v_self->X_indices, __pyx_v_self->X_data, __pyx_v_indptr_start, __pyx_v_indptr_end, __pyx_v_self->__pyx_base.samples, __pyx_v_self->__pyx_base.start, __pyx_v_self->__pyx_base.end, __pyx_v_self->index_to_samples, __pyx_v_self->__pyx_base.feature_values, __pyx_v_end_negative, __pyx_v_start_positive);
+    __pyx_f_13stpredictions_6models_3OK3_9_splitter_extract_nnz_index_to_samples(__pyx_v_self->X_indices, __pyx_v_self->X_data, __pyx_v_indptr_start, __pyx_v_indptr_end, __pyx_v_self->__pyx_base.samples, __pyx_v_self->__pyx_base.start, __pyx_v_self->__pyx_base.end, __pyx_v_self->index_to_samples, __pyx_v_self->__pyx_base.feature_values, __pyx_v_end_negative, __pyx_v_start_positive);
   }
   __pyx_L3:;
 
-  /* "_splitter.pyx":867
+  /* "stpredictions/models/OK3/_splitter.pyx":867
  *         return partition_end
  * 
  *     cdef inline void extract_nnz(self, SIZE_t feature,             # <<<<<<<<<<<<<<
@@ -9769,19 +9583,19 @@ static CYTHON_INLINE void __pyx_f_9_splitter_18BaseSparseSplitter_extract_nnz(st
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9_splitter_18BaseSparseSplitter_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_9_splitter_18BaseSparseSplitter_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_18BaseSparseSplitter_4__reduce_cython__(((struct __pyx_obj_9_splitter_BaseSparseSplitter *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_4__reduce_cython__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9_splitter_18BaseSparseSplitter_4__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_9_splitter_BaseSparseSplitter *__pyx_v_self) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_4__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -9811,7 +9625,7 @@ static PyObject *__pyx_pf_9_splitter_18BaseSparseSplitter_4__reduce_cython__(CYT
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_splitter.BaseSparseSplitter.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.BaseSparseSplitter.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -9826,19 +9640,19 @@ static PyObject *__pyx_pf_9_splitter_18BaseSparseSplitter_4__reduce_cython__(CYT
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9_splitter_18BaseSparseSplitter_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_9_splitter_18BaseSparseSplitter_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_18BaseSparseSplitter_6__setstate_cython__(((struct __pyx_obj_9_splitter_BaseSparseSplitter *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_6__setstate_cython__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9_splitter_18BaseSparseSplitter_6__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_9_splitter_BaseSparseSplitter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_6__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -9868,14 +9682,14 @@ static PyObject *__pyx_pf_9_splitter_18BaseSparseSplitter_6__setstate_cython__(C
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_splitter.BaseSparseSplitter.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.BaseSparseSplitter.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "_splitter.pyx":930
+/* "stpredictions/models/OK3/_splitter.pyx":930
  * 
  * 
  * cdef int compare_SIZE_t(const void* a, const void* b) nogil:             # <<<<<<<<<<<<<<
@@ -9883,20 +9697,20 @@ static PyObject *__pyx_pf_9_splitter_18BaseSparseSplitter_6__setstate_cython__(C
  *     return <int>((<SIZE_t*>a)[0] - (<SIZE_t*>b)[0])
  */
 
-static int __pyx_f_9_splitter_compare_SIZE_t(void const *__pyx_v_a, void const *__pyx_v_b) {
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_compare_SIZE_t(void const *__pyx_v_a, void const *__pyx_v_b) {
   int __pyx_r;
 
-  /* "_splitter.pyx":932
+  /* "stpredictions/models/OK3/_splitter.pyx":932
  * cdef int compare_SIZE_t(const void* a, const void* b) nogil:
  *     """Comparison function for sort."""
  *     return <int>((<SIZE_t*>a)[0] - (<SIZE_t*>b)[0])             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_r = ((int)((((__pyx_t_7sklearn_4tree_5_tree_SIZE_t *)__pyx_v_a)[0]) - (((__pyx_t_7sklearn_4tree_5_tree_SIZE_t *)__pyx_v_b)[0])));
+  __pyx_r = ((int)((((__pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *)__pyx_v_a)[0]) - (((__pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *)__pyx_v_b)[0])));
   goto __pyx_L0;
 
-  /* "_splitter.pyx":930
+  /* "stpredictions/models/OK3/_splitter.pyx":930
  * 
  * 
  * cdef int compare_SIZE_t(const void* a, const void* b) nogil:             # <<<<<<<<<<<<<<
@@ -9909,7 +9723,7 @@ static int __pyx_f_9_splitter_compare_SIZE_t(void const *__pyx_v_a, void const *
   return __pyx_r;
 }
 
-/* "_splitter.pyx":935
+/* "stpredictions/models/OK3/_splitter.pyx":935
  * 
  * 
  * cdef inline void binary_search(INT32_t* sorted_array,             # <<<<<<<<<<<<<<
@@ -9917,11 +9731,11 @@ static int __pyx_f_9_splitter_compare_SIZE_t(void const *__pyx_v_a, void const *
  *                                SIZE_t value, SIZE_t* index,
  */
 
-static CYTHON_INLINE void __pyx_f_9_splitter_binary_search(__pyx_t_7sklearn_4tree_5_tree_INT32_t *__pyx_v_sorted_array, __pyx_t_7sklearn_4tree_5_tree_INT32_t __pyx_v_start, __pyx_t_7sklearn_4tree_5_tree_INT32_t __pyx_v_end, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_value, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_index, __pyx_t_7sklearn_4tree_5_tree_INT32_t *__pyx_v_new_start) {
-  __pyx_t_7sklearn_4tree_5_tree_INT32_t __pyx_v_pivot;
+static CYTHON_INLINE void __pyx_f_13stpredictions_6models_3OK3_9_splitter_binary_search(__pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t *__pyx_v_sorted_array, __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t __pyx_v_start, __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t __pyx_v_end, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_value, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_index, __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t *__pyx_v_new_start) {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t __pyx_v_pivot;
   int __pyx_t_1;
 
-  /* "_splitter.pyx":944
+  /* "stpredictions/models/OK3/_splitter.pyx":944
  *     """
  *     cdef INT32_t pivot
  *     index[0] = -1             # <<<<<<<<<<<<<<
@@ -9930,7 +9744,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_binary_search(__pyx_t_7sklearn_4tre
  */
   (__pyx_v_index[0]) = -1;
 
-  /* "_splitter.pyx":945
+  /* "stpredictions/models/OK3/_splitter.pyx":945
  *     cdef INT32_t pivot
  *     index[0] = -1
  *     while start < end:             # <<<<<<<<<<<<<<
@@ -9941,7 +9755,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_binary_search(__pyx_t_7sklearn_4tre
     __pyx_t_1 = ((__pyx_v_start < __pyx_v_end) != 0);
     if (!__pyx_t_1) break;
 
-    /* "_splitter.pyx":946
+    /* "stpredictions/models/OK3/_splitter.pyx":946
  *     index[0] = -1
  *     while start < end:
  *         pivot = start + (end - start) / 2             # <<<<<<<<<<<<<<
@@ -9950,7 +9764,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_binary_search(__pyx_t_7sklearn_4tre
  */
     __pyx_v_pivot = (__pyx_v_start + ((__pyx_v_end - __pyx_v_start) / 2));
 
-    /* "_splitter.pyx":948
+    /* "stpredictions/models/OK3/_splitter.pyx":948
  *         pivot = start + (end - start) / 2
  * 
  *         if sorted_array[pivot] == value:             # <<<<<<<<<<<<<<
@@ -9960,7 +9774,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_binary_search(__pyx_t_7sklearn_4tre
     __pyx_t_1 = (((__pyx_v_sorted_array[__pyx_v_pivot]) == __pyx_v_value) != 0);
     if (__pyx_t_1) {
 
-      /* "_splitter.pyx":949
+      /* "stpredictions/models/OK3/_splitter.pyx":949
  * 
  *         if sorted_array[pivot] == value:
  *             index[0] = pivot             # <<<<<<<<<<<<<<
@@ -9969,7 +9783,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_binary_search(__pyx_t_7sklearn_4tre
  */
       (__pyx_v_index[0]) = __pyx_v_pivot;
 
-      /* "_splitter.pyx":950
+      /* "stpredictions/models/OK3/_splitter.pyx":950
  *         if sorted_array[pivot] == value:
  *             index[0] = pivot
  *             start = pivot + 1             # <<<<<<<<<<<<<<
@@ -9978,7 +9792,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_binary_search(__pyx_t_7sklearn_4tre
  */
       __pyx_v_start = (__pyx_v_pivot + 1);
 
-      /* "_splitter.pyx":951
+      /* "stpredictions/models/OK3/_splitter.pyx":951
  *             index[0] = pivot
  *             start = pivot + 1
  *             break             # <<<<<<<<<<<<<<
@@ -9987,7 +9801,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_binary_search(__pyx_t_7sklearn_4tre
  */
       goto __pyx_L4_break;
 
-      /* "_splitter.pyx":948
+      /* "stpredictions/models/OK3/_splitter.pyx":948
  *         pivot = start + (end - start) / 2
  * 
  *         if sorted_array[pivot] == value:             # <<<<<<<<<<<<<<
@@ -9996,7 +9810,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_binary_search(__pyx_t_7sklearn_4tre
  */
     }
 
-    /* "_splitter.pyx":953
+    /* "stpredictions/models/OK3/_splitter.pyx":953
  *             break
  * 
  *         if sorted_array[pivot] < value:             # <<<<<<<<<<<<<<
@@ -10006,7 +9820,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_binary_search(__pyx_t_7sklearn_4tre
     __pyx_t_1 = (((__pyx_v_sorted_array[__pyx_v_pivot]) < __pyx_v_value) != 0);
     if (__pyx_t_1) {
 
-      /* "_splitter.pyx":954
+      /* "stpredictions/models/OK3/_splitter.pyx":954
  * 
  *         if sorted_array[pivot] < value:
  *             start = pivot + 1             # <<<<<<<<<<<<<<
@@ -10015,7 +9829,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_binary_search(__pyx_t_7sklearn_4tre
  */
       __pyx_v_start = (__pyx_v_pivot + 1);
 
-      /* "_splitter.pyx":953
+      /* "stpredictions/models/OK3/_splitter.pyx":953
  *             break
  * 
  *         if sorted_array[pivot] < value:             # <<<<<<<<<<<<<<
@@ -10025,7 +9839,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_binary_search(__pyx_t_7sklearn_4tre
       goto __pyx_L6;
     }
 
-    /* "_splitter.pyx":956
+    /* "stpredictions/models/OK3/_splitter.pyx":956
  *             start = pivot + 1
  *         else:
  *             end = pivot             # <<<<<<<<<<<<<<
@@ -10039,7 +9853,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_binary_search(__pyx_t_7sklearn_4tre
   }
   __pyx_L4_break:;
 
-  /* "_splitter.pyx":957
+  /* "stpredictions/models/OK3/_splitter.pyx":957
  *         else:
  *             end = pivot
  *     new_start[0] = start             # <<<<<<<<<<<<<<
@@ -10048,7 +9862,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_binary_search(__pyx_t_7sklearn_4tre
  */
   (__pyx_v_new_start[0]) = __pyx_v_start;
 
-  /* "_splitter.pyx":935
+  /* "stpredictions/models/OK3/_splitter.pyx":935
  * 
  * 
  * cdef inline void binary_search(INT32_t* sorted_array,             # <<<<<<<<<<<<<<
@@ -10059,7 +9873,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_binary_search(__pyx_t_7sklearn_4tre
   /* function exit code */
 }
 
-/* "_splitter.pyx":960
+/* "stpredictions/models/OK3/_splitter.pyx":960
  * 
  * 
  * cdef inline void extract_nnz_index_to_samples(INT32_t* X_indices,             # <<<<<<<<<<<<<<
@@ -10067,18 +9881,18 @@ static CYTHON_INLINE void __pyx_f_9_splitter_binary_search(__pyx_t_7sklearn_4tre
  *                                               INT32_t indptr_start,
  */
 
-static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_t_7sklearn_4tree_5_tree_INT32_t *__pyx_v_X_indices, __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_v_X_data, __pyx_t_7sklearn_4tree_5_tree_INT32_t __pyx_v_indptr_start, __pyx_t_7sklearn_4tree_5_tree_INT32_t __pyx_v_indptr_end, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_index_to_samples, __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_v_Xf, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_end_negative, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_start_positive) {
-  __pyx_t_7sklearn_4tree_5_tree_INT32_t __pyx_v_k;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_index;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end_negative_;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start_positive_;
-  __pyx_t_7sklearn_4tree_5_tree_INT32_t __pyx_t_1;
-  __pyx_t_7sklearn_4tree_5_tree_INT32_t __pyx_t_2;
-  __pyx_t_7sklearn_4tree_5_tree_INT32_t __pyx_t_3;
+static CYTHON_INLINE void __pyx_f_13stpredictions_6models_3OK3_9_splitter_extract_nnz_index_to_samples(__pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t *__pyx_v_X_indices, __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_v_X_data, __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t __pyx_v_indptr_start, __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t __pyx_v_indptr_end, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_index_to_samples, __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_v_Xf, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_end_negative, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_start_positive) {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t __pyx_v_k;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_index;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end_negative_;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start_positive_;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t __pyx_t_1;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t __pyx_t_2;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t __pyx_t_3;
   int __pyx_t_4;
   int __pyx_t_5;
 
-  /* "_splitter.pyx":977
+  /* "stpredictions/models/OK3/_splitter.pyx":977
  *     cdef INT32_t k
  *     cdef SIZE_t index
  *     cdef SIZE_t end_negative_ = start             # <<<<<<<<<<<<<<
@@ -10087,7 +9901,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_
  */
   __pyx_v_end_negative_ = __pyx_v_start;
 
-  /* "_splitter.pyx":978
+  /* "stpredictions/models/OK3/_splitter.pyx":978
  *     cdef SIZE_t index
  *     cdef SIZE_t end_negative_ = start
  *     cdef SIZE_t start_positive_ = end             # <<<<<<<<<<<<<<
@@ -10096,7 +9910,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_
  */
   __pyx_v_start_positive_ = __pyx_v_end;
 
-  /* "_splitter.pyx":980
+  /* "stpredictions/models/OK3/_splitter.pyx":980
  *     cdef SIZE_t start_positive_ = end
  * 
  *     for k in range(indptr_start, indptr_end):             # <<<<<<<<<<<<<<
@@ -10108,7 +9922,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_
   for (__pyx_t_3 = __pyx_v_indptr_start; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_k = __pyx_t_3;
 
-    /* "_splitter.pyx":981
+    /* "stpredictions/models/OK3/_splitter.pyx":981
  * 
  *     for k in range(indptr_start, indptr_end):
  *         if start <= index_to_samples[X_indices[k]] < end:             # <<<<<<<<<<<<<<
@@ -10122,7 +9936,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_
     __pyx_t_5 = (__pyx_t_4 != 0);
     if (__pyx_t_5) {
 
-      /* "_splitter.pyx":982
+      /* "stpredictions/models/OK3/_splitter.pyx":982
  *     for k in range(indptr_start, indptr_end):
  *         if start <= index_to_samples[X_indices[k]] < end:
  *             if X_data[k] > 0:             # <<<<<<<<<<<<<<
@@ -10132,7 +9946,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_
       __pyx_t_5 = (((__pyx_v_X_data[__pyx_v_k]) > 0.0) != 0);
       if (__pyx_t_5) {
 
-        /* "_splitter.pyx":983
+        /* "stpredictions/models/OK3/_splitter.pyx":983
  *         if start <= index_to_samples[X_indices[k]] < end:
  *             if X_data[k] > 0:
  *                 start_positive_ -= 1             # <<<<<<<<<<<<<<
@@ -10141,7 +9955,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_
  */
         __pyx_v_start_positive_ = (__pyx_v_start_positive_ - 1);
 
-        /* "_splitter.pyx":984
+        /* "stpredictions/models/OK3/_splitter.pyx":984
  *             if X_data[k] > 0:
  *                 start_positive_ -= 1
  *                 Xf[start_positive_] = X_data[k]             # <<<<<<<<<<<<<<
@@ -10150,7 +9964,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_
  */
         (__pyx_v_Xf[__pyx_v_start_positive_]) = (__pyx_v_X_data[__pyx_v_k]);
 
-        /* "_splitter.pyx":985
+        /* "stpredictions/models/OK3/_splitter.pyx":985
  *                 start_positive_ -= 1
  *                 Xf[start_positive_] = X_data[k]
  *                 index = index_to_samples[X_indices[k]]             # <<<<<<<<<<<<<<
@@ -10159,16 +9973,16 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_
  */
         __pyx_v_index = (__pyx_v_index_to_samples[(__pyx_v_X_indices[__pyx_v_k])]);
 
-        /* "_splitter.pyx":986
+        /* "stpredictions/models/OK3/_splitter.pyx":986
  *                 Xf[start_positive_] = X_data[k]
  *                 index = index_to_samples[X_indices[k]]
  *                 sparse_swap(index_to_samples, samples, index, start_positive_)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-        __pyx_f_9_splitter_sparse_swap(__pyx_v_index_to_samples, __pyx_v_samples, __pyx_v_index, __pyx_v_start_positive_);
+        __pyx_f_13stpredictions_6models_3OK3_9_splitter_sparse_swap(__pyx_v_index_to_samples, __pyx_v_samples, __pyx_v_index, __pyx_v_start_positive_);
 
-        /* "_splitter.pyx":982
+        /* "stpredictions/models/OK3/_splitter.pyx":982
  *     for k in range(indptr_start, indptr_end):
  *         if start <= index_to_samples[X_indices[k]] < end:
  *             if X_data[k] > 0:             # <<<<<<<<<<<<<<
@@ -10178,7 +9992,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_
         goto __pyx_L6;
       }
 
-      /* "_splitter.pyx":989
+      /* "stpredictions/models/OK3/_splitter.pyx":989
  * 
  * 
  *             elif X_data[k] < 0:             # <<<<<<<<<<<<<<
@@ -10188,7 +10002,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_
       __pyx_t_5 = (((__pyx_v_X_data[__pyx_v_k]) < 0.0) != 0);
       if (__pyx_t_5) {
 
-        /* "_splitter.pyx":990
+        /* "stpredictions/models/OK3/_splitter.pyx":990
  * 
  *             elif X_data[k] < 0:
  *                 Xf[end_negative_] = X_data[k]             # <<<<<<<<<<<<<<
@@ -10197,7 +10011,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_
  */
         (__pyx_v_Xf[__pyx_v_end_negative_]) = (__pyx_v_X_data[__pyx_v_k]);
 
-        /* "_splitter.pyx":991
+        /* "stpredictions/models/OK3/_splitter.pyx":991
  *             elif X_data[k] < 0:
  *                 Xf[end_negative_] = X_data[k]
  *                 index = index_to_samples[X_indices[k]]             # <<<<<<<<<<<<<<
@@ -10206,16 +10020,16 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_
  */
         __pyx_v_index = (__pyx_v_index_to_samples[(__pyx_v_X_indices[__pyx_v_k])]);
 
-        /* "_splitter.pyx":992
+        /* "stpredictions/models/OK3/_splitter.pyx":992
  *                 Xf[end_negative_] = X_data[k]
  *                 index = index_to_samples[X_indices[k]]
  *                 sparse_swap(index_to_samples, samples, index, end_negative_)             # <<<<<<<<<<<<<<
  *                 end_negative_ += 1
  * 
  */
-        __pyx_f_9_splitter_sparse_swap(__pyx_v_index_to_samples, __pyx_v_samples, __pyx_v_index, __pyx_v_end_negative_);
+        __pyx_f_13stpredictions_6models_3OK3_9_splitter_sparse_swap(__pyx_v_index_to_samples, __pyx_v_samples, __pyx_v_index, __pyx_v_end_negative_);
 
-        /* "_splitter.pyx":993
+        /* "stpredictions/models/OK3/_splitter.pyx":993
  *                 index = index_to_samples[X_indices[k]]
  *                 sparse_swap(index_to_samples, samples, index, end_negative_)
  *                 end_negative_ += 1             # <<<<<<<<<<<<<<
@@ -10224,7 +10038,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_
  */
         __pyx_v_end_negative_ = (__pyx_v_end_negative_ + 1);
 
-        /* "_splitter.pyx":989
+        /* "stpredictions/models/OK3/_splitter.pyx":989
  * 
  * 
  *             elif X_data[k] < 0:             # <<<<<<<<<<<<<<
@@ -10234,7 +10048,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_
       }
       __pyx_L6:;
 
-      /* "_splitter.pyx":981
+      /* "stpredictions/models/OK3/_splitter.pyx":981
  * 
  *     for k in range(indptr_start, indptr_end):
  *         if start <= index_to_samples[X_indices[k]] < end:             # <<<<<<<<<<<<<<
@@ -10244,7 +10058,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_
     }
   }
 
-  /* "_splitter.pyx":996
+  /* "stpredictions/models/OK3/_splitter.pyx":996
  * 
  *     # Returned values
  *     end_negative[0] = end_negative_             # <<<<<<<<<<<<<<
@@ -10253,7 +10067,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_
  */
   (__pyx_v_end_negative[0]) = __pyx_v_end_negative_;
 
-  /* "_splitter.pyx":997
+  /* "stpredictions/models/OK3/_splitter.pyx":997
  *     # Returned values
  *     end_negative[0] = end_negative_
  *     start_positive[0] = start_positive_             # <<<<<<<<<<<<<<
@@ -10262,7 +10076,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_
  */
   (__pyx_v_start_positive[0]) = __pyx_v_start_positive_;
 
-  /* "_splitter.pyx":960
+  /* "stpredictions/models/OK3/_splitter.pyx":960
  * 
  * 
  * cdef inline void extract_nnz_index_to_samples(INT32_t* X_indices,             # <<<<<<<<<<<<<<
@@ -10273,7 +10087,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_
   /* function exit code */
 }
 
-/* "_splitter.pyx":1000
+/* "stpredictions/models/OK3/_splitter.pyx":1000
  * 
  * 
  * cdef inline void extract_nnz_binary_search(INT32_t* X_indices,             # <<<<<<<<<<<<<<
@@ -10281,17 +10095,17 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_index_to_samples(__pyx_
  *                                            INT32_t indptr_start,
  */
 
-static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7sklearn_4tree_5_tree_INT32_t *__pyx_v_X_indices, __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_v_X_data, __pyx_t_7sklearn_4tree_5_tree_INT32_t __pyx_v_indptr_start, __pyx_t_7sklearn_4tree_5_tree_INT32_t __pyx_v_indptr_end, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_index_to_samples, __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_v_Xf, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_end_negative, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_start_positive, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_sorted_samples, int *__pyx_v_is_samples_sorted) {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_p;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_index;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_k;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end_negative_;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start_positive_;
+static CYTHON_INLINE void __pyx_f_13stpredictions_6models_3OK3_9_splitter_extract_nnz_binary_search(__pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t *__pyx_v_X_indices, __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_v_X_data, __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t __pyx_v_indptr_start, __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t __pyx_v_indptr_end, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_index_to_samples, __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_v_Xf, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_end_negative, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_start_positive, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_sorted_samples, int *__pyx_v_is_samples_sorted) {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_p;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_index;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_k;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end_negative_;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start_positive_;
   int __pyx_t_1;
   int __pyx_t_2;
 
-  /* "_splitter.pyx":1023
+  /* "stpredictions/models/OK3/_splitter.pyx":1023
  *     cdef SIZE_t n_samples
  * 
  *     if not is_samples_sorted[0]:             # <<<<<<<<<<<<<<
@@ -10301,7 +10115,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
   __pyx_t_1 = ((!((__pyx_v_is_samples_sorted[0]) != 0)) != 0);
   if (__pyx_t_1) {
 
-    /* "_splitter.pyx":1024
+    /* "stpredictions/models/OK3/_splitter.pyx":1024
  * 
  *     if not is_samples_sorted[0]:
  *         n_samples = end - start             # <<<<<<<<<<<<<<
@@ -10310,25 +10124,25 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
  */
     __pyx_v_n_samples = (__pyx_v_end - __pyx_v_start);
 
-    /* "_splitter.pyx":1025
+    /* "stpredictions/models/OK3/_splitter.pyx":1025
  *     if not is_samples_sorted[0]:
  *         n_samples = end - start
  *         memcpy(sorted_samples + start, samples + start,             # <<<<<<<<<<<<<<
  *                n_samples * sizeof(SIZE_t))
  *         qsort(sorted_samples + start, n_samples, sizeof(SIZE_t),
  */
-    (void)(memcpy((__pyx_v_sorted_samples + __pyx_v_start), (__pyx_v_samples + __pyx_v_start), (__pyx_v_n_samples * (sizeof(__pyx_t_7sklearn_4tree_5_tree_SIZE_t)))));
+    (void)(memcpy((__pyx_v_sorted_samples + __pyx_v_start), (__pyx_v_samples + __pyx_v_start), (__pyx_v_n_samples * (sizeof(__pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t)))));
 
-    /* "_splitter.pyx":1027
+    /* "stpredictions/models/OK3/_splitter.pyx":1027
  *         memcpy(sorted_samples + start, samples + start,
  *                n_samples * sizeof(SIZE_t))
  *         qsort(sorted_samples + start, n_samples, sizeof(SIZE_t),             # <<<<<<<<<<<<<<
  *               compare_SIZE_t)
  *         is_samples_sorted[0] = 1
  */
-    qsort((__pyx_v_sorted_samples + __pyx_v_start), __pyx_v_n_samples, (sizeof(__pyx_t_7sklearn_4tree_5_tree_SIZE_t)), __pyx_f_9_splitter_compare_SIZE_t);
+    qsort((__pyx_v_sorted_samples + __pyx_v_start), __pyx_v_n_samples, (sizeof(__pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t)), __pyx_f_13stpredictions_6models_3OK3_9_splitter_compare_SIZE_t);
 
-    /* "_splitter.pyx":1029
+    /* "stpredictions/models/OK3/_splitter.pyx":1029
  *         qsort(sorted_samples + start, n_samples, sizeof(SIZE_t),
  *               compare_SIZE_t)
  *         is_samples_sorted[0] = 1             # <<<<<<<<<<<<<<
@@ -10337,7 +10151,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
  */
     (__pyx_v_is_samples_sorted[0]) = 1;
 
-    /* "_splitter.pyx":1023
+    /* "stpredictions/models/OK3/_splitter.pyx":1023
  *     cdef SIZE_t n_samples
  * 
  *     if not is_samples_sorted[0]:             # <<<<<<<<<<<<<<
@@ -10346,7 +10160,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
  */
   }
 
-  /* "_splitter.pyx":1031
+  /* "stpredictions/models/OK3/_splitter.pyx":1031
  *         is_samples_sorted[0] = 1
  * 
  *     while (indptr_start < indptr_end and             # <<<<<<<<<<<<<<
@@ -10361,7 +10175,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
       goto __pyx_L6_bool_binop_done;
     }
 
-    /* "_splitter.pyx":1032
+    /* "stpredictions/models/OK3/_splitter.pyx":1032
  * 
  *     while (indptr_start < indptr_end and
  *            sorted_samples[start] > X_indices[indptr_start]):             # <<<<<<<<<<<<<<
@@ -10373,7 +10187,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
     __pyx_L6_bool_binop_done:;
     if (!__pyx_t_1) break;
 
-    /* "_splitter.pyx":1033
+    /* "stpredictions/models/OK3/_splitter.pyx":1033
  *     while (indptr_start < indptr_end and
  *            sorted_samples[start] > X_indices[indptr_start]):
  *         indptr_start += 1             # <<<<<<<<<<<<<<
@@ -10383,7 +10197,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
     __pyx_v_indptr_start = (__pyx_v_indptr_start + 1);
   }
 
-  /* "_splitter.pyx":1035
+  /* "stpredictions/models/OK3/_splitter.pyx":1035
  *         indptr_start += 1
  * 
  *     while (indptr_start < indptr_end and             # <<<<<<<<<<<<<<
@@ -10398,7 +10212,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
       goto __pyx_L10_bool_binop_done;
     }
 
-    /* "_splitter.pyx":1036
+    /* "stpredictions/models/OK3/_splitter.pyx":1036
  * 
  *     while (indptr_start < indptr_end and
  *            sorted_samples[end - 1] < X_indices[indptr_end - 1]):             # <<<<<<<<<<<<<<
@@ -10410,7 +10224,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
     __pyx_L10_bool_binop_done:;
     if (!__pyx_t_1) break;
 
-    /* "_splitter.pyx":1037
+    /* "stpredictions/models/OK3/_splitter.pyx":1037
  *     while (indptr_start < indptr_end and
  *            sorted_samples[end - 1] < X_indices[indptr_end - 1]):
  *         indptr_end -= 1             # <<<<<<<<<<<<<<
@@ -10420,7 +10234,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
     __pyx_v_indptr_end = (__pyx_v_indptr_end - 1);
   }
 
-  /* "_splitter.pyx":1039
+  /* "stpredictions/models/OK3/_splitter.pyx":1039
  *         indptr_end -= 1
  * 
  *     cdef SIZE_t p = start             # <<<<<<<<<<<<<<
@@ -10429,7 +10243,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
  */
   __pyx_v_p = __pyx_v_start;
 
-  /* "_splitter.pyx":1042
+  /* "stpredictions/models/OK3/_splitter.pyx":1042
  *     cdef SIZE_t index
  *     cdef SIZE_t k
  *     cdef SIZE_t end_negative_ = start             # <<<<<<<<<<<<<<
@@ -10438,7 +10252,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
  */
   __pyx_v_end_negative_ = __pyx_v_start;
 
-  /* "_splitter.pyx":1043
+  /* "stpredictions/models/OK3/_splitter.pyx":1043
  *     cdef SIZE_t k
  *     cdef SIZE_t end_negative_ = start
  *     cdef SIZE_t start_positive_ = end             # <<<<<<<<<<<<<<
@@ -10447,7 +10261,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
  */
   __pyx_v_start_positive_ = __pyx_v_end;
 
-  /* "_splitter.pyx":1045
+  /* "stpredictions/models/OK3/_splitter.pyx":1045
  *     cdef SIZE_t start_positive_ = end
  * 
  *     while (p < end and indptr_start < indptr_end):             # <<<<<<<<<<<<<<
@@ -10466,16 +10280,16 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
     __pyx_L14_bool_binop_done:;
     if (!__pyx_t_1) break;
 
-    /* "_splitter.pyx":1047
+    /* "stpredictions/models/OK3/_splitter.pyx":1047
  *     while (p < end and indptr_start < indptr_end):
  *         # Find index of sorted_samples[p] in X_indices
  *         binary_search(X_indices, indptr_start, indptr_end,             # <<<<<<<<<<<<<<
  *                       sorted_samples[p], &k, &indptr_start)
  * 
  */
-    __pyx_f_9_splitter_binary_search(__pyx_v_X_indices, __pyx_v_indptr_start, __pyx_v_indptr_end, (__pyx_v_sorted_samples[__pyx_v_p]), (&__pyx_v_k), (&__pyx_v_indptr_start));
+    __pyx_f_13stpredictions_6models_3OK3_9_splitter_binary_search(__pyx_v_X_indices, __pyx_v_indptr_start, __pyx_v_indptr_end, (__pyx_v_sorted_samples[__pyx_v_p]), (&__pyx_v_k), (&__pyx_v_indptr_start));
 
-    /* "_splitter.pyx":1050
+    /* "stpredictions/models/OK3/_splitter.pyx":1050
  *                       sorted_samples[p], &k, &indptr_start)
  * 
  *         if k != -1:             # <<<<<<<<<<<<<<
@@ -10485,7 +10299,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
     __pyx_t_1 = ((__pyx_v_k != -1L) != 0);
     if (__pyx_t_1) {
 
-      /* "_splitter.pyx":1053
+      /* "stpredictions/models/OK3/_splitter.pyx":1053
  *              # If k != -1, we have found a non zero value
  * 
  *             if X_data[k] > 0:             # <<<<<<<<<<<<<<
@@ -10495,7 +10309,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
       __pyx_t_1 = (((__pyx_v_X_data[__pyx_v_k]) > 0.0) != 0);
       if (__pyx_t_1) {
 
-        /* "_splitter.pyx":1054
+        /* "stpredictions/models/OK3/_splitter.pyx":1054
  * 
  *             if X_data[k] > 0:
  *                 start_positive_ -= 1             # <<<<<<<<<<<<<<
@@ -10504,7 +10318,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
  */
         __pyx_v_start_positive_ = (__pyx_v_start_positive_ - 1);
 
-        /* "_splitter.pyx":1055
+        /* "stpredictions/models/OK3/_splitter.pyx":1055
  *             if X_data[k] > 0:
  *                 start_positive_ -= 1
  *                 Xf[start_positive_] = X_data[k]             # <<<<<<<<<<<<<<
@@ -10513,7 +10327,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
  */
         (__pyx_v_Xf[__pyx_v_start_positive_]) = (__pyx_v_X_data[__pyx_v_k]);
 
-        /* "_splitter.pyx":1056
+        /* "stpredictions/models/OK3/_splitter.pyx":1056
  *                 start_positive_ -= 1
  *                 Xf[start_positive_] = X_data[k]
  *                 index = index_to_samples[X_indices[k]]             # <<<<<<<<<<<<<<
@@ -10522,16 +10336,16 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
  */
         __pyx_v_index = (__pyx_v_index_to_samples[(__pyx_v_X_indices[__pyx_v_k])]);
 
-        /* "_splitter.pyx":1057
+        /* "stpredictions/models/OK3/_splitter.pyx":1057
  *                 Xf[start_positive_] = X_data[k]
  *                 index = index_to_samples[X_indices[k]]
  *                 sparse_swap(index_to_samples, samples, index, start_positive_)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-        __pyx_f_9_splitter_sparse_swap(__pyx_v_index_to_samples, __pyx_v_samples, __pyx_v_index, __pyx_v_start_positive_);
+        __pyx_f_13stpredictions_6models_3OK3_9_splitter_sparse_swap(__pyx_v_index_to_samples, __pyx_v_samples, __pyx_v_index, __pyx_v_start_positive_);
 
-        /* "_splitter.pyx":1053
+        /* "stpredictions/models/OK3/_splitter.pyx":1053
  *              # If k != -1, we have found a non zero value
  * 
  *             if X_data[k] > 0:             # <<<<<<<<<<<<<<
@@ -10541,7 +10355,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
         goto __pyx_L17;
       }
 
-      /* "_splitter.pyx":1060
+      /* "stpredictions/models/OK3/_splitter.pyx":1060
  * 
  * 
  *             elif X_data[k] < 0:             # <<<<<<<<<<<<<<
@@ -10551,7 +10365,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
       __pyx_t_1 = (((__pyx_v_X_data[__pyx_v_k]) < 0.0) != 0);
       if (__pyx_t_1) {
 
-        /* "_splitter.pyx":1061
+        /* "stpredictions/models/OK3/_splitter.pyx":1061
  * 
  *             elif X_data[k] < 0:
  *                 Xf[end_negative_] = X_data[k]             # <<<<<<<<<<<<<<
@@ -10560,7 +10374,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
  */
         (__pyx_v_Xf[__pyx_v_end_negative_]) = (__pyx_v_X_data[__pyx_v_k]);
 
-        /* "_splitter.pyx":1062
+        /* "stpredictions/models/OK3/_splitter.pyx":1062
  *             elif X_data[k] < 0:
  *                 Xf[end_negative_] = X_data[k]
  *                 index = index_to_samples[X_indices[k]]             # <<<<<<<<<<<<<<
@@ -10569,16 +10383,16 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
  */
         __pyx_v_index = (__pyx_v_index_to_samples[(__pyx_v_X_indices[__pyx_v_k])]);
 
-        /* "_splitter.pyx":1063
+        /* "stpredictions/models/OK3/_splitter.pyx":1063
  *                 Xf[end_negative_] = X_data[k]
  *                 index = index_to_samples[X_indices[k]]
  *                 sparse_swap(index_to_samples, samples, index, end_negative_)             # <<<<<<<<<<<<<<
  *                 end_negative_ += 1
  *         p += 1
  */
-        __pyx_f_9_splitter_sparse_swap(__pyx_v_index_to_samples, __pyx_v_samples, __pyx_v_index, __pyx_v_end_negative_);
+        __pyx_f_13stpredictions_6models_3OK3_9_splitter_sparse_swap(__pyx_v_index_to_samples, __pyx_v_samples, __pyx_v_index, __pyx_v_end_negative_);
 
-        /* "_splitter.pyx":1064
+        /* "stpredictions/models/OK3/_splitter.pyx":1064
  *                 index = index_to_samples[X_indices[k]]
  *                 sparse_swap(index_to_samples, samples, index, end_negative_)
  *                 end_negative_ += 1             # <<<<<<<<<<<<<<
@@ -10587,7 +10401,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
  */
         __pyx_v_end_negative_ = (__pyx_v_end_negative_ + 1);
 
-        /* "_splitter.pyx":1060
+        /* "stpredictions/models/OK3/_splitter.pyx":1060
  * 
  * 
  *             elif X_data[k] < 0:             # <<<<<<<<<<<<<<
@@ -10597,7 +10411,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
       }
       __pyx_L17:;
 
-      /* "_splitter.pyx":1050
+      /* "stpredictions/models/OK3/_splitter.pyx":1050
  *                       sorted_samples[p], &k, &indptr_start)
  * 
  *         if k != -1:             # <<<<<<<<<<<<<<
@@ -10606,7 +10420,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
  */
     }
 
-    /* "_splitter.pyx":1065
+    /* "stpredictions/models/OK3/_splitter.pyx":1065
  *                 sparse_swap(index_to_samples, samples, index, end_negative_)
  *                 end_negative_ += 1
  *         p += 1             # <<<<<<<<<<<<<<
@@ -10616,7 +10430,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
     __pyx_v_p = (__pyx_v_p + 1);
   }
 
-  /* "_splitter.pyx":1068
+  /* "stpredictions/models/OK3/_splitter.pyx":1068
  * 
  *     # Returned values
  *     end_negative[0] = end_negative_             # <<<<<<<<<<<<<<
@@ -10625,7 +10439,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
  */
   (__pyx_v_end_negative[0]) = __pyx_v_end_negative_;
 
-  /* "_splitter.pyx":1069
+  /* "stpredictions/models/OK3/_splitter.pyx":1069
  *     # Returned values
  *     end_negative[0] = end_negative_
  *     start_positive[0] = start_positive_             # <<<<<<<<<<<<<<
@@ -10634,7 +10448,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
  */
   (__pyx_v_start_positive[0]) = __pyx_v_start_positive_;
 
-  /* "_splitter.pyx":1000
+  /* "stpredictions/models/OK3/_splitter.pyx":1000
  * 
  * 
  * cdef inline void extract_nnz_binary_search(INT32_t* X_indices,             # <<<<<<<<<<<<<<
@@ -10645,7 +10459,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
   /* function exit code */
 }
 
-/* "_splitter.pyx":1072
+/* "stpredictions/models/OK3/_splitter.pyx":1072
  * 
  * 
  * cdef inline void sparse_swap(SIZE_t* index_to_samples, SIZE_t* samples,             # <<<<<<<<<<<<<<
@@ -10653,11 +10467,11 @@ static CYTHON_INLINE void __pyx_f_9_splitter_extract_nnz_binary_search(__pyx_t_7
  *     """Swap sample pos_1 and pos_2 preserving sparse invariant."""
  */
 
-static CYTHON_INLINE void __pyx_f_9_splitter_sparse_swap(__pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_index_to_samples, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_pos_1, __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_pos_2) {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_1;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_2;
+static CYTHON_INLINE void __pyx_f_13stpredictions_6models_3OK3_9_splitter_sparse_swap(__pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_index_to_samples, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_pos_1, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_pos_2) {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_1;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_2;
 
-  /* "_splitter.pyx":1075
+  /* "stpredictions/models/OK3/_splitter.pyx":1075
  *                              SIZE_t pos_1, SIZE_t pos_2) nogil:
  *     """Swap sample pos_1 and pos_2 preserving sparse invariant."""
  *     samples[pos_1], samples[pos_2] =  samples[pos_2], samples[pos_1]             # <<<<<<<<<<<<<<
@@ -10669,7 +10483,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sparse_swap(__pyx_t_7sklearn_4tree_
   (__pyx_v_samples[__pyx_v_pos_1]) = __pyx_t_1;
   (__pyx_v_samples[__pyx_v_pos_2]) = __pyx_t_2;
 
-  /* "_splitter.pyx":1076
+  /* "stpredictions/models/OK3/_splitter.pyx":1076
  *     """Swap sample pos_1 and pos_2 preserving sparse invariant."""
  *     samples[pos_1], samples[pos_2] =  samples[pos_2], samples[pos_1]
  *     index_to_samples[samples[pos_1]] = pos_1             # <<<<<<<<<<<<<<
@@ -10678,7 +10492,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sparse_swap(__pyx_t_7sklearn_4tree_
  */
   (__pyx_v_index_to_samples[(__pyx_v_samples[__pyx_v_pos_1])]) = __pyx_v_pos_1;
 
-  /* "_splitter.pyx":1077
+  /* "stpredictions/models/OK3/_splitter.pyx":1077
  *     samples[pos_1], samples[pos_2] =  samples[pos_2], samples[pos_1]
  *     index_to_samples[samples[pos_1]] = pos_1
  *     index_to_samples[samples[pos_2]] = pos_2             # <<<<<<<<<<<<<<
@@ -10687,7 +10501,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sparse_swap(__pyx_t_7sklearn_4tree_
  */
   (__pyx_v_index_to_samples[(__pyx_v_samples[__pyx_v_pos_2])]) = __pyx_v_pos_2;
 
-  /* "_splitter.pyx":1072
+  /* "stpredictions/models/OK3/_splitter.pyx":1072
  * 
  * 
  * cdef inline void sparse_swap(SIZE_t* index_to_samples, SIZE_t* samples,             # <<<<<<<<<<<<<<
@@ -10698,7 +10512,7 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sparse_swap(__pyx_t_7sklearn_4tree_
   /* function exit code */
 }
 
-/* "_splitter.pyx":1083
+/* "stpredictions/models/OK3/_splitter.pyx":1083
  *     """Splitter for finding the best split, using the sparse data."""
  * 
  *     def __reduce__(self):             # <<<<<<<<<<<<<<
@@ -10707,19 +10521,19 @@ static CYTHON_INLINE void __pyx_f_9_splitter_sparse_swap(__pyx_t_7sklearn_4tree_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9_splitter_18BestSparseSplitter_1__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_9_splitter_18BestSparseSplitter_1__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_18BestSparseSplitter_1__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_18BestSparseSplitter_1__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_18BestSparseSplitter___reduce__(((struct __pyx_obj_9_splitter_BestSparseSplitter *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_18BestSparseSplitter___reduce__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9_splitter_18BestSparseSplitter___reduce__(struct __pyx_obj_9_splitter_BestSparseSplitter *__pyx_v_self) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_18BestSparseSplitter___reduce__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -10731,7 +10545,7 @@ static PyObject *__pyx_pf_9_splitter_18BestSparseSplitter___reduce__(struct __py
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__reduce__", 0);
 
-  /* "_splitter.pyx":1084
+  /* "stpredictions/models/OK3/_splitter.pyx":1084
  * 
  *     def __reduce__(self):
  *         return (BestSparseSplitter, (self.criterion,             # <<<<<<<<<<<<<<
@@ -10740,7 +10554,7 @@ static PyObject *__pyx_pf_9_splitter_18BestSparseSplitter___reduce__(struct __py
  */
   __Pyx_XDECREF(__pyx_r);
 
-  /* "_splitter.pyx":1085
+  /* "stpredictions/models/OK3/_splitter.pyx":1085
  *     def __reduce__(self):
  *         return (BestSparseSplitter, (self.criterion,
  *                                      self.max_features,             # <<<<<<<<<<<<<<
@@ -10750,7 +10564,7 @@ static PyObject *__pyx_pf_9_splitter_18BestSparseSplitter___reduce__(struct __py
   __pyx_t_1 = __Pyx_PyInt_From_Py_intptr_t(__pyx_v_self->__pyx_base.__pyx_base.max_features); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1085, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
 
-  /* "_splitter.pyx":1086
+  /* "stpredictions/models/OK3/_splitter.pyx":1086
  *         return (BestSparseSplitter, (self.criterion,
  *                                      self.max_features,
  *                                      self.min_samples_leaf,             # <<<<<<<<<<<<<<
@@ -10760,7 +10574,7 @@ static PyObject *__pyx_pf_9_splitter_18BestSparseSplitter___reduce__(struct __py
   __pyx_t_2 = __Pyx_PyInt_From_Py_intptr_t(__pyx_v_self->__pyx_base.__pyx_base.min_samples_leaf); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1086, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "_splitter.pyx":1087
+  /* "stpredictions/models/OK3/_splitter.pyx":1087
  *                                      self.max_features,
  *                                      self.min_samples_leaf,
  *                                      self.min_weight_leaf,             # <<<<<<<<<<<<<<
@@ -10770,7 +10584,7 @@ static PyObject *__pyx_pf_9_splitter_18BestSparseSplitter___reduce__(struct __py
   __pyx_t_3 = PyFloat_FromDouble(__pyx_v_self->__pyx_base.__pyx_base.min_weight_leaf); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1087, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
 
-  /* "_splitter.pyx":1084
+  /* "stpredictions/models/OK3/_splitter.pyx":1084
  * 
  *     def __reduce__(self):
  *         return (BestSparseSplitter, (self.criterion,             # <<<<<<<<<<<<<<
@@ -10795,7 +10609,7 @@ static PyObject *__pyx_pf_9_splitter_18BestSparseSplitter___reduce__(struct __py
   __pyx_t_2 = 0;
   __pyx_t_3 = 0;
 
-  /* "_splitter.pyx":1088
+  /* "stpredictions/models/OK3/_splitter.pyx":1088
  *                                      self.min_samples_leaf,
  *                                      self.min_weight_leaf,
  *                                      self.random_state), self.__getstate__())             # <<<<<<<<<<<<<<
@@ -10820,7 +10634,7 @@ static PyObject *__pyx_pf_9_splitter_18BestSparseSplitter___reduce__(struct __py
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "_splitter.pyx":1084
+  /* "stpredictions/models/OK3/_splitter.pyx":1084
  * 
  *     def __reduce__(self):
  *         return (BestSparseSplitter, (self.criterion,             # <<<<<<<<<<<<<<
@@ -10829,9 +10643,9 @@ static PyObject *__pyx_pf_9_splitter_18BestSparseSplitter___reduce__(struct __py
  */
   __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1084, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_INCREF(((PyObject *)__pyx_ptype_9_splitter_BestSparseSplitter));
-  __Pyx_GIVEREF(((PyObject *)__pyx_ptype_9_splitter_BestSparseSplitter));
-  PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)__pyx_ptype_9_splitter_BestSparseSplitter));
+  __Pyx_INCREF(((PyObject *)__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter));
+  __Pyx_GIVEREF(((PyObject *)__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter));
+  PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter));
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_3);
@@ -10842,7 +10656,7 @@ static PyObject *__pyx_pf_9_splitter_18BestSparseSplitter___reduce__(struct __py
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "_splitter.pyx":1083
+  /* "stpredictions/models/OK3/_splitter.pyx":1083
  *     """Splitter for finding the best split, using the sparse data."""
  * 
  *     def __reduce__(self):             # <<<<<<<<<<<<<<
@@ -10856,7 +10670,7 @@ static PyObject *__pyx_pf_9_splitter_18BestSparseSplitter___reduce__(struct __py
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("_splitter.BestSparseSplitter.__reduce__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.BestSparseSplitter.__reduce__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -10864,7 +10678,7 @@ static PyObject *__pyx_pf_9_splitter_18BestSparseSplitter___reduce__(struct __py
   return __pyx_r;
 }
 
-/* "_splitter.pyx":1090
+/* "stpredictions/models/OK3/_splitter.pyx":1090
  *                                      self.random_state), self.__getstate__())
  * 
  *     cdef int node_split(self, double impurity, SplitRecord* split,             # <<<<<<<<<<<<<<
@@ -10872,56 +10686,56 @@ static PyObject *__pyx_pf_9_splitter_18BestSparseSplitter___reduce__(struct __py
  *         """Find the best split on node samples[start:end], using sparse features
  */
 
-static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9_splitter_BestSparseSplitter *__pyx_v_self, double __pyx_v_impurity, struct __pyx_t_9_splitter_SplitRecord *__pyx_v_split, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_n_constant_features) {
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end;
-  CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_INT32_t *__pyx_v_X_indices;
-  CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_INT32_t *__pyx_v_X_indptr;
-  CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_v_X_data;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_constant_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_features;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_v_Xf;
-  CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_sorted_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_index_to_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_max_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_min_samples_leaf;
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter *__pyx_v_self, double __pyx_v_impurity, struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord *__pyx_v_split, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_n_constant_features) {
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end;
+  CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t *__pyx_v_X_indices;
+  CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t *__pyx_v_X_indptr;
+  CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_v_X_data;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_constant_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_v_Xf;
+  CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_sorted_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_index_to_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_max_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_min_samples_leaf;
   double __pyx_v_min_weight_leaf;
-  __pyx_t_7sklearn_4tree_5_tree_UINT32_t *__pyx_v_random_state;
-  struct __pyx_t_9_splitter_SplitRecord __pyx_v_best;
-  struct __pyx_t_9_splitter_SplitRecord __pyx_v_current;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_UINT32_t *__pyx_v_random_state;
+  struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord __pyx_v_best;
+  struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord __pyx_v_current;
   double __pyx_v_current_proxy_improvement;
   double __pyx_v_best_proxy_improvement;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_f_i;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_f_j;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_p;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_visited_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_found_constants;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_drawn_constants;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_known_constants;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_total_constants;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_p_next;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_p_prev;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_f_i;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_f_j;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_p;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_visited_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_found_constants;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_drawn_constants;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_known_constants;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_total_constants;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_p_next;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_p_prev;
   int __pyx_v_is_samples_sorted;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start_positive;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end_negative;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start_positive;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end_negative;
   int __pyx_r;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_t_1;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_2;
-  __pyx_t_7sklearn_4tree_5_tree_INT32_t *__pyx_t_3;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_t_4;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_t_1;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_2;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t *__pyx_t_3;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_t_4;
   double __pyx_t_5;
   int __pyx_t_6;
   int __pyx_t_7;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_8;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_9;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_8;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_9;
   int __pyx_t_10;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
 
-  /* "_splitter.pyx":1098
+  /* "stpredictions/models/OK3/_splitter.pyx":1098
  *         """
  *         # Find the best split
  *         cdef SIZE_t* samples = self.samples             # <<<<<<<<<<<<<<
@@ -10931,7 +10745,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
   __pyx_t_1 = __pyx_v_self->__pyx_base.__pyx_base.samples;
   __pyx_v_samples = __pyx_t_1;
 
-  /* "_splitter.pyx":1099
+  /* "stpredictions/models/OK3/_splitter.pyx":1099
  *         # Find the best split
  *         cdef SIZE_t* samples = self.samples
  *         cdef SIZE_t start = self.start             # <<<<<<<<<<<<<<
@@ -10941,7 +10755,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.start;
   __pyx_v_start = __pyx_t_2;
 
-  /* "_splitter.pyx":1100
+  /* "stpredictions/models/OK3/_splitter.pyx":1100
  *         cdef SIZE_t* samples = self.samples
  *         cdef SIZE_t start = self.start
  *         cdef SIZE_t end = self.end             # <<<<<<<<<<<<<<
@@ -10951,7 +10765,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.end;
   __pyx_v_end = __pyx_t_2;
 
-  /* "_splitter.pyx":1102
+  /* "stpredictions/models/OK3/_splitter.pyx":1102
  *         cdef SIZE_t end = self.end
  * 
  *         cdef INT32_t* X_indices = self.X_indices             # <<<<<<<<<<<<<<
@@ -10961,7 +10775,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
   __pyx_t_3 = __pyx_v_self->__pyx_base.X_indices;
   __pyx_v_X_indices = __pyx_t_3;
 
-  /* "_splitter.pyx":1103
+  /* "stpredictions/models/OK3/_splitter.pyx":1103
  * 
  *         cdef INT32_t* X_indices = self.X_indices
  *         cdef INT32_t* X_indptr = self.X_indptr             # <<<<<<<<<<<<<<
@@ -10971,7 +10785,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
   __pyx_t_3 = __pyx_v_self->__pyx_base.X_indptr;
   __pyx_v_X_indptr = __pyx_t_3;
 
-  /* "_splitter.pyx":1104
+  /* "stpredictions/models/OK3/_splitter.pyx":1104
  *         cdef INT32_t* X_indices = self.X_indices
  *         cdef INT32_t* X_indptr = self.X_indptr
  *         cdef DTYPE_t* X_data = self.X_data             # <<<<<<<<<<<<<<
@@ -10981,7 +10795,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
   __pyx_t_4 = __pyx_v_self->__pyx_base.X_data;
   __pyx_v_X_data = __pyx_t_4;
 
-  /* "_splitter.pyx":1106
+  /* "stpredictions/models/OK3/_splitter.pyx":1106
  *         cdef DTYPE_t* X_data = self.X_data
  * 
  *         cdef SIZE_t* features = self.features             # <<<<<<<<<<<<<<
@@ -10991,7 +10805,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
   __pyx_t_1 = __pyx_v_self->__pyx_base.__pyx_base.features;
   __pyx_v_features = __pyx_t_1;
 
-  /* "_splitter.pyx":1107
+  /* "stpredictions/models/OK3/_splitter.pyx":1107
  * 
  *         cdef SIZE_t* features = self.features
  *         cdef SIZE_t* constant_features = self.constant_features             # <<<<<<<<<<<<<<
@@ -11001,7 +10815,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
   __pyx_t_1 = __pyx_v_self->__pyx_base.__pyx_base.constant_features;
   __pyx_v_constant_features = __pyx_t_1;
 
-  /* "_splitter.pyx":1108
+  /* "stpredictions/models/OK3/_splitter.pyx":1108
  *         cdef SIZE_t* features = self.features
  *         cdef SIZE_t* constant_features = self.constant_features
  *         cdef SIZE_t n_features = self.n_features             # <<<<<<<<<<<<<<
@@ -11011,7 +10825,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.n_features;
   __pyx_v_n_features = __pyx_t_2;
 
-  /* "_splitter.pyx":1110
+  /* "stpredictions/models/OK3/_splitter.pyx":1110
  *         cdef SIZE_t n_features = self.n_features
  * 
  *         cdef DTYPE_t* Xf = self.feature_values             # <<<<<<<<<<<<<<
@@ -11021,7 +10835,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
   __pyx_t_4 = __pyx_v_self->__pyx_base.__pyx_base.feature_values;
   __pyx_v_Xf = __pyx_t_4;
 
-  /* "_splitter.pyx":1111
+  /* "stpredictions/models/OK3/_splitter.pyx":1111
  * 
  *         cdef DTYPE_t* Xf = self.feature_values
  *         cdef SIZE_t* sorted_samples = self.sorted_samples             # <<<<<<<<<<<<<<
@@ -11031,7 +10845,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
   __pyx_t_1 = __pyx_v_self->__pyx_base.sorted_samples;
   __pyx_v_sorted_samples = __pyx_t_1;
 
-  /* "_splitter.pyx":1112
+  /* "stpredictions/models/OK3/_splitter.pyx":1112
  *         cdef DTYPE_t* Xf = self.feature_values
  *         cdef SIZE_t* sorted_samples = self.sorted_samples
  *         cdef SIZE_t* index_to_samples = self.index_to_samples             # <<<<<<<<<<<<<<
@@ -11041,7 +10855,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
   __pyx_t_1 = __pyx_v_self->__pyx_base.index_to_samples;
   __pyx_v_index_to_samples = __pyx_t_1;
 
-  /* "_splitter.pyx":1113
+  /* "stpredictions/models/OK3/_splitter.pyx":1113
  *         cdef SIZE_t* sorted_samples = self.sorted_samples
  *         cdef SIZE_t* index_to_samples = self.index_to_samples
  *         cdef SIZE_t max_features = self.max_features             # <<<<<<<<<<<<<<
@@ -11051,7 +10865,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.max_features;
   __pyx_v_max_features = __pyx_t_2;
 
-  /* "_splitter.pyx":1114
+  /* "stpredictions/models/OK3/_splitter.pyx":1114
  *         cdef SIZE_t* index_to_samples = self.index_to_samples
  *         cdef SIZE_t max_features = self.max_features
  *         cdef SIZE_t min_samples_leaf = self.min_samples_leaf             # <<<<<<<<<<<<<<
@@ -11061,7 +10875,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.min_samples_leaf;
   __pyx_v_min_samples_leaf = __pyx_t_2;
 
-  /* "_splitter.pyx":1115
+  /* "stpredictions/models/OK3/_splitter.pyx":1115
  *         cdef SIZE_t max_features = self.max_features
  *         cdef SIZE_t min_samples_leaf = self.min_samples_leaf
  *         cdef double min_weight_leaf = self.min_weight_leaf             # <<<<<<<<<<<<<<
@@ -11071,7 +10885,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
   __pyx_t_5 = __pyx_v_self->__pyx_base.__pyx_base.min_weight_leaf;
   __pyx_v_min_weight_leaf = __pyx_t_5;
 
-  /* "_splitter.pyx":1116
+  /* "stpredictions/models/OK3/_splitter.pyx":1116
  *         cdef SIZE_t min_samples_leaf = self.min_samples_leaf
  *         cdef double min_weight_leaf = self.min_weight_leaf
  *         cdef UINT32_t* random_state = &self.rand_r_state             # <<<<<<<<<<<<<<
@@ -11080,34 +10894,34 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
   __pyx_v_random_state = (&__pyx_v_self->__pyx_base.__pyx_base.rand_r_state);
 
-  /* "_splitter.pyx":1119
+  /* "stpredictions/models/OK3/_splitter.pyx":1119
  * 
  *         cdef SplitRecord best, current
  *         _init_split(&best, end)             # <<<<<<<<<<<<<<
  *         cdef double current_proxy_improvement = - INFINITY
  *         cdef double best_proxy_improvement = - INFINITY
  */
-  __pyx_f_9_splitter__init_split((&__pyx_v_best), __pyx_v_end);
+  __pyx_f_13stpredictions_6models_3OK3_9_splitter__init_split((&__pyx_v_best), __pyx_v_end);
 
-  /* "_splitter.pyx":1120
+  /* "stpredictions/models/OK3/_splitter.pyx":1120
  *         cdef SplitRecord best, current
  *         _init_split(&best, end)
  *         cdef double current_proxy_improvement = - INFINITY             # <<<<<<<<<<<<<<
  *         cdef double best_proxy_improvement = - INFINITY
  * 
  */
-  __pyx_v_current_proxy_improvement = (-__pyx_v_9_splitter_INFINITY);
+  __pyx_v_current_proxy_improvement = (-__pyx_v_13stpredictions_6models_3OK3_9_splitter_INFINITY);
 
-  /* "_splitter.pyx":1121
+  /* "stpredictions/models/OK3/_splitter.pyx":1121
  *         _init_split(&best, end)
  *         cdef double current_proxy_improvement = - INFINITY
  *         cdef double best_proxy_improvement = - INFINITY             # <<<<<<<<<<<<<<
  * 
  *         cdef SIZE_t f_i = n_features
  */
-  __pyx_v_best_proxy_improvement = (-__pyx_v_9_splitter_INFINITY);
+  __pyx_v_best_proxy_improvement = (-__pyx_v_13stpredictions_6models_3OK3_9_splitter_INFINITY);
 
-  /* "_splitter.pyx":1123
+  /* "stpredictions/models/OK3/_splitter.pyx":1123
  *         cdef double best_proxy_improvement = - INFINITY
  * 
  *         cdef SIZE_t f_i = n_features             # <<<<<<<<<<<<<<
@@ -11116,7 +10930,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
   __pyx_v_f_i = __pyx_v_n_features;
 
-  /* "_splitter.pyx":1125
+  /* "stpredictions/models/OK3/_splitter.pyx":1125
  *         cdef SIZE_t f_i = n_features
  *         cdef SIZE_t f_j, p
  *         cdef SIZE_t n_visited_features = 0             # <<<<<<<<<<<<<<
@@ -11125,7 +10939,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
   __pyx_v_n_visited_features = 0;
 
-  /* "_splitter.pyx":1127
+  /* "stpredictions/models/OK3/_splitter.pyx":1127
  *         cdef SIZE_t n_visited_features = 0
  *         # Number of features discovered to be constant during the split search
  *         cdef SIZE_t n_found_constants = 0             # <<<<<<<<<<<<<<
@@ -11134,7 +10948,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
   __pyx_v_n_found_constants = 0;
 
-  /* "_splitter.pyx":1129
+  /* "stpredictions/models/OK3/_splitter.pyx":1129
  *         cdef SIZE_t n_found_constants = 0
  *         # Number of features known to be constant and drawn without replacement
  *         cdef SIZE_t n_drawn_constants = 0             # <<<<<<<<<<<<<<
@@ -11143,7 +10957,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
   __pyx_v_n_drawn_constants = 0;
 
-  /* "_splitter.pyx":1130
+  /* "stpredictions/models/OK3/_splitter.pyx":1130
  *         # Number of features known to be constant and drawn without replacement
  *         cdef SIZE_t n_drawn_constants = 0
  *         cdef SIZE_t n_known_constants = n_constant_features[0]             # <<<<<<<<<<<<<<
@@ -11152,7 +10966,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
   __pyx_v_n_known_constants = (__pyx_v_n_constant_features[0]);
 
-  /* "_splitter.pyx":1132
+  /* "stpredictions/models/OK3/_splitter.pyx":1132
  *         cdef SIZE_t n_known_constants = n_constant_features[0]
  *         # n_total_constants = n_known_constants + n_found_constants
  *         cdef SIZE_t n_total_constants = n_known_constants             # <<<<<<<<<<<<<<
@@ -11161,7 +10975,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
   __pyx_v_n_total_constants = __pyx_v_n_known_constants;
 
-  /* "_splitter.pyx":1137
+  /* "stpredictions/models/OK3/_splitter.pyx":1137
  *         cdef SIZE_t p_next
  *         cdef SIZE_t p_prev
  *         cdef bint is_samples_sorted = 0  # indicate is sorted_samples is             # <<<<<<<<<<<<<<
@@ -11170,7 +10984,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
   __pyx_v_is_samples_sorted = 0;
 
-  /* "_splitter.pyx":1154
+  /* "stpredictions/models/OK3/_splitter.pyx":1154
  *         # newly discovered constant features to spare computation on descendant
  *         # nodes.
  *         while (f_i > n_total_constants and  # Stop early if remaining features             # <<<<<<<<<<<<<<
@@ -11185,7 +10999,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
       goto __pyx_L5_bool_binop_done;
     }
 
-    /* "_splitter.pyx":1156
+    /* "stpredictions/models/OK3/_splitter.pyx":1156
  *         while (f_i > n_total_constants and  # Stop early if remaining features
  *                                             # are constant
  *                 (n_visited_features < max_features or             # <<<<<<<<<<<<<<
@@ -11199,7 +11013,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
       goto __pyx_L5_bool_binop_done;
     }
 
-    /* "_splitter.pyx":1158
+    /* "stpredictions/models/OK3/_splitter.pyx":1158
  *                 (n_visited_features < max_features or
  *                  # At least one drawn features must be non constant
  *                  n_visited_features <= n_found_constants + n_drawn_constants)):             # <<<<<<<<<<<<<<
@@ -11211,7 +11025,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
     __pyx_L5_bool_binop_done:;
     if (!__pyx_t_6) break;
 
-    /* "_splitter.pyx":1160
+    /* "stpredictions/models/OK3/_splitter.pyx":1160
  *                  n_visited_features <= n_found_constants + n_drawn_constants)):
  * 
  *             n_visited_features += 1             # <<<<<<<<<<<<<<
@@ -11220,16 +11034,16 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
     __pyx_v_n_visited_features = (__pyx_v_n_visited_features + 1);
 
-    /* "_splitter.pyx":1174
+    /* "stpredictions/models/OK3/_splitter.pyx":1174
  * 
  *             # Draw a feature at random
  *             f_j = rand_int(n_drawn_constants, f_i - n_found_constants,             # <<<<<<<<<<<<<<
  *                            random_state)
  * 
  */
-    __pyx_v_f_j = __pyx_f_7sklearn_4tree_6_utils_rand_int(__pyx_v_n_drawn_constants, (__pyx_v_f_i - __pyx_v_n_found_constants), __pyx_v_random_state);
+    __pyx_v_f_j = __pyx_f_13stpredictions_6models_3OK3_6_utils_rand_int(__pyx_v_n_drawn_constants, (__pyx_v_f_i - __pyx_v_n_found_constants), __pyx_v_random_state);
 
-    /* "_splitter.pyx":1177
+    /* "stpredictions/models/OK3/_splitter.pyx":1177
  *                            random_state)
  * 
  *             if f_j < n_known_constants:             # <<<<<<<<<<<<<<
@@ -11239,7 +11053,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
     __pyx_t_6 = ((__pyx_v_f_j < __pyx_v_n_known_constants) != 0);
     if (__pyx_t_6) {
 
-      /* "_splitter.pyx":1179
+      /* "stpredictions/models/OK3/_splitter.pyx":1179
  *             if f_j < n_known_constants:
  *                 # f_j in the interval [n_drawn_constants, n_known_constants[
  *                 features[f_j], features[n_drawn_constants] = features[n_drawn_constants], features[f_j]             # <<<<<<<<<<<<<<
@@ -11251,7 +11065,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
       (__pyx_v_features[__pyx_v_f_j]) = __pyx_t_2;
       (__pyx_v_features[__pyx_v_n_drawn_constants]) = __pyx_t_8;
 
-      /* "_splitter.pyx":1181
+      /* "stpredictions/models/OK3/_splitter.pyx":1181
  *                 features[f_j], features[n_drawn_constants] = features[n_drawn_constants], features[f_j]
  * 
  *                 n_drawn_constants += 1             # <<<<<<<<<<<<<<
@@ -11260,7 +11074,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
       __pyx_v_n_drawn_constants = (__pyx_v_n_drawn_constants + 1);
 
-      /* "_splitter.pyx":1177
+      /* "stpredictions/models/OK3/_splitter.pyx":1177
  *                            random_state)
  * 
  *             if f_j < n_known_constants:             # <<<<<<<<<<<<<<
@@ -11270,7 +11084,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
       goto __pyx_L8;
     }
 
-    /* "_splitter.pyx":1185
+    /* "stpredictions/models/OK3/_splitter.pyx":1185
  *             else:
  *                 # f_j in the interval [n_known_constants, f_i - n_found_constants[
  *                 f_j += n_found_constants             # <<<<<<<<<<<<<<
@@ -11280,7 +11094,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
     /*else*/ {
       __pyx_v_f_j = (__pyx_v_f_j + __pyx_v_n_found_constants);
 
-      /* "_splitter.pyx":1188
+      /* "stpredictions/models/OK3/_splitter.pyx":1188
  *                 # f_j in the interval [n_total_constants, f_i[
  * 
  *                 current.feature = features[f_j]             # <<<<<<<<<<<<<<
@@ -11289,34 +11103,34 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
       __pyx_v_current.feature = (__pyx_v_features[__pyx_v_f_j]);
 
-      /* "_splitter.pyx":1189
+      /* "stpredictions/models/OK3/_splitter.pyx":1189
  * 
  *                 current.feature = features[f_j]
  *                 self.extract_nnz(current.feature,             # <<<<<<<<<<<<<<
  *                                  &end_negative, &start_positive,
  *                                  &is_samples_sorted)
  */
-      __pyx_f_9_splitter_18BaseSparseSplitter_extract_nnz(((struct __pyx_obj_9_splitter_BaseSparseSplitter *)__pyx_v_self), __pyx_v_current.feature, (&__pyx_v_end_negative), (&__pyx_v_start_positive), (&__pyx_v_is_samples_sorted));
+      __pyx_f_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_extract_nnz(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *)__pyx_v_self), __pyx_v_current.feature, (&__pyx_v_end_negative), (&__pyx_v_start_positive), (&__pyx_v_is_samples_sorted));
 
-      /* "_splitter.pyx":1194
+      /* "stpredictions/models/OK3/_splitter.pyx":1194
  * 
  *                 # Sort the positive and negative parts of `Xf`
  *                 sort(Xf + start, samples + start, end_negative - start)             # <<<<<<<<<<<<<<
  *                 sort(Xf + start_positive, samples + start_positive,
  *                      end - start_positive)
  */
-      __pyx_f_9_splitter_sort((__pyx_v_Xf + __pyx_v_start), (__pyx_v_samples + __pyx_v_start), (__pyx_v_end_negative - __pyx_v_start));
+      __pyx_f_13stpredictions_6models_3OK3_9_splitter_sort((__pyx_v_Xf + __pyx_v_start), (__pyx_v_samples + __pyx_v_start), (__pyx_v_end_negative - __pyx_v_start));
 
-      /* "_splitter.pyx":1195
+      /* "stpredictions/models/OK3/_splitter.pyx":1195
  *                 # Sort the positive and negative parts of `Xf`
  *                 sort(Xf + start, samples + start, end_negative - start)
  *                 sort(Xf + start_positive, samples + start_positive,             # <<<<<<<<<<<<<<
  *                      end - start_positive)
  * 
  */
-      __pyx_f_9_splitter_sort((__pyx_v_Xf + __pyx_v_start_positive), (__pyx_v_samples + __pyx_v_start_positive), (__pyx_v_end - __pyx_v_start_positive));
+      __pyx_f_13stpredictions_6models_3OK3_9_splitter_sort((__pyx_v_Xf + __pyx_v_start_positive), (__pyx_v_samples + __pyx_v_start_positive), (__pyx_v_end - __pyx_v_start_positive));
 
-      /* "_splitter.pyx":1199
+      /* "stpredictions/models/OK3/_splitter.pyx":1199
  * 
  *                 # Update index_to_samples to take into account the sort
  *                 for p in range(start, end_negative):             # <<<<<<<<<<<<<<
@@ -11328,7 +11142,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
       for (__pyx_t_9 = __pyx_v_start; __pyx_t_9 < __pyx_t_2; __pyx_t_9+=1) {
         __pyx_v_p = __pyx_t_9;
 
-        /* "_splitter.pyx":1200
+        /* "stpredictions/models/OK3/_splitter.pyx":1200
  *                 # Update index_to_samples to take into account the sort
  *                 for p in range(start, end_negative):
  *                     index_to_samples[samples[p]] = p             # <<<<<<<<<<<<<<
@@ -11338,7 +11152,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
         (__pyx_v_index_to_samples[(__pyx_v_samples[__pyx_v_p])]) = __pyx_v_p;
       }
 
-      /* "_splitter.pyx":1201
+      /* "stpredictions/models/OK3/_splitter.pyx":1201
  *                 for p in range(start, end_negative):
  *                     index_to_samples[samples[p]] = p
  *                 for p in range(start_positive, end):             # <<<<<<<<<<<<<<
@@ -11350,7 +11164,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
       for (__pyx_t_9 = __pyx_v_start_positive; __pyx_t_9 < __pyx_t_2; __pyx_t_9+=1) {
         __pyx_v_p = __pyx_t_9;
 
-        /* "_splitter.pyx":1202
+        /* "stpredictions/models/OK3/_splitter.pyx":1202
  *                     index_to_samples[samples[p]] = p
  *                 for p in range(start_positive, end):
  *                     index_to_samples[samples[p]] = p             # <<<<<<<<<<<<<<
@@ -11360,7 +11174,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
         (__pyx_v_index_to_samples[(__pyx_v_samples[__pyx_v_p])]) = __pyx_v_p;
       }
 
-      /* "_splitter.pyx":1205
+      /* "stpredictions/models/OK3/_splitter.pyx":1205
  * 
  *                 # Add one or two zeros in Xf, if there is any
  *                 if end_negative < start_positive:             # <<<<<<<<<<<<<<
@@ -11370,7 +11184,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
       __pyx_t_6 = ((__pyx_v_end_negative < __pyx_v_start_positive) != 0);
       if (__pyx_t_6) {
 
-        /* "_splitter.pyx":1206
+        /* "stpredictions/models/OK3/_splitter.pyx":1206
  *                 # Add one or two zeros in Xf, if there is any
  *                 if end_negative < start_positive:
  *                     start_positive -= 1             # <<<<<<<<<<<<<<
@@ -11379,7 +11193,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
         __pyx_v_start_positive = (__pyx_v_start_positive - 1);
 
-        /* "_splitter.pyx":1207
+        /* "stpredictions/models/OK3/_splitter.pyx":1207
  *                 if end_negative < start_positive:
  *                     start_positive -= 1
  *                     Xf[start_positive] = 0.             # <<<<<<<<<<<<<<
@@ -11388,7 +11202,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
         (__pyx_v_Xf[__pyx_v_start_positive]) = 0.;
 
-        /* "_splitter.pyx":1209
+        /* "stpredictions/models/OK3/_splitter.pyx":1209
  *                     Xf[start_positive] = 0.
  * 
  *                     if end_negative != start_positive:             # <<<<<<<<<<<<<<
@@ -11398,7 +11212,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
         __pyx_t_6 = ((__pyx_v_end_negative != __pyx_v_start_positive) != 0);
         if (__pyx_t_6) {
 
-          /* "_splitter.pyx":1210
+          /* "stpredictions/models/OK3/_splitter.pyx":1210
  * 
  *                     if end_negative != start_positive:
  *                         Xf[end_negative] = 0.             # <<<<<<<<<<<<<<
@@ -11407,7 +11221,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
           (__pyx_v_Xf[__pyx_v_end_negative]) = 0.;
 
-          /* "_splitter.pyx":1211
+          /* "stpredictions/models/OK3/_splitter.pyx":1211
  *                     if end_negative != start_positive:
  *                         Xf[end_negative] = 0.
  *                         end_negative += 1             # <<<<<<<<<<<<<<
@@ -11416,7 +11230,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
           __pyx_v_end_negative = (__pyx_v_end_negative + 1);
 
-          /* "_splitter.pyx":1209
+          /* "stpredictions/models/OK3/_splitter.pyx":1209
  *                     Xf[start_positive] = 0.
  * 
  *                     if end_negative != start_positive:             # <<<<<<<<<<<<<<
@@ -11425,7 +11239,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
         }
 
-        /* "_splitter.pyx":1205
+        /* "stpredictions/models/OK3/_splitter.pyx":1205
  * 
  *                 # Add one or two zeros in Xf, if there is any
  *                 if end_negative < start_positive:             # <<<<<<<<<<<<<<
@@ -11434,17 +11248,17 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
       }
 
-      /* "_splitter.pyx":1213
+      /* "stpredictions/models/OK3/_splitter.pyx":1213
  *                         end_negative += 1
  * 
  *                 if Xf[end - 1] <= Xf[start] + FEATURE_THRESHOLD:             # <<<<<<<<<<<<<<
  *                     features[f_j], features[n_total_constants] = features[n_total_constants], features[f_j]
  * 
  */
-      __pyx_t_6 = (((__pyx_v_Xf[(__pyx_v_end - 1)]) <= ((__pyx_v_Xf[__pyx_v_start]) + __pyx_v_9_splitter_FEATURE_THRESHOLD)) != 0);
+      __pyx_t_6 = (((__pyx_v_Xf[(__pyx_v_end - 1)]) <= ((__pyx_v_Xf[__pyx_v_start]) + __pyx_v_13stpredictions_6models_3OK3_9_splitter_FEATURE_THRESHOLD)) != 0);
       if (__pyx_t_6) {
 
-        /* "_splitter.pyx":1214
+        /* "stpredictions/models/OK3/_splitter.pyx":1214
  * 
  *                 if Xf[end - 1] <= Xf[start] + FEATURE_THRESHOLD:
  *                     features[f_j], features[n_total_constants] = features[n_total_constants], features[f_j]             # <<<<<<<<<<<<<<
@@ -11456,7 +11270,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
         (__pyx_v_features[__pyx_v_f_j]) = __pyx_t_8;
         (__pyx_v_features[__pyx_v_n_total_constants]) = __pyx_t_2;
 
-        /* "_splitter.pyx":1216
+        /* "stpredictions/models/OK3/_splitter.pyx":1216
  *                     features[f_j], features[n_total_constants] = features[n_total_constants], features[f_j]
  * 
  *                     n_found_constants += 1             # <<<<<<<<<<<<<<
@@ -11465,7 +11279,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
         __pyx_v_n_found_constants = (__pyx_v_n_found_constants + 1);
 
-        /* "_splitter.pyx":1217
+        /* "stpredictions/models/OK3/_splitter.pyx":1217
  * 
  *                     n_found_constants += 1
  *                     n_total_constants += 1             # <<<<<<<<<<<<<<
@@ -11474,7 +11288,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
         __pyx_v_n_total_constants = (__pyx_v_n_total_constants + 1);
 
-        /* "_splitter.pyx":1213
+        /* "stpredictions/models/OK3/_splitter.pyx":1213
  *                         end_negative += 1
  * 
  *                 if Xf[end - 1] <= Xf[start] + FEATURE_THRESHOLD:             # <<<<<<<<<<<<<<
@@ -11484,7 +11298,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
         goto __pyx_L15;
       }
 
-      /* "_splitter.pyx":1220
+      /* "stpredictions/models/OK3/_splitter.pyx":1220
  * 
  *                 else:
  *                     f_i -= 1             # <<<<<<<<<<<<<<
@@ -11494,7 +11308,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
       /*else*/ {
         __pyx_v_f_i = (__pyx_v_f_i - 1);
 
-        /* "_splitter.pyx":1221
+        /* "stpredictions/models/OK3/_splitter.pyx":1221
  *                 else:
  *                     f_i -= 1
  *                     features[f_i], features[f_j] = features[f_j], features[f_i]             # <<<<<<<<<<<<<<
@@ -11506,16 +11320,16 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
         (__pyx_v_features[__pyx_v_f_i]) = __pyx_t_2;
         (__pyx_v_features[__pyx_v_f_j]) = __pyx_t_8;
 
-        /* "_splitter.pyx":1224
+        /* "stpredictions/models/OK3/_splitter.pyx":1224
  * 
  *                     # Evaluate all splits
  *                     self.criterion.reset()             # <<<<<<<<<<<<<<
  *                     p = start
  * 
  */
-        __pyx_t_10 = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->reset(__pyx_v_self->__pyx_base.__pyx_base.criterion); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 1224, __pyx_L1_error)
+        __pyx_t_10 = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->reset(__pyx_v_self->__pyx_base.__pyx_base.criterion); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 1224, __pyx_L1_error)
 
-        /* "_splitter.pyx":1225
+        /* "stpredictions/models/OK3/_splitter.pyx":1225
  *                     # Evaluate all splits
  *                     self.criterion.reset()
  *                     p = start             # <<<<<<<<<<<<<<
@@ -11524,7 +11338,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
         __pyx_v_p = __pyx_v_start;
 
-        /* "_splitter.pyx":1227
+        /* "stpredictions/models/OK3/_splitter.pyx":1227
  *                     p = start
  * 
  *                     while p < end:             # <<<<<<<<<<<<<<
@@ -11535,7 +11349,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
           __pyx_t_6 = ((__pyx_v_p < __pyx_v_end) != 0);
           if (!__pyx_t_6) break;
 
-          /* "_splitter.pyx":1228
+          /* "stpredictions/models/OK3/_splitter.pyx":1228
  * 
  *                     while p < end:
  *                         if p + 1 != end_negative:             # <<<<<<<<<<<<<<
@@ -11545,7 +11359,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
           __pyx_t_6 = (((__pyx_v_p + 1) != __pyx_v_end_negative) != 0);
           if (__pyx_t_6) {
 
-            /* "_splitter.pyx":1229
+            /* "stpredictions/models/OK3/_splitter.pyx":1229
  *                     while p < end:
  *                         if p + 1 != end_negative:
  *                             p_next = p + 1             # <<<<<<<<<<<<<<
@@ -11554,7 +11368,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
             __pyx_v_p_next = (__pyx_v_p + 1);
 
-            /* "_splitter.pyx":1228
+            /* "stpredictions/models/OK3/_splitter.pyx":1228
  * 
  *                     while p < end:
  *                         if p + 1 != end_negative:             # <<<<<<<<<<<<<<
@@ -11564,7 +11378,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
             goto __pyx_L18;
           }
 
-          /* "_splitter.pyx":1231
+          /* "stpredictions/models/OK3/_splitter.pyx":1231
  *                             p_next = p + 1
  *                         else:
  *                             p_next = start_positive             # <<<<<<<<<<<<<<
@@ -11576,7 +11390,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
           }
           __pyx_L18:;
 
-          /* "_splitter.pyx":1233
+          /* "stpredictions/models/OK3/_splitter.pyx":1233
  *                             p_next = start_positive
  * 
  *                         while (p_next < end and             # <<<<<<<<<<<<<<
@@ -11591,19 +11405,19 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
               goto __pyx_L21_bool_binop_done;
             }
 
-            /* "_splitter.pyx":1234
+            /* "stpredictions/models/OK3/_splitter.pyx":1234
  * 
  *                         while (p_next < end and
  *                                Xf[p_next] <= Xf[p] + FEATURE_THRESHOLD):             # <<<<<<<<<<<<<<
  *                             p = p_next
  *                             if p + 1 != end_negative:
  */
-            __pyx_t_7 = (((__pyx_v_Xf[__pyx_v_p_next]) <= ((__pyx_v_Xf[__pyx_v_p]) + __pyx_v_9_splitter_FEATURE_THRESHOLD)) != 0);
+            __pyx_t_7 = (((__pyx_v_Xf[__pyx_v_p_next]) <= ((__pyx_v_Xf[__pyx_v_p]) + __pyx_v_13stpredictions_6models_3OK3_9_splitter_FEATURE_THRESHOLD)) != 0);
             __pyx_t_6 = __pyx_t_7;
             __pyx_L21_bool_binop_done:;
             if (!__pyx_t_6) break;
 
-            /* "_splitter.pyx":1235
+            /* "stpredictions/models/OK3/_splitter.pyx":1235
  *                         while (p_next < end and
  *                                Xf[p_next] <= Xf[p] + FEATURE_THRESHOLD):
  *                             p = p_next             # <<<<<<<<<<<<<<
@@ -11612,7 +11426,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
             __pyx_v_p = __pyx_v_p_next;
 
-            /* "_splitter.pyx":1236
+            /* "stpredictions/models/OK3/_splitter.pyx":1236
  *                                Xf[p_next] <= Xf[p] + FEATURE_THRESHOLD):
  *                             p = p_next
  *                             if p + 1 != end_negative:             # <<<<<<<<<<<<<<
@@ -11622,7 +11436,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
             __pyx_t_6 = (((__pyx_v_p + 1) != __pyx_v_end_negative) != 0);
             if (__pyx_t_6) {
 
-              /* "_splitter.pyx":1237
+              /* "stpredictions/models/OK3/_splitter.pyx":1237
  *                             p = p_next
  *                             if p + 1 != end_negative:
  *                                 p_next = p + 1             # <<<<<<<<<<<<<<
@@ -11631,7 +11445,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
               __pyx_v_p_next = (__pyx_v_p + 1);
 
-              /* "_splitter.pyx":1236
+              /* "stpredictions/models/OK3/_splitter.pyx":1236
  *                                Xf[p_next] <= Xf[p] + FEATURE_THRESHOLD):
  *                             p = p_next
  *                             if p + 1 != end_negative:             # <<<<<<<<<<<<<<
@@ -11641,7 +11455,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
               goto __pyx_L23;
             }
 
-            /* "_splitter.pyx":1239
+            /* "stpredictions/models/OK3/_splitter.pyx":1239
  *                                 p_next = p + 1
  *                             else:
  *                                 p_next = start_positive             # <<<<<<<<<<<<<<
@@ -11654,7 +11468,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
             __pyx_L23:;
           }
 
-          /* "_splitter.pyx":1244
+          /* "stpredictions/models/OK3/_splitter.pyx":1244
  *                         # (p_next >= end) or (X[samples[p_next], current.feature] >
  *                         #                     X[samples[p], current.feature])
  *                         p_prev = p             # <<<<<<<<<<<<<<
@@ -11663,7 +11477,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
           __pyx_v_p_prev = __pyx_v_p;
 
-          /* "_splitter.pyx":1245
+          /* "stpredictions/models/OK3/_splitter.pyx":1245
  *                         #                     X[samples[p], current.feature])
  *                         p_prev = p
  *                         p = p_next             # <<<<<<<<<<<<<<
@@ -11672,7 +11486,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
           __pyx_v_p = __pyx_v_p_next;
 
-          /* "_splitter.pyx":1250
+          /* "stpredictions/models/OK3/_splitter.pyx":1250
  * 
  * 
  *                         if p < end:             # <<<<<<<<<<<<<<
@@ -11682,7 +11496,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
           __pyx_t_6 = ((__pyx_v_p < __pyx_v_end) != 0);
           if (__pyx_t_6) {
 
-            /* "_splitter.pyx":1251
+            /* "stpredictions/models/OK3/_splitter.pyx":1251
  * 
  *                         if p < end:
  *                             current.pos = p             # <<<<<<<<<<<<<<
@@ -11691,7 +11505,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
             __pyx_v_current.pos = __pyx_v_p;
 
-            /* "_splitter.pyx":1254
+            /* "stpredictions/models/OK3/_splitter.pyx":1254
  * 
  *                             # Reject if min_samples_leaf is not guaranteed
  *                             if (((current.pos - start) < min_samples_leaf) or             # <<<<<<<<<<<<<<
@@ -11705,7 +11519,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
               goto __pyx_L26_bool_binop_done;
             }
 
-            /* "_splitter.pyx":1255
+            /* "stpredictions/models/OK3/_splitter.pyx":1255
  *                             # Reject if min_samples_leaf is not guaranteed
  *                             if (((current.pos - start) < min_samples_leaf) or
  *                                     ((end - current.pos) < min_samples_leaf)):             # <<<<<<<<<<<<<<
@@ -11716,7 +11530,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
             __pyx_t_6 = __pyx_t_7;
             __pyx_L26_bool_binop_done:;
 
-            /* "_splitter.pyx":1254
+            /* "stpredictions/models/OK3/_splitter.pyx":1254
  * 
  *                             # Reject if min_samples_leaf is not guaranteed
  *                             if (((current.pos - start) < min_samples_leaf) or             # <<<<<<<<<<<<<<
@@ -11725,7 +11539,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
             if (__pyx_t_6) {
 
-              /* "_splitter.pyx":1256
+              /* "stpredictions/models/OK3/_splitter.pyx":1256
  *                             if (((current.pos - start) < min_samples_leaf) or
  *                                     ((end - current.pos) < min_samples_leaf)):
  *                                 continue             # <<<<<<<<<<<<<<
@@ -11734,7 +11548,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
               goto __pyx_L16_continue;
 
-              /* "_splitter.pyx":1254
+              /* "stpredictions/models/OK3/_splitter.pyx":1254
  * 
  *                             # Reject if min_samples_leaf is not guaranteed
  *                             if (((current.pos - start) < min_samples_leaf) or             # <<<<<<<<<<<<<<
@@ -11743,16 +11557,16 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
             }
 
-            /* "_splitter.pyx":1258
+            /* "stpredictions/models/OK3/_splitter.pyx":1258
  *                                 continue
  * 
  *                             self.criterion.update(current.pos)             # <<<<<<<<<<<<<<
  * 
  *                             # Reject if min_weight_leaf is not satisfied
  */
-            __pyx_t_10 = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->update(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_current.pos); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 1258, __pyx_L1_error)
+            __pyx_t_10 = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->update(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_current.pos); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 1258, __pyx_L1_error)
 
-            /* "_splitter.pyx":1261
+            /* "stpredictions/models/OK3/_splitter.pyx":1261
  * 
  *                             # Reject if min_weight_leaf is not satisfied
  *                             if ((self.criterion.weighted_n_left < min_weight_leaf) or             # <<<<<<<<<<<<<<
@@ -11766,7 +11580,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
               goto __pyx_L29_bool_binop_done;
             }
 
-            /* "_splitter.pyx":1262
+            /* "stpredictions/models/OK3/_splitter.pyx":1262
  *                             # Reject if min_weight_leaf is not satisfied
  *                             if ((self.criterion.weighted_n_left < min_weight_leaf) or
  *                                     (self.criterion.weighted_n_right < min_weight_leaf)):             # <<<<<<<<<<<<<<
@@ -11777,7 +11591,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
             __pyx_t_6 = __pyx_t_7;
             __pyx_L29_bool_binop_done:;
 
-            /* "_splitter.pyx":1261
+            /* "stpredictions/models/OK3/_splitter.pyx":1261
  * 
  *                             # Reject if min_weight_leaf is not satisfied
  *                             if ((self.criterion.weighted_n_left < min_weight_leaf) or             # <<<<<<<<<<<<<<
@@ -11786,7 +11600,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
             if (__pyx_t_6) {
 
-              /* "_splitter.pyx":1263
+              /* "stpredictions/models/OK3/_splitter.pyx":1263
  *                             if ((self.criterion.weighted_n_left < min_weight_leaf) or
  *                                     (self.criterion.weighted_n_right < min_weight_leaf)):
  *                                 continue             # <<<<<<<<<<<<<<
@@ -11795,7 +11609,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
               goto __pyx_L16_continue;
 
-              /* "_splitter.pyx":1261
+              /* "stpredictions/models/OK3/_splitter.pyx":1261
  * 
  *                             # Reject if min_weight_leaf is not satisfied
  *                             if ((self.criterion.weighted_n_left < min_weight_leaf) or             # <<<<<<<<<<<<<<
@@ -11804,16 +11618,16 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
             }
 
-            /* "_splitter.pyx":1265
+            /* "stpredictions/models/OK3/_splitter.pyx":1265
  *                                 continue
  * 
  *                             current_proxy_improvement = self.criterion.proxy_impurity_improvement()             # <<<<<<<<<<<<<<
  * 
  *                             if current_proxy_improvement > best_proxy_improvement:
  */
-            __pyx_v_current_proxy_improvement = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->proxy_impurity_improvement(__pyx_v_self->__pyx_base.__pyx_base.criterion);
+            __pyx_v_current_proxy_improvement = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->proxy_impurity_improvement(__pyx_v_self->__pyx_base.__pyx_base.criterion);
 
-            /* "_splitter.pyx":1267
+            /* "stpredictions/models/OK3/_splitter.pyx":1267
  *                             current_proxy_improvement = self.criterion.proxy_impurity_improvement()
  * 
  *                             if current_proxy_improvement > best_proxy_improvement:             # <<<<<<<<<<<<<<
@@ -11823,7 +11637,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
             __pyx_t_6 = ((__pyx_v_current_proxy_improvement > __pyx_v_best_proxy_improvement) != 0);
             if (__pyx_t_6) {
 
-              /* "_splitter.pyx":1268
+              /* "stpredictions/models/OK3/_splitter.pyx":1268
  * 
  *                             if current_proxy_improvement > best_proxy_improvement:
  *                                 best_proxy_improvement = current_proxy_improvement             # <<<<<<<<<<<<<<
@@ -11832,7 +11646,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
               __pyx_v_best_proxy_improvement = __pyx_v_current_proxy_improvement;
 
-              /* "_splitter.pyx":1270
+              /* "stpredictions/models/OK3/_splitter.pyx":1270
  *                                 best_proxy_improvement = current_proxy_improvement
  *                                 # sum of halves used to avoid infinite values
  *                                 current.threshold = Xf[p_prev] / 2.0 + Xf[p] / 2.0             # <<<<<<<<<<<<<<
@@ -11841,7 +11655,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
               __pyx_v_current.threshold = (((__pyx_v_Xf[__pyx_v_p_prev]) / 2.0) + ((__pyx_v_Xf[__pyx_v_p]) / 2.0));
 
-              /* "_splitter.pyx":1272
+              /* "stpredictions/models/OK3/_splitter.pyx":1272
  *                                 current.threshold = Xf[p_prev] / 2.0 + Xf[p] / 2.0
  * 
  *                                 if ((current.threshold == Xf[p]) or             # <<<<<<<<<<<<<<
@@ -11855,32 +11669,32 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
                 goto __pyx_L33_bool_binop_done;
               }
 
-              /* "_splitter.pyx":1273
+              /* "stpredictions/models/OK3/_splitter.pyx":1273
  * 
  *                                 if ((current.threshold == Xf[p]) or
  *                                     (current.threshold == INFINITY) or             # <<<<<<<<<<<<<<
  *                                     (current.threshold == -INFINITY)):
  *                                     current.threshold = Xf[p_prev]
  */
-              __pyx_t_7 = ((__pyx_v_current.threshold == __pyx_v_9_splitter_INFINITY) != 0);
+              __pyx_t_7 = ((__pyx_v_current.threshold == __pyx_v_13stpredictions_6models_3OK3_9_splitter_INFINITY) != 0);
               if (!__pyx_t_7) {
               } else {
                 __pyx_t_6 = __pyx_t_7;
                 goto __pyx_L33_bool_binop_done;
               }
 
-              /* "_splitter.pyx":1274
+              /* "stpredictions/models/OK3/_splitter.pyx":1274
  *                                 if ((current.threshold == Xf[p]) or
  *                                     (current.threshold == INFINITY) or
  *                                     (current.threshold == -INFINITY)):             # <<<<<<<<<<<<<<
  *                                     current.threshold = Xf[p_prev]
  * 
  */
-              __pyx_t_7 = ((__pyx_v_current.threshold == (-__pyx_v_9_splitter_INFINITY)) != 0);
+              __pyx_t_7 = ((__pyx_v_current.threshold == (-__pyx_v_13stpredictions_6models_3OK3_9_splitter_INFINITY)) != 0);
               __pyx_t_6 = __pyx_t_7;
               __pyx_L33_bool_binop_done:;
 
-              /* "_splitter.pyx":1272
+              /* "stpredictions/models/OK3/_splitter.pyx":1272
  *                                 current.threshold = Xf[p_prev] / 2.0 + Xf[p] / 2.0
  * 
  *                                 if ((current.threshold == Xf[p]) or             # <<<<<<<<<<<<<<
@@ -11889,7 +11703,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
               if (__pyx_t_6) {
 
-                /* "_splitter.pyx":1275
+                /* "stpredictions/models/OK3/_splitter.pyx":1275
  *                                     (current.threshold == INFINITY) or
  *                                     (current.threshold == -INFINITY)):
  *                                     current.threshold = Xf[p_prev]             # <<<<<<<<<<<<<<
@@ -11898,7 +11712,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
                 __pyx_v_current.threshold = (__pyx_v_Xf[__pyx_v_p_prev]);
 
-                /* "_splitter.pyx":1272
+                /* "stpredictions/models/OK3/_splitter.pyx":1272
  *                                 current.threshold = Xf[p_prev] / 2.0 + Xf[p] / 2.0
  * 
  *                                 if ((current.threshold == Xf[p]) or             # <<<<<<<<<<<<<<
@@ -11907,7 +11721,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
               }
 
-              /* "_splitter.pyx":1277
+              /* "stpredictions/models/OK3/_splitter.pyx":1277
  *                                     current.threshold = Xf[p_prev]
  * 
  *                                 best = current             # <<<<<<<<<<<<<<
@@ -11916,7 +11730,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
               __pyx_v_best = __pyx_v_current;
 
-              /* "_splitter.pyx":1267
+              /* "stpredictions/models/OK3/_splitter.pyx":1267
  *                             current_proxy_improvement = self.criterion.proxy_impurity_improvement()
  * 
  *                             if current_proxy_improvement > best_proxy_improvement:             # <<<<<<<<<<<<<<
@@ -11925,7 +11739,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
             }
 
-            /* "_splitter.pyx":1250
+            /* "stpredictions/models/OK3/_splitter.pyx":1250
  * 
  * 
  *                         if p < end:             # <<<<<<<<<<<<<<
@@ -11941,7 +11755,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
     __pyx_L8:;
   }
 
-  /* "_splitter.pyx":1280
+  /* "stpredictions/models/OK3/_splitter.pyx":1280
  * 
  *         # Reorganize into samples[start:best.pos] + samples[best.pos:end]
  *         if best.pos < end:             # <<<<<<<<<<<<<<
@@ -11951,61 +11765,61 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
   __pyx_t_6 = ((__pyx_v_best.pos < __pyx_v_end) != 0);
   if (__pyx_t_6) {
 
-    /* "_splitter.pyx":1281
+    /* "stpredictions/models/OK3/_splitter.pyx":1281
  *         # Reorganize into samples[start:best.pos] + samples[best.pos:end]
  *         if best.pos < end:
  *             self.extract_nnz(best.feature, &end_negative, &start_positive,             # <<<<<<<<<<<<<<
  *                              &is_samples_sorted)
  * 
  */
-    __pyx_f_9_splitter_18BaseSparseSplitter_extract_nnz(((struct __pyx_obj_9_splitter_BaseSparseSplitter *)__pyx_v_self), __pyx_v_best.feature, (&__pyx_v_end_negative), (&__pyx_v_start_positive), (&__pyx_v_is_samples_sorted));
+    __pyx_f_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_extract_nnz(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *)__pyx_v_self), __pyx_v_best.feature, (&__pyx_v_end_negative), (&__pyx_v_start_positive), (&__pyx_v_is_samples_sorted));
 
-    /* "_splitter.pyx":1284
+    /* "stpredictions/models/OK3/_splitter.pyx":1284
  *                              &is_samples_sorted)
  * 
  *             self._partition(best.threshold, end_negative, start_positive,             # <<<<<<<<<<<<<<
  *                             best.pos)
  * 
  */
-    (void)(__pyx_f_9_splitter_18BaseSparseSplitter__partition(((struct __pyx_obj_9_splitter_BaseSparseSplitter *)__pyx_v_self), __pyx_v_best.threshold, __pyx_v_end_negative, __pyx_v_start_positive, __pyx_v_best.pos));
+    (void)(__pyx_f_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter__partition(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *)__pyx_v_self), __pyx_v_best.threshold, __pyx_v_end_negative, __pyx_v_start_positive, __pyx_v_best.pos));
 
-    /* "_splitter.pyx":1287
+    /* "stpredictions/models/OK3/_splitter.pyx":1287
  *                             best.pos)
  * 
  *             self.criterion.reset()             # <<<<<<<<<<<<<<
  *             self.criterion.update(best.pos)
  *             best.improvement = self.criterion.impurity_improvement(impurity)
  */
-    __pyx_t_10 = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->reset(__pyx_v_self->__pyx_base.__pyx_base.criterion); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 1287, __pyx_L1_error)
+    __pyx_t_10 = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->reset(__pyx_v_self->__pyx_base.__pyx_base.criterion); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 1287, __pyx_L1_error)
 
-    /* "_splitter.pyx":1288
+    /* "stpredictions/models/OK3/_splitter.pyx":1288
  * 
  *             self.criterion.reset()
  *             self.criterion.update(best.pos)             # <<<<<<<<<<<<<<
  *             best.improvement = self.criterion.impurity_improvement(impurity)
  *             self.criterion.children_impurity(&best.impurity_left,
  */
-    __pyx_t_10 = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->update(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_best.pos); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 1288, __pyx_L1_error)
+    __pyx_t_10 = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->update(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_best.pos); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 1288, __pyx_L1_error)
 
-    /* "_splitter.pyx":1289
+    /* "stpredictions/models/OK3/_splitter.pyx":1289
  *             self.criterion.reset()
  *             self.criterion.update(best.pos)
  *             best.improvement = self.criterion.impurity_improvement(impurity)             # <<<<<<<<<<<<<<
  *             self.criterion.children_impurity(&best.impurity_left,
  *                                              &best.impurity_right)
  */
-    __pyx_v_best.improvement = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->impurity_improvement(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_impurity);
+    __pyx_v_best.improvement = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->impurity_improvement(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_impurity);
 
-    /* "_splitter.pyx":1290
+    /* "stpredictions/models/OK3/_splitter.pyx":1290
  *             self.criterion.update(best.pos)
  *             best.improvement = self.criterion.impurity_improvement(impurity)
  *             self.criterion.children_impurity(&best.impurity_left,             # <<<<<<<<<<<<<<
  *                                              &best.impurity_right)
  * 
  */
-    ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->children_impurity(__pyx_v_self->__pyx_base.__pyx_base.criterion, (&__pyx_v_best.impurity_left), (&__pyx_v_best.impurity_right));
+    ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->children_impurity(__pyx_v_self->__pyx_base.__pyx_base.criterion, (&__pyx_v_best.impurity_left), (&__pyx_v_best.impurity_right));
 
-    /* "_splitter.pyx":1280
+    /* "stpredictions/models/OK3/_splitter.pyx":1280
  * 
  *         # Reorganize into samples[start:best.pos] + samples[best.pos:end]
  *         if best.pos < end:             # <<<<<<<<<<<<<<
@@ -12014,25 +11828,25 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
   }
 
-  /* "_splitter.pyx":1296
+  /* "stpredictions/models/OK3/_splitter.pyx":1296
  *         # element in features[:n_known_constants] must be preserved for sibling
  *         # and child nodes
  *         memcpy(features, constant_features, sizeof(SIZE_t) * n_known_constants)             # <<<<<<<<<<<<<<
  * 
  *         # Copy newly found constant features
  */
-  (void)(memcpy(__pyx_v_features, __pyx_v_constant_features, ((sizeof(__pyx_t_7sklearn_4tree_5_tree_SIZE_t)) * __pyx_v_n_known_constants)));
+  (void)(memcpy(__pyx_v_features, __pyx_v_constant_features, ((sizeof(__pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t)) * __pyx_v_n_known_constants)));
 
-  /* "_splitter.pyx":1299
+  /* "stpredictions/models/OK3/_splitter.pyx":1299
  * 
  *         # Copy newly found constant features
  *         memcpy(constant_features + n_known_constants,             # <<<<<<<<<<<<<<
  *                features + n_known_constants,
  *                sizeof(SIZE_t) * n_found_constants)
  */
-  (void)(memcpy((__pyx_v_constant_features + __pyx_v_n_known_constants), (__pyx_v_features + __pyx_v_n_known_constants), ((sizeof(__pyx_t_7sklearn_4tree_5_tree_SIZE_t)) * __pyx_v_n_found_constants)));
+  (void)(memcpy((__pyx_v_constant_features + __pyx_v_n_known_constants), (__pyx_v_features + __pyx_v_n_known_constants), ((sizeof(__pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t)) * __pyx_v_n_found_constants)));
 
-  /* "_splitter.pyx":1304
+  /* "stpredictions/models/OK3/_splitter.pyx":1304
  * 
  *         # Return values
  *         split[0] = best             # <<<<<<<<<<<<<<
@@ -12041,7 +11855,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
   (__pyx_v_split[0]) = __pyx_v_best;
 
-  /* "_splitter.pyx":1305
+  /* "stpredictions/models/OK3/_splitter.pyx":1305
  *         # Return values
  *         split[0] = best
  *         n_constant_features[0] = n_total_constants             # <<<<<<<<<<<<<<
@@ -12050,7 +11864,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
   (__pyx_v_n_constant_features[0]) = __pyx_v_n_total_constants;
 
-  /* "_splitter.pyx":1306
+  /* "stpredictions/models/OK3/_splitter.pyx":1306
  *         split[0] = best
  *         n_constant_features[0] = n_total_constants
  *         return 0             # <<<<<<<<<<<<<<
@@ -12060,7 +11874,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "_splitter.pyx":1090
+  /* "stpredictions/models/OK3/_splitter.pyx":1090
  *                                      self.random_state), self.__getstate__())
  * 
  *     cdef int node_split(self, double impurity, SplitRecord* split,             # <<<<<<<<<<<<<<
@@ -12074,7 +11888,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
     #ifdef WITH_THREAD
     PyGILState_STATE __pyx_gilstate_save = __Pyx_PyGILState_Ensure();
     #endif
-    __Pyx_AddTraceback("_splitter.BestSparseSplitter.node_split", __pyx_clineno, __pyx_lineno, __pyx_filename);
+    __Pyx_AddTraceback("stpredictions.models.OK3._splitter.BestSparseSplitter.node_split", __pyx_clineno, __pyx_lineno, __pyx_filename);
     #ifdef WITH_THREAD
     __Pyx_PyGILState_Release(__pyx_gilstate_save);
     #endif
@@ -12084,7 +11898,7 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
   return __pyx_r;
 }
 
-/* "_splitter.pyx":1312
+/* "stpredictions/models/OK3/_splitter.pyx":1312
  *     """Splitter for finding a random split, using the sparse data."""
  * 
  *     def __reduce__(self):             # <<<<<<<<<<<<<<
@@ -12093,19 +11907,19 @@ static int __pyx_f_9_splitter_18BestSparseSplitter_node_split(struct __pyx_obj_9
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9_splitter_20RandomSparseSplitter_1__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_9_splitter_20RandomSparseSplitter_1__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_20RandomSparseSplitter_1__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_13stpredictions_6models_3OK3_9_splitter_20RandomSparseSplitter_1__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9_splitter_20RandomSparseSplitter___reduce__(((struct __pyx_obj_9_splitter_RandomSparseSplitter *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13stpredictions_6models_3OK3_9_splitter_20RandomSparseSplitter___reduce__(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9_splitter_20RandomSparseSplitter___reduce__(struct __pyx_obj_9_splitter_RandomSparseSplitter *__pyx_v_self) {
+static PyObject *__pyx_pf_13stpredictions_6models_3OK3_9_splitter_20RandomSparseSplitter___reduce__(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -12117,7 +11931,7 @@ static PyObject *__pyx_pf_9_splitter_20RandomSparseSplitter___reduce__(struct __
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__reduce__", 0);
 
-  /* "_splitter.pyx":1313
+  /* "stpredictions/models/OK3/_splitter.pyx":1313
  * 
  *     def __reduce__(self):
  *         return (RandomSparseSplitter, (self.criterion,             # <<<<<<<<<<<<<<
@@ -12126,7 +11940,7 @@ static PyObject *__pyx_pf_9_splitter_20RandomSparseSplitter___reduce__(struct __
  */
   __Pyx_XDECREF(__pyx_r);
 
-  /* "_splitter.pyx":1314
+  /* "stpredictions/models/OK3/_splitter.pyx":1314
  *     def __reduce__(self):
  *         return (RandomSparseSplitter, (self.criterion,
  *                                        self.max_features,             # <<<<<<<<<<<<<<
@@ -12136,7 +11950,7 @@ static PyObject *__pyx_pf_9_splitter_20RandomSparseSplitter___reduce__(struct __
   __pyx_t_1 = __Pyx_PyInt_From_Py_intptr_t(__pyx_v_self->__pyx_base.__pyx_base.max_features); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1314, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
 
-  /* "_splitter.pyx":1315
+  /* "stpredictions/models/OK3/_splitter.pyx":1315
  *         return (RandomSparseSplitter, (self.criterion,
  *                                        self.max_features,
  *                                        self.min_samples_leaf,             # <<<<<<<<<<<<<<
@@ -12146,7 +11960,7 @@ static PyObject *__pyx_pf_9_splitter_20RandomSparseSplitter___reduce__(struct __
   __pyx_t_2 = __Pyx_PyInt_From_Py_intptr_t(__pyx_v_self->__pyx_base.__pyx_base.min_samples_leaf); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1315, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "_splitter.pyx":1316
+  /* "stpredictions/models/OK3/_splitter.pyx":1316
  *                                        self.max_features,
  *                                        self.min_samples_leaf,
  *                                        self.min_weight_leaf,             # <<<<<<<<<<<<<<
@@ -12156,7 +11970,7 @@ static PyObject *__pyx_pf_9_splitter_20RandomSparseSplitter___reduce__(struct __
   __pyx_t_3 = PyFloat_FromDouble(__pyx_v_self->__pyx_base.__pyx_base.min_weight_leaf); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1316, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
 
-  /* "_splitter.pyx":1313
+  /* "stpredictions/models/OK3/_splitter.pyx":1313
  * 
  *     def __reduce__(self):
  *         return (RandomSparseSplitter, (self.criterion,             # <<<<<<<<<<<<<<
@@ -12181,7 +11995,7 @@ static PyObject *__pyx_pf_9_splitter_20RandomSparseSplitter___reduce__(struct __
   __pyx_t_2 = 0;
   __pyx_t_3 = 0;
 
-  /* "_splitter.pyx":1317
+  /* "stpredictions/models/OK3/_splitter.pyx":1317
  *                                        self.min_samples_leaf,
  *                                        self.min_weight_leaf,
  *                                        self.random_state), self.__getstate__())             # <<<<<<<<<<<<<<
@@ -12206,7 +12020,7 @@ static PyObject *__pyx_pf_9_splitter_20RandomSparseSplitter___reduce__(struct __
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "_splitter.pyx":1313
+  /* "stpredictions/models/OK3/_splitter.pyx":1313
  * 
  *     def __reduce__(self):
  *         return (RandomSparseSplitter, (self.criterion,             # <<<<<<<<<<<<<<
@@ -12215,9 +12029,9 @@ static PyObject *__pyx_pf_9_splitter_20RandomSparseSplitter___reduce__(struct __
  */
   __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1313, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_INCREF(((PyObject *)__pyx_ptype_9_splitter_RandomSparseSplitter));
-  __Pyx_GIVEREF(((PyObject *)__pyx_ptype_9_splitter_RandomSparseSplitter));
-  PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)__pyx_ptype_9_splitter_RandomSparseSplitter));
+  __Pyx_INCREF(((PyObject *)__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter));
+  __Pyx_GIVEREF(((PyObject *)__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter));
+  PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)__pyx_ptype_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter));
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_3);
@@ -12228,7 +12042,7 @@ static PyObject *__pyx_pf_9_splitter_20RandomSparseSplitter___reduce__(struct __
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "_splitter.pyx":1312
+  /* "stpredictions/models/OK3/_splitter.pyx":1312
  *     """Splitter for finding a random split, using the sparse data."""
  * 
  *     def __reduce__(self):             # <<<<<<<<<<<<<<
@@ -12242,7 +12056,7 @@ static PyObject *__pyx_pf_9_splitter_20RandomSparseSplitter___reduce__(struct __
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("_splitter.RandomSparseSplitter.__reduce__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("stpredictions.models.OK3._splitter.RandomSparseSplitter.__reduce__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -12250,7 +12064,7 @@ static PyObject *__pyx_pf_9_splitter_20RandomSparseSplitter___reduce__(struct __
   return __pyx_r;
 }
 
-/* "_splitter.pyx":1319
+/* "stpredictions/models/OK3/_splitter.pyx":1319
  *                                        self.random_state), self.__getstate__())
  * 
  *     cdef int node_split(self, double impurity, SplitRecord* split,             # <<<<<<<<<<<<<<
@@ -12258,57 +12072,57 @@ static PyObject *__pyx_pf_9_splitter_20RandomSparseSplitter___reduce__(struct __
  *         """Find a random split on node samples[start:end], using sparse features
  */
 
-static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj_9_splitter_RandomSparseSplitter *__pyx_v_self, double __pyx_v_impurity, struct __pyx_t_9_splitter_SplitRecord *__pyx_v_split, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_n_constant_features) {
-  CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end;
-  CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_INT32_t *__pyx_v_X_indices;
-  CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_INT32_t *__pyx_v_X_indptr;
-  CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_v_X_data;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_constant_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_features;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_v_Xf;
-  CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_sorted_samples;
-  CYTHON_UNUSED __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_v_index_to_samples;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_max_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_min_samples_leaf;
+static int __pyx_f_13stpredictions_6models_3OK3_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter *__pyx_v_self, double __pyx_v_impurity, struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord *__pyx_v_split, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_n_constant_features) {
+  CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end;
+  CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t *__pyx_v_X_indices;
+  CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t *__pyx_v_X_indptr;
+  CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_v_X_data;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_constant_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_v_Xf;
+  CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_sorted_samples;
+  CYTHON_UNUSED __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_v_index_to_samples;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_max_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_min_samples_leaf;
   double __pyx_v_min_weight_leaf;
-  __pyx_t_7sklearn_4tree_5_tree_UINT32_t *__pyx_v_random_state;
-  struct __pyx_t_9_splitter_SplitRecord __pyx_v_best;
-  struct __pyx_t_9_splitter_SplitRecord __pyx_v_current;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_UINT32_t *__pyx_v_random_state;
+  struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord __pyx_v_best;
+  struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord __pyx_v_current;
   double __pyx_v_current_proxy_improvement;
   double __pyx_v_best_proxy_improvement;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_v_current_feature_value;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_f_i;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_f_j;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_p;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_visited_features;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_found_constants;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_drawn_constants;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_known_constants;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_n_total_constants;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_v_min_feature_value;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t __pyx_v_max_feature_value;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_v_current_feature_value;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_f_i;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_f_j;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_p;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_visited_features;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_found_constants;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_drawn_constants;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_known_constants;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_n_total_constants;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_v_min_feature_value;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t __pyx_v_max_feature_value;
   int __pyx_v_is_samples_sorted;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_start_positive;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_v_end_negative;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_start_positive;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_v_end_negative;
   int __pyx_r;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t *__pyx_t_1;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_2;
-  __pyx_t_7sklearn_4tree_5_tree_INT32_t *__pyx_t_3;
-  __pyx_t_7sklearn_4tree_5_tree_DTYPE_t *__pyx_t_4;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *__pyx_t_1;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_2;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_INT32_t *__pyx_t_3;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t *__pyx_t_4;
   double __pyx_t_5;
   int __pyx_t_6;
   int __pyx_t_7;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_8;
-  __pyx_t_7sklearn_4tree_5_tree_SIZE_t __pyx_t_9;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_8;
+  __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t __pyx_t_9;
   int __pyx_t_10;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
 
-  /* "_splitter.pyx":1327
+  /* "stpredictions/models/OK3/_splitter.pyx":1327
  *         """
  *         # Find the best split
  *         cdef SIZE_t* samples = self.samples             # <<<<<<<<<<<<<<
@@ -12318,7 +12132,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
   __pyx_t_1 = __pyx_v_self->__pyx_base.__pyx_base.samples;
   __pyx_v_samples = __pyx_t_1;
 
-  /* "_splitter.pyx":1328
+  /* "stpredictions/models/OK3/_splitter.pyx":1328
  *         # Find the best split
  *         cdef SIZE_t* samples = self.samples
  *         cdef SIZE_t start = self.start             # <<<<<<<<<<<<<<
@@ -12328,7 +12142,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.start;
   __pyx_v_start = __pyx_t_2;
 
-  /* "_splitter.pyx":1329
+  /* "stpredictions/models/OK3/_splitter.pyx":1329
  *         cdef SIZE_t* samples = self.samples
  *         cdef SIZE_t start = self.start
  *         cdef SIZE_t end = self.end             # <<<<<<<<<<<<<<
@@ -12338,7 +12152,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.end;
   __pyx_v_end = __pyx_t_2;
 
-  /* "_splitter.pyx":1331
+  /* "stpredictions/models/OK3/_splitter.pyx":1331
  *         cdef SIZE_t end = self.end
  * 
  *         cdef INT32_t* X_indices = self.X_indices             # <<<<<<<<<<<<<<
@@ -12348,7 +12162,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
   __pyx_t_3 = __pyx_v_self->__pyx_base.X_indices;
   __pyx_v_X_indices = __pyx_t_3;
 
-  /* "_splitter.pyx":1332
+  /* "stpredictions/models/OK3/_splitter.pyx":1332
  * 
  *         cdef INT32_t* X_indices = self.X_indices
  *         cdef INT32_t* X_indptr = self.X_indptr             # <<<<<<<<<<<<<<
@@ -12358,7 +12172,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
   __pyx_t_3 = __pyx_v_self->__pyx_base.X_indptr;
   __pyx_v_X_indptr = __pyx_t_3;
 
-  /* "_splitter.pyx":1333
+  /* "stpredictions/models/OK3/_splitter.pyx":1333
  *         cdef INT32_t* X_indices = self.X_indices
  *         cdef INT32_t* X_indptr = self.X_indptr
  *         cdef DTYPE_t* X_data = self.X_data             # <<<<<<<<<<<<<<
@@ -12368,7 +12182,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
   __pyx_t_4 = __pyx_v_self->__pyx_base.X_data;
   __pyx_v_X_data = __pyx_t_4;
 
-  /* "_splitter.pyx":1335
+  /* "stpredictions/models/OK3/_splitter.pyx":1335
  *         cdef DTYPE_t* X_data = self.X_data
  * 
  *         cdef SIZE_t* features = self.features             # <<<<<<<<<<<<<<
@@ -12378,7 +12192,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
   __pyx_t_1 = __pyx_v_self->__pyx_base.__pyx_base.features;
   __pyx_v_features = __pyx_t_1;
 
-  /* "_splitter.pyx":1336
+  /* "stpredictions/models/OK3/_splitter.pyx":1336
  * 
  *         cdef SIZE_t* features = self.features
  *         cdef SIZE_t* constant_features = self.constant_features             # <<<<<<<<<<<<<<
@@ -12388,7 +12202,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
   __pyx_t_1 = __pyx_v_self->__pyx_base.__pyx_base.constant_features;
   __pyx_v_constant_features = __pyx_t_1;
 
-  /* "_splitter.pyx":1337
+  /* "stpredictions/models/OK3/_splitter.pyx":1337
  *         cdef SIZE_t* features = self.features
  *         cdef SIZE_t* constant_features = self.constant_features
  *         cdef SIZE_t n_features = self.n_features             # <<<<<<<<<<<<<<
@@ -12398,7 +12212,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.n_features;
   __pyx_v_n_features = __pyx_t_2;
 
-  /* "_splitter.pyx":1339
+  /* "stpredictions/models/OK3/_splitter.pyx":1339
  *         cdef SIZE_t n_features = self.n_features
  * 
  *         cdef DTYPE_t* Xf = self.feature_values             # <<<<<<<<<<<<<<
@@ -12408,7 +12222,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
   __pyx_t_4 = __pyx_v_self->__pyx_base.__pyx_base.feature_values;
   __pyx_v_Xf = __pyx_t_4;
 
-  /* "_splitter.pyx":1340
+  /* "stpredictions/models/OK3/_splitter.pyx":1340
  * 
  *         cdef DTYPE_t* Xf = self.feature_values
  *         cdef SIZE_t* sorted_samples = self.sorted_samples             # <<<<<<<<<<<<<<
@@ -12418,7 +12232,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
   __pyx_t_1 = __pyx_v_self->__pyx_base.sorted_samples;
   __pyx_v_sorted_samples = __pyx_t_1;
 
-  /* "_splitter.pyx":1341
+  /* "stpredictions/models/OK3/_splitter.pyx":1341
  *         cdef DTYPE_t* Xf = self.feature_values
  *         cdef SIZE_t* sorted_samples = self.sorted_samples
  *         cdef SIZE_t* index_to_samples = self.index_to_samples             # <<<<<<<<<<<<<<
@@ -12428,7 +12242,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
   __pyx_t_1 = __pyx_v_self->__pyx_base.index_to_samples;
   __pyx_v_index_to_samples = __pyx_t_1;
 
-  /* "_splitter.pyx":1342
+  /* "stpredictions/models/OK3/_splitter.pyx":1342
  *         cdef SIZE_t* sorted_samples = self.sorted_samples
  *         cdef SIZE_t* index_to_samples = self.index_to_samples
  *         cdef SIZE_t max_features = self.max_features             # <<<<<<<<<<<<<<
@@ -12438,7 +12252,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.max_features;
   __pyx_v_max_features = __pyx_t_2;
 
-  /* "_splitter.pyx":1343
+  /* "stpredictions/models/OK3/_splitter.pyx":1343
  *         cdef SIZE_t* index_to_samples = self.index_to_samples
  *         cdef SIZE_t max_features = self.max_features
  *         cdef SIZE_t min_samples_leaf = self.min_samples_leaf             # <<<<<<<<<<<<<<
@@ -12448,7 +12262,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
   __pyx_t_2 = __pyx_v_self->__pyx_base.__pyx_base.min_samples_leaf;
   __pyx_v_min_samples_leaf = __pyx_t_2;
 
-  /* "_splitter.pyx":1344
+  /* "stpredictions/models/OK3/_splitter.pyx":1344
  *         cdef SIZE_t max_features = self.max_features
  *         cdef SIZE_t min_samples_leaf = self.min_samples_leaf
  *         cdef double min_weight_leaf = self.min_weight_leaf             # <<<<<<<<<<<<<<
@@ -12458,7 +12272,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
   __pyx_t_5 = __pyx_v_self->__pyx_base.__pyx_base.min_weight_leaf;
   __pyx_v_min_weight_leaf = __pyx_t_5;
 
-  /* "_splitter.pyx":1345
+  /* "stpredictions/models/OK3/_splitter.pyx":1345
  *         cdef SIZE_t min_samples_leaf = self.min_samples_leaf
  *         cdef double min_weight_leaf = self.min_weight_leaf
  *         cdef UINT32_t* random_state = &self.rand_r_state             # <<<<<<<<<<<<<<
@@ -12467,34 +12281,34 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
   __pyx_v_random_state = (&__pyx_v_self->__pyx_base.__pyx_base.rand_r_state);
 
-  /* "_splitter.pyx":1348
+  /* "stpredictions/models/OK3/_splitter.pyx":1348
  * 
  *         cdef SplitRecord best, current
  *         _init_split(&best, end)             # <<<<<<<<<<<<<<
  *         cdef double current_proxy_improvement = - INFINITY
  *         cdef double best_proxy_improvement = - INFINITY
  */
-  __pyx_f_9_splitter__init_split((&__pyx_v_best), __pyx_v_end);
+  __pyx_f_13stpredictions_6models_3OK3_9_splitter__init_split((&__pyx_v_best), __pyx_v_end);
 
-  /* "_splitter.pyx":1349
+  /* "stpredictions/models/OK3/_splitter.pyx":1349
  *         cdef SplitRecord best, current
  *         _init_split(&best, end)
  *         cdef double current_proxy_improvement = - INFINITY             # <<<<<<<<<<<<<<
  *         cdef double best_proxy_improvement = - INFINITY
  * 
  */
-  __pyx_v_current_proxy_improvement = (-__pyx_v_9_splitter_INFINITY);
+  __pyx_v_current_proxy_improvement = (-__pyx_v_13stpredictions_6models_3OK3_9_splitter_INFINITY);
 
-  /* "_splitter.pyx":1350
+  /* "stpredictions/models/OK3/_splitter.pyx":1350
  *         _init_split(&best, end)
  *         cdef double current_proxy_improvement = - INFINITY
  *         cdef double best_proxy_improvement = - INFINITY             # <<<<<<<<<<<<<<
  * 
  *         cdef DTYPE_t current_feature_value
  */
-  __pyx_v_best_proxy_improvement = (-__pyx_v_9_splitter_INFINITY);
+  __pyx_v_best_proxy_improvement = (-__pyx_v_13stpredictions_6models_3OK3_9_splitter_INFINITY);
 
-  /* "_splitter.pyx":1354
+  /* "stpredictions/models/OK3/_splitter.pyx":1354
  *         cdef DTYPE_t current_feature_value
  * 
  *         cdef SIZE_t f_i = n_features             # <<<<<<<<<<<<<<
@@ -12503,7 +12317,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
   __pyx_v_f_i = __pyx_v_n_features;
 
-  /* "_splitter.pyx":1356
+  /* "stpredictions/models/OK3/_splitter.pyx":1356
  *         cdef SIZE_t f_i = n_features
  *         cdef SIZE_t f_j, p
  *         cdef SIZE_t n_visited_features = 0             # <<<<<<<<<<<<<<
@@ -12512,7 +12326,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
   __pyx_v_n_visited_features = 0;
 
-  /* "_splitter.pyx":1358
+  /* "stpredictions/models/OK3/_splitter.pyx":1358
  *         cdef SIZE_t n_visited_features = 0
  *         # Number of features discovered to be constant during the split search
  *         cdef SIZE_t n_found_constants = 0             # <<<<<<<<<<<<<<
@@ -12521,7 +12335,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
   __pyx_v_n_found_constants = 0;
 
-  /* "_splitter.pyx":1360
+  /* "stpredictions/models/OK3/_splitter.pyx":1360
  *         cdef SIZE_t n_found_constants = 0
  *         # Number of features known to be constant and drawn without replacement
  *         cdef SIZE_t n_drawn_constants = 0             # <<<<<<<<<<<<<<
@@ -12530,7 +12344,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
   __pyx_v_n_drawn_constants = 0;
 
-  /* "_splitter.pyx":1361
+  /* "stpredictions/models/OK3/_splitter.pyx":1361
  *         # Number of features known to be constant and drawn without replacement
  *         cdef SIZE_t n_drawn_constants = 0
  *         cdef SIZE_t n_known_constants = n_constant_features[0]             # <<<<<<<<<<<<<<
@@ -12539,7 +12353,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
   __pyx_v_n_known_constants = (__pyx_v_n_constant_features[0]);
 
-  /* "_splitter.pyx":1363
+  /* "stpredictions/models/OK3/_splitter.pyx":1363
  *         cdef SIZE_t n_known_constants = n_constant_features[0]
  *         # n_total_constants = n_known_constants + n_found_constants
  *         cdef SIZE_t n_total_constants = n_known_constants             # <<<<<<<<<<<<<<
@@ -12548,7 +12362,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
   __pyx_v_n_total_constants = __pyx_v_n_known_constants;
 
-  /* "_splitter.pyx":1369
+  /* "stpredictions/models/OK3/_splitter.pyx":1369
  *         cdef DTYPE_t max_feature_value
  * 
  *         cdef bint is_samples_sorted = 0  # indicate that sorted_samples is             # <<<<<<<<<<<<<<
@@ -12557,7 +12371,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
   __pyx_v_is_samples_sorted = 0;
 
-  /* "_splitter.pyx":1386
+  /* "stpredictions/models/OK3/_splitter.pyx":1386
  *         # newly discovered constant features to spare computation on descendant
  *         # nodes.
  *         while (f_i > n_total_constants and  # Stop early if remaining features             # <<<<<<<<<<<<<<
@@ -12572,7 +12386,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
       goto __pyx_L5_bool_binop_done;
     }
 
-    /* "_splitter.pyx":1388
+    /* "stpredictions/models/OK3/_splitter.pyx":1388
  *         while (f_i > n_total_constants and  # Stop early if remaining features
  *                                             # are constant
  *                 (n_visited_features < max_features or             # <<<<<<<<<<<<<<
@@ -12586,7 +12400,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
       goto __pyx_L5_bool_binop_done;
     }
 
-    /* "_splitter.pyx":1390
+    /* "stpredictions/models/OK3/_splitter.pyx":1390
  *                 (n_visited_features < max_features or
  *                  # At least one drawn features must be non constant
  *                  n_visited_features <= n_found_constants + n_drawn_constants)):             # <<<<<<<<<<<<<<
@@ -12598,7 +12412,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
     __pyx_L5_bool_binop_done:;
     if (!__pyx_t_6) break;
 
-    /* "_splitter.pyx":1392
+    /* "stpredictions/models/OK3/_splitter.pyx":1392
  *                  n_visited_features <= n_found_constants + n_drawn_constants)):
  * 
  *             n_visited_features += 1             # <<<<<<<<<<<<<<
@@ -12607,16 +12421,16 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
     __pyx_v_n_visited_features = (__pyx_v_n_visited_features + 1);
 
-    /* "_splitter.pyx":1406
+    /* "stpredictions/models/OK3/_splitter.pyx":1406
  * 
  *             # Draw a feature at random
  *             f_j = rand_int(n_drawn_constants, f_i - n_found_constants,             # <<<<<<<<<<<<<<
  *                            random_state)
  * 
  */
-    __pyx_v_f_j = __pyx_f_7sklearn_4tree_6_utils_rand_int(__pyx_v_n_drawn_constants, (__pyx_v_f_i - __pyx_v_n_found_constants), __pyx_v_random_state);
+    __pyx_v_f_j = __pyx_f_13stpredictions_6models_3OK3_6_utils_rand_int(__pyx_v_n_drawn_constants, (__pyx_v_f_i - __pyx_v_n_found_constants), __pyx_v_random_state);
 
-    /* "_splitter.pyx":1409
+    /* "stpredictions/models/OK3/_splitter.pyx":1409
  *                            random_state)
  * 
  *             if f_j < n_known_constants:             # <<<<<<<<<<<<<<
@@ -12626,7 +12440,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
     __pyx_t_6 = ((__pyx_v_f_j < __pyx_v_n_known_constants) != 0);
     if (__pyx_t_6) {
 
-      /* "_splitter.pyx":1411
+      /* "stpredictions/models/OK3/_splitter.pyx":1411
  *             if f_j < n_known_constants:
  *                 # f_j in the interval [n_drawn_constants, n_known_constants[
  *                 features[f_j], features[n_drawn_constants] = features[n_drawn_constants], features[f_j]             # <<<<<<<<<<<<<<
@@ -12638,7 +12452,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
       (__pyx_v_features[__pyx_v_f_j]) = __pyx_t_2;
       (__pyx_v_features[__pyx_v_n_drawn_constants]) = __pyx_t_8;
 
-      /* "_splitter.pyx":1413
+      /* "stpredictions/models/OK3/_splitter.pyx":1413
  *                 features[f_j], features[n_drawn_constants] = features[n_drawn_constants], features[f_j]
  * 
  *                 n_drawn_constants += 1             # <<<<<<<<<<<<<<
@@ -12647,7 +12461,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
       __pyx_v_n_drawn_constants = (__pyx_v_n_drawn_constants + 1);
 
-      /* "_splitter.pyx":1409
+      /* "stpredictions/models/OK3/_splitter.pyx":1409
  *                            random_state)
  * 
  *             if f_j < n_known_constants:             # <<<<<<<<<<<<<<
@@ -12657,7 +12471,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
       goto __pyx_L8;
     }
 
-    /* "_splitter.pyx":1417
+    /* "stpredictions/models/OK3/_splitter.pyx":1417
  *             else:
  *                 # f_j in the interval [n_known_constants, f_i - n_found_constants[
  *                 f_j += n_found_constants             # <<<<<<<<<<<<<<
@@ -12667,7 +12481,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
     /*else*/ {
       __pyx_v_f_j = (__pyx_v_f_j + __pyx_v_n_found_constants);
 
-      /* "_splitter.pyx":1420
+      /* "stpredictions/models/OK3/_splitter.pyx":1420
  *                 # f_j in the interval [n_total_constants, f_i[
  * 
  *                 current.feature = features[f_j]             # <<<<<<<<<<<<<<
@@ -12676,16 +12490,16 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
       __pyx_v_current.feature = (__pyx_v_features[__pyx_v_f_j]);
 
-      /* "_splitter.pyx":1422
+      /* "stpredictions/models/OK3/_splitter.pyx":1422
  *                 current.feature = features[f_j]
  * 
  *                 self.extract_nnz(current.feature,             # <<<<<<<<<<<<<<
  *                                  &end_negative, &start_positive,
  *                                  &is_samples_sorted)
  */
-      __pyx_f_9_splitter_18BaseSparseSplitter_extract_nnz(((struct __pyx_obj_9_splitter_BaseSparseSplitter *)__pyx_v_self), __pyx_v_current.feature, (&__pyx_v_end_negative), (&__pyx_v_start_positive), (&__pyx_v_is_samples_sorted));
+      __pyx_f_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_extract_nnz(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *)__pyx_v_self), __pyx_v_current.feature, (&__pyx_v_end_negative), (&__pyx_v_start_positive), (&__pyx_v_is_samples_sorted));
 
-      /* "_splitter.pyx":1427
+      /* "stpredictions/models/OK3/_splitter.pyx":1427
  * 
  *                 # Add one or two zeros in Xf, if there is any
  *                 if end_negative < start_positive:             # <<<<<<<<<<<<<<
@@ -12695,7 +12509,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
       __pyx_t_6 = ((__pyx_v_end_negative < __pyx_v_start_positive) != 0);
       if (__pyx_t_6) {
 
-        /* "_splitter.pyx":1428
+        /* "stpredictions/models/OK3/_splitter.pyx":1428
  *                 # Add one or two zeros in Xf, if there is any
  *                 if end_negative < start_positive:
  *                     start_positive -= 1             # <<<<<<<<<<<<<<
@@ -12704,7 +12518,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
         __pyx_v_start_positive = (__pyx_v_start_positive - 1);
 
-        /* "_splitter.pyx":1429
+        /* "stpredictions/models/OK3/_splitter.pyx":1429
  *                 if end_negative < start_positive:
  *                     start_positive -= 1
  *                     Xf[start_positive] = 0.             # <<<<<<<<<<<<<<
@@ -12713,7 +12527,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
         (__pyx_v_Xf[__pyx_v_start_positive]) = 0.;
 
-        /* "_splitter.pyx":1431
+        /* "stpredictions/models/OK3/_splitter.pyx":1431
  *                     Xf[start_positive] = 0.
  * 
  *                     if end_negative != start_positive:             # <<<<<<<<<<<<<<
@@ -12723,7 +12537,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
         __pyx_t_6 = ((__pyx_v_end_negative != __pyx_v_start_positive) != 0);
         if (__pyx_t_6) {
 
-          /* "_splitter.pyx":1432
+          /* "stpredictions/models/OK3/_splitter.pyx":1432
  * 
  *                     if end_negative != start_positive:
  *                         Xf[end_negative] = 0.             # <<<<<<<<<<<<<<
@@ -12732,7 +12546,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
           (__pyx_v_Xf[__pyx_v_end_negative]) = 0.;
 
-          /* "_splitter.pyx":1433
+          /* "stpredictions/models/OK3/_splitter.pyx":1433
  *                     if end_negative != start_positive:
  *                         Xf[end_negative] = 0.
  *                         end_negative += 1             # <<<<<<<<<<<<<<
@@ -12741,7 +12555,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
           __pyx_v_end_negative = (__pyx_v_end_negative + 1);
 
-          /* "_splitter.pyx":1431
+          /* "stpredictions/models/OK3/_splitter.pyx":1431
  *                     Xf[start_positive] = 0.
  * 
  *                     if end_negative != start_positive:             # <<<<<<<<<<<<<<
@@ -12750,7 +12564,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
         }
 
-        /* "_splitter.pyx":1427
+        /* "stpredictions/models/OK3/_splitter.pyx":1427
  * 
  *                 # Add one or two zeros in Xf, if there is any
  *                 if end_negative < start_positive:             # <<<<<<<<<<<<<<
@@ -12759,7 +12573,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
       }
 
-      /* "_splitter.pyx":1436
+      /* "stpredictions/models/OK3/_splitter.pyx":1436
  * 
  *                 # Find min, max in Xf[start:end_negative]
  *                 min_feature_value = Xf[start]             # <<<<<<<<<<<<<<
@@ -12768,7 +12582,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
       __pyx_v_min_feature_value = (__pyx_v_Xf[__pyx_v_start]);
 
-      /* "_splitter.pyx":1437
+      /* "stpredictions/models/OK3/_splitter.pyx":1437
  *                 # Find min, max in Xf[start:end_negative]
  *                 min_feature_value = Xf[start]
  *                 max_feature_value = min_feature_value             # <<<<<<<<<<<<<<
@@ -12777,7 +12591,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
       __pyx_v_max_feature_value = __pyx_v_min_feature_value;
 
-      /* "_splitter.pyx":1439
+      /* "stpredictions/models/OK3/_splitter.pyx":1439
  *                 max_feature_value = min_feature_value
  * 
  *                 for p in range(start, end_negative):             # <<<<<<<<<<<<<<
@@ -12789,7 +12603,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
       for (__pyx_t_9 = __pyx_v_start; __pyx_t_9 < __pyx_t_2; __pyx_t_9+=1) {
         __pyx_v_p = __pyx_t_9;
 
-        /* "_splitter.pyx":1440
+        /* "stpredictions/models/OK3/_splitter.pyx":1440
  * 
  *                 for p in range(start, end_negative):
  *                     current_feature_value = Xf[p]             # <<<<<<<<<<<<<<
@@ -12798,7 +12612,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
         __pyx_v_current_feature_value = (__pyx_v_Xf[__pyx_v_p]);
 
-        /* "_splitter.pyx":1442
+        /* "stpredictions/models/OK3/_splitter.pyx":1442
  *                     current_feature_value = Xf[p]
  * 
  *                     if current_feature_value < min_feature_value:             # <<<<<<<<<<<<<<
@@ -12808,7 +12622,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
         __pyx_t_6 = ((__pyx_v_current_feature_value < __pyx_v_min_feature_value) != 0);
         if (__pyx_t_6) {
 
-          /* "_splitter.pyx":1443
+          /* "stpredictions/models/OK3/_splitter.pyx":1443
  * 
  *                     if current_feature_value < min_feature_value:
  *                         min_feature_value = current_feature_value             # <<<<<<<<<<<<<<
@@ -12817,7 +12631,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
           __pyx_v_min_feature_value = __pyx_v_current_feature_value;
 
-          /* "_splitter.pyx":1442
+          /* "stpredictions/models/OK3/_splitter.pyx":1442
  *                     current_feature_value = Xf[p]
  * 
  *                     if current_feature_value < min_feature_value:             # <<<<<<<<<<<<<<
@@ -12827,7 +12641,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
           goto __pyx_L13;
         }
 
-        /* "_splitter.pyx":1444
+        /* "stpredictions/models/OK3/_splitter.pyx":1444
  *                     if current_feature_value < min_feature_value:
  *                         min_feature_value = current_feature_value
  *                     elif current_feature_value > max_feature_value:             # <<<<<<<<<<<<<<
@@ -12837,7 +12651,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
         __pyx_t_6 = ((__pyx_v_current_feature_value > __pyx_v_max_feature_value) != 0);
         if (__pyx_t_6) {
 
-          /* "_splitter.pyx":1445
+          /* "stpredictions/models/OK3/_splitter.pyx":1445
  *                         min_feature_value = current_feature_value
  *                     elif current_feature_value > max_feature_value:
  *                         max_feature_value = current_feature_value             # <<<<<<<<<<<<<<
@@ -12846,7 +12660,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
           __pyx_v_max_feature_value = __pyx_v_current_feature_value;
 
-          /* "_splitter.pyx":1444
+          /* "stpredictions/models/OK3/_splitter.pyx":1444
  *                     if current_feature_value < min_feature_value:
  *                         min_feature_value = current_feature_value
  *                     elif current_feature_value > max_feature_value:             # <<<<<<<<<<<<<<
@@ -12857,7 +12671,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
         __pyx_L13:;
       }
 
-      /* "_splitter.pyx":1448
+      /* "stpredictions/models/OK3/_splitter.pyx":1448
  * 
  *                 # Update min, max given Xf[start_positive:end]
  *                 for p in range(start_positive, end):             # <<<<<<<<<<<<<<
@@ -12869,7 +12683,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
       for (__pyx_t_9 = __pyx_v_start_positive; __pyx_t_9 < __pyx_t_2; __pyx_t_9+=1) {
         __pyx_v_p = __pyx_t_9;
 
-        /* "_splitter.pyx":1449
+        /* "stpredictions/models/OK3/_splitter.pyx":1449
  *                 # Update min, max given Xf[start_positive:end]
  *                 for p in range(start_positive, end):
  *                     current_feature_value = Xf[p]             # <<<<<<<<<<<<<<
@@ -12878,7 +12692,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
         __pyx_v_current_feature_value = (__pyx_v_Xf[__pyx_v_p]);
 
-        /* "_splitter.pyx":1451
+        /* "stpredictions/models/OK3/_splitter.pyx":1451
  *                     current_feature_value = Xf[p]
  * 
  *                     if current_feature_value < min_feature_value:             # <<<<<<<<<<<<<<
@@ -12888,7 +12702,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
         __pyx_t_6 = ((__pyx_v_current_feature_value < __pyx_v_min_feature_value) != 0);
         if (__pyx_t_6) {
 
-          /* "_splitter.pyx":1452
+          /* "stpredictions/models/OK3/_splitter.pyx":1452
  * 
  *                     if current_feature_value < min_feature_value:
  *                         min_feature_value = current_feature_value             # <<<<<<<<<<<<<<
@@ -12897,7 +12711,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
           __pyx_v_min_feature_value = __pyx_v_current_feature_value;
 
-          /* "_splitter.pyx":1451
+          /* "stpredictions/models/OK3/_splitter.pyx":1451
  *                     current_feature_value = Xf[p]
  * 
  *                     if current_feature_value < min_feature_value:             # <<<<<<<<<<<<<<
@@ -12907,7 +12721,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
           goto __pyx_L16;
         }
 
-        /* "_splitter.pyx":1453
+        /* "stpredictions/models/OK3/_splitter.pyx":1453
  *                     if current_feature_value < min_feature_value:
  *                         min_feature_value = current_feature_value
  *                     elif current_feature_value > max_feature_value:             # <<<<<<<<<<<<<<
@@ -12917,7 +12731,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
         __pyx_t_6 = ((__pyx_v_current_feature_value > __pyx_v_max_feature_value) != 0);
         if (__pyx_t_6) {
 
-          /* "_splitter.pyx":1454
+          /* "stpredictions/models/OK3/_splitter.pyx":1454
  *                         min_feature_value = current_feature_value
  *                     elif current_feature_value > max_feature_value:
  *                         max_feature_value = current_feature_value             # <<<<<<<<<<<<<<
@@ -12926,7 +12740,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
           __pyx_v_max_feature_value = __pyx_v_current_feature_value;
 
-          /* "_splitter.pyx":1453
+          /* "stpredictions/models/OK3/_splitter.pyx":1453
  *                     if current_feature_value < min_feature_value:
  *                         min_feature_value = current_feature_value
  *                     elif current_feature_value > max_feature_value:             # <<<<<<<<<<<<<<
@@ -12937,17 +12751,17 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
         __pyx_L16:;
       }
 
-      /* "_splitter.pyx":1456
+      /* "stpredictions/models/OK3/_splitter.pyx":1456
  *                         max_feature_value = current_feature_value
  * 
  *                 if max_feature_value <= min_feature_value + FEATURE_THRESHOLD:             # <<<<<<<<<<<<<<
  *                     features[f_j] = features[n_total_constants]
  *                     features[n_total_constants] = current.feature
  */
-      __pyx_t_6 = ((__pyx_v_max_feature_value <= (__pyx_v_min_feature_value + __pyx_v_9_splitter_FEATURE_THRESHOLD)) != 0);
+      __pyx_t_6 = ((__pyx_v_max_feature_value <= (__pyx_v_min_feature_value + __pyx_v_13stpredictions_6models_3OK3_9_splitter_FEATURE_THRESHOLD)) != 0);
       if (__pyx_t_6) {
 
-        /* "_splitter.pyx":1457
+        /* "stpredictions/models/OK3/_splitter.pyx":1457
  * 
  *                 if max_feature_value <= min_feature_value + FEATURE_THRESHOLD:
  *                     features[f_j] = features[n_total_constants]             # <<<<<<<<<<<<<<
@@ -12956,7 +12770,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
         (__pyx_v_features[__pyx_v_f_j]) = (__pyx_v_features[__pyx_v_n_total_constants]);
 
-        /* "_splitter.pyx":1458
+        /* "stpredictions/models/OK3/_splitter.pyx":1458
  *                 if max_feature_value <= min_feature_value + FEATURE_THRESHOLD:
  *                     features[f_j] = features[n_total_constants]
  *                     features[n_total_constants] = current.feature             # <<<<<<<<<<<<<<
@@ -12966,7 +12780,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
         __pyx_t_8 = __pyx_v_current.feature;
         (__pyx_v_features[__pyx_v_n_total_constants]) = __pyx_t_8;
 
-        /* "_splitter.pyx":1460
+        /* "stpredictions/models/OK3/_splitter.pyx":1460
  *                     features[n_total_constants] = current.feature
  * 
  *                     n_found_constants += 1             # <<<<<<<<<<<<<<
@@ -12975,7 +12789,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
         __pyx_v_n_found_constants = (__pyx_v_n_found_constants + 1);
 
-        /* "_splitter.pyx":1461
+        /* "stpredictions/models/OK3/_splitter.pyx":1461
  * 
  *                     n_found_constants += 1
  *                     n_total_constants += 1             # <<<<<<<<<<<<<<
@@ -12984,7 +12798,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
         __pyx_v_n_total_constants = (__pyx_v_n_total_constants + 1);
 
-        /* "_splitter.pyx":1456
+        /* "stpredictions/models/OK3/_splitter.pyx":1456
  *                         max_feature_value = current_feature_value
  * 
  *                 if max_feature_value <= min_feature_value + FEATURE_THRESHOLD:             # <<<<<<<<<<<<<<
@@ -12994,7 +12808,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
         goto __pyx_L17;
       }
 
-      /* "_splitter.pyx":1464
+      /* "stpredictions/models/OK3/_splitter.pyx":1464
  * 
  *                 else:
  *                     f_i -= 1             # <<<<<<<<<<<<<<
@@ -13004,7 +12818,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
       /*else*/ {
         __pyx_v_f_i = (__pyx_v_f_i - 1);
 
-        /* "_splitter.pyx":1465
+        /* "stpredictions/models/OK3/_splitter.pyx":1465
  *                 else:
  *                     f_i -= 1
  *                     features[f_i], features[f_j] = features[f_j], features[f_i]             # <<<<<<<<<<<<<<
@@ -13016,16 +12830,16 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
         (__pyx_v_features[__pyx_v_f_i]) = __pyx_t_8;
         (__pyx_v_features[__pyx_v_f_j]) = __pyx_t_2;
 
-        /* "_splitter.pyx":1468
+        /* "stpredictions/models/OK3/_splitter.pyx":1468
  * 
  *                     # Draw a random threshold
  *                     current.threshold = rand_uniform(min_feature_value,             # <<<<<<<<<<<<<<
  *                                                      max_feature_value,
  *                                                      random_state)
  */
-        __pyx_v_current.threshold = __pyx_f_7sklearn_4tree_6_utils_rand_uniform(__pyx_v_min_feature_value, __pyx_v_max_feature_value, __pyx_v_random_state);
+        __pyx_v_current.threshold = __pyx_f_13stpredictions_6models_3OK3_6_utils_rand_uniform(__pyx_v_min_feature_value, __pyx_v_max_feature_value, __pyx_v_random_state);
 
-        /* "_splitter.pyx":1472
+        /* "stpredictions/models/OK3/_splitter.pyx":1472
  *                                                      random_state)
  * 
  *                     if current.threshold == max_feature_value:             # <<<<<<<<<<<<<<
@@ -13035,7 +12849,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
         __pyx_t_6 = ((__pyx_v_current.threshold == __pyx_v_max_feature_value) != 0);
         if (__pyx_t_6) {
 
-          /* "_splitter.pyx":1473
+          /* "stpredictions/models/OK3/_splitter.pyx":1473
  * 
  *                     if current.threshold == max_feature_value:
  *                         current.threshold = min_feature_value             # <<<<<<<<<<<<<<
@@ -13044,7 +12858,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
           __pyx_v_current.threshold = __pyx_v_min_feature_value;
 
-          /* "_splitter.pyx":1472
+          /* "stpredictions/models/OK3/_splitter.pyx":1472
  *                                                      random_state)
  * 
  *                     if current.threshold == max_feature_value:             # <<<<<<<<<<<<<<
@@ -13053,16 +12867,16 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
         }
 
-        /* "_splitter.pyx":1476
+        /* "stpredictions/models/OK3/_splitter.pyx":1476
  * 
  *                     # Partition
  *                     current.pos = self._partition(current.threshold,             # <<<<<<<<<<<<<<
  *                                                   end_negative,
  *                                                   start_positive,
  */
-        __pyx_v_current.pos = __pyx_f_9_splitter_18BaseSparseSplitter__partition(((struct __pyx_obj_9_splitter_BaseSparseSplitter *)__pyx_v_self), __pyx_v_current.threshold, __pyx_v_end_negative, __pyx_v_start_positive, (__pyx_v_start_positive + ((__pyx_v_Xf[__pyx_v_start_positive]) == 0.)));
+        __pyx_v_current.pos = __pyx_f_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter__partition(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *)__pyx_v_self), __pyx_v_current.threshold, __pyx_v_end_negative, __pyx_v_start_positive, (__pyx_v_start_positive + ((__pyx_v_Xf[__pyx_v_start_positive]) == 0.)));
 
-        /* "_splitter.pyx":1483
+        /* "stpredictions/models/OK3/_splitter.pyx":1483
  * 
  *                     # Reject if min_samples_leaf is not guaranteed
  *                     if (((current.pos - start) < min_samples_leaf) or             # <<<<<<<<<<<<<<
@@ -13076,7 +12890,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
           goto __pyx_L20_bool_binop_done;
         }
 
-        /* "_splitter.pyx":1484
+        /* "stpredictions/models/OK3/_splitter.pyx":1484
  *                     # Reject if min_samples_leaf is not guaranteed
  *                     if (((current.pos - start) < min_samples_leaf) or
  *                             ((end - current.pos) < min_samples_leaf)):             # <<<<<<<<<<<<<<
@@ -13087,7 +12901,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
         __pyx_t_6 = __pyx_t_7;
         __pyx_L20_bool_binop_done:;
 
-        /* "_splitter.pyx":1483
+        /* "stpredictions/models/OK3/_splitter.pyx":1483
  * 
  *                     # Reject if min_samples_leaf is not guaranteed
  *                     if (((current.pos - start) < min_samples_leaf) or             # <<<<<<<<<<<<<<
@@ -13096,7 +12910,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
         if (__pyx_t_6) {
 
-          /* "_splitter.pyx":1485
+          /* "stpredictions/models/OK3/_splitter.pyx":1485
  *                     if (((current.pos - start) < min_samples_leaf) or
  *                             ((end - current.pos) < min_samples_leaf)):
  *                         continue             # <<<<<<<<<<<<<<
@@ -13105,7 +12919,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
           goto __pyx_L3_continue;
 
-          /* "_splitter.pyx":1483
+          /* "stpredictions/models/OK3/_splitter.pyx":1483
  * 
  *                     # Reject if min_samples_leaf is not guaranteed
  *                     if (((current.pos - start) < min_samples_leaf) or             # <<<<<<<<<<<<<<
@@ -13114,25 +12928,25 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
         }
 
-        /* "_splitter.pyx":1488
+        /* "stpredictions/models/OK3/_splitter.pyx":1488
  * 
  *                     # Evaluate split
  *                     self.criterion.reset()             # <<<<<<<<<<<<<<
  *                     self.criterion.update(current.pos)
  * 
  */
-        __pyx_t_10 = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->reset(__pyx_v_self->__pyx_base.__pyx_base.criterion); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 1488, __pyx_L1_error)
+        __pyx_t_10 = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->reset(__pyx_v_self->__pyx_base.__pyx_base.criterion); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 1488, __pyx_L1_error)
 
-        /* "_splitter.pyx":1489
+        /* "stpredictions/models/OK3/_splitter.pyx":1489
  *                     # Evaluate split
  *                     self.criterion.reset()
  *                     self.criterion.update(current.pos)             # <<<<<<<<<<<<<<
  * 
  *                     # Reject if min_weight_leaf is not satisfied
  */
-        __pyx_t_10 = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->update(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_current.pos); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 1489, __pyx_L1_error)
+        __pyx_t_10 = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->update(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_current.pos); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 1489, __pyx_L1_error)
 
-        /* "_splitter.pyx":1492
+        /* "stpredictions/models/OK3/_splitter.pyx":1492
  * 
  *                     # Reject if min_weight_leaf is not satisfied
  *                     if ((self.criterion.weighted_n_left < min_weight_leaf) or             # <<<<<<<<<<<<<<
@@ -13146,7 +12960,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
           goto __pyx_L23_bool_binop_done;
         }
 
-        /* "_splitter.pyx":1493
+        /* "stpredictions/models/OK3/_splitter.pyx":1493
  *                     # Reject if min_weight_leaf is not satisfied
  *                     if ((self.criterion.weighted_n_left < min_weight_leaf) or
  *                             (self.criterion.weighted_n_right < min_weight_leaf)):             # <<<<<<<<<<<<<<
@@ -13157,7 +12971,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
         __pyx_t_6 = __pyx_t_7;
         __pyx_L23_bool_binop_done:;
 
-        /* "_splitter.pyx":1492
+        /* "stpredictions/models/OK3/_splitter.pyx":1492
  * 
  *                     # Reject if min_weight_leaf is not satisfied
  *                     if ((self.criterion.weighted_n_left < min_weight_leaf) or             # <<<<<<<<<<<<<<
@@ -13166,7 +12980,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
         if (__pyx_t_6) {
 
-          /* "_splitter.pyx":1494
+          /* "stpredictions/models/OK3/_splitter.pyx":1494
  *                     if ((self.criterion.weighted_n_left < min_weight_leaf) or
  *                             (self.criterion.weighted_n_right < min_weight_leaf)):
  *                         continue             # <<<<<<<<<<<<<<
@@ -13175,7 +12989,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
           goto __pyx_L3_continue;
 
-          /* "_splitter.pyx":1492
+          /* "stpredictions/models/OK3/_splitter.pyx":1492
  * 
  *                     # Reject if min_weight_leaf is not satisfied
  *                     if ((self.criterion.weighted_n_left < min_weight_leaf) or             # <<<<<<<<<<<<<<
@@ -13184,16 +12998,16 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
         }
 
-        /* "_splitter.pyx":1496
+        /* "stpredictions/models/OK3/_splitter.pyx":1496
  *                         continue
  * 
  *                     current_proxy_improvement = self.criterion.proxy_impurity_improvement()             # <<<<<<<<<<<<<<
  * 
  *                     if current_proxy_improvement > best_proxy_improvement:
  */
-        __pyx_v_current_proxy_improvement = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->proxy_impurity_improvement(__pyx_v_self->__pyx_base.__pyx_base.criterion);
+        __pyx_v_current_proxy_improvement = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->proxy_impurity_improvement(__pyx_v_self->__pyx_base.__pyx_base.criterion);
 
-        /* "_splitter.pyx":1498
+        /* "stpredictions/models/OK3/_splitter.pyx":1498
  *                     current_proxy_improvement = self.criterion.proxy_impurity_improvement()
  * 
  *                     if current_proxy_improvement > best_proxy_improvement:             # <<<<<<<<<<<<<<
@@ -13203,7 +13017,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
         __pyx_t_6 = ((__pyx_v_current_proxy_improvement > __pyx_v_best_proxy_improvement) != 0);
         if (__pyx_t_6) {
 
-          /* "_splitter.pyx":1499
+          /* "stpredictions/models/OK3/_splitter.pyx":1499
  * 
  *                     if current_proxy_improvement > best_proxy_improvement:
  *                         best_proxy_improvement = current_proxy_improvement             # <<<<<<<<<<<<<<
@@ -13212,25 +13026,25 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
           __pyx_v_best_proxy_improvement = __pyx_v_current_proxy_improvement;
 
-          /* "_splitter.pyx":1500
+          /* "stpredictions/models/OK3/_splitter.pyx":1500
  *                     if current_proxy_improvement > best_proxy_improvement:
  *                         best_proxy_improvement = current_proxy_improvement
  *                         current.improvement = self.criterion.impurity_improvement(impurity)             # <<<<<<<<<<<<<<
  * 
  *                         self.criterion.children_impurity(&current.impurity_left,
  */
-          __pyx_v_current.improvement = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->impurity_improvement(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_impurity);
+          __pyx_v_current.improvement = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->impurity_improvement(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_impurity);
 
-          /* "_splitter.pyx":1502
+          /* "stpredictions/models/OK3/_splitter.pyx":1502
  *                         current.improvement = self.criterion.impurity_improvement(impurity)
  * 
  *                         self.criterion.children_impurity(&current.impurity_left,             # <<<<<<<<<<<<<<
  *                                                          &current.impurity_right)
  *                         best = current
  */
-          ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->children_impurity(__pyx_v_self->__pyx_base.__pyx_base.criterion, (&__pyx_v_current.impurity_left), (&__pyx_v_current.impurity_right));
+          ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->children_impurity(__pyx_v_self->__pyx_base.__pyx_base.criterion, (&__pyx_v_current.impurity_left), (&__pyx_v_current.impurity_right));
 
-          /* "_splitter.pyx":1504
+          /* "stpredictions/models/OK3/_splitter.pyx":1504
  *                         self.criterion.children_impurity(&current.impurity_left,
  *                                                          &current.impurity_right)
  *                         best = current             # <<<<<<<<<<<<<<
@@ -13239,7 +13053,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
           __pyx_v_best = __pyx_v_current;
 
-          /* "_splitter.pyx":1498
+          /* "stpredictions/models/OK3/_splitter.pyx":1498
  *                     current_proxy_improvement = self.criterion.proxy_impurity_improvement()
  * 
  *                     if current_proxy_improvement > best_proxy_improvement:             # <<<<<<<<<<<<<<
@@ -13254,7 +13068,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
     __pyx_L3_continue:;
   }
 
-  /* "_splitter.pyx":1507
+  /* "stpredictions/models/OK3/_splitter.pyx":1507
  * 
  *         # Reorganize into samples[start:best.pos] + samples[best.pos:end]
  *         if best.pos < end:             # <<<<<<<<<<<<<<
@@ -13264,7 +13078,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
   __pyx_t_6 = ((__pyx_v_best.pos < __pyx_v_end) != 0);
   if (__pyx_t_6) {
 
-    /* "_splitter.pyx":1508
+    /* "stpredictions/models/OK3/_splitter.pyx":1508
  *         # Reorganize into samples[start:best.pos] + samples[best.pos:end]
  *         if best.pos < end:
  *             if current.feature != best.feature:             # <<<<<<<<<<<<<<
@@ -13274,25 +13088,25 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
     __pyx_t_6 = ((__pyx_v_current.feature != __pyx_v_best.feature) != 0);
     if (__pyx_t_6) {
 
-      /* "_splitter.pyx":1509
+      /* "stpredictions/models/OK3/_splitter.pyx":1509
  *         if best.pos < end:
  *             if current.feature != best.feature:
  *                 self.extract_nnz(best.feature, &end_negative, &start_positive,             # <<<<<<<<<<<<<<
  *                                  &is_samples_sorted)
  * 
  */
-      __pyx_f_9_splitter_18BaseSparseSplitter_extract_nnz(((struct __pyx_obj_9_splitter_BaseSparseSplitter *)__pyx_v_self), __pyx_v_best.feature, (&__pyx_v_end_negative), (&__pyx_v_start_positive), (&__pyx_v_is_samples_sorted));
+      __pyx_f_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_extract_nnz(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *)__pyx_v_self), __pyx_v_best.feature, (&__pyx_v_end_negative), (&__pyx_v_start_positive), (&__pyx_v_is_samples_sorted));
 
-      /* "_splitter.pyx":1512
+      /* "stpredictions/models/OK3/_splitter.pyx":1512
  *                                  &is_samples_sorted)
  * 
  *                 self._partition(best.threshold, end_negative, start_positive,             # <<<<<<<<<<<<<<
  *                                 best.pos)
  * 
  */
-      (void)(__pyx_f_9_splitter_18BaseSparseSplitter__partition(((struct __pyx_obj_9_splitter_BaseSparseSplitter *)__pyx_v_self), __pyx_v_best.threshold, __pyx_v_end_negative, __pyx_v_start_positive, __pyx_v_best.pos));
+      (void)(__pyx_f_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter__partition(((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *)__pyx_v_self), __pyx_v_best.threshold, __pyx_v_end_negative, __pyx_v_start_positive, __pyx_v_best.pos));
 
-      /* "_splitter.pyx":1508
+      /* "stpredictions/models/OK3/_splitter.pyx":1508
  *         # Reorganize into samples[start:best.pos] + samples[best.pos:end]
  *         if best.pos < end:
  *             if current.feature != best.feature:             # <<<<<<<<<<<<<<
@@ -13301,43 +13115,43 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
     }
 
-    /* "_splitter.pyx":1515
+    /* "stpredictions/models/OK3/_splitter.pyx":1515
  *                                 best.pos)
  * 
  *             self.criterion.reset()             # <<<<<<<<<<<<<<
  *             self.criterion.update(best.pos)
  *             best.improvement = self.criterion.impurity_improvement(impurity)
  */
-    __pyx_t_10 = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->reset(__pyx_v_self->__pyx_base.__pyx_base.criterion); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 1515, __pyx_L1_error)
+    __pyx_t_10 = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->reset(__pyx_v_self->__pyx_base.__pyx_base.criterion); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 1515, __pyx_L1_error)
 
-    /* "_splitter.pyx":1516
+    /* "stpredictions/models/OK3/_splitter.pyx":1516
  * 
  *             self.criterion.reset()
  *             self.criterion.update(best.pos)             # <<<<<<<<<<<<<<
  *             best.improvement = self.criterion.impurity_improvement(impurity)
  *             self.criterion.children_impurity(&best.impurity_left,
  */
-    __pyx_t_10 = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->update(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_best.pos); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 1516, __pyx_L1_error)
+    __pyx_t_10 = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->update(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_best.pos); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 1516, __pyx_L1_error)
 
-    /* "_splitter.pyx":1517
+    /* "stpredictions/models/OK3/_splitter.pyx":1517
  *             self.criterion.reset()
  *             self.criterion.update(best.pos)
  *             best.improvement = self.criterion.impurity_improvement(impurity)             # <<<<<<<<<<<<<<
  *             self.criterion.children_impurity(&best.impurity_left,
  *                                              &best.impurity_right)
  */
-    __pyx_v_best.improvement = ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->impurity_improvement(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_impurity);
+    __pyx_v_best.improvement = ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->impurity_improvement(__pyx_v_self->__pyx_base.__pyx_base.criterion, __pyx_v_impurity);
 
-    /* "_splitter.pyx":1518
+    /* "stpredictions/models/OK3/_splitter.pyx":1518
  *             self.criterion.update(best.pos)
  *             best.improvement = self.criterion.impurity_improvement(impurity)
  *             self.criterion.children_impurity(&best.impurity_left,             # <<<<<<<<<<<<<<
  *                                              &best.impurity_right)
  * 
  */
-    ((struct __pyx_vtabstruct_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->children_impurity(__pyx_v_self->__pyx_base.__pyx_base.criterion, (&__pyx_v_best.impurity_left), (&__pyx_v_best.impurity_right));
+    ((struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion *)__pyx_v_self->__pyx_base.__pyx_base.criterion->__pyx_vtab)->children_impurity(__pyx_v_self->__pyx_base.__pyx_base.criterion, (&__pyx_v_best.impurity_left), (&__pyx_v_best.impurity_right));
 
-    /* "_splitter.pyx":1507
+    /* "stpredictions/models/OK3/_splitter.pyx":1507
  * 
  *         # Reorganize into samples[start:best.pos] + samples[best.pos:end]
  *         if best.pos < end:             # <<<<<<<<<<<<<<
@@ -13346,25 +13160,25 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
   }
 
-  /* "_splitter.pyx":1524
+  /* "stpredictions/models/OK3/_splitter.pyx":1524
  *         # element in features[:n_known_constants] must be preserved for sibling
  *         # and child nodes
  *         memcpy(features, constant_features, sizeof(SIZE_t) * n_known_constants)             # <<<<<<<<<<<<<<
  * 
  *         # Copy newly found constant features
  */
-  (void)(memcpy(__pyx_v_features, __pyx_v_constant_features, ((sizeof(__pyx_t_7sklearn_4tree_5_tree_SIZE_t)) * __pyx_v_n_known_constants)));
+  (void)(memcpy(__pyx_v_features, __pyx_v_constant_features, ((sizeof(__pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t)) * __pyx_v_n_known_constants)));
 
-  /* "_splitter.pyx":1527
+  /* "stpredictions/models/OK3/_splitter.pyx":1527
  * 
  *         # Copy newly found constant features
  *         memcpy(constant_features + n_known_constants,             # <<<<<<<<<<<<<<
  *                features + n_known_constants,
  *                sizeof(SIZE_t) * n_found_constants)
  */
-  (void)(memcpy((__pyx_v_constant_features + __pyx_v_n_known_constants), (__pyx_v_features + __pyx_v_n_known_constants), ((sizeof(__pyx_t_7sklearn_4tree_5_tree_SIZE_t)) * __pyx_v_n_found_constants)));
+  (void)(memcpy((__pyx_v_constant_features + __pyx_v_n_known_constants), (__pyx_v_features + __pyx_v_n_known_constants), ((sizeof(__pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t)) * __pyx_v_n_found_constants)));
 
-  /* "_splitter.pyx":1532
+  /* "stpredictions/models/OK3/_splitter.pyx":1532
  * 
  *         # Return values
  *         split[0] = best             # <<<<<<<<<<<<<<
@@ -13373,7 +13187,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
   (__pyx_v_split[0]) = __pyx_v_best;
 
-  /* "_splitter.pyx":1533
+  /* "stpredictions/models/OK3/_splitter.pyx":1533
  *         # Return values
  *         split[0] = best
  *         n_constant_features[0] = n_total_constants             # <<<<<<<<<<<<<<
@@ -13381,7 +13195,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
  */
   (__pyx_v_n_constant_features[0]) = __pyx_v_n_total_constants;
 
-  /* "_splitter.pyx":1534
+  /* "stpredictions/models/OK3/_splitter.pyx":1534
  *         split[0] = best
  *         n_constant_features[0] = n_total_constants
  *         return 0             # <<<<<<<<<<<<<<
@@ -13389,7 +13203,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "_splitter.pyx":1319
+  /* "stpredictions/models/OK3/_splitter.pyx":1319
  *                                        self.random_state), self.__getstate__())
  * 
  *     cdef int node_split(self, double impurity, SplitRecord* split,             # <<<<<<<<<<<<<<
@@ -13403,7 +13217,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
     #ifdef WITH_THREAD
     PyGILState_STATE __pyx_gilstate_save = __Pyx_PyGILState_Ensure();
     #endif
-    __Pyx_AddTraceback("_splitter.RandomSparseSplitter.node_split", __pyx_clineno, __pyx_lineno, __pyx_filename);
+    __Pyx_AddTraceback("stpredictions.models.OK3._splitter.RandomSparseSplitter.node_split", __pyx_clineno, __pyx_lineno, __pyx_filename);
     #ifdef WITH_THREAD
     __Pyx_PyGILState_Release(__pyx_gilstate_save);
     #endif
@@ -13413,7 +13227,7 @@ static int __pyx_f_9_splitter_20RandomSparseSplitter_node_split(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":734
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":734
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -13430,7 +13244,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew1", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":735
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":735
  * 
  * cdef inline object PyArray_MultiIterNew1(a):
  *     return PyArray_MultiIterNew(1, <void*>a)             # <<<<<<<<<<<<<<
@@ -13444,7 +13258,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":734
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":734
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -13463,7 +13277,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":737
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":737
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -13480,7 +13294,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew2", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":738
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":738
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)             # <<<<<<<<<<<<<<
@@ -13494,7 +13308,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":737
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":737
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -13513,7 +13327,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":740
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":740
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -13530,7 +13344,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew3", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":741
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":741
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)             # <<<<<<<<<<<<<<
@@ -13544,7 +13358,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":740
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":740
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -13563,7 +13377,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":743
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":743
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -13580,7 +13394,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew4", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":744
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":744
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)             # <<<<<<<<<<<<<<
@@ -13594,7 +13408,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":743
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":743
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -13613,7 +13427,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":746
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":746
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -13630,7 +13444,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew5", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":747
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":747
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)             # <<<<<<<<<<<<<<
@@ -13644,7 +13458,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":746
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":746
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -13663,7 +13477,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":749
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":749
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -13677,7 +13491,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("PyDataType_SHAPE", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":750
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":750
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -13687,7 +13501,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   __pyx_t_1 = (PyDataType_HASSUBARRAY(__pyx_v_d) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":751
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":751
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):
  *         return <tuple>d.subarray.shape             # <<<<<<<<<<<<<<
@@ -13699,7 +13513,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     __pyx_r = ((PyObject*)__pyx_v_d->subarray->shape);
     goto __pyx_L0;
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":750
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":750
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -13708,7 +13522,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
  */
   }
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":753
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":753
  *         return <tuple>d.subarray.shape
  *     else:
  *         return ()             # <<<<<<<<<<<<<<
@@ -13722,7 +13536,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     goto __pyx_L0;
   }
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":749
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":749
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -13737,7 +13551,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":868
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":868
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -13749,7 +13563,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("set_array_base", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":869
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":869
  * 
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!             # <<<<<<<<<<<<<<
@@ -13758,7 +13572,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   Py_INCREF(__pyx_v_base);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":870
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":870
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!
  *     PyArray_SetBaseObject(arr, base)             # <<<<<<<<<<<<<<
@@ -13767,7 +13581,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   (void)(PyArray_SetBaseObject(__pyx_v_arr, __pyx_v_base));
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":868
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":868
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -13779,7 +13593,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyFinishContext();
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":872
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":872
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -13794,7 +13608,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("get_array_base", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":873
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":873
  * 
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)             # <<<<<<<<<<<<<<
@@ -13803,7 +13617,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   __pyx_v_base = PyArray_BASE(__pyx_v_arr);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":874
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":874
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -13813,7 +13627,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_t_1 = ((__pyx_v_base == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":875
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":875
  *     base = PyArray_BASE(arr)
  *     if base is NULL:
  *         return None             # <<<<<<<<<<<<<<
@@ -13824,7 +13638,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":874
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":874
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -13833,7 +13647,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   }
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":876
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":876
  *     if base is NULL:
  *         return None
  *     return <object>base             # <<<<<<<<<<<<<<
@@ -13845,7 +13659,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_r = ((PyObject *)__pyx_v_base);
   goto __pyx_L0;
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":872
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":872
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -13860,7 +13674,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":880
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":880
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -13884,7 +13698,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_array", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":881
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":881
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -13900,7 +13714,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":882
+      /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":882
  * cdef inline int import_array() except -1:
  *     try:
  *         __pyx_import_array()             # <<<<<<<<<<<<<<
@@ -13909,7 +13723,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
  */
       __pyx_t_4 = _import_array(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(3, 882, __pyx_L3_error)
 
-      /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":881
+      /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":881
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -13923,7 +13737,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":883
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":883
  *     try:
  *         __pyx_import_array()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -13938,7 +13752,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":884
+      /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":884
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -13954,7 +13768,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":881
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":881
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -13969,7 +13783,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":880
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":880
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -13992,7 +13806,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":886
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":886
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -14016,7 +13830,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_umath", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":887
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":887
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -14032,7 +13846,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":888
+      /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":888
  * cdef inline int import_umath() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -14041,7 +13855,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(3, 888, __pyx_L3_error)
 
-      /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":887
+      /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":887
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -14055,7 +13869,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":889
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":889
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -14070,7 +13884,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":890
+      /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":890
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -14086,7 +13900,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":887
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":887
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -14101,7 +13915,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":886
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":886
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -14124,7 +13938,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":892
+/* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":892
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -14148,7 +13962,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_ufunc", 0);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":893
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":893
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -14164,7 +13978,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":894
+      /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":894
  * cdef inline int import_ufunc() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -14173,7 +13987,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(3, 894, __pyx_L3_error)
 
-      /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":893
+      /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":893
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -14187,7 +14001,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":895
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":895
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -14202,7 +14016,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":896
+      /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":896
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -14218,7 +14032,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":893
+    /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":893
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -14233,7 +14047,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":892
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":892
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -27273,10 +27087,10 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *__
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static struct __pyx_vtabstruct_9_splitter_Splitter __pyx_vtable_9_splitter_Splitter;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_Splitter __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_Splitter;
 
-static PyObject *__pyx_tp_new_9_splitter_Splitter(PyTypeObject *t, PyObject *a, PyObject *k) {
-  struct __pyx_obj_9_splitter_Splitter *p;
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_Splitter(PyTypeObject *t, PyObject *a, PyObject *k) {
+  struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *p;
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -27284,21 +27098,21 @@ static PyObject *__pyx_tp_new_9_splitter_Splitter(PyTypeObject *t, PyObject *a, 
     o = (PyObject *) PyBaseObject_Type.tp_new(t, __pyx_empty_tuple, 0);
   }
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_9_splitter_Splitter *)o);
-  p->__pyx_vtab = __pyx_vtabptr_9_splitter_Splitter;
-  p->criterion = ((struct __pyx_obj_10_criterion_Criterion *)Py_None); Py_INCREF(Py_None);
+  p = ((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)o);
+  p->__pyx_vtab = __pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_Splitter;
+  p->criterion = ((struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *)Py_None); Py_INCREF(Py_None);
   p->random_state = Py_None; Py_INCREF(Py_None);
   p->y.data = NULL;
   p->y.memview = NULL;
-  if (unlikely(__pyx_pw_9_splitter_8Splitter_1__cinit__(o, a, k) < 0)) goto bad;
+  if (unlikely(__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_1__cinit__(o, a, k) < 0)) goto bad;
   return o;
   bad:
   Py_DECREF(o); o = 0;
   return NULL;
 }
 
-static void __pyx_tp_dealloc_9_splitter_Splitter(PyObject *o) {
-  struct __pyx_obj_9_splitter_Splitter *p = (struct __pyx_obj_9_splitter_Splitter *)o;
+static void __pyx_tp_dealloc_13stpredictions_6models_3OK3_9_splitter_Splitter(PyObject *o) {
+  struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *p = (struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && !_PyGC_FINALIZED(o)) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -27309,7 +27123,7 @@ static void __pyx_tp_dealloc_9_splitter_Splitter(PyObject *o) {
     PyObject *etype, *eval, *etb;
     PyErr_Fetch(&etype, &eval, &etb);
     __Pyx_SET_REFCNT(o, Py_REFCNT(o) + 1);
-    __pyx_pw_9_splitter_8Splitter_3__dealloc__(o);
+    __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_3__dealloc__(o);
     __Pyx_SET_REFCNT(o, Py_REFCNT(o) - 1);
     PyErr_Restore(etype, eval, etb);
   }
@@ -27319,9 +27133,9 @@ static void __pyx_tp_dealloc_9_splitter_Splitter(PyObject *o) {
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static int __pyx_tp_traverse_9_splitter_Splitter(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_13stpredictions_6models_3OK3_9_splitter_Splitter(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_9_splitter_Splitter *p = (struct __pyx_obj_9_splitter_Splitter *)o;
+  struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *p = (struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)o;
   if (p->criterion) {
     e = (*v)(((PyObject *)p->criterion), a); if (e) return e;
   }
@@ -27331,11 +27145,11 @@ static int __pyx_tp_traverse_9_splitter_Splitter(PyObject *o, visitproc v, void 
   return 0;
 }
 
-static int __pyx_tp_clear_9_splitter_Splitter(PyObject *o) {
+static int __pyx_tp_clear_13stpredictions_6models_3OK3_9_splitter_Splitter(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_9_splitter_Splitter *p = (struct __pyx_obj_9_splitter_Splitter *)o;
+  struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *p = (struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *)o;
   tmp = ((PyObject*)p->criterion);
-  p->criterion = ((struct __pyx_obj_10_criterion_Criterion *)Py_None); Py_INCREF(Py_None);
+  p->criterion = ((struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion *)Py_None); Py_INCREF(Py_None);
   Py_XDECREF(tmp);
   tmp = ((PyObject*)p->random_state);
   p->random_state = Py_None; Py_INCREF(Py_None);
@@ -27343,40 +27157,26 @@ static int __pyx_tp_clear_9_splitter_Splitter(PyObject *o) {
   return 0;
 }
 
-static PyObject *__pyx_getprop_9_splitter_8Splitter_criterion(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_9_splitter_8Splitter_9criterion_1__get__(o);
+static PyObject *__pyx_getprop_13stpredictions_6models_3OK3_9_splitter_8Splitter_criterion(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_9criterion_1__get__(o);
 }
 
-static int __pyx_setprop_9_splitter_8Splitter_criterion(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
+static int __pyx_setprop_13stpredictions_6models_3OK3_9_splitter_8Splitter_criterion(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
   if (v) {
-    return __pyx_pw_9_splitter_8Splitter_9criterion_3__set__(o, v);
+    return __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_9criterion_3__set__(o, v);
   }
   else {
-    return __pyx_pw_9_splitter_8Splitter_9criterion_5__del__(o);
+    return __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_9criterion_5__del__(o);
   }
 }
 
-static PyObject *__pyx_getprop_9_splitter_8Splitter_max_features(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_9_splitter_8Splitter_12max_features_1__get__(o);
+static PyObject *__pyx_getprop_13stpredictions_6models_3OK3_9_splitter_8Splitter_max_features(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_12max_features_1__get__(o);
 }
 
-static int __pyx_setprop_9_splitter_8Splitter_max_features(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
+static int __pyx_setprop_13stpredictions_6models_3OK3_9_splitter_8Splitter_max_features(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
   if (v) {
-    return __pyx_pw_9_splitter_8Splitter_12max_features_3__set__(o, v);
-  }
-  else {
-    PyErr_SetString(PyExc_NotImplementedError, "__del__");
-    return -1;
-  }
-}
-
-static PyObject *__pyx_getprop_9_splitter_8Splitter_min_samples_leaf(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_9_splitter_8Splitter_16min_samples_leaf_1__get__(o);
-}
-
-static int __pyx_setprop_9_splitter_8Splitter_min_samples_leaf(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
-  if (v) {
-    return __pyx_pw_9_splitter_8Splitter_16min_samples_leaf_3__set__(o, v);
+    return __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_12max_features_3__set__(o, v);
   }
   else {
     PyErr_SetString(PyExc_NotImplementedError, "__del__");
@@ -27384,13 +27184,13 @@ static int __pyx_setprop_9_splitter_8Splitter_min_samples_leaf(PyObject *o, PyOb
   }
 }
 
-static PyObject *__pyx_getprop_9_splitter_8Splitter_min_weight_leaf(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_9_splitter_8Splitter_15min_weight_leaf_1__get__(o);
+static PyObject *__pyx_getprop_13stpredictions_6models_3OK3_9_splitter_8Splitter_min_samples_leaf(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_16min_samples_leaf_1__get__(o);
 }
 
-static int __pyx_setprop_9_splitter_8Splitter_min_weight_leaf(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
+static int __pyx_setprop_13stpredictions_6models_3OK3_9_splitter_8Splitter_min_samples_leaf(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
   if (v) {
-    return __pyx_pw_9_splitter_8Splitter_15min_weight_leaf_3__set__(o, v);
+    return __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_16min_samples_leaf_3__set__(o, v);
   }
   else {
     PyErr_SetString(PyExc_NotImplementedError, "__del__");
@@ -27398,28 +27198,42 @@ static int __pyx_setprop_9_splitter_8Splitter_min_weight_leaf(PyObject *o, PyObj
   }
 }
 
-static PyMethodDef __pyx_methods_9_splitter_Splitter[] = {
-  {"__getstate__", (PyCFunction)__pyx_pw_9_splitter_8Splitter_5__getstate__, METH_NOARGS, 0},
-  {"__setstate__", (PyCFunction)__pyx_pw_9_splitter_8Splitter_7__setstate__, METH_O, 0},
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_9_splitter_8Splitter_9__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_9_splitter_8Splitter_11__setstate_cython__, METH_O, 0},
+static PyObject *__pyx_getprop_13stpredictions_6models_3OK3_9_splitter_8Splitter_min_weight_leaf(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_15min_weight_leaf_1__get__(o);
+}
+
+static int __pyx_setprop_13stpredictions_6models_3OK3_9_splitter_8Splitter_min_weight_leaf(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
+  if (v) {
+    return __pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_15min_weight_leaf_3__set__(o, v);
+  }
+  else {
+    PyErr_SetString(PyExc_NotImplementedError, "__del__");
+    return -1;
+  }
+}
+
+static PyMethodDef __pyx_methods_13stpredictions_6models_3OK3_9_splitter_Splitter[] = {
+  {"__getstate__", (PyCFunction)__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_5__getstate__, METH_NOARGS, 0},
+  {"__setstate__", (PyCFunction)__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_7__setstate__, METH_O, 0},
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_9__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_13stpredictions_6models_3OK3_9_splitter_8Splitter_11__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static struct PyGetSetDef __pyx_getsets_9_splitter_Splitter[] = {
-  {(char *)"criterion", __pyx_getprop_9_splitter_8Splitter_criterion, __pyx_setprop_9_splitter_8Splitter_criterion, (char *)0, 0},
-  {(char *)"max_features", __pyx_getprop_9_splitter_8Splitter_max_features, __pyx_setprop_9_splitter_8Splitter_max_features, (char *)0, 0},
-  {(char *)"min_samples_leaf", __pyx_getprop_9_splitter_8Splitter_min_samples_leaf, __pyx_setprop_9_splitter_8Splitter_min_samples_leaf, (char *)0, 0},
-  {(char *)"min_weight_leaf", __pyx_getprop_9_splitter_8Splitter_min_weight_leaf, __pyx_setprop_9_splitter_8Splitter_min_weight_leaf, (char *)0, 0},
+static struct PyGetSetDef __pyx_getsets_13stpredictions_6models_3OK3_9_splitter_Splitter[] = {
+  {(char *)"criterion", __pyx_getprop_13stpredictions_6models_3OK3_9_splitter_8Splitter_criterion, __pyx_setprop_13stpredictions_6models_3OK3_9_splitter_8Splitter_criterion, (char *)0, 0},
+  {(char *)"max_features", __pyx_getprop_13stpredictions_6models_3OK3_9_splitter_8Splitter_max_features, __pyx_setprop_13stpredictions_6models_3OK3_9_splitter_8Splitter_max_features, (char *)0, 0},
+  {(char *)"min_samples_leaf", __pyx_getprop_13stpredictions_6models_3OK3_9_splitter_8Splitter_min_samples_leaf, __pyx_setprop_13stpredictions_6models_3OK3_9_splitter_8Splitter_min_samples_leaf, (char *)0, 0},
+  {(char *)"min_weight_leaf", __pyx_getprop_13stpredictions_6models_3OK3_9_splitter_8Splitter_min_weight_leaf, __pyx_setprop_13stpredictions_6models_3OK3_9_splitter_8Splitter_min_weight_leaf, (char *)0, 0},
   {0, 0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_9_splitter_Splitter = {
+static PyTypeObject __pyx_type_13stpredictions_6models_3OK3_9_splitter_Splitter = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_splitter.Splitter", /*tp_name*/
-  sizeof(struct __pyx_obj_9_splitter_Splitter), /*tp_basicsize*/
+  "stpredictions.models.OK3._splitter.Splitter", /*tp_name*/
+  sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_9_splitter_Splitter, /*tp_dealloc*/
+  __pyx_tp_dealloc_13stpredictions_6models_3OK3_9_splitter_Splitter, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -27446,15 +27260,15 @@ static PyTypeObject __pyx_type_9_splitter_Splitter = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   "Abstract splitter class.\n\n    Splitters are called by tree builders to find the best splits on both\n    sparse and dense data, one split at a time.\n    ", /*tp_doc*/
-  __pyx_tp_traverse_9_splitter_Splitter, /*tp_traverse*/
-  __pyx_tp_clear_9_splitter_Splitter, /*tp_clear*/
+  __pyx_tp_traverse_13stpredictions_6models_3OK3_9_splitter_Splitter, /*tp_traverse*/
+  __pyx_tp_clear_13stpredictions_6models_3OK3_9_splitter_Splitter, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_9_splitter_Splitter, /*tp_methods*/
+  __pyx_methods_13stpredictions_6models_3OK3_9_splitter_Splitter, /*tp_methods*/
   0, /*tp_members*/
-  __pyx_getsets_9_splitter_Splitter, /*tp_getset*/
+  __pyx_getsets_13stpredictions_6models_3OK3_9_splitter_Splitter, /*tp_getset*/
   0, /*tp_base*/
   0, /*tp_dict*/
   0, /*tp_descr_get*/
@@ -27462,7 +27276,7 @@ static PyTypeObject __pyx_type_9_splitter_Splitter = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_9_splitter_Splitter, /*tp_new*/
+  __pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_Splitter, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -27482,21 +27296,21 @@ static PyTypeObject __pyx_type_9_splitter_Splitter = {
   0, /*tp_print*/
   #endif
 };
-static struct __pyx_vtabstruct_9_splitter_BaseDenseSplitter __pyx_vtable_9_splitter_BaseDenseSplitter;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter;
 
-static PyObject *__pyx_tp_new_9_splitter_BaseDenseSplitter(PyTypeObject *t, PyObject *a, PyObject *k) {
-  struct __pyx_obj_9_splitter_BaseDenseSplitter *p;
-  PyObject *o = __pyx_tp_new_9_splitter_Splitter(t, a, k);
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter(PyTypeObject *t, PyObject *a, PyObject *k) {
+  struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter *p;
+  PyObject *o = __pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_Splitter(t, a, k);
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_9_splitter_BaseDenseSplitter *)o);
-  p->__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_9_splitter_Splitter*)__pyx_vtabptr_9_splitter_BaseDenseSplitter;
+  p = ((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter *)o);
+  p->__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_Splitter*)__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter;
   p->X.data = NULL;
   p->X.memview = NULL;
   return o;
 }
 
-static void __pyx_tp_dealloc_9_splitter_BaseDenseSplitter(PyObject *o) {
-  struct __pyx_obj_9_splitter_BaseDenseSplitter *p = (struct __pyx_obj_9_splitter_BaseDenseSplitter *)o;
+static void __pyx_tp_dealloc_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter(PyObject *o) {
+  struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter *p = (struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && !_PyGC_FINALIZED(o)) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -27505,21 +27319,21 @@ static void __pyx_tp_dealloc_9_splitter_BaseDenseSplitter(PyObject *o) {
   PyObject_GC_UnTrack(o);
   __PYX_XDEC_MEMVIEW(&p->X, 1);
   PyObject_GC_Track(o);
-  __pyx_tp_dealloc_9_splitter_Splitter(o);
+  __pyx_tp_dealloc_13stpredictions_6models_3OK3_9_splitter_Splitter(o);
 }
 
-static PyMethodDef __pyx_methods_9_splitter_BaseDenseSplitter[] = {
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_9_splitter_17BaseDenseSplitter_1__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_9_splitter_17BaseDenseSplitter_3__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter[] = {
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_13stpredictions_6models_3OK3_9_splitter_17BaseDenseSplitter_1__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_13stpredictions_6models_3OK3_9_splitter_17BaseDenseSplitter_3__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_9_splitter_BaseDenseSplitter = {
+static PyTypeObject __pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_splitter.BaseDenseSplitter", /*tp_name*/
-  sizeof(struct __pyx_obj_9_splitter_BaseDenseSplitter), /*tp_basicsize*/
+  "stpredictions.models.OK3._splitter.BaseDenseSplitter", /*tp_name*/
+  sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_9_splitter_BaseDenseSplitter, /*tp_dealloc*/
+  __pyx_tp_dealloc_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -27546,13 +27360,13 @@ static PyTypeObject __pyx_type_9_splitter_BaseDenseSplitter = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_9_splitter_Splitter, /*tp_traverse*/
-  __pyx_tp_clear_9_splitter_Splitter, /*tp_clear*/
+  __pyx_tp_traverse_13stpredictions_6models_3OK3_9_splitter_Splitter, /*tp_traverse*/
+  __pyx_tp_clear_13stpredictions_6models_3OK3_9_splitter_Splitter, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_9_splitter_BaseDenseSplitter, /*tp_methods*/
+  __pyx_methods_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -27562,7 +27376,7 @@ static PyTypeObject __pyx_type_9_splitter_BaseDenseSplitter = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_9_splitter_BaseDenseSplitter, /*tp_new*/
+  __pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -27582,28 +27396,28 @@ static PyTypeObject __pyx_type_9_splitter_BaseDenseSplitter = {
   0, /*tp_print*/
   #endif
 };
-static struct __pyx_vtabstruct_9_splitter_BestSplitter __pyx_vtable_9_splitter_BestSplitter;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_BestSplitter __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_BestSplitter;
 
-static PyObject *__pyx_tp_new_9_splitter_BestSplitter(PyTypeObject *t, PyObject *a, PyObject *k) {
-  struct __pyx_obj_9_splitter_BestSplitter *p;
-  PyObject *o = __pyx_tp_new_9_splitter_BaseDenseSplitter(t, a, k);
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_BestSplitter(PyTypeObject *t, PyObject *a, PyObject *k) {
+  struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSplitter *p;
+  PyObject *o = __pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter(t, a, k);
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_9_splitter_BestSplitter *)o);
-  p->__pyx_base.__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_9_splitter_Splitter*)__pyx_vtabptr_9_splitter_BestSplitter;
+  p = ((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSplitter *)o);
+  p->__pyx_base.__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_Splitter*)__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BestSplitter;
   return o;
 }
 
-static PyMethodDef __pyx_methods_9_splitter_BestSplitter[] = {
-  {"__reduce__", (PyCFunction)__pyx_pw_9_splitter_12BestSplitter_1__reduce__, METH_NOARGS, 0},
+static PyMethodDef __pyx_methods_13stpredictions_6models_3OK3_9_splitter_BestSplitter[] = {
+  {"__reduce__", (PyCFunction)__pyx_pw_13stpredictions_6models_3OK3_9_splitter_12BestSplitter_1__reduce__, METH_NOARGS, 0},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_9_splitter_BestSplitter = {
+static PyTypeObject __pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSplitter = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_splitter.BestSplitter", /*tp_name*/
-  sizeof(struct __pyx_obj_9_splitter_BestSplitter), /*tp_basicsize*/
+  "stpredictions.models.OK3._splitter.BestSplitter", /*tp_name*/
+  sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSplitter), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_9_splitter_BaseDenseSplitter, /*tp_dealloc*/
+  __pyx_tp_dealloc_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -27630,13 +27444,13 @@ static PyTypeObject __pyx_type_9_splitter_BestSplitter = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   "Splitter for finding the best split.", /*tp_doc*/
-  __pyx_tp_traverse_9_splitter_Splitter, /*tp_traverse*/
-  __pyx_tp_clear_9_splitter_Splitter, /*tp_clear*/
+  __pyx_tp_traverse_13stpredictions_6models_3OK3_9_splitter_Splitter, /*tp_traverse*/
+  __pyx_tp_clear_13stpredictions_6models_3OK3_9_splitter_Splitter, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_9_splitter_BestSplitter, /*tp_methods*/
+  __pyx_methods_13stpredictions_6models_3OK3_9_splitter_BestSplitter, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -27646,7 +27460,7 @@ static PyTypeObject __pyx_type_9_splitter_BestSplitter = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_9_splitter_BestSplitter, /*tp_new*/
+  __pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_BestSplitter, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -27666,28 +27480,28 @@ static PyTypeObject __pyx_type_9_splitter_BestSplitter = {
   0, /*tp_print*/
   #endif
 };
-static struct __pyx_vtabstruct_9_splitter_RandomSplitter __pyx_vtable_9_splitter_RandomSplitter;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_RandomSplitter __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_RandomSplitter;
 
-static PyObject *__pyx_tp_new_9_splitter_RandomSplitter(PyTypeObject *t, PyObject *a, PyObject *k) {
-  struct __pyx_obj_9_splitter_RandomSplitter *p;
-  PyObject *o = __pyx_tp_new_9_splitter_BaseDenseSplitter(t, a, k);
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_RandomSplitter(PyTypeObject *t, PyObject *a, PyObject *k) {
+  struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSplitter *p;
+  PyObject *o = __pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter(t, a, k);
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_9_splitter_RandomSplitter *)o);
-  p->__pyx_base.__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_9_splitter_Splitter*)__pyx_vtabptr_9_splitter_RandomSplitter;
+  p = ((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSplitter *)o);
+  p->__pyx_base.__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_Splitter*)__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_RandomSplitter;
   return o;
 }
 
-static PyMethodDef __pyx_methods_9_splitter_RandomSplitter[] = {
-  {"__reduce__", (PyCFunction)__pyx_pw_9_splitter_14RandomSplitter_1__reduce__, METH_NOARGS, 0},
+static PyMethodDef __pyx_methods_13stpredictions_6models_3OK3_9_splitter_RandomSplitter[] = {
+  {"__reduce__", (PyCFunction)__pyx_pw_13stpredictions_6models_3OK3_9_splitter_14RandomSplitter_1__reduce__, METH_NOARGS, 0},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_9_splitter_RandomSplitter = {
+static PyTypeObject __pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSplitter = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_splitter.RandomSplitter", /*tp_name*/
-  sizeof(struct __pyx_obj_9_splitter_RandomSplitter), /*tp_basicsize*/
+  "stpredictions.models.OK3._splitter.RandomSplitter", /*tp_name*/
+  sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSplitter), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_9_splitter_BaseDenseSplitter, /*tp_dealloc*/
+  __pyx_tp_dealloc_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -27714,13 +27528,13 @@ static PyTypeObject __pyx_type_9_splitter_RandomSplitter = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   "Splitter for finding the best random split.", /*tp_doc*/
-  __pyx_tp_traverse_9_splitter_Splitter, /*tp_traverse*/
-  __pyx_tp_clear_9_splitter_Splitter, /*tp_clear*/
+  __pyx_tp_traverse_13stpredictions_6models_3OK3_9_splitter_Splitter, /*tp_traverse*/
+  __pyx_tp_clear_13stpredictions_6models_3OK3_9_splitter_Splitter, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_9_splitter_RandomSplitter, /*tp_methods*/
+  __pyx_methods_13stpredictions_6models_3OK3_9_splitter_RandomSplitter, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -27730,7 +27544,7 @@ static PyTypeObject __pyx_type_9_splitter_RandomSplitter = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_9_splitter_RandomSplitter, /*tp_new*/
+  __pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_RandomSplitter, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -27750,22 +27564,22 @@ static PyTypeObject __pyx_type_9_splitter_RandomSplitter = {
   0, /*tp_print*/
   #endif
 };
-static struct __pyx_vtabstruct_9_splitter_BaseSparseSplitter __pyx_vtable_9_splitter_BaseSparseSplitter;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter;
 
-static PyObject *__pyx_tp_new_9_splitter_BaseSparseSplitter(PyTypeObject *t, PyObject *a, PyObject *k) {
-  struct __pyx_obj_9_splitter_BaseSparseSplitter *p;
-  PyObject *o = __pyx_tp_new_9_splitter_Splitter(t, a, k);
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter(PyTypeObject *t, PyObject *a, PyObject *k) {
+  struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *p;
+  PyObject *o = __pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_Splitter(t, a, k);
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_9_splitter_BaseSparseSplitter *)o);
-  p->__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_9_splitter_Splitter*)__pyx_vtabptr_9_splitter_BaseSparseSplitter;
-  if (unlikely(__pyx_pw_9_splitter_18BaseSparseSplitter_1__cinit__(o, a, k) < 0)) goto bad;
+  p = ((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *)o);
+  p->__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_Splitter*)__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter;
+  if (unlikely(__pyx_pw_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_1__cinit__(o, a, k) < 0)) goto bad;
   return o;
   bad:
   Py_DECREF(o); o = 0;
   return NULL;
 }
 
-static void __pyx_tp_dealloc_9_splitter_BaseSparseSplitter(PyObject *o) {
+static void __pyx_tp_dealloc_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter(PyObject *o) {
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && !_PyGC_FINALIZED(o)) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -27776,26 +27590,26 @@ static void __pyx_tp_dealloc_9_splitter_BaseSparseSplitter(PyObject *o) {
     PyObject *etype, *eval, *etb;
     PyErr_Fetch(&etype, &eval, &etb);
     __Pyx_SET_REFCNT(o, Py_REFCNT(o) + 1);
-    __pyx_pw_9_splitter_18BaseSparseSplitter_3__dealloc__(o);
+    __pyx_pw_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_3__dealloc__(o);
     __Pyx_SET_REFCNT(o, Py_REFCNT(o) - 1);
     PyErr_Restore(etype, eval, etb);
   }
   PyObject_GC_Track(o);
-  __pyx_tp_dealloc_9_splitter_Splitter(o);
+  __pyx_tp_dealloc_13stpredictions_6models_3OK3_9_splitter_Splitter(o);
 }
 
-static PyMethodDef __pyx_methods_9_splitter_BaseSparseSplitter[] = {
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_9_splitter_18BaseSparseSplitter_5__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_9_splitter_18BaseSparseSplitter_7__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter[] = {
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_5__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_7__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_9_splitter_BaseSparseSplitter = {
+static PyTypeObject __pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_splitter.BaseSparseSplitter", /*tp_name*/
-  sizeof(struct __pyx_obj_9_splitter_BaseSparseSplitter), /*tp_basicsize*/
+  "stpredictions.models.OK3._splitter.BaseSparseSplitter", /*tp_name*/
+  sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_9_splitter_BaseSparseSplitter, /*tp_dealloc*/
+  __pyx_tp_dealloc_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -27822,13 +27636,13 @@ static PyTypeObject __pyx_type_9_splitter_BaseSparseSplitter = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_9_splitter_Splitter, /*tp_traverse*/
-  __pyx_tp_clear_9_splitter_Splitter, /*tp_clear*/
+  __pyx_tp_traverse_13stpredictions_6models_3OK3_9_splitter_Splitter, /*tp_traverse*/
+  __pyx_tp_clear_13stpredictions_6models_3OK3_9_splitter_Splitter, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_9_splitter_BaseSparseSplitter, /*tp_methods*/
+  __pyx_methods_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -27838,7 +27652,7 @@ static PyTypeObject __pyx_type_9_splitter_BaseSparseSplitter = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_9_splitter_BaseSparseSplitter, /*tp_new*/
+  __pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -27858,28 +27672,28 @@ static PyTypeObject __pyx_type_9_splitter_BaseSparseSplitter = {
   0, /*tp_print*/
   #endif
 };
-static struct __pyx_vtabstruct_9_splitter_BestSparseSplitter __pyx_vtable_9_splitter_BestSparseSplitter;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter;
 
-static PyObject *__pyx_tp_new_9_splitter_BestSparseSplitter(PyTypeObject *t, PyObject *a, PyObject *k) {
-  struct __pyx_obj_9_splitter_BestSparseSplitter *p;
-  PyObject *o = __pyx_tp_new_9_splitter_BaseSparseSplitter(t, a, k);
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter(PyTypeObject *t, PyObject *a, PyObject *k) {
+  struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter *p;
+  PyObject *o = __pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter(t, a, k);
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_9_splitter_BestSparseSplitter *)o);
-  p->__pyx_base.__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_9_splitter_Splitter*)__pyx_vtabptr_9_splitter_BestSparseSplitter;
+  p = ((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter *)o);
+  p->__pyx_base.__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_Splitter*)__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter;
   return o;
 }
 
-static PyMethodDef __pyx_methods_9_splitter_BestSparseSplitter[] = {
-  {"__reduce__", (PyCFunction)__pyx_pw_9_splitter_18BestSparseSplitter_1__reduce__, METH_NOARGS, 0},
+static PyMethodDef __pyx_methods_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter[] = {
+  {"__reduce__", (PyCFunction)__pyx_pw_13stpredictions_6models_3OK3_9_splitter_18BestSparseSplitter_1__reduce__, METH_NOARGS, 0},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_9_splitter_BestSparseSplitter = {
+static PyTypeObject __pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_splitter.BestSparseSplitter", /*tp_name*/
-  sizeof(struct __pyx_obj_9_splitter_BestSparseSplitter), /*tp_basicsize*/
+  "stpredictions.models.OK3._splitter.BestSparseSplitter", /*tp_name*/
+  sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_9_splitter_BaseSparseSplitter, /*tp_dealloc*/
+  __pyx_tp_dealloc_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -27906,13 +27720,13 @@ static PyTypeObject __pyx_type_9_splitter_BestSparseSplitter = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   "Splitter for finding the best split, using the sparse data.", /*tp_doc*/
-  __pyx_tp_traverse_9_splitter_Splitter, /*tp_traverse*/
-  __pyx_tp_clear_9_splitter_Splitter, /*tp_clear*/
+  __pyx_tp_traverse_13stpredictions_6models_3OK3_9_splitter_Splitter, /*tp_traverse*/
+  __pyx_tp_clear_13stpredictions_6models_3OK3_9_splitter_Splitter, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_9_splitter_BestSparseSplitter, /*tp_methods*/
+  __pyx_methods_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -27922,7 +27736,7 @@ static PyTypeObject __pyx_type_9_splitter_BestSparseSplitter = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_9_splitter_BestSparseSplitter, /*tp_new*/
+  __pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -27942,28 +27756,28 @@ static PyTypeObject __pyx_type_9_splitter_BestSparseSplitter = {
   0, /*tp_print*/
   #endif
 };
-static struct __pyx_vtabstruct_9_splitter_RandomSparseSplitter __pyx_vtable_9_splitter_RandomSparseSplitter;
+static struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter;
 
-static PyObject *__pyx_tp_new_9_splitter_RandomSparseSplitter(PyTypeObject *t, PyObject *a, PyObject *k) {
-  struct __pyx_obj_9_splitter_RandomSparseSplitter *p;
-  PyObject *o = __pyx_tp_new_9_splitter_BaseSparseSplitter(t, a, k);
+static PyObject *__pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter(PyTypeObject *t, PyObject *a, PyObject *k) {
+  struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter *p;
+  PyObject *o = __pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter(t, a, k);
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_9_splitter_RandomSparseSplitter *)o);
-  p->__pyx_base.__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_9_splitter_Splitter*)__pyx_vtabptr_9_splitter_RandomSparseSplitter;
+  p = ((struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter *)o);
+  p->__pyx_base.__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_9_splitter_Splitter*)__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter;
   return o;
 }
 
-static PyMethodDef __pyx_methods_9_splitter_RandomSparseSplitter[] = {
-  {"__reduce__", (PyCFunction)__pyx_pw_9_splitter_20RandomSparseSplitter_1__reduce__, METH_NOARGS, 0},
+static PyMethodDef __pyx_methods_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter[] = {
+  {"__reduce__", (PyCFunction)__pyx_pw_13stpredictions_6models_3OK3_9_splitter_20RandomSparseSplitter_1__reduce__, METH_NOARGS, 0},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_9_splitter_RandomSparseSplitter = {
+static PyTypeObject __pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_splitter.RandomSparseSplitter", /*tp_name*/
-  sizeof(struct __pyx_obj_9_splitter_RandomSparseSplitter), /*tp_basicsize*/
+  "stpredictions.models.OK3._splitter.RandomSparseSplitter", /*tp_name*/
+  sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_9_splitter_BaseSparseSplitter, /*tp_dealloc*/
+  __pyx_tp_dealloc_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -27990,13 +27804,13 @@ static PyTypeObject __pyx_type_9_splitter_RandomSparseSplitter = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   "Splitter for finding a random split, using the sparse data.", /*tp_doc*/
-  __pyx_tp_traverse_9_splitter_Splitter, /*tp_traverse*/
-  __pyx_tp_clear_9_splitter_Splitter, /*tp_clear*/
+  __pyx_tp_traverse_13stpredictions_6models_3OK3_9_splitter_Splitter, /*tp_traverse*/
+  __pyx_tp_clear_13stpredictions_6models_3OK3_9_splitter_Splitter, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_9_splitter_RandomSparseSplitter, /*tp_methods*/
+  __pyx_methods_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -28006,7 +27820,7 @@ static PyTypeObject __pyx_type_9_splitter_RandomSparseSplitter = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_9_splitter_RandomSparseSplitter, /*tp_new*/
+  __pyx_tp_new_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -28149,7 +27963,7 @@ static PyBufferProcs __pyx_tp_as_buffer_array = {
 
 static PyTypeObject __pyx_type___pyx_array = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_splitter.array", /*tp_name*/
+  "stpredictions.models.OK3._splitter.array", /*tp_name*/
   sizeof(struct __pyx_array_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_array, /*tp_dealloc*/
@@ -28268,7 +28082,7 @@ static PyMethodDef __pyx_methods_Enum[] = {
 
 static PyTypeObject __pyx_type___pyx_MemviewEnum = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_splitter.Enum", /*tp_name*/
+  "stpredictions.models.OK3._splitter.Enum", /*tp_name*/
   sizeof(struct __pyx_MemviewEnum_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_Enum, /*tp_dealloc*/
@@ -28529,7 +28343,7 @@ static PyBufferProcs __pyx_tp_as_buffer_memoryview = {
 
 static PyTypeObject __pyx_type___pyx_memoryview = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_splitter.memoryview", /*tp_name*/
+  "stpredictions.models.OK3._splitter.memoryview", /*tp_name*/
   sizeof(struct __pyx_memoryview_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_memoryview, /*tp_dealloc*/
@@ -28667,7 +28481,7 @@ static struct PyGetSetDef __pyx_getsets__memoryviewslice[] = {
 
 static PyTypeObject __pyx_type___pyx_memoryviewslice = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_splitter._memoryviewslice", /*tp_name*/
+  "stpredictions.models.OK3._splitter._memoryviewslice", /*tp_name*/
   sizeof(struct __pyx_memoryviewslice_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc__memoryviewslice, /*tp_dealloc*/
@@ -28958,7 +28772,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
-  /* "_splitter.pyx":804
+  /* "stpredictions/models/OK3/_splitter.pyx":804
  * 
  *         if not isinstance(X, csc_matrix):
  *             raise ValueError("X should be in csc format")             # <<<<<<<<<<<<<<
@@ -28988,7 +28802,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":884
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":884
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -28999,7 +28813,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
 
-  /* "../../../../anaconda3/envs/florence_library/lib/python3.9/site-packages/numpy/__init__.pxd":890
+  /* "../../../Virtual_ENV/venv_stpredictions_package/lib/python3.9/site-packages/numpy/__init__.pxd":890
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -29328,111 +29142,111 @@ static int __Pyx_modinit_type_init_code(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  __pyx_vtabptr_9_splitter_Splitter = &__pyx_vtable_9_splitter_Splitter;
-  __pyx_vtable_9_splitter_Splitter.init = (int (*)(struct __pyx_obj_9_splitter_Splitter *, PyObject *, __Pyx_memviewslice, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *))__pyx_f_9_splitter_8Splitter_init;
-  __pyx_vtable_9_splitter_Splitter.node_reset = (int (*)(struct __pyx_obj_9_splitter_Splitter *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, double *))__pyx_f_9_splitter_8Splitter_node_reset;
-  __pyx_vtable_9_splitter_Splitter.node_split = (int (*)(struct __pyx_obj_9_splitter_Splitter *, double, struct __pyx_t_9_splitter_SplitRecord *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *))__pyx_f_9_splitter_8Splitter_node_split;
-  __pyx_vtable_9_splitter_Splitter.node_value = (void (*)(struct __pyx_obj_9_splitter_Splitter *, double *))__pyx_f_9_splitter_8Splitter_node_value;
-  __pyx_vtable_9_splitter_Splitter.node_impurity = (double (*)(struct __pyx_obj_9_splitter_Splitter *))__pyx_f_9_splitter_8Splitter_node_impurity;
-  if (PyType_Ready(&__pyx_type_9_splitter_Splitter) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
+  __pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_Splitter = &__pyx_vtable_13stpredictions_6models_3OK3_9_splitter_Splitter;
+  __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_Splitter.init = (int (*)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *, PyObject *, __Pyx_memviewslice, __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *))__pyx_f_13stpredictions_6models_3OK3_9_splitter_8Splitter_init;
+  __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_Splitter.node_reset = (int (*)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, double *))__pyx_f_13stpredictions_6models_3OK3_9_splitter_8Splitter_node_reset;
+  __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_Splitter.node_split = (int (*)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *, double, struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *))__pyx_f_13stpredictions_6models_3OK3_9_splitter_8Splitter_node_split;
+  __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_Splitter.node_value = (void (*)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *, double *))__pyx_f_13stpredictions_6models_3OK3_9_splitter_8Splitter_node_value;
+  __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_Splitter.node_impurity = (double (*)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *))__pyx_f_13stpredictions_6models_3OK3_9_splitter_8Splitter_node_impurity;
+  if (PyType_Ready(&__pyx_type_13stpredictions_6models_3OK3_9_splitter_Splitter) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_9_splitter_Splitter.tp_print = 0;
+  __pyx_type_13stpredictions_6models_3OK3_9_splitter_Splitter.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_9_splitter_Splitter.tp_dictoffset && __pyx_type_9_splitter_Splitter.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_9_splitter_Splitter.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_13stpredictions_6models_3OK3_9_splitter_Splitter.tp_dictoffset && __pyx_type_13stpredictions_6models_3OK3_9_splitter_Splitter.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_13stpredictions_6models_3OK3_9_splitter_Splitter.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_9_splitter_Splitter.tp_dict, __pyx_vtabptr_9_splitter_Splitter) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_Splitter, (PyObject *)&__pyx_type_9_splitter_Splitter) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_9_splitter_Splitter) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
-  __pyx_ptype_9_splitter_Splitter = &__pyx_type_9_splitter_Splitter;
-  __pyx_vtabptr_9_splitter_BaseDenseSplitter = &__pyx_vtable_9_splitter_BaseDenseSplitter;
-  __pyx_vtable_9_splitter_BaseDenseSplitter.__pyx_base = *__pyx_vtabptr_9_splitter_Splitter;
-  __pyx_vtable_9_splitter_BaseDenseSplitter.__pyx_base.init = (int (*)(struct __pyx_obj_9_splitter_Splitter *, PyObject *, __Pyx_memviewslice, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *))__pyx_f_9_splitter_17BaseDenseSplitter_init;
-  __pyx_type_9_splitter_BaseDenseSplitter.tp_base = __pyx_ptype_9_splitter_Splitter;
-  if (PyType_Ready(&__pyx_type_9_splitter_BaseDenseSplitter) < 0) __PYX_ERR(0, 223, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_13stpredictions_6models_3OK3_9_splitter_Splitter.tp_dict, __pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_Splitter) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_Splitter, (PyObject *)&__pyx_type_13stpredictions_6models_3OK3_9_splitter_Splitter) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_13stpredictions_6models_3OK3_9_splitter_Splitter) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_9_splitter_Splitter = &__pyx_type_13stpredictions_6models_3OK3_9_splitter_Splitter;
+  __pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter = &__pyx_vtable_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter;
+  __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter.__pyx_base = *__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_Splitter;
+  __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter.__pyx_base.init = (int (*)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *, PyObject *, __Pyx_memviewslice, __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *))__pyx_f_13stpredictions_6models_3OK3_9_splitter_17BaseDenseSplitter_init;
+  __pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter.tp_base = __pyx_ptype_13stpredictions_6models_3OK3_9_splitter_Splitter;
+  if (PyType_Ready(&__pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter) < 0) __PYX_ERR(0, 223, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_9_splitter_BaseDenseSplitter.tp_print = 0;
+  __pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_9_splitter_BaseDenseSplitter.tp_dictoffset && __pyx_type_9_splitter_BaseDenseSplitter.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_9_splitter_BaseDenseSplitter.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter.tp_dictoffset && __pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_9_splitter_BaseDenseSplitter.tp_dict, __pyx_vtabptr_9_splitter_BaseDenseSplitter) < 0) __PYX_ERR(0, 223, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_BaseDenseSplitter, (PyObject *)&__pyx_type_9_splitter_BaseDenseSplitter) < 0) __PYX_ERR(0, 223, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_9_splitter_BaseDenseSplitter) < 0) __PYX_ERR(0, 223, __pyx_L1_error)
-  __pyx_ptype_9_splitter_BaseDenseSplitter = &__pyx_type_9_splitter_BaseDenseSplitter;
-  __pyx_vtabptr_9_splitter_BestSplitter = &__pyx_vtable_9_splitter_BestSplitter;
-  __pyx_vtable_9_splitter_BestSplitter.__pyx_base = *__pyx_vtabptr_9_splitter_BaseDenseSplitter;
-  __pyx_vtable_9_splitter_BestSplitter.__pyx_base.__pyx_base.node_split = (int (*)(struct __pyx_obj_9_splitter_Splitter *, double, struct __pyx_t_9_splitter_SplitRecord *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *))__pyx_f_9_splitter_12BestSplitter_node_split;
-  __pyx_type_9_splitter_BestSplitter.tp_base = __pyx_ptype_9_splitter_BaseDenseSplitter;
-  if (PyType_Ready(&__pyx_type_9_splitter_BestSplitter) < 0) __PYX_ERR(0, 245, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter.tp_dict, __pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter) < 0) __PYX_ERR(0, 223, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_BaseDenseSplitter, (PyObject *)&__pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter) < 0) __PYX_ERR(0, 223, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter) < 0) __PYX_ERR(0, 223, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter = &__pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter;
+  __pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BestSplitter = &__pyx_vtable_13stpredictions_6models_3OK3_9_splitter_BestSplitter;
+  __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_BestSplitter.__pyx_base = *__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter;
+  __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_BestSplitter.__pyx_base.__pyx_base.node_split = (int (*)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *, double, struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *))__pyx_f_13stpredictions_6models_3OK3_9_splitter_12BestSplitter_node_split;
+  __pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSplitter.tp_base = __pyx_ptype_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter;
+  if (PyType_Ready(&__pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSplitter) < 0) __PYX_ERR(0, 245, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_9_splitter_BestSplitter.tp_print = 0;
+  __pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSplitter.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_9_splitter_BestSplitter.tp_dictoffset && __pyx_type_9_splitter_BestSplitter.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_9_splitter_BestSplitter.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSplitter.tp_dictoffset && __pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSplitter.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSplitter.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_9_splitter_BestSplitter.tp_dict, __pyx_vtabptr_9_splitter_BestSplitter) < 0) __PYX_ERR(0, 245, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_BestSplitter, (PyObject *)&__pyx_type_9_splitter_BestSplitter) < 0) __PYX_ERR(0, 245, __pyx_L1_error)
-  __pyx_ptype_9_splitter_BestSplitter = &__pyx_type_9_splitter_BestSplitter;
-  __pyx_vtabptr_9_splitter_RandomSplitter = &__pyx_vtable_9_splitter_RandomSplitter;
-  __pyx_vtable_9_splitter_RandomSplitter.__pyx_base = *__pyx_vtabptr_9_splitter_BaseDenseSplitter;
-  __pyx_vtable_9_splitter_RandomSplitter.__pyx_base.__pyx_base.node_split = (int (*)(struct __pyx_obj_9_splitter_Splitter *, double, struct __pyx_t_9_splitter_SplitRecord *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *))__pyx_f_9_splitter_14RandomSplitter_node_split;
-  __pyx_type_9_splitter_RandomSplitter.tp_base = __pyx_ptype_9_splitter_BaseDenseSplitter;
-  if (PyType_Ready(&__pyx_type_9_splitter_RandomSplitter) < 0) __PYX_ERR(0, 564, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSplitter.tp_dict, __pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BestSplitter) < 0) __PYX_ERR(0, 245, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_BestSplitter, (PyObject *)&__pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSplitter) < 0) __PYX_ERR(0, 245, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_9_splitter_BestSplitter = &__pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSplitter;
+  __pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_RandomSplitter = &__pyx_vtable_13stpredictions_6models_3OK3_9_splitter_RandomSplitter;
+  __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_RandomSplitter.__pyx_base = *__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter;
+  __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_RandomSplitter.__pyx_base.__pyx_base.node_split = (int (*)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *, double, struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *))__pyx_f_13stpredictions_6models_3OK3_9_splitter_14RandomSplitter_node_split;
+  __pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSplitter.tp_base = __pyx_ptype_13stpredictions_6models_3OK3_9_splitter_BaseDenseSplitter;
+  if (PyType_Ready(&__pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSplitter) < 0) __PYX_ERR(0, 564, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_9_splitter_RandomSplitter.tp_print = 0;
+  __pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSplitter.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_9_splitter_RandomSplitter.tp_dictoffset && __pyx_type_9_splitter_RandomSplitter.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_9_splitter_RandomSplitter.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSplitter.tp_dictoffset && __pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSplitter.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSplitter.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_9_splitter_RandomSplitter.tp_dict, __pyx_vtabptr_9_splitter_RandomSplitter) < 0) __PYX_ERR(0, 564, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_RandomSplitter, (PyObject *)&__pyx_type_9_splitter_RandomSplitter) < 0) __PYX_ERR(0, 564, __pyx_L1_error)
-  __pyx_ptype_9_splitter_RandomSplitter = &__pyx_type_9_splitter_RandomSplitter;
-  __pyx_vtabptr_9_splitter_BaseSparseSplitter = &__pyx_vtable_9_splitter_BaseSparseSplitter;
-  __pyx_vtable_9_splitter_BaseSparseSplitter.__pyx_base = *__pyx_vtabptr_9_splitter_Splitter;
-  __pyx_vtable_9_splitter_BaseSparseSplitter.__pyx_base.init = (int (*)(struct __pyx_obj_9_splitter_Splitter *, PyObject *, __Pyx_memviewslice, __pyx_t_7sklearn_4tree_5_tree_DOUBLE_t *))__pyx_f_9_splitter_18BaseSparseSplitter_init;
-  __pyx_vtable_9_splitter_BaseSparseSplitter._partition = (__pyx_t_7sklearn_4tree_5_tree_SIZE_t (*)(struct __pyx_obj_9_splitter_BaseSparseSplitter *, double, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t))__pyx_f_9_splitter_18BaseSparseSplitter__partition;
-  __pyx_vtable_9_splitter_BaseSparseSplitter.extract_nnz = (void (*)(struct __pyx_obj_9_splitter_BaseSparseSplitter *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *, int *))__pyx_f_9_splitter_18BaseSparseSplitter_extract_nnz;
-  __pyx_type_9_splitter_BaseSparseSplitter.tp_base = __pyx_ptype_9_splitter_Splitter;
-  if (PyType_Ready(&__pyx_type_9_splitter_BaseSparseSplitter) < 0) __PYX_ERR(0, 761, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSplitter.tp_dict, __pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_RandomSplitter) < 0) __PYX_ERR(0, 564, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_RandomSplitter, (PyObject *)&__pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSplitter) < 0) __PYX_ERR(0, 564, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_9_splitter_RandomSplitter = &__pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSplitter;
+  __pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter = &__pyx_vtable_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter;
+  __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter.__pyx_base = *__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_Splitter;
+  __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter.__pyx_base.init = (int (*)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *, PyObject *, __Pyx_memviewslice, __pyx_t_13stpredictions_6models_3OK3_5_tree_DOUBLE_t *))__pyx_f_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_init;
+  __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter._partition = (__pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t (*)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *, double, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t))__pyx_f_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter__partition;
+  __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter.extract_nnz = (void (*)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *, int *))__pyx_f_13stpredictions_6models_3OK3_9_splitter_18BaseSparseSplitter_extract_nnz;
+  __pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter.tp_base = __pyx_ptype_13stpredictions_6models_3OK3_9_splitter_Splitter;
+  if (PyType_Ready(&__pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter) < 0) __PYX_ERR(0, 761, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_9_splitter_BaseSparseSplitter.tp_print = 0;
+  __pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_9_splitter_BaseSparseSplitter.tp_dictoffset && __pyx_type_9_splitter_BaseSparseSplitter.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_9_splitter_BaseSparseSplitter.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter.tp_dictoffset && __pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_9_splitter_BaseSparseSplitter.tp_dict, __pyx_vtabptr_9_splitter_BaseSparseSplitter) < 0) __PYX_ERR(0, 761, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_BaseSparseSplitter, (PyObject *)&__pyx_type_9_splitter_BaseSparseSplitter) < 0) __PYX_ERR(0, 761, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_9_splitter_BaseSparseSplitter) < 0) __PYX_ERR(0, 761, __pyx_L1_error)
-  __pyx_ptype_9_splitter_BaseSparseSplitter = &__pyx_type_9_splitter_BaseSparseSplitter;
-  __pyx_vtabptr_9_splitter_BestSparseSplitter = &__pyx_vtable_9_splitter_BestSparseSplitter;
-  __pyx_vtable_9_splitter_BestSparseSplitter.__pyx_base = *__pyx_vtabptr_9_splitter_BaseSparseSplitter;
-  __pyx_vtable_9_splitter_BestSparseSplitter.__pyx_base.__pyx_base.node_split = (int (*)(struct __pyx_obj_9_splitter_Splitter *, double, struct __pyx_t_9_splitter_SplitRecord *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *))__pyx_f_9_splitter_18BestSparseSplitter_node_split;
-  __pyx_type_9_splitter_BestSparseSplitter.tp_base = __pyx_ptype_9_splitter_BaseSparseSplitter;
-  if (PyType_Ready(&__pyx_type_9_splitter_BestSparseSplitter) < 0) __PYX_ERR(0, 1080, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter.tp_dict, __pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter) < 0) __PYX_ERR(0, 761, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_BaseSparseSplitter, (PyObject *)&__pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter) < 0) __PYX_ERR(0, 761, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter) < 0) __PYX_ERR(0, 761, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter = &__pyx_type_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter;
+  __pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter = &__pyx_vtable_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter;
+  __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter.__pyx_base = *__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter;
+  __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter.__pyx_base.__pyx_base.node_split = (int (*)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *, double, struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *))__pyx_f_13stpredictions_6models_3OK3_9_splitter_18BestSparseSplitter_node_split;
+  __pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter.tp_base = __pyx_ptype_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter;
+  if (PyType_Ready(&__pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter) < 0) __PYX_ERR(0, 1080, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_9_splitter_BestSparseSplitter.tp_print = 0;
+  __pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_9_splitter_BestSparseSplitter.tp_dictoffset && __pyx_type_9_splitter_BestSparseSplitter.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_9_splitter_BestSparseSplitter.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter.tp_dictoffset && __pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_9_splitter_BestSparseSplitter.tp_dict, __pyx_vtabptr_9_splitter_BestSparseSplitter) < 0) __PYX_ERR(0, 1080, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_BestSparseSplitter, (PyObject *)&__pyx_type_9_splitter_BestSparseSplitter) < 0) __PYX_ERR(0, 1080, __pyx_L1_error)
-  __pyx_ptype_9_splitter_BestSparseSplitter = &__pyx_type_9_splitter_BestSparseSplitter;
-  __pyx_vtabptr_9_splitter_RandomSparseSplitter = &__pyx_vtable_9_splitter_RandomSparseSplitter;
-  __pyx_vtable_9_splitter_RandomSparseSplitter.__pyx_base = *__pyx_vtabptr_9_splitter_BaseSparseSplitter;
-  __pyx_vtable_9_splitter_RandomSparseSplitter.__pyx_base.__pyx_base.node_split = (int (*)(struct __pyx_obj_9_splitter_Splitter *, double, struct __pyx_t_9_splitter_SplitRecord *, __pyx_t_7sklearn_4tree_5_tree_SIZE_t *))__pyx_f_9_splitter_20RandomSparseSplitter_node_split;
-  __pyx_type_9_splitter_RandomSparseSplitter.tp_base = __pyx_ptype_9_splitter_BaseSparseSplitter;
-  if (PyType_Ready(&__pyx_type_9_splitter_RandomSparseSplitter) < 0) __PYX_ERR(0, 1309, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter.tp_dict, __pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter) < 0) __PYX_ERR(0, 1080, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_BestSparseSplitter, (PyObject *)&__pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter) < 0) __PYX_ERR(0, 1080, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter = &__pyx_type_13stpredictions_6models_3OK3_9_splitter_BestSparseSplitter;
+  __pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter = &__pyx_vtable_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter;
+  __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter.__pyx_base = *__pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter;
+  __pyx_vtable_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter.__pyx_base.__pyx_base.node_split = (int (*)(struct __pyx_obj_13stpredictions_6models_3OK3_9_splitter_Splitter *, double, struct __pyx_t_13stpredictions_6models_3OK3_9_splitter_SplitRecord *, __pyx_t_13stpredictions_6models_3OK3_5_tree_SIZE_t *))__pyx_f_13stpredictions_6models_3OK3_9_splitter_20RandomSparseSplitter_node_split;
+  __pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter.tp_base = __pyx_ptype_13stpredictions_6models_3OK3_9_splitter_BaseSparseSplitter;
+  if (PyType_Ready(&__pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter) < 0) __PYX_ERR(0, 1309, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_9_splitter_RandomSparseSplitter.tp_print = 0;
+  __pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_9_splitter_RandomSparseSplitter.tp_dictoffset && __pyx_type_9_splitter_RandomSparseSplitter.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_9_splitter_RandomSparseSplitter.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter.tp_dictoffset && __pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_9_splitter_RandomSparseSplitter.tp_dict, __pyx_vtabptr_9_splitter_RandomSparseSplitter) < 0) __PYX_ERR(0, 1309, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_RandomSparseSplitter, (PyObject *)&__pyx_type_9_splitter_RandomSparseSplitter) < 0) __PYX_ERR(0, 1309, __pyx_L1_error)
-  __pyx_ptype_9_splitter_RandomSparseSplitter = &__pyx_type_9_splitter_RandomSparseSplitter;
+  if (__Pyx_SetVtable(__pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter.tp_dict, __pyx_vtabptr_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter) < 0) __PYX_ERR(0, 1309, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_RandomSparseSplitter, (PyObject *)&__pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter) < 0) __PYX_ERR(0, 1309, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter = &__pyx_type_13stpredictions_6models_3OK3_9_splitter_RandomSparseSplitter;
   __pyx_vtabptr_array = &__pyx_vtable_array;
   __pyx_vtable_array.get_memview = (PyObject *(*)(struct __pyx_array_obj *))__pyx_array_get_memview;
   if (PyType_Ready(&__pyx_type___pyx_array) < 0) __PYX_ERR(1, 105, __pyx_L1_error)
@@ -29523,62 +29337,44 @@ static int __Pyx_modinit_type_import_code(void) {
   __pyx_ptype_5numpy_ufunc = __Pyx_ImportType(__pyx_t_1, "numpy", "ufunc", sizeof(PyUFuncObject), __Pyx_ImportType_CheckSize_Ignore);
    if (!__pyx_ptype_5numpy_ufunc) __PYX_ERR(3, 764, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyImport_ImportModule("sklearn.tree._criterion"); if (unlikely(!__pyx_t_1)) __PYX_ERR(5, 21, __pyx_L1_error)
+  __pyx_t_1 = PyImport_ImportModule("stpredictions.models.OK3._tree"); if (unlikely(!__pyx_t_1)) __PYX_ERR(5, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_ptype_7sklearn_4tree_10_criterion_Criterion = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._criterion", "Criterion", sizeof(struct __pyx_obj_7sklearn_4tree_10_criterion_Criterion), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_10_criterion_Criterion) __PYX_ERR(5, 21, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_10_criterion_Criterion = (struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_Criterion*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_10_criterion_Criterion->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_10_criterion_Criterion)) __PYX_ERR(5, 21, __pyx_L1_error)
-  __pyx_ptype_7sklearn_4tree_10_criterion_ClassificationCriterion = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._criterion", "ClassificationCriterion", sizeof(struct __pyx_obj_7sklearn_4tree_10_criterion_ClassificationCriterion), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_10_criterion_ClassificationCriterion) __PYX_ERR(5, 70, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_10_criterion_ClassificationCriterion = (struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_ClassificationCriterion*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_10_criterion_ClassificationCriterion->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_10_criterion_ClassificationCriterion)) __PYX_ERR(5, 70, __pyx_L1_error)
-  __pyx_ptype_7sklearn_4tree_10_criterion_RegressionCriterion = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._criterion", "RegressionCriterion", sizeof(struct __pyx_obj_7sklearn_4tree_10_criterion_RegressionCriterion), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_10_criterion_RegressionCriterion) __PYX_ERR(5, 76, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_10_criterion_RegressionCriterion = (struct __pyx_vtabstruct_7sklearn_4tree_10_criterion_RegressionCriterion*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_10_criterion_RegressionCriterion->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_10_criterion_RegressionCriterion)) __PYX_ERR(5, 76, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_5_tree_Tree = __Pyx_ImportType(__pyx_t_1, "stpredictions.models.OK3._tree", "Tree", sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_Tree), __Pyx_ImportType_CheckSize_Warn);
+   if (!__pyx_ptype_13stpredictions_6models_3OK3_5_tree_Tree) __PYX_ERR(5, 28, __pyx_L1_error)
+  __pyx_vtabptr_13stpredictions_6models_3OK3_5_tree_Tree = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_5_tree_Tree*)__Pyx_GetVtable(__pyx_ptype_13stpredictions_6models_3OK3_5_tree_Tree->tp_dict); if (unlikely(!__pyx_vtabptr_13stpredictions_6models_3OK3_5_tree_Tree)) __PYX_ERR(5, 28, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_5_tree_TreeBuilder = __Pyx_ImportType(__pyx_t_1, "stpredictions.models.OK3._tree", "TreeBuilder", sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_5_tree_TreeBuilder), __Pyx_ImportType_CheckSize_Warn);
+   if (!__pyx_ptype_13stpredictions_6models_3OK3_5_tree_TreeBuilder) __PYX_ERR(5, 75, __pyx_L1_error)
+  __pyx_vtabptr_13stpredictions_6models_3OK3_5_tree_TreeBuilder = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_5_tree_TreeBuilder*)__Pyx_GetVtable(__pyx_ptype_13stpredictions_6models_3OK3_5_tree_TreeBuilder->tp_dict); if (unlikely(!__pyx_vtabptr_13stpredictions_6models_3OK3_5_tree_TreeBuilder)) __PYX_ERR(5, 75, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyImport_ImportModule("sklearn.tree._splitter"); if (unlikely(!__pyx_t_1)) __PYX_ERR(6, 34, __pyx_L1_error)
+  __pyx_t_1 = PyImport_ImportModule("stpredictions.models.OK3._criterion"); if (unlikely(!__pyx_t_1)) __PYX_ERR(6, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_ptype_7sklearn_4tree_9_splitter_Splitter = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._splitter", "Splitter", sizeof(struct __pyx_obj_7sklearn_4tree_9_splitter_Splitter), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_9_splitter_Splitter) __PYX_ERR(6, 34, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_9_splitter_Splitter = (struct __pyx_vtabstruct_7sklearn_4tree_9_splitter_Splitter*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_9_splitter_Splitter->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_9_splitter_Splitter)) __PYX_ERR(6, 34, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_10_criterion_Criterion = __Pyx_ImportType(__pyx_t_1, "stpredictions.models.OK3._criterion", "Criterion", sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_Criterion), __Pyx_ImportType_CheckSize_Warn);
+   if (!__pyx_ptype_13stpredictions_6models_3OK3_10_criterion_Criterion) __PYX_ERR(6, 12, __pyx_L1_error)
+  __pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_Criterion = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_Criterion*)__Pyx_GetVtable(__pyx_ptype_13stpredictions_6models_3OK3_10_criterion_Criterion->tp_dict); if (unlikely(!__pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_Criterion)) __PYX_ERR(6, 12, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion = __Pyx_ImportType(__pyx_t_1, "stpredictions.models.OK3._criterion", "KernelizedRegressionCriterion", sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion), __Pyx_ImportType_CheckSize_Warn);
+   if (!__pyx_ptype_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion) __PYX_ERR(6, 50, __pyx_L1_error)
+  __pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion*)__Pyx_GetVtable(__pyx_ptype_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion->tp_dict); if (unlikely(!__pyx_vtabptr_13stpredictions_6models_3OK3_10_criterion_KernelizedRegressionCriterion)) __PYX_ERR(6, 50, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyImport_ImportModule("sklearn.tree._tree"); if (unlikely(!__pyx_t_1)) __PYX_ERR(7, 37, __pyx_L1_error)
+  __pyx_t_1 = PyImport_ImportModule("stpredictions.models.OK3._quad_tree"); if (unlikely(!__pyx_t_1)) __PYX_ERR(7, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_ptype_7sklearn_4tree_5_tree_Tree = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._tree", "Tree", sizeof(struct __pyx_obj_7sklearn_4tree_5_tree_Tree), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_5_tree_Tree) __PYX_ERR(7, 37, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_5_tree_Tree = (struct __pyx_vtabstruct_7sklearn_4tree_5_tree_Tree*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_5_tree_Tree->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_5_tree_Tree)) __PYX_ERR(7, 37, __pyx_L1_error)
-  __pyx_ptype_7sklearn_4tree_5_tree_TreeBuilder = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._tree", "TreeBuilder", sizeof(struct __pyx_obj_7sklearn_4tree_5_tree_TreeBuilder), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_5_tree_TreeBuilder) __PYX_ERR(7, 85, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_5_tree_TreeBuilder = (struct __pyx_vtabstruct_7sklearn_4tree_5_tree_TreeBuilder*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_5_tree_TreeBuilder->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_5_tree_TreeBuilder)) __PYX_ERR(7, 85, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_10_quad_tree__QuadTree = __Pyx_ImportType(__pyx_t_1, "stpredictions.models.OK3._quad_tree", "_QuadTree", sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_10_quad_tree__QuadTree), __Pyx_ImportType_CheckSize_Warn);
+   if (!__pyx_ptype_13stpredictions_6models_3OK3_10_quad_tree__QuadTree) __PYX_ERR(7, 55, __pyx_L1_error)
+  __pyx_vtabptr_13stpredictions_6models_3OK3_10_quad_tree__QuadTree = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_10_quad_tree__QuadTree*)__Pyx_GetVtable(__pyx_ptype_13stpredictions_6models_3OK3_10_quad_tree__QuadTree->tp_dict); if (unlikely(!__pyx_vtabptr_13stpredictions_6models_3OK3_10_quad_tree__QuadTree)) __PYX_ERR(7, 55, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyImport_ImportModule("_criterion"); if (unlikely(!__pyx_t_1)) __PYX_ERR(8, 12, __pyx_L1_error)
+  __pyx_t_1 = PyImport_ImportModule("stpredictions.models.OK3._utils"); if (unlikely(!__pyx_t_1)) __PYX_ERR(8, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_ptype_10_criterion_Criterion = __Pyx_ImportType(__pyx_t_1, "_criterion", "Criterion", sizeof(struct __pyx_obj_10_criterion_Criterion), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_10_criterion_Criterion) __PYX_ERR(8, 12, __pyx_L1_error)
-  __pyx_vtabptr_10_criterion_Criterion = (struct __pyx_vtabstruct_10_criterion_Criterion*)__Pyx_GetVtable(__pyx_ptype_10_criterion_Criterion->tp_dict); if (unlikely(!__pyx_vtabptr_10_criterion_Criterion)) __PYX_ERR(8, 12, __pyx_L1_error)
-  __pyx_ptype_10_criterion_KernelizedRegressionCriterion = __Pyx_ImportType(__pyx_t_1, "_criterion", "KernelizedRegressionCriterion", sizeof(struct __pyx_obj_10_criterion_KernelizedRegressionCriterion), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_10_criterion_KernelizedRegressionCriterion) __PYX_ERR(8, 50, __pyx_L1_error)
-  __pyx_vtabptr_10_criterion_KernelizedRegressionCriterion = (struct __pyx_vtabstruct_10_criterion_KernelizedRegressionCriterion*)__Pyx_GetVtable(__pyx_ptype_10_criterion_KernelizedRegressionCriterion->tp_dict); if (unlikely(!__pyx_vtabptr_10_criterion_KernelizedRegressionCriterion)) __PYX_ERR(8, 50, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyImport_ImportModule("sklearn.neighbors._quad_tree"); if (unlikely(!__pyx_t_1)) __PYX_ERR(9, 55, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_ptype_7sklearn_9neighbors_10_quad_tree__QuadTree = __Pyx_ImportType(__pyx_t_1, "sklearn.neighbors._quad_tree", "_QuadTree", sizeof(struct __pyx_obj_7sklearn_9neighbors_10_quad_tree__QuadTree), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_9neighbors_10_quad_tree__QuadTree) __PYX_ERR(9, 55, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_9neighbors_10_quad_tree__QuadTree = (struct __pyx_vtabstruct_7sklearn_9neighbors_10_quad_tree__QuadTree*)__Pyx_GetVtable(__pyx_ptype_7sklearn_9neighbors_10_quad_tree__QuadTree->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_9neighbors_10_quad_tree__QuadTree)) __PYX_ERR(9, 55, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyImport_ImportModule("sklearn.tree._utils"); if (unlikely(!__pyx_t_1)) __PYX_ERR(10, 79, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_ptype_7sklearn_4tree_6_utils_Stack = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._utils", "Stack", sizeof(struct __pyx_obj_7sklearn_4tree_6_utils_Stack), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_6_utils_Stack) __PYX_ERR(10, 79, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_6_utils_Stack = (struct __pyx_vtabstruct_7sklearn_4tree_6_utils_Stack*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_6_utils_Stack->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_6_utils_Stack)) __PYX_ERR(10, 79, __pyx_L1_error)
-  __pyx_ptype_7sklearn_4tree_6_utils_PriorityHeap = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._utils", "PriorityHeap", sizeof(struct __pyx_obj_7sklearn_4tree_6_utils_PriorityHeap), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_6_utils_PriorityHeap) __PYX_ERR(10, 108, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_6_utils_PriorityHeap = (struct __pyx_vtabstruct_7sklearn_4tree_6_utils_PriorityHeap*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_6_utils_PriorityHeap->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_6_utils_PriorityHeap)) __PYX_ERR(10, 108, __pyx_L1_error)
-  __pyx_ptype_7sklearn_4tree_6_utils_WeightedPQueue = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._utils", "WeightedPQueue", sizeof(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedPQueue), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_6_utils_WeightedPQueue) __PYX_ERR(10, 131, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_6_utils_WeightedPQueue = (struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedPQueue*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_6_utils_WeightedPQueue->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_6_utils_WeightedPQueue)) __PYX_ERR(10, 131, __pyx_L1_error)
-  __pyx_ptype_7sklearn_4tree_6_utils_WeightedMedianCalculator = __Pyx_ImportType(__pyx_t_1, "sklearn.tree._utils", "WeightedMedianCalculator", sizeof(struct __pyx_obj_7sklearn_4tree_6_utils_WeightedMedianCalculator), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_7sklearn_4tree_6_utils_WeightedMedianCalculator) __PYX_ERR(10, 151, __pyx_L1_error)
-  __pyx_vtabptr_7sklearn_4tree_6_utils_WeightedMedianCalculator = (struct __pyx_vtabstruct_7sklearn_4tree_6_utils_WeightedMedianCalculator*)__Pyx_GetVtable(__pyx_ptype_7sklearn_4tree_6_utils_WeightedMedianCalculator->tp_dict); if (unlikely(!__pyx_vtabptr_7sklearn_4tree_6_utils_WeightedMedianCalculator)) __PYX_ERR(10, 151, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_6_utils_Stack = __Pyx_ImportType(__pyx_t_1, "stpredictions.models.OK3._utils", "Stack", sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_Stack), __Pyx_ImportType_CheckSize_Warn);
+   if (!__pyx_ptype_13stpredictions_6models_3OK3_6_utils_Stack) __PYX_ERR(8, 79, __pyx_L1_error)
+  __pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_Stack = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_Stack*)__Pyx_GetVtable(__pyx_ptype_13stpredictions_6models_3OK3_6_utils_Stack->tp_dict); if (unlikely(!__pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_Stack)) __PYX_ERR(8, 79, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_6_utils_PriorityHeap = __Pyx_ImportType(__pyx_t_1, "stpredictions.models.OK3._utils", "PriorityHeap", sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_PriorityHeap), __Pyx_ImportType_CheckSize_Warn);
+   if (!__pyx_ptype_13stpredictions_6models_3OK3_6_utils_PriorityHeap) __PYX_ERR(8, 108, __pyx_L1_error)
+  __pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_PriorityHeap = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_PriorityHeap*)__Pyx_GetVtable(__pyx_ptype_13stpredictions_6models_3OK3_6_utils_PriorityHeap->tp_dict); if (unlikely(!__pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_PriorityHeap)) __PYX_ERR(8, 108, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_6_utils_WeightedPQueue = __Pyx_ImportType(__pyx_t_1, "stpredictions.models.OK3._utils", "WeightedPQueue", sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedPQueue), __Pyx_ImportType_CheckSize_Warn);
+   if (!__pyx_ptype_13stpredictions_6models_3OK3_6_utils_WeightedPQueue) __PYX_ERR(8, 131, __pyx_L1_error)
+  __pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_WeightedPQueue = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_WeightedPQueue*)__Pyx_GetVtable(__pyx_ptype_13stpredictions_6models_3OK3_6_utils_WeightedPQueue->tp_dict); if (unlikely(!__pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_WeightedPQueue)) __PYX_ERR(8, 131, __pyx_L1_error)
+  __pyx_ptype_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator = __Pyx_ImportType(__pyx_t_1, "stpredictions.models.OK3._utils", "WeightedMedianCalculator", sizeof(struct __pyx_obj_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator), __Pyx_ImportType_CheckSize_Warn);
+   if (!__pyx_ptype_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator) __PYX_ERR(8, 151, __pyx_L1_error)
+  __pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator = (struct __pyx_vtabstruct_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator*)__Pyx_GetVtable(__pyx_ptype_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator->tp_dict); if (unlikely(!__pyx_vtabptr_13stpredictions_6models_3OK3_6_utils_WeightedMedianCalculator)) __PYX_ERR(8, 151, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_RefNannyFinishContext();
   return 0;
@@ -29596,9 +29392,9 @@ static int __Pyx_modinit_variable_import_code(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_variable_import_code", 0);
   /*--- Variable import code ---*/
-  __pyx_t_1 = PyImport_ImportModule("sklearn.neighbors._quad_tree"); if (!__pyx_t_1) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_t_1 = PyImport_ImportModule("stpredictions.models.OK3._quad_tree"); if (!__pyx_t_1) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_ImportVoidPtr(__pyx_t_1, "EPSILON", (void **)&__pyx_vp_7sklearn_9neighbors_10_quad_tree_EPSILON, "float") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ImportVoidPtr(__pyx_t_1, "EPSILON", (void **)&__pyx_vp_13stpredictions_6models_3OK3_10_quad_tree_EPSILON, "float") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_RefNannyFinishContext();
   return 0;
@@ -29616,22 +29412,22 @@ static int __Pyx_modinit_function_import_code(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_function_import_code", 0);
   /*--- Function import code ---*/
-  __pyx_t_1 = PyImport_ImportModule("sklearn.tree._utils"); if (!__pyx_t_1) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_t_1 = PyImport_ImportModule("stpredictions.models.OK3._utils"); if (!__pyx_t_1) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_ImportFunction(__pyx_t_1, "rand_int", (void (**)(void))&__pyx_f_7sklearn_4tree_6_utils_rand_int, "__pyx_t_7sklearn_4tree_6_utils_SIZE_t (__pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_SIZE_t, __pyx_t_7sklearn_4tree_6_utils_UINT32_t *)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "rand_uniform", (void (**)(void))&__pyx_f_7sklearn_4tree_6_utils_rand_uniform, "double (double, double, __pyx_t_7sklearn_4tree_6_utils_UINT32_t *)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "log", (void (**)(void))&__pyx_f_7sklearn_4tree_6_utils_log, "double (double)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_0safe_realloc", (void (**)(void))&__pyx_fuse_0__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "__pyx_t_7sklearn_4tree_6_utils_DTYPE_t *(__pyx_t_7sklearn_4tree_6_utils_DTYPE_t **, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_1safe_realloc", (void (**)(void))&__pyx_fuse_1__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "__pyx_t_7sklearn_4tree_6_utils_SIZE_t *(__pyx_t_7sklearn_4tree_6_utils_SIZE_t **, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_2safe_realloc", (void (**)(void))&__pyx_fuse_2__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "unsigned char *(unsigned char **, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_3safe_realloc", (void (**)(void))&__pyx_fuse_3__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "struct __pyx_t_7sklearn_4tree_6_utils_WeightedPQueueRecord *(struct __pyx_t_7sklearn_4tree_6_utils_WeightedPQueueRecord **, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_4safe_realloc", (void (**)(void))&__pyx_fuse_4__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "__pyx_t_7sklearn_4tree_6_utils_DOUBLE_t *(__pyx_t_7sklearn_4tree_6_utils_DOUBLE_t **, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_5safe_realloc", (void (**)(void))&__pyx_fuse_5__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "__pyx_t_7sklearn_4tree_6_utils_DOUBLE_t **(__pyx_t_7sklearn_4tree_6_utils_DOUBLE_t ***, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_6safe_realloc", (void (**)(void))&__pyx_fuse_6__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "struct __pyx_t_7sklearn_4tree_5_tree_Node *(struct __pyx_t_7sklearn_4tree_5_tree_Node **, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_7safe_realloc", (void (**)(void))&__pyx_fuse_7__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell *(struct __pyx_t_7sklearn_9neighbors_10_quad_tree_Cell **, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_8safe_realloc", (void (**)(void))&__pyx_fuse_8__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "struct __pyx_t_7sklearn_4tree_5_tree_Node **(struct __pyx_t_7sklearn_4tree_5_tree_Node ***, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_9safe_realloc", (void (**)(void))&__pyx_fuse_9__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "struct __pyx_t_7sklearn_4tree_6_utils_StackRecord *(struct __pyx_t_7sklearn_4tree_6_utils_StackRecord **, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_10safe_realloc", (void (**)(void))&__pyx_fuse_10__pyx_f_7sklearn_4tree_6_utils_safe_realloc, "struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord *(struct __pyx_t_7sklearn_4tree_6_utils_PriorityHeapRecord **, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "rand_int", (void (**)(void))&__pyx_f_13stpredictions_6models_3OK3_6_utils_rand_int, "__pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t (__pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t, __pyx_t_13stpredictions_6models_3OK3_6_utils_UINT32_t *)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "rand_uniform", (void (**)(void))&__pyx_f_13stpredictions_6models_3OK3_6_utils_rand_uniform, "double (double, double, __pyx_t_13stpredictions_6models_3OK3_6_utils_UINT32_t *)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "log", (void (**)(void))&__pyx_f_13stpredictions_6models_3OK3_6_utils_log, "double (double)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_0safe_realloc", (void (**)(void))&__pyx_fuse_0__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "__pyx_t_13stpredictions_6models_3OK3_6_utils_DTYPE_t *(__pyx_t_13stpredictions_6models_3OK3_6_utils_DTYPE_t **, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_1safe_realloc", (void (**)(void))&__pyx_fuse_1__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "__pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t *(__pyx_t_13stpredictions_6models_3OK3_6_utils_SIZE_t **, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_2safe_realloc", (void (**)(void))&__pyx_fuse_2__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "unsigned char *(unsigned char **, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_3safe_realloc", (void (**)(void))&__pyx_fuse_3__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "struct __pyx_t_13stpredictions_6models_3OK3_6_utils_WeightedPQueueRecord *(struct __pyx_t_13stpredictions_6models_3OK3_6_utils_WeightedPQueueRecord **, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_4safe_realloc", (void (**)(void))&__pyx_fuse_4__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "__pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t *(__pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t **, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_5safe_realloc", (void (**)(void))&__pyx_fuse_5__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "__pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t **(__pyx_t_13stpredictions_6models_3OK3_6_utils_DOUBLE_t ***, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_6safe_realloc", (void (**)(void))&__pyx_fuse_6__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node *(struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node **, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_7safe_realloc", (void (**)(void))&__pyx_fuse_7__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell *(struct __pyx_t_13stpredictions_6models_3OK3_10_quad_tree_Cell **, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_8safe_realloc", (void (**)(void))&__pyx_fuse_8__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node **(struct __pyx_t_13stpredictions_6models_3OK3_5_tree_Node ***, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_9safe_realloc", (void (**)(void))&__pyx_fuse_9__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "struct __pyx_t_13stpredictions_6models_3OK3_6_utils_StackRecord *(struct __pyx_t_13stpredictions_6models_3OK3_6_utils_StackRecord **, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "__pyx_fuse_10safe_realloc", (void (**)(void))&__pyx_fuse_10__pyx_f_13stpredictions_6models_3OK3_6_utils_safe_realloc, "struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord *(struct __pyx_t_13stpredictions_6models_3OK3_6_utils_PriorityHeapRecord **, size_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_RefNannyFinishContext();
   return 0;
@@ -29819,14 +29615,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main__splitter) {
+  if (__pyx_module_is_main_stpredictions__models__OK3___splitter) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name_2, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "_splitter")) {
-      if (unlikely(PyDict_SetItemString(modules, "_splitter", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "stpredictions.models.OK3._splitter")) {
+      if (unlikely(PyDict_SetItemString(modules, "stpredictions.models.OK3._splitter", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -29847,7 +29643,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "_splitter.pyx":12
+  /* "stpredictions/models/OK3/_splitter.pyx":12
  * from libc.string cimport memset
  * 
  * import numpy as np             # <<<<<<<<<<<<<<
@@ -29859,7 +29655,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "_splitter.pyx":14
+  /* "stpredictions/models/OK3/_splitter.pyx":14
  * import numpy as np
  * cimport numpy as np
  * np.import_array()             # <<<<<<<<<<<<<<
@@ -29868,12 +29664,12 @@ if (!__Pyx_RefNanny) {
  */
   __pyx_t_2 = __pyx_f_5numpy_import_array(); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 14, __pyx_L1_error)
 
-  /* "_splitter.pyx":16
+  /* "stpredictions/models/OK3/_splitter.pyx":16
  * np.import_array()
  * 
  * from scipy.sparse import csc_matrix             # <<<<<<<<<<<<<<
  * 
- * from sklearn.tree._utils cimport log
+ * from ._utils cimport log
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -29889,8 +29685,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "_splitter.pyx":24
- * from sklearn.tree._utils cimport safe_realloc
+  /* "stpredictions/models/OK3/_splitter.pyx":24
+ * from ._utils cimport safe_realloc
  * 
  * cdef double INFINITY = np.inf             # <<<<<<<<<<<<<<
  * 
@@ -29903,27 +29699,27 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_4 = __pyx_PyFloat_AsDouble(__pyx_t_1); if (unlikely((__pyx_t_4 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 24, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_v_9_splitter_INFINITY = __pyx_t_4;
+  __pyx_v_13stpredictions_6models_3OK3_9_splitter_INFINITY = __pyx_t_4;
 
-  /* "_splitter.pyx":27
+  /* "stpredictions/models/OK3/_splitter.pyx":27
  * 
  * # Mitigate precision differences between 32 bit and 64 bit
  * cdef DTYPE_t FEATURE_THRESHOLD = 1e-7             # <<<<<<<<<<<<<<
  * 
  * # Constant to switch between algorithm non zero value extract algorithm
  */
-  __pyx_v_9_splitter_FEATURE_THRESHOLD = 1e-7;
+  __pyx_v_13stpredictions_6models_3OK3_9_splitter_FEATURE_THRESHOLD = 1e-7;
 
-  /* "_splitter.pyx":31
+  /* "stpredictions/models/OK3/_splitter.pyx":31
  * # Constant to switch between algorithm non zero value extract algorithm
  * # in SparseSplitter
  * cdef DTYPE_t EXTRACT_NNZ_SWITCH = 0.1             # <<<<<<<<<<<<<<
  * 
  * cdef inline void _init_split(SplitRecord* self, SIZE_t start_pos) nogil:
  */
-  __pyx_v_9_splitter_EXTRACT_NNZ_SWITCH = 0.1;
+  __pyx_v_13stpredictions_6models_3OK3_9_splitter_EXTRACT_NNZ_SWITCH = 0.1;
 
-  /* "_splitter.pyx":1
+  /* "stpredictions/models/OK3/_splitter.pyx":1
  * # cython: cdivision=True             # <<<<<<<<<<<<<<
  * # cython: boundscheck=False
  * # cython: wraparound=False
@@ -30094,11 +29890,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_3);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init _splitter", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init stpredictions.models.OK3._splitter", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init _splitter");
+    PyErr_SetString(PyExc_ImportError, "init stpredictions.models.OK3._splitter");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -34905,7 +34701,7 @@ no_fail:
 }
 
 /* ObjectToMemviewSlice */
-  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dsds_nn___pyx_t_7sklearn_4tree_5_tree_DTYPE_t__const__(PyObject *obj, int writable_flag) {
+  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dsds_nn___pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t__const__(PyObject *obj, int writable_flag) {
     __Pyx_memviewslice result = { 0, 0, { 0 }, { 0 }, { 0 } };
     __Pyx_BufFmt_StackElem stack[1];
     int axes_specs[] = { (__Pyx_MEMVIEW_DIRECT | __Pyx_MEMVIEW_STRIDED), (__Pyx_MEMVIEW_DIRECT | __Pyx_MEMVIEW_STRIDED) };
@@ -34916,7 +34712,7 @@ no_fail:
     }
     retcode = __Pyx_ValidateAndInit_memviewslice(axes_specs, 0,
                                                  PyBUF_RECORDS_RO | writable_flag, 2,
-                                                 &__Pyx_TypeInfo_nn___pyx_t_7sklearn_4tree_5_tree_DTYPE_t__const__, stack,
+                                                 &__Pyx_TypeInfo_nn___pyx_t_13stpredictions_6models_3OK3_5_tree_DTYPE_t__const__, stack,
                                                  &result, obj);
     if (unlikely(retcode == -1))
         goto __pyx_fail;

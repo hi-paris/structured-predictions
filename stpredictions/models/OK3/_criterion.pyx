@@ -12,10 +12,10 @@ import numpy as np
 cimport numpy as np
 np.import_array()
 
-from sklearn.tree._utils cimport log
-from sklearn.tree._utils cimport safe_realloc
-from sklearn.tree._utils cimport sizet_ptr_to_ndarray
-from sklearn.tree._utils cimport WeightedMedianCalculator
+from ._utils cimport log
+from ._utils cimport safe_realloc
+from ._utils cimport sizet_ptr_to_ndarray
+from ._utils cimport WeightedMedianCalculator
 
 # from kernel import Kernel
 
