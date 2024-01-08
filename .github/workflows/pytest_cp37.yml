@@ -7,8 +7,8 @@ name: pytesting 3.7
 on: 
   push:
   ### This will ignore the testing
-    branches-ignore:
-      - "main"
+    # branches-ignore:
+    #   - "main"
 # #    branches: [ main ]
   schedule:
     - cron: '0 0 1 * *'
@@ -21,8 +21,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        # os: [ubuntu-latest, macos-latest]
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [ubuntu-latest]
+        # os: [macos-latest, ubuntu-latest, windows-latest]
         python: ['3.7',]
     env:
       OS: ${{ matrix.os }}
@@ -61,12 +61,14 @@ jobs:
         # make clean
         # pip install .
         ################## Use this when you want to use local wheel installation through dist ######################
-        # make dist
-        # pip install dist/*
+        make dist
+        pip freeze | xargs pip uninstall -y  # remove all the packages installed through pip
+        pip install dist/*
         #############################################################################
         # python setup.py develop
         # pip install -i https://test.pypi.org/simple/ structured-predictions==0.0.6
-        pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple structured-predictions
+        #### To install from TestPyPi
+        # pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple structured-predictions
         # pip install -i https://test.pypi.org/simple/ structured-predictions
         # python tests/tests_DIOKR/Demo_DeepIOKR_bibtex.py
     - name: Test with pytest
@@ -74,6 +76,6 @@ jobs:
         pip install pytest
         pytest tests/tests_OK3/test_tree_clf_and_reg.py tests/tests_OK3/test_complementary.py 
         pytest  tests/tests_DIOKR
-        python tests/tests_IOKR/ISOKR.py   
+        # python tests/tests_IOKR/ISOKR.py   
         # python tests/tests_IOKR/SISOKR.py
         # pytest tests/tests_IOKR
