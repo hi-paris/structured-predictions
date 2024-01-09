@@ -2,6 +2,7 @@ name: Generating Wheels
 
 on: 
   push:
+    # To ignore main branch
     # branches-ignore:
     #   - "main"
 #    branches: [ main ]
