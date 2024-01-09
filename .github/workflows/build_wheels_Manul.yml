@@ -17,8 +17,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest]
-        # os: [macos-latest, ubuntu-latest, windows-latest]
+        # os: [windows-latest]
+        os: [macos-latest, ubuntu-latest, windows-latest]
         python: ['3.7', '3.8', '3.9', '3.10', '3.11'] # Gives error for Python 3.12
     env:
       OS: ${{ matrix.os }}
