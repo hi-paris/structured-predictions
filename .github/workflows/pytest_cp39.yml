@@ -6,8 +6,8 @@ name: pytesting 3.9
 
 on: 
   push:
-    # branches-ignore:
-    #   - "main"
+    branches-ignore:
+      - "main"
     # # branches: [ main ]
   schedule:
     - cron: '0 0 1 * *'

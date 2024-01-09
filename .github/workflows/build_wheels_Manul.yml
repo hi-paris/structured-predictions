@@ -2,8 +2,8 @@ name: Generating Wheels
 
 on: 
   push:
-    branches-ignore:
-      - "main"
+    # branches-ignore:
+    #   - "main"
 #    branches: [ main ]
   schedule:
     - cron: '0 0 1 * *'
@@ -18,7 +18,7 @@ jobs:
       matrix:
         os: [macos-latest]
         # os: [macos-latest, ubuntu-latest, windows-latest]
-        python: ['3.7', '3.8', '3.9']
+        python: ['3.7', '3.8', '3.9', '3.10', '3.11']
     env:
       OS: ${{ matrix.os }}
       PYTHON: ${{ matrix.python }}
