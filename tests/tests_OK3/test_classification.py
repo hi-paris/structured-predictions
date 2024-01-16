@@ -1,7 +1,9 @@
 from stpredictions.models.OK3._classes import OK3Regressor
-from sklearn.datasets import make_blobs
+# from sklearn.datasets import make_blobs
+from sklearn import datasets
 from sklearn.metrics import f1_score
 from sklearn.tree import DecisionTreeClassifier
+import time
 
 from stpredictions.models.OK3._classes import OK3Regressor
 
@@ -16,7 +18,7 @@ X_multilabel_test = X_multilabel[n_samples // 2:]
 y_multilabel_train = y_multilabel[:n_samples // 2]
 y_multilabel_test = y_multilabel[n_samples // 2:]
 
-X_blobs, y_blobs = make_blobs(n_samples=n_samples, n_features=n_features, centers=10)
+X_blobs, y_blobs = datasets.make_blobs(n_samples=n_samples, n_features=n_features, centers=10)
 
 X_blobs_train = X_blobs[:n_samples // 2]
 X_blobs_test = X_blobs[n_samples // 2:]

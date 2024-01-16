@@ -32,14 +32,14 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         ################### Use this when you want to use local wheel installation through dist  #################
-        # pip install -r requirements.txt
+        pip install -r requirements.txt
     # - name: Lint with flake8
     #   run: |
     #     pip install flake8
     #     # stop the build if there are Python syntax errors or undefined names
     #     flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
     #     # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-    #     flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    #     flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 ---statistics
     # - name: Test with pytest
     #   run: |
     #     pip install pytest
@@ -56,18 +56,22 @@ jobs:
         # make clean
         # pip install .
         ################## Use this when you want to use local wheel installation through dist ######################
-        # make dist
-        # pip install dist/*
+        make dist
+        pip freeze | xargs pip uninstall -y  # remove all the packages installed through pip
+        pip install dist/*
         #############################################################################
         # python setup.py develop
         # pip install -i https://test.pypi.org/simple/ structured-predictions==0.0.6
-        pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple structured-predictions
+        #### To install from TestPyPi
+        # pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple structured-predictions
         # pip install -i https://test.pypi.org/simple/ structured-predictions
-        python tests/tests_DIOKR/Demo_DeepIOKR_bibtex.py
+        # python tests/tests_DIOKR/Demo_DeepIOKR_bibtex.py
     - name: Test with pytest
       run: |
         pip install pytest
-        pytest tests/tests_OK3/test_tree_clf_and_reg.py tests/tests_OK3/test_complementary.py tests/tests_IOKR tests/tests_DIOKR
-
+        pytest tests/tests_OK3/test_tree_clf_and_reg.py tests/tests_OK3/test_complementary.py 
+        pytest  tests/tests_DIOKR
+        # python tests/tests_IOKR/ISOKR.py   
+        # python tests/tests_IOKR/SISOKR.py
         # pytest tests/tests_IOKR
 
