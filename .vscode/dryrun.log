@@ -1,5 +1,5 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/daniel/Documents/AA_Télécom/HiParis/Project/PROJECT/structured-predictions'
+make: Entering directory `/Users/gaetanbrison/Documents/GitHub/hi-paris/structured-predictions'
 echo "The following make targets are available:"
 echo "    help - print this message"
 echo "    build - build python package"
@@ -9,5 +9,5 @@ echo "    remove - remove the package (local user)"
 echo "    sremove - remove the package (system with sudo)"
 echo "    clean - remove any temporary files"
 echo "    notebook - launch ipython notebook"
-make: Leaving directory '/home/daniel/Documents/AA_Télécom/HiParis/Project/PROJECT/structured-predictions'
+make: Leaving directory `/Users/gaetanbrison/Documents/GitHub/hi-paris/structured-predictions'
  
