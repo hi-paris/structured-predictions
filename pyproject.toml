@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools", "wheel", "oldest-supported-numpy", "cython==0.29.23"]
+requires = ["setuptools", "wheel", "oldest-supported-numpy", "cython==0.29.36"]
 # requires = ["setuptools", "wheel", "oldest-supported-numpy", "cython>=0.23", "scikit-learn==0.24.2"]
 build-backend = "setuptools.build_meta"
 
@@ -14,7 +14,7 @@ build-backend = "setuptools.build_meta"
 # skip = ["pp*", "cp36-*"]
 # Skip for Ubuntu   # 32bit cp310 results in error
 # skip = ["cp36-musllinux*", "cp37-musllinux*", "cp38-musllinux*", "cp39-musllinux*", "pp*", "cp310-*", "cp36-*"]
-skip = ["cp36-musllinux*", "cp37-musllinux*", "cp38-musllinux*", "cp39-musllinux*", "pp*", "cp36-*"]
+skip = [ "cp37-musllinux*", "cp38-musllinux*", "cp39-musllinux*", "pp*", "cp36-*"]
 # skip = ["cp36-*", "cp37-*", "cp38-*", "pp*", "cp310-*"]
 
 
