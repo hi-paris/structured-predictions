@@ -1,3 +1,9 @@
+######## Status ###########
+## File is executed withou error
+## use below command
+## pytest tests/tests_OK3/test_complementary.py
+
+
 """
 Complementary testing for OK3
 """

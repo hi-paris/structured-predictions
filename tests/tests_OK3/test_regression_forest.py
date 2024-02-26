@@ -1,3 +1,10 @@
+######## Status ###########
+## File is executed withou error
+## use below command
+## python tests/tests_OK3/test_regression_forest.py
+
+
+
 # compare le tree de régression avec OK3 avec noyau linéaire
 
 import time
@@ -36,7 +43,7 @@ def test_regression_ref(X_train, y_train, X_test, y_test):
     print("base_estimator_ :\n", clf.base_estimator_)
     print("estimators_[0] :", clf.estimators_[0])
     print("feature_importances_ :", clf.feature_importances_)
-    print("n_features_ :\n", clf.n_features_)
+    print("n_features_ :\n", clf.n_features_in_)
     print("n_outputs_ :", clf.n_outputs_)
     if hasattr(clf, "oob_score_"):
         print("oob_score_ (r2 score in output space):", clf.oob_score_)

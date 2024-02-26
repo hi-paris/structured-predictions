@@ -1,3 +1,9 @@
+######## Status ###########
+## File is executed withou error but some warnings
+## use below command
+## python tests/tests_OK3/exemple_utilisation.py
+
+
 ############################################################
 # # # # #   Exemple d'utilisation d'un arbre OK3   # # # # #
 ############################################################

@@ -1,3 +1,9 @@
+######## Status ###########
+## File is executed withou error
+## use below command
+## python tests/tests_OK3/test_regression.py
+
+
 # compare le tree de régression avec OK3 avec noyau linéaire
 
 import time

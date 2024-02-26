@@ -2,8 +2,9 @@ name: Build
 
 on: 
   push:
-    branches-ignore:
-      - "main"
+    # To ignore main branch
+    # branches-ignore:
+    #   - "main"
 
 jobs:
   build_wheels:
