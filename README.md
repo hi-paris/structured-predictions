@@ -383,9 +383,9 @@ The contributors to this library are
 * [Tamim El Ahmad](https://datascienceandai.wp.imt.fr/en/?team=el-ahmad-2) (Phd)
 * [Luc Motte](https://www.researchgate.net/profile/Luc-Brogat-Motte) (Phd)
 * [Florence d'Alché-Buc](https://perso.telecom-paristech.fr/fdalche/) (Researcher)
-
-* [Awais Sani] (Sr. ML Engineer)
-* [Gaëtan Brison] (Lead ML Engineer)
+<br/><br/>
+* [Awais Sani](https://github.com/yohila) (Sr. ML Engineer)
+* [Gaëtan Brison](https://www.linkedin.com/in/gaetan-brison/) (Lead ML Engineer)
 
 
 ## Contributions and code of conduct
