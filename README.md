@@ -384,6 +384,9 @@ The contributors to this library are
 * [Luc Motte](https://www.researchgate.net/profile/Luc-Brogat-Motte) (Phd)
 * [Florence d'Alché-Buc](https://perso.telecom-paristech.fr/fdalche/) (Researcher)
 
+* [Awais Sani] (Sr. ML Engineer)
+* [Gaëtan Brison] (Lead ML Engineer)
+
 
 ## Contributions and code of conduct
 
