@@ -218,3 +218,140 @@ def load_bibtex_test_from_arff():
 # print(len(Y_test))
 # print(len(Y_train))
 
+def to_grakels(Y_dict, n=None, do_edge_labels=False):
+    """
+    Convert a list of dictionaries containing adjacency matrices
+    and one-hot-encoded label vectors to a Grakel Graph.
+    
+    Parameters
+    ----------
+    Y_dict : list.
+        List of dictionaries including an adjacency matrix
+        and a one-hot-encoded label vector.
+    n : int, optional
+        Number of graphs loaded. If None, all data are loaded.
+        The default is None.
+    edge_labels : bool, optional
+        If True, edge labels are encoded in the Grakel instance.
+        The default is False.
+
+    Returns
+    -------
+    Y : 1-D array-like of size (n).
+        Array of Grakel Graphs.
+
+    """
+    
+    if n is None:
+        n = len(Y_dict)
+    
+    Gs = list()
+
+    for i in range(n):
+        adj = Y_dict[i]['A']
+        node_labels = np.argmax(Y_dict[i]['F'], axis=1)
+        node_labels_dict = {j: label for (j, label) in enumerate(node_labels)}
+        if do_edge_labels:
+            edge_labels = np.argmax(Y_dict[i]['E'], axis=2)
+            edges1, edges2 = np.where(adj == 1)
+            edge_labels_dict = {(edges1[j], edges2[j]): edge_labels[edges1[j], edges2[j]] for j in range(len(edges1))}
+        Gs.append(Graph(adj, node_labels=node_labels_dict, edge_labels=edge_labels_dict))
+        
+    Y = np.array(Gs)
+        
+    return Y
+
+
+def load_qm9(path='Data/qm9/', n_tr=131385, n_val=500,
+            delete_atoms=False, smiles=True):
+    """
+    Load QM9 data.
+
+    Parameters
+    ----------
+    path : str, optional
+        Path of the folder containing the pickle file. The default is 'Data/fingerprint2mol/'.
+    n_tr : int, optional
+        Number of training data loaded.
+        The default is 60000.
+    n_val : int, optional
+        Number of validation data loaded.
+        The default is 500.
+    delete_atoms : bool, optional
+        If True, remove entries corresponding to a graph of a single node.
+        The default is False.
+    smiles : bool, optional
+        If True, smiles are returned as inputs rather than fingerprints.
+        The default is False.
+
+    Returns
+    -------
+    X_tr : 1-D array-like of size (n_tr) if smiles.
+           2-D array-like of size (n_tr, 2048) otherwise.
+        Training inputs as smiles if smiles == True,
+        as fingerprints otherwise.
+    Y_grkl_tr : 1-D array-like of size (n_tr).
+        Training outputs as Graph instances.
+    Y_dict_tr : list.
+        Training outputs as dictionaries.
+    X_val : 1-D array-like of size (n_val) if smiles.
+           2-D array-like of size (n_val, 2048) otherwise.
+        Training inputs as smiles if smiles == True,
+        as fingerprints otherwise.
+    Y_grkl_val : 1-D array-like of size (n_val).
+        Validation outputs as Graph instances.
+    Y_dict_val : list.
+        Validation outputs as dictionaries.
+    X_te : 1-D array-like of size (2000) if smiles.
+           2-D array-like of size (2000, 2048) otherwise.
+        Training inputs as smiles if smiles == True,
+        as fingerprints otherwise.
+    Y_grkl_te : 1-D array-like of size (2000).
+        Test outputs as Graph instances.
+    Y_dict_te : list.
+        Test outputs as dictionaries.
+
+    """
+    if smiles:
+        X = np.load(path + 'X_smiles_train_qm9.npy', allow_pickle=True)[:n_tr+n_val]
+    else:
+        X = np.load(path + 'X_fingerprint_train_qm9.npy', allow_pickle=True)[:n_tr+n_val]
+    Y_dict = np.load(path + 'y_train_qm9.npy', allow_pickle=True)[:n_tr+n_val]
+
+    X_tr = X[:n_tr]
+    Y_dict_tr = Y_dict[:n_tr]
+    Y_grkl_tr = to_grakels(Y_dict_tr, do_edge_labels=True)
+    
+    X_val = X[n_tr:]
+    Y_dict_val = Y_dict[n_tr:]
+    Y_grkl_val = to_grakels(Y_dict_val, do_edge_labels=True)
+    
+    if smiles:
+        X_te = np.load(path + 'X_smiles_test_qm9.npy', allow_pickle=True)
+    else:
+        X_te = np.load(path + 'X_fingerprint_test_qm9.npy', allow_pickle=True)
+    Y_dict_te = np.load(path + 'y_test_qm9.npy', allow_pickle=True)
+    Y_grkl_te = to_grakels(Y_dict_te, do_edge_labels=True)
+
+    if delete_atoms:
+        idx_atoms_tr = []
+        idx_atoms_val = []
+
+        for i in range(n_tr):
+            if Y_grkl_tr[i].get_edges() == []:
+                idx_atoms_tr.append(i)
+
+        X_tr = np.delete(X_tr, idx_atoms_tr, axis=0)
+        Y_dict_tr = np.delete(Y_dict_tr, idx_atoms_tr)
+        Y_grkl_tr = np.delete(Y_grkl_tr, idx_atoms_tr)
+
+        for i in range(n_val):
+            if Y_grkl_val[i].get_edges() == []:
+                idx_atoms_val.append(i)
+
+        X_val = np.delete(X_val, idx_atoms_val, axis=0)
+        Y_dict_val = np.delete(Y_dict_val, idx_atoms_val)
+        Y_grkl_val = np.delete(Y_grkl_val, idx_atoms_val)
+    
+    return X_tr, Y_grkl_tr, Y_dict_tr, X_val, Y_grkl_val, Y_dict_val, X_te, Y_grkl_te, Y_dict_te
+
