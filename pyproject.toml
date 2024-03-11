@@ -15,8 +15,8 @@ build-backend = "setuptools.build_meta"
 # skip = ["pp*", "cp36-*", "cp312-*"]
 
 # Skip for Ubuntu   # 32bit cp310 results in error
-# skip = [ "cp37-musllinux*", "cp38-musllinux*", "cp39-musllinux*", "pp*", "cp36-*", "cp312-*"]
-skip = ["cp36-*", "cp37-*", "cp38-*", "cp39-*", "pp*", "cp311-*", "cp312-*"]
+skip = [ "cp37-musllinux*", "cp38-musllinux*", "cp39-musllinux*", "pp*", "cp36-*", "cp312-*"]
+# skip = ["cp36-*", "cp37-*", "cp38-*", "cp39-*", "pp*", "cp311-*", "cp312-*"]
 
 
 # Build `universal2` and `arm64` wheels on an Intel runner.
