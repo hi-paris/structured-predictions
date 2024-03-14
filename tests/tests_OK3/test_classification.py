@@ -1,3 +1,10 @@
+######## Status ###########
+## File is executed withou error
+## use below command
+## python tests/tests_OK3/test_classification.py
+
+
+
 from stpredictions.models.OK3._classes import OK3Regressor
 # from sklearn.datasets import make_blobs
 from sklearn import datasets

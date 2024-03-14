@@ -1,3 +1,11 @@
+######## Status ###########
+## File is executed withou error but some warnings
+## use below command
+## python tests/tests_OK3/exemple_utilisation_forest.py
+
+
+
+
 ###########################################################
 # # # # #   Exemple d'utilisation de forêts OK3   # # # # #
 ############################################################

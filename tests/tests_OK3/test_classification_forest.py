@@ -1,3 +1,9 @@
+######## Status ###########
+## File is executed withou error
+## use below command
+## python tests/tests_OK3/test_classification_forest.py
+
+
 # import numpy as np
 import time
 
@@ -29,6 +35,7 @@ y_blobs_train = y_blobs[:n_train]
 y_blobs_test = y_blobs[n_train:n_train + n_test]
 
 
+
 def test_classification_multilabel(X_train, y_train, X_test, y_test):
     """Return the test accuracy for a multiclass classification task"""
 
@@ -45,7 +52,7 @@ def test_classification_multilabel(X_train, y_train, X_test, y_test):
     print("base_estimator_ :\n", clf.base_estimator_)
     print("estimators_[0] :", clf.estimators_[0])
     print("feature_importances_ :", clf.feature_importances_)
-    print("n_features_ :\n", clf.n_features_)
+    print("n_features_in :\n", clf.n_features_in_)
     print("n_outputs_ :", clf.n_outputs_)
     if hasattr(clf, "oob_score_"):
         print("oob_score_ (r2 score in HS):", clf.oob_score_)
@@ -99,9 +106,9 @@ def test_classification_multilabel_ref(X_train, y_train, X_test, y_test):
     print("reference fitting time : " + str(1000 * (end_fit - start_fit)) + " ms")
 
     print("base_estimator_ :\n", clf.base_estimator_)
-    print("estimators_[0] :", clf.estimators_[0])
+    print("estimato'RandomForestClassifier' object has no attribute 'n_features_'rs_[0] :", clf.estimators_[0])
     print("feature_importances_ :", clf.feature_importances_)
-    print("n_features_ :\n", clf.n_features_)
+    print("n_features_in :\n", clf.n_features_in_)
     print("n_outputs_ :", clf.n_outputs_)
     if hasattr(clf, "oob_score_"):
         print("oob_score_ (accuracy):", clf.oob_score_)

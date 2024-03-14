@@ -1,3 +1,8 @@
+######## Status ###########
+## File is completely commented
+## Take a look in the future to know whether the tests are usefull
+
+
 # Pas utilisable
 
 

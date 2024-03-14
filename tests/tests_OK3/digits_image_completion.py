@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
+######## Status ###########
+## File is completely commented
+## Take a look in the future to know whether the tests are usefull
+
+
 '''
 """
 Created on Sun Sep 13 15:45:26 2020

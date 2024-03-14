@@ -1,6 +1,6 @@
 [build-system]
+requires = ["setuptools", "wheel", "oldest-supported-numpy", "cython==0.29.36"]
 # requires = ["setuptools", "wheel", "oldest-supported-numpy", "cython>=0.23", "scikit-learn==0.24.2"]
-requires = ["setuptools", "wheel", "oldest-supported-numpy", "cython>=0.23"]
 build-backend = "setuptools.build_meta"
 
 [tool.cibuildwheel]
@@ -9,12 +9,14 @@ build-backend = "setuptools.build_meta"
 #skip = ["cp39-musllinux*"]
 
 # Skip for Windows
-# skip = ["pp*", "cp310-*", "cp36-*"]
+skip = ["pp*", "cp312-*", "cp36-*"]
+
 #Skip for MacOS
-# skip = ["pp*", "cp36-*"]
+# skip = ["pp*", "cp36-*", "cp312-*"]
+
 # Skip for Ubuntu   # 32bit cp310 results in error
-skip = ["cp36-musllinux*", "cp37-musllinux*", "cp38-musllinux*", "cp39-musllinux*", "pp*", "cp310-*", "cp36-*"]
-# skip = ["cp36-*", "cp37-*", "cp38-*", "pp*", "cp310-*"]
+# skip = [ "cp37-musllinux*", "cp38-musllinux*", "cp39-musllinux*", "pp*", "cp36-*", "cp312-*"]
+# skip = ["cp36-*", "cp37-*", "cp38-*", "cp39-*", "pp*", "cp311-*", "cp312-*"]
 
 
 # Build `universal2` and `arm64` wheels on an Intel runner.

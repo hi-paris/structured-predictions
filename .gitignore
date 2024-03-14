@@ -10,7 +10,7 @@ env.bak/
 venv.bak/
 
 # Ignore .c files
-OK3/*.c
+stpredictions/models/OK3/*.c
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
@@ -51,6 +51,7 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+*.so
 #MANIFEST
 
 # PyInstaller

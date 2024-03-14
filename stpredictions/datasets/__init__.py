@@ -6,6 +6,7 @@
 
 # All submodules and packages
 from stpredictions.datasets.load_data import *
+from stpredictions.datasets.qm9_utils import *
 #from stpredictions.data.load_data_IOKR import *
 
 

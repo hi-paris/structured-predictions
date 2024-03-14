@@ -1,10 +1,16 @@
+################## Notes for Generating Wheels Manually ##################
+### While you creating wheels manually using bdist_wheel, you create 
+### <<structured_predictions-0.1.2-cp39-cp39-linux_x86_64.whl>> on linux
+### but pypi needs linux wheels with manylinux format. To generate PyPi compatible
+### wheels, you need to used cibuildwheel.
+
 name: Generating Wheels
 
 on: 
   push:
     # To ignore main branch
-    # branches-ignore:
-    #   - "main"
+    branches-ignore:
+      - "main"
 #    branches: [ main ]
   schedule:
     - cron: '0 0 1 * *'
