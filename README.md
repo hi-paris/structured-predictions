@@ -1,5 +1,4 @@
 # structured-predictions
-Recommend using python 3.7 version when running
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -373,16 +372,12 @@ top_11_score = okforest.score(X_test, y_test, candidates=y_candidates, metric="t
 
 ## Acknowledgements
 
-This toolbox has been created and is maintained by
-
-* [Hi! PARIS](https://www.hi-paris.fr/)
-
-
 The contributors to this library are 
 
 * [Tamim El Ahmad](https://datascienceandai.wp.imt.fr/en/?team=el-ahmad-2) (Phd)
 * [Luc Motte](https://www.researchgate.net/profile/Luc-Brogat-Motte) (Phd)
-* [Florence d'Alché-Buc](https://perso.telecom-paristech.fr/fdalche/) (Researcher)
+* [Florence d'Alché-Buc](https://perso.telecom-paristech.fr/fdalche/) (Director)
+<br/><br/>
 <br/><br/>
 * [Awais Sani](https://github.com/yohila) (Sr. ML Engineer)
 * [Gaëtan Brison](https://www.linkedin.com/in/gaetan-brison/) (Lead ML Engineer)
