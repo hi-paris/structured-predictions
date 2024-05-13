@@ -1,4 +1,4 @@
-#!/Users/gaetanbrison/Documents/GitHub/hi-paris/structured-predictions/env-stpredictions/bin/python
+#!/Users/gaetanbrison/Documents/GitHub/hi-paris/structured-predictions/env-stpredictions/bin/python3.12
 # -*- coding: utf-8 -*-
 import re
 import sys
