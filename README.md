@@ -1,7 +1,7 @@
 # structured-predictions
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
+![Python 3.8](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10-blue)
 
 Structured prediction or structured (output) learning is an umbrella term for supervised machine learning techniques that involves predicting structured objects, rather than scalar discrete or real values.
 
@@ -10,6 +10,7 @@ Similar to commonly used supervised learning techniques, structured prediction m
 
 A powerful and flexible approach to structured prediction consists in embedding the structured objects to be predicted into a feature space of possibly infinite dimension by means of output kernels, and then, solving a regression problem in this output space. A prediction in the original space is computed by solving a pre-image problem. In such an approach, the embedding, linked to the target loss, is defined prior to the learning phase. In this work, we propose to jointly learn a finite approximation of the output embedding and the regression function into the new feature space. For that purpose, we leverage a priori information on the outputs and also unexploited unsupervised output data, which are both often available in structured prediction problems. We prove that the resulting structured predictor is a consistent estimator, and derive an excess risk bound. Moreover, the novel structured prediction tool enjoys a significantly smaller computational complexity than former output kernel methods. The approach empirically tested on various structured prediction problems reveals to be versatile and able to handle large datasets.
 
+You can find here a google colab on how to use the package [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Vq1wL0r0LiwgHbbHDO5qJj2u48SElQrR?usp=sharing)
 
 In this Package you can use 3 differents types of models for structured predictions:
 
